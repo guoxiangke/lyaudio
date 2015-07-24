@@ -1,0 +1,26 @@
+body {
+  background: #2980b9;
+  color: #fff;
+  font-family: '微软雅黑','Lato', Arial, sans-serif;
+}
+#playlist li{
+  margin-bottom: 15px;  
+}     
+
+#playlist{
+  padding:20px;
+  padding-left: 0;
+}
+audio{
+  width: 100%;
+  font-family: 微软雅黑;
+  font-size: 20px;
+  text-decoration: none;
+}
+.active a{text-decoration:none;}
+li a{padding:5px;display:block;}
+li a:hover{text-decoration:none;}
+
+h1{
+	font-size: 25px; 
+}

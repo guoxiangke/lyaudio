@@ -1,0 +1,39 @@
+.copyright {
+	text-align: center;
+}
+.copyright a{
+	color: #FFF;
+	background: #1f8dd6;
+}
+
+.cover_pic {
+  background: url(images/cover.jpg) no-repeat;
+}
+
+.cover_bg {
+  background: url(images/coverbg.jpg) no-repeat;
+}
+.loved {
+	background: url(images/heart_1.png) no-repeat;
+	background-size: 30px 30px;
+}
+
+
+.progdiv {
+	  background-color: #00a7c8;
+}
+.pgbuf {
+  background-color: #FFF;
+}
+.pgtime {
+  background-color: #999;
+}
+
+.disable-button{
+	opacity: 0.4;
+	cursor: default;
+}
+.enable-button{
+	opacity: 1;
+	cursor: pointer;
+}
