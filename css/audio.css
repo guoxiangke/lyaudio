@@ -12,7 +12,7 @@ body {
   padding-left: 0;
 }
 audio{
-  width: auto;
+  width: 100%;
   font-family: 微软雅黑;
   font-size: 20px;
   text-decoration: none;

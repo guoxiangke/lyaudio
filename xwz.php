@@ -156,6 +156,7 @@
       }
 
       loop();
+      document.getElementById("audio").volume = 1
     </script>
   </body>
 </html>
