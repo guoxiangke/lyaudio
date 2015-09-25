@@ -1,6 +1,10 @@
 <?php
 //check if get already? cron once a day!
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
+if (!is_dir($file_path)) {
+    mkdir($file_path, 0777, true);
+}
+date_default_timezone_set('Asia/Shanghai');
 $file_key = $file_path . date('Ymd') . '.md3';
 // $file_store_key = $file_path .'/store/'. date('Ymd') . '.txt';
 if(file_exists($file_key))  {

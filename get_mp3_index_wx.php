@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('Asia/Shanghai');
 //check if get already? cron once a day!
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
 $file_key = $file_path . date('Ymd') . '.json';

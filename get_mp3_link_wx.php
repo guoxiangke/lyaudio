@@ -1,7 +1,7 @@
 <?php
+date_default_timezone_set('Asia/Shanghai');
 require 'vendor/autoload.php';
 require_once('vendor/mgargano/simplehtmldom/src/simple_html_dom.php');
-
 
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
 $file_key = $file_path . date('Ymd') . '.json';
@@ -24,10 +24,17 @@ foreach ($urls as $url => $value) {
         $urls[$url]['mp3_link'] = $mp3_link;
         //ignore  when this day no radio.
         if(!strstr($mp3_link, date('ymd'))){
-            $urls[$url]['already'] = 'already';    
+            $urls[$url]['already'] = 'already';  
         }
         $write = json_encode($urls);
         file_put_contents( $file_key , $write);
     }
     // break;
+}
+
+
+if(file_exists($file_key))  {
+    header('location:cron/nzzlist/'. date('Ymd') . '.json');
+    // echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
+    return;
 }
