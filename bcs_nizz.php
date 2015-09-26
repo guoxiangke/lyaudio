@@ -5,7 +5,7 @@
 //2.get all links form nizz once a day
 //3.run this file 60times in 1-2点！
 //4.wechat add menu 500 to the 节目！
-$debug = 1;
+$debug = 0;
 $archive = 0;
 date_default_timezone_set('Asia/Shanghai');
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
@@ -90,7 +90,7 @@ foreach ($urls as $url => $value) {
 					if($debug&&$return) echo $objectKey.' upload——done!000<br>';
         }
         if(!$archive) unlink($realfile);
-        break;
+        // break;
 	}
 }
 
