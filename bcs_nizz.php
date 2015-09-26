@@ -5,7 +5,7 @@
 //2.get all links form nizz once a day
 //3.run this file 60times in 1-2点！
 //4.wechat add menu 500 to the 节目！
-$debug = 0;
+$debug = 1;
 $archive = 0;
 date_default_timezone_set('Asia/Shanghai');
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
@@ -95,7 +95,10 @@ foreach ($urls as $url => $value) {
 }
 
 function curl_post($fields,$file_key,$write,$debug=0){
-	$url = 'http://localhost/~dale.guo/loves/lyaudio/bce/BosClientSample.php';
+	$server = $_SERVER[HTTP_HOST]?$_SERVER[HTTP_HOST]:'http://localhost';
+	$url = "http://".$server."$_SERVER[REQUEST_URI]".'bce/BosClientSample.php';
+	if($debug) echo($url);
+	$url = str_replace('bcs_nizz.php', '', $url);
 	//open connection
 	$ch = curl_init() ;
 	//set the url, number of POST vars, POST data
