@@ -7,7 +7,7 @@
 //4.wechat add menu 500 to the 节目！
 //TODO: 百度分片上传！！！
 //MongoDB log the data!!
-$debug = 1;
+$debug = 0;
 $archive = 0;
 date_default_timezone_set('Asia/Shanghai');
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
