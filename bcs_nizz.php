@@ -5,7 +5,9 @@
 //2.get all links form nizz once a day
 //3.run this file 60times in 1-2点！
 //4.wechat add menu 500 to the 节目！
-$debug = 0;
+//TODO: 百度分片上传！！！
+//MongoDB log the data!!
+$debug = 1;
 $archive = 0;
 date_default_timezone_set('Asia/Shanghai');
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
@@ -15,10 +17,25 @@ $file_key = $file_path . date('Ymd') . '.json';
 chmod($file_key, 0777); 
 $file = file_get_contents($file_key);
 $urls = json_decode($file,TRUE);
-
+if(isset($_GET['key'])){
+  $domyjob = TRUE;
+  $jobkey = $_GET['key'];
+}else{
+  $domyjob = FALSE;
+  //go cron work;
+}
 foreach ($urls as $url => $value) {
   if($debug) echo $value['mp3_link'].'--'.$value['title'].'<br/>';
 	if(!isset($value['md5']) &&!isset($value['already']) && isset($value['mp3_link'])){
+
+        if($domyjob){
+          if (strpos($value['mp3_link'],'/'.$jobkey.'/') !== false) {            
+            if($debug) echo 'got domyjob!!';
+          }else {
+            continue;
+          }
+        }
+
         $mp3_link = $value['mp3_link'];
         preg_match('/[a-z]{2,}[\d]{6}/', $mp3_link, $matches);
 				$prefix = str_replace(date('ymd'), '', $matches[0]);
@@ -79,7 +96,7 @@ foreach ($urls as $url => $value) {
         $urls[$url]['bce'] = $objectKey;
         $write = json_encode($urls);
         if(filesize($realfile)>104724) {
- 					$url = 'http://localhost/~dale.guo/loves/lyaudio/bce/BosClientSample.php';
+ 					// $url = 'http://localhost/~dale.guo/loves/lyaudio/bce/BosClientSample.php';
 					$fields = array(
 					            'key'=>$objectKey,
 					            'fileName'=>$realfile,
@@ -90,13 +107,17 @@ foreach ($urls as $url => $value) {
 					if($debug&&$return) echo $objectKey.' upload——done!000<br>';
         }
         if(!$archive) unlink($realfile);
+        if($domyjob) break;
         // break;
 	}
+
 }
 
 function curl_post($fields,$file_key,$write,$debug=0){
-	$server = $_SERVER[HTTP_HOST]?$_SERVER[HTTP_HOST]:'http://localhost';
-	$url = "http://".$server."$_SERVER[REQUEST_URI]".'bce/BosClientSample.php';
+	$server = isset($_SERVER[HTTP_HOST])?$_SERVER[HTTP_HOST]:'http://localhost';
+  $uri_parts = explode('?', $_SERVER['REQUEST_URI'], 2);
+  // echo 'http://' . $_SERVER['HTTP_HOST'] . $uri_parts[0];
+	$url = "http://".$server.$uri_parts[0].'bce/BosClientSample.php';
 	if($debug) echo($url);
 	$url = str_replace('bcs_nizz.php', '', $url);
 	//open connection
