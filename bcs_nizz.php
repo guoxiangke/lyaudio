@@ -74,12 +74,10 @@ foreach ($urls as $url => $value) {
         //     return 'log the same!';
         // }
         // copy($tempfile, $realfile);
-        $urls[$url]['md5'] = md5_file($realfile); 
-        $write = json_encode($urls);
+        $urls[$url]['md5'] = md5_file($realfile);
         $objectKey = '/lyaudio/nizz/'.$prefix.'/'.date('ym').'/'.$prefix.date('ymd').'.mp3';
         $urls[$url]['bce'] = $objectKey;
-        file_put_contents( $file_key , $write); 
-        if($debug) echo $file_key.' updated!<br>'; 
+        $write = json_encode($urls);
         if(filesize($realfile)>104724) {
  					$url = 'http://localhost/~dale.guo/loves/lyaudio/bce/BosClientSample.php';
 					$fields = array(
@@ -87,26 +85,38 @@ foreach ($urls as $url => $value) {
 					            'fileName'=>$realfile,
 					            'user_meta'=>json_encode($value)
 					        	);
-					//open connection
-					$ch = curl_init() ;
-					//set the url, number of POST vars, POST data
-					curl_setopt($ch, CURLOPT_URL,$url) ;
-					curl_setopt($ch, CURLOPT_POST,count($fields)) ; // 启用时会发送一个常规的POST请求，类型为：application/x-www-form-urlencoded，就像表单提交的一样。
-					curl_setopt($ch, CURLOPT_POSTFIELDS,$fields); // 在HTTP中的“POST”操作。如果要传送一个文件，需要一个@开头的文件名
-
-					ob_start();
-					curl_exec($ch);
-					$result = ob_get_contents() ;
-					ob_end_clean();
-
-					if($debug) echo '<br>curl: '.$result;
-
-					//close connection
-					curl_close($ch) ;
-					if($debug) echo $objectKey.' upload——done!000<br>';
-
+					//open connection 
+					$return = curl_post($fields,$file_key,$write,$debug);
+					if($debug&&$return) echo $objectKey.' upload——done!000<br>';
         }
         if(!$archive) unlink($realfile);
         break;
 	}
+}
+
+function curl_post($fields,$file_key,$write,$debug=0){
+	$url = 'http://localhost/~dale.guo/loves/lyaudio/bce/BosClientSample.php';
+	//open connection
+	$ch = curl_init() ;
+	//set the url, number of POST vars, POST data
+	curl_setopt($ch, CURLOPT_URL,$url) ;
+	curl_setopt($ch, CURLOPT_POST,count($fields)) ; // 启用时会发送一个常规的POST请求，类型为：application/x-www-form-urlencoded，就像表单提交的一样。
+	curl_setopt($ch, CURLOPT_POSTFIELDS,$fields); // 在HTTP中的“POST”操作。如果要传送一个文件，需要一个@开头的文件名
+
+	ob_start();
+	curl_exec($ch);
+	$result = ob_get_contents() ;
+	ob_end_clean();
+
+	if($debug) echo '<br>curl: '.$result;
+	if($result){
+		//upload sucess!
+    file_put_contents( $file_key , $write); 
+    if($debug) echo $file_key.' updated!<br>'; 
+    curl_close($ch) ;
+    return TRUE;
+	}
+	//close connection
+	curl_close($ch) ;
+	return FALSE;
 }

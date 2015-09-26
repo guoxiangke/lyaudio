@@ -2,6 +2,11 @@
 date_default_timezone_set('Asia/Shanghai');
 //check if get already? cron once a day!
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
+if (!is_dir($file_path)) {
+    $oldmask = umask(0);
+    mkdir($file_path,0777,true);
+    umask($oldmask); 
+}
 $file_key = $file_path . date('Ymd') . '.json';
 // $file_store_key = $file_path .'/store/'. date('Ymd') . '.txt';
 if(file_exists($file_key))  {

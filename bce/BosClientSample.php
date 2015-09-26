@@ -56,13 +56,68 @@
     if(count($_POST)){
         $objectKey = ($_POST['key']);
         $fileName = ($_POST['fileName']);
+        // $options = array(
+        //     BosOptions::MAX_KEYS=>1,
+        //     BosOptions::PREFIX=>"729ly/",
+        //     BosOptions::MARKER=>$objectKey,
+        //     BosOptions::DELIMITER=>"/",
+        // );
+        // $lists = $client->listObjects($bucketName,$options);
+        // var_dump('log begin:');var_dump($lists);
+        
+        try {
+            $response = $client->getObjectMetadata($bucketName, $objectKey);
+            var_dump('1');//exits!!
+            // var_dump($response);
+                // array(7) {
+                //   ["contentType"]=>
+                //   string(10) "audio/mpeg"
+                //   ["contentLength"]=>
+                //   int(7044768)
+                //   ["contentMd5"]=>
+                //   string(24) "R55juD5sQxYIObAcWa08xQ=="
+                //   ["date"]=>
+                //   object(DateTime)#49 (3) {
+                //     ["date"]=>
+                //     string(26) "2015-09-25 15:05:00.000000"
+                //     ["timezone_type"]=>
+                //     int(2)
+                //     ["timezone"]=>
+                //     string(3) "GMT"
+                //   }
+                //   ["etag"]=>
+                //   string(32) "479e63b83e6c43160839b01c59ad3cc5"
+                //   ["lastModified"]=>
+                //   object(DateTime)#50 (3) {
+                //     ["date"]=>
+                //     string(26) "2015-09-25 09:26:09.000000"
+                //     ["timezone_type"]=>
+                //     int(2)
+                //     ["timezone"]=>
+                //     string(3) "GMT"
+                //   }
+                //   ["userMetadata"]=>
+                //   array(0) {
+                //   }
+                // }
+            return;
+        } catch (\BaiduBce\Exception\BceBaseException $e) {
+            // echo 'Caught exception: ',  $e->getMessage(), "\n";
+            // var_dump('Exception Noexits!!');
+            // var_dump($e->getMessage());//"Not Found [requestId: status:404 code:]"
+        }
         // $client->putObjectFromFile($bucketName, $objectKey, $fileName);
         // file_put_contents( 'log.txt' , json_encode($_POST)); 
         $user_meta = (array)json_decode(($_POST['user_meta']));
         $client->putObjectFromFile($bucketName, $objectKey, $fileName,array('userMetadata'=>$user_meta));
         
-        $response = $client->getObjectMetadata($bucketName, $objectKey);
+        // $response = $client->getObjectMetadata($bucketName, $objectKey);
         // var_dump($response);
+
+        // $lists = $client->listObjects($bucketName,$options);
+        // var_dump('log begin:');var_dump($lists);
+        var_dump('1');
+
     }
     // $objectKey = '/lyaudio/nizz/gsa/1509/gsa150925.mp3';
     
