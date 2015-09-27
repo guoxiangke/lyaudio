@@ -5,6 +5,15 @@ require_once('vendor/mgargano/simplehtmldom/src/simple_html_dom.php');
 
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
 $file_key = $file_path . date('Ymd') . '.json';
+
+if(file_exists($file_key))  {
+    // header('location:cron/nzzlist/'. date('Ymd') . '.json');
+    unlink($file_key);
+    echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
+    return;
+}
+//1点到2点之间执行！！！
+if(!(date('G')>1&&date('G')<2)) return;
 // $file_store_key = $file_path .'/store/'. date('Ymd') . '.txt';
 // chmod($file_store_key, 0777); 
 chmod($file_key, 0777); 
@@ -30,11 +39,4 @@ foreach ($urls as $url => $value) {
         file_put_contents( $file_key , $write);
     }
     // break;
-}
-
-
-if(file_exists($file_key))  {
-    header('location:cron/nzzlist/'. date('Ymd') . '.json');
-    // echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
-    return;
 }
