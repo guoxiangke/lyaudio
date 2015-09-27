@@ -13,7 +13,10 @@ if(file_exists($file_key))  {
     return;
 }
 //1点到2点之间执行！！！
-if(!(date('G')>1&&date('G')<2)) return;
+if(!(date('G')>1&&date('G')<2)) {
+    echo 'From '.$_SERVER['REMOTE_HOST'];
+    return;
+}
 // $file_store_key = $file_path .'/store/'. date('Ymd') . '.txt';
 // chmod($file_store_key, 0777); 
 chmod($file_key, 0777); 
