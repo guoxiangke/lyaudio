@@ -9,10 +9,17 @@ if (!is_dir($file_path)) {
 }
 $file_key = $file_path . date('Ymd') . '.json';
 // $file_store_key = $file_path .'/store/'. date('Ymd') . '.txt';
+
 if(file_exists($file_key))  {
     header('location:cron/nzzlist/'. date('Ymd') . '.json');
-	// echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
-	return;
+    // unlink($file_key);
+    // echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
+    return;
+}
+//1点到2点之间执行！！！
+if(!(date('G')>1&&date('G')<2)) {
+    echo 'From '.$_SERVER['REMOTE_HOST'];
+    return;
 }
 //////////////////////////////////////////////////////////////////
 
@@ -25,6 +32,7 @@ require_once('vendor/mgargano/simplehtmldom/src/simple_html_dom.php');
 
 
 $html = SimpleHtmlDom\file_get_html('http://liangyou.nissigz.com/');
+if(!$html) return 'can not get html! alert!!!';
 // find all td tags with attribite align=center
 foreach($html->find('tr') as $tr){
     $key =  $tr->find('td[align="left"]',0);
