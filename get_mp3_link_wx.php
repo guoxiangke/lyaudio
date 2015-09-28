@@ -38,9 +38,9 @@ foreach ($urls as $url => $value) {
     }
     // break;
 }
-// if(file_exists($file_key))  {
-//     header('location:cron/nzzlist/'. date('Ymd') . '.json');
-//     // unlink($file_key);
-//     // echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
-//     return;
-// }
+if(file_exists($file_key))  {
+    header('location:cron/nzzlist/'. date('Ymd') . '.json');
+    // unlink($file_key);
+    // echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
+    return;
+}
