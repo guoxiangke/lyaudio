@@ -17,10 +17,10 @@ if(file_exists($file_key))  {
     return;
 }
 //1点到2点之间执行！！！
-if(!(date('G')>1&&date('G')<2)) {
-    echo 'From '.$_SERVER['REMOTE_HOST'];
-    return;
-}
+// if(!(date('G')>1&&date('G')<2)) {
+//     echo 'From '.$_SERVER['REMOTE_HOST'];
+//     return;
+// }
 //////////////////////////////////////////////////////////////////
 
 require 'vendor/autoload.php';
