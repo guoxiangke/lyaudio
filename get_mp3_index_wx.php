@@ -17,7 +17,7 @@ if(file_exists($file_key))  {
     return;
 }
 // // 1点到2点之间执行！！！
-if(!(date('G')>15&&date('G')<16)) {
+if(!(date('G')>=15 && date('G')<=16)) {
     echo 'From '.$_SERVER['REMOTE_HOST'];
     return;
 }
