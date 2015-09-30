@@ -16,11 +16,11 @@ if(file_exists($file_key))  {
     // echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
     return;
 }
-//1点到2点之间执行！！！
-// if(!(date('G')>1&&date('G')<2)) {
-//     echo 'From '.$_SERVER['REMOTE_HOST'];
-//     return;
-// }
+// // 1点到2点之间执行！！！
+if(!(date('G')>15&&date('G')<16)) {
+    echo 'From '.$_SERVER['REMOTE_HOST'];
+    return;
+}
 //////////////////////////////////////////////////////////////////
 
 require 'vendor/autoload.php';
