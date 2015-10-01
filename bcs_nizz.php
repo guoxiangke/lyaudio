@@ -24,6 +24,38 @@ if(isset($_GET['key'])){
   $domyjob = FALSE;
   //go cron work;
 }
+
+// check if all done download link
+$count = 0;
+foreach ($urls as $url => $value) {
+    if(isset($value['bce'])){
+        $count++;
+    }
+}
+if($count==count($urls)) {
+    echo '<br/>already download all links of mp3!'; 
+    $your_url = 'http://729ly.bj.bcebos.com'.$file_key;
+    if(@get_headers($your_url)[0] == 'HTTP/1.1 404 Not Found')
+    {
+      // The file doesn't exist
+      $value = array('from'=>'http://www.yongbuzhixi.com');
+      //push to bce the json file!!!!
+      $fields = array(
+                  'key'=>$file_key,
+                  'fileName'=>$file_key,
+                  'user_meta'=>json_encode($value)
+                );
+      //open connection 
+      $return = curl_post($fields,$file_key,$write,$debug);
+      if($debug&&$return) echo $objectKey.' upload——done!000<br>';
+    }
+    else
+    {
+        return; // The file exists
+    }
+    
+}
+
 foreach ($urls as $url => $value) {
   if($debug) echo $value['mp3_link'].'--'.$value['title'].'<br/>';
 	if(!isset($value['md5']) &&!isset($value['already']) && isset($value['mp3_link'])){

@@ -8,16 +8,7 @@ require_once('vendor/mgargano/simplehtmldom/src/simple_html_dom.php');
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
 $file_key = $file_path . date('Ymd') . '.json';
 
-if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-    $ip = $_SERVER['HTTP_CLIENT_IP'];
-} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-} else {
-    $ip = $_SERVER['REMOTE_ADDR'];
-}
-echo '<br>IP:'.$ip;
-
-if(!(date('G')>=7&&date('G')<8)) {
+if(!(date('G')>=1&&date('G')<2)) {
     // time 1点到2点之间执行！！！
     echo '<br>From '.$ip;
     return false;
@@ -54,7 +45,8 @@ foreach ($urls as $url => $value) {
         $urls[$url]['mp3_link'] = $mp3_link;
         //ignore  when this day no radio.
         if(!strstr($mp3_link, date('ymd'))){
-            $urls[$url]['already'] = 'already';  
+            // $urls[$url]['already'] = 'already'; 
+            unset($urls[$url]); 
         }
         $write = json_encode($urls);
         file_put_contents( $file_key , $write);
