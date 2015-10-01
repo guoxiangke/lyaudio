@@ -1,4 +1,4 @@
-<?php
+<meta charset="UTF-8"><?php
 date_default_timezone_set('Asia/Shanghai');
 //check if get already? cron once a day!
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
