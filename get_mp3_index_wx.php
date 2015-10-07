@@ -20,8 +20,8 @@ if(file_exists($file_key))  {
     return;
 }
 // // 1点到2点之间执行！！！
-if(!(date('G')>=1 && date('G')<2)) {
-    echo 'From '.$_SERVER['REMOTE_HOST'];
+if(!(date('G')>=2 && date('G')<3)) {
+    echo '<br>Hour '.date('G');
     return;
 }
 //////////////////////////////////////////////////////////////////

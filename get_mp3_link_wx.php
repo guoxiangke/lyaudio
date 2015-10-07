@@ -8,14 +8,17 @@ require_once('vendor/mgargano/simplehtmldom/src/simple_html_dom.php');
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
 $file_key = $file_path . date('Ymd') . '.json';
 
-if(!(date('G')>=1&&date('G')<2)) {
+if(!(date('G')>=2&&date('G')<3)) {
     // time 1点到2点之间执行！！！
-    echo '<br>From '.$ip;
+    echo '<br>Hour '.date('G');
     return false;
 }
 
 
-chmod($file_key,777); 
+$oldmask = umask(0);
+mkdir($file_key,0777,true);
+umask($oldmask); 
+    
 $file = file_get_contents($file_key);
 $urls = json_decode($file,TRUE);
 
@@ -49,6 +52,7 @@ foreach ($urls as $url => $value) {
             unset($urls[$url]); 
         }
         $write = json_encode($urls);
+        // chmod($file_key,777); 
         file_put_contents( $file_key , $write);
     }
     // break;
