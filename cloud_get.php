@@ -63,9 +63,13 @@ $radios = array(
     'url' => 'http://www.txly1.net/program/1njchu-3b2ozo',
   ),
   array(
-    'title' => 'Yi-Radio爱广播',
-    'url' => 'http://www.txly1.net/program/1njciv-3b2p1q',
+    'title' => 'i-Radio爱广播',
+    'url' => 'http://www.txly1.net/program/1njchu-3b2ozo',
   ),
+  // array(
+  //   'title' => 'Yi-Radio爱广播',
+  //   'url' => 'http://www.txly1.net/program/1njciv-3b2p1q',
+  // ),
   array(
     'title' => '今夜心未眠',
     'url' => 'http://www.txly1.net/program/1njcia-3b2p0k',
@@ -171,9 +175,13 @@ $radios = array(
     'url' => 'http://www.txly1.net/program/1njcjb-3b2p2m',
   ),
   array(
-    'title' => '无愧的工人',
-    'url' => 'http://www.txly1.net/program/1njcj4-3b2p28',
+    'title' => '生命的福音',
+    'url' => 'http://www.txly1.net/program/1njcjb-3b2p2m',
   ),
+  // array(
+  //   'title' => '无愧的工人',
+  //   'url' => 'http://www.txly1.net/program/1njcj4-3b2p28',
+  // ),
   array(
     'title' => '良友圣经学院（基础课程）',
     'url' => 'http://www.txly1.net/program/1njck8-3b2p4g',
@@ -231,7 +239,7 @@ foreach ($radios as $key => $radio) {
   // $url = "http://blog.yongbuzhixi.com/test.html";
 
   $html = SimpleHtmlDom\file_get_html($url);
-  if(!$html) { echo '<br/>'.$title;continue;}
+  if(!$html) { echo '<br/> ^_^lost '.$title;continue;}
 
   $url = $html->find('#div_playlist li', 0);
 
