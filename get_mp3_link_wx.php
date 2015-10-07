@@ -16,9 +16,9 @@ if(!(date('G')>=2&&date('G')<3)) {
 
 
 $oldmask = umask(0);
-mkdir($file_key,0777,true);
+chmod($file_key,0777);
 umask($oldmask); 
-    
+
 $file = file_get_contents($file_key);
 $urls = json_decode($file,TRUE);
 
@@ -59,7 +59,7 @@ foreach ($urls as $url => $value) {
 }
 if(file_exists($file_key))  {
     $oldmask = umask(0);
-    mkdir($file_key,0777,true);
+    chmod($file_key,0777);
     umask($oldmask); 
     header('location:cron/nzzlist/'. date('Ymd') . '.json');
     // unlink($file_key);

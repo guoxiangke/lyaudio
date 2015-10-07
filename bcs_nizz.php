@@ -12,9 +12,9 @@ $archive = 0;
 date_default_timezone_set('Asia/Shanghai');
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
 $file_key = $file_path . date('Ymd') . '.json';
-// $file_store_key = $file_path .'/store/'. date('Ymd') . '.txt';
-// chmod($file_store_key, 0777); 
-chmod($file_key, 0777); 
+$oldmask = umask(0);
+chmod($file_key,0777);
+umask($oldmask); 
 $file = file_get_contents($file_key);
 $urls = json_decode($file,TRUE);
 if(isset($_GET['key'])){
@@ -24,7 +24,7 @@ if(isset($_GET['key'])){
   $domyjob = FALSE;
   //go cron work;
 }
-
+if($debug) echo 'starting!!<br>';
 // check if all done download link
 $count = 0;
 foreach ($urls as $url => $value) {
@@ -32,7 +32,7 @@ foreach ($urls as $url => $value) {
         $count++;
     }
 }
-if($count==count($urls)) {
+if($count==count($urls)&&$count!=0) {
     echo '<br/>already download all links of mp3!'; 
     $your_url = 'http://729ly.bj.bcebos.com'.$file_key;
     if(@get_headers($your_url)[0] == 'HTTP/1.1 404 Not Found')
@@ -146,7 +146,7 @@ foreach ($urls as $url => $value) {
 }
 
 function curl_post($fields,$file_key,$write,$debug=0){
-	$server = isset($_SERVER[HTTP_HOST])?$_SERVER[HTTP_HOST]:'http://localhost';
+	$server = isset($_SERVER['HTTP_HOST'])?$_SERVER['HTTP_HOST']:'http://localhost';
   $uri_parts = explode('?', $_SERVER['REQUEST_URI'], 2);
   // echo 'http://' . $_SERVER['HTTP_HOST'] . $uri_parts[0];
 	$url = "http://".$server.$uri_parts[0].'bce/BosClientSample.php';

@@ -8,14 +8,12 @@ if (!is_dir($file_path)) {
     umask($oldmask); 
 }
 $file_key = $file_path . date('Ymd') . '.json';
-// $file_store_key = $file_path .'/store/'. date('Ymd') . '.txt';
 
 if(file_exists($file_key))  {
     $oldmask = umask(0);
-    mkdir($file_key,0777,true);
-    umask($oldmask); 
+    chmod($file_path,0777);
+    umask($oldmask);
     header('location:cron/nzzlist/'. date('Ymd') . '.json');
-    // unlink($file_key);
     // echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
     return;
 }

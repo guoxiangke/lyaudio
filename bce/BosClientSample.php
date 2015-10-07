@@ -116,7 +116,7 @@
 
         // $lists = $client->listObjects($bucketName,$options);
         // var_dump('log begin:');var_dump($lists);
-        var_dump('1');
+        var_dump('0');
 
     }
     // $objectKey = '/lyaudio/nizz/gsa/1509/gsa150925.mp3';
