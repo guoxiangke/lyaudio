@@ -252,11 +252,11 @@ foreach ($radios as $key => $radio) {
     'url'   =>  $url->attr['data-stream'],
     'desc'  => $mp3_description,
     );
-  //break;
+  // break;
 }
 // var_dump($data);
 $file = json_encode($data);
-if(!$file){
+if(!is_null($file)){
   file_put_contents( $file_key , $file );
   echo 'Sucess! Write File :'. $file_key;
 }
