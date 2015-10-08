@@ -18,7 +18,7 @@ if(file_exists($file_key))  {
     return;
 }
 // // 1点到2点之间执行！！！
-if(!(date('G')>=2 && date('G')<3)) {
+if(!(date('G')>=3 && date('G')<=4)) {
     echo '<br>Hour '.date('G');
     return;
 }
@@ -76,4 +76,4 @@ $file = json_encode($urls);
 
 // // shell_exec("mkdir $file_path -p");
 file_put_contents( $file_key , $file ) ;
-// // echo 'Sucess! Write File :' $file_key;
+echo 'Sucess! Write File :'. $file_key;

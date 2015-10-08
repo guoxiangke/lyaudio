@@ -62,10 +62,6 @@ $radios = array(
     'title' => 'i-Radio爱广播',
     'url' => 'http://www.txly1.net/program/1njchu-3b2ozo',
   ),
-  array(
-    'title' => 'i-Radio爱广播',
-    'url' => 'http://www.txly1.net/program/1njchu-3b2ozo',
-  ),
   // array(
   //   'title' => 'Yi-Radio爱广播',
   //   'url' => 'http://www.txly1.net/program/1njciv-3b2p1q',
@@ -169,10 +165,6 @@ $radios = array(
   array(
     'title' => '生活之光',
     'url' => 'http://www.txly1.net/program/1njcjc-3b2p2o',
-  ),
-  array(
-    'title' => '生命的福音',
-    'url' => 'http://www.txly1.net/program/1njcjb-3b2p2m',
   ),
   array(
     'title' => '生命的福音',
