@@ -67,7 +67,9 @@ foreach ($url as $id => $value) {
     if(strstr($value,'生命的四季')) $value = '生命的四季';
     if(strstr($value,'天路导向（')) continue; 
     //$value = '天路导向1';
-    if(strstr($value,'关怀心磁场')) $value = '关怀心磁场';
+    if(strstr($value,'关怀心磁场')) $value = '心磁场';
+    if(strstr($value,'爱广播')) $value = '爱广播';
+    if(strstr($value,'爱在人间')) $value = '爱在人间';
 	$urls["url.asp?id=".$id]['title'] = $value;
 }
 // file_put_contents( $file_store_key, print_r($urls, true)) ;
