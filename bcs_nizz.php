@@ -11,11 +11,11 @@ $debug = 1;
 $archive = 0;
 date_default_timezone_set('Asia/Shanghai');
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
-$file_key = $file_path . date('Ymd') . '.json';
+$json_file_key = $file_path . date('Ymd') . '.json';
 $oldmask = umask(0);
-chmod($file_key,0777);
+chmod($json_file_key,0777);
 umask($oldmask); 
-$file = file_get_contents($file_key);
+$file = file_get_contents($json_file_key);
 $urls = json_decode($file,TRUE);
 if(isset($_GET['key'])){
   $domyjob = TRUE;
@@ -34,20 +34,21 @@ foreach ($urls as $url => $value) {
 }
 if($count==count($urls)&&$count!=0) {
     echo '<br/>already download all links of mp3!'; 
-    $your_url = 'http://729ly.bj.bcebos.com'.$file_key;
+    $your_url = 'http://729ly.bj.bcebos.com'.$json_file_key;
     if(@get_headers($your_url)[0] == 'HTTP/1.1 404 Not Found')
     {
       // The file doesn't exist
       $value = array('from'=>'http://www.yongbuzhixi.com');
+      $write = json_encode($urls);
       //push to bce the json file!!!!
       $fields = array(
-                  'key'=>$file_key,
-                  'fileName'=>$file_key,
+                  'key'=>$json_file_key,
+                  'fileName'=>$json_file_key,
                   'user_meta'=>json_encode($value)
                 );
       //open connection 
-      $return = curl_post($fields,$file_key,$write,$debug);
-      if($debug&&$return) echo $objectKey.' upload——done!000<br>';
+      $return = curl_post($fields,$json_file_key,$write,$debug);
+      if($debug&&$return) echo $your_url.' upload——done!000<br>';
     }
     else
     {
@@ -81,14 +82,43 @@ foreach ($urls as $url => $value) {
             // chmod($local_dir, 0777);
             umask($oldmask); 
         }
-        $realfile = $local_dir . '/' . $filename .  '.mp3';
+        $realfile = $local_dir . $filename .  '.mp3';
 
-        if(file_exists($realfile)){
-            // return 'file_exists';
-        	if($debug) echo  $realfile.' file_exists!!<br>';
-        	continue;
+
+        $objectKey = '/lyaudio/nizz/'.$prefix.'/'.date('ym').'/'.$prefix.date('ymd').'.mp3';
+        $bce_url = 'http://729ly.bj.bcebos.com'.$objectKey;
+        if(@get_headers($bce_url)[0] != 'HTTP/1.1 404 Not Found'){//远程有!!!
+          //update json!!
+          $urls[$url]['md5'] = 'nomd5';
+          $urls[$url]['bce'] = $objectKey;
+          $write = json_encode($urls);
+
+          if(!$archive && file_exists($realfile)) unlink($realfile);
+          file_put_contents( $json_file_key , $write); 
+          if($debug) echo $json_file_key.' updated only!<br>'; 
+          continue;
         }
-        // Create a stream
+        if(file_exists($realfile)){//文件存在本地
+          $urls[$url]['md5'] = md5_file($realfile);
+          $urls[$url]['bce'] = $objectKey;
+          $write = json_encode($urls);
+          if(@get_headers($bce_url)[0] == 'HTTP/1.1 404 Not Found'){//远程没有
+            $fields = array(
+                        'key'=>$objectKey,
+                        'fileName'=>$realfile,
+                        'user_meta'=>json_encode($value)
+                      );
+            $return = curl_post($fields,$json_file_key,$write,$debug);
+            if(!$archive) unlink($realfile);
+          }else{//远程存在文件，只更新json
+            //update json!!
+            if(!$archive) unlink($realfile);
+            file_put_contents( $json_file_key , $write); 
+          }
+          if($debug) echo  $realfile.' file_exists!!<br>';
+          continue;
+        }
+        //远程获取文件！begin Create a stream
         $opts = array(
           'http'=>array(
             'method'=>"GET",
@@ -107,7 +137,7 @@ foreach ($urls as $url => $value) {
         } catch (Exception $e) {
             // $urls = json_encode($urls);
             //fails
-            // file_put_contents( $file_key , $urls);
+            // file_put_contents( $json_file_key , $urls);
             continue;
         }
         
@@ -135,7 +165,7 @@ foreach ($urls as $url => $value) {
 					            'user_meta'=>json_encode($value)
 					        	);
 					//open connection 
-					$return = curl_post($fields,$file_key,$write,$debug);
+					$return = curl_post($fields,$json_file_key,$write,$debug);
 					if($debug&&$return) echo $objectKey.' upload——done!000<br>';
         }
         if(!$archive) unlink($realfile);
@@ -145,7 +175,7 @@ foreach ($urls as $url => $value) {
 
 }
 
-function curl_post($fields,$file_key,$write,$debug=0){
+function curl_post($fields,$json_file_key,$write,$debug=0){
 	$server = isset($_SERVER['HTTP_HOST'])?$_SERVER['HTTP_HOST']:'http://localhost';
   $uri_parts = explode('?', $_SERVER['REQUEST_URI'], 2);
   // echo 'http://' . $_SERVER['HTTP_HOST'] . $uri_parts[0];
@@ -167,8 +197,8 @@ function curl_post($fields,$file_key,$write,$debug=0){
 	if($debug) echo '<br>curl: '.$result;
 	if($result){
 		//upload sucess!
-    file_put_contents( $file_key , $write); 
-    if($debug) echo $file_key.' updated!<br>'; 
+    file_put_contents( $json_file_key , $write); 
+    if($debug) echo $json_file_key.' updated!<br>'; 
     curl_close($ch) ;
     return TRUE;
 	}
