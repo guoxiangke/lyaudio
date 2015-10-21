@@ -13,7 +13,10 @@ if(!(date('G')>=3&&date('G')<=4)) {
     echo '<br>Hour '.date('G');
     return false;
 }
-
+if(!file_exists($file_key)){
+    echo '<br>file not exists!';
+    return;
+}
 
 $oldmask = umask(0);
 chmod($file_key,0777);
@@ -24,6 +27,7 @@ $urls = json_decode($file,TRUE);
 
 // check if all done download link
 $count = 0;
+if(isset($urls))
 foreach ($urls as $url => $value) {
     if(isset($value['mp3_link'])){
         $count++;
