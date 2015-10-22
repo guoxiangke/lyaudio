@@ -18,7 +18,7 @@ if(file_exists($file_key))  {
     return;
 }
 // // 1点到2点之间执行！！！
-if(!(date('G')>=3 && date('G')<=4)) {
+if(!(date('G')>=4 && date('G')<=5)) {
     echo '<br>Hour '.date('G');
     return;
 }
