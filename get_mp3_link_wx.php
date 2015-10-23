@@ -33,7 +33,7 @@ foreach ($urls as $url => $value) {
         $count++;
     }
 }
-if($count==count($urls)) {
+if($count==count($urls) && $count!=0) {
     echo '<br/>already download all links of mp3!'; 
     return;
 }
@@ -66,7 +66,5 @@ if(file_exists($file_key))  {
     chmod($file_key,0777);
     umask($oldmask); 
     header('location:cron/nzzlist/'. date('Ymd') . '.json');
-    // unlink($file_key);
-    // echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
     return;
 }
