@@ -11,7 +11,7 @@ $file_key = $file_path . date('Ymd') . '.json';
 if(!(date('G')>=5&&date('G')<=6)) {
     // time 1点到2点之间执行！！！
     echo '<br>Hour '.date('G');
-    return false;
+    // return false;
 }
 if(!file_exists($file_key)){
     echo '<br>file not exists!';

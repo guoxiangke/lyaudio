@@ -10,17 +10,21 @@ if (!is_dir($file_path)) {
 $file_key = $file_path . date('Ymd') . '.json';
 
 if(file_exists($file_key))  {
-    $oldmask = umask(0);
-    chmod($file_path,0777);
-    umask($oldmask);
-    header('location:cron/nzzlist/'. date('Ymd') . '.json');
-    // echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
-    return;
+    $file = file_get_contents($file_key);
+    $urls = json_decode($file,TRUE);
+    if(count($urls)>10){
+        $oldmask = umask(0);
+        chmod($file_path,0777);
+        umask($oldmask);
+        header('location:cron/nzzlist/'. date('Ymd') . '.json');
+        // echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
+        return;
+    }
 }
 // // 1点到2点之间执行！！！
 if(!(date('G')>=4 && date('G')<=5)) {
     echo '<br>Hour '.date('G');
-    return;
+    // return;
 }
 //////////////////////////////////////////////////////////////////
 
