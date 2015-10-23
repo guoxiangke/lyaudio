@@ -13,11 +13,11 @@ if(file_exists($file_key))  {
     $file = file_get_contents($file_key);
     $urls = json_decode($file,TRUE);
     if(count($urls)>40){
-        echo count($urls);
+        // echo count($urls);
         $oldmask = umask(0);
         chmod($file_path,0777);
         umask($oldmask);
-        // header('location:cron/nzzlist/'. date('Ymd') . '.json');
+        header('location:cron/nzzlist/'. date('Ymd') . '.json');
         // echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
         return;
     }
