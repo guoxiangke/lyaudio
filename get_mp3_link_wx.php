@@ -35,13 +35,13 @@ foreach ($urls as $url => $value) {
 }
 if($count==count($urls) && $count!=0) {
     echo '<br/>already download all links of mp3!'; 
+    header('location:cron/nzzlist/'. date('Ymd') . '.json');
     return;
 }
 
 $logfile = $file_path.'logs.txt';
 
 foreach ($urls as $url => $value) {
-
 	if(!isset($value['mp3_link'])){
 		$link = 'http://liangyou.nissigz.com/'.$url;
         $html = SimpleHtmlDom\file_get_html("$link");
@@ -52,7 +52,7 @@ foreach ($urls as $url => $value) {
         $urls[$url]['mp3_link'] = $mp3_link;
         //ignore  when this day no radio.
         if(!strstr($mp3_link, date('ymd'))){
-            // $urls[$url]['already'] = 'already'; 
+            $urls[$url]['already'] = 'already'; 
             unset($urls[$url]); 
         }
         $write = json_encode($urls);
