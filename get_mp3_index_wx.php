@@ -23,9 +23,9 @@ if(file_exists($file_key))  {
     }
 }
 // // 1点到2点之间执行！！！
-if(!(date('G')>=4 && date('G')<=5)) {
+if(!(date('G')>=12 && date('G')<=14)) {
   echo '<br>Hour '.date('G');
-  // return;
+  return;
 }
 //////////////////////////////////////////////////////////////////
 
@@ -83,4 +83,5 @@ $file = json_encode($urls);
 
 // // shell_exec("mkdir $file_path -p");
 file_put_contents( $file_key , $file ) ;
-echo 'Sucess! Write File :'. $file_key;
+// echo 'Sucess! Write File :'. $file_key;
+header('location:get_mp3_index_wx.php');

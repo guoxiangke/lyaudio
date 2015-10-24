@@ -49,6 +49,7 @@ if($count==count($urls)&&$count!=0) {
       //open connection 
       $return = curl_post($fields,$json_file_key,$write,$debug);
       if($debug&&$return) echo $your_url.' upload——done!000<br>';
+      header('location:cron/nzzlist/'. date('Ymd') . '.json');
     }
     else
     {
