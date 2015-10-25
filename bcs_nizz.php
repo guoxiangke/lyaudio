@@ -12,6 +12,10 @@ $archive = 0;
 date_default_timezone_set('Asia/Shanghai');
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
 $json_file_key = $file_path . date('Ymd') . '.json';
+if(!file_exists($json_file_key)){
+    echo '<br>file not exists!';
+    header('location:get_mp3_index_wx.php');
+}
 $oldmask = umask(0);
 chmod($json_file_key,0777);
 umask($oldmask); 
