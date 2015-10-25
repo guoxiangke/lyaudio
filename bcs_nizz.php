@@ -185,7 +185,7 @@ foreach ($urls as $url => $value) {
         }
         if(!$archive) unlink($realfile);
         if($domyjob) break;
-        // break;
+        break;
 	}
 
 }
