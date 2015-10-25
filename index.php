@@ -26,7 +26,7 @@ if(!file_exists($file_key))  {
     'http://www.txly1.net/program/1njcjb-3b2p2m',
     'http://www.txly1.net/program/1njclc-3b2p6o',
     'http://www.txly1.net/program/1njcld-3b2p6q',
-    'http://www.txly1.net/program/1njcl2-3b2p64',
+    'http://www.txly1.net/program/1njcly-3b2p7w',//19
     'http://www.txly1.net/program/1njciu-3b2p1o',
     'http://www.txly1.net/program/1njchw-3b2ozs',
     'http://www.txly1.net/program/1njcht-3b2ozm',
