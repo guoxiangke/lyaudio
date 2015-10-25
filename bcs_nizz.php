@@ -133,13 +133,23 @@ foreach ($urls as $url => $value) {
         // Open the file using the HTTP headers set above
         // $file = file_get_contents('http://www.example.com/', false, $context);
         set_time_limit(0);
-        try {
-            $file = file_get_contents($mp3_link, false, $context);            
-        } catch (Exception $e) {
-            // $urls = json_encode($urls);
-            //fails
-            // file_put_contents( $json_file_key , $urls);
-            continue;
+        if(@get_headers($mp3_link)[0] == 'HTTP/1.1 404 Not Found'){//nissigz没有
+
+          if(isset($urls[$url]['try_times'])){
+            $urls[$url]['try_times']=$urls[$url]['try_times']+1;
+            if($urls[$url]['try_times']==5){
+               $urls[$url]['bce'] = 'nissigz 404 error!';
+            }
+          }else{
+            $urls[$url]['try_times']=1;
+          }
+          
+          $urls = json_encode($urls);
+          //fails
+          file_put_contents( $json_file_key , $urls);
+          continue;
+        }else{
+          $file = file_get_contents($mp3_link, false, $context);            
         }
         
         // $file = @readfile($mp3_link);

@@ -73,7 +73,7 @@ foreach ($url as $id => $value) {
   if(strstr($value,'天路导向（')) continue; 
   if(strstr($value,'灵命日粮')) continue; 
   if(strstr($value,'听听90后')) continue; 
-  if(strstr($value,'善牧良言')) continue; 
+  // if(strstr($value,'善牧良言')) continue; 
   //$value = '天路导向1';
   if(strstr($value,'关怀心磁场')) $value = '心磁场';
   if(strstr($value,'爱广播')) $value = '爱广播';
