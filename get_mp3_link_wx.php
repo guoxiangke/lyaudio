@@ -62,10 +62,10 @@ foreach ($urls as $url => $value) {
 $write = json_encode($urls);
 // chmod($file_key,777); 
 file_put_contents( $file_key , $write);
-// if(file_exists($file_key))  {
-//     $oldmask = umask(0);
-//     chmod($file_key,0777);
-//     umask($oldmask); 
-//     header('location:cron/nzzlist/'. date('Ymd') . '.json');
-//     return;
-// }
+if(file_exists($file_key))  {
+    $oldmask = umask(0);
+    chmod($file_key,0777);
+    umask($oldmask); 
+    header('location:cron/nzzlist/'. date('Ymd') . '.json');
+    return;
+}
