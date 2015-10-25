@@ -7,7 +7,7 @@
 //4.wechat add menu 500 to the 节目！
 //TODO: 百度分片上传！！！
 //MongoDB log the data!!
-$debug = 1;
+$debug = 0;
 $archive = 0;
 date_default_timezone_set('Asia/Shanghai');
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
@@ -60,8 +60,7 @@ if($count==count($urls)&&$count!=0) {
 
 foreach ($urls as $url => $value) {
   if($debug) echo $value['mp3_link'].'--'.$value['title'].'<br/>';
-	if(!isset($value['md5']) &&!isset($value['already']) && isset($value['mp3_link'])){
-
+	if(!isset($value['md5']) &&!isset($value['bce']) && isset($value['mp3_link'])){
         if($domyjob){
           if (strpos($value['mp3_link'],'/'.$jobkey.'/') !== false) {            
             if($debug) echo 'got domyjob!!';
@@ -88,6 +87,7 @@ foreach ($urls as $url => $value) {
 
         $objectKey = '/lyaudio/nizz/'.$prefix.'/'.date('ym').'/'.$prefix.date('ymd').'.mp3';
         $bce_url = 'http://729ly.bj.bcebos.com'.$objectKey;
+
         if(@get_headers($bce_url)[0] != 'HTTP/1.1 404 Not Found'){//远程有!!!
           //update json!!
           $urls[$url]['md5'] = 'nomd5';
@@ -143,7 +143,7 @@ foreach ($urls as $url => $value) {
           }else{
             $urls[$url]['try_times']=1;
           }
-          
+            
           $urls = json_encode($urls);
           //fails
           file_put_contents( $json_file_key , $urls);
