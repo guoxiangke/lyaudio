@@ -68,9 +68,11 @@ foreach ($url as $id => $value) {
       $value = $titles[1];
   }
   // $value = preg_replace('（([^（）]+)）','', $value);
-  //生命的四季（星期一至五为直播，节目会於直播完毕后上载）
-  if(strstr($value,'生命的四季')) $value = '生命的四季';
-  if(strstr($value,'空中辅导')) $value = '空中辅导';
+  //
+  // $value = '生命的四季（星期一至五为直播，节目会於直播完毕后上载）';
+  // if(strstr($value,'生命的四季')) $value = '生命的四季';
+  // if(strstr($value,'空中辅导')) $value = '空中辅导';
+  // if(strstr($value,'无限飞行号')) $value = '无限飞行号';
   if(strstr($value,'天路导向（')) continue; 
   if(strstr($value,'灵命日粮')) continue; 
   if(strstr($value,'听听90后')) continue; 
@@ -79,6 +81,7 @@ foreach ($url as $id => $value) {
   if(strstr($value,'关怀心磁场')) $value = '心磁场';
   if(strstr($value,'爱广播')) $value = '爱广播';
   if(strstr($value,'爱在人间')) $value = '爱在人间';
+  preg_replace('[\(（][\s\S]*[\)）]', '', $value);
 	$urls["url.asp?id=".$id]['title'] = $value;
 }
 // file_put_contents( $file_store_key, print_r($urls, true)) ;
