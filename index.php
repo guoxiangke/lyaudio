@@ -123,7 +123,7 @@ if(!file_exists($file_key))  {
         <h5><a href="/nizz_play.php" style="color:#FFF">线路二</a></h5>
       </p>    
       <audio id="audio" preload="auto" tabindex="0" controls type="audio/mpeg">
-          <source type="audio/mp3" src="http://77g6cj.com1.z0.glb.clouddn.com/lyad.mp3">
+          <source type="audio/mp3" src="http://77g6cj.com1.z0.glb.clouddn.com/LRecord140328-8f1edblyadd2.mp3">
           小永提示：不好意思！您的浏览器不支持，建议下载猎豹浏览器浏览本页面.//http://fm77.u.qiniudn.com/2015/hjkkhzb.mp3
       </audio>
       <div class="hidden-xs">
