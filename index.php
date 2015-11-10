@@ -117,12 +117,16 @@ if(!file_exists($file_key))  {
 
       <h1>请点击要收听的节目</h1>
       <div id="bg-info">
+      </div>  
+      <div class="bg-no">
         <?php if(!isset($_GET['order'])):?>
-          <h5><a href="?order=1" style="color:#FFF">顺序排列</a></h5>
-        <?php endif;?> 
+        <h5><a href="?order=1" style="color:#FFF">顺序排列</a></h5><?php endif;?>
         <h5><a href="/nizz_play.php" style="color:#FFF">线路二</a></h5>
+        <h5><a href="/download_play.php" style="color:#FFF">线路三</a></h5>
         <h5><a href="/player/marrage_training.php" style="color:#FFF">婚姻辅导</a></h5>
         <h5><a href="/player/yong.php" style="color:#FFF">青少年事工</a></h5>
+        <h5><a href="/xwz.php" style="color:#FFF">小王子</a></h5>
+        <h5><a href="/xz.php" style="color:#FFF">下载收听</a></h5>
       </div>    
       <audio id="audio" preload="auto" tabindex="0" controls type="audio/mpeg">
           <source type="audio/mp3" src="http://77g6cj.com1.z0.glb.clouddn.com/LRecord140328-8f1edblyadd2.mp3">

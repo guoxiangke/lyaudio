@@ -103,6 +103,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="css/audio.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container-fluid">
@@ -114,7 +115,18 @@
       </div>
 
       <h3>精选节目播放</h3>
-      <p id="bg-info"></p>      
+      <div id="bg-info">
+      </div>  
+      <div class="bg-no">
+        <?php if(!isset($_GET['order'])):?>
+        <h5><a href="?order=1" style="color:#FFF">顺序排列</a></h5><?php endif;?>
+        <h5><a href="/index.php" style="color:#FFF">线路一</a></h5>
+        <h5><a href="/nizz_play.php" style="color:#FFF">线路二</a></h5>
+        <h5><a href="/player/marrage_training.php" style="color:#FFF">婚姻辅导</a></h5>
+        <h5><a href="/player/yong.php" style="color:#FFF">青少年事工</a></h5>
+        <h5><a href="/xwz.php" style="color:#FFF">小王子</a></h5>
+        <h5><a href="/xz.php" style="color:#FFF">下载收听</a></h5>
+      </div>       
       <audio id="audio" preload="auto" tabindex="0" controls type="audio/mpeg">
           <source type="audio/mp3" src="http://fm77.u.qiniudn.com/2015/hjkkhzb.mp3">
           小永提示：不好意思！您的浏览器不支持，建议下载猎豹浏览器浏览本页面.

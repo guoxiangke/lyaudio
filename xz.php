@@ -103,6 +103,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="css/audio.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container-fluid">
@@ -124,7 +125,18 @@
       </div>
 
       <p class="bg"><span style="color:#FFF;background-color:red">长按按钮</span>->【保存链接】即可下载节目！</p>
-      <p id="bg-info"></p>
+      
+      <div id="bg-info">
+      </div>  
+      <div class="bg-no">
+        <h5><a href="/index.php" style="color:#FFF">线路一</a></h5>
+        <h5><a href="/nizz_play.php" style="color:#FFF">线路二</a></h5>
+        <h5><a href="/download_play.php" style="color:#FFF">线路三</a></h5>
+        <h5><a href="/player/marrage_training.php" style="color:#FFF">婚姻辅导</a></h5>
+        <h5><a href="/player/yong.php" style="color:#FFF">青少年事工</a></h5>
+        <h5><a href="/xwz.php" style="color:#FFF">小王子</a></h5>
+        <h5><a href="/xz.php" style="color:#FFF">下载收听</a></h5>
+      </div>  
       <?php include('focus.php');?>
       <ul id="playlist">
         <?php
