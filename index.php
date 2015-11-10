@@ -116,12 +116,14 @@ if(!file_exists($file_key))  {
       </div>
 
       <h1>请点击要收听的节目</h1>
-      <p id="bg-info">
+      <div id="bg-info">
         <?php if(!isset($_GET['order'])):?>
           <h5><a href="?order=1" style="color:#FFF">顺序排列</a></h5>
         <?php endif;?> 
         <h5><a href="/nizz_play.php" style="color:#FFF">线路二</a></h5>
-      </p>    
+        <h5><a href="/player/marrage_training.php" style="color:#FFF">婚姻辅导</a></h5>
+        <h5><a href="/player/yong.php" style="color:#FFF">青少年事工</a></h5>
+      </div>    
       <audio id="audio" preload="auto" tabindex="0" controls type="audio/mpeg">
           <source type="audio/mp3" src="http://77g6cj.com1.z0.glb.clouddn.com/LRecord140328-8f1edblyadd2.mp3">
           小永提示：不好意思！您的浏览器不支持，建议下载猎豹浏览器浏览本页面.//http://fm77.u.qiniudn.com/2015/hjkkhzb.mp3

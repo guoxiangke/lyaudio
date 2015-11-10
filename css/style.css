@@ -24,3 +24,7 @@ li a:hover{text-decoration:none;}
 h1{
 	font-size: 25px; 
 }
+#bg-info h5{
+  display: inline;
+  padding-left: 10px;
+}
