@@ -304,7 +304,7 @@ wx.ready(function () {
   // 5.3 上传图片
   document.querySelector('#uploadImage').onclick = function () {
     if (images.localId.length == 0) {
-      alert('请先使用 chooseImage 接口选择图片');
+      alert('请先选择图片');
       return;
     }
     var i = 0, length = images.localId.length;
@@ -327,6 +327,7 @@ wx.ready(function () {
       });
     }
     upload();
+    alert('SSS->'+images.serverId);
   };
 
   // 5.4 下载图片
