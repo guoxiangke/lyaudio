@@ -16,8 +16,7 @@ if (!$js_ticket) {
 }
 $url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 $js_sign = $we->getJsSign($url);
-echo '<pre>'.print_r($js_sign,1);
-
+// echo '<pre>'.print_r($js_sign,1);
 ?>
 <!DOCTYPE html>
 <html>
@@ -63,6 +62,7 @@ echo '<pre>'.print_r($js_sign,1);
       <h3 id="menu-image">图像接口</h3>
       <span class="desc">拍照或从手机相册中选图接口</span>
       <button class="btn btn_primary" id="chooseImage">chooseImage</button>
+      <div class="choosedimg"></div>
       <span class="desc">预览图片接口</span>
       <button class="btn btn_primary" id="previewImage">previewImage</button>
       <span class="desc">上传图片接口</span>

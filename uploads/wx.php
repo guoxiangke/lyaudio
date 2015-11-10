@@ -1,4 +1,24 @@
 <?php
+include "wechat.class.php";
+include 'errCode.php';
+$opt = array(
+  'appsecret'=>'de221323ff657efcf528cbd966b06460',//填写高级调用功能的密钥
+  'appid'=>'wx4e55fd23c29e1688'	//填写高级调用功能的appid
+);
+$we = new Wechat($opt);
+$auth = $we->checkAuth();
+$js_ticket = $we->getJsTicket();
+if (!$js_ticket) {
+	echo "获取js_ticket失败！<br>";
+    echo '错误码：'.$we->errCode;
+    echo ' 错误原因：'.ErrCode::getErrText($weObj->errCode);
+    exit;
+}
+$url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+$js_sign = $we->getJsSign($url);
+// echo '<pre>'.print_r($js_sign,1);
+
+
 $ds          = DIRECTORY_SEPARATOR; 
 $storeFolder = 'files'; 
 if (!empty($_FILES)) {
@@ -192,6 +212,17 @@ Set file size limits, file count limits, file type limits, and simultaneous uplo
     <p id="progress">XHR2's upload progress isn't supported</p>
     <!-- <p>Upload progress: <progress id="uploadprogress" min="0" max="100" value="0">0</progress></p> -->
  
+		<h3 id="menu-image">图像接口</h3>
+		<span class="desc">拍照或从手机相册中选图接口</span>
+		<button class="btn btn_primary" id="chooseImage">chooseImage</button>
+		<div class="choosedimg"></div>
+		<span class="desc">预览图片接口</span>
+		<button class="btn btn_primary" id="previewImage">previewImage</button>
+		<span class="desc">上传图片接口</span>
+		<button class="btn btn_primary" id="uploadImage">uploadImage</button>
+		<span class="desc">下载图片接口</span>
+		<button class="btn btn_primary" id="downloadImage">downloadImage</button>
+
 <script>
 var holder = document.getElementById('holder'),
 tests = {
@@ -352,4 +383,56 @@ $('#click-upload').click(function(){
       } );
     </script>
   </body>
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"> </script>
+<script>
+  wx.config({
+      debug: true,
+      appId: '<?php echo $js_sign["appId"]; ?>', // 必填，公众号的唯一标识
+      timestamp: <?php echo $js_sign["timestamp"]; ?>, // 必填，生成签名的时间戳，切记时间戳是整数型，别加引号
+      nonceStr: '<?php echo $js_sign["nonceStr"]; ?>', // 必填，生成签名的随机串
+      signature: '<?php echo $js_sign["signature"]; ?>', // 必填，签名，见附录1
+      jsApiList: [
+        'checkJsApi',
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage',
+        'onMenuShareQQ',
+        'onMenuShareWeibo',
+        'hideMenuItems',
+        'showMenuItems',
+        'hideAllNonBaseMenuItem',
+        'showAllNonBaseMenuItem',
+        'translateVoice',
+        'startRecord',
+        'stopRecord',
+        'onRecordEnd',
+        'playVoice',
+        'pauseVoice',
+        'stopVoice',
+        'uploadVoice',
+        'downloadVoice',
+        'chooseImage',
+        'previewImage',
+        'uploadImage',
+        'downloadImage',
+        'getNetworkType',
+        'openLocation',
+        'getLocation',
+        'hideOptionMenu',
+        'showOptionMenu',
+        'closeWindow',
+        'scanQRCode',
+        'chooseWXPay',
+        'openProductSpecificView',
+        'addCard',
+        'chooseCard',
+        'openCard'
+      ]
+  });
+</script>
+<script type="text/javascript">
+	
+
+</script>
+<script src="jsapi-demo-6.1.js?ts=<?php echo $timestamp; ?>"> </script>
 </html>
