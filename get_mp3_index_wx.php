@@ -71,9 +71,9 @@ foreach ($url as $id => $value) {
   // $value = preg_replace('（([^（）]+)）','', $value);
   //
   // $value = '生命的四季（星期一至五为直播，节目会於直播完毕后上载）';
-  // if(strstr($value,'生命的四季')) $value = '生命的四季';
-  // if(strstr($value,'空中辅导')) $value = '空中辅导';
-  // if(strstr($value,'无限飞行号')) $value = '无限飞行号';
+  if(strstr($value,'生命的四季')) $value = '生命的四季';
+  if(strstr($value,'空中辅导')) $value = '空中辅导';
+  if(strstr($value,'无限飞行号')) $value = '无限飞行号';
   if(strstr($value,'天路导向（')) continue; 
   if(strstr($value,'灵命日粮')) continue; 
   if(strstr($value,'听听90后')) continue; 
