@@ -14,9 +14,10 @@ if (!$js_ticket) {
     echo ' 错误原因：'.ErrCode::getErrText($weObj->errCode);
     exit;
 }
-echo '<pre>'.print_r($js_ticket,1);
 $url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 $js_sign = $we->getJsSign($url);
+echo '<pre>'.print_r($js_sign,1);
+
 ?>
 <!DOCTYPE html>
 <html>
