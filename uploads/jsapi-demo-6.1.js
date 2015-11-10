@@ -295,7 +295,6 @@ wx.ready(function () {
 
   // 5.2 图片预览
   document.querySelector('#previewImage').onclick = function () {
-  	for (var i = 0; i < images.localId.length; i++) {
     wx.previewImage({
       current: images.localId[0],
       urls: images.localId
