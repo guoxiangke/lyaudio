@@ -143,10 +143,10 @@ echo '<pre>'.print_r($js_sign,1);
 <script>
   wx.config({
       debug: true,
-      appId: '<?php echo $js_sign['appid']; ?>', // 必填，公众号的唯一标识
-      timestamp: <?php echo $js_sign['timestamp']; ?>, // 必填，生成签名的时间戳，切记时间戳是整数型，别加引号
-      nonceStr: '<?php echo $js_sign['noncestr']; ?>', // 必填，生成签名的随机串
-      signature: '<?php echo $js_sign['signature']; ?>', // 必填，签名，见附录1
+      appId: '<?php echo $js_sign["appId"]; ?>', // 必填，公众号的唯一标识
+      timestamp: <?php echo $js_sign["timestamp"]; ?>, // 必填，生成签名的时间戳，切记时间戳是整数型，别加引号
+      nonceStr: '<?php echo $js_sign["nonceStr"]; ?>', // 必填，生成签名的随机串
+      signature: '<?php echo $js_sign["signature"]; ?>', // 必填，签名，见附录1
       jsApiList: [
         'checkJsApi',
         'onMenuShareTimeline',
