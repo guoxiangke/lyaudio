@@ -295,13 +295,10 @@ wx.ready(function () {
 
   // 5.2 图片预览
   document.querySelector('#previewImage').onclick = function () {
+  	for (var i = 0; i < images.localId.length; i++) {
     wx.previewImage({
-      current: 'http://img5.douban.com/view/photo/photo/public/p1353993776.jpg',
-      urls: [
-        'http://img3.douban.com/view/photo/photo/public/p2152117150.jpg',
-        'http://img5.douban.com/view/photo/photo/public/p1353993776.jpg',
-        'http://img3.douban.com/view/photo/photo/public/p2152134700.jpg'
-      ]
+      current: images.localId.[0],
+      urls: images.localId
     });
   };
 

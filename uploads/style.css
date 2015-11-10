@@ -186,3 +186,7 @@ h3:before {
 .btn {
   margin-bottom: 15px;
 }
+
+.choosedimg img{
+	max-width: 100%;
+}
