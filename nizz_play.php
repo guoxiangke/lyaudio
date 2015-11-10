@@ -39,7 +39,7 @@ $file_key = $file_path . date('Ymd') . '.json';
       <h1>请点击要收听的节目</h1>
       <p id="bg-info"><?php if(!isset($_GET['order'])):?><h5><a href="?order=1" style="color:#FFF">顺序排列</a></h5><?php endif;?> </p>      
       <audio id="audio" preload="auto" tabindex="0" controls type="audio/mpeg">
-          <source type="audio/mp3" src="http://fm77.u.qiniudn.com/2015/hjkkhzb.mp3">
+          <source type="audio/mp3" src="http://77g6cj.com1.z0.glb.clouddn.com/lyad.mp3">
           小永提示：不好意思！您的浏览器不支持，建议下载猎豹浏览器浏览本页面.
       </audio>
       <div class="hidden-xs">
@@ -59,7 +59,7 @@ $file_key = $file_path . date('Ymd') . '.json';
         $count = 1;
         foreach ($urls as $url => $value) {
         	$title = $value['title'];
-        	$mp3_link = $value['mp3_link']
+        	$mp3_link = $value['mp3_link'];
         	if(isset($value['bce'])){
         		$title = '【'.$value['title'].'】';
         		$mp3_link = 'http://bos.yongbuzhixi.com/'.$value['bce'];
