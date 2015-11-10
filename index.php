@@ -229,6 +229,8 @@ if(!file_exists($file_key))  {
               }else{
                   link = playlist.find('a')[current];    
               }
+              $('#bg-info').html(link.parent().find('.bg-info').html());
+              $('h1').html(link.html()); 
               run($(link),audio[0]);
           });
       }
