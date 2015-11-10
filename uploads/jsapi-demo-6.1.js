@@ -286,6 +286,7 @@ wx.ready(function () {
         images.localId = res.localIds;
         alert('已选择 ' + res.localIds.length + ' 张图片');
         for (var i = 0; i < images.localId.length; i++) {
+        	alert('hi->'+images.localId[i]);
         	$('.choosedimg').append('<img src="'+images.localId[i]+'">');
         };
       }

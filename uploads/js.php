@@ -25,6 +25,7 @@ $js_sign = $we->getJsSign($url);
   <title>JS-SDK测试页</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
   <link rel="stylesheet" href="style.css">
+  <script src="jquery.min.js"></script>
 </head>
 <body ontouchstart="">
 <div class="wxapi_container">
