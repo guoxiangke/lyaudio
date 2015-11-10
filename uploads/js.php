@@ -14,6 +14,7 @@ if (!$js_ticket) {
     echo ' 错误原因：'.ErrCode::getErrText($weObj->errCode);
     exit;
 }
+echo '<pre>'.print_r($js_ticket,1);
 $url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 $js_sign = $we->getJsSign($url);
 ?>
@@ -140,7 +141,7 @@ $js_sign = $we->getJsSign($url);
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"> </script>
 <script>
   wx.config({
-      debug: false,
+      debug: true,
       appId: '<?php echo $js_sign['appid']; ?>', // 必填，公众号的唯一标识
       timestamp: <?php echo $js_sign['timestamp']; ?>, // 必填，生成签名的时间戳，切记时间戳是整数型，别加引号
       nonceStr: '<?php echo $js_sign['noncestr']; ?>', // 必填，生成签名的随机串
