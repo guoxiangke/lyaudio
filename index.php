@@ -116,7 +116,12 @@ if(!file_exists($file_key))  {
       </div>
 
       <h1>请点击要收听的节目</h1>
-      <p id="bg-info"><?php if(!isset($_GET['order'])):?><h5><a href="?order=1" style="color:#FFF">顺序排列</a></h5><?php endif;?> </p>      
+      <p id="bg-info">
+        <?php if(!isset($_GET['order'])):?>
+          <h5><a href="?order=1" style="color:#FFF">顺序排列</a></h5>
+        <?php endif;?> 
+        <h5><a href="/nizz_play.php" style="color:#FFF">线路二</a></h5>
+      </p>    
       <audio id="audio" preload="auto" tabindex="0" controls type="audio/mpeg">
           <source type="audio/mp3" src="http://fm77.u.qiniudn.com/2015/hjkkhzb.mp3">
           小永提示：不好意思！您的浏览器不支持，建议下载猎豹浏览器浏览本页面.
@@ -131,14 +136,14 @@ if(!file_exists($file_key))  {
         <p>已播放: <span></span>%</p>        
       </div>
       <ul id="playlist">
-        <li  class="btn btn-default" role="button">
+        <!-- <li  class="btn btn-default" role="button">
           <?php 
             $ad = 'http://fm77.u.qiniudn.com/2015/hjkkhzb.mp3';
             // $ad = 'http://liangyou.u.qiniudn.com/lyad.mp3'; 
           ?>
           <a href="<?php echo $ad;?>">0 广告</a>
           <p class="bg-info hidden">小永不定期剪辑，不听就遗憾！</p>
-        </li>
+        </li> -->
         <?php
         $file_key = $file_path . date('Ymd') . '.json';
         // $file_key = 'http://liangyou.yongbuzhixi.com/cron/cloud/'.date('Ymd').'.json';
