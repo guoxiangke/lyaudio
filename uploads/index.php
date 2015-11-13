@@ -240,7 +240,7 @@ function readfiles(files) {
       xhr.send(formData);
         　xhr.onreadystatechange = function(){
         　　　　if ( xhr.readyState == 4 && xhr.status == 200 ) {
-                var a = $("<a>").attr("href", window.location.href + '/files/'+xhr.responseText).attr('title','点击分享...');
+                var a = $("<a>").attr("href", window.location.href + 'files/'+xhr.responseText).attr('title','点击分享...');
                 if(files.length){
                     $("#holder img").last().wrap(a);
                 }else{            
