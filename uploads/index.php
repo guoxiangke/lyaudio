@@ -246,7 +246,7 @@ function readfiles(files) {
                 }else{            
                     $("#holder img").wrap(a);
                 }
-                $uri = 'files/' + xhr.responseText;
+                $uri = window.location.href + '/uploads/files/' + xhr.responseText;
                 $('#copy-button').attr('data-clipboard-text',$uri).removeClass('hidden');
 
                 // alert("上传成功！点击复制图片分享链接到朋友圈...");
