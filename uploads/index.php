@@ -240,13 +240,13 @@ function readfiles(files) {
       xhr.send(formData);
         　xhr.onreadystatechange = function(){
         　　　　if ( xhr.readyState == 4 && xhr.status == 200 ) {
-                var a = $("<a>").attr("href", '/files/'+xhr.responseText).attr('title','点击分享...');
+                var a = $("<a>").attr("href", window.location.href + '/files/'+xhr.responseText).attr('title','点击分享...');
                 if(files.length){
                     $("#holder img").last().wrap(a);
                 }else{            
                     $("#holder img").wrap(a);
                 }
-                $uri = window.location.href + '/uploads/files/' + xhr.responseText;
+                $uri = window.location.href + 'files/' + xhr.responseText;
                 $('#copy-button').attr('data-clipboard-text',$uri).removeClass('hidden');
 
                 // alert("上传成功！点击复制图片分享链接到朋友圈...");
