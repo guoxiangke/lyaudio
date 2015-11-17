@@ -3,8 +3,8 @@
 // require_once('qiniu/auth_digest.php');
 // require_once('qiniu/rs.php');
 
-// $accessKey = 'QqX1uY0DSDKGh8dm-llqgBS3L_288463_AwEaI5H';
-// $secretKey = 'kd-Kfly7qwDAx0HzsCZ6OKXPPMyUVh088ZU3_S9B';
+// $accessKey = 'QqX1uY0DSDKGh8dm-';
+// $secretKey = 'kd-';
 
 // require_once('qiniu/io.php');
 
