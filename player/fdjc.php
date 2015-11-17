@@ -10,7 +10,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>辅导基础特辑(<?php echo $day;?>/5)|公众号：永不止息</title>
+<title>辅导基础(<?php echo $day;?>/5)|空中辅导特辑|公众号：永不止息</title>
 <meta name="Author" CONTENT="Dale.guo">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 
