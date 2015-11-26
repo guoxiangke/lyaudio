@@ -101,7 +101,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 <!--#if !MINIFIED -->
     <script src="debugger.js"></script>
     <script type="text/javascript">
-        var DEFAULT_URL = 'http://lts33.b0.upaiyun.com/new%2F基础课程%2F事奉装备%2F事奉装备.pdf';
+        var DEFAULT_URL = '';
       <?php if($_GET['pdf']) :?>
         var DEFAULT_URL = $_GET['pdf'];
       <?php endif;?>
