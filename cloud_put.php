@@ -28,18 +28,20 @@ foreach ($urls as $url => $value) {
         if(file_exists($tempfile)) {
             // Instantiate an S3 client
             $s3 = S3Client::factory(array(
-                'key'    => 'AKIAJZSII3KHTLKFGB5A',
-                'secret' => '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',
-            ));
+                            'key'    => 'AKIAICBSUROM4QGVKMDQ',
+                            'secret' => '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',
+                        ));
+            $bucket = 'lyaudio';
             echo 'downloaded!!!';
-            $my_obj = 'liangyou/cloud/'.date('Y').'/'.$value['title'].'/'.date('m').'/'.date('Ymd') .'.mp3';
+            $my_obj = 'liangyou/cloud/'.date('Y').'/'.$value['title'].'/'.date('Ymd') .'.mp3';
             try {
                 $result = $s3->putObject(array(
-                    'Bucket' => 'ybzx',
+                    'Bucket' => 'lyaudio',
                     'Key'    => $my_obj,
                     'Body'   => fopen($tempfile, 'r'),
                     'ACL'    => 'public-read',
                     'Metadata'	 => array(
+                                    'id' =>  $value['id'],
 							        'title' =>	$value['title'],
 							        'desc' =>	$value['desc'],
 							        'date' =>	$value['date'],
