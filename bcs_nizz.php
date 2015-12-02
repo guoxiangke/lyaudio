@@ -141,8 +141,9 @@ foreach ($urls as $url => $value) {
 
           if(isset($urls[$url]['try_times'])){
             $urls[$url]['try_times']=$urls[$url]['try_times']+1;
-            if($urls[$url]['try_times']==5){
-               $urls[$url]['bce'] = '404';
+            //当3次404无当天节目时，后退到第二天的。
+            if($urls[$url]['try_times']>=3){
+              str_replace(date('ymd'), date('ymd',time()-86400*($urls[$url]['try_times']-2)), $urls[$url]['mp3_link']);
             }
           }else{
             $urls[$url]['try_times']=1;

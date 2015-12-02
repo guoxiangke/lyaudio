@@ -23,7 +23,7 @@ if(file_exists($file_key))  {
     }
 }
 // // 1点到2点之间执行！！！
-if(!(date('G')>=1 && date('G')<=5)) {
+if(!(date('G')>=1 && date('G')<=1)) {
   echo '<br>Hour '.date('G');
   if(!isset($_GET['go']))
   return;  

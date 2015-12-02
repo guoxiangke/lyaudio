@@ -8,7 +8,7 @@ require_once('vendor/mgargano/simplehtmldom/src/simple_html_dom.php');
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
 $file_key = $file_path . date('Ymd') . '.json';
 
-if(!(date('G')>=1 && date('G')<=5)) {
+if(!(date('G')>=2 && date('G')<=2)) {
     // time 1点到2点之间执行！！！
     echo '<br>Hour '.date('G');
     if(!isset($_GET['go']))
