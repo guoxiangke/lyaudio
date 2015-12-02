@@ -142,7 +142,7 @@ foreach ($urls as $url => $value) {
           if(isset($urls[$url]['try_times'])){
             $urls[$url]['try_times']=$urls[$url]['try_times']+1;
             if($urls[$url]['try_times']==5){
-               $urls[$url]['bce'] = 'nissigz 404 error!';
+               $urls[$url]['bce'] = '404';
             }
           }else{
             $urls[$url]['try_times']=1;

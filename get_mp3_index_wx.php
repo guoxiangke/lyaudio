@@ -23,7 +23,7 @@ if(file_exists($file_key))  {
     }
 }
 // // 1点到2点之间执行！！！
-if(!(date('G')>=9 && date('G')<=12)) {
+if(!(date('G')>=1 && date('G')<=5)) {
   echo '<br>Hour '.date('G');
   if(!isset($_GET['go']))
   return;  
@@ -64,7 +64,7 @@ $url = array_flip($url);
 
 foreach ($url as $id => $value) {
   if(strstr($value,'良友圣经学院')) {
-      // continue;
+      continue;
       $titles = explode('-', $value);
       $value = $titles[1];
   }
@@ -77,6 +77,7 @@ foreach ($url as $id => $value) {
   if(strstr($value,'天路导向（')) continue; 
   if(strstr($value,'灵命日粮')) continue; 
   if(strstr($value,'听听90后')) continue; 
+
   // if(strstr($value,'善牧良言')) continue; 
   //$value = '天路导向1';
   if(strstr($value,'关怀心磁场')) $value = '心磁场';
