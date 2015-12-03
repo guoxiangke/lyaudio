@@ -81,6 +81,7 @@ foreach ($url as $id => $value) {
   // if(strstr($value,'善牧良言')) continue; 
   //$value = '天路导向1';
   if(strstr($value,'关怀心磁场')) $value = '心磁场';
+  if(strstr($value,'清心')) $value = '清心';
   if(strstr($value,'爱广播')) $value = '爱广播';
   if(strstr($value,'爱在人间')) $value = '爱在人间';
   preg_replace('[\(（][\s\S]*[\)）]', '', $value);
