@@ -72,7 +72,9 @@ foreach ($urls as $url => $value) {
             continue;
           }
         }
-
+        if(isset($urls[$url]['try_times']) && $urls[$url]['try_times']>=5){
+          continue;
+        }
         $mp3_link = $value['mp3_link'];
         preg_match('/[a-z]{2,}[\d]{6}/', $mp3_link, $matches);
 				$prefix = str_replace(date('ymd'), '', $matches[0]);
