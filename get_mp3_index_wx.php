@@ -84,7 +84,7 @@ foreach ($url as $id => $value) {
   if(strstr($value,'清心')) $value = '清心';
   if(strstr($value,'爱广播')) $value = '爱广播';
   if(strstr($value,'爱在人间')) $value = '爱在人间';
-  preg_replace('[\(（][\s\S]*[\)）]', '', $value);
+  preg_replace('/[\(（][\s\S]*[\)）]/', '', $value);
 	$urls["url.asp?id=".$id]['title'] = $value;
 }
 // file_put_contents( $file_store_key, print_r($urls, true)) ;

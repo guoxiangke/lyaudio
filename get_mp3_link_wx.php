@@ -1,4 +1,4 @@
-<meta charset="UTF-8">
+<meta charset="UTF-8"><pre>
 <?php
 //need run one time ,sometime 2 if fails!
 date_default_timezone_set('Asia/Shanghai');
@@ -57,11 +57,10 @@ foreach ($urls as $url => $value) {
             // $urls[$url]['already'] = 'already'; 
             unset($urls[$url]); 
         }
+        break;
     }
-    // break;
 }
 $write = json_encode($urls);
-// chmod($file_key,777); 
 file_put_contents( $file_key , $write);
 if(file_exists($file_key))  {
     $oldmask = umask(0);
