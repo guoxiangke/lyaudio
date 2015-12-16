@@ -1,13 +1,16 @@
 <meta charset="UTF-8"><?php
-date_default_timezone_set('Asia/Shanghai');
+require_once('config.php');
+if(DEBUG)  echo '<pre>';
 //check if get already? cron once a day!
-$file_path = dirname(__FILE__).'/cron/nzzlist/';
+$relative_path = 'cron/nissigz';
+$file_path = dirname(__FILE__).'/'.$relative_path.'/json';
+
 if (!is_dir($file_path)) {
   $oldmask = umask(0);
   mkdir($file_path,0777,true);
   umask($oldmask); 
 }
-$file_key = $file_path . date('Ymd') . '.json';
+$file_key = $file_path .'/'. date('Ymd') . '.json';
 
 if(file_exists($file_key))  {
     $file = file_get_contents($file_key);
@@ -17,7 +20,7 @@ if(file_exists($file_key))  {
       $oldmask = umask(0);
       chmod($file_path,0777);
       umask($oldmask);
-      header('location:cron/nzzlist/'. date('Ymd') . '.json');
+      header('location:cron/nissigz/json/'. date('Ymd') . '.json');
       // echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
       return;
     }
@@ -29,6 +32,7 @@ if(!(date('G')>=1 && date('G')<=1)) {
   return;  
 }
 //////////////////////////////////////////////////////////////////
+
 
 require 'vendor/autoload.php';
 // aws/aws-sdk-php
@@ -62,6 +66,9 @@ $url = array_flip($url);
 //   [79713]=>
 //   string(58) "良友圣经学院（本科文凭课程）-青少年事工"
 
+require_once('liangyou_audio_list.php');
+$list = liangyou_audio_list_bytitle();
+// if(DEBUG)  var_dump($list);
 foreach ($url as $id => $value) {
   if(strstr($value,'良友圣经学院')) {
       continue;
@@ -69,22 +76,20 @@ foreach ($url as $id => $value) {
       $value = $titles[1];
   }
   // $value = preg_replace('（([^（）]+)）','', $value);
-  //
   // $value = '生命的四季（星期一至五为直播，节目会於直播完毕后上载）';
   if(strstr($value,'生命的四季')) $value = '生命的四季';
   if(strstr($value,'空中辅导')) $value = '空中辅导';
   if(strstr($value,'无限飞行号')) $value = '无限飞行号';
-  if(strstr($value,'天路导向（')) continue; 
-  if(strstr($value,'灵命日粮')) continue; 
-  if(strstr($value,'听听90后')) continue; 
-
-  // if(strstr($value,'善牧良言')) continue; 
-  //$value = '天路导向1';
   if(strstr($value,'关怀心磁场')) $value = '心磁场';
   if(strstr($value,'清心')) $value = '清心';
   if(strstr($value,'爱广播')) $value = '爱广播';
   if(strstr($value,'爱在人间')) $value = '爱在人间';
+  if(strstr($value,'天路导向')) $value = '天路导向';
+  if(strstr($value,'善牧良言')) $value = '善牧良言';
   preg_replace('/[\(（][\s\S]*[\)）]/', '', $value);
+
+
+  if($list[$value]['bce'] != 1) continue;
 	$urls["url.asp?id=".$id]['title'] = $value;
 }
 // file_put_contents( $file_store_key, print_r($urls, true)) ;
@@ -94,4 +99,4 @@ $file = json_encode($urls);
 // // shell_exec("mkdir $file_path -p");
 file_put_contents( $file_key , $file ) ;
 // echo 'Sucess! Write File :'. $file_key;
-header('location:get_mp3_index_wx.php');
+// header('location:get_mp3_index_wx.php');

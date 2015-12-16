@@ -1,12 +1,15 @@
-<meta charset="UTF-8"><pre>
+<meta charset="UTF-8">
 <?php
+require_once('config.php');
+if(DEBUG)  echo '<pre>';
 //need run one time ,sometime 2 if fails!
-date_default_timezone_set('Asia/Shanghai');
 require 'vendor/autoload.php';
 require_once('vendor/mgargano/simplehtmldom/src/simple_html_dom.php');
 
-$file_path = dirname(__FILE__).'/cron/nzzlist/';
-$file_key = $file_path . date('Ymd') . '.json';
+
+$relative_path = 'cron/nissigz';
+$file_path = dirname(__FILE__).'/'.$relative_path.'/json';
+$file_key = $file_path .'/'. date('Ymd') . '.json';
 
 if(!(date('G')>=2 && date('G')<=2)) {
     // time 1点到2点之间执行！！！
@@ -16,7 +19,7 @@ if(!(date('G')>=2 && date('G')<=2)) {
 }
 if(!file_exists($file_key)){
     echo '<br>file not exists!';
-    header('location:get_mp3_index_wx.php');
+    // header('location:get_mp3_index_wx.php');
 }
 
 $oldmask = umask(0);
@@ -35,15 +38,17 @@ foreach ($urls as $url => $value) {
     }
 }
 if($count==count($urls) && $count!=0) {
-    echo '<br/>already download all links of mp3!'; 
-    // header('location:cron/nzzlist/'. date('Ymd') . '.json');
-    header('location:bcs_nizz.php');
+    if(DEBUG)  echo '<br/>already download all links of mp3!'; 
+    
+    if(!DEBUG) {
+        header('location:upyun_upload_nizz.php');
+    }
     return;
 }
 
-$logfile = $file_path.'logs.txt';
 
 foreach ($urls as $url => $value) {
+    if(DEBUG)  echo $value['title'].'<br>';
 	if(!isset($value['mp3_link'])){
 		$link = 'http://liangyou.nissigz.com/'.$url;
         $html = SimpleHtmlDom\file_get_html("$link");
@@ -57,15 +62,28 @@ foreach ($urls as $url => $value) {
             // $urls[$url]['already'] = 'already'; 
             unset($urls[$url]); 
         }
-        break;
+        // //指定的节目上传。       
+        // require_once('liangyou_audio_list.php');
+        // $list = liangyou_audio_list();
+        // $value = 'http://liangyou3.nissigz.com/dp/dp151215.mp3';
+        // preg_match('/\/[a-z]{2,3}\//', $mp3_link, $matches);
+        // $code = str_replace('/','',$matches[0]);
+        // if(DEBUG)  echo $code.'<br>';
+        // if(DEBUG)  echo $list[$code]['bce'].'<br>';
+        // if($list[$code]['bce']!=1){
+        //     unset($urls[$url]); 
+        //     if(DEBUG)  echo 'unset';
+        // }
+        // break;
     }
 }
 $write = json_encode($urls);
+// chmod($file_key,777); 
 file_put_contents( $file_key , $write);
-if(file_exists($file_key))  {
+if(file_exists($file_key) && !DEBUG)  {
     $oldmask = umask(0);
     chmod($file_key,0777);
     umask($oldmask); 
-    header('location:cron/nzzlist/'. date('Ymd') . '.json');
+    // header('location:cron/nissigz/json/'. date('Ymd') . '.json');
     return;
 }
