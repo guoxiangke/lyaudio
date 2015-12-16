@@ -74,7 +74,7 @@ foreach ($urls as $url => $value) {
         //     unset($urls[$url]); 
         //     if(DEBUG)  echo 'unset';
         // }
-        // break;
+        break;
     }
 }
 $write = json_encode($urls);
