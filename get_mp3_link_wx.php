@@ -19,7 +19,7 @@ if(!(date('G')>=2 && date('G')<=2)) {
 }
 if(!file_exists($file_key)){
     echo '<br>file not exists!';
-    // header('location:get_mp3_index_wx.php');
+    header('location:get_mp3_index_wx.php');
 }
 
 $oldmask = umask(0);

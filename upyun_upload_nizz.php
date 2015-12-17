@@ -2,6 +2,10 @@
 <?php
 require_once('config.php');
 if(DEBUG)  echo '<pre>';
+//https://github.com/upyun/php-sdk
+require_once('upyun.class.php');
+$upyun = new UpYun(UPBUCKETNAME, UPOPNAME, UPOPPASS,UpYun::ED_AUTO,600);
+if(DEBUG)  echo 'starting!!<br>';
 //1.get index from nizz once a day
 //2.get all links form nizz once a day
 //3.run this file 60times in 1-2点！
@@ -45,12 +49,13 @@ if($count==count($urls)&&$count!=0) {
       $write = json_encode($urls);
       //push to bce the json file!!!!
       $fields = array(
-                  'key'=>$json_file_key,
+                  'key'=>'/'.$relative_path.'/json'.'/'.date('Ymd').'.json',
                   'fileName'=>$json_file_key,
                   'user_meta'=>json_encode($value)
                 );
       //open connection 
       // $return = curl_post($fields,$json_file_key,$write,$debug);
+      $return = upyunupload($fields,$json_file_key,$write,$upyun);
       if(DEBUG&&$return) echo $your_url.' upload——done!000<br>';
       header('location:cron/nissigz/json/'. date('Ymd') . '.json');
     }
@@ -60,10 +65,6 @@ if($count==count($urls)&&$count!=0) {
     }
     
 }
-//https://github.com/upyun/php-sdk
-require_once('upyun.class.php');
-$upyun = new UpYun(UPBUCKETNAME, UPOPNAME, UPOPPASS,UpYun::ED_AUTO,600);
-if(DEBUG)  echo 'starting!!<br>';
 
 foreach ($urls as $url => $value) {
   if(!isset($value['mp3_link'])){ header('location:get_mp3_link_wx.php?go=1');}
@@ -101,13 +102,12 @@ foreach ($urls as $url => $value) {
           $urls[$url]['bce'] = $bce_url;
           $bce_url = 'http://'.CDNLINK.$bce_url;
           // var_dump($bce_url);
+          // var_dump(get_headers($bce_url));
           // var_dump(get_headers($bce_url)[0]);
           // return;
-          if(@get_headers($bce_url)[0] != 'HTTP/1.1 404 Not Found'){//远程有!!!
+          if(@get_headers($bce_url)[0] == 'HTTP/1.1 200 OK'){//远程有!!!
             //update json!!
             $urls[$url]['md5'] = 'nomd5';
-            
-            
             $write = json_encode($urls);
 
             if(!ARCHIVE && file_exists($realfile)) unlink($realfile);
