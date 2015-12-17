@@ -15,13 +15,13 @@ $file_key = $file_path .'/'. date('Ymd') . '.json';
 if(file_exists($file_key))  {
     $file = file_get_contents($file_key);
     $urls = json_decode($file,TRUE);
-    if(count($urls)>30){
+    if(count($urls)>=20){
       // echo count($urls);
       $oldmask = umask(0);
       chmod($file_path,0777);
       umask($oldmask);
-      header('location:cron/nissigz/json/'. date('Ymd') . '.json');
-      // echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
+      if(!DEBUG)header('location:cron/nissigz/json/'. date('Ymd') . '.json');
+      if(DEBUG)echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
       return;
     }
 }
@@ -48,7 +48,28 @@ if(!$html) return 'can not get html! alert!!!';
 foreach($html->find('tr') as $tr){
   $key =  $tr->find('td[align="left"]',0);
   if(!$key) continue;
-  $key = iconv('GB2312', 'UTF-8//IGNORE', $key->innertext);
+  $key = iconv('GB2312', 'UTF-8//IGNORE//TRANSLIT', $key->innertext);
+  if(!$key) continue;
+
+    if(strstr($key,'良友圣经学院')) {
+      continue;
+      $titles = explode('-', $key);
+      $key = $titles[1];
+  }
+  // $value = preg_replace('（([^（）]+)）','', $value);
+  // $value = '生命的四季（星期一至五为直播，节目会於直播完毕后上载）';
+  if(strstr($key,'生命的四季')) $key = '生命的四季';
+  if(strstr($key,'空中辅导')) $key = '空中辅导';
+  if(strstr($key,'无限飞行号')) $key = '无限飞行号';
+  if(strstr($key,'关怀心磁场')) $key = '心磁场';
+  if(strstr($key,'清心')) $key = '清心';
+  if(strstr($key,'爱广播')) $key = '爱广播';
+  if(strstr($key,'爱在人间')) $key = '爱在人间';
+  if(strstr($key,'天路导向')) $key = '天路导向';
+  if(strstr($key,'善牧良言')) $key = '善牧良言';
+  preg_replace('/[\(（][\s\S]*[\)）]/', '', $key);
+  var_dump($key);
+
   foreach($tr->find('a[target="_blank"]') as $td){
   	$id = str_replace('url.asp?id=','',$td->href);
     $url[$id] = $key;
@@ -59,7 +80,7 @@ foreach($html->find('tr') as $tr){
 $url = array_reverse($url,true);
 // var_dump($url);
 $url = array_flip($url);
-// var_dump($url);
+// // var_dump($url);
 $url = array_flip($url);
 // var_dump($url);
 // array(49) {
@@ -70,25 +91,6 @@ require_once('liangyou_audio_list.php');
 $list = liangyou_audio_list_bytitle();
 // if(DEBUG)  var_dump($list);
 foreach ($url as $id => $value) {
-  if(strstr($value,'良友圣经学院')) {
-      continue;
-      $titles = explode('-', $value);
-      $value = $titles[1];
-  }
-  // $value = preg_replace('（([^（）]+)）','', $value);
-  // $value = '生命的四季（星期一至五为直播，节目会於直播完毕后上载）';
-  if(strstr($value,'生命的四季')) $value = '生命的四季';
-  if(strstr($value,'空中辅导')) $value = '空中辅导';
-  if(strstr($value,'无限飞行号')) $value = '无限飞行号';
-  if(strstr($value,'关怀心磁场')) $value = '心磁场';
-  if(strstr($value,'清心')) $value = '清心';
-  if(strstr($value,'爱广播')) $value = '爱广播';
-  if(strstr($value,'爱在人间')) $value = '爱在人间';
-  if(strstr($value,'天路导向')) $value = '天路导向';
-  if(strstr($value,'善牧良言')) $value = '善牧良言';
-  preg_replace('/[\(（][\s\S]*[\)）]/', '', $value);
-
-
   if($list[$value]['bce'] != 1) continue;
 	$urls["url.asp?id=".$id]['title'] = $value;
 }

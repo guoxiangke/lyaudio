@@ -61,19 +61,8 @@ foreach ($urls as $url => $value) {
         if(!strstr($mp3_link, date('ymd'))){
             // $urls[$url]['already'] = 'already'; 
             unset($urls[$url]); 
+            continue;
         }
-        // //指定的节目上传。       
-        // require_once('liangyou_audio_list.php');
-        // $list = liangyou_audio_list();
-        // $value = 'http://liangyou3.nissigz.com/dp/dp151215.mp3';
-        // preg_match('/\/[a-z]{2,3}\//', $mp3_link, $matches);
-        // $code = str_replace('/','',$matches[0]);
-        // if(DEBUG)  echo $code.'<br>';
-        // if(DEBUG)  echo $list[$code]['bce'].'<br>';
-        // if($list[$code]['bce']!=1){
-        //     unset($urls[$url]); 
-        //     if(DEBUG)  echo 'unset';
-        // }
         break;
     }
 }

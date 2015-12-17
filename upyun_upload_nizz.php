@@ -8,7 +8,6 @@ if(DEBUG)  echo '<pre>';
 //4.wechat add menu 500 to the 节目！
 //TODO: 百度分片上传！！！
 //MongoDB log the data!!
-$archive = 1;
 
 $relative_path = 'cron/nissigz';
 $file_path = dirname(__FILE__).'/'.$relative_path.'/json';
@@ -65,150 +64,157 @@ if($count==count($urls)&&$count!=0) {
 require_once('upyun.class.php');
 $upyun = new UpYun(UPBUCKETNAME, UPOPNAME, UPOPPASS,UpYun::ED_AUTO,600);
 if(DEBUG)  echo 'starting!!<br>';
+
 foreach ($urls as $url => $value) {
+  if(!isset($value['mp3_link'])){ header('location:get_mp3_link_wx.php?go=1');}
   if(DEBUG)  echo $value['mp3_link'].'--'.$value['title'].'<br/>';
-	if(!isset($value['md5']) &&!isset($value['bce']) && isset($value['mp3_link'])){
-        if($domyjob){
-          if (strpos($value['mp3_link'],'/'.$jobkey.'/') !== false) {            
-            if(DEBUG)  echo 'got domyjob!!';
-          }else {
-            continue;
-          }
-        }
-        if(isset($urls[$url]['try_times']) && $urls[$url]['try_times']>=5){
-          continue;
-        }
-        $mp3_link = $value['mp3_link'];
-
-        preg_match('/\/[a-z]{2,3}\//', $mp3_link, $matches);
-        $code = str_replace('/','',$matches[0]);
-				
-				
-        $dir_stru = 'liangyou/nissigz/'.$value['title'].'/'.date('Ym');
-        $local_dir = dirname(__FILE__).'/cron/audios/'.$dir_stru;
-        
-        if (!is_dir($local_dir)) {
-            $oldmask = umask(0);
-            mkdir($local_dir,0777,true);
-            // chmod($local_dir, 0777);
-            umask($oldmask); 
-        }
-        $realfile = $local_dir .'/'.$code.date('ymd').'.mp3';
-
-
-        $objectKey = '/'.$dir_stru .'/'. date('ymd').'.mp3';
-        $bce_url = 'http://'.CDNLINK.$objectKey;
-
-        if(@get_headers($bce_url)[0] != 'HTTP/1.1 404 Not Found'){//远程有!!!
-          //update json!!
-          $urls[$url]['md5'] = 'nomd5';
-          $urls[$url]['bce'] = $objectKey;
-          $write = json_encode($urls);
-
-          if(!$archive && file_exists($realfile)) unlink($realfile);
-          file_put_contents( $json_file_key , $write); 
-          if(DEBUG)  echo $json_file_key.' updated only!<br>'; 
-          if(!DEBUG) continue;
-        }
-
-        if(file_exists($realfile)){//文件存在本地
-          if(filesize($realfile)<104724) {
-            unlink($realfile);
-            unset($urls[$url]);
-            $write = json_encode($urls);
-            file_put_contents( $json_file_key , $write); 
-            continue;
-          }
-          $urls[$url]['md5'] = md5_file($realfile);
-          $urls[$url]['bce'] = $objectKey;
-          $write = json_encode($urls);
-          if(@get_headers($bce_url)[0] == 'HTTP/1.1 404 Not Found'){//远程没有
-            $fields = array(
-                        'key'=>$objectKey,
-                        'fileName'=>$realfile,
-                        'user_meta'=>json_encode($value)
-                      );
-            // $return = curl_post($fields,$json_file_key,$write,$debug);
-            $return = upyunupload($fields,$json_file_key,$write,$upyun);
-            if(!$archive) unlink($realfile);
-          }else{//远程存在文件，只更新json
-            //update json!!
-            if(!$archive) unlink($realfile);
-            file_put_contents( $json_file_key , $write); 
-          }
-          if(DEBUG)  echo  $realfile.' file_exists!!<br>';
-          continue;
-        }
-
-        //远程获取文件！begin Create a stream
-        $opts = array(
-          'http'=>array(
-            'method'=>"GET",
-            // 'header'=>"Accept-language: en\r\n" .
-                      // "Cookie: foo=bar\r\n"
-          )
-        );
-
-        $context = stream_context_create($opts);
-
-        // Open the file using the HTTP headers set above
-        // $file = file_get_contents('http://www.example.com/', false, $context);
-        set_time_limit(0);
-        if(@get_headers($mp3_link)[0] == 'HTTP/1.1 404 Not Found'){//nissigz没有
-
-          if(isset($urls[$url]['try_times'])){
-            $urls[$url]['try_times']=$urls[$url]['try_times']+1;
-            //当3次404无当天节目时，后退到第二天的。
-            if($urls[$url]['try_times']>=3){
-              $urls[$url]['mp3_link'] = str_replace(date('ymd'), date('ymd',time()-86400*($urls[$url]['try_times']-2)), $urls[$url]['mp3_link']);
+  if(!isset($value['md5']) &&!isset($value['bce']) && isset($value['mp3_link'])){
+          if($domyjob){
+            if (strpos($value['mp3_link'],'/'.$jobkey.'/') !== false) {            
+              if(DEBUG)  echo 'got domyjob!!';
+            }else {
+              continue;
             }
-          }else{
-            $urls[$url]['try_times']=1;
           }
+          if(isset($urls[$url]['try_times']) && $urls[$url]['try_times']>=5){
+            continue;
+          }
+          $mp3_link = $value['mp3_link'];
+
+          preg_match('/\/[a-z]{2,3}\//', $mp3_link, $matches);
+          $code = str_replace('/','',$matches[0]);
+  				
+  				
+          $dir_stru = 'liangyou/nissigz/'.$value['title'].'/'.date('Ym');
+
+          $local_dir = dirname(__FILE__).'/cron/audios/'.$dir_stru;
+          
+          if (!is_dir($local_dir)) {
+              $oldmask = umask(0);
+              mkdir($local_dir,0777,true);
+              // chmod($local_dir, 0777);
+              umask($oldmask); 
+          }
+          $realfile = $local_dir .'/'.$code.date('ymd').'.mp3';
+          $objectKey = '/'.$dir_stru .'/'. date('ymd').'.mp3';
+          $bce_url = '/liangyou/nissigz/'.urlencode($value['title']).'/'.date('Ym').'/'. date('ymd').'.mp3';
+          $urls[$url]['bce'] = $bce_url;
+          $bce_url = 'http://'.CDNLINK.$bce_url;
+          // var_dump($bce_url);
+          // var_dump(get_headers($bce_url)[0]);
+          // return;
+          if(@get_headers($bce_url)[0] != 'HTTP/1.1 404 Not Found'){//远程有!!!
+            //update json!!
+            $urls[$url]['md5'] = 'nomd5';
             
-          $urls = json_encode($urls);
-          //fails
-          file_put_contents( $json_file_key , $urls);
-          continue;
-        }else{
-          $file = file_get_contents($mp3_link, false, $context);            
-        }
-        
-        // $file = @readfile($mp3_link);
-        if(!$file){
-          if(DEBUG)  echo  $realfile.' empty!!<br>';
-          // continue;
-          return;
-        }
-        file_put_contents($realfile, $file);
-        chmod($realfile, 0777); 
-        if(DEBUG)  echo  $realfile.' Download done!<br>'; 
-        // if(md5_file($realfile) == md5_file($tempfile)){
-        //     return 'log the same!';
-        // }
-        // copy($tempfile, $realfile);
-        $urls[$url]['md5'] = md5_file($realfile);
-        $urls[$url]['bce'] = $objectKey;
-        $write = json_encode($urls);
-        if(filesize($realfile)>104724) {
- 					// $url = 'http://localhost/~dale.guo/loves/lyaudio/bce/BosClientSample.php';
-					$fields = array(
-					            'key'=>$objectKey,
-					            'fileName'=>$realfile,
-					            'user_meta'=>json_encode($value)
-					        	);
-					//open connection 
-          // var_dump($fields);
-					$return = upyunupload($fields,$json_file_key,$write,$upyun);
-					if(DEBUG&&$return) echo $objectKey.' upload done!<br>';
-        }else{
-          var_dump('error:size too samll!');
-          // continue;
-        }
-        if(!$archive) unlink($realfile);
-        if($domyjob) break;
-        break;
-	}
+            
+            $write = json_encode($urls);
+
+            if(!ARCHIVE && file_exists($realfile)) unlink($realfile);
+            file_put_contents( $json_file_key , $write); 
+            if(DEBUG)  {echo $json_file_key.' updated only!<br>'; return;}
+            if(!DEBUG) continue;
+          }
+
+          if(file_exists($realfile)){//文件存在本地
+            if(filesize($realfile)<104724) {
+              unlink($realfile);
+              unset($urls[$url]);
+              $write = json_encode($urls);
+              file_put_contents( $json_file_key , $write); 
+              continue;
+            }
+            $urls[$url]['md5'] = md5_file($realfile);
+            
+            // $urls[$url]['bce'] = $bce_url;
+            $write = json_encode($urls);
+            if(@get_headers($bce_url)[0] == 'HTTP/1.1 404 Not Found'){//远程没有
+              $fields = array(
+                          'key'=>$objectKey,
+                          'fileName'=>$realfile,
+                          'user_meta'=>json_encode($value)
+                        );
+              // $return = curl_post($fields,$json_file_key,$write,$debug);
+              $return = upyunupload($fields,$json_file_key,$write,$upyun);
+              if(!ARCHIVE) unlink($realfile);
+            }else{//远程存在文件，只更新json
+              //update json!!
+              if(!ARCHIVE) unlink($realfile);
+              file_put_contents( $json_file_key , $write); 
+            }
+            if(DEBUG)  echo  $realfile.' file_exists!!<br>';
+            continue;
+          }
+
+          //远程获取文件！begin Create a stream
+          $opts = array(
+            'http'=>array(
+              'method'=>"GET",
+              // 'header'=>"Accept-language: en\r\n" .
+                        // "Cookie: foo=bar\r\n"
+            )
+          );
+
+          $context = stream_context_create($opts);
+
+          // Open the file using the HTTP headers set above
+          // $file = file_get_contents('http://www.example.com/', false, $context);
+          set_time_limit(0);
+          if(@get_headers($mp3_link)[0] == 'HTTP/1.1 404 Not Found'){//nissigz没有
+
+            if(isset($urls[$url]['try_times'])){
+              $urls[$url]['try_times']=$urls[$url]['try_times']+1;
+              //当3次404无当天节目时，后退到第二天的。
+              if($urls[$url]['try_times']>=3){
+                $urls[$url]['mp3_link'] = str_replace(date('ymd'), date('ymd',time()-86400*($urls[$url]['try_times']-2)), $urls[$url]['mp3_link']);
+              }
+            }else{
+              $urls[$url]['try_times']=1;
+            }
+              
+            $urls = json_encode($urls);
+            //fails
+            file_put_contents( $json_file_key , $urls);
+            continue;
+          }else{
+            $file = file_get_contents($mp3_link, false, $context);            
+          }
+          
+          // $file = @readfile($mp3_link);
+          if(!$file){
+            if(DEBUG)  echo  $realfile.' empty!!<br>';
+            // continue;
+            return;
+          }
+          file_put_contents($realfile, $file);
+          chmod($realfile, 0777); 
+          if(DEBUG)  echo  $realfile.' Download done!<br>'; 
+          // if(md5_file($realfile) == md5_file($tempfile)){
+          //     return 'log the same!';
+          // }
+          // copy($tempfile, $realfile);
+          $urls[$url]['md5'] = md5_file($realfile);
+          // $urls[$url]['bce'] = $bce_url;
+          $write = json_encode($urls);
+          if(filesize($realfile)>104724) {
+   					// $url = 'http://localhost/~dale.guo/loves/lyaudio/bce/BosClientSample.php';
+  					$fields = array(
+  					            'key'=>$objectKey,
+  					            'fileName'=>$realfile,
+  					            'user_meta'=>json_encode($value)
+  					        	);
+  					//open connection 
+            // var_dump($fields);
+  					$return = upyunupload($fields,$json_file_key,$write,$upyun);
+  					if(DEBUG&&$return) echo $objectKey.' upload done!<br>';
+          }else{
+            var_dump('error:size too samll!');
+            // continue;
+          }
+          if(!ARCHIVE) unlink($realfile);
+          if($domyjob) break;
+          break;
+  }
   // break;
 }
 
