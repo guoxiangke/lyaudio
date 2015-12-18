@@ -176,7 +176,7 @@ function liangyou_audio_list(){
       ),
     'ns'=>array(
       'title' =>'生命的四季',
-      'bce' => 1,
+      'bce' => 0,
       'txly'=>'http://www.txly1.net/program/1njciu-3b2p1o',
       'prefix'=>$prefix['33'],
       'day'=>'15',//17=>1-7 15=>1-5 67=>weekend 7=>7 6=>6 135=>135
