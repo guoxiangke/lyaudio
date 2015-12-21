@@ -1,6 +1,7 @@
 <meta charset="UTF-8">
 <?php
 require_once('config.php');
+require_once('tools.php');
 if(DEBUG)  echo '<pre>';
 //https://github.com/upyun/php-sdk
 require_once('upyun.class.php');
@@ -12,10 +13,8 @@ if(DEBUG)  echo 'starting!!<br>';
 //4.wechat add menu 500 to the 节目！
 //TODO: 百度分片上传！！！
 //MongoDB log the data!!
-
-$relative_path = 'cron/nissigz';
-$file_path = dirname(__FILE__).'/'.$relative_path.'/json';
-$json_file_key = $file_path.'/'.date('Ymd').'.json';
+$relative_json_file = '/cron/nissigz/json/'.date('Ymd').'.json';
+$json_file_key = dirname(__FILE__).'/'.$relative_json_file;
 if(!file_exists($json_file_key)){
     header('location:get_mp3_index_wx.php');
 }
@@ -35,36 +34,35 @@ if(isset($_GET['key'])){
 // check if all done download link
 $count = 0;
 foreach ($urls as $url => $value) {
-    if(isset($value['bce'])){
-        $count++;
-    }
+  if(isset($value['bce'])){
+      $count++;
+  }
 }
+
 if($count==count($urls)&&$count!=0) {
-    echo '<br/>already download all links of mp3!'; 
-    $your_url = 'http://'.CDNLINK.'/'.$json_file_key;
-    if(@get_headers($your_url)[0] == 'HTTP/1.1 404 Not Found')
-    {
-      // The file doesn't exist
-      $value = array('from'=>'http://www.yongbuzhixi.com');
-      $write = json_encode($urls);
-      //push to bce the json file!!!!
-      $fields = array(
-                  'key'=>'/'.$relative_path.'/json'.'/'.date('Ymd').'.json',
-                  'fileName'=>$json_file_key,
-                  'user_meta'=>json_encode($value)
-                );
-      //open connection 
-      // $return = curl_post($fields,$json_file_key,$write,$debug);
-      $return = upyunupload($fields,$json_file_key,$write,$upyun);
-      if(DEBUG&&$return) echo $your_url.' upload——done!000<br>';
-      header('location:cron/nissigz/json/'. date('Ymd') . '.json');
-    }
-    else
-    {
-      if(DEBUG) echo $your_url.' upload——done!111<br>';
-      return; // The file exists
-    }
-    
+  if(DEBUG) echo '<br/>already download all links of mp3!';
+  $link = upyun_get_link($relative_json_file);
+
+  if(@get_headers($link)[0] == 'HTTP/1.1 404 Not Found')
+  {
+    // The file doesn't exist
+    $value = array('from'=>'http://www.yongbuzhixi.com');
+    $write = json_encode($urls);
+    //push to bce the json file!!!!
+    $fields = array(
+      'key'=>$relative_json_file,
+      'fileName'=>$json_file_key,
+      'user_meta'=>json_encode($value)
+    );
+    $return = upyunupload($fields,$json_file_key,$write,$upyun);
+    if(DEBUG&&$return) echo $link.' upload——done!000<br>';
+    if(!DEBUG)header('location:cron/nissigz/json/'. date('Ymd') . '.json');
+  }
+  else
+  {
+    if(DEBUG) echo $link.' upload——done!111<br>';
+  }
+  return; // The file exists
 }
 
 foreach ($urls as $url => $value) {
@@ -99,18 +97,16 @@ foreach ($urls as $url => $value) {
           }
           $realfile = $local_dir .'/'.$code.date('ymd').'.mp3';
           $objectKey = '/'.$dir_stru .'/'.$code. date('ymd').'.mp3';
-          $bce_url = '/liangyou/nissigz/'.urlencode($value['title']).'/'.date('Ym').'/'. date('ymd').'.mp3';
+          $bce_url = '/liangyou/nissigz/'.urlencode($value['title']).'/'.date('Ym').'/'.$code.date('ymd').'.mp3';
           $urls[$url]['bce'] = $bce_url;
-          $bce_url = 'http://'.CDNLINK.$bce_url;
-          // var_dump($bce_url);
-          // var_dump(get_headers($bce_url));
-          // var_dump(get_headers($bce_url)[0]);
-          // return;
+          
+          $bce_url = upyun_get_link($objectKey);
+          if(DEBUG)  var_dump($bce_url);
+          if(DEBUG)  var_dump(get_headers($bce_url)[0]);
           if(@get_headers($bce_url)[0] == 'HTTP/1.1 200 OK'){//远程有!!!
             //update json!!
             $urls[$url]['md5'] = 'nomd5';
             $write = json_encode($urls);
-
             if(!ARCHIVE && file_exists($realfile)) unlink($realfile);
             file_put_contents( $json_file_key , $write); 
             if(DEBUG)  {echo $json_file_key.' updated only!<br>'; return;}
@@ -126,8 +122,6 @@ foreach ($urls as $url => $value) {
               continue;
             }
             $urls[$url]['md5'] = md5_file($realfile);
-            
-            // $urls[$url]['bce'] = $bce_url;
             $write = json_encode($urls);
             if(@get_headers($bce_url)[0] == 'HTTP/1.1 404 Not Found'){//远程没有
               $fields = array(
