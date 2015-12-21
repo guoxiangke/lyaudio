@@ -61,7 +61,8 @@ if($count==count($urls)&&$count!=0) {
     }
     else
     {
-        return; // The file exists
+      if(DEBUG) echo $your_url.' upload——done!111<br>';
+      return; // The file exists
     }
     
 }
