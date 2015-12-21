@@ -52,6 +52,7 @@ foreach ($urls as $url => $value) {
 	if(!isset($value['mp3_link'])){
 		$link = 'http://liangyou.nissigz.com/'.$url;
         $html = SimpleHtmlDom\file_get_html("$link");
+        if(!$html) continue;
         $meta = $html->find('meta[http-equiv="refresh"]');
         $meta = array_shift($meta)->content;
         $mp3_link = str_replace('1; url=','',$meta);

@@ -1,5 +1,4 @@
 <meta charset="UTF-8">
-<pre>
 <?php
 //1.get index from nizz once a day
 //2.get all links form nizz once a day
@@ -7,10 +6,11 @@
 //4.wechat add menu 500 to the 节目！
 //TODO: 百度分片上传！！！
 //MongoDB log the data!!
-$debug = 0;
-$archive = 0;
+require_once('config.php');
+if(DEBUG)  echo '<pre>';
+$archive = 1;
 date_default_timezone_set('Asia/Shanghai');
-$file_path = dirname(__FILE__).'/cron/nzzlist/';
+$file_path = dirname(__FILE__).'/cron/nissigz/';
 $json_file_key = $file_path . date('Ymd') . '.json';
 if(!file_exists($json_file_key)){
     echo '<br>file not exists!';
@@ -28,7 +28,7 @@ if(isset($_GET['key'])){
   $domyjob = FALSE;
   //go cron work;
 }
-if($debug) echo 'starting!!<br>';
+if(DEBUG)  echo 'starting!!<br>';
 // check if all done download link
 $count = 0;
 foreach ($urls as $url => $value) {
@@ -53,7 +53,7 @@ if($count==count($urls)&&$count!=0) {
       //open connection 
       $return = curl_post($fields,$json_file_key,$write,$debug);
       if($debug&&$return) echo $your_url.' upload——done!000<br>';
-      header('location:cron/nzzlist/'. date('Ymd') . '.json');
+      header('location:cron/nissigz/'. date('Ymd') . '.json');
     }
     else
     {
@@ -63,11 +63,11 @@ if($count==count($urls)&&$count!=0) {
 }
 
 foreach ($urls as $url => $value) {
-  if($debug) echo $value['mp3_link'].'--'.$value['title'].'<br/>';
+  if(DEBUG)  echo $value['mp3_link'].'--'.$value['title'].'<br/>';
 	if(!isset($value['md5']) &&!isset($value['bce']) && isset($value['mp3_link'])){
         if($domyjob){
           if (strpos($value['mp3_link'],'/'.$jobkey.'/') !== false) {            
-            if($debug) echo 'got domyjob!!';
+            if(DEBUG)  echo 'got domyjob!!';
           }else {
             continue;
           }
@@ -79,8 +79,9 @@ foreach ($urls as $url => $value) {
         preg_match('/[a-z]{2,}[\d]{6}/', $mp3_link, $matches);
 				$prefix = str_replace(date('ymd'), '', $matches[0]);
 				$filename = $matches[0];
-				$local_dir = dirname(__FILE__).'/audios/';//tempfile
-        if($archive) $local_dir = dirname(__FILE__).'/audios/liangyou/audio/'.date('Ym').'/'.$value['title'];
+				
+        $dir_stru = 'liangyou/nizz/'.$value['title'].'/'.date('Ym');
+        $local_dir = dirname(__FILE__).'/cron/audios/'.$dir_stru;
         
         if (!is_dir($local_dir)) {
             $oldmask = umask(0);
@@ -88,10 +89,10 @@ foreach ($urls as $url => $value) {
             // chmod($local_dir, 0777);
             umask($oldmask); 
         }
-        $realfile = $local_dir . $filename .  '.mp3';
+        $realfile = $local_dir .'/'. $filename .  '.mp3';
 
 
-        $objectKey = '/lyaudio/nizz/'.$prefix.'/'.date('ym').'/'.$prefix.date('ymd').'.mp3';
+        $objectKey = $dir_stru . '/' . $prefix . date('ymd').'.mp3';
         $bce_url = 'http://729ly.bj.bcebos.com'.$objectKey;
 
         if(@get_headers($bce_url)[0] != 'HTTP/1.1 404 Not Found'){//远程有!!!
@@ -102,7 +103,7 @@ foreach ($urls as $url => $value) {
 
           if(!$archive && file_exists($realfile)) unlink($realfile);
           file_put_contents( $json_file_key , $write); 
-          if($debug) echo $json_file_key.' updated only!<br>'; 
+          if(DEBUG)  echo $json_file_key.' updated only!<br>'; 
           continue;
         }
         if(file_exists($realfile)){//文件存在本地
@@ -122,7 +123,7 @@ foreach ($urls as $url => $value) {
             if(!$archive) unlink($realfile);
             file_put_contents( $json_file_key , $write); 
           }
-          if($debug) echo  $realfile.' file_exists!!<br>';
+          if(DEBUG)  echo  $realfile.' file_exists!!<br>';
           continue;
         }
         //远程获取文件！begin Create a stream
@@ -161,18 +162,19 @@ foreach ($urls as $url => $value) {
         
         // $file = @readfile($mp3_link);
         if(!$file){
-          if($debug) echo  $realfile.' empty!!<br>';
+          if(DEBUG)  echo  $realfile.' empty!!<br>';
           continue;
         }
         file_put_contents($realfile, $file);
         chmod($realfile, 0777); 
-        if($debug) echo  $realfile.' Download done!<br>'; 
+        if(DEBUG)  echo  $realfile.' Download done!<br>'; 
         // if(md5_file($realfile) == md5_file($tempfile)){
         //     return 'log the same!';
         // }
         // copy($tempfile, $realfile);
         $urls[$url]['md5'] = md5_file($realfile);
-        $objectKey = '/lyaudio/nizz/'.$prefix.'/'.date('ym').'/'.$prefix.date('ymd').'.mp3';
+        // $objectKey = '/lyaudio/nizz/'.$prefix.'/'.date('ym').'/'.$prefix.date('ymd').'.mp3';
+
         $urls[$url]['bce'] = $objectKey;
         $write = json_encode($urls);
         if(filesize($realfile)>104724) {
@@ -190,7 +192,7 @@ foreach ($urls as $url => $value) {
         if($domyjob) break;
         break;
 	}
-
+break;
 }
 
 function curl_post($fields,$json_file_key,$write,$debug=0){
@@ -198,7 +200,7 @@ function curl_post($fields,$json_file_key,$write,$debug=0){
   $uri_parts = explode('?', $_SERVER['REQUEST_URI'], 2);
   // echo 'http://' . $_SERVER['HTTP_HOST'] . $uri_parts[0];
 	$url = "http://".$server.$uri_parts[0].'bce/BosClientSample.php';
-	if($debug) echo($url);
+	if(DEBUG)  echo($url);
 	$url = str_replace('bcs_nizz.php', '', $url);
 	//open connection
 	$ch = curl_init() ;
@@ -212,11 +214,11 @@ function curl_post($fields,$json_file_key,$write,$debug=0){
 	$result = ob_get_contents() ;
 	ob_end_clean();
 
-	if($debug) echo '<br>curl: '.$result;
+	if(DEBUG)  echo '<br>curl: '.$result;
 	if($result){
 		//upload sucess!
     file_put_contents( $json_file_key , $write); 
-    if($debug) echo $json_file_key.' updated!<br>'; 
+    if(DEBUG)  echo $json_file_key.' updated!<br>'; 
     curl_close($ch) ;
     return TRUE;
 	}
