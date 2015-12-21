@@ -97,7 +97,7 @@ foreach ($urls as $url => $value) {
               umask($oldmask); 
           }
           $realfile = $local_dir .'/'.$code.date('ymd').'.mp3';
-          $objectKey = '/'.$dir_stru .'/'. date('ymd').'.mp3';
+          $objectKey = '/'.$dir_stru .'/'.$code. date('ymd').'.mp3';
           $bce_url = '/liangyou/nissigz/'.urlencode($value['title']).'/'.date('Ym').'/'. date('ymd').'.mp3';
           $urls[$url]['bce'] = $bce_url;
           $bce_url = 'http://'.CDNLINK.$bce_url;
@@ -188,21 +188,18 @@ foreach ($urls as $url => $value) {
           }
           file_put_contents($realfile, $file);
           chmod($realfile, 0777); 
-          if(DEBUG)  echo  $realfile.' Download done!<br>'; 
-          // if(md5_file($realfile) == md5_file($tempfile)){
-          //     return 'log the same!';
-          // }
+          if(DEBUG)  echo  $realfile.' Download done!<br>';
           // copy($tempfile, $realfile);
           $urls[$url]['md5'] = md5_file($realfile);
           // $urls[$url]['bce'] = $bce_url;
           $write = json_encode($urls);
-          if(filesize($realfile)>104724) {
+          if(filesize($realfile)>3000000) { //3M
    					// $url = 'http://localhost/~dale.guo/loves/lyaudio/bce/BosClientSample.php';
   					$fields = array(
-  					            'key'=>$objectKey,
-  					            'fileName'=>$realfile,
-  					            'user_meta'=>json_encode($value)
-  					        	);
+	            'key'=>$objectKey,
+	            'fileName'=>$realfile,
+	            'user_meta'=>json_encode($value)
+	        	);
   					//open connection 
             // var_dump($fields);
   					$return = upyunupload($fields,$json_file_key,$write,$upyun);

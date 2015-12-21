@@ -15,7 +15,7 @@ $file_key = $file_path .'/'. date('Ymd') . '.json';
 if(file_exists($file_key))  {
     $file = file_get_contents($file_key);
     $urls = json_decode($file,TRUE);
-    if(count($urls)>=20){
+    if(count($urls)>=19){
       // echo count($urls);
       $oldmask = umask(0);
       chmod($file_path,0777);
