@@ -99,6 +99,7 @@ foreach ($urls as $url => $value) {
           $objectKey = '/'.$dir_stru .'/'.$code. date('ymd').'.mp3';
           $bce_url = '/liangyou/nissigz/'.urlencode($value['title']).'/'.date('Ym').'/'.$code.date('ymd').'.mp3';
           $urls[$url]['bce'] = $bce_url;
+          $urls[$url]['objectKey'] = $objectKey;
           
           $bce_url = upyun_get_link($objectKey);
           if(DEBUG)  var_dump($bce_url);
