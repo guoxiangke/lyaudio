@@ -13,7 +13,7 @@ if(DEBUG)  echo 'starting!!<br>';
 //4.wechat add menu 500 to the 节目！
 //TODO: 百度分片上传！！！
 //MongoDB log the data!!
-$relative_json_file = '/cron/nissigz/json/'.date('Ymd').'.json';
+$relative_json_file = '/cron/nissigz/json/'.date('Ym').'/'.date('Ymd').'.json';
 $json_file_key = dirname(__FILE__).'/'.$relative_json_file;
 if(!file_exists($json_file_key)){
     header('location:get_mp3_index_wx.php');

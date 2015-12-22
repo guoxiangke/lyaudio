@@ -8,7 +8,7 @@ require_once('vendor/mgargano/simplehtmldom/src/simple_html_dom.php');
 
 
 $relative_path = 'cron/nissigz';
-$file_path = dirname(__FILE__).'/'.$relative_path.'/json';
+$file_path = dirname(__FILE__).'/'.$relative_path.'/json/'.date('Ym');
 $file_key = $file_path .'/'. date('Ymd') . '.json';
 
 if(!(date('G')>=2 && date('G')<=2)) {

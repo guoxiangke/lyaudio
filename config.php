@@ -8,6 +8,6 @@ define('UPOPPASS', 'lyradiolyradio');
 define('CDNLINK', UPBUCKETNAME.'.b0.upaiyun.com');
 
 define('DEBUG', TRUE);
-define('ARCHIVE', TRUE);
+define('ARCHIVE', 0);
 
 date_default_timezone_set('Asia/Shanghai');

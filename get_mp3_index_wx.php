@@ -3,7 +3,7 @@ require_once('config.php');
 if(DEBUG)  echo '<pre>';
 //check if get already? cron once a day!
 $relative_path = 'cron/nissigz';
-$file_path = dirname(__FILE__).'/'.$relative_path.'/json';
+$file_path = dirname(__FILE__).'/'.$relative_path.'/json/'.date('Ym');
 
 if (!is_dir($file_path)) {
   $oldmask = umask(0);
@@ -20,7 +20,7 @@ if(file_exists($file_key))  {
       $oldmask = umask(0);
       chmod($file_path,0777);
       umask($oldmask);
-      if(!DEBUG)header('location:cron/nissigz/json/'. date('Ymd') . '.json');
+      if(!DEBUG)header('location:cron/nissigz/json/'.date('Ym').'/'.date('Ymd') . '.json');
       if(DEBUG)echo 'Warning: File ' . $file_key . ' exists! Exit!!!';
       return;
     }
