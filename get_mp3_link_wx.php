@@ -66,6 +66,7 @@ foreach ($urls as $url => $value) {
         }
         break;
     }
+    break;
 }
 $write = json_encode($urls);
 // chmod($file_key,777); 
