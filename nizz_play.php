@@ -6,7 +6,9 @@ if (!is_dir($file_path)) {
     mkdir($file_path, 0777, true);
 }
 date_default_timezone_set('Asia/Shanghai');
-$file_key = $file_path . date('Ymd') . '.json';
+
+$file_path = dirname(__FILE__).'/cron/nissigz/json/'.date('Ym') ;
+$file_key = '/'.$file_path . date('Ymd') . '.json';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,20 +44,6 @@ $file_key = $file_path . date('Ymd') . '.json';
       <div class="bg-no">
       	<?php if(!isset($_GET['order'])):?>
       	<h5><a href="?order=1" style="color:#FFF">顺序排列</a></h5><?php endif;?>
-      	<h5><a href="/index.php" style="color:#FFF">线路一</a></h5>
-        <h5><a href="/download_play.php" style="color:#FFF">线路三</a></h5>
-				<h5><a href="/player/marrage_training.php" style="color:#FFF">婚姻辅导</a></h5>
-        <h5><a href="/player/fdjc.php" style="color:#FFF">辅导基础-空中辅导</a></h5>
-        <h5><a href="/player/yong.php" style="color:#FFF">青少年事工</a></h5>
-        <h5><a href="/xwz.php" style="color:#FFF">小王子</a></h5>
-        <h5><a href="/fm/index.php?fm=607" style="color:#FFF">欢乐卡恰碰</a></h5>
-        <h5><a href="/fm/index.php?fm=620" style="color:#FFF">灵命日粮</a></h5>
-        <h5><a href="/fm/index.php?fm=608" style="color:#FFF">绝妙当家</a></h5>
-        <h5><a href="/fm/index.php?fm=612" style="color:#FFF">书香园地</a></h5>
-        <h5><a href="/fm/index.php?fm=622" style="color:#FFF">圣言盛宴</a></h5>
-        <h5><a href="/fm/index.php?fm=623" style="color:#FFF">齐来颂扬</a></h5>
-        <h5><a href="/fm/index.php?fm=628" style="color:#FFF">空中崇拜</a></h5>
-        <h5><a href="/fm/index.php?fm=628" style="color:#FFF">空中崇拜</a></h5>
         <h5><a href="/xz.php" style="color:#FFF">下载收听</a></h5>
       </div>    
       <audio id="audio" preload="auto" tabindex="0" controls type="audio/mpeg">
@@ -82,7 +70,7 @@ $file_key = $file_path . date('Ymd') . '.json';
         	$mp3_link = $value['mp3_link'];
         	if(isset($value['bce'])){
         		$title = '【'.$value['title'].'】';
-        		$mp3_link = 'http://bos.yongbuzhixi.com/'.$value['bce'];
+        		// $mp3_link = 'http://bos.yongbuzhixi.com/'.$value['bce'];
         	}
           $new_urls[] = array(
             'title' =>  $title,
