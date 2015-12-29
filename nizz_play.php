@@ -8,7 +8,7 @@ if (!is_dir($file_path)) {
 date_default_timezone_set('Asia/Shanghai');
 
 $file_path = dirname(__FILE__).'/cron/nissigz/json/'.date('Ym') ;
-$file_key = '/'.$file_path . date('Ymd') . '.json';
+$file_key = $file_path .'/'. date('Ymd') . '.json';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,6 +67,7 @@ $file_key = '/'.$file_path . date('Ymd') . '.json';
         $count = 1;
         foreach ($urls as $url => $value) {
         	$title = $value['title'];
+          if(!isset($value['mp3_link'])) continue;
         	$mp3_link = $value['mp3_link'];
         	if(isset($value['bce'])){
         		$title = '【'.$value['title'].'】';
@@ -74,7 +75,7 @@ $file_key = '/'.$file_path . date('Ymd') . '.json';
         	}
           $new_urls[] = array(
             'title' =>  $title,
-            'date'  =>  $value['date'],
+            'date'  =>  '',
             'url'   =>  $mp3_link,
             'desc'  =>  $title,
           );
