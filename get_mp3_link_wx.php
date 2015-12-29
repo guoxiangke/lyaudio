@@ -51,6 +51,8 @@ foreach ($urls as $url => $value) {
     if(DEBUG)  echo $value['title'].'<br>';
 	if(!isset($value['mp3_link'])){
 		$link = 'http://liangyou.nissigz.com/'.$url;
+        if(DEBUG)  echo $link.'<br>';
+        // if(DEBUG)  var_dump(get_headers($link));
         $html = SimpleHtmlDom\file_get_html("$link");
         if(!$html) continue;
         $meta = $html->find('meta[http-equiv="refresh"]');
@@ -66,7 +68,6 @@ foreach ($urls as $url => $value) {
         }
         break;
     }
-    break;
 }
 $write = json_encode($urls);
 // chmod($file_key,777); 

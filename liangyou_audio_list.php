@@ -1,11 +1,21 @@
 <?php
 function liangyou_audio_list_bytitle(){
-	$audios = liangyou_audio_list();
-	foreach ($audios as $code => $audio) {
-		$audios[$audio['title']] = $audios[$code];
-		unset($audios[$code]); 
-	}
-	return $audios;
+  $audios = liangyou_audio_list();
+  foreach ($audios as $code => $audio) {
+    $audios[$audio['title']] = $audios[$code];
+    unset($audios[$code]); 
+  }
+  return $audios;
+}
+
+function liangyou_audio_list_byindex(){
+  $audios = liangyou_audio_list();
+  foreach ($audios as $code => $audio) {
+    $audios[$code]['code'] = $code;
+    $audios[$audio['index']] = $audios[$code];
+    unset($audios[$code]); 
+  }
+  return $audios;
 }
 
 function liangyou_audio_list(){
