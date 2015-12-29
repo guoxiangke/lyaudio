@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="15以斯拉记/15以斯拉记_09.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-15-cid-10.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">以斯拉记(拉) 第9章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>9:1</span>
+        <p>这事作完了，众首领来见我，说：“以色列民和祭司并利未人，没有离绝迦南人、赫人、比利洗人、耶布斯人、亚扪人、摩押人、埃及人、亚摩利人，仍效法这些国的民，行可憎的事。</p>
+      </li>
+                        <li><span>9:2</span>
+        <p>因他们为自己和儿子娶了这些外邦女子为妻，以致圣洁的种类和这些国的民混杂，而且首领和官长在这事上为罪魁。”</p>
+      </li>
+                        <li><span>9:3</span>
+        <p>我一听见这事，就撕裂衣服和外袍，拔了头发和胡须，惊惧忧闷而坐。</p>
+      </li>
+                        <li><span>9:4</span>
+        <p>凡为以色列  神言语战兢的，都因这被掳归回之人所犯的罪，聚集到我这里来，我就惊惧忧闷而坐，直到献晚祭的时候。</p>
+      </li>
+                        <li><span>9:5</span>
+        <p>献晚祭的时候，我起来，心中愁苦，穿着撕裂的衣袍，双膝跪下向耶和华我的  神举手，</p>
+      </li>
+                        <li><span>9:6</span>
+        <p>说：“我的  神啊，我抱愧蒙羞，不敢向我  神仰面，因为我们的罪孽灭顶，我们的罪恶滔天。</p>
+      </li>
+                        <li><span>9:7</span>
+        <p>从我们列祖直到今日，我们的罪恶甚重，因我们的罪孽，我们和君王、祭司都交在外邦列王的手中，杀害、掳掠、抢夺、脸上蒙羞，正如今日的光景。</p>
+      </li>
+                        <li><span>9:8</span>
+        <p>现在耶和华我们的  神暂且施恩与我们，给我们留些逃脱的人，使我们安稳如钉子，钉在他的圣所，我们的  神好光照我们的眼目，使我们在受辖制之中稍微复兴。</p>
+      </li>
+                        <li><span>9:9</span>
+        <p>我们是奴仆，然而在受辖制之中，我们的  神仍没有丢弃我们，在波斯王眼前向我们施恩，叫我们复兴，能重建我们  神的殿，修其毁坏之处，使我们在犹大和耶路撒冷有墙垣。”</p>
+      </li>
+                        <li><span>9:10</span>
+        <p>“我们的  神啊，既是如此，我们还有什么话可说呢？因为我们已经离弃你的命令，</p>
+      </li>
+                        <li><span>9:11</span>
+        <p>就是你藉你仆人众先知所吩咐的，说：‘你们要去得为业之地是污秽之地，因列国之民的污秽和可憎的事，叫全地从这边直到那边满了污秽。</p>
+      </li>
+                        <li><span>9:12</span>
+        <p>所以不可将你们的女儿嫁他们的儿子；也不可为你们的儿子娶他们的女儿。永不可求他们的平安和他们的利益，这样你们就可以强盛，吃这地的美物，并遗留这地给你们的子孙永远为业。’</p>
+      </li>
+                        <li><span>9:13</span>
+        <p>神啊，我们因自己的恶行和大罪，遭遇了这一切的事，并且你刑罚我们轻于我们罪所当得的，又给我们留下这些人。</p>
+      </li>
+                        <li><span>9:14</span>
+        <p>我们岂可再违背你的命令，与这行可憎之事的民结亲呢？若这样行，你岂不向我们发怒，将我们灭绝，以致没有一个剩下逃脱的人吗？</p>
+      </li>
+                        <li><span>9:15</span>
+        <p>耶和华以色列的  神啊！因你是公义的，我们这剩下的人才得逃脱，正如今日的光景。看哪，我们在你面前有罪恶，因此无人在你面前站立得住。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共10首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>以斯拉记(拉)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>以斯拉记(拉)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>以斯拉记(拉)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>以斯拉记(拉)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>以斯拉记(拉)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>以斯拉记(拉)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>以斯拉记(拉)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>以斯拉记(拉)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>以斯拉记(拉)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>以斯拉记(拉)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-15-cid-8.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-15-cid-10.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

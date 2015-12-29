@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="40马太福音/40马太福音_03.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-40-cid-4.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">马太福音(太) 第3章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>3:1</span>
+        <p>那时，有施洗的约翰出来，在犹太的旷野传道，说：</p>
+      </li>
+                        <li><span>3:2</span>
+        <p>“天国近了，你们应当悔改！”</p>
+      </li>
+                        <li><span>3:3</span>
+        <p>这人就是先知以赛亚所说的，他说：“在旷野有人声喊着说：‘预备主的道，修直他的路！’”</p>
+      </li>
+                        <li><span>3:4</span>
+        <p>这约翰身穿骆驼毛的衣服，腰束皮带，吃的是蝗虫、野蜜。</p>
+      </li>
+                        <li><span>3:5</span>
+        <p>那时，耶路撒冷和犹太全地，并约旦河一带地方的人，都出去到约翰那里，</p>
+      </li>
+                        <li><span>3:6</span>
+        <p>承认他们的罪，在约旦河里受他的洗。</p>
+      </li>
+                        <li><span>3:7</span>
+        <p>约翰看见许多法利赛人和撒都该人也来受洗，就对他们说：“毒蛇的种类！谁指示你们逃避将来的忿怒呢？</p>
+      </li>
+                        <li><span>3:8</span>
+        <p>你们要结出果子来，与悔改的心相称。</p>
+      </li>
+                        <li><span>3:9</span>
+        <p>不要自己心里说：‘有亚伯拉罕为我们的祖宗。’我告诉你们：  神能从这些石头中给亚伯拉罕兴起子孙来。</p>
+      </li>
+                        <li><span>3:10</span>
+        <p>现在斧子已经放在树根上，凡不结好果子的树，就砍下来丢在火里。</p>
+      </li>
+                        <li><span>3:11</span>
+        <p>我是用水给你们施洗，叫你们悔改；但那在我以后来的，能力比我更大，我就是给他提鞋也不配。他要用圣灵与火给你们施洗。</p>
+      </li>
+                        <li><span>3:12</span>
+        <p>他手里拿着簸箕，要扬净他的场，把麦子收在仓里，把糠用不灭的火烧尽了。”</p>
+      </li>
+                                    <li><span>3:13</span>
+        <p>当下，耶稣从加利利来到约旦河，见了约翰，要受他的洗。</p>
+      </li>
+                        <li><span>3:14</span>
+        <p>约翰想要拦住他，说：“我当受你的洗，你反倒上我这里来吗？”</p>
+      </li>
+                        <li><span>3:15</span>
+        <p>耶稣回答说：“你暂且许我，因为我们理当这样尽诸般的义（或作“礼”）。”于是约翰许了他。</p>
+      </li>
+                        <li><span>3:16</span>
+        <p>耶稣受了洗，随即从水里上来。天忽然为他开了，他就看见  神的灵彷佛鸽子降下，落在他身上。</p>
+      </li>
+                        <li><span>3:17</span>
+        <p>从天上有声音说：“这是我的爱子，我所喜悦的。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共28首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>马太福音(太)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>马太福音(太)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>马太福音(太)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>马太福音(太)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>马太福音(太)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>马太福音(太)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>马太福音(太)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>马太福音(太)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>马太福音(太)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>马太福音(太)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>马太福音(太)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>马太福音(太)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>马太福音(太)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>马太福音(太)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>马太福音(太)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>马太福音(太)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>马太福音(太)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>马太福音(太)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>马太福音(太)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>马太福音(太)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>马太福音(太)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>马太福音(太)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>马太福音(太)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>马太福音(太)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>马太福音(太)第25章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>马太福音(太)第26章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>马太福音(太)第27章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>马太福音(太)第28章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-40-cid-2.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-40-cid-4.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

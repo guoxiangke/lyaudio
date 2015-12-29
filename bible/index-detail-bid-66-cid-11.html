@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="66启示录/66启示录_11.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-66-cid-12.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">启示录(启) 第11章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>11:1</span>
+        <p>有一根苇子赐给我，当作量度的杖，且有话说：“起来，将  神的殿和祭坛，并在殿中礼拜的人都量一量。</p>
+      </li>
+                        <li><span>11:2</span>
+        <p>只是殿外的院子要留下不用量，因为这是给了外邦人的，他们要践踏圣城四十二个月。</p>
+      </li>
+                        <li><span>11:3</span>
+        <p>我要使我那两个见证人，穿着毛衣，传道一千二百六十天。”</p>
+      </li>
+                        <li><span>11:4</span>
+        <p>他们就是那两棵橄榄树，两个灯台，立在世界之主面前的。</p>
+      </li>
+                        <li><span>11:5</span>
+        <p>若有人想要害他们，就有火从他们口中出来，烧灭仇敌；凡想要害他们的，都必这样被杀。</p>
+      </li>
+                        <li><span>11:6</span>
+        <p>这二人有权柄，在他们传道的日子叫天闭塞不下雨；又有权柄叫水变为血，并且能随时随意用各样的灾殃攻击世界。</p>
+      </li>
+                        <li><span>11:7</span>
+        <p>他们作完见证的时候，那从无底坑里上来的兽必与他们交战，并且得胜，把他们杀了。</p>
+      </li>
+                        <li><span>11:8</span>
+        <p>他们的尸首就倒在大城里的街上，这城按着灵意叫所多玛，又叫埃及，就是他们的主钉十字架之处。</p>
+      </li>
+                        <li><span>11:9</span>
+        <p>从各民、各族、各方、各国中，有人观看他们的尸首三天半，又不许把尸首放在坟墓里。</p>
+      </li>
+                        <li><span>11:10</span>
+        <p>住在地上的人就为他们欢喜快乐，互相馈送礼物，因这两位先知曾叫住在地上的人受痛苦。</p>
+      </li>
+                        <li><span>11:11</span>
+        <p>过了这三天半，有生气从  神那里进入他们里面，他们就站起来；看见他们的人甚是害怕。</p>
+      </li>
+                        <li><span>11:12</span>
+        <p>两位先知听见有大声音从天上来，对他们说：“上到这里来。”他们就驾着云上了天，他们的仇敌也看见了。</p>
+      </li>
+                        <li><span>11:13</span>
+        <p>正在那时候，地大震动，城就倒塌了十分之一，因地震而死的有七千人，其余的都恐惧，归荣耀给天上的  神。</p>
+      </li>
+                        <li><span>11:14</span>
+        <p>第二样灾祸过去，第三样灾祸快到了。</p>
+      </li>
+                                    <li><span>11:15</span>
+        <p>第七位天使吹号，天上就有大声音说：“世上的国成了我主和主基督的国；他要作王，直到永永远远。”</p>
+      </li>
+                        <li><span>11:16</span>
+        <p>在  神面前，坐在自己位上的二十四位长老，就面伏于地敬拜  神，说：</p>
+      </li>
+                        <li><span>11:17</span>
+        <p>“昔在、今在的主  神，全能者啊，我们感谢你！因你执掌大权作王了。</p>
+      </li>
+                        <li><span>11:18</span>
+        <p>外邦发怒，你的忿怒也临到了，审判死人的时候也到了；你的仆人众先知和众圣徒，凡敬畏你名的人，连大带小得赏赐的时候也到了；你败坏那些败坏世界之人的时候也就到了。”</p>
+      </li>
+                        <li><span>11:19</span>
+        <p>当时，  神天上的殿开了，在他殿中现出他的约柜，随后有闪电、声音、雷轰、地震、大雹。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共22首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>启示录(启)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>启示录(启)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>启示录(启)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>启示录(启)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>启示录(启)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>启示录(启)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>启示录(启)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>启示录(启)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>启示录(启)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>启示录(启)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>启示录(启)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>启示录(启)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>启示录(启)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>启示录(启)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>启示录(启)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>启示录(启)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>启示录(启)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>启示录(启)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>启示录(启)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>启示录(启)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>启示录(启)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>启示录(启)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-66-cid-10.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-66-cid-12.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

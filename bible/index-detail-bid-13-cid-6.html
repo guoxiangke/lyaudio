@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="13历代志上/13历代志上_06.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-13-cid-7.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">历代志上(代上) 第6章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>6:1</span>
+        <p>利未的儿子是革顺、哥辖、米拉利；</p>
+      </li>
+                        <li><span>6:2</span>
+        <p>歌辖的儿子是暗兰、以斯哈、希伯伦、乌薛；</p>
+      </li>
+                        <li><span>6:3</span>
+        <p>暗兰的儿子是亚伦、摩西，还有女儿米利暗；亚伦的儿子是拿答、亚比户、以利亚撒、以他玛。</p>
+      </li>
+                        <li><span>6:4</span>
+        <p>以利亚撒生非尼哈；非尼哈生亚比书；</p>
+      </li>
+                        <li><span>6:5</span>
+        <p>亚比书生布基；布基生乌西；</p>
+      </li>
+                        <li><span>6:6</span>
+        <p>乌西生西拉希雅；西拉希雅生米拉约；</p>
+      </li>
+                        <li><span>6:7</span>
+        <p>米拉约生亚玛利雅；亚玛利雅生亚希；</p>
+      </li>
+                        <li><span>6:8</span>
+        <p>亚希突生撒督；撒督生亚希玛斯；</p>
+      </li>
+                        <li><span>6:9</span>
+        <p>亚希玛斯生亚撒利雅；亚撒利雅生约哈难；</p>
+      </li>
+                        <li><span>6:10</span>
+        <p>约哈难生亚撒利雅（这亚撒利雅在所罗门于耶路撒冷所建造的殿中，供祭司的职分）；</p>
+      </li>
+                        <li><span>6:11</span>
+        <p>亚撒利雅生亚玛利雅；亚玛利雅生亚希突；</p>
+      </li>
+                        <li><span>6:12</span>
+        <p>亚希突生撒督；撒督生沙龙；</p>
+      </li>
+                        <li><span>6:13</span>
+        <p>沙龙生希勒家；希勒家生亚撒利雅；</p>
+      </li>
+                        <li><span>6:14</span>
+        <p>亚撒利雅生西莱雅；西莱雅生约萨答。</p>
+      </li>
+                        <li><span>6:15</span>
+        <p>当耶和华藉尼布甲尼撒的手掳掠犹大和耶路撒冷人的时候，这约萨答也被掳去。</p>
+      </li>
+                                    <li><span>6:16</span>
+        <p>利未的儿子是革顺、哥辖、米拉利。</p>
+      </li>
+                        <li><span>6:17</span>
+        <p>革顺的儿子名叫立尼、示每；</p>
+      </li>
+                        <li><span>6:18</span>
+        <p>哥辖的儿子是暗兰、以斯哈、希伯伦、乌薛；</p>
+      </li>
+                        <li><span>6:19</span>
+        <p>米拉利的儿子是抹利、母示。这是按着利未人宗族分的各家。</p>
+      </li>
+                        <li><span>6:20</span>
+        <p>革顺的儿子是立尼；立尼的儿子是雅哈；雅哈的儿子是薪玛；</p>
+      </li>
+                        <li><span>6:21</span>
+        <p>薪玛的儿子是约亚；约亚的儿子是易多；易多的儿子是谢拉；谢拉的儿子是耶特赖。</p>
+      </li>
+                        <li><span>6:22</span>
+        <p>哥辖的儿子是亚米拿达；亚米拿达的儿子是可拉；可拉的儿子是亚惜；</p>
+      </li>
+                        <li><span>6:23</span>
+        <p>亚惜的儿子是以利加拿；以利加拿的儿子是以比雅撒；以比雅撒的儿子是亚惜；</p>
+      </li>
+                        <li><span>6:24</span>
+        <p>亚惜的儿子是他哈；他哈的儿子是乌列；乌列的儿子是乌西雅；乌西雅的儿子是少罗。</p>
+      </li>
+                        <li><span>6:25</span>
+        <p>以利加拿的儿子是亚玛赛和亚希摩；</p>
+      </li>
+                        <li><span>6:26</span>
+        <p>亚希摩的儿子是以利加拿；以利加拿的儿子是琐菲；琐菲的儿子是拿哈；</p>
+      </li>
+                        <li><span>6:27</span>
+        <p>拿哈的儿子是以利押；以利押的儿子是耶罗罕；耶罗罕的儿子是以利加拿；以利加拿的儿子是撒母耳。</p>
+      </li>
+                        <li><span>6:28</span>
+        <p>撒母耳的长子是约珥、次子是亚比亚。</p>
+      </li>
+                        <li><span>6:29</span>
+        <p>米拉利的儿子是抹利；抹利的儿子是立尼；立尼的儿子是示每；示每的儿子是乌撒；</p>
+      </li>
+                        <li><span>6:30</span>
+        <p>乌撒的儿子是示米亚；示米亚的儿子是哈基雅；哈基雅的儿子是亚帅雅。</p>
+      </li>
+                                    <li><span>6:31</span>
+        <p>约柜安设之后，大卫派人在耶和华殿中管理歌唱的事。</p>
+      </li>
+                        <li><span>6:32</span>
+        <p>他们就在会幕前当歌唱的差，及至所罗门在耶路撒冷建造了耶和华的殿，他们便按着班次供职。</p>
+      </li>
+                        <li><span>6:33</span>
+        <p>供职的人和他们的子孙记在下面：</p>
+      </li>
+                        <li><span>6:34</span>
+        <p>哥辖的子孙中有歌唱的希幔。希幔是约珥的儿子；约珥是撒母耳的儿子；撒母耳是以利加拿的儿子；以利加拿是耶罗罕的儿子；耶罗罕是以列的儿子；以列是陀亚的儿子；</p>
+      </li>
+                        <li><span>6:35</span>
+        <p>陀亚是苏弗的儿子；苏弗是以利加拿的儿子；以利加拿是玛哈的儿子；玛哈是亚玛赛的儿子；</p>
+      </li>
+                        <li><span>6:36</span>
+        <p>亚玛赛是以利加拿的儿子；以利加拿是约珥的儿子；约珥是亚撒利雅的儿子；亚撒利雅是西番雅的儿子；</p>
+      </li>
+                        <li><span>6:37</span>
+        <p>西番雅是他哈的儿子；他哈是亚惜的儿子；亚惜是以比雅撒的儿子；以比雅撒是可拉的儿子；</p>
+      </li>
+                        <li><span>6:38</span>
+        <p>可拉是以斯哈的儿子；以斯哈是哥辖的儿子；哥辖是利未的儿子；利未是以色列的儿子。</p>
+      </li>
+                        <li><span>6:39</span>
+        <p>希幔的族兄亚萨，是比利家的儿子，亚萨在希幔右边供职。比利家是示米亚的儿子；</p>
+      </li>
+                        <li><span>6:40</span>
+        <p>示米亚是米迦勒的儿子；米迦勒是巴西雅的儿子；巴西雅是玛基雅的儿子；</p>
+      </li>
+                        <li><span>6:41</span>
+        <p>玛基雅是伊特尼的儿子；伊特尼是谢拉的儿子；谢拉是亚大雅的儿子；</p>
+      </li>
+                        <li><span>6:42</span>
+        <p>亚大雅是以探的儿子；以探是薪玛的儿子；薪玛是示每的儿子；</p>
+      </li>
+                        <li><span>6:43</span>
+        <p>示每是雅哈的儿子；雅哈是革顺的儿子；革顺是利未的儿子。</p>
+      </li>
+                        <li><span>6:44</span>
+        <p>他们的族弟兄米拉利的子孙，在他们左边供职的，有以探。以探是基示的儿子；基示是亚伯底的儿子；亚伯底是玛鹿的儿子；</p>
+      </li>
+                        <li><span>6:45</span>
+        <p>玛鹿是哈沙比雅的儿子；哈沙比雅是亚玛谢的儿子；亚玛谢是希勒家的儿子；</p>
+      </li>
+                        <li><span>6:46</span>
+        <p>希勒家是暗西的儿子；暗西是巴尼的儿子；巴尼是沙麦的儿子；</p>
+      </li>
+                        <li><span>6:47</span>
+        <p>沙麦是末力的儿子；末力是母示的儿子；母示是米拉利的儿子；米拉利是利未的儿子。</p>
+      </li>
+                        <li><span>6:48</span>
+        <p>他们的族弟兄利未人，也被派办  神殿中的一切事。</p>
+      </li>
+                                    <li><span>6:49</span>
+        <p>亚伦和他的子孙在燔祭坛和香坛上献祭烧香，又在至圣所办理一切的事，为以色列人赎罪，是照  神仆人摩西所吩咐的。</p>
+      </li>
+                        <li><span>6:50</span>
+        <p>亚伦的儿子是以利亚撒；以利亚撒的儿子是非尼哈；非尼哈的儿子是亚比书；</p>
+      </li>
+                        <li><span>6:51</span>
+        <p>亚比书的儿子是布基；布基的儿子是乌西；乌西的儿子是西拉希雅；</p>
+      </li>
+                        <li><span>6:52</span>
+        <p>西拉希雅的儿子是米拉约；米拉约的儿子是亚玛利雅；亚玛利雅的儿子是亚希突；</p>
+      </li>
+                        <li><span>6:53</span>
+        <p>亚希突的儿子是撒督；撒督的儿子是亚希玛斯。</p>
+      </li>
+                                    <li><span>6:54</span>
+        <p>他们的住处，按着境内的营寨，记在下面：哥辖族亚伦的子孙先拈阄得地，</p>
+      </li>
+                        <li><span>6:55</span>
+        <p>在犹大地中得了希伯仑和四围的郊野，</p>
+      </li>
+                        <li><span>6:56</span>
+        <p>只是属城的田地和村庄都为耶孚尼的儿子迦勒所得。</p>
+      </li>
+                        <li><span>6:57</span>
+        <p>亚伦的子孙得了逃城希伯仑，又得了立拿与其郊野，雅提珥、以实提莫与其郊野，</p>
+      </li>
+                        <li><span>6:58</span>
+        <p>希仑与其郊野，底璧与其郊野，</p>
+      </li>
+                        <li><span>6:59</span>
+        <p>亚珊与其郊野，伯示麦与其郊野。</p>
+      </li>
+                        <li><span>6:60</span>
+        <p>在便雅悯支派的地中，得了迦巴与其郊野，阿勒篾与其郊野，亚拿突与其郊野。他们诸家所得的城共十三座。</p>
+      </li>
+                        <li><span>6:61</span>
+        <p>哥辖族其余的人又拈阄，在玛拿西半支派的地中得了十座城。</p>
+      </li>
+                        <li><span>6:62</span>
+        <p>革顺族按着宗族，在以萨迦支派的地中、亚设支派的地中、拿弗他利支派的地中、巴珊内玛拿西支派的地中得了十三座城。</p>
+      </li>
+                        <li><span>6:63</span>
+        <p>米拉利族按着宗族拈阄，在流便支派的地中、迦得支派的地中、西布伦支派的地中得了十二座城。</p>
+      </li>
+                        <li><span>6:64</span>
+        <p>以色列人将这些城与其郊野给了利未人。</p>
+      </li>
+                        <li><span>6:65</span>
+        <p>这以上录名的城，在犹大、西缅、便雅悯三支派的地中，以色列人拈阄给了他们。</p>
+      </li>
+                        <li><span>6:66</span>
+        <p>哥辖族中，有几家在以法莲支派的地中也得了城邑。</p>
+      </li>
+                        <li><span>6:67</span>
+        <p>在以法莲山地，得了逃城示剑与其郊野，又得了基色与其郊野，</p>
+      </li>
+                        <li><span>6:68</span>
+        <p>约缅与其郊野，伯和仑与其郊野，</p>
+      </li>
+                        <li><span>6:69</span>
+        <p>亚雅仑与其郊野，迦特临门与其郊野。</p>
+      </li>
+                        <li><span>6:70</span>
+        <p>哥辖族其余的人，在玛拿西半支派的地中，得了亚乃与其郊野，比连与其郊野。</p>
+      </li>
+                        <li><span>6:71</span>
+        <p>革顺族在玛拿西半支派的地中，得了巴珊的哥兰与其郊野，亚斯他录与其郊野。</p>
+      </li>
+                        <li><span>6:72</span>
+        <p>又在以萨迦支派的地中，得了基低斯与其郊野，大比拉与其郊野，</p>
+      </li>
+                        <li><span>6:73</span>
+        <p>拉末与其郊野，亚年与其郊野。</p>
+      </li>
+                        <li><span>6:74</span>
+        <p>在亚设支派的地中，得了玛沙与其郊野，押顿与其郊野，</p>
+      </li>
+                        <li><span>6:75</span>
+        <p>户割与其郊野，利合与其郊野。</p>
+      </li>
+                        <li><span>6:76</span>
+        <p>在拿弗他利支派的地中，得了加利利的基低斯与其郊野，哈们与其郊野，基列亭与其郊野。</p>
+      </li>
+                        <li><span>6:77</span>
+        <p>还有米拉利族的人，在西布伦支派的地中，得了临摩挪与其郊野，他泊与其郊野。</p>
+      </li>
+                        <li><span>6:78</span>
+        <p>又在耶利哥的约旦河东，在流便支派的地中，得了旷野的比悉与其郊野，雅哈撒与其郊野，</p>
+      </li>
+                        <li><span>6:79</span>
+        <p>基底莫与其郊野，米法押与其郊野。</p>
+      </li>
+                        <li><span>6:80</span>
+        <p>又在迦得支派的地中，得了基列的拉末与其郊野，玛哈念与其郊野，</p>
+      </li>
+                        <li><span>6:81</span>
+        <p>希实本与其郊野，雅谢与其郊野。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共29首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>历代志上(代上)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>历代志上(代上)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>历代志上(代上)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>历代志上(代上)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>历代志上(代上)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>历代志上(代上)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>历代志上(代上)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>历代志上(代上)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>历代志上(代上)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>历代志上(代上)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>历代志上(代上)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>历代志上(代上)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>历代志上(代上)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>历代志上(代上)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>历代志上(代上)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>历代志上(代上)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>历代志上(代上)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>历代志上(代上)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>历代志上(代上)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>历代志上(代上)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>历代志上(代上)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>历代志上(代上)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>历代志上(代上)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>历代志上(代上)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>历代志上(代上)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>历代志上(代上)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>历代志上(代上)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>历代志上(代上)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>历代志上(代上)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-13-cid-5.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-13-cid-7.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

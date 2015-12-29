@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="45罗马书/45罗马书_08.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-45-cid-9.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">罗马书(罗) 第8章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>8:1</span>
+        <p>如今那些在基督耶稣里的，就不定罪了。</p>
+      </li>
+                        <li><span>8:2</span>
+        <p>因为赐生命圣灵的律在基督耶稣里释放了我，使我脱离罪和死的律了。</p>
+      </li>
+                        <li><span>8:3</span>
+        <p>律法既因肉体软弱，有所不能行的，  神就差遣自己的儿子成为罪身的形状，作了赎罪祭，在肉体中定了罪案，</p>
+      </li>
+                        <li><span>8:4</span>
+        <p>使律法的义成就在我们这不随从肉体，只随从圣灵的人身上。</p>
+      </li>
+                        <li><span>8:5</span>
+        <p>因为随从肉体的人体贴肉体的事；随从圣灵的人体贴圣灵的事。</p>
+      </li>
+                        <li><span>8:6</span>
+        <p>体贴肉体的就是死，体贴圣灵的乃是生命平安。</p>
+      </li>
+                        <li><span>8:7</span>
+        <p>原来体贴肉体的，就是与  神为仇，因为不服  神的律法，也是不能服。</p>
+      </li>
+                        <li><span>8:8</span>
+        <p>而且属肉体的人不能得  神的喜欢。</p>
+      </li>
+                        <li><span>8:9</span>
+        <p>如果  神的灵住在你们心里，你们就不属肉体，乃属圣灵了。人若没有基督的灵，就不是属基督的。</p>
+      </li>
+                        <li><span>8:10</span>
+        <p>基督若在你们心里，身体就因罪而死，心灵却因义而活。</p>
+      </li>
+                        <li><span>8:11</span>
+        <p>然而叫耶稣从死里复活者的灵，若住在你们心里，那叫基督耶稣从死里复活的，也必藉着住在你们心里的圣灵，使你们必死的身体又活过来。</p>
+      </li>
+                        <li><span>8:12</span>
+        <p>弟兄们，这样看来，我们并不是欠肉体的债，去顺从肉体活着。</p>
+      </li>
+                        <li><span>8:13</span>
+        <p>你们若顺从肉体活着必要死，若靠着圣灵治死身体的恶行必要活着。</p>
+      </li>
+                        <li><span>8:14</span>
+        <p>因为凡被  神的灵引导的，都是  神的儿子。</p>
+      </li>
+                        <li><span>8:15</span>
+        <p>你们所受的不是奴仆的心，仍旧害怕；所受的乃是儿子的心，因此我们呼叫：“阿爸，父！”</p>
+      </li>
+                        <li><span>8:16</span>
+        <p>圣灵与我们的心同证我们是  神的儿女；</p>
+      </li>
+                        <li><span>8:17</span>
+        <p>既是儿女，便是后嗣，就是  神的后嗣，和基督同作后嗣。如果我们和他一同受苦，也必和他一同得荣耀。</p>
+      </li>
+                                    <li><span>8:18</span>
+        <p>我想，现在的苦楚若比起将来要显于我们的荣耀，就不足介意了。</p>
+      </li>
+                        <li><span>8:19</span>
+        <p>受造之物切望等候  神的众子显出来，</p>
+      </li>
+                        <li><span>8:20</span>
+        <p>因为受造之物服在虚空之下，不是自己愿意，乃是因那叫他如此的。</p>
+      </li>
+                        <li><span>8:21</span>
+        <p>但受造之物仍然指望脱离败坏的辖制，得享  神儿女自由的荣耀（“享”原文作“入”）。</p>
+      </li>
+                        <li><span>8:22</span>
+        <p>我们知道一切受造之物一同叹息、劳苦，直到如今。</p>
+      </li>
+                        <li><span>8:23</span>
+        <p>不但如此，就是我们这有圣灵初结果子的，也是自己心里叹息，等候得着儿子的名分，乃是我们的身体得赎。</p>
+      </li>
+                        <li><span>8:24</span>
+        <p>我们得救是在乎盼望；只是所见的盼望不是盼望，谁还盼望他所见的呢？（有古卷作“人所看见的何必再盼望呢？”）</p>
+      </li>
+                        <li><span>8:25</span>
+        <p>但我们若盼望那所不见的，就必忍耐等候。</p>
+      </li>
+                        <li><span>8:26</span>
+        <p>况且，我们的软弱有圣灵帮助，我们本不晓得当怎样祷告，只是圣灵亲自用说不出来的叹息替我们祷告。</p>
+      </li>
+                        <li><span>8:27</span>
+        <p>鉴察人心的，晓得圣灵的意思，因为圣灵照着  神的旨意替圣徒祈求。</p>
+      </li>
+                        <li><span>8:28</span>
+        <p>我们晓得万事都互相效力，叫爱  神的人得益处，就是按他旨意被召的人。</p>
+      </li>
+                        <li><span>8:29</span>
+        <p>因为他预先所知道的人，就预先定下效法他儿子的模样，使他儿子在许多弟兄中作长子。</p>
+      </li>
+                        <li><span>8:30</span>
+        <p>预先所定下的人又召他们来，所召来的人又称他们为义，所称为义的人又叫他们得荣耀。</p>
+      </li>
+                                    <li><span>8:31</span>
+        <p>既是这样，还有什么说的呢？  神若帮助我们，谁能敌挡我们呢？</p>
+      </li>
+                        <li><span>8:32</span>
+        <p>神既不爱惜自己的儿子为我们众人舍了，岂不也把万物和他一同白白地赐给我们吗？</p>
+      </li>
+                        <li><span>8:33</span>
+        <p>谁能控告  神所拣选的人呢？有  神称他们为义了。（或作“是称他们为义的  神吗？”）</p>
+      </li>
+                        <li><span>8:34</span>
+        <p>谁能定他们的罪呢？有基督耶稣已经死了，而且从死里复活，现今在  神的右边，也替我们祈求。（“有基督云云”，或作“是已经死了，而且从死里复活，现今在  神的右边，也替我们祈求的基督耶稣吗？”）</p>
+      </li>
+                        <li><span>8:35</span>
+        <p>谁能使我们与基督的爱隔绝呢？难道是患难吗？是困苦吗？是逼迫吗？是饥饿吗？是赤身露体吗？是危险吗？是刀剑吗？</p>
+      </li>
+                        <li><span>8:36</span>
+        <p>如经上所记：“我们为你的缘故终日被杀，人看我们如将宰的羊。”</p>
+      </li>
+                        <li><span>8:37</span>
+        <p>然而，靠着爱我们的主，在这一切的事上已经得胜有余了。</p>
+      </li>
+                        <li><span>8:38</span>
+        <p>因为我深信无论是死，是生，是天使，是掌权的，是有能的，是现在的事，是将来的事，</p>
+      </li>
+                        <li><span>8:39</span>
+        <p>是高处的，是低处的，是别的受造之物，都不能叫我们与  神的爱隔绝；这爱是在我们的主基督耶稣里的。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共16首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>罗马书(罗)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>罗马书(罗)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>罗马书(罗)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>罗马书(罗)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>罗马书(罗)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>罗马书(罗)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>罗马书(罗)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>罗马书(罗)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>罗马书(罗)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>罗马书(罗)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>罗马书(罗)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>罗马书(罗)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>罗马书(罗)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>罗马书(罗)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>罗马书(罗)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>罗马书(罗)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-45-cid-7.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-45-cid-9.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

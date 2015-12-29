@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="27但以理书/27但以理书_06.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-27-cid-7.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">但以理书(但) 第6章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>6:1</span>
+        <p>大流士随心所愿，立一百二十个总督治理通国。</p>
+      </li>
+                        <li><span>6:2</span>
+        <p>又在他们以上立总长三人（但以理在其中），使总督在他们三人面前回复事务，免得王受亏损。</p>
+      </li>
+                        <li><span>6:3</span>
+        <p>因这但以理有美好的灵性，所以显然超乎其余的总长和总督，王又想立他治理通国。</p>
+      </li>
+                        <li><span>6:4</span>
+        <p>那时总长和总督寻找但以理误国的把柄，为要参他；只是找不着他的错误过失，因他忠心办事，毫无错误过失。</p>
+      </li>
+                        <li><span>6:5</span>
+        <p>那些人便说：“我们要找参这但以理的把柄，除非在他  神的律法中就寻不着。”</p>
+      </li>
+                        <li><span>6:6</span>
+        <p>于是，总长和总督纷纷聚集来见王说：“愿大流士王万岁！</p>
+      </li>
+                        <li><span>6:7</span>
+        <p>国中的总长、钦差、总督、谋士和巡抚彼此商议，要立一条坚定的禁令（或作“求王下旨要立一条云云”），三十日内不拘何人，若在王以外，或向神、或向人求什么，就必扔在狮子坑中。</p>
+      </li>
+                        <li><span>6:8</span>
+        <p>王啊，现在求你立这禁令，加盖玉玺，使禁令决不更改，照玛代和波斯人的例，是不可更改的。”</p>
+      </li>
+                        <li><span>6:9</span>
+        <p>于是大流士王立这禁令，加盖玉玺。</p>
+      </li>
+                        <li><span>6:10</span>
+        <p>但以理知道这禁令盖了玉玺，就到自己家里（他楼上的窗户开向耶路撒冷），一日三次双膝跪在他  神面前，祷告感谢，与素常一样。</p>
+      </li>
+                        <li><span>6:11</span>
+        <p>那些人就纷纷聚集，见但以理在他  神面前祈祷恳求，</p>
+      </li>
+                        <li><span>6:12</span>
+        <p>他们便进到王前，提王的禁令说：“王啊，三十日内不拘何人，若在王以外或向神或向人求什么，必被扔在狮子坑中，王不是在这禁令上盖了玉玺吗？”王回答说：“实有这事，照玛代和波斯人的例是不可更改的。”</p>
+      </li>
+                        <li><span>6:13</span>
+        <p>他们对王说：“王啊，那被掳之犹大人中的但以理不理你，也不遵你盖了玉玺的禁令，他竟一日三次祈祷。”</p>
+      </li>
+                        <li><span>6:14</span>
+        <p>王听见这话，就甚愁烦，一心要救但以理，筹划解救他，直到日落的时候。</p>
+      </li>
+                        <li><span>6:15</span>
+        <p>那些人就纷纷聚集来见王说：“王啊，当知道玛代人和波斯人有例，凡王所立的禁令和律例都不可更改。”</p>
+      </li>
+                        <li><span>6:16</span>
+        <p>王下令，人就把但以理带来，扔在狮子坑中。王对但以理说：“你所常侍奉的  神，他必救你。”</p>
+      </li>
+                        <li><span>6:17</span>
+        <p>有人搬石头放在坑口，王用自己的玺和大臣的印封闭那坑，使惩办但以理的事毫无更改。</p>
+      </li>
+                        <li><span>6:18</span>
+        <p>王回宫，终夜禁食，无人拿乐器到他面前，并且睡不着觉。</p>
+      </li>
+                        <li><span>6:19</span>
+        <p>次日黎明，王就起来，急忙往狮子坑那里去。</p>
+      </li>
+                        <li><span>6:20</span>
+        <p>临近坑边，哀声呼叫但以理，对但以理说：“永生  神的仆人但以理啊，你所常侍奉的  神能救你脱离狮子吗？”</p>
+      </li>
+                        <li><span>6:21</span>
+        <p>但以理对王说：“愿王万岁！</p>
+      </li>
+                        <li><span>6:22</span>
+        <p>我的  神差遣使者封住狮子的口，叫狮子不伤我，因我在  神面前无辜，我在王面前也没有行过亏损的事。”</p>
+      </li>
+                        <li><span>6:23</span>
+        <p>王就甚喜乐，吩咐人将但以理从坑里系上来。于是但以理从坑里被系上来，身上毫无伤损，因为信靠他的  神。</p>
+      </li>
+                        <li><span>6:24</span>
+        <p>王下令，人就把那些控告但以理的人，连他们的妻子儿女都带来，扔在狮子坑中。他们还没有到坑底，狮子就抓住（“抓住”原文作“胜了”）他们，咬碎他们的骨头。</p>
+      </li>
+                        <li><span>6:25</span>
+        <p>那时，大流士王传旨，晓谕住在全地各方、各国、各族的人说：“愿你们大享平安！</p>
+      </li>
+                        <li><span>6:26</span>
+        <p>现在我降旨晓谕我所统辖的全国人民，要在但以理的  神面前战兢恐惧，因为他是永远长存的活  神，他的国永不败坏，他的权柄永存无极。</p>
+      </li>
+                        <li><span>6:27</span>
+        <p>他护庇人、搭救人，在天上地下施行神迹奇事，救了但以理脱离狮子的口。”</p>
+      </li>
+                        <li><span>6:28</span>
+        <p>如此，这但以理当大流士王在位的时候和波斯王居鲁士在位的时候，大享亨通。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共12首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>但以理书(但)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>但以理书(但)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>但以理书(但)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>但以理书(但)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>但以理书(但)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>但以理书(但)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>但以理书(但)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>但以理书(但)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>但以理书(但)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>但以理书(但)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>但以理书(但)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>但以理书(但)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-27-cid-5.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-27-cid-7.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

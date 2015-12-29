@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="45罗马书/45罗马书_15.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-45-cid-16.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">罗马书(罗) 第15章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>15:1</span>
+        <p>我们坚固的人应该担代不坚固人的软弱，不求自己的喜悦。</p>
+      </li>
+                        <li><span>15:2</span>
+        <p>我们各人务要叫邻舍喜悦，使他得益处，建立德行。</p>
+      </li>
+                        <li><span>15:3</span>
+        <p>因为基督也不求自己的喜悦。如经上所记：“辱骂你人的辱骂都落在我身上。”</p>
+      </li>
+                        <li><span>15:4</span>
+        <p>从前所写的圣经都是为教训我们写的，叫我们因圣经所生的忍耐和安慰，可以得着盼望。</p>
+      </li>
+                        <li><span>15:5</span>
+        <p>但愿赐忍耐、安慰的  神，叫你们彼此同心，效法基督耶稣，</p>
+      </li>
+                        <li><span>15:6</span>
+        <p>一心一口荣耀  神、我们主耶稣基督的父。</p>
+      </li>
+                                    <li><span>15:7</span>
+        <p>所以你们要彼此接纳，如同基督接纳你们一样，使荣耀归与  神。</p>
+      </li>
+                        <li><span>15:8</span>
+        <p>我说，基督是为  神真理作了受割礼人的执事，要证实所应许列祖的话。</p>
+      </li>
+                        <li><span>15:9</span>
+        <p>并叫外邦人因他的怜悯荣耀  神。如经上所记：“因此我要在外邦中称赞你，歌颂你的名。”</p>
+      </li>
+                        <li><span>15:10</span>
+        <p>又说：“你们外邦人当与主的百姓一同欢乐。”</p>
+      </li>
+                        <li><span>15:11</span>
+        <p>又说：“外邦啊，你们当赞美主；万民哪，你们都当颂赞他。”</p>
+      </li>
+                        <li><span>15:12</span>
+        <p>又有以赛亚说：“将来有耶西的根，就是那兴起来要治理外邦的，外邦人要仰望他。”</p>
+      </li>
+                        <li><span>15:13</span>
+        <p>但愿使人有盼望的  神，因信，将诸般的喜乐平安充满你们的心，使你们藉着圣灵的能力大有盼望。</p>
+      </li>
+                                    <li><span>15:14</span>
+        <p>弟兄们，我自己也深信你们是满有良善，充足了诸般的知识，也能彼此劝戒。</p>
+      </li>
+                        <li><span>15:15</span>
+        <p>但我稍微放胆写信给你们，是要提醒你们的记性，特因  神所给我的恩典，</p>
+      </li>
+                        <li><span>15:16</span>
+        <p>使我为外邦人作基督耶稣的仆役，作  神福音的祭司，叫所献上的外邦人，因着圣灵，成为圣洁，可蒙悦纳。</p>
+      </li>
+                        <li><span>15:17</span>
+        <p>所以论到  神的事，我在基督耶稣里有可夸的。</p>
+      </li>
+                        <li><span>15:18</span>
+        <p>除了基督藉我作的那些事，我什么都不敢提；只提他藉我言语作为，用神迹奇事的能力，并圣灵的能力，使外邦人顺服。</p>
+      </li>
+                        <li><span>15:19</span>
+        <p>甚至我从耶路撒冷，直转到以利哩古，到处传了基督的福音。</p>
+      </li>
+                        <li><span>15:20</span>
+        <p>我立了志向，不在基督的名被称过的地方传福音，免得建造在别人的根基上。</p>
+      </li>
+                        <li><span>15:21</span>
+        <p>就如经上所记：“未曾闻知他信息的，将要看见；未曾听过的，将要明白。”</p>
+      </li>
+                                    <li><span>15:22</span>
+        <p>我因多次被拦阻，总不得到你们那里去。</p>
+      </li>
+                        <li><span>15:23</span>
+        <p>但如今在这里再没有可传的地方，而且这好几年我切心想望到西班牙去的时候，可以到你们那里，</p>
+      </li>
+                        <li><span>15:24</span>
+        <p>盼望从你们那里经过，得见你们，先与你们彼此交往，心里稍微满足，然后蒙你们送行。</p>
+      </li>
+                        <li><span>15:25</span>
+        <p>但现在，我往耶路撒冷去供给圣徒。</p>
+      </li>
+                        <li><span>15:26</span>
+        <p>因为马其顿和亚该亚人乐意凑出捐项，给耶路撒冷圣徒中的穷人。</p>
+      </li>
+                        <li><span>15:27</span>
+        <p>这固然是他们乐意的，其实也算是所欠的债。因外邦人既然在他们属灵的好处上有份，就当把养身之物供给他们。</p>
+      </li>
+                        <li><span>15:28</span>
+        <p>等我办完了这事，把这善果向他们交付明白，我就要路过你们那里，往西班牙去。</p>
+      </li>
+                        <li><span>15:29</span>
+        <p>我也晓得去的时候，必带着基督丰盛的恩典而去。</p>
+      </li>
+                        <li><span>15:30</span>
+        <p>弟兄们，我藉着我们主耶稣基督，又藉着圣灵的爱，劝你们与我一同竭力为我祈求  神。</p>
+      </li>
+                        <li><span>15:31</span>
+        <p>叫我脱离在犹太不顺从的人；也叫我为耶路撒冷所办的捐项可蒙圣徒悦纳；</p>
+      </li>
+                        <li><span>15:32</span>
+        <p>并叫我顺着  神的旨意，欢欢喜喜地到你们那里，与你们同得安息。</p>
+      </li>
+                        <li><span>15:33</span>
+        <p>愿赐平安的  神常和你们众人同在。阿们！</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共16首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>罗马书(罗)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>罗马书(罗)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>罗马书(罗)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>罗马书(罗)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>罗马书(罗)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>罗马书(罗)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>罗马书(罗)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>罗马书(罗)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>罗马书(罗)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>罗马书(罗)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>罗马书(罗)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>罗马书(罗)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>罗马书(罗)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>罗马书(罗)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>罗马书(罗)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>罗马书(罗)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-45-cid-14.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-45-cid-16.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

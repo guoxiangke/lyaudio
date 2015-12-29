@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="14历代志下/14历代志下_35.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-14-cid-36.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">历代志下(代下) 第35章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>35:1</span>
+        <p>约西亚在耶路撒冷向耶和华守逾越节，正月十四日，就宰了逾越节的羊羔。</p>
+      </li>
+                        <li><span>35:2</span>
+        <p>王分派祭司各尽其职，又勉励他们办耶和华殿中的事。</p>
+      </li>
+                        <li><span>35:3</span>
+        <p>又对那归耶和华为圣、教训以色列人的利未人说：“你们将圣约柜安放在以色列王大卫儿子所罗门建造的殿里，不必再用肩扛抬。现在要侍奉耶和华你们的  神，服侍他的民以色列。</p>
+      </li>
+                        <li><span>35:4</span>
+        <p>你们应当按着宗族，照着班次，遵以色列王大卫和他儿子所罗门所写的，自己预备。</p>
+      </li>
+                        <li><span>35:5</span>
+        <p>要按着你们的弟兄这民宗族的班次，站在圣所，每班中要利未宗族的几个人。</p>
+      </li>
+                        <li><span>35:6</span>
+        <p>要宰逾越节的羊羔，洁净自己，为你们的弟兄预备了，好遵守耶和华藉摩西所吩咐的话。”</p>
+      </li>
+                        <li><span>35:7</span>
+        <p>约西亚从群畜中赐给在那里所有的人民，绵羊羔和山羊羔三万只，牛三千只，作逾越节的祭物。这都是出自王的产业中。</p>
+      </li>
+                        <li><span>35:8</span>
+        <p>约西亚的众首领也乐意将牺牲给百姓和祭司利未人；又有管理  神殿的希勒家、撒迦利亚、耶歇，将羊羔二千六百只，牛三百只，给祭司作逾越节的祭物。</p>
+      </li>
+                        <li><span>35:9</span>
+        <p>利未人的族长歌楠雅和他两个兄弟示玛雅、拿坦业，与哈沙比雅、耶利、约撒拔，将羊羔五千只，牛五百只，给利未人作逾越节的祭物。</p>
+      </li>
+                        <li><span>35:10</span>
+        <p>这样，供献的事齐备了。祭司站在自己的地方，利未人按着班次站立，都是照王所吩咐的。</p>
+      </li>
+                        <li><span>35:11</span>
+        <p>利未人宰了逾越节的羊羔，祭司从他们手里接过血来洒在坛上；利未人剥皮，</p>
+      </li>
+                        <li><span>35:12</span>
+        <p>将燔祭搬来，按着宗族的班次分给众民，好照摩西书上所写的，献给耶和华；献牛也是这样。</p>
+      </li>
+                        <li><span>35:13</span>
+        <p>他们按着常例，用火烤逾越节的羊羔，别的圣物用锅、用釜、用罐煮了，速速地送给众民。</p>
+      </li>
+                        <li><span>35:14</span>
+        <p>然后为自己和祭司预备祭物，因为祭司亚伦的子孙献燔祭和脂油，直到晚上。所以利未人为自己和祭司亚伦的子孙预备祭物。</p>
+      </li>
+                        <li><span>35:15</span>
+        <p>歌唱的亚萨之子孙，照着大卫、亚萨、希幔和王的先见耶杜顿所吩咐的，站在自己的地位上。守门的看守各门，不用离开他们的职事，因为他们的弟兄利未人给他们预备祭物。</p>
+      </li>
+                        <li><span>35:16</span>
+        <p>当日，供奉耶和华的事齐备了，就照约西亚王的吩咐守逾越节，献燔祭在耶和华的坛上。</p>
+      </li>
+                        <li><span>35:17</span>
+        <p>当时，在耶路撒冷的以色列人守逾越节，又守除酵节七日。</p>
+      </li>
+                        <li><span>35:18</span>
+        <p>自从先知撒母耳以来，在以色列中没有守过这样的逾越节；以色列诸王也没有守过像约西亚、祭司、利未人、在那里的犹大人和以色列人，以及耶路撒冷居民所守的逾越节。</p>
+      </li>
+                        <li><span>35:19</span>
+        <p>这逾越节是约西亚作王十八年守的。</p>
+      </li>
+                                    <li><span>35:20</span>
+        <p>这事以后，约西亚修完了殿，有埃及王尼哥上来，要攻击靠近幼发拉底河的迦基米施，约西亚出去抵挡他。</p>
+      </li>
+                        <li><span>35:21</span>
+        <p>他差遣使者来见约西亚说：“犹大王啊，我与你何干？我今日来不是要攻击你，乃是要攻击与我争战之家，并且  神吩咐我速行，你不要干预  神的事，免得他毁灭你，因为  神是与我同在。”</p>
+      </li>
+                        <li><span>35:22</span>
+        <p>约西亚却不肯转去离开他，改装要与他打仗，不听从  神藉尼哥之口所说的话，便来到米吉多平原争战。</p>
+      </li>
+                        <li><span>35:23</span>
+        <p>弓箭手射中约西亚王。王对他的臣仆说：“我受了重伤，你拉我出阵吧！”</p>
+      </li>
+                        <li><span>35:24</span>
+        <p>他的臣仆扶他下了战车，上了次车，送他到耶路撒冷，他就死了，葬在他列祖的坟墓里。犹大人和耶路撒冷人都为他悲哀。</p>
+      </li>
+                        <li><span>35:25</span>
+        <p>耶利米为约西亚作哀歌，所有歌唱的男女也唱哀歌，追悼约西亚，直到今日，而且在以色列中成了定例。这歌载在哀歌书上。</p>
+      </li>
+                        <li><span>35:26</span>
+        <p>约西亚其余的事和他遵着耶和华律法上所记而行的善事，</p>
+      </li>
+                        <li><span>35:27</span>
+        <p>并他自始至终所行的，都写在以色列和犹大列王记上。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共36首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>历代志下(代下)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>历代志下(代下)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>历代志下(代下)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>历代志下(代下)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>历代志下(代下)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>历代志下(代下)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>历代志下(代下)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>历代志下(代下)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>历代志下(代下)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>历代志下(代下)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>历代志下(代下)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>历代志下(代下)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>历代志下(代下)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>历代志下(代下)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>历代志下(代下)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>历代志下(代下)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>历代志下(代下)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>历代志下(代下)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>历代志下(代下)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>历代志下(代下)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>历代志下(代下)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>历代志下(代下)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>历代志下(代下)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>历代志下(代下)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>历代志下(代下)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>历代志下(代下)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>历代志下(代下)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>历代志下(代下)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>历代志下(代下)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>历代志下(代下)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>历代志下(代下)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>历代志下(代下)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>历代志下(代下)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>历代志下(代下)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-35.html"><span class="ppNum">35</span>
+        <p><strong>历代志下(代下)第35章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-36.html"><span class="ppNum">36</span>
+        <p><strong>历代志下(代下)第36章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-14-cid-34.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-14-cid-36.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

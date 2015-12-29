@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="41马可福音/41马可福音_07.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-41-cid-8.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">马可福音(可) 第7章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>7:1</span>
+        <p>有法利赛人和几个文士从耶路撒冷来，到耶稣那里聚集。</p>
+      </li>
+                        <li><span>7:2</span>
+        <p>他们曾看见他的门徒中有人用俗手，就是没有洗的手吃饭。</p>
+      </li>
+                        <li><span>7:3</span>
+        <p>（原来法利赛人和犹太人都拘守古人的遗传，若不仔细洗手就不吃饭；</p>
+      </li>
+                        <li><span>7:4</span>
+        <p>从市上来，若不洗浴也不吃饭；还有好些别的规矩，他们历代拘守，就是洗杯、罐、铜器等物。）</p>
+      </li>
+                        <li><span>7:5</span>
+        <p>法利赛人和文士问他说：“你的门徒为什么不照古人的遗传，用俗手吃饭呢？”</p>
+      </li>
+                        <li><span>7:6</span>
+        <p>耶稣说：“以赛亚指着你们假冒为善之人所说的预言是不错的。如经上说：‘这百姓用嘴唇尊敬我，心却远离我。</p>
+      </li>
+                        <li><span>7:7</span>
+        <p>他们将人的吩咐，当作道理教导人，所以拜我也是枉然。’</p>
+      </li>
+                        <li><span>7:8</span>
+        <p>你们是离弃  神的诫命，拘守人的遗传。”</p>
+      </li>
+                        <li><span>7:9</span>
+        <p>又说：“你们诚然是废弃  神的诫命，要守自己的遗传。</p>
+      </li>
+                        <li><span>7:10</span>
+        <p>摩西说：‘当孝敬父母’，又说：‘咒骂父母的，必治死他。’</p>
+      </li>
+                        <li><span>7:11</span>
+        <p>你们倒说：‘人若对父母说：我所当奉给你的，已经作了各耳板’（各耳板就是供献的意思），</p>
+      </li>
+                        <li><span>7:12</span>
+        <p>以后你们就不容他再奉养父母。</p>
+      </li>
+                        <li><span>7:13</span>
+        <p>这就是你们承接遗传，废了  神的道。你们还作许多这样的事。”</p>
+      </li>
+                        <li><span>7:14</span>
+        <p>耶稣又叫众人来，对他们说：“你们都要听我的话，也要明白。</p>
+      </li>
+                        <li><span>7:15</span>
+        <p>从外面进去的，不能污秽人；惟有从里面出来的，乃能污秽人。”（有古卷在此有</p>
+      </li>
+                        <li><span>7:16</span>
+        <p>“有耳可听的，就应当听。”）</p>
+      </li>
+                        <li><span>7:17</span>
+        <p>耶稣离开众人，进了屋子，门徒就问他这比喻的意思。</p>
+      </li>
+                        <li><span>7:18</span>
+        <p>耶稣对他们说：“你们也是这样不明白吗？岂不晓得凡从外面进入的，不能污秽人，</p>
+      </li>
+                        <li><span>7:19</span>
+        <p>因为不是入他的心，乃是入他的肚腹，又落到茅厕里。这是说，各样的食物都是洁净的。”</p>
+      </li>
+                        <li><span>7:20</span>
+        <p>又说：“从人里面出来的，那才能污秽人，</p>
+      </li>
+                        <li><span>7:21</span>
+        <p>因为从里面，就是从人心里发出恶念、苟合、</p>
+      </li>
+                        <li><span>7:22</span>
+        <p>偷盗、凶杀、奸淫、贪婪、邪恶、诡诈、淫荡、嫉妒、谤讟、骄傲、狂妄。</p>
+      </li>
+                        <li><span>7:23</span>
+        <p>这一切的恶都是从里面出来，且能污秽人。”</p>
+      </li>
+                                    <li><span>7:24</span>
+        <p>耶稣从那里起身，往推罗、西顿的境内去。进了一家，不愿意人知道，却隐藏不住。</p>
+      </li>
+                        <li><span>7:25</span>
+        <p>当下，有一个妇人，她的小女儿被污鬼附着，听见耶稣的事，就来俯伏在他脚前。</p>
+      </li>
+                        <li><span>7:26</span>
+        <p>这妇人是希腊人，属叙利腓尼基族。她求耶稣赶出那鬼，离开她的女儿。</p>
+      </li>
+                        <li><span>7:27</span>
+        <p>耶稣对她说：“让儿女们先吃饱，不好拿儿女的饼丢给狗吃。”</p>
+      </li>
+                        <li><span>7:28</span>
+        <p>妇人回答说：“主啊，不错，但是狗在桌子底下也吃孩子们的碎渣儿。”</p>
+      </li>
+                        <li><span>7:29</span>
+        <p>耶稣对她说：“因这句话，你回去吧！鬼已经离开你的女儿了。”</p>
+      </li>
+                        <li><span>7:30</span>
+        <p>她就回家去，见小孩子躺在床上，鬼已经出去了。</p>
+      </li>
+                                    <li><span>7:31</span>
+        <p>耶稣又离了推罗的境界，经过西顿，就从低加坡里境内来到加利利海。</p>
+      </li>
+                        <li><span>7:32</span>
+        <p>有人带着一个耳聋舌结的人来见耶稣，求他按手在他身上。</p>
+      </li>
+                        <li><span>7:33</span>
+        <p>耶稣领他离开众人，到一边去，就用指头探他的耳朵，吐唾沫抹他的舌头，</p>
+      </li>
+                        <li><span>7:34</span>
+        <p>望天叹息，对他说：“以法大！”就是说：“开了吧！”</p>
+      </li>
+                        <li><span>7:35</span>
+        <p>他的耳朵就开了，舌结也解了，说话也清楚了。</p>
+      </li>
+                        <li><span>7:36</span>
+        <p>耶稣嘱咐他们不要告诉人，但他越发嘱咐，他们越发传扬开了。</p>
+      </li>
+                        <li><span>7:37</span>
+        <p>众人分外希奇，说：“他所作的事都好，他连聋子也叫他们听见，哑巴也叫他们说话。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共16首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>马可福音(可)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>马可福音(可)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>马可福音(可)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>马可福音(可)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>马可福音(可)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>马可福音(可)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>马可福音(可)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>马可福音(可)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>马可福音(可)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>马可福音(可)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>马可福音(可)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>马可福音(可)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>马可福音(可)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>马可福音(可)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>马可福音(可)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>马可福音(可)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-41-cid-6.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-41-cid-8.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

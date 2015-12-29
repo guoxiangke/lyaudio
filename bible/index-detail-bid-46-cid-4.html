@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="46哥林多前书/46哥林多前书_04.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-46-cid-5.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">哥林多前书(林前) 第4章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>4:1</span>
+        <p>人应当以我们为基督的执事，为  神奥秘事的管家。</p>
+      </li>
+                        <li><span>4:2</span>
+        <p>所求于管家的，是要他有忠心。</p>
+      </li>
+                        <li><span>4:3</span>
+        <p>我被你们论断，或被别人论断，我都以为极小的事，连我自己也不论断自己。</p>
+      </li>
+                        <li><span>4:4</span>
+        <p>我虽不觉得自己有错，却也不能因此得以称义，但判断我的乃是主。</p>
+      </li>
+                        <li><span>4:5</span>
+        <p>所以，时候未到，什么都不要论断，只等主来，他要照出暗中的隐情，显明人心的意念。那时，各人要从  神那里得着称赞。</p>
+      </li>
+                        <li><span>4:6</span>
+        <p>弟兄们，我为你们的缘故，拿这些事转比自己和亚波罗，叫你们效法我们不可过于圣经所记，免得你们自高自大，贵重这个，轻看那个。</p>
+      </li>
+                        <li><span>4:7</span>
+        <p>使你与人不同的是谁呢？你有什么不是领受的呢？若是领受的，为何自夸，彷佛不是领受的呢？</p>
+      </li>
+                        <li><span>4:8</span>
+        <p>你们已经饱足了，已经丰富了，不用我们，自己就作王了。我愿意你们果真作王，叫我们也得与你们一同作王。</p>
+      </li>
+                        <li><span>4:9</span>
+        <p>我想   神把我们使徒明明列在末后，好像定死罪的囚犯；因为我们成了一台戏，给世人和天使观看。</p>
+      </li>
+                        <li><span>4:10</span>
+        <p>我们为基督的缘故算是愚拙的，你们在基督里倒是聪明的；我们软弱，你们倒强壮；你们有荣耀，我们倒被藐视。</p>
+      </li>
+                        <li><span>4:11</span>
+        <p>直到如今，我们还是又饥、又渴、又赤身露体、又挨打、又没有一定的住处，</p>
+      </li>
+                        <li><span>4:12</span>
+        <p>并且劳苦，亲手作工。被人咒骂，我们就祝福；被人逼迫，我们就忍受；</p>
+      </li>
+                        <li><span>4:13</span>
+        <p>被人毁谤，我们就善劝。直到如今，人还把我们看作世界上的污秽，万物中的渣滓。</p>
+      </li>
+                        <li><span>4:14</span>
+        <p>我写这话，不是叫你们羞愧，乃是警戒你们，好像我所亲爱的儿女一样。</p>
+      </li>
+                        <li><span>4:15</span>
+        <p>你们学基督的，师傅虽有一万，为父的却是不多，因我在基督耶稣里用福音生了你们。</p>
+      </li>
+                        <li><span>4:16</span>
+        <p>所以，我求你们效法我。</p>
+      </li>
+                        <li><span>4:17</span>
+        <p>因此我已打发提摩太到你们那里去；他在主里面，是我所亲爱、有忠心的儿子，他必提醒你们，记念我在基督里怎样行事，在各处各教会中怎样教导人。</p>
+      </li>
+                        <li><span>4:18</span>
+        <p>有些人自高自大，以为我不到你们那里去；</p>
+      </li>
+                        <li><span>4:19</span>
+        <p>然而主若许我，我必快到你们那里去；并且我所要知道的，不是那些自高自大之人的言语，乃是他们的权能。</p>
+      </li>
+                        <li><span>4:20</span>
+        <p>因为  神的国不在乎言语，乃在乎权能。</p>
+      </li>
+                        <li><span>4:21</span>
+        <p>你们愿意怎么样呢？是愿意我带着刑杖到你们那里去呢？还是要我存慈爱温柔的心呢？</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共16首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>哥林多前书(林前)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>哥林多前书(林前)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>哥林多前书(林前)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>哥林多前书(林前)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>哥林多前书(林前)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>哥林多前书(林前)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>哥林多前书(林前)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>哥林多前书(林前)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>哥林多前书(林前)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>哥林多前书(林前)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>哥林多前书(林前)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>哥林多前书(林前)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>哥林多前书(林前)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>哥林多前书(林前)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>哥林多前书(林前)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-46-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>哥林多前书(林前)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-46-cid-3.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-46-cid-5.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="60彼得前书/60彼得前书_01.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-60-cid-2.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">彼得前书(彼前) 第1章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>1:1</span>
+        <p>耶稣基督的使徒彼得写信给那分散在本都、加拉太、加帕多家、亚细亚、庇推尼寄居的，</p>
+      </li>
+                        <li><span>1:2</span>
+        <p>就是照父  神的先见被拣选，藉着圣灵得成圣洁，以致顺服耶稣基督，又蒙他血所洒的人。愿恩惠、平安多多地加给你们！</p>
+      </li>
+                                    <li><span>1:3</span>
+        <p>愿颂赞归与我们主耶稣基督的父  神，他曾照自己的大怜悯，藉耶稣基督从死里复活，重生了我们，叫我们有活泼的盼望，</p>
+      </li>
+                        <li><span>1:4</span>
+        <p>可以得着不能朽坏、不能玷污、不能衰残、为你们存留在天上的基业。</p>
+      </li>
+                        <li><span>1:5</span>
+        <p>你们这因信蒙  神能力保守的人，必能得着所预备、到末世要显现的救恩。</p>
+      </li>
+                        <li><span>1:6</span>
+        <p>因此，你们是大有喜乐。但如今在百般的试炼中暂时忧愁，</p>
+      </li>
+                        <li><span>1:7</span>
+        <p>叫你们的信心既被试验，就比那被火试验仍然能坏的金子更显宝贵，可以在耶稣基督显现的时候，得着称赞、荣耀、尊贵。</p>
+      </li>
+                        <li><span>1:8</span>
+        <p>你们虽然没有见过他，却是爱他。如今虽不得看见，却因信他就有说不出来、满有荣光的大喜乐，</p>
+      </li>
+                        <li><span>1:9</span>
+        <p>并且得着你们信心的果效，就是灵魂的救恩。</p>
+      </li>
+                        <li><span>1:10</span>
+        <p>论到这救恩，那预先说你们要得恩典的众先知早已详细地寻求考察，</p>
+      </li>
+                        <li><span>1:11</span>
+        <p>就是考察在他们心里基督的灵，预先证明基督受苦难，后来得荣耀，是指着什么时候，并怎样的时候。</p>
+      </li>
+                        <li><span>1:12</span>
+        <p>他们得了启示，知道他们所传讲的一切事（“传讲”原文作“服侍”），不是为自己，乃是为你们。那靠着从天上差来的圣灵传福音给你们的人，现在将这些事报给你们，天使也愿意详细察看这些事。</p>
+      </li>
+                                    <li><span>1:13</span>
+        <p>所以要约束你们的心（原文作“束上你们心中的腰”），谨慎自守，专心盼望耶稣基督显现的时候所带来给你们的恩。</p>
+      </li>
+                        <li><span>1:14</span>
+        <p>你们既作顺命的儿女，就不要效法从前蒙昧无知的时候那放纵私欲的样子。</p>
+      </li>
+                        <li><span>1:15</span>
+        <p>那召你们的既是圣洁，你们在一切所行的事上也要圣洁。</p>
+      </li>
+                        <li><span>1:16</span>
+        <p>因为经上记着说：“你们要圣洁，因为我是圣洁的。”</p>
+      </li>
+                        <li><span>1:17</span>
+        <p>你们既称那不偏待人、按各人行为审判人的主为父，就当存敬畏的心，度你们在世寄居的日子，</p>
+      </li>
+                        <li><span>1:18</span>
+        <p>知道你们得赎、脱去你们祖宗所传流虚妄的行为，不是凭着能坏的金银等物，</p>
+      </li>
+                        <li><span>1:19</span>
+        <p>乃是凭着基督的宝血，如同无瑕疵、无玷污的羔羊之血。</p>
+      </li>
+                        <li><span>1:20</span>
+        <p>基督在创世以前是预先被  神知道的，却在这末世才为你们显现。</p>
+      </li>
+                        <li><span>1:21</span>
+        <p>你们也因着他，信那叫他从死里复活，又给他荣耀的  神，叫你们的信心和盼望都在于  神。</p>
+      </li>
+                        <li><span>1:22</span>
+        <p>你们既因顺从真理，洁净了自己的心，以致爱弟兄没有虚假，就当从心里彼此切实相爱（“从心里”有古卷作“从清洁的心”）。</p>
+      </li>
+                        <li><span>1:23</span>
+        <p>你们蒙了重生，不是由于能坏的种子，乃是由于不能坏的种子，是藉着  神活泼常存的道。</p>
+      </li>
+                        <li><span>1:24</span>
+        <p>因为：“凡有血气的，尽都如草，他的美荣都像草上的花。草必枯干，花必凋谢；</p>
+      </li>
+                        <li><span>1:25</span>
+        <p>惟有主的道是永存的。”所传给你们的福音就是这道。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共5首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-60-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>彼得前书(彼前)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-60-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>彼得前书(彼前)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-60-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>彼得前书(彼前)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-60-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>彼得前书(彼前)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-60-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>彼得前书(彼前)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="javascript:alertText('已到本章第一首!');"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-60-cid-2.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

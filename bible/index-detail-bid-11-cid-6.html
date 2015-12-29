@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="11列王记上/11列王记上_06.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-11-cid-7.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">列王记上(王上) 第6章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>6:1</span>
+        <p>以色列人出埃及地后四百八十年，所罗门作以色列王第四年西弗月，就是二月，开工建造耶和华的殿。</p>
+      </li>
+                        <li><span>6:2</span>
+        <p>所罗门王为耶和华所建的殿，长六十肘，宽二十肘，高三十肘。</p>
+      </li>
+                        <li><span>6:3</span>
+        <p>殿前的廊子长二十肘，与殿的宽窄一样，阔十肘。</p>
+      </li>
+                        <li><span>6:4</span>
+        <p>又为殿作了严紧的窗棂。</p>
+      </li>
+                        <li><span>6:5</span>
+        <p>靠着殿墙，围着外殿内殿，造了三层旁屋。</p>
+      </li>
+                        <li><span>6:6</span>
+        <p>下层宽五肘，中层宽六肘，上层宽七肘。殿外旁屋的梁木，搁在殿墙坎上，免得插入殿墙。</p>
+      </li>
+                        <li><span>6:7</span>
+        <p>建殿是用山中凿成的石头。建殿的时候，锤子、斧子和别样铁器的响声都没有听见。</p>
+      </li>
+                        <li><span>6:8</span>
+        <p>在殿右边当中的旁屋有门，门内有旋螺的楼梯，可以上到第二层，从第二层可以上到第三层。</p>
+      </li>
+                        <li><span>6:9</span>
+        <p>所罗门建殿，安置香柏木的栋梁，又用香柏木板遮盖。</p>
+      </li>
+                        <li><span>6:10</span>
+        <p>靠着殿所造的旁屋，每层高五肘，香柏木的栋梁，搁在殿墙坎上。</p>
+      </li>
+                                    <li><span>6:11</span>
+        <p>耶和华的话临到所罗门说：</p>
+      </li>
+                        <li><span>6:12</span>
+        <p>“论到你所建的这殿，你若遵行我的律例，谨守我的典章，遵从我的一切诫命，我必向你应验我所应许你父亲大卫的话。</p>
+      </li>
+                        <li><span>6:13</span>
+        <p>我必住在以色列人中间，并不丢弃我民以色列。”</p>
+      </li>
+                                    <li><span>6:14</span>
+        <p>所罗门建造殿宇，</p>
+      </li>
+                        <li><span>6:15</span>
+        <p>殿里面用香柏木板贴墙，从地到棚顶，都用木板遮蔽，又用松木板铺地。</p>
+      </li>
+                        <li><span>6:16</span>
+        <p>内殿，就是至圣所，长二十肘，从地到棚顶，用香柏木板遮蔽（或作“隔断”）。</p>
+      </li>
+                        <li><span>6:17</span>
+        <p>内殿前的外殿，长四十肘。</p>
+      </li>
+                        <li><span>6:18</span>
+        <p>殿里一点石头都不显露，一概用香柏木遮蔽，上面刻着野瓜和初开的花。</p>
+      </li>
+                        <li><span>6:19</span>
+        <p>殿里预备了内殿，好安放耶和华的约柜。</p>
+      </li>
+                        <li><span>6:20</span>
+        <p>内殿长二十肘，宽二十肘，高二十肘，墙面都贴上精金。又用香柏木作坛，包上精金。</p>
+      </li>
+                        <li><span>6:21</span>
+        <p>所罗门用精金贴了殿内的墙，又用金链子挂在内殿前门扇，用金包裹。</p>
+      </li>
+                        <li><span>6:22</span>
+        <p>全殿都贴上金子，直到贴完，内殿前的坛，也都用金包裹。</p>
+      </li>
+                                    <li><span>6:23</span>
+        <p>他用橄榄木作两个基路伯，各高十肘，安在内殿。</p>
+      </li>
+                        <li><span>6:24</span>
+        <p>这一个基路伯有两个翅膀，各长五肘，从这翅膀尖到那翅膀尖，共有十肘。</p>
+      </li>
+                        <li><span>6:25</span>
+        <p>那一个基路伯的两个翅膀也是十肘，两个基路伯的尺寸、形像都是一样。</p>
+      </li>
+                        <li><span>6:26</span>
+        <p>这基路伯高十肘，那基路伯也是如此。</p>
+      </li>
+                        <li><span>6:27</span>
+        <p>他将两个基路伯安在内殿里。基路伯的翅膀是张开的；这基路伯的一个翅膀挨着这边的墙，那基路伯的一个翅膀挨着那边的墙，里边的两个翅膀，在殿中间彼此相接。</p>
+      </li>
+                        <li><span>6:28</span>
+        <p>又用金子包裹二基路伯。</p>
+      </li>
+                                    <li><span>6:29</span>
+        <p>内殿外殿周围的墙上，都刻着基路伯、棕树和初开的花。</p>
+      </li>
+                        <li><span>6:30</span>
+        <p>内殿外殿的地板都贴上金子。</p>
+      </li>
+                        <li><span>6:31</span>
+        <p>又用橄榄木制造内殿的门扇、门楣、门框，门口有墙的五分之一。</p>
+      </li>
+                        <li><span>6:32</span>
+        <p>在橄榄木作的两门扇上，刻着基路伯、棕树和初开的花，都贴上金子。</p>
+      </li>
+                        <li><span>6:33</span>
+        <p>又用橄榄木制造外殿的门框，门口有墙的四分之一。</p>
+      </li>
+                        <li><span>6:34</span>
+        <p>用松木作门两扇：这扇分两扇，是折叠的，那扇分两扇，也是折叠的。</p>
+      </li>
+                        <li><span>6:35</span>
+        <p>上面刻着基路伯、棕树和初开的花，都用金子贴了。</p>
+      </li>
+                        <li><span>6:36</span>
+        <p>他又用凿成的石头三层，香柏木一层，建筑内院。</p>
+      </li>
+                        <li><span>6:37</span>
+        <p>所罗门在位第四年西弗月，立了耶和华殿的根基。</p>
+      </li>
+                        <li><span>6:38</span>
+        <p>到十一年布勒月，就是八月，殿和一切属殿的都按着样式造成。他建殿的工夫共有七年。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共22首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>列王记上(王上)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>列王记上(王上)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>列王记上(王上)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>列王记上(王上)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>列王记上(王上)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>列王记上(王上)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>列王记上(王上)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>列王记上(王上)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>列王记上(王上)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>列王记上(王上)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>列王记上(王上)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>列王记上(王上)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>列王记上(王上)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>列王记上(王上)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>列王记上(王上)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>列王记上(王上)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>列王记上(王上)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>列王记上(王上)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>列王记上(王上)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>列王记上(王上)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>列王记上(王上)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>列王记上(王上)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-11-cid-5.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-11-cid-7.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

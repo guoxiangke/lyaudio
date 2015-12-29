@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="40马太福音/40马太福音_25.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-40-cid-26.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">马太福音(太) 第25章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>25:1</span>
+        <p>“那时，天国好比十个童女拿着灯，出去迎接新郎。</p>
+      </li>
+                        <li><span>25:2</span>
+        <p>其中有五个是愚拙的，五个是聪明的。</p>
+      </li>
+                        <li><span>25:3</span>
+        <p>愚拙的拿着灯，却不预备油；</p>
+      </li>
+                        <li><span>25:4</span>
+        <p>聪明的拿着灯，又预备油在器皿里。</p>
+      </li>
+                        <li><span>25:5</span>
+        <p>新郎迟延的时候，她们都打盹、睡着了。</p>
+      </li>
+                        <li><span>25:6</span>
+        <p>半夜有人喊着说：‘新郎来了，你们出来迎接他！’</p>
+      </li>
+                        <li><span>25:7</span>
+        <p>那些童女就都起来收拾灯。</p>
+      </li>
+                        <li><span>25:8</span>
+        <p>愚拙的对聪明的说：‘请分点油给我们，因为我们的灯要灭了。’</p>
+      </li>
+                        <li><span>25:9</span>
+        <p>聪明的回答说：‘恐怕不够你我用的，不如你们自己到卖油的那里去买吧！’</p>
+      </li>
+                        <li><span>25:10</span>
+        <p>她们去买的时候，新郎到了，那预备好了的，同他进去坐席，门就关了。</p>
+      </li>
+                        <li><span>25:11</span>
+        <p>其余的童女随后也来了，说：‘主啊，主啊，给我们开门！’</p>
+      </li>
+                        <li><span>25:12</span>
+        <p>他却回答说：‘我实在告诉你们：我不认识你们。’</p>
+      </li>
+                        <li><span>25:13</span>
+        <p>所以，你们要警醒，因为那日子、那时辰，你们不知道。”</p>
+      </li>
+                                    <li><span>25:14</span>
+        <p>“天国又好比一个人要往外国去，就叫了仆人来，把他的家业交给他们，</p>
+      </li>
+                        <li><span>25:15</span>
+        <p>按着各人的才干，给他们银子，一个给了五千，一个给了二千，一个给了一千，就往外国去了。</p>
+      </li>
+                        <li><span>25:16</span>
+        <p>那领五千的随即拿去作买卖，另外赚了五千；</p>
+      </li>
+                        <li><span>25:17</span>
+        <p>那领二千的也照样另赚了二千；</p>
+      </li>
+                        <li><span>25:18</span>
+        <p>但那领一千的去掘开地，把主人的银子埋藏了。</p>
+      </li>
+                        <li><span>25:19</span>
+        <p>过了许久，那些仆人的主人来了，和他们算账。</p>
+      </li>
+                        <li><span>25:20</span>
+        <p>那领五千银子的又带着那另外的五千来，说：‘主啊，你交给我五千银子，请看，我又赚了五千。’</p>
+      </li>
+                        <li><span>25:21</span>
+        <p>主人说：‘好，你这又良善又忠心的仆人，你在不多的事上有忠心，我要把许多事派你管理，可以进来享受你主人的快乐。’</p>
+      </li>
+                        <li><span>25:22</span>
+        <p>那领二千的也来，说：‘主啊，你交给我二千银子，请看，我又赚了二千。’</p>
+      </li>
+                        <li><span>25:23</span>
+        <p>主人说：‘好，你这又良善又忠心的仆人，你在不多的事上有忠心，我要把许多事派你管理，可以进来享受你主人的快乐。’</p>
+      </li>
+                        <li><span>25:24</span>
+        <p>那领一千的也来，说：‘主啊，我知道你是忍心的人，没有种的地方要收割，没有散的地方要聚敛，</p>
+      </li>
+                        <li><span>25:25</span>
+        <p>我就害怕，去把你的一千银子埋藏在地里。请看，你的原银子在这里。’</p>
+      </li>
+                        <li><span>25:26</span>
+        <p>主人回答说：‘你这又恶又懒的仆人，你既知道我没有种的地方要收割，没有散的地方要聚敛，</p>
+      </li>
+                        <li><span>25:27</span>
+        <p>就当把我的银子放给兑换银钱的人，到我来的时候，可以连本带利收回。</p>
+      </li>
+                        <li><span>25:28</span>
+        <p>夺过他这一千来，给那有一万的。</p>
+      </li>
+                        <li><span>25:29</span>
+        <p>因为凡有的，还要加给他，叫他有余；没有的，连他所有的也要夺过来。</p>
+      </li>
+                        <li><span>25:30</span>
+        <p>把这无用的仆人丢在外面黑暗里，在那里必要哀哭切齿了。’”</p>
+      </li>
+                                    <li><span>25:31</span>
+        <p>“当人子在他荣耀里，同着众天使降临的时候，要坐在他荣耀的宝座上。</p>
+      </li>
+                        <li><span>25:32</span>
+        <p>万民都要聚集在他面前。他要把他们分别出来，好像牧羊的分别绵羊、山羊一般；</p>
+      </li>
+                        <li><span>25:33</span>
+        <p>把绵羊安置在右边，山羊在左边。</p>
+      </li>
+                        <li><span>25:34</span>
+        <p>于是，王要向那右边的说：‘你们这蒙我父赐福的，可来承受那创世以来为你们所预备的国。</p>
+      </li>
+                        <li><span>25:35</span>
+        <p>因为我饿了，你们给我吃；渴了，你们给我喝；我作客旅，你们留我住；</p>
+      </li>
+                        <li><span>25:36</span>
+        <p>我赤身露体，你们给我穿；我病了，你们看顾我；我在监里，你们来看我。’</p>
+      </li>
+                        <li><span>25:37</span>
+        <p>义人就回答说：‘主啊，我们什么时候见你饿了，给你吃，渴了，给你喝？</p>
+      </li>
+                        <li><span>25:38</span>
+        <p>什么时候见你作客旅，留你住，或是赤身露体，给你穿？</p>
+      </li>
+                        <li><span>25:39</span>
+        <p>又什么时候见你病了，或是在监里，来看你呢？’</p>
+      </li>
+                        <li><span>25:40</span>
+        <p>王要回答说：‘我实在告诉你们：这些事你们既作在我这弟兄中一个最小的身上，就是作在我身上了。’</p>
+      </li>
+                        <li><span>25:41</span>
+        <p>王又要向那左边的说：‘你们这被咒诅的人，离开我，进入那为魔鬼和他的使者所预备的永火里去！</p>
+      </li>
+                        <li><span>25:42</span>
+        <p>因为我饿了，你们不给我吃；渴了，你们不给我喝；</p>
+      </li>
+                        <li><span>25:43</span>
+        <p>我作客旅，你们不留我住；我赤身露体，你们不给我穿；我病了，我在监里，你们不来看顾我。’</p>
+      </li>
+                        <li><span>25:44</span>
+        <p>他们也要回答说：‘主啊，我们什么时候见你饿了，或渴了，或作客旅，或赤身露体，或病了，或在监里，不伺候你呢？’</p>
+      </li>
+                        <li><span>25:45</span>
+        <p>王要回答说：‘我实在告诉你们：这些事你们既不作在我这弟兄中一个最小的身上，就是不作在我身上了。’</p>
+      </li>
+                        <li><span>25:46</span>
+        <p>这些人要往永刑里去；那些义人，要往永生里去。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共28首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>马太福音(太)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>马太福音(太)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>马太福音(太)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>马太福音(太)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>马太福音(太)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>马太福音(太)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>马太福音(太)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>马太福音(太)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>马太福音(太)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>马太福音(太)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>马太福音(太)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>马太福音(太)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>马太福音(太)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>马太福音(太)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>马太福音(太)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>马太福音(太)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>马太福音(太)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>马太福音(太)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>马太福音(太)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>马太福音(太)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>马太福音(太)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>马太福音(太)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>马太福音(太)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>马太福音(太)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>马太福音(太)第25章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>马太福音(太)第26章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>马太福音(太)第27章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>马太福音(太)第28章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-40-cid-24.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-40-cid-26.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

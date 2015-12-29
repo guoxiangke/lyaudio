@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="14历代志下/14历代志下_18.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-14-cid-19.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">历代志下(代下) 第18章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>18:1</span>
+        <p>约沙法大有尊荣资财，就与亚哈结亲。</p>
+      </li>
+                        <li><span>18:2</span>
+        <p>过了几年，他下到撒玛利亚去见亚哈。亚哈为他和跟从他的人宰了许多牛羊，劝他与自己同去攻取基列的拉末。</p>
+      </li>
+                        <li><span>18:3</span>
+        <p>以色列王亚哈问犹大王约沙法说：“你肯同我去攻取基列的拉末吗？”他回答说：“你我不分彼此，我的民与你的民一样，必与你同去争战。”</p>
+      </li>
+                        <li><span>18:4</span>
+        <p>约沙法对以色列王说：“请你先求问耶和华。”</p>
+      </li>
+                        <li><span>18:5</span>
+        <p>于是，以色列王招聚先知四百人，问他们说：“我们上去攻取基列的拉末可以不可以？”他们说：“可以上去。因为  神必将那城交在王的手里。”</p>
+      </li>
+                        <li><span>18:6</span>
+        <p>约沙法说：“这里不是还有耶和华的先知，我们可以求问他吗？”</p>
+      </li>
+                        <li><span>18:7</span>
+        <p>以色列王对约沙法说：“还有一个人，是音拉的儿子米该雅，我们可以托他求问耶和华。只是我恨他，因为他指着我所说的预言，不说吉语，常说凶言。”约沙法说：“王不必这样说。”</p>
+      </li>
+                        <li><span>18:8</span>
+        <p>以色列王就召了一个太监来，说：“你快去将音拉的儿子米该雅召来。”</p>
+      </li>
+                        <li><span>18:9</span>
+        <p>以色列王和犹大王约沙法在撒玛利亚城门前的空场上，各穿朝服坐在位上。所有的先知都在他们面前说预言。</p>
+      </li>
+                        <li><span>18:10</span>
+        <p>基拿拿的儿子西底家造了两个铁角，说：“耶和华如此说：‘你要用这角抵触亚兰人，直到将他们灭尽。’”</p>
+      </li>
+                        <li><span>18:11</span>
+        <p>所有的先知也都这样预言，说：“可以上基列的拉末去，必然得胜，因为耶和华必将那城交在王的手中。”</p>
+      </li>
+                        <li><span>18:12</span>
+        <p>那去召米该雅的使者对米该雅说：“众先知一口同音地都向王说吉言，你不如与他们说一样的话，也说吉言。”</p>
+      </li>
+                        <li><span>18:13</span>
+        <p>米该雅说：“我指着永生的耶和华起誓，我的  神说什么，我就说什么！”</p>
+      </li>
+                        <li><span>18:14</span>
+        <p>米该雅到王面前，王问他说：“米该雅啊，我们上去攻取基列的拉末可以不可以？”他说：“可以上去，必然得胜，敌人必交在你们手里。”</p>
+      </li>
+                        <li><span>18:15</span>
+        <p>王对他说：“我当嘱咐你几次，你才奉耶和华的名向我说实话呢？”</p>
+      </li>
+                        <li><span>18:16</span>
+        <p>米该雅说：“我看见以色列众民散在山上，如同没有牧人的羊群一般。耶和华说：‘这民没有主人，他们可以平平安安地各归各家去。’”</p>
+      </li>
+                        <li><span>18:17</span>
+        <p>以色列王对约沙法说：“我岂没有告诉你，这人指着我所说的预言，不说吉语，单说凶言吗？”</p>
+      </li>
+                        <li><span>18:18</span>
+        <p>米该雅说：“你们要听耶和华的话。我看见耶和华坐在宝座上，天上的万军侍立在他左右。</p>
+      </li>
+                        <li><span>18:19</span>
+        <p>耶和华说：‘谁去引诱以色列王亚哈上基列的拉末去阵亡呢？’这个就这样说，那个就那样说。</p>
+      </li>
+                        <li><span>18:20</span>
+        <p>随后有一个神灵出来，站在耶和华面前说：‘我去引诱他。’耶和华问他说：‘你用何法呢？’</p>
+      </li>
+                        <li><span>18:21</span>
+        <p>他说：‘我去，要在他众先知口中作谎言的灵。’耶和华说：‘这样，你必能引诱他，你去如此行吧！’</p>
+      </li>
+                        <li><span>18:22</span>
+        <p>现在耶和华使谎言的灵，入了你这些先知的口，并且耶和华已经命定降祸与你。”</p>
+      </li>
+                        <li><span>18:23</span>
+        <p>基拿拿的儿子西底家前来打米该雅的脸，说：“耶和华的灵从哪里离开我与你说话呢？”</p>
+      </li>
+                        <li><span>18:24</span>
+        <p>米该雅说：“你进严密的屋子藏躲的那日，就必看见了。”</p>
+      </li>
+                        <li><span>18:25</span>
+        <p>以色列王说：“将米该雅带回，交给邑宰亚们和王的儿子约阿施，说：</p>
+      </li>
+                        <li><span>18:26</span>
+        <p>‘王如此说：把这个人下在监里，使他受苦，吃不饱、喝不足，等候我平平安安地回来。’”</p>
+      </li>
+                        <li><span>18:27</span>
+        <p>米该雅说：“你若能平安回来，那就是耶和华没有藉我说这话了。”又说：“众民哪，你们都要听！”</p>
+      </li>
+                                    <li><span>18:28</span>
+        <p>以色列王和犹大王约沙法上基列的拉末去了。</p>
+      </li>
+                        <li><span>18:29</span>
+        <p>以色列王对约沙法说：“我要改装上阵，你可以仍穿王服。”于是以色列王改装，他们就上阵去了。</p>
+      </li>
+                        <li><span>18:30</span>
+        <p>先是亚兰王吩咐车兵长说：“他们的兵将，无论大小，你们都不可与他们争战，只要与以色列王争战。”</p>
+      </li>
+                        <li><span>18:31</span>
+        <p>车兵长看见约沙法便说：“这必是以色列王。”就转过去与他争战。约沙法一呼喊，耶和华就帮助他，  神又感动他们离开他。</p>
+      </li>
+                        <li><span>18:32</span>
+        <p>车兵长见不是以色列王，就转去不追他了。</p>
+      </li>
+                        <li><span>18:33</span>
+        <p>有一人随便开弓，恰巧射入以色列王的甲缝里。王对赶车的说：“我受了重伤，你转过车来，拉我出阵吧！”</p>
+      </li>
+                        <li><span>18:34</span>
+        <p>那日，阵势越战越猛，以色列王勉强站在车上抵挡亚兰人，直到晚上。约在日落的时候，王就死了。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共36首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>历代志下(代下)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>历代志下(代下)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>历代志下(代下)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>历代志下(代下)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>历代志下(代下)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>历代志下(代下)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>历代志下(代下)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>历代志下(代下)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>历代志下(代下)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>历代志下(代下)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>历代志下(代下)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>历代志下(代下)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>历代志下(代下)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>历代志下(代下)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>历代志下(代下)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>历代志下(代下)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>历代志下(代下)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>历代志下(代下)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>历代志下(代下)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>历代志下(代下)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>历代志下(代下)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>历代志下(代下)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>历代志下(代下)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>历代志下(代下)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>历代志下(代下)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>历代志下(代下)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>历代志下(代下)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>历代志下(代下)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>历代志下(代下)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>历代志下(代下)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>历代志下(代下)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>历代志下(代下)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>历代志下(代下)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>历代志下(代下)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-35.html"><span class="ppNum">35</span>
+        <p><strong>历代志下(代下)第35章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-14-cid-36.html"><span class="ppNum">36</span>
+        <p><strong>历代志下(代下)第36章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-14-cid-17.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-14-cid-19.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

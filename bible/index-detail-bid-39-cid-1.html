@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="39玛拉基书/39玛拉基书_01.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-39-cid-2.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">玛拉基书(玛) 第1章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                  <li><span>1:1</span>
+        <p>耶和华藉玛拉基传给以色列的默示。</p>
+      </li>
+                                    <li><span>1:2</span>
+        <p>耶和华说：“我曾爱你们。”你们却说：“你在何事上爱我们呢？”耶和华说：“以扫不是雅各的哥哥吗？我却爱雅各，</p>
+      </li>
+                        <li><span>1:3</span>
+        <p>恶以扫，使他的山岭荒凉，把他的地业交给旷野的野狗。”</p>
+      </li>
+                        <li><span>1:4</span>
+        <p>以东人说：“我们现在虽被毁坏，却要重建荒废之处。”万军之耶和华如此说：“任他们建造，我必拆毁。人必称他们的地为罪恶之境；称他们的民为耶和华永远恼怒之民。”</p>
+      </li>
+                        <li><span>1:5</span>
+        <p>你们必亲眼看见，也必说：“愿耶和华在以色列境界之外被尊为大。”</p>
+      </li>
+                                    <li><span>1:6</span>
+        <p>“藐视我名的祭司啊，万军之耶和华对你们说：儿子尊敬父亲，仆人敬畏主人；我既为父亲，尊敬我的在哪里呢？我既为主人，敬畏我的在哪里呢？你们却说：‘我们在何事上藐视你的名呢？’</p>
+      </li>
+                        <li><span>1:7</span>
+        <p>你们将污秽的食物献在我的坛上，且说：‘我们在何事上污秽你呢？’因你们说，耶和华的桌子是可藐视的。</p>
+      </li>
+                        <li><span>1:8</span>
+        <p>你们将瞎眼的献为祭物，这不为恶吗？将瘸腿的、有病的献上，这不为恶吗？你献给你的省长，他岂喜悦你，岂能看你的情面吗？”这是万军之耶和华说的。</p>
+      </li>
+                        <li><span>1:9</span>
+        <p>现在我劝你们恳求  神，他好施恩与我们。这妄献的事既由你们经手，他岂能看你们的情面吗？这是万军之耶和华说的。</p>
+      </li>
+                        <li><span>1:10</span>
+        <p>甚愿你们中间有一人关上殿门，免得你们徒然在我坛上烧火。万军之耶和华说：“我不喜悦你们，也不从你们手中收纳供物。</p>
+      </li>
+                        <li><span>1:11</span>
+        <p>万军之耶和华说：从日出之地到日落之处，我的名在外邦中必尊为大。在各处，人必奉我的名烧香，献洁净的供物。因为我的名在外邦中必尊为大。</p>
+      </li>
+                        <li><span>1:12</span>
+        <p>你们却亵渎我的名，说：‘耶和华的桌子是污秽的，其上的食物是可藐视的。’</p>
+      </li>
+                        <li><span>1:13</span>
+        <p>你们又说：‘这些事何等烦琐！’并嗤之以鼻。这是万军之耶和华说的。你们把抢夺的、瘸腿的、有病的拿来献上为祭。我岂能从你们手中收纳呢？这是耶和华说的。</p>
+      </li>
+                        <li><span>1:14</span>
+        <p>行诡诈的在群中有公羊，他许愿却用有残疾的献给主，这人是可咒诅的；因为我是大君王，我的名在外邦中是可畏的。这是万军之耶和华说的。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共4首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-39-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>玛拉基书(玛)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-39-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>玛拉基书(玛)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-39-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>玛拉基书(玛)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-39-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>玛拉基书(玛)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="javascript:alertText('已到本章第一首!');"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-39-cid-2.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

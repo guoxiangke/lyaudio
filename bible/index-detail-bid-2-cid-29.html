@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="02出埃及记/02出埃及记_29.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-2-cid-30.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">出埃及记(出) 第29章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>29:1</span>
+        <p>“你使亚伦和他儿子成圣，给我供祭司的职分，要如此行：取一只公牛犊，两只无残疾的公绵羊，</p>
+      </li>
+                        <li><span>29:2</span>
+        <p>无酵饼和调油的无酵饼，与抹油的无酵薄饼，这都要用细麦面作成。</p>
+      </li>
+                        <li><span>29:3</span>
+        <p>这饼要装在一个筐子里，连筐子带来，又把公牛和两只公绵羊牵来。</p>
+      </li>
+                        <li><span>29:4</span>
+        <p>要使亚伦和他儿子到会幕门口来，用水洗身。</p>
+      </li>
+                        <li><span>29:5</span>
+        <p>要给亚伦穿上内袍和以弗得的外袍，并以弗得，又带上胸牌，束上以弗得巧工织的带子，</p>
+      </li>
+                        <li><span>29:6</span>
+        <p>把冠冕戴在他头上，将圣冠加在冠冕上。</p>
+      </li>
+                        <li><span>29:7</span>
+        <p>就把膏油倒在他头上膏他。</p>
+      </li>
+                        <li><span>29:8</span>
+        <p>要叫他的儿子来，给他们穿上内袍。</p>
+      </li>
+                        <li><span>29:9</span>
+        <p>给亚伦和他儿子束上腰带，包上裹头巾，他们就凭永远的定例得了祭司的职任；又要将亚伦和他儿子分别为圣。”</p>
+      </li>
+                        <li><span>29:10</span>
+        <p>“你要把公牛牵到会幕前，亚伦和他儿子要按手在公牛的头上。</p>
+      </li>
+                        <li><span>29:11</span>
+        <p>你要在耶和华面前，在会幕门口，宰这公牛。</p>
+      </li>
+                        <li><span>29:12</span>
+        <p>要取些公牛的血，用指头抹在坛的四角上，把血都倒在坛脚那里。</p>
+      </li>
+                        <li><span>29:13</span>
+        <p>要把一切盖脏的脂油与肝上的网子，并两个腰子和腰子上的脂油，都烧在坛上。</p>
+      </li>
+                        <li><span>29:14</span>
+        <p>只是公牛的皮、肉、粪都要用火烧在营外；这牛是赎罪祭。”</p>
+      </li>
+                        <li><span>29:15</span>
+        <p>“你要牵一只公绵羊来，亚伦和他儿子要按手在这羊的头上。</p>
+      </li>
+                        <li><span>29:16</span>
+        <p>要宰这羊，把血洒在坛的周围。</p>
+      </li>
+                        <li><span>29:17</span>
+        <p>要把羊切成块子，洗净五脏和腿，连块子带头，都放在一处。</p>
+      </li>
+                        <li><span>29:18</span>
+        <p>要把全羊烧在坛上，是给耶和华献的燔祭，是献给耶和华为馨香的火祭。”</p>
+      </li>
+                        <li><span>29:19</span>
+        <p>“你要将那一只公绵羊牵来，亚伦和他儿子要按手在羊的头上。</p>
+      </li>
+                        <li><span>29:20</span>
+        <p>你要宰这羊，取点血抹在亚伦的右耳垂上和他儿子的右耳垂上，又抹在他们右手的大拇指上和右脚的大拇指上，并要把血洒在坛的四围。</p>
+      </li>
+                        <li><span>29:21</span>
+        <p>你要取点膏油和坛上的血，弹在亚伦和他的衣服上，并他儿子和他儿子的衣服上，他们和他们的衣服就一同成圣。”</p>
+      </li>
+                        <li><span>29:22</span>
+        <p>“你要取这羊的脂油和肥尾巴，并盖脏的脂油与肝上的网子，两个腰子和腰子上的脂油并右腿（这是承接圣职所献的羊）。</p>
+      </li>
+                        <li><span>29:23</span>
+        <p>再从耶和华面前装无酵饼的筐子中取一个饼、一个调油的饼和一个薄饼，</p>
+      </li>
+                        <li><span>29:24</span>
+        <p>都放在亚伦的手上和他儿子的手上，作为摇祭，在耶和华面前摇一摇。</p>
+      </li>
+                        <li><span>29:25</span>
+        <p>要从他们手中接过来，烧在耶和华面前坛上的燔祭上，是献给耶和华为馨香的火祭。”</p>
+      </li>
+                        <li><span>29:26</span>
+        <p>“你要取亚伦承接圣职所献公羊的胸，作为摇祭，在耶和华面前摇一摇，这就可以作你的份。</p>
+      </li>
+                        <li><span>29:27</span>
+        <p>那摇祭的胸和举祭的腿，就是承接圣职所摇的、所举的，是归亚伦和他儿子的。这些你都要成为圣，</p>
+      </li>
+                        <li><span>29:28</span>
+        <p>作亚伦和他子孙从以色列人中永远所得的份，因为是举祭。这要从以色列人的平安祭中，作为献给耶和华的举祭。”</p>
+      </li>
+                        <li><span>29:29</span>
+        <p>“亚伦的圣衣要留给他的子孙，可以穿着受膏，又穿着承接圣职。</p>
+      </li>
+                        <li><span>29:30</span>
+        <p>他的子孙接续他当祭司的，每逢进会幕在圣所供职的时候，要穿七天。”</p>
+      </li>
+                        <li><span>29:31</span>
+        <p>你要将承接圣职所献公羊的肉煮在圣处。</p>
+      </li>
+                        <li><span>29:32</span>
+        <p>亚伦和他儿子要在会幕门口吃这羊的肉和筐内的饼。</p>
+      </li>
+                        <li><span>29:33</span>
+        <p>他们吃那些赎罪之物，好承接圣职，使他们成圣；只是外人不可吃，因为这是圣物。</p>
+      </li>
+                        <li><span>29:34</span>
+        <p>那承接圣职所献的肉或饼，若有一点留到早晨，就要用火烧了，不可吃这物，因为是圣物。”</p>
+      </li>
+                        <li><span>29:35</span>
+        <p>“你要这样照我一切所吩咐的，向亚伦和他儿子行承接圣职的礼七天。</p>
+      </li>
+                        <li><span>29:36</span>
+        <p>每天要献公牛一只为赎罪祭。你洁净坛的时候，坛就洁净了，且要用膏抹坛，使坛成圣。</p>
+      </li>
+                        <li><span>29:37</span>
+        <p>要洁净坛七天，使坛成圣；坛就成为至圣；凡挨着坛的都成为圣。”</p>
+      </li>
+                        <li><span>29:38</span>
+        <p>“你每天所要献在坛上的，就是两只一岁的羊羔，</p>
+      </li>
+                        <li><span>29:39</span>
+        <p>早晨要献这一只，黄昏的时候要献那一只。</p>
+      </li>
+                        <li><span>29:40</span>
+        <p>和这一只羊羔同献的，要用细面伊法十分之一与捣成的油一欣四分之一调和，又用酒一欣四分之一作为奠祭。</p>
+      </li>
+                        <li><span>29:41</span>
+        <p>那一只羊羔要在黄昏的时候献上，照着早晨的素祭和奠祭的礼办理，作为献给耶和华馨香的火祭。</p>
+      </li>
+                        <li><span>29:42</span>
+        <p>这要在耶和华面前、会幕门口，作你们世世代代常献的燔祭。我要在那里与你们相会，和你们说话。</p>
+      </li>
+                        <li><span>29:43</span>
+        <p>我要在那里与以色列人相会，会幕就要因我的荣耀成为圣。</p>
+      </li>
+                        <li><span>29:44</span>
+        <p>我要使会幕和坛成圣，也要使亚伦和他的儿子成圣，给我供祭司的职分。</p>
+      </li>
+                        <li><span>29:45</span>
+        <p>我要住在以色列人中间，作他们的  神。</p>
+      </li>
+                        <li><span>29:46</span>
+        <p>他们必知道我是耶和华他们的  神，是将他们从埃及地领出来的，为要住在他们中间。我是耶和华他们的  神。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共40首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>出埃及记(出)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>出埃及记(出)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>出埃及记(出)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>出埃及记(出)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>出埃及记(出)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>出埃及记(出)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>出埃及记(出)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>出埃及记(出)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>出埃及记(出)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>出埃及记(出)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>出埃及记(出)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>出埃及记(出)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>出埃及记(出)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>出埃及记(出)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>出埃及记(出)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>出埃及记(出)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>出埃及记(出)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>出埃及记(出)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>出埃及记(出)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>出埃及记(出)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>出埃及记(出)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>出埃及记(出)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>出埃及记(出)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>出埃及记(出)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>出埃及记(出)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>出埃及记(出)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>出埃及记(出)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>出埃及记(出)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>出埃及记(出)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>出埃及记(出)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>出埃及记(出)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>出埃及记(出)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>出埃及记(出)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>出埃及记(出)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-35.html"><span class="ppNum">35</span>
+        <p><strong>出埃及记(出)第35章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-36.html"><span class="ppNum">36</span>
+        <p><strong>出埃及记(出)第36章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-37.html"><span class="ppNum">37</span>
+        <p><strong>出埃及记(出)第37章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-38.html"><span class="ppNum">38</span>
+        <p><strong>出埃及记(出)第38章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-39.html"><span class="ppNum">39</span>
+        <p><strong>出埃及记(出)第39章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-40.html"><span class="ppNum">40</span>
+        <p><strong>出埃及记(出)第40章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-2-cid-28.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-2-cid-30.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

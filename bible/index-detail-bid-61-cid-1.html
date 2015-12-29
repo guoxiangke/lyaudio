@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="61彼得后书/61彼得后书_01.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-61-cid-2.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">彼得后书(彼后) 第1章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>1:1</span>
+        <p>作耶稣基督仆人和使徒的西门彼得写信给那因我们的  神和（有古卷无“和”字）救主耶稣基督之义，与我们同得一样宝贵信心的人。</p>
+      </li>
+                        <li><span>1:2</span>
+        <p>愿恩惠、平安因你们认识  神和我们主耶稣，多多地加给你们。</p>
+      </li>
+                                    <li><span>1:3</span>
+        <p>神的神能已将一切关乎生命和虔敬的事赐给我们，皆因我们认识那用自己荣耀和美德召我们的主。</p>
+      </li>
+                        <li><span>1:4</span>
+        <p>因此，他已将又宝贵、又极大的应许赐给我们，叫我们既脱离世上从情欲来的败坏，就得与  神的性情有份。</p>
+      </li>
+                        <li><span>1:5</span>
+        <p>正因这缘故，你们要分外地殷勤。有了信心，又要加上德行；有了德行，又要加上知识；</p>
+      </li>
+                        <li><span>1:6</span>
+        <p>有了知识，又要加上节制；有了节制，又要加上忍耐；有了忍耐，又要加上虔敬；</p>
+      </li>
+                        <li><span>1:7</span>
+        <p>有了虔敬，又要加上爱弟兄的心；有了爱弟兄的心，又要加上爱众人的心。</p>
+      </li>
+                        <li><span>1:8</span>
+        <p>你们若充充足足地有这几样，就必使你们在认识我们的主耶稣基督上不至于闲懒不结果子了。</p>
+      </li>
+                        <li><span>1:9</span>
+        <p>人若没有这几样，就是眼瞎，只看见近处的，忘了他旧日的罪已经得了洁净。</p>
+      </li>
+                        <li><span>1:10</span>
+        <p>所以弟兄们，应当更加殷勤，使你们所蒙的恩召和拣选坚定不移。你们若行这几样，就永不失脚。</p>
+      </li>
+                        <li><span>1:11</span>
+        <p>这样，必叫你们丰丰富富地得以进入我们主救主耶稣基督永远的国。</p>
+      </li>
+                        <li><span>1:12</span>
+        <p>你们虽然晓得这些事，并且在你们已有的真道上坚固，我却要将这些事常常提醒你们。</p>
+      </li>
+                        <li><span>1:13</span>
+        <p>我以为应当趁我还在这帐棚的时候提醒你们，激发你们，</p>
+      </li>
+                        <li><span>1:14</span>
+        <p>因为知道我脱离这帐棚的时候快到了，正如我们主耶稣基督所指示我的。</p>
+      </li>
+                        <li><span>1:15</span>
+        <p>并且我要尽心竭力，使你们在我去世以后时常记念这些事。</p>
+      </li>
+                        <li><span>1:16</span>
+        <p>我们从前将我们主耶稣基督的大能和他降临的事告诉你们，并不是随从乖巧捏造的虚言，乃是亲眼见过他的威荣。</p>
+      </li>
+                        <li><span>1:17</span>
+        <p>他从父  神得尊贵荣耀的时候，从极大荣光之中有声音出来向他说：“这是我的爱子，我所喜悦的。”</p>
+      </li>
+                        <li><span>1:18</span>
+        <p>我们同他在圣山的时候，亲自听见这声音从天上出来。</p>
+      </li>
+                                    <li><span>1:19</span>
+        <p>我们并有先知更确的预言，如同灯照在暗处。你们在这预言上留意，直等到天发亮，晨星在你们心里出现的时候，才是好的。</p>
+      </li>
+                        <li><span>1:20</span>
+        <p>第一要紧的，该知道经上所有的预言没有可随私意解说的；</p>
+      </li>
+                        <li><span>1:21</span>
+        <p>因为预言从来没有出于人意的，乃是人被圣灵感动，说出  神的话来。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共3首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-61-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>彼得后书(彼后)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-61-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>彼得后书(彼后)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-61-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>彼得后书(彼后)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="javascript:alertText('已到本章第一首!');"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-61-cid-2.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

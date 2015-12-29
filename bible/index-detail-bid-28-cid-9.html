@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="28何西阿书/28何西阿书_09.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-28-cid-10.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">何西阿书(何) 第9章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>9:1</span>
+        <p>以色列啊，不要像外邦人欢喜快乐，因为你行邪淫离弃你的  神，在各谷场上如妓女喜爱赏赐。</p>
+      </li>
+                        <li><span>9:2</span>
+        <p>谷场和酒醡都不够以色列人使用，新酒也必缺乏。</p>
+      </li>
+                        <li><span>9:3</span>
+        <p>他们必不得住耶和华的地；以法莲却要归回埃及，必在亚述吃不洁净的食物。</p>
+      </li>
+                        <li><span>9:4</span>
+        <p>他们必不得向耶和华奠酒；即便奠酒，也不蒙悦纳。他们的祭物，必如居丧者的食物，凡吃的必被玷污；因他们的食物，只为自己的口腹，必不奉入耶和华的殿。</p>
+      </li>
+                        <li><span>9:5</span>
+        <p>在大会的日子，到耶和华的节期，你们怎样行呢？</p>
+      </li>
+                        <li><span>9:6</span>
+        <p>看哪，他们逃避灾难，埃及人必收殓他们的尸首，摩弗人必葬埋他们的骸骨，他们用银子作的美物上必长蒺藜，他们的帐棚中必生荆棘。</p>
+      </li>
+                        <li><span>9:7</span>
+        <p>以色列人必知道降罚的日子临近，报应的时候来到；（民说：作先知的是愚昧，受灵感的是狂妄。）皆因他们多多作孽，大怀怨恨。</p>
+      </li>
+                        <li><span>9:8</span>
+        <p>以法莲曾作我  神守望的；至于先知，在他一切的道上作为捕鸟人的网罗，在他  神的家中怀怨恨。</p>
+      </li>
+                        <li><span>9:9</span>
+        <p>以法莲深深地败坏，如在基比亚的日子一样。耶和华必记念他们的罪孽，追讨他们的罪恶。</p>
+      </li>
+                                    <li><span>9:10</span>
+        <p>主说：“我遇见以色列如葡萄在旷野；我看见你们的列祖如无花果树上春季初熟的果子。他们却来到巴力毗珥专拜那可羞耻的，就成为可憎恶的，与他们所爱的一样。</p>
+      </li>
+                        <li><span>9:11</span>
+        <p>至于以法莲人，他们的荣耀必如鸟飞去，必不生产、不怀胎、不成孕。</p>
+      </li>
+                        <li><span>9:12</span>
+        <p>纵然养大儿女，我却必使他们丧子，甚至不留一个。我离弃他们，他们就有祸了。”</p>
+      </li>
+                        <li><span>9:13</span>
+        <p>我看以法莲如推罗栽于美地。以法莲却要将自己的儿女带出来，交与行杀戮的人。</p>
+      </li>
+                        <li><span>9:14</span>
+        <p>耶和华啊，求你加给他们，加什么呢？要使他们胎堕乳干。</p>
+      </li>
+                                    <li><span>9:15</span>
+        <p>耶和华说：“他们一切的恶事都在吉甲，我在那里憎恶他们，因他们所行的恶，我必从我地上赶出他们去，不再怜爱他们；他们的首领都是悖逆的。</p>
+      </li>
+                        <li><span>9:16</span>
+        <p>以法莲受责罚，根本枯干，必不能结果；即或生产，我必杀他们所生的爱子。”</p>
+      </li>
+                                    <li><span>9:17</span>
+        <p>我的  神必弃绝他们，因为他们不听从他；他们也必飘流在列国中。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共14首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-28-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>何西阿书(何)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-28-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>何西阿书(何)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-28-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>何西阿书(何)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-28-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>何西阿书(何)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-28-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>何西阿书(何)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-28-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>何西阿书(何)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-28-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>何西阿书(何)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-28-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>何西阿书(何)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-28-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>何西阿书(何)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-28-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>何西阿书(何)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-28-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>何西阿书(何)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-28-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>何西阿书(何)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-28-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>何西阿书(何)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-28-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>何西阿书(何)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-28-cid-8.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-28-cid-10.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

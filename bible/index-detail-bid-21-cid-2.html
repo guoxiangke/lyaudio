@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="21传道书/21传道书_02.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-21-cid-3.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">传道书(传) 第2章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                  <li><span>2:1</span>
+        <p>我心里说：来吧！我以喜乐试试你，你好享福。谁知，这也是虚空。</p>
+      </li>
+                        <li><span>2:2</span>
+        <p>我指嬉笑说：这是狂妄；论喜乐说：有何功效呢？</p>
+      </li>
+                        <li><span>2:3</span>
+        <p>我心里察究，如何用酒使我肉体舒畅，我心却仍以智慧引导我；又如何持住愚昧，等我看明世人，在天下一生当行何事为美。</p>
+      </li>
+                        <li><span>2:4</span>
+        <p>我为自己动大工程，建造房屋，栽种葡萄园；</p>
+      </li>
+                        <li><span>2:5</span>
+        <p>修造园囿，在其中栽种各样果木树；</p>
+      </li>
+                        <li><span>2:6</span>
+        <p>挖造水池，用以浇灌嫩小的树木。</p>
+      </li>
+                        <li><span>2:7</span>
+        <p>我买了仆婢，也有生在家中的仆婢；又有许多牛群羊群，胜过以前在耶路撒冷众人所有的。</p>
+      </li>
+                        <li><span>2:8</span>
+        <p>我又为自己积蓄金银和君王的财宝，并各省的财宝；又得唱歌的男女和世人所喜爱的物，并许多的妃嫔。</p>
+      </li>
+                        <li><span>2:9</span>
+        <p>这样，我就日见昌盛，胜过以前在耶路撒冷的众人。我的智慧仍然存留。</p>
+      </li>
+                        <li><span>2:10</span>
+        <p>凡我眼所求的，我没有留下不给他的；我心所乐的，我没有禁止不享受的；因我的心为我一切所劳碌的快乐，这就是我从劳碌中所得的份。</p>
+      </li>
+                        <li><span>2:11</span>
+        <p>后来，我察看我手所经营的一切事和我劳碌所成的功，谁知都是虚空，都是捕风，在日光之下毫无益处。</p>
+      </li>
+                        <li><span>2:12</span>
+        <p>我转念观看智慧、狂妄和愚昧。在王以后而来的人还能作什么呢？也不过行早先所行的就是了。</p>
+      </li>
+                        <li><span>2:13</span>
+        <p>我便看出智慧胜过愚昧，如同光明胜过黑暗。</p>
+      </li>
+                        <li><span>2:14</span>
+        <p>智慧人的眼目光明（“光明”原文作“在他头上”）；愚昧人在黑暗里行。我却看明有一件事，这两等人都必遇见。</p>
+      </li>
+                        <li><span>2:15</span>
+        <p>我就心里说：愚昧人所遇见的，我也必遇见，我为何更有智慧呢？我心里说：这也是虚空。</p>
+      </li>
+                        <li><span>2:16</span>
+        <p>智慧人和愚昧人一样，永远无人记念，因为日后都被忘记；可叹智慧人死亡，与愚昧人无异。</p>
+      </li>
+                        <li><span>2:17</span>
+        <p>我所以恨恶生命，因为在日光之下所行的事，我都以为烦恼，都是虚空，都是捕风。</p>
+      </li>
+                        <li><span>2:18</span>
+        <p>我恨恶一切的劳碌，就是我在日光之下的劳碌，因为我得来的必留给我以后的人。</p>
+      </li>
+                        <li><span>2:19</span>
+        <p>那人是智慧，是愚昧，谁能知道？他竟要管理我劳碌所得的，就是我在日光之下用智慧所得的。这也是虚空。</p>
+      </li>
+                        <li><span>2:20</span>
+        <p>故此，我转想我在日光之下所劳碌的一切工作，心便绝望。</p>
+      </li>
+                        <li><span>2:21</span>
+        <p>因为有人用智慧、知识、灵巧所劳碌得来的，却要留给未曾劳碌的人为份。这也是虚空，也是大患。</p>
+      </li>
+                        <li><span>2:22</span>
+        <p>人在日光之下劳碌累心，在他一切的劳碌上得着什么呢？</p>
+      </li>
+                        <li><span>2:23</span>
+        <p>因为他日日忧虑，他的劳苦成为愁烦，连夜间心也不安。这也是虚空。</p>
+      </li>
+                        <li><span>2:24</span>
+        <p>人莫强如吃喝，且在劳碌中享福，我看这也是出于  神的手。</p>
+      </li>
+                        <li><span>2:25</span>
+        <p>论到吃用、享福，谁能胜过我呢？</p>
+      </li>
+                        <li><span>2:26</span>
+        <p>神喜悦谁，就给谁智慧、知识和喜乐，惟有罪人，  神使他劳苦，叫他将所收聚的、所堆积的归给  神所喜悦的人。这也是虚空，也是捕风。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共12首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>传道书(传)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>传道书(传)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>传道书(传)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>传道书(传)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>传道书(传)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>传道书(传)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>传道书(传)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>传道书(传)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>传道书(传)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>传道书(传)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>传道书(传)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>传道书(传)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-21-cid-1.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-21-cid-3.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

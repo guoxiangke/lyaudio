@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="04民数记/04民数记_15.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-4-cid-16.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">民数记(民) 第15章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>15:1</span>
+        <p>耶和华对摩西说：</p>
+      </li>
+                        <li><span>15:2</span>
+        <p>“你晓谕以色列人说：你们到了我所赐给你们居住的地，</p>
+      </li>
+                        <li><span>15:3</span>
+        <p>若愿意从牛群羊群中取牛羊作火祭，献给耶和华，无论是燔祭是平安祭，为要还特许的愿，或是作甘心祭，或是逢你们节期献的，都要奉给耶和华为馨香之祭。</p>
+      </li>
+                        <li><span>15:4</span>
+        <p>那献供物的，就要将细面伊法十分之一，并油一欣四分之一，调和作素祭，献给耶和华。</p>
+      </li>
+                        <li><span>15:5</span>
+        <p>无论是燔祭是平安祭，你要为每只绵羊羔，一同预备奠祭的酒一欣四分之一。</p>
+      </li>
+                        <li><span>15:6</span>
+        <p>为公绵羊预备细面伊法十分之二，并油一欣三分之一，调和作素祭。</p>
+      </li>
+                        <li><span>15:7</span>
+        <p>又用酒一欣三分之一作奠祭，献给耶和华为馨香之祭。</p>
+      </li>
+                        <li><span>15:8</span>
+        <p>你预备公牛作燔祭，或是作平安祭，为要还特许的愿，或是作平安祭，献给耶和华，</p>
+      </li>
+                        <li><span>15:9</span>
+        <p>就要把细面伊法十分之三并油半欣，调和作素祭，和公牛一同献上。</p>
+      </li>
+                        <li><span>15:10</span>
+        <p>又用酒半欣作奠祭，献给耶和华为馨香的火祭。”</p>
+      </li>
+                        <li><span>15:11</span>
+        <p>“献公牛、公绵羊、绵羊羔、山羊羔，每只都要这样办理。</p>
+      </li>
+                        <li><span>15:12</span>
+        <p>照你们所预备的数目，按着只数都要这样办理。</p>
+      </li>
+                        <li><span>15:13</span>
+        <p>凡本地人将馨香的火祭献给耶和华，都要这样办理。</p>
+      </li>
+                        <li><span>15:14</span>
+        <p>若有外人和你们同居，或有人世世代代住在你们中间，愿意将馨香的火祭献给耶和华，你们怎样办理，他也要照样办理。</p>
+      </li>
+                        <li><span>15:15</span>
+        <p>至于会众，你们和同居的外人都归一例，作为你们世世代代永远的定例。在耶和华面前你们怎样，寄居的也要怎样。</p>
+      </li>
+                        <li><span>15:16</span>
+        <p>你们并与你们同居的外人，当有一样的条例，一样的典章。”</p>
+      </li>
+                        <li><span>15:17</span>
+        <p>耶和华对摩西说：</p>
+      </li>
+                        <li><span>15:18</span>
+        <p>“你晓谕以色列人说：你们到了我所领你们进去的那地，</p>
+      </li>
+                        <li><span>15:19</span>
+        <p>吃那地的粮食，就要把举祭献给耶和华。</p>
+      </li>
+                        <li><span>15:20</span>
+        <p>你们要用初熟的麦子磨面，作饼当举祭奉献；你们举上，好像举禾场的举祭一样。</p>
+      </li>
+                        <li><span>15:21</span>
+        <p>你们世世代代要用初熟的麦子磨面，当举祭献给耶和华。”</p>
+      </li>
+                        <li><span>15:22</span>
+        <p>“你们有错误的时候，不守耶和华所晓谕摩西的这一切命令，</p>
+      </li>
+                        <li><span>15:23</span>
+        <p>就是耶和华藉摩西一切所吩咐你们的，自那日以致你们的世世代代，</p>
+      </li>
+                        <li><span>15:24</span>
+        <p>若有误行，是会众所不知道的，后来全会众就要将一只公牛犊作燔祭，并照典章把素祭和奠祭，一同献给耶和华为馨香之祭，又献一只公山羊作赎罪祭。</p>
+      </li>
+                        <li><span>15:25</span>
+        <p>祭司要为以色列全会众赎罪，他们就必蒙赦免，因为这是错误。他们又因自己的错误，把供物，就是向耶和华献的火祭和赎罪祭，一并奉到耶和华面前。</p>
+      </li>
+                        <li><span>15:26</span>
+        <p>以色列全会众和寄居在他们中间的外人，就必蒙赦免，因为这罪是百姓误犯的。”</p>
+      </li>
+                        <li><span>15:27</span>
+        <p>“若有一个人误犯了罪，他就要献一岁的母山羊作赎罪祭。</p>
+      </li>
+                        <li><span>15:28</span>
+        <p>那误行的人犯罪的时候，祭司要在耶和华面前为他赎罪，他就必蒙赦免。</p>
+      </li>
+                        <li><span>15:29</span>
+        <p>以色列中的本地人和寄居在他们中间的外人，若误行了什么事，必归一样的条例。</p>
+      </li>
+                        <li><span>15:30</span>
+        <p>但那擅敢行事的，无论是本地人，是寄居的，他亵渎了耶和华，必从民中剪除。</p>
+      </li>
+                        <li><span>15:31</span>
+        <p>因他藐视耶和华的言语，违背耶和华的命令，那人总要剪除，他的罪孽要归到他身上。”</p>
+      </li>
+                                    <li><span>15:32</span>
+        <p>以色列人在旷野的时候，遇见一个人在安息日捡柴。</p>
+      </li>
+                        <li><span>15:33</span>
+        <p>遇见他捡柴的人，就把他带到摩西、亚伦并全会众那里，</p>
+      </li>
+                        <li><span>15:34</span>
+        <p>将他收在监内，因为当怎样办他，还没有指明。</p>
+      </li>
+                        <li><span>15:35</span>
+        <p>耶和华吩咐摩西说：“总要把那人治死，全会众要在营外用石头把他打死。”</p>
+      </li>
+                        <li><span>15:36</span>
+        <p>于是全会众将他带到营外，用石头打死他，是照耶和华所吩咐摩西的。</p>
+      </li>
+                                    <li><span>15:37</span>
+        <p>耶和华晓谕摩西说：</p>
+      </li>
+                        <li><span>15:38</span>
+        <p>“你吩咐以色列人，叫他们世世代代在衣服边上作繸子，又在底边的繸子上，钉一根蓝细带子。</p>
+      </li>
+                        <li><span>15:39</span>
+        <p>你们佩带这繸子，好叫你们看见就记念遵行耶和华一切的命令，不随从自己的心意、眼目行邪淫，像你们素常一样，</p>
+      </li>
+                        <li><span>15:40</span>
+        <p>使你们记念遵行我一切的命令，成为圣洁，归与你们的  神。</p>
+      </li>
+                        <li><span>15:41</span>
+        <p>我是耶和华你们的  神，曾把你们从埃及地领出来，要作你们的  神。我是耶和华你们的  神。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共36首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>民数记(民)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>民数记(民)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>民数记(民)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>民数记(民)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>民数记(民)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>民数记(民)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>民数记(民)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>民数记(民)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>民数记(民)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>民数记(民)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>民数记(民)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>民数记(民)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>民数记(民)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>民数记(民)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>民数记(民)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>民数记(民)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>民数记(民)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>民数记(民)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>民数记(民)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>民数记(民)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>民数记(民)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>民数记(民)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>民数记(民)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>民数记(民)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>民数记(民)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>民数记(民)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>民数记(民)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>民数记(民)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>民数记(民)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>民数记(民)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>民数记(民)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>民数记(民)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>民数记(民)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>民数记(民)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-35.html"><span class="ppNum">35</span>
+        <p><strong>民数记(民)第35章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-36.html"><span class="ppNum">36</span>
+        <p><strong>民数记(民)第36章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-4-cid-14.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-4-cid-16.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

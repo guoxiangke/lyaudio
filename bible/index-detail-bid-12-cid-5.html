@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="12列王记下/12列王记下_05.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-12-cid-6.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">列王记下(王下) 第5章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>5:1</span>
+        <p>亚兰王的元帅乃缦，在他主人面前为尊为大，因耶和华曾藉他使亚兰人得胜。他又是大能的勇士，只是长了大麻风。</p>
+      </li>
+                        <li><span>5:2</span>
+        <p>先前亚兰人成群地出去，从以色列国掳了一个小女子，这女子就服侍乃缦的妻。</p>
+      </li>
+                        <li><span>5:3</span>
+        <p>她对主母说：“巴不得我主人去见撒玛利亚的先知，必能治好他的大麻风。”</p>
+      </li>
+                        <li><span>5:4</span>
+        <p>乃缦进去，告诉他主人说，以色列国的女子如此如此说。</p>
+      </li>
+                        <li><span>5:5</span>
+        <p>亚兰王说：“你可以去，我也达信于以色列王。”于是，乃缦带银子十他连得，金子六千舍客勒，衣裳十套，就去了，</p>
+      </li>
+                        <li><span>5:6</span>
+        <p>且带信给以色列王，信上说：“我打发臣仆乃缦去见你，你接到这信，就要治好他的大麻风。”</p>
+      </li>
+                        <li><span>5:7</span>
+        <p>以色列王看了信，就撕裂衣服，说：“我岂是  神，能使人死使人活呢？这人竟打发人来，叫我治好他的大麻风。你们看一看，这人何以寻隙攻击我呢？”</p>
+      </li>
+                        <li><span>5:8</span>
+        <p>神人以利沙听见以色列王撕裂衣服，就打发人去见王，说：“你为什么撕了衣服呢？可使那人到我这里来，他就知道以色列中有先知了。”</p>
+      </li>
+                        <li><span>5:9</span>
+        <p>于是，乃缦带着车马到了以利沙的家，站在门前。</p>
+      </li>
+                        <li><span>5:10</span>
+        <p>以利沙打发一个使者，对乃缦说：“你去在约旦河中沐浴七回，你的肉就必复原，而得洁净。”</p>
+      </li>
+                        <li><span>5:11</span>
+        <p>乃缦却发怒走了，说：“我想他必定出来见我，站着求告耶和华他  神的名，在患处以上摇手，治好这大麻风。</p>
+      </li>
+                        <li><span>5:12</span>
+        <p>大马士革的河亚罢拿和法珥法，岂不比以色列的一切水更好吗？我在那里沐浴不得洁净吗？”于是气忿忿地转身去了。</p>
+      </li>
+                        <li><span>5:13</span>
+        <p>他的仆人进前来，对他说：“我父啊，先知若吩咐你作一件大事，你岂不作吗？何况说你去沐浴而得洁净呢？”</p>
+      </li>
+                        <li><span>5:14</span>
+        <p>于是乃缦下去，照着神人的话，在约旦河里沐浴七回，他的肉复原，好像小孩子的肉，他就洁净了。</p>
+      </li>
+                        <li><span>5:15</span>
+        <p>乃缦带着一切跟随他的人，回到神人那里，站在他面前说：“如今我知道，除了以色列之外，普天下没有  神。现在求你收点仆人的礼物。”</p>
+      </li>
+                        <li><span>5:16</span>
+        <p>以利沙说：“我指着所侍奉永生的耶和华起誓，我必不受。”乃缦再三地求他，他却不受。</p>
+      </li>
+                        <li><span>5:17</span>
+        <p>乃缦说：“你若不肯受，请将两骡子驮的土赐给仆人。从今以后，仆人必不再将燔祭或平安祭献与别神，只献给耶和华。</p>
+      </li>
+                        <li><span>5:18</span>
+        <p>惟有一件事，愿耶和华饶恕你仆人：我主人进临门庙叩拜的时候，我用手搀他在临门庙，我也屈身。我在临门庙屈身的这事，愿耶和华饶恕我。”</p>
+      </li>
+                        <li><span>5:19</span>
+        <p>以利沙对他说：“你可以平平安安地回去。”乃缦就离开他去了，走了不远，</p>
+      </li>
+                        <li><span>5:20</span>
+        <p>神人以利沙的仆人基哈西心里说：“我主人不愿从这亚兰人乃缦手里受他带来的礼物，我指着永生的耶和华起誓，我必跑去追上他，向他要些。”</p>
+      </li>
+                        <li><span>5:21</span>
+        <p>于是基哈西追赶乃缦。乃缦看见有人追赶，就急忙下车迎着他，说：“都平安吗？”</p>
+      </li>
+                        <li><span>5:22</span>
+        <p>说：“都平安。我主人打发我来说：刚才有两个少年人，是先知门徒，从以法莲山地来见我。请你赐他们一他连得银子，两套衣裳。”</p>
+      </li>
+                        <li><span>5:23</span>
+        <p>乃缦说：“请受二他连得。”再三地请受，便将二他连得银子装在两个口袋里，又将两套衣裳交给两个仆人，他们就在基哈西前头抬着走。</p>
+      </li>
+                        <li><span>5:24</span>
+        <p>到了山冈，基哈西从他们手中接过来，放在屋里，打发他们回去。</p>
+      </li>
+                        <li><span>5:25</span>
+        <p>基哈西进去，站在他主人面前。以利沙问他说：“基哈西你从哪里来？”回答说：“仆人没有往哪里去。”</p>
+      </li>
+                        <li><span>5:26</span>
+        <p>以利沙对他说：“那人下车转回迎你的时候，我的心岂没有去呢？这岂是受银子、衣裳、买橄榄园、葡萄园、牛羊、仆婢的时候呢？</p>
+      </li>
+                        <li><span>5:27</span>
+        <p>因此，乃缦的大麻风必沾染你和你的后裔，直到永远。”基哈西从以利沙面前退出去，就长了大麻风，像雪那样白。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共25首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>列王记下(王下)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>列王记下(王下)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>列王记下(王下)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>列王记下(王下)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>列王记下(王下)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>列王记下(王下)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>列王记下(王下)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>列王记下(王下)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>列王记下(王下)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>列王记下(王下)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>列王记下(王下)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>列王记下(王下)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>列王记下(王下)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>列王记下(王下)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>列王记下(王下)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>列王记下(王下)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>列王记下(王下)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>列王记下(王下)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>列王记下(王下)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>列王记下(王下)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>列王记下(王下)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>列王记下(王下)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>列王记下(王下)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>列王记下(王下)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>列王记下(王下)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-12-cid-4.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-12-cid-6.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

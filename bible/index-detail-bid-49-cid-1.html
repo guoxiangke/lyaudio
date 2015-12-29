@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="49以弗所书/49以弗所书_01.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-49-cid-2.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">以弗所书(弗) 第1章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>1:1</span>
+        <p>奉  神旨意，作基督耶稣使徒的保罗，写信给在以弗所的圣徒，就是在基督耶稣里有忠心的人。</p>
+      </li>
+                        <li><span>1:2</span>
+        <p>愿恩惠、平安从  神我们的父和主耶稣基督归与你们！</p>
+      </li>
+                                    <li><span>1:3</span>
+        <p>愿颂赞归与我们主耶稣基督的父  神，他在基督里曾赐给我们天上各样属灵的福气。</p>
+      </li>
+                        <li><span>1:4</span>
+        <p>就如  神从创立世界以前，在基督里拣选了我们，使我们在他面前成为圣洁，无有瑕疵。</p>
+      </li>
+                        <li><span>1:5</span>
+        <p>又因爱我们，就按着自己意旨所喜悦的，预定我们藉着耶稣基督得儿子的名分，</p>
+      </li>
+                        <li><span>1:6</span>
+        <p>使他荣耀的恩典得着称赞。这恩典是他在爱子里所赐给我们的。</p>
+      </li>
+                        <li><span>1:7</span>
+        <p>我们藉这爱子的血得蒙救赎，过犯得以赦免，乃是照他丰富的恩典。</p>
+      </li>
+                        <li><span>1:8</span>
+        <p>这恩典是  神用诸般智慧聪明，充充足足赏给我们的，</p>
+      </li>
+                        <li><span>1:9</span>
+        <p>都是照他自己所预定的美意，叫我们知道他旨意的奥秘；</p>
+      </li>
+                        <li><span>1:10</span>
+        <p>要照所安排的，在日期满足的时候，使天上地上一切所有的，都在基督里面同归于一。</p>
+      </li>
+                        <li><span>1:11</span>
+        <p>我们也在他里面得了基业（“得”或作“成”），这原是那位随己意行作万事的，照着他旨意所预定的，</p>
+      </li>
+                        <li><span>1:12</span>
+        <p>叫他的荣耀，从我们这首先在基督里有盼望的人可以得着称赞。</p>
+      </li>
+                        <li><span>1:13</span>
+        <p>你们既听见真理的道，就是那叫你们得救的福音，也信了基督，既然信他，就受了所应许的圣灵为印记。</p>
+      </li>
+                        <li><span>1:14</span>
+        <p>这圣灵是我们得基业的凭据（原文作“质”），直等到  神之民（“民”原文作“产业”）被赎，使他的荣耀得着称赞。</p>
+      </li>
+                                    <li><span>1:15</span>
+        <p>因此，我既听见你们信从主耶稣，亲爱众圣徒，</p>
+      </li>
+                        <li><span>1:16</span>
+        <p>就为你们不住地感谢  神，祷告的时候，常提到你们，</p>
+      </li>
+                        <li><span>1:17</span>
+        <p>求我们主耶稣基督的  神，荣耀的父，将那赐人智慧和启示的灵赏给你们，使你们真知道他。</p>
+      </li>
+                        <li><span>1:18</span>
+        <p>并且照明你们心中的眼睛，使你们知道他的恩召有何等指望，他在圣徒中得的基业有何等丰盛的荣耀；</p>
+      </li>
+                        <li><span>1:19</span>
+        <p>并知道他向我们这信的人所显的能力是何等浩大，</p>
+      </li>
+                        <li><span>1:20</span>
+        <p>就是照他在基督身上所运行的大能大力，使他从死里复活，叫他在天上坐在自己的右边，</p>
+      </li>
+                        <li><span>1:21</span>
+        <p>远超过一切执政的、掌权的、有能的、主治的和一切有名的，不但是今世的，连来世的也都超过了。</p>
+      </li>
+                        <li><span>1:22</span>
+        <p>又将万有服在他的脚下，使他为教会作万有之首。</p>
+      </li>
+                        <li><span>1:23</span>
+        <p>教会是他的身体，是那充满万有者所充满的。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共6首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>以弗所书(弗)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>以弗所书(弗)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>以弗所书(弗)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>以弗所书(弗)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>以弗所书(弗)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>以弗所书(弗)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="javascript:alertText('已到本章第一首!');"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-49-cid-2.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="12列王记下/12列王记下_22.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-12-cid-23.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">列王记下(王下) 第22章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>22:1</span>
+        <p>约西亚登基的时候年八岁，在耶路撒冷作王三十一年。他母亲名叫耶底大，是波斯加人亚大雅的女儿。</p>
+      </li>
+                        <li><span>22:2</span>
+        <p>约西亚行耶和华眼中看为正的事，行他祖大卫一切所行的，不偏左右。</p>
+      </li>
+                                    <li><span>22:3</span>
+        <p>约西亚王十八年，王差遣米书兰的孙子、亚萨利的儿子、书记沙番上耶和华殿去，吩咐他说：</p>
+      </li>
+                        <li><span>22:4</span>
+        <p>“你去见大祭司希勒家，使他将奉到耶和华殿的银子，就是守门的从民中收聚的银子，数算数算，</p>
+      </li>
+                        <li><span>22:5</span>
+        <p>交给耶和华殿里办事的人，使他们转交耶和华殿里作工的人，好修理殿的破坏之处。</p>
+      </li>
+                        <li><span>22:6</span>
+        <p>就是转交木匠和工人，并瓦匠，又买木料和凿成的石头，修理殿宇。</p>
+      </li>
+                        <li><span>22:7</span>
+        <p>将银子交在办事的人手里，不与他们算账，因为他们办事诚实。”</p>
+      </li>
+                        <li><span>22:8</span>
+        <p>大祭司希勒家对书记沙番说：“我在耶和华殿里得了律法书。”希勒家将书递给沙番，沙番就看了。</p>
+      </li>
+                        <li><span>22:9</span>
+        <p>书记沙番到王那里，回复王说：“你的仆人已将殿里的银子倒出数算，交给耶和华殿里办事的人了。”</p>
+      </li>
+                        <li><span>22:10</span>
+        <p>书记沙番又对王说：“祭司希勒家递给我一卷书。”沙番就在王面前读那书。</p>
+      </li>
+                        <li><span>22:11</span>
+        <p>王听见律法书上的话，便撕裂衣服，</p>
+      </li>
+                        <li><span>22:12</span>
+        <p>吩咐祭司希勒家与沙番的儿子亚希甘、米该亚的儿子亚革波、书记沙番和王的臣仆亚撒雅说：</p>
+      </li>
+                        <li><span>22:13</span>
+        <p>“你们去，为我、为民、为犹大众人，以这书上的话求问耶和华，因为我们列祖没有听从这书上的言语，没有遵着书上所吩咐我们的去行，耶和华就向我们大发烈怒。”</p>
+      </li>
+                        <li><span>22:14</span>
+        <p>于是祭司希勒家和亚希甘、亚革波、沙番、亚撒雅都去见女先知户勒大。户勒大是掌管礼服沙龙的妻，沙龙是哈珥哈斯的孙子、特瓦的儿子。户勒大住在耶路撒冷第二区。他们请问于她。</p>
+      </li>
+                        <li><span>22:15</span>
+        <p>她对他们说：“耶和华以色列的  神如此说：‘你们可以回复那差遣你们来见我的人说：</p>
+      </li>
+                        <li><span>22:16</span>
+        <p>耶和华如此说：我必照着犹大王所读那书上的一切话，降祸与这地和其上的居民。</p>
+      </li>
+                        <li><span>22:17</span>
+        <p>因为他们离弃我，向别神烧香，用他们手所作的惹我发怒，所以我的忿怒必向这地发作，总不止息。’</p>
+      </li>
+                        <li><span>22:18</span>
+        <p>然而，差遣你们来求问耶和华的犹大王，你们要这样回复他说：‘耶和华以色列的  神如此说：至于你所听见的话，</p>
+      </li>
+                        <li><span>22:19</span>
+        <p>就是听见我指着这地和其上的居民所说，要使这地变为荒场、民受咒诅的话，你便心里敬服，在我面前自卑，撕裂衣服，向我哭泣，因此我应允了你。这是我耶和华说的。</p>
+      </li>
+                        <li><span>22:20</span>
+        <p>我必使你平平安安地归到坟墓，到你列祖那里；我要降与这地的一切灾祸，你也不至亲眼看见。’”他们就回复王去了。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共25首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>列王记下(王下)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>列王记下(王下)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>列王记下(王下)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>列王记下(王下)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>列王记下(王下)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>列王记下(王下)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>列王记下(王下)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>列王记下(王下)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>列王记下(王下)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>列王记下(王下)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>列王记下(王下)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>列王记下(王下)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>列王记下(王下)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>列王记下(王下)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>列王记下(王下)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>列王记下(王下)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>列王记下(王下)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>列王记下(王下)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>列王记下(王下)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>列王记下(王下)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>列王记下(王下)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>列王记下(王下)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>列王记下(王下)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>列王记下(王下)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>列王记下(王下)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-12-cid-21.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-12-cid-23.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

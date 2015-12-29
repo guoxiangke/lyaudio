@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="20箴言/20箴言_23.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-20-cid-24.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">箴言(箴) 第23章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                  <li><span>23:1</span>
+        <p>你若与官长坐席，要留意在你面前的是谁。</p>
+      </li>
+                        <li><span>23:2</span>
+        <p>你若是贪食的，就当拿刀放在喉咙上。</p>
+      </li>
+                        <li><span>23:3</span>
+        <p>不可贪恋他的美食，因为是哄人的食物。</p>
+      </li>
+                        <li><span>23:4</span>
+        <p>不要劳碌求富，休仗自己的聪明。</p>
+      </li>
+                        <li><span>23:5</span>
+        <p>你岂要定睛在虚无的钱财上吗？因钱财必长翅膀，如鹰向天飞去。</p>
+      </li>
+                        <li><span>23:6</span>
+        <p>不要吃恶眼人的饭，也不要贪他的美味。</p>
+      </li>
+                        <li><span>23:7</span>
+        <p>因为他心怎样思量，他为人就是怎样。他虽对你说：“请吃，请喝”，他的心却与你相背。</p>
+      </li>
+                        <li><span>23:8</span>
+        <p>你所吃的那点食物必吐出来，你所说的甘美言语也必落空。</p>
+      </li>
+                        <li><span>23:9</span>
+        <p>你不要说话给愚昧人听，因他必藐视你智慧的言语。</p>
+      </li>
+                        <li><span>23:10</span>
+        <p>不可挪移古时的地界，也不可侵入孤儿的田地。</p>
+      </li>
+                        <li><span>23:11</span>
+        <p>因他们的救赎主大有能力，他必向你为他们辨屈。</p>
+      </li>
+                        <li><span>23:12</span>
+        <p>你要留心领受训诲，侧耳听从知识的言语。</p>
+      </li>
+                        <li><span>23:13</span>
+        <p>不可不管教孩童，你用杖打他，他必不至于死。</p>
+      </li>
+                        <li><span>23:14</span>
+        <p>你要用杖打他，就可以救他的灵魂免下阴间。</p>
+      </li>
+                        <li><span>23:15</span>
+        <p>我儿，你心若存智慧，我的心也甚欢喜，</p>
+      </li>
+                        <li><span>23:16</span>
+        <p>你的嘴若说正直话，我的心肠也必快乐。</p>
+      </li>
+                        <li><span>23:17</span>
+        <p>你心中不要嫉妒罪人，只要终日敬畏耶和华。</p>
+      </li>
+                        <li><span>23:18</span>
+        <p>因为至终必有善报，你的指望也不至断绝。</p>
+      </li>
+                        <li><span>23:19</span>
+        <p>我儿，你当听，当存智慧，好在正道上引导你的心。</p>
+      </li>
+                        <li><span>23:20</span>
+        <p>好饮酒的，好吃肉的，不要与他们来往。</p>
+      </li>
+                        <li><span>23:21</span>
+        <p>因为好酒贪食的，必致贫穷，好睡觉的，必穿破烂衣服。</p>
+      </li>
+                        <li><span>23:22</span>
+        <p>你要听从生你的父亲，你母亲老了，也不可藐视她。</p>
+      </li>
+                        <li><span>23:23</span>
+        <p>你当买真理，就是智慧、训诲和聪明也都不可卖。</p>
+      </li>
+                        <li><span>23:24</span>
+        <p>义人的父亲必大得快乐，人生智慧的儿子，必因他欢喜。</p>
+      </li>
+                        <li><span>23:25</span>
+        <p>你要使父母欢喜，使生你的快乐。</p>
+      </li>
+                        <li><span>23:26</span>
+        <p>我儿，要将你的心归我，你的眼目也要喜悦我的道路。</p>
+      </li>
+                        <li><span>23:27</span>
+        <p>妓女是深坑；外女是窄阱。</p>
+      </li>
+                        <li><span>23:28</span>
+        <p>她埋伏好像强盗，她使人中多有奸诈的。</p>
+      </li>
+                        <li><span>23:29</span>
+        <p>谁有祸患？谁有忧愁？谁有争斗？谁有哀叹（或作“怨言”）？谁无故受伤？谁眼目红赤？</p>
+      </li>
+                        <li><span>23:30</span>
+        <p>就是那流连饮酒，常去寻找调和酒的人。</p>
+      </li>
+                        <li><span>23:31</span>
+        <p>-</p>
+      </li>
+                        <li><span>23:32</span>
+        <p>酒发红，在杯中闪烁，你不可观看，虽然下咽舒畅，终久是咬你如蛇，刺你如毒蛇。</p>
+      </li>
+                        <li><span>23:33</span>
+        <p>你眼必看见异怪的事（“异怪的事”或作“淫妇”），你心必发出乖谬的话。</p>
+      </li>
+                        <li><span>23:34</span>
+        <p>你必像躺在海中，或像卧在桅杆上。</p>
+      </li>
+                        <li><span>23:35</span>
+        <p>你必说：“人打我，我却未受伤；人鞭打我，我竟不觉得。我几时清醒，我仍去寻酒。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共31首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>箴言(箴)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>箴言(箴)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>箴言(箴)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>箴言(箴)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>箴言(箴)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>箴言(箴)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>箴言(箴)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>箴言(箴)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>箴言(箴)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>箴言(箴)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>箴言(箴)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>箴言(箴)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>箴言(箴)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>箴言(箴)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>箴言(箴)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>箴言(箴)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>箴言(箴)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>箴言(箴)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>箴言(箴)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>箴言(箴)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>箴言(箴)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>箴言(箴)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>箴言(箴)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>箴言(箴)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>箴言(箴)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>箴言(箴)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>箴言(箴)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>箴言(箴)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>箴言(箴)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>箴言(箴)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-20-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>箴言(箴)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-20-cid-22.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-20-cid-24.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

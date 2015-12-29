@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="43约翰福音/43约翰福音_07.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-43-cid-8.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">约翰福音(约) 第7章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>7:1</span>
+        <p>这事以后，耶稣在加利利游行，不愿在犹太游行，因为犹太人想要杀他。</p>
+      </li>
+                        <li><span>7:2</span>
+        <p>当时犹太人的住棚节近了。</p>
+      </li>
+                        <li><span>7:3</span>
+        <p>耶稣的弟兄就对他说：“你离开这里上犹太去吧！叫你的门徒也看见你所行的事。</p>
+      </li>
+                        <li><span>7:4</span>
+        <p>人要显扬名声，没有在暗处行事的，你如果行这些事，就当将自己显明给世人看。”</p>
+      </li>
+                        <li><span>7:5</span>
+        <p>因为连他的弟兄说这话，是因为不信他。</p>
+      </li>
+                        <li><span>7:6</span>
+        <p>耶稣就对他们说:“我的时候还没有到，你们的时候常是方便的。</p>
+      </li>
+                        <li><span>7:7</span>
+        <p>世人不能恨你们，却是恨我，因为我指证他们所作的事是恶的。</p>
+      </li>
+                        <li><span>7:8</span>
+        <p>你们上去过节吧！我现在不上去过这节，因为我的时候还没有满。”</p>
+      </li>
+                        <li><span>7:9</span>
+        <p>耶稣说了这话，仍旧住在加利利。</p>
+      </li>
+                                    <li><span>7:10</span>
+        <p>但他弟兄上去以后，他也上去过节，不是明去，似乎是暗去的。</p>
+      </li>
+                        <li><span>7:11</span>
+        <p>正在节期，犹太人寻找耶稣说：“他在哪里？”</p>
+      </li>
+                        <li><span>7:12</span>
+        <p>众人为他纷纷议论，有的说：“他是好人。”有的说：“不然，他是迷惑众人的。”</p>
+      </li>
+                        <li><span>7:13</span>
+        <p>只是没有人明明地讲论他，因为怕犹太人。</p>
+      </li>
+                        <li><span>7:14</span>
+        <p>到了节期，耶稣上殿里去教训人。</p>
+      </li>
+                        <li><span>7:15</span>
+        <p>犹太人就希奇说：“这个人没有学过，怎么明白书呢？”</p>
+      </li>
+                        <li><span>7:16</span>
+        <p>耶稣说：“我的教训不是我自己的，乃是那差我来者的。</p>
+      </li>
+                        <li><span>7:17</span>
+        <p>人若立志遵着他的旨意行，就必晓得这教训或是出于  神，或是我凭着自己说的。</p>
+      </li>
+                        <li><span>7:18</span>
+        <p>人凭着自己说，是求自己的荣耀；惟有求那差他来者的荣耀，这人是真的，在他心里没有不义。</p>
+      </li>
+                        <li><span>7:19</span>
+        <p>摩西岂不是传律法给你们吗？你们却没有一个人守律法。为什么想要杀我呢？”</p>
+      </li>
+                        <li><span>7:20</span>
+        <p>众人回答说：“你是被鬼附着了，谁想要杀你？”</p>
+      </li>
+                        <li><span>7:21</span>
+        <p>耶稣说：“我作了一件事，你们都以为希奇。</p>
+      </li>
+                        <li><span>7:22</span>
+        <p>摩西传割礼给你们（其实不是从摩西起的，乃是从祖先起的），因此你们也在安息日给人行割礼。</p>
+      </li>
+                        <li><span>7:23</span>
+        <p>人若在安息日受割礼，免得违背摩西的律法，我在安息日叫一个人全然好了，你们就向我生气吗？</p>
+      </li>
+                        <li><span>7:24</span>
+        <p>不可按外貌断定是非，总要按公平断定是非。”</p>
+      </li>
+                                    <li><span>7:25</span>
+        <p>耶路撒冷人中有的说：“这不是他们想要杀的人吗？</p>
+      </li>
+                        <li><span>7:26</span>
+        <p>你看他还明明地讲道，他们也不向他说什么，难道官长真知道这是基督吗？</p>
+      </li>
+                        <li><span>7:27</span>
+        <p>然而我们知道这个人从哪里来；只是基督来的时候，没有人知道他从哪里来。”</p>
+      </li>
+                        <li><span>7:28</span>
+        <p>那时，耶稣在殿里教训人，大声说：“你们也知道我，也知道我从哪里来；我来并不是由于自己，但那差我来的是真的。你们不认识他。</p>
+      </li>
+                        <li><span>7:29</span>
+        <p>我却认识他，因为我是从他来的，他也是差了我来。”</p>
+      </li>
+                        <li><span>7:30</span>
+        <p>他们就想要捉拿耶稣，只是没有人下手，因为他的时候还没有到。</p>
+      </li>
+                        <li><span>7:31</span>
+        <p>但众人中间有好些信他的，说：“基督来的时候，他所行的神迹岂能比这人所行的更多吗？”</p>
+      </li>
+                                    <li><span>7:32</span>
+        <p>法利赛人听见众人为耶稣这样纷纷议论，祭司长和法利赛人就打发差役去捉拿他。</p>
+      </li>
+                        <li><span>7:33</span>
+        <p>于是耶稣说：“我还有不多的时候和你们同在，以后就回到差我来的那里去。</p>
+      </li>
+                        <li><span>7:34</span>
+        <p>你们要找我，却找不着；我所在的地方你们不能到。”</p>
+      </li>
+                        <li><span>7:35</span>
+        <p>犹太人就彼此对问说：“这人要往哪里去，叫我们找不着呢？难道他要往散住希腊中的犹太人那里去教训希腊人吗？</p>
+      </li>
+                        <li><span>7:36</span>
+        <p>他说：‘你们要找我，却找不着；我所在的地方，你们不能到’，这话是什么意思呢？”</p>
+      </li>
+                                    <li><span>7:37</span>
+        <p>节期的末日，就是最大之日，耶稣站着高声说：“人若渴了，可以到我这里来喝。</p>
+      </li>
+                        <li><span>7:38</span>
+        <p>信我的人，就如经上所说‘从他腹中要流出活水的江河来。’”</p>
+      </li>
+                        <li><span>7:39</span>
+        <p>耶稣这话是指着信他之人要受圣灵说的，那时还没有赐下圣灵来，因为耶稣尚未得着荣耀。</p>
+      </li>
+                                    <li><span>7:40</span>
+        <p>众人听见这话，有的说：“这真是那先知。”</p>
+      </li>
+                        <li><span>7:41</span>
+        <p>有的说：“这是基督。”但也有的说：“基督岂是从加利利出来的吗？</p>
+      </li>
+                        <li><span>7:42</span>
+        <p>经上岂不是说‘基督是大卫的后裔，从大卫本乡伯利恒出来的’吗？”</p>
+      </li>
+                        <li><span>7:43</span>
+        <p>于是众人因着耶稣起了纷争。</p>
+      </li>
+                        <li><span>7:44</span>
+        <p>其中有人要捉拿他，只是无人下手。</p>
+      </li>
+                                    <li><span>7:45</span>
+        <p>差役回到祭司长和法利赛人那里，他们对差役说：“你们为什么没有带他来呢？”</p>
+      </li>
+                        <li><span>7:46</span>
+        <p>差役回答说：“从来没有像他这样说话的。”</p>
+      </li>
+                        <li><span>7:47</span>
+        <p>法利赛人说：“你们也受了迷惑吗？</p>
+      </li>
+                        <li><span>7:48</span>
+        <p>官长或是法利赛人岂有信他的呢？</p>
+      </li>
+                        <li><span>7:49</span>
+        <p>但这些不明白律法的百姓是被咒诅的。”</p>
+      </li>
+                        <li><span>7:50</span>
+        <p>内中有尼哥底母，就是从前去见耶稣的，对他们说：</p>
+      </li>
+                        <li><span>7:51</span>
+        <p>“不先听本人的口供，不知道他所作的事，难道我们的律法还定他的罪吗？”</p>
+      </li>
+                        <li><span>7:52</span>
+        <p>他们回答说：“你也是出于加利利吗？你且去查考，就可知道加利利没有出过先知。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共21首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>约翰福音(约)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>约翰福音(约)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>约翰福音(约)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>约翰福音(约)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>约翰福音(约)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>约翰福音(约)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>约翰福音(约)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>约翰福音(约)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>约翰福音(约)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>约翰福音(约)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>约翰福音(约)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>约翰福音(约)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>约翰福音(约)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>约翰福音(约)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>约翰福音(约)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>约翰福音(约)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>约翰福音(约)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>约翰福音(约)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>约翰福音(约)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>约翰福音(约)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>约翰福音(约)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-43-cid-6.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-43-cid-8.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

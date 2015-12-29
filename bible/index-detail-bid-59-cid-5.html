@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="59雅各书/59雅各书_05.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-59.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">雅各书(雅) 第5章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>5:1</span>
+        <p>嗐！你们这些富足人哪，应当哭泣、号啕，因为将有苦难临到你们身上。</p>
+      </li>
+                        <li><span>5:2</span>
+        <p>你们的财物坏了，衣服也被虫子咬了。</p>
+      </li>
+                        <li><span>5:3</span>
+        <p>你们的金银都长了锈，那锈要证明你们的不是，又要吃你们的肉，如同火烧。你们在这末世只知积攒钱财。</p>
+      </li>
+                        <li><span>5:4</span>
+        <p>工人给你们收割庄稼，你们亏欠他们的工钱，这工钱有声音呼叫；并且那收割之人的冤声已经入了万军之主的耳了。</p>
+      </li>
+                        <li><span>5:5</span>
+        <p>你们在世上享美福，好宴乐，当宰杀的日子竟娇养你们的心。</p>
+      </li>
+                        <li><span>5:6</span>
+        <p>你们定了义人的罪，把他杀害，他也不抵挡你们。</p>
+      </li>
+                                    <li><span>5:7</span>
+        <p>弟兄们哪，你们要忍耐，直到主来。看哪，农夫忍耐等候地里宝贵的出产，直到得了秋雨春雨。</p>
+      </li>
+                        <li><span>5:8</span>
+        <p>你们也当忍耐，坚固你们的心，因为主来的日子近了。</p>
+      </li>
+                        <li><span>5:9</span>
+        <p>弟兄们，你们不要彼此埋怨，免得受审判。看哪，审判的主站在门前了。</p>
+      </li>
+                        <li><span>5:10</span>
+        <p>弟兄们，你们要把那先前奉主名说话的众先知，当作能受苦、能忍耐的榜样。</p>
+      </li>
+                        <li><span>5:11</span>
+        <p>那先前忍耐的人，我们称他们是有福的。你们听见过约伯的忍耐，也知道主给他的结局，明显主是满心怜悯，大有慈悲。</p>
+      </li>
+                        <li><span>5:12</span>
+        <p>我的弟兄们，最要紧的是不可起誓。不可指着天起誓，也不可指着地起誓，无论何誓都不可起。你们说话，是就说是，不是就说不是，免得你们落在审判之下。</p>
+      </li>
+                        <li><span>5:13</span>
+        <p>你们中间有受苦的呢，他就该祷告；有喜乐的呢，他就该歌颂。</p>
+      </li>
+                        <li><span>5:14</span>
+        <p>你们中间有病了的呢，他就该请教会的长老来，他们可以奉主的名用油抹他，为他祷告。</p>
+      </li>
+                        <li><span>5:15</span>
+        <p>出于信心的祈祷要救那病人，主必叫他起来，他若犯了罪，也必蒙赦免。</p>
+      </li>
+                        <li><span>5:16</span>
+        <p>所以你们要彼此认罪，互相代求，使你们可以得医治。义人祈祷所发的力量是大有功效的。</p>
+      </li>
+                        <li><span>5:17</span>
+        <p>以利亚与我们是一样性情的人，他恳切祷告，求不要下雨，雨就三年零六个月不下在地上。</p>
+      </li>
+                        <li><span>5:18</span>
+        <p>他又祷告，天就降下雨来，地也生出土产。</p>
+      </li>
+                        <li><span>5:19</span>
+        <p>我的弟兄们，你们中间若有失迷真道的，有人使他回转。</p>
+      </li>
+                        <li><span>5:20</span>
+        <p>这人该知道叫一个罪人从迷路上转回，便是救一个灵魂不死，并且遮盖许多的罪。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共5首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-59-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>雅各书(雅)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-59-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>雅各书(雅)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-59-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>雅各书(雅)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-59-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>雅各书(雅)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-59-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>雅各书(雅)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-59-cid-4.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="javascript:alertText('已到本章第后一首!');"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

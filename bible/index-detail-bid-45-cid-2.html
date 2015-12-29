@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="45罗马书/45罗马书_02.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-45-cid-3.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">罗马书(罗) 第2章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>2:1</span>
+        <p>你这论断人的，无论你是谁，也无可推诿。你在什么事上论断人，就在什么事上定自己的罪，因你这论断人的，自己所行却和别人一样。</p>
+      </li>
+                        <li><span>2:2</span>
+        <p>我们知道这样行的人，  神必照真理审判他。</p>
+      </li>
+                        <li><span>2:3</span>
+        <p>你这人哪，你论断行这样事的人，自己所行的却和别人一样，你以为能逃脱  神的审判吗？</p>
+      </li>
+                        <li><span>2:4</span>
+        <p>还是你藐视他丰富的恩慈、宽容、忍耐，不晓得他的恩慈是领你悔改呢？</p>
+      </li>
+                        <li><span>2:5</span>
+        <p>你竟任着你刚硬不悔改的心，为自己积蓄忿怒，以致  神震怒，显他公义审判的日子来到。</p>
+      </li>
+                        <li><span>2:6</span>
+        <p>他必照各人的行为报应各人。</p>
+      </li>
+                        <li><span>2:7</span>
+        <p>凡恒心行善，寻求荣耀、尊贵和不能朽坏之福的，就以永生报应他们；</p>
+      </li>
+                        <li><span>2:8</span>
+        <p>惟有结党不顺从真理，反顺从不义的，就以忿怒、恼恨报应他们。</p>
+      </li>
+                        <li><span>2:9</span>
+        <p>将患难、困苦加给一切作恶的人，先是犹太人，后是希腊人；</p>
+      </li>
+                        <li><span>2:10</span>
+        <p>却将荣耀、尊贵、平安加给一切行善的人，先是犹太人，后是希腊人。</p>
+      </li>
+                        <li><span>2:11</span>
+        <p>因为  神不偏待人。</p>
+      </li>
+                        <li><span>2:12</span>
+        <p>凡没有律法犯了罪的，也必不按律法灭亡；凡在律法以下犯了罪的，也必按律法受审判。</p>
+      </li>
+                        <li><span>2:13</span>
+        <p>（原来在  神面前，不是听律法的为义，乃是行律法的称义。</p>
+      </li>
+                        <li><span>2:14</span>
+        <p>没有律法的外邦人若顺着本性行律法上的事，他们虽然没有律法，自己就是自己的律法。</p>
+      </li>
+                        <li><span>2:15</span>
+        <p>这是显出律法的功用刻在他们心里，他们是非之心同作见证，并且他们的思念互相较量，或以为是，或以为非。）</p>
+      </li>
+                        <li><span>2:16</span>
+        <p>就在  神藉耶稣基督审判人隐秘事的日子，照着我的福音所言。</p>
+      </li>
+                                    <li><span>2:17</span>
+        <p>你称为犹太人，又倚靠律法，且指着  神夸口；</p>
+      </li>
+                        <li><span>2:18</span>
+        <p>既从律法中受了教训，就晓得  神的旨意，也能分别是非（或作“也喜爱那美好的事”）；</p>
+      </li>
+                        <li><span>2:19</span>
+        <p>又深信自己是给瞎子领路的，是黑暗中人的光，</p>
+      </li>
+                        <li><span>2:20</span>
+        <p>是蠢笨人的师傅，是小孩子的先生，在律法上有知识和真理的模范。</p>
+      </li>
+                        <li><span>2:21</span>
+        <p>你既是教导别人，还不教导自己吗？你讲说人不可偷窃，自己还偷窃吗？</p>
+      </li>
+                        <li><span>2:22</span>
+        <p>你说人不可奸淫，自己还奸淫吗？你厌恶偶像，自己还偷窃庙中之物吗？</p>
+      </li>
+                        <li><span>2:23</span>
+        <p>你指着律法夸口，自己倒犯律法玷辱  神吗？</p>
+      </li>
+                        <li><span>2:24</span>
+        <p>神的名在外邦人中，因你们受了亵渎，正如经上所记的。</p>
+      </li>
+                        <li><span>2:25</span>
+        <p>你若是行律法的，割礼固然于你有益；若是犯律法的，你的割礼就算不得割礼。</p>
+      </li>
+                        <li><span>2:26</span>
+        <p>所以那未受割礼的，若遵守律法的条例，他虽然未受割礼，岂不算是有割礼吗？</p>
+      </li>
+                        <li><span>2:27</span>
+        <p>而且那本来未受割礼的，若能全守律法，岂不是要审判你这有仪文和割礼竟犯律法的人吗？</p>
+      </li>
+                        <li><span>2:28</span>
+        <p>因为外面作犹太人的，不是真犹太人；外面肉身的割礼，也不是真割礼。</p>
+      </li>
+                        <li><span>2:29</span>
+        <p>惟有里面作的，才是真犹太人；真割礼也是心里的，在乎灵，不在乎仪文。这人的称赞不是从人来的，乃是从  神来的。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共16首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>罗马书(罗)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>罗马书(罗)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>罗马书(罗)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>罗马书(罗)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>罗马书(罗)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>罗马书(罗)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>罗马书(罗)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>罗马书(罗)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>罗马书(罗)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>罗马书(罗)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>罗马书(罗)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>罗马书(罗)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>罗马书(罗)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>罗马书(罗)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>罗马书(罗)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>罗马书(罗)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-45-cid-1.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-45-cid-3.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

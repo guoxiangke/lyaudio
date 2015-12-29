@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="11列王记上/11列王记上_11.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-11-cid-12.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">列王记上(王上) 第11章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>11:1</span>
+        <p>所罗门王在法老的女儿之外，又宠爱许多外邦女子，就是摩押女子、亚扪女子、以东女子、西顿女子、赫人女子。</p>
+      </li>
+                        <li><span>11:2</span>
+        <p>论到这些国的人，耶和华曾晓谕以色列人说：“你们不可与她们往来相通，因为她们必诱惑你们的心去随从她们的神。”所罗门却恋爱这些女子。</p>
+      </li>
+                        <li><span>11:3</span>
+        <p>所罗门有妃七百，都是公主；还有嫔三百。这些妃嫔诱惑他的心。</p>
+      </li>
+                        <li><span>11:4</span>
+        <p>所罗门年老的时候，他的妃嫔诱惑他的心去随从别神，不效法他父亲大卫，诚诚实实地顺服耶和华他的  神。</p>
+      </li>
+                        <li><span>11:5</span>
+        <p>因为所罗门随从西顿人的女神亚斯他录和亚扪人可憎的神米勒公。</p>
+      </li>
+                        <li><span>11:6</span>
+        <p>所罗门行耶和华眼中看为恶的事，不效法他父亲大卫专心顺从耶和华。</p>
+      </li>
+                        <li><span>11:7</span>
+        <p>所罗门为摩押可憎的神基抹和亚扪人可憎的神摩洛，在耶路撒冷对面的山上建筑邱坛。</p>
+      </li>
+                        <li><span>11:8</span>
+        <p>他为那些向自己的神烧香献祭的外邦女子，就是他娶来的妃嫔也是这样行。</p>
+      </li>
+                        <li><span>11:9</span>
+        <p>耶和华向所罗门发怒，因为他的心偏离向他两次显现的耶和华以色列的  神。</p>
+      </li>
+                        <li><span>11:10</span>
+        <p>耶和华曾吩咐他不可随从别神，他却没有遵守耶和华所吩咐的。</p>
+      </li>
+                        <li><span>11:11</span>
+        <p>所以耶和华对他说：“你既行了这事，不遵守我所吩咐你守的约和律例，我必将你的国夺回，赐给你的臣子。</p>
+      </li>
+                        <li><span>11:12</span>
+        <p>然而因你父亲大卫的缘故，我不在你活着的日子行这事，必从你儿子的手中将国夺回。</p>
+      </li>
+                        <li><span>11:13</span>
+        <p>只是我不将全国夺回，要因我仆人大卫和我所选择的耶路撒冷，还留一支派给你的儿子。”</p>
+      </li>
+                                    <li><span>11:14</span>
+        <p>耶和华使以东人哈达兴起，作所罗门的敌人，他是以东王的后裔。</p>
+      </li>
+                        <li><span>11:15</span>
+        <p>先前大卫攻击以东，元帅约押上去葬埋阵亡的人，将以东的男丁都杀了。</p>
+      </li>
+                        <li><span>11:16</span>
+        <p>约押和以色列众人在以东住了六个月，直到将以东的男丁尽都剪除。</p>
+      </li>
+                        <li><span>11:17</span>
+        <p>那时哈达还是幼童；他和他父亲的臣仆，几个以东人逃往埃及。</p>
+      </li>
+                        <li><span>11:18</span>
+        <p>他们从米甸起行，到了巴兰；从巴兰带着几个人来到埃及见埃及王法老。法老为他派定粮食，又给他房屋田地。</p>
+      </li>
+                        <li><span>11:19</span>
+        <p>哈达在法老面前大蒙恩惠，以致法老将王后答比匿的妹子赐他为妻。</p>
+      </li>
+                        <li><span>11:20</span>
+        <p>答比匿的妹子给哈达生了一个儿子，名叫基努拔。答比匿使基努拔在法老的宫里断奶，基努拔就与法老的众子一同住在法老的宫里。</p>
+      </li>
+                        <li><span>11:21</span>
+        <p>哈达在埃及听见大卫与他列祖同睡，元帅约押也死了，就对法老说：“求王容我回本国去。”</p>
+      </li>
+                        <li><span>11:22</span>
+        <p>法老对他说：“你在我这里有什么缺乏，你竟要回你本国去呢？”他回答说：“我没有缺乏什么，只是求王容我回去。”</p>
+      </li>
+                        <li><span>11:23</span>
+        <p>神又使以利亚大的儿子利逊兴起，作所罗门的敌人。他先前逃避主人琐巴王哈大底谢。</p>
+      </li>
+                        <li><span>11:24</span>
+        <p>大卫击杀琐巴人的时候，利逊招聚了一群人，自己作他们的头目，往大马士革居住，在那里作王。</p>
+      </li>
+                        <li><span>11:25</span>
+        <p>所罗门活着的时候，哈达为患之外，利逊也作以色列的敌人。他恨恶以色列人，且作了亚兰人的王。</p>
+      </li>
+                                    <li><span>11:26</span>
+        <p>所罗门的臣仆、尼八的儿子耶罗波安也举手攻击王。他是以法莲支派的洗利达人，他母亲是寡妇，名叫洗鲁阿。</p>
+      </li>
+                        <li><span>11:27</span>
+        <p>他举手攻击王的缘故，乃由先前所罗门建造米罗，修补他父亲大卫城的破口。</p>
+      </li>
+                        <li><span>11:28</span>
+        <p>耶罗波安是大有才能的人。所罗门见这少年人殷勤，就派他监管约瑟家的一切工程。</p>
+      </li>
+                        <li><span>11:29</span>
+        <p>一日，耶罗波安出了耶路撒冷，示罗人先知亚希雅在路上遇见他。亚希雅身上穿着一件新衣，他们二人在田野，以外并无别人。</p>
+      </li>
+                        <li><span>11:30</span>
+        <p>亚希雅将自己穿的那件新衣撕成十二片，</p>
+      </li>
+                        <li><span>11:31</span>
+        <p>对耶罗波安说：“你可以拿十片。耶和华以色列的  神如此说：‘我必将国从所罗门手里夺回，将十个支派赐给你。</p>
+      </li>
+                        <li><span>11:32</span>
+        <p>（我因仆人大卫和我在以色列众支派中所选择的耶路撒冷城的缘故，仍给所罗门留一个支派。）</p>
+      </li>
+                        <li><span>11:33</span>
+        <p>因为他离弃我，敬拜西顿人的女神亚斯他录、摩押的神基抹和亚扪人的神米勒公，没有遵从我的道，行我眼中看为正的事，守我的律例典章，像他父亲大卫一样。</p>
+      </li>
+                        <li><span>11:34</span>
+        <p>但我不从他手里将全国夺回，使他终身为君，是因我所拣选的仆人大卫谨守我的诫命律例。</p>
+      </li>
+                        <li><span>11:35</span>
+        <p>我必从他儿子的手里将国夺回，以十个支派赐给你，</p>
+      </li>
+                        <li><span>11:36</span>
+        <p>还留一个支派给他的儿子，使我仆人大卫在我所选择立我名的耶路撒冷城里，在我面前长有灯光。</p>
+      </li>
+                        <li><span>11:37</span>
+        <p>我必拣选你，使你照心里一切所愿的，作王治理以色列。</p>
+      </li>
+                        <li><span>11:38</span>
+        <p>你若听从我一切所吩咐你的，遵行我的道，行我眼中看为正的事，谨守我的律例诫命，像我仆人大卫所行的，我就与你同在，为你立坚固的家，像我为大卫所立的一样，将以色列人赐给你。</p>
+      </li>
+                        <li><span>11:39</span>
+        <p>我必因所罗门所行的，使大卫后裔受患难，但不至于永远。’”</p>
+      </li>
+                        <li><span>11:40</span>
+        <p>所罗门因此想要杀耶罗波安，耶罗波安却起身逃往埃及，到了埃及王示撒那里，就住在埃及，直到所罗门死了。</p>
+      </li>
+                                    <li><span>11:41</span>
+        <p>所罗门其余的事，凡他所行的和他的智慧，都写在所罗门记上。</p>
+      </li>
+                        <li><span>11:42</span>
+        <p>所罗门在耶路撒冷作以色列众人的王共四十年。</p>
+      </li>
+                        <li><span>11:43</span>
+        <p>所罗门与他列祖同睡，葬在他父亲大卫的城里。他儿子罗波安接续他作王。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共22首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>列王记上(王上)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>列王记上(王上)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>列王记上(王上)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>列王记上(王上)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>列王记上(王上)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>列王记上(王上)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>列王记上(王上)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>列王记上(王上)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>列王记上(王上)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>列王记上(王上)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>列王记上(王上)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>列王记上(王上)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>列王记上(王上)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>列王记上(王上)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>列王记上(王上)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>列王记上(王上)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>列王记上(王上)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>列王记上(王上)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>列王记上(王上)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>列王记上(王上)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>列王记上(王上)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>列王记上(王上)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-11-cid-10.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-11-cid-12.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

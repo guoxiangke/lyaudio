@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="41马可福音/41马可福音_08.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-41-cid-9.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">马可福音(可) 第8章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>8:1</span>
+        <p>那时，又有许多人聚集，并没有什么吃的。耶稣叫门徒来，说：</p>
+      </li>
+                        <li><span>8:2</span>
+        <p>“我怜悯这众人，因为他们同我在这里已经三天，也没有吃的了。</p>
+      </li>
+                        <li><span>8:3</span>
+        <p>我若打发他们饿着回家，就必在路上困乏，因为其中有从远处来的。”</p>
+      </li>
+                        <li><span>8:4</span>
+        <p>门徒回答说：“在这野地，从哪里能得饼，叫这些人吃饱呢？”</p>
+      </li>
+                        <li><span>8:5</span>
+        <p>耶稣问他们说：“你们有多少饼？”他们说：“七个。”</p>
+      </li>
+                        <li><span>8:6</span>
+        <p>他吩咐众人坐在地上，就拿着这七个饼祝谢了，擘开，递给门徒，叫他们摆开，门徒就摆在众人面前。</p>
+      </li>
+                        <li><span>8:7</span>
+        <p>又有几条小鱼，耶稣祝了福，就吩咐也摆在众人面前。</p>
+      </li>
+                        <li><span>8:8</span>
+        <p>众人都吃，并且吃饱了，收拾剩下的零碎，有七筐子。</p>
+      </li>
+                        <li><span>8:9</span>
+        <p>人数约有四千。耶稣打发他们走了，</p>
+      </li>
+                        <li><span>8:10</span>
+        <p>随即同门徒上船，来到大玛努他境内。</p>
+      </li>
+                                    <li><span>8:11</span>
+        <p>法利赛人出来盘问耶稣，求他从天上显个神迹给他们看，想要试探他。</p>
+      </li>
+                        <li><span>8:12</span>
+        <p>耶稣心里深深地叹息说：“这世代为什么求神迹呢？我实在告诉你们：没有神迹给这世代看。”</p>
+      </li>
+                        <li><span>8:13</span>
+        <p>他就离开他们，又上船往海那边去了。</p>
+      </li>
+                                    <li><span>8:14</span>
+        <p>门徒忘了带饼，在船上除了一个饼，没有别的食物。</p>
+      </li>
+                        <li><span>8:15</span>
+        <p>耶稣嘱咐他们说：“你们要谨慎，防备法利赛人的酵和希律的酵。”</p>
+      </li>
+                        <li><span>8:16</span>
+        <p>他们彼此议论说：“这是因为我们没有饼吧？”</p>
+      </li>
+                        <li><span>8:17</span>
+        <p>耶稣看出来，就说：“你们为什么因为没有饼就议论呢？你们还不省悟，还不明白吗？你们的心还是愚顽吗？</p>
+      </li>
+                        <li><span>8:18</span>
+        <p>你们有眼睛，看不见吗？有耳朵，听不见吗？也不记得吗？</p>
+      </li>
+                        <li><span>8:19</span>
+        <p>我擘开那五个饼分给五千人，你们收拾的零碎装满了多少篮子呢？”他们说：“十二个。”</p>
+      </li>
+                        <li><span>8:20</span>
+        <p>“又擘开那七个饼分给四千人，你们收拾的零碎，装满了多少筐子呢？”他们说：“七个。”</p>
+      </li>
+                        <li><span>8:21</span>
+        <p>耶稣说：“你们还是不明白吗？”</p>
+      </li>
+                                    <li><span>8:22</span>
+        <p>他们来到伯赛大，有人带一个瞎子来，求耶稣摸他。</p>
+      </li>
+                        <li><span>8:23</span>
+        <p>耶稣拉着瞎子的手，领他到村外，就吐唾沫在他眼睛上，按手在他身上，问他说：“你看见什么了？”</p>
+      </li>
+                        <li><span>8:24</span>
+        <p>他就抬头一看，说：“我看见人了。他们好像树木，并且行走。”</p>
+      </li>
+                        <li><span>8:25</span>
+        <p>随后又按手在他眼睛上，他定睛一看，就复了原，样样都看得清楚了。</p>
+      </li>
+                        <li><span>8:26</span>
+        <p>耶稣打发他回家，说：“连这村子你也不要进去。”</p>
+      </li>
+                                    <li><span>8:27</span>
+        <p>耶稣和门徒出去，往凯撒利亚腓立比的村庄去。在路上问门徒说：“人说我是谁？”</p>
+      </li>
+                        <li><span>8:28</span>
+        <p>他们说：“有人说是施洗的约翰，有人说是以利亚，又有人说是先知里的一位。”</p>
+      </li>
+                        <li><span>8:29</span>
+        <p>又问他们说：“你们说我是谁？”彼得回答说：“你是基督。”</p>
+      </li>
+                        <li><span>8:30</span>
+        <p>耶稣就禁戒他们，不要告诉人。</p>
+      </li>
+                                    <li><span>8:31</span>
+        <p>从此，他教训他们说：“人子必须受许多的苦，被长老、祭司长和文士弃绝，并且被杀，过三天复活。”</p>
+      </li>
+                        <li><span>8:32</span>
+        <p>耶稣明明地说这话，彼得就拉着他劝他。</p>
+      </li>
+                        <li><span>8:33</span>
+        <p>耶稣转过来看着门徒，就责备彼得说：“撒但，退我后边去吧！因为你不体贴  神的意思，只体贴人的意思。”</p>
+      </li>
+                        <li><span>8:34</span>
+        <p>于是，叫众人和门徒来，对他们说：“若有人要跟从我，就当舍己，背起他的十字架，来跟从我。</p>
+      </li>
+                        <li><span>8:35</span>
+        <p>因为凡要救自己生命的（“生命”或作“灵魂”。下同），必丧掉生命；凡为我和福音丧掉生命的，必救了生命。</p>
+      </li>
+                        <li><span>8:36</span>
+        <p>人就是赚得全世界，赔上自己的生命，有什么益处呢？</p>
+      </li>
+                        <li><span>8:37</span>
+        <p>人还能拿什么换生命呢？</p>
+      </li>
+                        <li><span>8:38</span>
+        <p>凡在这淫乱罪恶的世代，把我和我的道当作可耻的，人子在他父的荣耀里，同圣天使降临的时候，也要把那人当作可耻的。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共16首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>马可福音(可)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>马可福音(可)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>马可福音(可)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>马可福音(可)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>马可福音(可)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>马可福音(可)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>马可福音(可)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>马可福音(可)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>马可福音(可)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>马可福音(可)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>马可福音(可)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>马可福音(可)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>马可福音(可)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>马可福音(可)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>马可福音(可)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>马可福音(可)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-41-cid-7.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-41-cid-9.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

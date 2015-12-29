@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="35哈巴谷书/35哈巴谷书_03.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-35.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">哈巴谷书(哈) 第3章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>3:1</span>
+        <p>先知哈巴谷的祷告，调用流离歌。</p>
+      </li>
+                        <li><span>3:2</span>
+        <p>耶和华啊，我听见你的名声（“名声”或作“言语”）就惧怕。耶和华啊，求你在这些年间复兴你的作为，在这些年间显明出来；在发怒的时候以怜悯为念。</p>
+      </li>
+                        <li><span>3:3</span>
+        <p>神从提幔而来，圣者从巴兰山临到。〔细拉〕他的荣光遮蔽诸天，颂赞充满大地。</p>
+      </li>
+                        <li><span>3:4</span>
+        <p>他的辉煌如同日光，从他手里射出光线，在其中藏着他的能力。</p>
+      </li>
+                        <li><span>3:5</span>
+        <p>在他前面有瘟疫流行，在他脚下有热症发出。</p>
+      </li>
+                        <li><span>3:6</span>
+        <p>他站立，量了大地（或作“使地震动”），观看，赶散万民。永久的山崩裂，长存的岭塌陷，他的作为与古时一样。</p>
+      </li>
+                        <li><span>3:7</span>
+        <p>我见古珊的帐棚遭难，米甸的幔子战兢。</p>
+      </li>
+                        <li><span>3:8</span>
+        <p>耶和华啊，你乘在马上，坐在得胜的车上，岂是不喜悦江河，向江河发怒气、向洋海发愤恨吗？</p>
+      </li>
+                        <li><span>3:9</span>
+        <p>你的弓全然显露，向众支派所起的誓都是可信的。〔细拉〕你以江河分开大地。</p>
+      </li>
+                        <li><span>3:10</span>
+        <p>山岭见你，无不战惧；大水泛滥过去，深渊发声，汹涌翻腾（原文作“向上举手”）。</p>
+      </li>
+                        <li><span>3:11</span>
+        <p>因你的箭射出发光，你的枪闪出光耀，日月都在本宫停住。</p>
+      </li>
+                        <li><span>3:12</span>
+        <p>你发愤恨通行大地，发愤气责打列国，如同打粮。</p>
+      </li>
+                        <li><span>3:13</span>
+        <p>你出来要拯救你的百姓，拯救你的受膏者，打破恶人家长的头，露出他的脚（“脚”原文作“根基”），直到颈项。〔细拉〕</p>
+      </li>
+                        <li><span>3:14</span>
+        <p>你用敌人的戈矛刺透他战士的头。他们来如旋风，要将我们分散，他们所喜爱的是暗中吞吃贫民。</p>
+      </li>
+                        <li><span>3:15</span>
+        <p>你乘马践踏红海，就是践踏汹涌的大水。</p>
+      </li>
+                        <li><span>3:16</span>
+        <p>我听见耶和华的声音，身体战兢，嘴唇发颤，骨中朽烂；我在所立之处战兢。我只可安静等候灾难之日临到，犯境之民上来。</p>
+      </li>
+                        <li><span>3:17</span>
+        <p>虽然无花果树不发旺，葡萄树不结果，橄榄树也不效力，田地不出粮食，圈中绝了羊，棚内也没有牛；</p>
+      </li>
+                        <li><span>3:18</span>
+        <p>然而，我要因耶和华欢欣，因救我的  神喜乐。</p>
+      </li>
+                        <li><span>3:19</span>
+        <p>主耶和华是我的力量！他使我的脚快如母鹿的蹄，又使我稳行在高处。这歌交与伶长，用丝弦的乐器。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共3首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-35-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>哈巴谷书(哈)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-35-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>哈巴谷书(哈)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-35-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>哈巴谷书(哈)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-35-cid-2.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="javascript:alertText('已到本章第后一首!');"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

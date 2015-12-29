@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="27但以理书/27但以理书_05.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-27-cid-6.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">但以理书(但) 第5章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>5:1</span>
+        <p>伯沙撒王为他的一千大臣设摆盛筵，与这一千人对面饮酒。</p>
+      </li>
+                        <li><span>5:2</span>
+        <p>伯沙撒欢饮之间，吩咐人将他父（“父”或作“祖”。下同）尼布甲尼撒从耶路撒冷殿中所掠的金银器皿拿来，王与大臣、皇后、妃嫔好用这器皿饮酒。</p>
+      </li>
+                        <li><span>5:3</span>
+        <p>于是他们把耶路撒冷  神殿库房中所掠的金器皿拿来，王和大臣、皇后、妃嫔就用这器皿饮酒。</p>
+      </li>
+                        <li><span>5:4</span>
+        <p>他们饮酒，赞美金、银、铜、铁、木、石所造的神。</p>
+      </li>
+                        <li><span>5:5</span>
+        <p>当时，忽有人的指头显出，在王宫与灯台相对的粉墙上写字。王看见写字的指头，</p>
+      </li>
+                        <li><span>5:6</span>
+        <p>就变了脸色，心意惊惶，腰骨好像脱节，双膝彼此相碰，</p>
+      </li>
+                        <li><span>5:7</span>
+        <p>大声吩咐将用法术的和迦勒底人，并观兆的领进来，对巴比伦的哲士说：“谁能读这文字，把讲解告诉我，他必身穿紫袍，项带金链，在我国中位列第三。”</p>
+      </li>
+                        <li><span>5:8</span>
+        <p>于是王的一切哲士都进来，却不能读那文字，也不能把讲解告诉王。</p>
+      </li>
+                        <li><span>5:9</span>
+        <p>伯沙撒王就甚惊惶，脸色改变，他的大臣也都惊奇。</p>
+      </li>
+                        <li><span>5:10</span>
+        <p>太后（或作“皇后”。下同）因王和他大臣所说的话，就进入宴宫，说：“愿王万岁！你心意不要惊惶，脸面不要变色。</p>
+      </li>
+                        <li><span>5:11</span>
+        <p>在你国中有一人，他里头有圣神的灵。你父在世的日子，这人心中光明，又有聪明智慧，好像神的智慧。你父尼布甲尼撒王，就是王的父，立他为术士、用法术的，和迦勒底人，并观兆的领袖。</p>
+      </li>
+                        <li><span>5:12</span>
+        <p>在他里头有美好的灵性，又有知识聪明，能圆梦，释谜语，解疑惑。这人名叫但以理，尼布甲尼撒王又称他为伯提沙撒；现在可以召他来，他必解明这意思。”</p>
+      </li>
+                                    <li><span>5:13</span>
+        <p>但以理就被领到王前。王问但以理说：“你是被掳之犹大人中的但以理吗？就是我父王从犹大掳来的吗？</p>
+      </li>
+                        <li><span>5:14</span>
+        <p>我听说你里头有神的灵，心中光明，又有聪明和美好的智慧。</p>
+      </li>
+                        <li><span>5:15</span>
+        <p>现在哲士和用法术的都领到我面前，为叫他们读这文字，把讲解告诉我，无奈他们都不能把讲解说出来。</p>
+      </li>
+                        <li><span>5:16</span>
+        <p>我听说你善于讲解，能解疑惑，现在你若能读这文字，把讲解告诉我，就必身穿紫袍，项戴金链，在我国中位列第三。”</p>
+      </li>
+                        <li><span>5:17</span>
+        <p>但以理在王面前回答说：“你的赠品可以归你自己，你的赏赐可以归给别人；我却要为王读这文字，把讲解告诉王。</p>
+      </li>
+                        <li><span>5:18</span>
+        <p>王啊，至高的  神曾将国位、大权、荣耀、威严赐与你父尼布甲尼撒，</p>
+      </li>
+                        <li><span>5:19</span>
+        <p>因  神所赐他的大权，各方、各国、各族的人都在他面前战兢恐惧。他可以随意生杀，随意升降。</p>
+      </li>
+                        <li><span>5:20</span>
+        <p>但他心高气傲，灵也刚愎，甚至行事狂傲，就被革去王位，夺去荣耀。</p>
+      </li>
+                        <li><span>5:21</span>
+        <p>他被赶出离开世人，他的心变如兽心，与野驴同居，吃草如牛，身被天露滴湿，等他知道至高的  神在人的国中掌权，凭自己的意旨立人治国。</p>
+      </li>
+                        <li><span>5:22</span>
+        <p>伯沙撒啊，你是他的儿子（或作“孙子”），你虽知道这一切，你心仍不自卑，</p>
+      </li>
+                        <li><span>5:23</span>
+        <p>竟向天上的主自高，使人将他殿中的器皿拿到你面前，你和大臣、皇后、妃嫔用这器皿饮酒。你又赞美那不能看、不能听、无知无识、金、银、铜、铁、木、石所造的神，却没有将荣耀归与那手中有你气息，管理你一切行动的  神。</p>
+      </li>
+                        <li><span>5:24</span>
+        <p>因此，从  神那里显出指头来写这文字。”</p>
+      </li>
+                        <li><span>5:25</span>
+        <p>“所写的文字是：弥尼，弥尼，提客勒，乌法珥新。</p>
+      </li>
+                        <li><span>5:26</span>
+        <p>讲解是这样：弥尼，就是  神已经数算你国的年日到此完毕；</p>
+      </li>
+                        <li><span>5:27</span>
+        <p>提客勒，就是你被称在天平里，显出你的亏欠；</p>
+      </li>
+                        <li><span>5:28</span>
+        <p>毗勒斯（与“乌法珥新”同义），就是你的国分裂，归与玛代人和波斯人。”</p>
+      </li>
+                        <li><span>5:29</span>
+        <p>伯沙撒下令，人就把紫袍给但以理穿上，把金链给他戴在颈项上，又传令使他在国中位列第三。</p>
+      </li>
+                        <li><span>5:30</span>
+        <p>当夜，迦勒底王伯沙撒被杀。</p>
+      </li>
+                        <li><span>5:31</span>
+        <p>玛代人大流士年六十二岁，取了迦勒底国。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共12首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>但以理书(但)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>但以理书(但)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>但以理书(但)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>但以理书(但)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>但以理书(但)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>但以理书(但)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>但以理书(但)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>但以理书(但)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>但以理书(但)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>但以理书(但)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>但以理书(但)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>但以理书(但)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-27-cid-4.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-27-cid-6.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="16尼希米记/16尼希米记_06.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-16-cid-7.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">尼希米记(尼) 第6章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>6:1</span>
+        <p>参巴拉、多比雅、阿拉伯人基善和我们其余的仇敌，听见我已经修完了城墙，其中没有破裂之处（那时我还没有安门扇）。</p>
+      </li>
+                        <li><span>6:2</span>
+        <p>参巴拉和基善就打发人来见我，说：“请你来，我们在阿挪平原的一个村庄相会。”他们却想害我。</p>
+      </li>
+                        <li><span>6:3</span>
+        <p>于是我差遣人去见他们说：“我现在办理大工，不能下去。焉能停工，下去见你们呢？”</p>
+      </li>
+                        <li><span>6:4</span>
+        <p>他们这样四次打发人来见我，我都如此回答他们。</p>
+      </li>
+                        <li><span>6:5</span>
+        <p>参巴拉第五次打发仆人来见我，手里拿着未封的信，</p>
+      </li>
+                        <li><span>6:6</span>
+        <p>信上写着说：“外邦人中有风声，迦施慕（就是“基善”，见2章19节）也说，你和犹大人谋反，修造城墙，你要作他们的王。</p>
+      </li>
+                        <li><span>6:7</span>
+        <p>你又派先知在耶路撒冷指着你宣讲说：‘在犹大有王。’现在这话必传与王知，所以请你来，与我们彼此商议。”</p>
+      </li>
+                        <li><span>6:8</span>
+        <p>我就差遣人去见他说：“你所说的这事，一概没有，是你心里捏造的。”</p>
+      </li>
+                        <li><span>6:9</span>
+        <p>他们都要使我们惧怕，意思说，他们的手必软弱，以致工作不能成就。  神啊，求你坚固我的手。</p>
+      </li>
+                        <li><span>6:10</span>
+        <p>我到了米希大别的孙子、第来雅的儿子示玛雅家里。那时，他闭门不出。他说：“我们不如在  神的殿里会面，将殿门关锁，因为他们要来杀你，就是夜里来杀你。”</p>
+      </li>
+                        <li><span>6:11</span>
+        <p>我说：“像我这样的人，岂要逃跑呢？像我这样的人，岂能进入殿里保全生命呢？我不进去！”</p>
+      </li>
+                        <li><span>6:12</span>
+        <p>我看明  神没有差遣他，是他自己说这话攻击我，是多比雅和参巴拉贿买了他。</p>
+      </li>
+                        <li><span>6:13</span>
+        <p>贿买他的缘故，是要叫我惧怕，依从他犯罪，他们好传扬恶言毁谤我。</p>
+      </li>
+                        <li><span>6:14</span>
+        <p>我的  神啊，多比雅、参巴拉、女先知挪亚底和其余的先知，要叫我惧怕，求你记念他们所行的这些事。</p>
+      </li>
+                                    <li><span>6:15</span>
+        <p>以禄月二十五日，城墙修完了，共修了五十二天。</p>
+      </li>
+                        <li><span>6:16</span>
+        <p>我们一切仇敌，四围的外邦人，听见了便惧怕，愁眉不展，因为见这工作完成，是出乎我们的  神。</p>
+      </li>
+                        <li><span>6:17</span>
+        <p>在那些日子，犹大的贵胄屡次寄信与多比雅，多比雅也来信与他们。</p>
+      </li>
+                        <li><span>6:18</span>
+        <p>在犹大有许多人与多比雅结盟，因他是亚拉的儿子、示迦尼的女婿，并且他的儿子约哈难娶了比利迦儿子米书兰的女儿为妻。</p>
+      </li>
+                        <li><span>6:19</span>
+        <p>他们常在我面前说多比雅的善行，也将我的话传与他。多比雅又常寄信来，要叫我惧怕。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共13首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>尼希米记(尼)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>尼希米记(尼)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>尼希米记(尼)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>尼希米记(尼)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>尼希米记(尼)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>尼希米记(尼)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>尼希米记(尼)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>尼希米记(尼)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>尼希米记(尼)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>尼希米记(尼)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>尼希米记(尼)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>尼希米记(尼)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>尼希米记(尼)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-16-cid-5.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-16-cid-7.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="10撒母耳记下/10撒母耳记下_02.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-10-cid-3.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">撒母耳记下(撒下) 第2章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>2:1</span>
+        <p>此后，大卫问耶和华说：“我上犹大的一个城去可以吗？”耶和华说：“可以。”大卫说：“我上哪一个城去呢？”耶和华说：“上希伯仑去。”</p>
+      </li>
+                        <li><span>2:2</span>
+        <p>于是大卫和他的两个妻：一个是耶斯列人亚希暖，一个是作过迦密人拿八妻的亚比该，都上那里去了。</p>
+      </li>
+                        <li><span>2:3</span>
+        <p>大卫也将跟随他的人和他们各人的眷属一同带上去，住在希伯仑的城邑中。</p>
+      </li>
+                        <li><span>2:4</span>
+        <p>犹大人来到希伯仑，在那里膏大卫作犹大家的王。有人告诉大卫说：“葬埋扫罗的是基列雅比人。”</p>
+      </li>
+                        <li><span>2:5</span>
+        <p>大卫就差人去见基列雅比人，对他们说：“你们厚待你们的主扫罗，将他葬埋，愿耶和华赐福与你们。</p>
+      </li>
+                        <li><span>2:6</span>
+        <p>你们既行了这事，愿耶和华以慈爱诚实待你们，我也要为此厚待你们。</p>
+      </li>
+                        <li><span>2:7</span>
+        <p>现在你们的主扫罗死了，犹大家已经膏我作他们的王，所以你们要刚强奋勇。”</p>
+      </li>
+                                    <li><span>2:8</span>
+        <p>扫罗的元帅尼珥的儿子押尼珥，曾将扫罗的儿子伊施波设带过河到玛哈念，</p>
+      </li>
+                        <li><span>2:9</span>
+        <p>立他作王治理基列、亚书利、耶斯列、以法莲、便雅悯和以色列众人。</p>
+      </li>
+                        <li><span>2:10</span>
+        <p>扫罗的儿子伊施波设登基的时候，年四十岁，作以色列王二年，惟独犹大家归从大卫。</p>
+      </li>
+                        <li><span>2:11</span>
+        <p>大卫在希伯仑作犹大家的王，共七年零六个月。</p>
+      </li>
+                                    <li><span>2:12</span>
+        <p>尼珥的儿子押尼珥，和扫罗的儿子伊施波设的仆人，从玛哈念出来，往基遍去。</p>
+      </li>
+                        <li><span>2:13</span>
+        <p>洗鲁雅的儿子约押和大卫的仆人也出来，在基遍池旁与他们相遇。一班坐在池这边，一班坐在池那边。</p>
+      </li>
+                        <li><span>2:14</span>
+        <p>押尼珥对约押说：“让少年人起来，在我们面前戏耍吧！”约押说：“可以。”</p>
+      </li>
+                        <li><span>2:15</span>
+        <p>就按着定数起来：属扫罗儿子伊施波设的便雅悯人过去十二名，大卫的仆人也过去十二名。</p>
+      </li>
+                        <li><span>2:16</span>
+        <p>彼此揪头，用刀刺肋，一同仆倒。所以那地叫作希利甲哈素林，就在基遍。</p>
+      </li>
+                        <li><span>2:17</span>
+        <p>那日的战事凶猛，押尼珥和以色列人败在大卫的仆人面前。</p>
+      </li>
+                        <li><span>2:18</span>
+        <p>在那里有洗鲁雅的三个儿子，约押、亚比筛、亚撒黑。亚撒黑脚快如野鹿一般。</p>
+      </li>
+                        <li><span>2:19</span>
+        <p>亚撒黑追赶押尼珥，直追赶他不偏左右。</p>
+      </li>
+                        <li><span>2:20</span>
+        <p>押尼珥回头说：“你是亚撒黑吗？”回答说：“是。”</p>
+      </li>
+                        <li><span>2:21</span>
+        <p>押尼珥对他说：“你或转向左，转向右，拿住一个少年人，剥去他的战衣。”亚撒黑却不肯转开不追赶他。</p>
+      </li>
+                        <li><span>2:22</span>
+        <p>押尼珥又对亚撒黑说：“你转开不追赶我吧！我何必杀你呢？若杀你，有什么脸见你哥哥约押呢？”</p>
+      </li>
+                        <li><span>2:23</span>
+        <p>亚撒黑仍不肯转开，故此押尼珥就用枪鐏刺入他的肚腹，甚至枪从背后透出。亚撒黑就在那里仆倒而死。众人赶到亚撒黑仆倒而死的地方，就都站住。</p>
+      </li>
+                        <li><span>2:24</span>
+        <p>约押和亚比筛追赶押尼珥，日落的时候，到了通基遍旷野的路旁，基亚对面的亚玛山。</p>
+      </li>
+                        <li><span>2:25</span>
+        <p>便雅悯人聚集，跟随押尼珥站在一个山顶上。</p>
+      </li>
+                        <li><span>2:26</span>
+        <p>押尼珥呼叫约押说：“刀剑岂可永远杀人吗？你岂不知终久必有苦楚吗？你要等何时才叫百姓回去，不追赶弟兄呢？”</p>
+      </li>
+                        <li><span>2:27</span>
+        <p>约押说：“我指着永生的  神起誓，你若不说戏耍的那句话，今日早晨百姓就回去，不追赶弟兄了。”</p>
+      </li>
+                        <li><span>2:28</span>
+        <p>于是约押吹角，众民就站住不再追赶以色列人，也不再打仗了。</p>
+      </li>
+                        <li><span>2:29</span>
+        <p>押尼珥和跟随他的人整夜经过亚拉巴，过约旦河走过毕伦，到了玛哈念。</p>
+      </li>
+                        <li><span>2:30</span>
+        <p>约押追赶押尼珥回来，聚集众民，见大卫的仆人中缺少了十九个人和亚撒黑。</p>
+      </li>
+                        <li><span>2:31</span>
+        <p>但大卫的仆人杀了便雅悯人和跟随押尼珥的人，共三百六十名。</p>
+      </li>
+                        <li><span>2:32</span>
+        <p>众人将亚撒黑送到伯利恒，葬在他父亲的坟墓里。约押和跟随他的人走了一夜，天亮的时候到了希伯仑。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共24首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>撒母耳记下(撒下)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>撒母耳记下(撒下)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>撒母耳记下(撒下)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>撒母耳记下(撒下)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>撒母耳记下(撒下)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>撒母耳记下(撒下)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>撒母耳记下(撒下)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>撒母耳记下(撒下)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>撒母耳记下(撒下)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>撒母耳记下(撒下)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>撒母耳记下(撒下)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>撒母耳记下(撒下)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>撒母耳记下(撒下)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>撒母耳记下(撒下)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>撒母耳记下(撒下)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>撒母耳记下(撒下)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>撒母耳记下(撒下)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>撒母耳记下(撒下)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>撒母耳记下(撒下)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>撒母耳记下(撒下)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>撒母耳记下(撒下)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>撒母耳记下(撒下)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>撒母耳记下(撒下)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>撒母耳记下(撒下)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-10-cid-1.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-10-cid-3.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

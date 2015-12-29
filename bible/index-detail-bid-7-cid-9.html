@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="07士师记/07士师记_09.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-7-cid-10.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">士师记(士) 第9章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>9:1</span>
+        <p>耶路巴力的儿子亚比米勒，到了示剑见他的众母舅，对他们和他外祖全家的人说：</p>
+      </li>
+                        <li><span>9:2</span>
+        <p>“请你们问示剑的众人，说：“是耶路巴力的众子七十人都管理你们好呢？还是一人管理你们好呢？你们又要记念我是你们的骨肉。”</p>
+      </li>
+                        <li><span>9:3</span>
+        <p>他的众母舅便将这一切话，为他说给示剑人听。示剑人的心就归向亚比米勒。他们说：“他原是我们的弟兄。”</p>
+      </li>
+                        <li><span>9:4</span>
+        <p>就从巴力比利土的庙中取了七十舍客勒银子给亚比米勒，亚比米勒用以雇了些匪徒跟随他。</p>
+      </li>
+                        <li><span>9:5</span>
+        <p>他往俄弗拉到他父亲的家，将他弟兄耶路巴力的众子七十人，都杀在一块磐石上，只剩下耶路巴力的小儿子约坦，因为他躲藏了。</p>
+      </li>
+                        <li><span>9:6</span>
+        <p>示剑人和米罗人都一同聚集，往示剑橡树旁的柱子那里，立亚比米勒为王。</p>
+      </li>
+                        <li><span>9:7</span>
+        <p>有人将这事告诉约坦，他就去站在基利心山顶上，向众人大声喊叫说：“示剑人哪，你们要听我的话，  神也就听你们的话。</p>
+      </li>
+                        <li><span>9:8</span>
+        <p>有一时树木要膏一树为王，管理他们，就去对橄榄树说：‘请你作我们的王。’</p>
+      </li>
+                        <li><span>9:9</span>
+        <p>橄榄树回答说：‘我岂肯止住供奉神和尊重人的油，飘摇在众树之上呢？’</p>
+      </li>
+                        <li><span>9:10</span>
+        <p>树木对无花果树说：‘请你来作我们的王。’</p>
+      </li>
+                        <li><span>9:11</span>
+        <p>无花果树回答说：‘我岂肯止住所结甜美的果子，飘摇在众树之上呢？’</p>
+      </li>
+                        <li><span>9:12</span>
+        <p>树木对葡萄树说：‘请你来作我们的王。’</p>
+      </li>
+                        <li><span>9:13</span>
+        <p>葡萄树回答说：‘我岂肯止住使神和人喜乐的新酒，飘摇在众树之上呢？’</p>
+      </li>
+                        <li><span>9:14</span>
+        <p>众树对荆棘说：‘请你来作我们的王。’</p>
+      </li>
+                        <li><span>9:15</span>
+        <p>荆棘回答说：‘你们若诚诚实实地膏我为王，就要投在我的荫下，不然愿火从荆棘里出来，烧灭黎巴嫩的香柏树。’</p>
+      </li>
+                        <li><span>9:16</span>
+        <p>“现在你们立亚比米勒为王，若按诚实正直善待耶路巴力和他的全家，这就是酬他的劳。</p>
+      </li>
+                        <li><span>9:17</span>
+        <p>从前我父冒死为你们争战，救了你们脱离米甸人的手。</p>
+      </li>
+                        <li><span>9:18</span>
+        <p>你们如今起来攻击我的父家，将他众子七十人杀在一块磐石上，又立他婢女所生的儿子亚比米勒为示剑人的王。他原是你们的弟兄。</p>
+      </li>
+                        <li><span>9:19</span>
+        <p>你们如今若按诚实正直待耶路巴力和他的家，就可因亚比米勒得欢乐，他也可因你们得欢乐。</p>
+      </li>
+                        <li><span>9:20</span>
+        <p>不然，愿火从亚比米勒发出，烧灭示剑人和米罗众人。又愿火从示剑人和米罗人中出来，烧灭亚比米勒。”</p>
+      </li>
+                        <li><span>9:21</span>
+        <p>约坦因怕他弟兄亚比米勒，就逃跑，来到比珥住在那里。</p>
+      </li>
+                        <li><span>9:22</span>
+        <p>亚比米勒管理以色列人三年。</p>
+      </li>
+                        <li><span>9:23</span>
+        <p>神使恶魔降在亚比米勒和示剑人中间，示剑人就以诡诈待亚比米勒。</p>
+      </li>
+                        <li><span>9:24</span>
+        <p>这是要叫耶路巴力七十个儿子所受的残害，归与他们的哥哥亚比米勒；又叫那流他们血的罪，归与帮助他杀弟兄的示剑人。</p>
+      </li>
+                        <li><span>9:25</span>
+        <p>示剑人在山顶上设埋伏，等候亚比米勒。凡从他们那里经过的人，他们就抢夺。有人将这事告诉亚比米勒。</p>
+      </li>
+                        <li><span>9:26</span>
+        <p>以别的儿子迦勒和他的弟兄来到示剑，示剑人都信靠他。</p>
+      </li>
+                        <li><span>9:27</span>
+        <p>示剑人出城到田间去，摘下葡萄，踹酒，设摆筵宴，进他们神的庙中吃喝，咒诅亚比米勒。</p>
+      </li>
+                        <li><span>9:28</span>
+        <p>以别的儿子迦勒说：“亚比米勒是谁？示剑是谁？使我们服侍他呢？他不是耶路巴力的儿子吗？他的帮手不是西布勒吗？你们可以服侍示剑的父亲哈抹的后裔。我们为何服侍亚比米勒呢？</p>
+      </li>
+                        <li><span>9:29</span>
+        <p>惟愿这民归我的手下，我就除掉亚比米勒。”迦勒又对亚比米勒说：“增添你的军兵出来吧！”</p>
+      </li>
+                        <li><span>9:30</span>
+        <p>邑宰西布勒听见以别的儿子迦勒的话，就发怒，</p>
+      </li>
+                        <li><span>9:31</span>
+        <p>悄悄地打发人去见亚比米勒，说：“以别的儿子迦勒和他的弟兄到了示剑，煽惑城中的民攻击你。</p>
+      </li>
+                        <li><span>9:32</span>
+        <p>现在你和跟随你的人今夜起来，在田间埋伏。</p>
+      </li>
+                        <li><span>9:33</span>
+        <p>到早晨太阳一出，你就起来闯城。迦勒和跟随他的人出来攻击你的时候，你便向他们见机而作。”</p>
+      </li>
+                        <li><span>9:34</span>
+        <p>于是亚比米勒和跟随他的众人夜间起来，分作四队，埋伏等候示剑人。</p>
+      </li>
+                        <li><span>9:35</span>
+        <p>以别的儿子迦勒出去，站在城门口。亚比米勒和跟随他的人，从埋伏之处起来。</p>
+      </li>
+                        <li><span>9:36</span>
+        <p>迦勒看见那些人，就对西布勒说：“看哪，有人从山顶上下来了。”西布勒说：“你看见山的影子，以为是人。”</p>
+      </li>
+                        <li><span>9:37</span>
+        <p>迦勒又说：“看哪，有人从高处下来，又有一队从米恶尼尼橡树的路上而来。”</p>
+      </li>
+                        <li><span>9:38</span>
+        <p>西布勒对他说：“你曾说，亚比米勒是谁，叫我们服侍他？你所夸的口在哪里呢？这不是你所藐视的民吗？你现在出去，与他们交战吧！”</p>
+      </li>
+                        <li><span>9:39</span>
+        <p>于是迦勒率领示剑人出去，与亚比米勒交战。</p>
+      </li>
+                        <li><span>9:40</span>
+        <p>亚比米勒追赶迦勒，迦勒在他面前逃跑，有许多受伤仆倒的，直到城门。</p>
+      </li>
+                        <li><span>9:41</span>
+        <p>亚比米勒住在亚鲁玛。西布勒赶出迦勒和他弟兄，不准他们住在示剑。</p>
+      </li>
+                        <li><span>9:42</span>
+        <p>次日，民出到田间，有人告诉亚比米勒。</p>
+      </li>
+                        <li><span>9:43</span>
+        <p>他就把他的人分作三队，埋伏在田间，看见示剑人从城里出来，就起来击杀他们。</p>
+      </li>
+                        <li><span>9:44</span>
+        <p>亚比米勒和跟随他的一队向前闯去，站在城门口；那两队直闯到田间，击杀了众人。</p>
+      </li>
+                        <li><span>9:45</span>
+        <p>亚比米勒整天攻打城，将城夺取，杀了其中的居民；将城拆毁，撒上了盐。</p>
+      </li>
+                        <li><span>9:46</span>
+        <p>示剑楼的人听见了，就躲入巴力比利土庙的卫所。</p>
+      </li>
+                        <li><span>9:47</span>
+        <p>有人告诉亚比米勒说：“示剑楼的人都聚在一处。”</p>
+      </li>
+                        <li><span>9:48</span>
+        <p>亚比米勒和跟随他的人就都上撒们山。亚比米勒手拿斧子，砍下一根树枝，扛在肩上，对跟随他的人说：“你们看我所行的，也当赶紧照样行。”</p>
+      </li>
+                        <li><span>9:49</span>
+        <p>众人就各砍一枝，跟随亚比米勒，把树枝堆在卫所的四围，放火烧了卫所。以致示剑楼的人都死了，男女约有一千。</p>
+      </li>
+                        <li><span>9:50</span>
+        <p>亚比米勒到提备斯，向提备斯安营，就攻取了那城。</p>
+      </li>
+                        <li><span>9:51</span>
+        <p>城中有一座坚固的楼。城里的众人，无论男女，都逃进楼去，关上门，上了楼顶。</p>
+      </li>
+                        <li><span>9:52</span>
+        <p>亚比米勒到了楼前攻打，挨近楼门，要用火焚烧。</p>
+      </li>
+                        <li><span>9:53</span>
+        <p>有一个妇人把一块上磨石抛在亚比米勒的头上，打破了他的脑骨。</p>
+      </li>
+                        <li><span>9:54</span>
+        <p>他就急忙喊叫拿他兵器的少年人，对他说：“拔出你的刀来，杀了我吧！免得人议论我说，他为一个妇人所杀。”于是少年人把他刺透，他就死了。</p>
+      </li>
+                        <li><span>9:55</span>
+        <p>以色列人见亚比米勒死了，便各回自己的地方去了。</p>
+      </li>
+                        <li><span>9:56</span>
+        <p>这样，  神报应亚比米勒向他父亲所行的恶，就是杀了弟兄七十个人的恶。</p>
+      </li>
+                        <li><span>9:57</span>
+        <p>示剑人的一切恶，  神也都报应在他们头上，耶路巴力的儿子约坦的咒诅归到他们身上了。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共21首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>士师记(士)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>士师记(士)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>士师记(士)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>士师记(士)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>士师记(士)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>士师记(士)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>士师记(士)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>士师记(士)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>士师记(士)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>士师记(士)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>士师记(士)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>士师记(士)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>士师记(士)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>士师记(士)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>士师记(士)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>士师记(士)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>士师记(士)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>士师记(士)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>士师记(士)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>士师记(士)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>士师记(士)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-7-cid-8.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-7-cid-10.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="05申命记/05申命记_33.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-5-cid-34.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">申命记(申) 第33章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>33:1</span>
+        <p>以下是神人摩西在未死之先为以色列人所祝的福。</p>
+      </li>
+                        <li><span>33:2</span>
+        <p>他说：“耶和华从西奈而来，从西珥向他们显现，从巴兰山发出光辉，从万万圣者中来临；从他右手为百姓传出烈火的律法。</p>
+      </li>
+                        <li><span>33:3</span>
+        <p>他疼爱百姓，众圣徒都在他手中。他们坐在他的脚下，领受他的言语。</p>
+      </li>
+                        <li><span>33:4</span>
+        <p>摩西将律法传给我们，作为雅各会众的产业。</p>
+      </li>
+                        <li><span>33:5</span>
+        <p>百姓的众首领，以色列的各支派，一同聚会的时候，耶和华（原文作“他”）在耶书仑中为王。”</p>
+      </li>
+                        <li><span>33:6</span>
+        <p>“愿流便存活不至死亡，愿他人数不至稀少。</p>
+      </li>
+                        <li><span>33:7</span>
+        <p>为犹大祝福说：求耶和华俯听犹大的声音，引导他归于本族，他曾用手为自己争战，你必帮助他攻击敌人。”</p>
+      </li>
+                        <li><span>33:8</span>
+        <p>“论利未说：耶和华啊，你的土明和乌陵都在你的虔诚人那里。你在玛撒曾试验他，在米利巴水与他争论。</p>
+      </li>
+                        <li><span>33:9</span>
+        <p>他论自己的父母说：我未曾看见，他也不承认弟兄，也不认识自己的儿女。这是因利未人遵行你的话，谨守你的约。</p>
+      </li>
+                        <li><span>33:10</span>
+        <p>他们要将你的典章教训雅各，将你的律法教训以色列。他们要把香焚在你面前，把全牲的燔祭献在你的坛上。</p>
+      </li>
+                        <li><span>33:11</span>
+        <p>求耶和华降福在他的财物上，悦纳他手里所办的事。那些起来攻击他和恨恶他的人，愿你刺透他们的腰，使他们不得再起来。”</p>
+      </li>
+                        <li><span>33:12</span>
+        <p>“论便雅悯说：耶和华所亲爱的，必同耶和华安然居住，耶和华终日遮蔽他，也住在他两肩之中。”</p>
+      </li>
+                        <li><span>33:13</span>
+        <p>“论约瑟说：愿他的地蒙耶和华赐福，得天上的宝物、甘露，以及地里所藏的泉水；</p>
+      </li>
+                        <li><span>33:14</span>
+        <p>得太阳所晒熟的美果，月亮所养成的宝物；</p>
+      </li>
+                        <li><span>33:15</span>
+        <p>得上古之山的至宝，永世之岭的宝物；</p>
+      </li>
+                        <li><span>33:16</span>
+        <p>得地和其中所充满的宝物，并住荆棘中上主的喜悦。愿这些福都归于约瑟的头上，归于那与弟兄迥别之人的顶上。</p>
+      </li>
+                        <li><span>33:17</span>
+        <p>他为牛群中头生的，有威严；他的角是野牛的角，用以抵触万邦，直到地极。这角，是以法莲的万万，玛拿西的千千。”</p>
+      </li>
+                        <li><span>33:18</span>
+        <p>“论西布伦说：西布伦哪，你出外可以欢喜；以萨迦啊，在你帐棚里可以快乐。</p>
+      </li>
+                        <li><span>33:19</span>
+        <p>他们要将列邦召到山上，在那里献公义的祭，因为他们要吸取海里的丰富，并沙中所藏的珍宝。”</p>
+      </li>
+                        <li><span>33:20</span>
+        <p>“论迦得说：使迦得扩张的应当称颂。迦得住如母狮，他撕裂膀臂，连头顶也撕裂。</p>
+      </li>
+                        <li><span>33:21</span>
+        <p>他为自己选择头一段地，因在那里有设立律法者的份存留。他与百姓的首领同来，他施行耶和华的公义，和耶和华与以色列所立的典章。”</p>
+      </li>
+                        <li><span>33:22</span>
+        <p>“论但说：但为小狮子，从巴珊跳出来。”</p>
+      </li>
+                        <li><span>33:23</span>
+        <p>“论拿弗他利说：拿弗他利啊，你足沾恩惠，满得耶和华的福，可以得西方和南方为业。”</p>
+      </li>
+                        <li><span>33:24</span>
+        <p>“论亚设说：愿亚设享受多子的福乐，得他弟兄的喜悦，可以把脚蘸在油中。</p>
+      </li>
+                        <li><span>33:25</span>
+        <p>你的门闩（“门闩”或作“鞋”）是铜的、铁的。你的日子如何，你的力量也必如何。”</p>
+      </li>
+                        <li><span>33:26</span>
+        <p>“耶书仑哪，没有能比  神的。他为帮助你，乘在天空，显其威荣，驾行穹苍。</p>
+      </li>
+                        <li><span>33:27</span>
+        <p>永生的  神是你的居所，他永久的膀臂在你以下。他在你前面撵出仇敌，说：‘毁灭吧！’</p>
+      </li>
+                        <li><span>33:28</span>
+        <p>以色列安然居住，雅各的本源独居五谷新酒之地，他的天也滴甘露。</p>
+      </li>
+                        <li><span>33:29</span>
+        <p>以色列啊，你是有福的！谁像你这蒙耶和华所拯救的百姓呢？他是你的盾牌，帮助你，是你威荣的刀剑；你的仇敌必投降你，你必踏在他们的高处。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共34首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>申命记(申)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>申命记(申)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>申命记(申)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>申命记(申)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>申命记(申)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>申命记(申)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>申命记(申)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>申命记(申)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>申命记(申)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>申命记(申)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>申命记(申)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>申命记(申)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>申命记(申)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>申命记(申)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>申命记(申)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>申命记(申)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>申命记(申)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>申命记(申)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>申命记(申)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>申命记(申)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>申命记(申)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>申命记(申)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>申命记(申)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>申命记(申)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>申命记(申)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>申命记(申)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>申命记(申)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>申命记(申)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>申命记(申)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>申命记(申)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>申命记(申)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>申命记(申)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>申命记(申)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>申命记(申)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-5-cid-32.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-5-cid-34.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

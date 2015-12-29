@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="09撒母耳记上/09撒母耳记上_06.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-9-cid-7.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">撒母耳记上(撒上) 第6章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>6:1</span>
+        <p>耶和华的约柜在非利士人之地七个月。</p>
+      </li>
+                        <li><span>6:2</span>
+        <p>非利士人将祭司和占卜的聚了来，问他们说：“我们向耶和华的约柜应当怎样行？请指示我们用何法将约柜送回原处。”</p>
+      </li>
+                        <li><span>6:3</span>
+        <p>他们说：“若要将以色列  神的约柜送回去，不可空空地送去，必要给他献赔罪的礼物，然后你们可得痊愈，并知道他的手为何不离开你们。”</p>
+      </li>
+                        <li><span>6:4</span>
+        <p>非利士人说：“应当用什么献为赔罪的礼物呢？”他们回答说：“当照非利士首领的数目，用五个金痔疮，五个金老鼠，因为在你们众人和你们首领的身上都是一样的灾。</p>
+      </li>
+                        <li><span>6:5</span>
+        <p>所以，当制造你们痔疮的像和毁坏你们田地老鼠的像，并要归荣耀给以色列的  神。或者他向你们和你们的神，并你们的田地，把手放轻些。</p>
+      </li>
+                        <li><span>6:6</span>
+        <p>你们为何硬着心像埃及人和法老一样呢？  神在埃及人中间行奇事，埃及人岂不释放以色列人，他们就去了吗？</p>
+      </li>
+                        <li><span>6:7</span>
+        <p>现在你们应当造一辆新车，将两只未曾负轭、有乳的母牛套在车上，使牛犊回家去，离开母牛。</p>
+      </li>
+                        <li><span>6:8</span>
+        <p>把耶和华的约柜放在车上，将所献赔罪的金物装在匣子里放在柜旁，将柜送去。</p>
+      </li>
+                        <li><span>6:9</span>
+        <p>你们要看看：车若直行以色列的境界到伯示麦去，这大灾就是耶和华降在我们身上的；若不然，便可以知道不是他的手击打我们，是我们偶然遇见的。”</p>
+      </li>
+                        <li><span>6:10</span>
+        <p>非利士人就这样行，将两只有乳的母牛套在车上，将牛犊关在家里，</p>
+      </li>
+                        <li><span>6:11</span>
+        <p>把耶和华的约柜和装金老鼠并金痔疮像的匣子都放在车上。</p>
+      </li>
+                        <li><span>6:12</span>
+        <p>牛直行大道，往伯示麦去，一面走一面叫，不偏左右。非利士的首领跟在后面，直到伯示麦的境界。</p>
+      </li>
+                        <li><span>6:13</span>
+        <p>伯示麦人正在平原收割麦子，举目看见约柜，就欢喜了。</p>
+      </li>
+                        <li><span>6:14</span>
+        <p>车到了伯示麦人约书亚的田间，就站住了。在那里有一块大磐石，他们把车劈了，将两只母牛献给耶和华为燔祭。</p>
+      </li>
+                        <li><span>6:15</span>
+        <p>利未人将耶和华的约柜和装金物的匣子拿下来，放在大磐石上。当日伯示麦人将燔祭和平安祭献给耶和华。</p>
+      </li>
+                        <li><span>6:16</span>
+        <p>非利士人的五个首领看见，当日就回以革伦去了。</p>
+      </li>
+                        <li><span>6:17</span>
+        <p>非利士人献给耶和华作赔罪的金痔疮像就是这些：一个是为亚实突，一个是为迦萨，一个是为亚实基伦，一个是为迦特，一个是为以革伦。</p>
+      </li>
+                        <li><span>6:18</span>
+        <p>金老鼠的数目是照非利士五个首领的城邑，就是坚固的城邑和乡村，以及大磐石。这磐石是放耶和华约柜的，到今日还在伯示麦人约书亚的田间。</p>
+      </li>
+                                    <li><span>6:19</span>
+        <p>耶和华因伯示麦人擅观他的约柜，就击杀了他们七十人，那时有五万人在那里（原文作“七十人加五万人”）。百姓因耶和华大大击杀他们，就哀哭了。</p>
+      </li>
+                        <li><span>6:20</span>
+        <p>伯示麦人说：“谁能在耶和华这圣洁的  神面前侍立呢？这约柜可以从我们这里送到谁那里去呢？”</p>
+      </li>
+                        <li><span>6:21</span>
+        <p>于是打发人去见基列耶琳的居民，说：“非利士人将耶和华的约柜送回来了，你们下来将约柜接到你们那里去吧！”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共31首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>撒母耳记上(撒上)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>撒母耳记上(撒上)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>撒母耳记上(撒上)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>撒母耳记上(撒上)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>撒母耳记上(撒上)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>撒母耳记上(撒上)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>撒母耳记上(撒上)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>撒母耳记上(撒上)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>撒母耳记上(撒上)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>撒母耳记上(撒上)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>撒母耳记上(撒上)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>撒母耳记上(撒上)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>撒母耳记上(撒上)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>撒母耳记上(撒上)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>撒母耳记上(撒上)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>撒母耳记上(撒上)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>撒母耳记上(撒上)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>撒母耳记上(撒上)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>撒母耳记上(撒上)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>撒母耳记上(撒上)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>撒母耳记上(撒上)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>撒母耳记上(撒上)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>撒母耳记上(撒上)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>撒母耳记上(撒上)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>撒母耳记上(撒上)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>撒母耳记上(撒上)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>撒母耳记上(撒上)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>撒母耳记上(撒上)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>撒母耳记上(撒上)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>撒母耳记上(撒上)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-9-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>撒母耳记上(撒上)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-9-cid-5.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-9-cid-7.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

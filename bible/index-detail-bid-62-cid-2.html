@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="62约翰一书/62约翰一书_02.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-62-cid-3.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">约翰一书(约一) 第2章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>2:1</span>
+        <p>我小子们哪，我将这些话写给你们，是要叫你们不犯罪。若有人犯罪，在父那里我们有一位中保，就是那义者耶稣基督。</p>
+      </li>
+                        <li><span>2:2</span>
+        <p>他为我们的罪作了挽回祭，不是单为我们的罪，也是为普天下人的罪。</p>
+      </li>
+                        <li><span>2:3</span>
+        <p>我们若遵守他的诫命，就晓得是认识他。</p>
+      </li>
+                        <li><span>2:4</span>
+        <p>人若说“我认识他”，却不遵守他的诫命，便是说谎话的，真理也不在他心里了。</p>
+      </li>
+                        <li><span>2:5</span>
+        <p>凡遵守主道的，爱  神的心在他里面实在是完全的，从此我们知道我们是在主里面。</p>
+      </li>
+                        <li><span>2:6</span>
+        <p>人若说他住在主里面，就该自己照主所行的去行。</p>
+      </li>
+                                    <li><span>2:7</span>
+        <p>亲爱的弟兄啊，我写给你们的，不是一条新命令，乃是你们从起初所受的旧命令，这旧命令就是你们所听见的道。</p>
+      </li>
+                        <li><span>2:8</span>
+        <p>再者，我写给你们的，是一条新命令，在主是真的，在你们也是真的；因为黑暗渐渐过去，真光已经照耀。</p>
+      </li>
+                        <li><span>2:9</span>
+        <p>人若说自己在光明中，却恨他的弟兄，他到如今还是在黑暗里。</p>
+      </li>
+                        <li><span>2:10</span>
+        <p>爱弟兄的，就是住在光明中，在他并没有绊跌的缘由；</p>
+      </li>
+                        <li><span>2:11</span>
+        <p>惟独恨弟兄的是在黑暗里，且在黑暗里行，也不知道往哪里去，因为黑暗叫他眼睛瞎了。</p>
+      </li>
+                        <li><span>2:12</span>
+        <p>小子们哪，我写信给你们，因为你们的罪藉着主名得了赦免。</p>
+      </li>
+                        <li><span>2:13</span>
+        <p>父老啊，我写信给你们，因为你们认识那从起初原有的。少年人哪，我写信给你们，因为你们胜了那恶者。小子们哪，我曾写信给你们，因为你们认识父。</p>
+      </li>
+                        <li><span>2:14</span>
+        <p>父老啊，我曾写信给你们，因为你们认识那从起初原有的。少年人哪，我曾写信给你们，因为你们刚强，  神的道常存在你们心里，你们也胜了那恶者。</p>
+      </li>
+                        <li><span>2:15</span>
+        <p>不要爱世界和世界上的事。人若爱世界，爱父的心就不在他里面了。</p>
+      </li>
+                        <li><span>2:16</span>
+        <p>因为凡世界上的事，就像肉体的情欲，眼目的情欲，并今生的骄傲，都不是从父来的，乃是从世界来的。</p>
+      </li>
+                        <li><span>2:17</span>
+        <p>这世界和其上的情欲都要过去，惟独遵行  神旨意的，是永远常存。</p>
+      </li>
+                                    <li><span>2:18</span>
+        <p>小子们哪，如今是末时了。你们曾听见说，那敌基督的要来。现在已经有好些敌基督的出来了，从此我们就知道如今是末时了。</p>
+      </li>
+                        <li><span>2:19</span>
+        <p>他们从我们中间出去，却不是属我们的；若是属我们的，就必仍旧与我们同在；他们出去，显明都不是属我们的。</p>
+      </li>
+                        <li><span>2:20</span>
+        <p>你们从那圣者受了恩膏，并且知道这一切的事（或作“都有知识”）。</p>
+      </li>
+                        <li><span>2:21</span>
+        <p>我写信给你们，不是因你们不知道真理，正是因你们知道，并且知道没有虚谎是从真理出来的。</p>
+      </li>
+                        <li><span>2:22</span>
+        <p>谁是说谎话的呢？不是那不认耶稣为基督的吗？不认父与子的，这就是敌基督的。</p>
+      </li>
+                        <li><span>2:23</span>
+        <p>凡不认子的，就没有父；认子的，连父也有了。</p>
+      </li>
+                        <li><span>2:24</span>
+        <p>论到你们，务要将那从起初所听见的常存在心里；若将从起初所听见的存在心里，你们就必住在子里面，也必住在父里面。</p>
+      </li>
+                        <li><span>2:25</span>
+        <p>主所应许我们的就是永生。</p>
+      </li>
+                        <li><span>2:26</span>
+        <p>我将这些话写给你们，是指着那引诱你们的人说的。</p>
+      </li>
+                        <li><span>2:27</span>
+        <p>你们从主所受的恩膏常存在你们心里，并不用人教训你们，自有主的恩膏在凡事上教训你们。这恩膏是真的，不是假的，你们要按这恩膏的教训住在主里面。</p>
+      </li>
+                                    <li><span>2:28</span>
+        <p>小子们哪，你们要住在主里面。这样，他若显现，我们就可以坦然无惧；当他来的时候，在他面前也不至于惭愧。</p>
+      </li>
+                        <li><span>2:29</span>
+        <p>你们若知道他是公义的，就知道凡行公义之人都是他所生的。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共5首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-62-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>约翰一书(约一)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-62-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>约翰一书(约一)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-62-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>约翰一书(约一)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-62-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>约翰一书(约一)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-62-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>约翰一书(约一)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-62-cid-1.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-62-cid-3.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

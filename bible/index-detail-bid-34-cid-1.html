@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="34那鸿书/34那鸿书_01.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-34-cid-2.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">那鸿书(鸿) 第1章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                  <li><span>1:1</span>
+        <p>论尼尼微的默示，就是伊勒歌斯人那鸿所得的默示。</p>
+      </li>
+                                    <li><span>1:2</span>
+        <p>耶和华是忌邪施报的  神。耶和华施报大有忿怒，向他的敌人施报，向他的仇敌怀怒。</p>
+      </li>
+                        <li><span>1:3</span>
+        <p>耶和华不轻易发怒，大有能力，万不以有罪的为无罪。他乘旋风和暴风而来，云彩为他脚下的尘土。</p>
+      </li>
+                        <li><span>1:4</span>
+        <p>他斥责海，使海干了，使一切江河干涸。巴珊和迦密的树林衰残，黎巴嫩的花草也衰残了。</p>
+      </li>
+                        <li><span>1:5</span>
+        <p>大山因他震动，小山也都消化，大地在他面前突起，世界和住在其间的也都如此。</p>
+      </li>
+                        <li><span>1:6</span>
+        <p>他发忿恨，谁能立得住呢？他发烈怒，谁能当得起呢？他的忿怒如火倾倒，磐石因他崩裂。</p>
+      </li>
+                        <li><span>1:7</span>
+        <p>耶和华本为善，在患难的日子为人的保障，并且认得那些投靠他的人。</p>
+      </li>
+                        <li><span>1:8</span>
+        <p>但他必以涨溢的洪水淹没尼尼微，又驱逐仇敌进入黑暗。</p>
+      </li>
+                        <li><span>1:9</span>
+        <p>尼尼微人哪，设何谋攻击耶和华呢？他必将你们灭绝净尽，灾难不再兴起。</p>
+      </li>
+                        <li><span>1:10</span>
+        <p>你们像丛杂的荆棘，像喝醉了的人，又如枯干的碎秸全然烧灭。</p>
+      </li>
+                        <li><span>1:11</span>
+        <p>有一人从你那里出来，图谋邪恶，设恶计攻击耶和华。</p>
+      </li>
+                        <li><span>1:12</span>
+        <p>耶和华如此说：“尼尼微虽然势力充足，人数繁多，也被剪除，归于无有。犹大啊，我虽然使你受苦，却不再使你受苦。</p>
+      </li>
+                        <li><span>1:13</span>
+        <p>现在我必从你颈项上折断他的轭，扭开他的绳索。”</p>
+      </li>
+                        <li><span>1:14</span>
+        <p>耶和华已经出令，指着尼尼微说：“你名下的人必不留后。我必从你神的庙中，除灭雕刻的偶像和铸造的偶像，我必因你鄙陋，使你归于坟墓。”</p>
+      </li>
+                        <li><span>1:15</span>
+        <p>看哪，有报好信、传平安之人的脚登山，说：“犹大啊，可以守你的节期，还你所许的愿吧！因为那恶人不再从你中间经过，他已灭绝净尽了。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共3首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-34-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>那鸿书(鸿)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-34-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>那鸿书(鸿)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-34-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>那鸿书(鸿)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="javascript:alertText('已到本章第一首!');"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-34-cid-2.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="42路加福音/42路加福音_15.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-42-cid-16.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">路加福音(路) 第15章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>15:1</span>
+        <p>众税吏和罪人都挨近耶稣，要听他讲道。</p>
+      </li>
+                        <li><span>15:2</span>
+        <p>法利赛人和文士私下议论说：“这个人接待罪人，又同他们吃饭。”</p>
+      </li>
+                        <li><span>15:3</span>
+        <p>耶稣就用比喻说：</p>
+      </li>
+                        <li><span>15:4</span>
+        <p>“你们中间谁有一百只羊失去一只，不把这九十九只撇在旷野，去找那失去的羊，直到找着呢？</p>
+      </li>
+                        <li><span>15:5</span>
+        <p>找着了，就欢欢喜喜地扛在肩上，回到家里，</p>
+      </li>
+                        <li><span>15:6</span>
+        <p>就请朋友邻舍来，对他们说：‘我失去的羊已经找着了，你们和我一同欢喜吧！’</p>
+      </li>
+                        <li><span>15:7</span>
+        <p>我告诉你们：一个罪人悔改，在天上也要这样为他欢喜，较比为九十九个不用悔改的义人欢喜更大。”</p>
+      </li>
+                                    <li><span>15:8</span>
+        <p>“或是一个妇人有十块钱，若失落一块，岂不点上灯，打扫屋子，细细地找，直到找着吗？</p>
+      </li>
+                        <li><span>15:9</span>
+        <p>找着了，就请朋友邻舍来，对他们说：‘我失落的那块钱已经找着了，你们和我一同欢喜吧！’</p>
+      </li>
+                        <li><span>15:10</span>
+        <p>我告诉你们：一个罪人悔改，在  神的使者面前也是这样为他欢喜。”</p>
+      </li>
+                                    <li><span>15:11</span>
+        <p>耶稣又说：“一个人有两个儿子。</p>
+      </li>
+                        <li><span>15:12</span>
+        <p>小儿子对父亲说：‘父亲，请你把我应得的家业分给我。’他父亲就把产业分给他们。</p>
+      </li>
+                        <li><span>15:13</span>
+        <p>过了不多几日，小儿子就把他一切所有的都收拾起来，往远方去了。在那里任意放荡，浪费资财。</p>
+      </li>
+                        <li><span>15:14</span>
+        <p>既耗尽了一切所有的，又遇着那地方大遭饥荒，就穷苦起来。</p>
+      </li>
+                        <li><span>15:15</span>
+        <p>于是去投靠那地方的一个人，那人打发他到田里去放猪。</p>
+      </li>
+                        <li><span>15:16</span>
+        <p>他恨不得拿猪所吃的豆荚充饥，也没有人给他。</p>
+      </li>
+                        <li><span>15:17</span>
+        <p>他醒悟过来，就说：‘我父亲有多少的雇工，口粮有余，我倒在这里饿死吗？</p>
+      </li>
+                        <li><span>15:18</span>
+        <p>我要起来，到我父亲那里去，向他说：父亲，我得罪了天，又得罪了你，</p>
+      </li>
+                        <li><span>15:19</span>
+        <p>从今以后，我不配称为你的儿子，把我当作一个雇工吧！’</p>
+      </li>
+                        <li><span>15:20</span>
+        <p>于是起来，往他父亲那里去。相离还远，他父亲看见，就动了慈心，跑去抱着他的颈项，连连与他亲嘴。</p>
+      </li>
+                        <li><span>15:21</span>
+        <p>儿子说：‘父亲，我得罪了天，又得罪了你，从今以后，我不配称为你的儿子。’</p>
+      </li>
+                        <li><span>15:22</span>
+        <p>父亲却吩咐仆人说：‘把那上好的袍子快拿出来给他穿，把戒指戴在他指头上，把鞋穿在他脚上，</p>
+      </li>
+                        <li><span>15:23</span>
+        <p>把那肥牛犊牵来宰了，我们可以吃喝快乐。</p>
+      </li>
+                        <li><span>15:24</span>
+        <p>因为我这个儿子是死而复活，失而又得的。’他们就快乐起来。</p>
+      </li>
+                        <li><span>15:25</span>
+        <p>那时，大儿子正在田里。他回来离家不远，听见作乐跳舞的声音，</p>
+      </li>
+                        <li><span>15:26</span>
+        <p>便叫过一个仆人来，问是什么事。</p>
+      </li>
+                        <li><span>15:27</span>
+        <p>仆人说：‘你兄弟来了。你父亲因为得他无灾无病地回来，把肥牛犊宰了。’</p>
+      </li>
+                        <li><span>15:28</span>
+        <p>大儿子却生气，不肯进去。他父亲就出来劝他。</p>
+      </li>
+                        <li><span>15:29</span>
+        <p>他对父亲说：‘我服侍你这多年，从来没有违背过你的命，你并没有给我一只山羊羔，叫我和朋友一同快乐。</p>
+      </li>
+                        <li><span>15:30</span>
+        <p>但你这个儿子和娼妓吞尽了你的产业，他一来了，你倒为他宰了肥牛犊。’</p>
+      </li>
+                        <li><span>15:31</span>
+        <p>父亲对他说：‘儿啊，你常和我同在，我一切所有的都是你的；</p>
+      </li>
+                        <li><span>15:32</span>
+        <p>只是你这个兄弟是死而复活、失而又得的，所以我们理当欢喜快乐。’”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共24首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>路加福音(路)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>路加福音(路)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>路加福音(路)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>路加福音(路)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>路加福音(路)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>路加福音(路)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>路加福音(路)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>路加福音(路)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>路加福音(路)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>路加福音(路)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>路加福音(路)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>路加福音(路)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>路加福音(路)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>路加福音(路)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>路加福音(路)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>路加福音(路)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>路加福音(路)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>路加福音(路)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>路加福音(路)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>路加福音(路)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>路加福音(路)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>路加福音(路)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>路加福音(路)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>路加福音(路)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-42-cid-14.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-42-cid-16.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

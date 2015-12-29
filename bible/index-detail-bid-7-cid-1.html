@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="07士师记/07士师记_01.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-7-cid-2.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">士师记(士) 第1章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>1:1</span>
+        <p>约书亚死后，以色列人求问耶和华说：“我们中间谁当首先上去攻击迦南人，与他们争战？”</p>
+      </li>
+                        <li><span>1:2</span>
+        <p>耶和华说：“犹大当先上去，我已将那地交在他手中。”</p>
+      </li>
+                        <li><span>1:3</span>
+        <p>犹大对他哥哥西缅说：“请你同我到拈阄所得之地去，好与迦南人争战；以后我也同你到你拈阄所得之地去。”于是西缅与他同去。</p>
+      </li>
+                        <li><span>1:4</span>
+        <p>犹大就上去。耶和华将迦南人和比利洗人交在他们手中，他们在比色击杀了一万人。</p>
+      </li>
+                        <li><span>1:5</span>
+        <p>又在那里遇见亚多尼比色，与他争战，杀败迦南人和比利洗人。</p>
+      </li>
+                        <li><span>1:6</span>
+        <p>亚多尼比色逃跑，他们追赶，拿住他，砍断他手脚的大拇指。</p>
+      </li>
+                        <li><span>1:7</span>
+        <p>亚多尼比色说：“从前有七十个王，手脚的大拇指都被我砍断，在我桌子底下拾取零碎食物。现在  神按着我所行的报应我了。”于是他们将亚多尼比色带到耶路撒冷，他就死在那里。</p>
+      </li>
+                                    <li><span>1:8</span>
+        <p>犹大人攻打耶路撒冷，将城攻取，用刀杀了城内的人，并且放火烧城。</p>
+      </li>
+                        <li><span>1:9</span>
+        <p>后来犹大人下去，与住山地南地和高原的迦南人争战。</p>
+      </li>
+                        <li><span>1:10</span>
+        <p>犹大人去攻击住希伯仑的迦南人，杀了示筛、亚希幔、挞买。希伯仑从前名叫基列亚巴。</p>
+      </li>
+                                    <li><span>1:11</span>
+        <p>他们从那里去攻击底璧的居民。底璧从前名叫基列西弗。</p>
+      </li>
+                        <li><span>1:12</span>
+        <p>迦勒说：“谁能攻打基列西弗，将城夺取，我就把我女儿押撒给他为妻。”</p>
+      </li>
+                        <li><span>1:13</span>
+        <p>迦勒兄弟基纳斯的儿子俄陀聂夺取了那城，迦勒就把女儿押撒给他为妻。</p>
+      </li>
+                        <li><span>1:14</span>
+        <p>押撒过门的时候，劝丈夫向她父亲求一块田。押撒一下驴，迦勒问她说：“你要什么？”</p>
+      </li>
+                        <li><span>1:15</span>
+        <p>她说：“求你赐福给我。你既将我安置在南地，求你也给我水泉。”迦勒就把上泉下泉赐给她。</p>
+      </li>
+                                    <li><span>1:16</span>
+        <p>摩西的内兄（或作“岳父”）是基尼人，他的子孙与犹大人一同离了棕树城，往亚拉得以南的犹大旷野去，就住在民中。</p>
+      </li>
+                        <li><span>1:17</span>
+        <p>犹大和他哥哥西缅同去，击杀了住洗法的迦南人，将城尽行毁灭，那城的名便叫何珥玛。</p>
+      </li>
+                        <li><span>1:18</span>
+        <p>犹大又取了迦萨和迦萨的四境，亚实基伦和亚实基伦的四境，以革伦和以革伦的四境。</p>
+      </li>
+                        <li><span>1:19</span>
+        <p>耶和华与犹大同在，犹大就赶出山地的居民，只是不能赶出平原的居民，因为他们有铁车。</p>
+      </li>
+                        <li><span>1:20</span>
+        <p>以色列人照摩西所说的，将希伯仑给了迦勒，迦勒就从那里赶出亚衲族的三个族长。</p>
+      </li>
+                        <li><span>1:21</span>
+        <p>便雅悯人没有赶出住耶路撒冷的耶布斯人，耶布斯人仍在耶路撒冷与便雅悯人同住，直到今日。</p>
+      </li>
+                                    <li><span>1:22</span>
+        <p>约瑟家也上去攻打伯特利，耶和华与他们同在。</p>
+      </li>
+                        <li><span>1:23</span>
+        <p>约瑟家打发人去窥探伯特利。那城起先名叫路斯。</p>
+      </li>
+                        <li><span>1:24</span>
+        <p>窥探的人看见一个人从城里出来，就对他说：“求你将进城的路指示我们，我们必恩待你。”</p>
+      </li>
+                        <li><span>1:25</span>
+        <p>那人将进城的路指示他们，他们就用刀击杀了城中的居民，但将那人和他全家放去。</p>
+      </li>
+                        <li><span>1:26</span>
+        <p>那人往赫人之地去，筑了一座城，起名叫路斯。那城到如今还叫这名。</p>
+      </li>
+                                    <li><span>1:27</span>
+        <p>玛拿西没有赶出伯善和属伯善乡村的居民，他纳和属他纳乡村的居民，多珥和属多珥乡村的居民，以伯莲和属以伯莲乡村的居民，米吉多和属米吉多乡村的居民。迦南人却执意住在那些地方。</p>
+      </li>
+                        <li><span>1:28</span>
+        <p>及至以色列强盛了，就使迦南人作苦工，没有把他们全然赶出。</p>
+      </li>
+                        <li><span>1:29</span>
+        <p>以法莲没有赶出住基色的迦南人。于是迦南人仍住在基色，在以法莲中间。</p>
+      </li>
+                        <li><span>1:30</span>
+        <p>西布伦没有赶出基伦的居民和拿哈拉的居民。于是迦南人仍住在西布伦中间，成了服苦的人。</p>
+      </li>
+                        <li><span>1:31</span>
+        <p>亚设没有赶出亚柯和西顿的居民，亚黑拉和亚革悉的居民，黑巴、亚弗革与利合的居民。</p>
+      </li>
+                        <li><span>1:32</span>
+        <p>于是，亚设因为没有赶出那地的迦南人，就住在他们中间。</p>
+      </li>
+                        <li><span>1:33</span>
+        <p>拿弗他利没有赶出伯示麦和伯亚纳的居民。于是拿弗他利就住在那地的迦南人中间，然而伯示麦和伯亚纳的居民，成了服苦的人。</p>
+      </li>
+                        <li><span>1:34</span>
+        <p>亚摩利人强逼但人住在山地，不容他们下到平原。</p>
+      </li>
+                        <li><span>1:35</span>
+        <p>亚摩利人却执意住在希烈山和亚雅伦并沙宾。然而约瑟家胜了他们，使他们成了服苦的人。</p>
+      </li>
+                        <li><span>1:36</span>
+        <p>亚摩利人的境界，是从亚克拉滨坡，从西拉而上。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共21首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>士师记(士)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>士师记(士)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>士师记(士)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>士师记(士)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>士师记(士)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>士师记(士)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>士师记(士)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>士师记(士)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>士师记(士)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>士师记(士)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>士师记(士)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>士师记(士)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>士师记(士)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>士师记(士)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>士师记(士)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>士师记(士)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>士师记(士)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>士师记(士)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>士师记(士)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>士师记(士)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>士师记(士)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="javascript:alertText('已到本章第一首!');"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-7-cid-2.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="01创世记/01创世记_30.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-1-cid-31.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">创世记(创) 第30章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                  <li><span>30:1</span>
+        <p>拉结见自己不给雅各生子，就嫉妒她姐姐，对雅各说：“你给我孩子，不然我就死了。”</p>
+      </li>
+                        <li><span>30:2</span>
+        <p>雅各向拉结生气，说：“叫你不生育的是  神，我岂能代替他作主呢？”</p>
+      </li>
+                        <li><span>30:3</span>
+        <p>拉结说：“有我的使女辟拉在这里，你可以与她同房，使她生子在我膝下，我便因她也得孩子（“得孩子”原文作“被建立”）。”</p>
+      </li>
+                        <li><span>30:4</span>
+        <p>拉结就把她的使女辟拉给丈夫为妾，雅各便与她同房，</p>
+      </li>
+                        <li><span>30:5</span>
+        <p>辟拉就怀孕给雅各生了一个儿子。</p>
+      </li>
+                        <li><span>30:6</span>
+        <p>拉结说：“  神伸了我的冤，也听了我的声音，赐我一个儿子。”因此给他起名叫但（就是“伸冤”的意思）。</p>
+      </li>
+                        <li><span>30:7</span>
+        <p>拉结的使女辟拉又怀孕，给雅各生了第二个儿子。</p>
+      </li>
+                        <li><span>30:8</span>
+        <p>拉结说：“我与我姐姐大大相争，并且得胜。”于是给他起名叫拿弗他利（就是“相争”的意思）。</p>
+      </li>
+                        <li><span>30:9</span>
+        <p>利亚见自己停了生育，就把使女悉帕给雅各为妾。</p>
+      </li>
+                        <li><span>30:10</span>
+        <p>利亚的使女悉帕给雅各生了一个儿子。</p>
+      </li>
+                        <li><span>30:11</span>
+        <p>利亚说：“万幸！”于是给他起名叫迦得（就是“万幸”的意思）。</p>
+      </li>
+                        <li><span>30:12</span>
+        <p>利亚的使女悉帕又给雅各生了第二个儿子。</p>
+      </li>
+                        <li><span>30:13</span>
+        <p>利亚说：“我有福啊，众女子都要称我是有福的。”于是给他起名叫亚设（就是“有福”的意思）。</p>
+      </li>
+                        <li><span>30:14</span>
+        <p>割麦子的时候，流便往田里去寻见风茄，拿来给他母亲利亚。拉结对利亚说：“请你把你儿子的风茄给我些。”</p>
+      </li>
+                        <li><span>30:15</span>
+        <p>利亚说：“你夺了我的丈夫还算小事吗？你又要夺我儿子的风茄吗？”拉结说：“为你儿子的风茄，今夜他可以与你同寝。”</p>
+      </li>
+                        <li><span>30:16</span>
+        <p>到了晚上，雅各从田里回来，利亚出来迎接他，说：“你要与我同寝，因为我实在用我儿子的风茄把你雇下了。”那一夜雅各就与她同寝。</p>
+      </li>
+                        <li><span>30:17</span>
+        <p>神应允了利亚，她就怀孕，给雅各生了第五个儿子。</p>
+      </li>
+                        <li><span>30:18</span>
+        <p>利亚说：“  神给了我价值，因为我把使女给了我丈夫。”于是给他起名叫以萨迦（就是“价值”的意思）。</p>
+      </li>
+                        <li><span>30:19</span>
+        <p>利亚又怀孕，给雅各生了第六个儿子。</p>
+      </li>
+                        <li><span>30:20</span>
+        <p>利亚说：“  神赐我厚赏，我丈夫必与我同住，因我给他生了六个儿子。”于是给他起名叫西布伦（就是“同住”的意思）。</p>
+      </li>
+                        <li><span>30:21</span>
+        <p>后来又生了一个女儿，给她起名叫底拿。</p>
+      </li>
+                        <li><span>30:22</span>
+        <p>神顾念拉结，应允了她，使她能生育。</p>
+      </li>
+                        <li><span>30:23</span>
+        <p>拉结怀孕生子，说：“  神除去了我的羞耻。”</p>
+      </li>
+                        <li><span>30:24</span>
+        <p>就给他起名叫约瑟（就是“增添”的意思），意思说：“愿耶和华再增添我一个儿子。”</p>
+      </li>
+                                    <li><span>30:25</span>
+        <p>拉结生约瑟之后，雅各对拉班说：“请打发我走，叫我回到我本乡本土去。</p>
+      </li>
+                        <li><span>30:26</span>
+        <p>请你把我服侍你所得的妻子和儿女给我，让我走。我怎样服侍你，你都知道。”</p>
+      </li>
+                        <li><span>30:27</span>
+        <p>拉班对他说：“我若在你眼前蒙恩，请你仍与我同住，因为我已算定，耶和华赐福与我是为你的缘故。”</p>
+      </li>
+                        <li><span>30:28</span>
+        <p>又说：“请你定你的工价，我就给你。”</p>
+      </li>
+                        <li><span>30:29</span>
+        <p>雅各对他说：“我怎样服侍你，你的牲畜在我手里怎样，是你知道的。</p>
+      </li>
+                        <li><span>30:30</span>
+        <p>我未来之先，你所有的很少，现今却发大众多，耶和华随我的脚步赐福与你。如今我什么时候才为自己兴家立业呢？”</p>
+      </li>
+                        <li><span>30:31</span>
+        <p>拉班说：“我当给你什么呢？”雅各说：“什么你也不必给我，只有一件事，你若应承，我便仍旧牧放你的羊群。</p>
+      </li>
+                        <li><span>30:32</span>
+        <p>今天我要走遍你的羊群，把绵羊中凡有点的、有斑的和黑色的，并山羊中凡有斑的、有点的，都挑出来，将来这一等的就算我的工价。</p>
+      </li>
+                        <li><span>30:33</span>
+        <p>以后你来查看我的工价，凡在我手里的山羊，不是有点有斑的，绵羊不是黑色的，那就算是我偷的。这样，便可证出我的公义来。”</p>
+      </li>
+                        <li><span>30:34</span>
+        <p>拉班说：“好啊，我情愿照着你的话行。”</p>
+      </li>
+                        <li><span>30:35</span>
+        <p>当日，拉班把有纹的、有斑的公山羊，有点的、有斑的、有杂白纹的母山羊，并黑色的绵羊，都挑出来，交在他儿子们的手下，</p>
+      </li>
+                        <li><span>30:36</span>
+        <p>又使自己和雅各相离三天的路程。雅各就牧养拉班其余的羊。</p>
+      </li>
+                        <li><span>30:37</span>
+        <p>雅各拿杨树、杏树、枫树的嫩枝，将皮剥成白纹，使枝子露出白的来，</p>
+      </li>
+                        <li><span>30:38</span>
+        <p>将剥了皮的枝子，对着羊群，插在饮羊的水沟里和水槽里，羊来喝的时候牝牡配合。</p>
+      </li>
+                        <li><span>30:39</span>
+        <p>羊对着枝子配合，就生下有纹的、有点的、有斑的来。</p>
+      </li>
+                        <li><span>30:40</span>
+        <p>雅各把羊羔分出来，使拉班的羊与这有纹和黑色的羊相对，把自己的羊另放一处，不叫他和拉班的羊混杂。</p>
+      </li>
+                        <li><span>30:41</span>
+        <p>到羊群肥壮配合的时候，雅各就把枝子插在水沟里，使羊对着枝子配合。</p>
+      </li>
+                        <li><span>30:42</span>
+        <p>只是到羊瘦弱配合的时候就不插枝子。这样，瘦弱的就归拉班，肥壮的就归雅各。</p>
+      </li>
+                        <li><span>30:43</span>
+        <p>于是雅各极其发大，得了许多的羊群、仆婢、骆驼和驴。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共50首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>创世记(创)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>创世记(创)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>创世记(创)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>创世记(创)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>创世记(创)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>创世记(创)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>创世记(创)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>创世记(创)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>创世记(创)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>创世记(创)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>创世记(创)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>创世记(创)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>创世记(创)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>创世记(创)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>创世记(创)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>创世记(创)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>创世记(创)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>创世记(创)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>创世记(创)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>创世记(创)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>创世记(创)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>创世记(创)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>创世记(创)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>创世记(创)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>创世记(创)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>创世记(创)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>创世记(创)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>创世记(创)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>创世记(创)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>创世记(创)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>创世记(创)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>创世记(创)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>创世记(创)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>创世记(创)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-35.html"><span class="ppNum">35</span>
+        <p><strong>创世记(创)第35章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-36.html"><span class="ppNum">36</span>
+        <p><strong>创世记(创)第36章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-37.html"><span class="ppNum">37</span>
+        <p><strong>创世记(创)第37章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-38.html"><span class="ppNum">38</span>
+        <p><strong>创世记(创)第38章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-39.html"><span class="ppNum">39</span>
+        <p><strong>创世记(创)第39章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-40.html"><span class="ppNum">40</span>
+        <p><strong>创世记(创)第40章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-41.html"><span class="ppNum">41</span>
+        <p><strong>创世记(创)第41章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-42.html"><span class="ppNum">42</span>
+        <p><strong>创世记(创)第42章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-43.html"><span class="ppNum">43</span>
+        <p><strong>创世记(创)第43章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-44.html"><span class="ppNum">44</span>
+        <p><strong>创世记(创)第44章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-45.html"><span class="ppNum">45</span>
+        <p><strong>创世记(创)第45章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-46.html"><span class="ppNum">46</span>
+        <p><strong>创世记(创)第46章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-47.html"><span class="ppNum">47</span>
+        <p><strong>创世记(创)第47章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-48.html"><span class="ppNum">48</span>
+        <p><strong>创世记(创)第48章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-49.html"><span class="ppNum">49</span>
+        <p><strong>创世记(创)第49章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-1-cid-50.html"><span class="ppNum">50</span>
+        <p><strong>创世记(创)第50章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-1-cid-29.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-1-cid-31.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

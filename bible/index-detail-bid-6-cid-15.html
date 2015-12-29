@@ -1,0 +1,367 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="06约书亚记/06约书亚记_15.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-6-cid-16.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">约书亚记(书) 第15章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>15:1</span>
+        <p>犹大支派按着宗族拈阄所得之地是在尽南边，到以东的交界，向南直到寻的旷野。</p>
+      </li>
+                        <li><span>15:2</span>
+        <p>他们的南界，是从盐海的尽边，就是从朝南的海汊起，</p>
+      </li>
+                        <li><span>15:3</span>
+        <p>通到亚克拉滨坡的南边，接连到寻，上到加低斯巴尼亚的南边，又过希斯仑，上到亚达珥，绕到甲加，</p>
+      </li>
+                        <li><span>15:4</span>
+        <p>接连到押们，通到埃及小河，直通到海为止。这就是他们的南界。</p>
+      </li>
+                        <li><span>15:5</span>
+        <p>东界是从盐海南边到约旦河口。北界，是从约旦河口的海汊起，</p>
+      </li>
+                        <li><span>15:6</span>
+        <p>上到伯曷拉，过伯亚拉巴的北边，上到流便之子波罕的磐石。</p>
+      </li>
+                        <li><span>15:7</span>
+        <p>从亚割谷往北，上到底璧，直向河南亚都冥坡对面的吉甲。又接连到隐示麦泉，直到隐罗结，</p>
+      </li>
+                        <li><span>15:8</span>
+        <p>上到欣嫩子谷，贴近耶布斯的南界（耶布斯就是耶路撒冷）。又上到欣嫩谷西边的山顶，就是在利乏音谷极北的边界。</p>
+      </li>
+                        <li><span>15:9</span>
+        <p>又从山顶延到尼弗多亚的水源，通到以弗仑山的城邑，又延到巴拉（巴拉就是基列耶琳）。</p>
+      </li>
+                        <li><span>15:10</span>
+        <p>又从巴拉往西绕到西珥山，接连到耶琳山的北边（耶琳就是基撒仑）。又下到伯示麦过亭纳，</p>
+      </li>
+                        <li><span>15:11</span>
+        <p>通到以革伦北边，延到施基仑，接连到巴拉山，又通到雅比聂，直通到海为止。</p>
+      </li>
+                        <li><span>15:12</span>
+        <p>西界就是大海和靠近大海之地，这是犹大人按着宗族所得之地四围的交界。</p>
+      </li>
+                                    <li><span>15:13</span>
+        <p>约书亚照耶和华所吩咐的，将犹大人中的一段地，就是基列亚巴，分给耶孚尼的儿子迦勒。亚巴是亚衲族的始祖（基列亚巴就是希伯仑）。</p>
+      </li>
+                        <li><span>15:14</span>
+        <p>迦勒就从那里赶出亚衲族的三个族长，就是示筛、亚希幔、挞买。</p>
+      </li>
+                        <li><span>15:15</span>
+        <p>又从那里上去，攻击底璧的居民，这底璧从前名叫基列西弗。</p>
+      </li>
+                        <li><span>15:16</span>
+        <p>迦勒说：“谁能攻打基列西弗，将城夺取，我就把我女儿押撒给他为妻。”</p>
+      </li>
+                        <li><span>15:17</span>
+        <p>迦勒兄弟基纳斯的儿子俄陀聂夺取了那城，迦勒就把女儿押撒给他为妻。</p>
+      </li>
+                        <li><span>15:18</span>
+        <p>押撒过门的时候，劝丈夫向她父亲求一块田，押撒一下驴，迦勒问她说：“你要什么？”</p>
+      </li>
+                        <li><span>15:19</span>
+        <p>她说：“求你赐福给我，你既将我安置在南地，求你也给我水泉。”她父亲就把上泉下泉赐给她。</p>
+      </li>
+                                    <li><span>15:20</span>
+        <p>以下是犹大支派按着宗族所得的产业：</p>
+      </li>
+                        <li><span>15:21</span>
+        <p>犹大支派尽南边的城邑，与以东交界相近的，就是甲薛、以得、雅姑珥、</p>
+      </li>
+                        <li><span>15:22</span>
+        <p>基拿、底摩拿、亚大达、</p>
+      </li>
+                        <li><span>15:23</span>
+        <p>基低斯、夏琐、以提楠、</p>
+      </li>
+                        <li><span>15:24</span>
+        <p>西弗、提练、比亚绿、</p>
+      </li>
+                        <li><span>15:25</span>
+        <p>夏琐哈大他、加略希斯仑（加略希斯仑就是夏琐）、</p>
+      </li>
+                        <li><span>15:26</span>
+        <p>亚曼、示玛、摩拉大、</p>
+      </li>
+                        <li><span>15:27</span>
+        <p>哈萨迦大、黑实门、伯帕列、</p>
+      </li>
+                        <li><span>15:28</span>
+        <p>哈萨书亚、别是巴、比斯约他、</p>
+      </li>
+                        <li><span>15:29</span>
+        <p>巴拉、以因、以森、</p>
+      </li>
+                        <li><span>15:30</span>
+        <p>伊勒多腊、基失、何珥玛、</p>
+      </li>
+                        <li><span>15:31</span>
+        <p>洗革拉、麦玛拿、三撒拿、</p>
+      </li>
+                        <li><span>15:32</span>
+        <p>利巴勿、实忻、亚因、临门，共二十九座城，还有属城的村庄。</p>
+      </li>
+                        <li><span>15:33</span>
+        <p>在高原有以实陶、琐拉、亚实拿、</p>
+      </li>
+                        <li><span>15:34</span>
+        <p>撒挪亚、隐干宁、他普亚、以楠、</p>
+      </li>
+                        <li><span>15:35</span>
+        <p>耶末、亚杜兰、梭哥、亚西加、</p>
+      </li>
+                        <li><span>15:36</span>
+        <p>色拉音，亚底他音，基底拉、基底罗他音，共十四座城，还有属城的村庄。</p>
+      </li>
+                        <li><span>15:37</span>
+        <p>又有洗楠、哈大沙、麦大迦得、</p>
+      </li>
+                        <li><span>15:38</span>
+        <p>底连、米斯巴、约帖、</p>
+      </li>
+                        <li><span>15:39</span>
+        <p>拉吉、波斯加、伊矶伦、</p>
+      </li>
+                        <li><span>15:40</span>
+        <p>迦本、拉幔、基提利、</p>
+      </li>
+                        <li><span>15:41</span>
+        <p>基低罗、伯大衮、拿玛、玛基大，共十六座城，还有属城的村庄。</p>
+      </li>
+                        <li><span>15:42</span>
+        <p>又有立拿、以帖、亚珊、</p>
+      </li>
+                        <li><span>15:43</span>
+        <p>益弗他、亚实拿、尼悉、</p>
+      </li>
+                        <li><span>15:44</span>
+        <p>基伊拉、亚革悉、玛利沙，共九座城，还有属城的村庄。</p>
+      </li>
+                        <li><span>15:45</span>
+        <p>又有以革伦和属以革伦的镇市村庄。</p>
+      </li>
+                        <li><span>15:46</span>
+        <p>从以革伦直到海，一切靠近亚实突之地，并属其地的村庄。</p>
+      </li>
+                        <li><span>15:47</span>
+        <p>亚实突和属亚实突的镇市村庄，迦萨和属迦萨的镇市村庄，直到埃及小河，并大海和靠近大海之地。</p>
+      </li>
+                        <li><span>15:48</span>
+        <p>在山地有沙密、雅提珥、梭哥、</p>
+      </li>
+                        <li><span>15:49</span>
+        <p>大拿、基列萨拿（基列萨拿就是底璧）、</p>
+      </li>
+                        <li><span>15:50</span>
+        <p>亚拿伯、以实提莫、亚念、</p>
+      </li>
+                        <li><span>15:51</span>
+        <p>歌珊、何伦、基罗，共十一座城，还有属城的村庄。</p>
+      </li>
+                        <li><span>15:52</span>
+        <p>又有亚拉、度玛、以珊、</p>
+      </li>
+                        <li><span>15:53</span>
+        <p>雅农、伯他普亚、亚非加、</p>
+      </li>
+                        <li><span>15:54</span>
+        <p>宏他、基列亚巴（基列亚巴就是希伯仑）、洗珥，共九座城，还有属城的村庄。</p>
+      </li>
+                        <li><span>15:55</span>
+        <p>又有玛云、迦密、西弗、淤他、</p>
+      </li>
+                        <li><span>15:56</span>
+        <p>耶斯列、约甸、撒挪亚、</p>
+      </li>
+                        <li><span>15:57</span>
+        <p>该隐、基比亚、亭纳，共十座城，还有属城的村庄。</p>
+      </li>
+                        <li><span>15:58</span>
+        <p>又有哈忽、伯夙、基突、</p>
+      </li>
+                        <li><span>15:59</span>
+        <p>玛腊、伯亚诺、伊勒提君，共六座城，还有属城的村庄。</p>
+      </li>
+                        <li><span>15:60</span>
+        <p>又有基列巴力（基列巴力就是基列耶琳）、拉巴，共两座城，还有属城的村庄。</p>
+      </li>
+                        <li><span>15:61</span>
+        <p>在旷野有伯亚拉巴、密丁、西迦迦、</p>
+      </li>
+                        <li><span>15:62</span>
+        <p>匿珊、盐城、隐基底，共六座城，还有属城的村庄。</p>
+      </li>
+                        <li><span>15:63</span>
+        <p>至于住耶路撒冷的耶布斯人，犹大人不能把他们赶出去，耶布斯人却在耶路撒冷与犹大人同住，直到今日。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共24首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>约书亚记(书)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>约书亚记(书)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>约书亚记(书)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>约书亚记(书)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>约书亚记(书)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>约书亚记(书)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>约书亚记(书)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>约书亚记(书)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>约书亚记(书)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>约书亚记(书)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>约书亚记(书)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>约书亚记(书)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>约书亚记(书)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>约书亚记(书)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>约书亚记(书)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>约书亚记(书)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>约书亚记(书)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>约书亚记(书)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>约书亚记(书)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>约书亚记(书)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>约书亚记(书)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>约书亚记(书)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>约书亚记(书)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>约书亚记(书)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-6-cid-14.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-6-cid-16.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

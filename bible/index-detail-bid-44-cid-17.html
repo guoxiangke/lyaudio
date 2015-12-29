@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="44使徒行传/44使徒行传_17.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-44-cid-18.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">使徒行传(徒) 第17章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>17:1</span>
+        <p>保罗和西拉经过暗妃坡里、亚波罗尼亚，来到帖撒罗尼迦，在那里有犹太人的会堂。</p>
+      </li>
+                        <li><span>17:2</span>
+        <p>保罗照他素常的规矩进去，一连三个安息日，本着圣经与他们辩论，</p>
+      </li>
+                        <li><span>17:3</span>
+        <p>讲解陈明基督必须受害，从死里复活，又说：“我所传与你们的这位耶稣，就是基督。”</p>
+      </li>
+                        <li><span>17:4</span>
+        <p>他们中间有些人听了劝，就附从保罗和西拉，并有许多虔敬的希腊人，尊贵的妇女也不少。</p>
+      </li>
+                        <li><span>17:5</span>
+        <p>但那不信的犹太人心里嫉妒，招聚了些市井匪类，搭伙成群，耸动合城的人闯进耶孙的家，要将保罗、西拉带到百姓那里。</p>
+      </li>
+                        <li><span>17:6</span>
+        <p>找不着他们，就把耶孙和几个弟兄拉到地方官那里，喊叫说：“那搅乱天下的也到这里来了，</p>
+      </li>
+                        <li><span>17:7</span>
+        <p>耶孙收留他们。这些人都违背凯撒的命令，说另有一个王耶稣。”</p>
+      </li>
+                        <li><span>17:8</span>
+        <p>众人和地方官听见这话，就惊慌了，</p>
+      </li>
+                        <li><span>17:9</span>
+        <p>于是取了耶孙和其余之人的保状，就释放了他们。</p>
+      </li>
+                                    <li><span>17:10</span>
+        <p>弟兄们随即在夜间打发保罗和西拉往庇哩亚去。二人到了，就进入犹太人的会堂。</p>
+      </li>
+                        <li><span>17:11</span>
+        <p>这地方的人贤于帖撒罗尼迦的人，甘心领受这道，天天考查圣经，要晓得这道是与不是。</p>
+      </li>
+                        <li><span>17:12</span>
+        <p>所以他们中间多有相信的，又有希腊尊贵的妇女，男子也不少。</p>
+      </li>
+                        <li><span>17:13</span>
+        <p>但帖撒罗尼迦的犹太人知道保罗又在庇哩亚传  神的道，也就往那里去，耸动搅扰众人。</p>
+      </li>
+                        <li><span>17:14</span>
+        <p>当时弟兄们便打发保罗往海边去，西拉和提摩太仍住在庇哩亚。</p>
+      </li>
+                        <li><span>17:15</span>
+        <p>送保罗的人带他到了雅典，既领了保罗的命，叫西拉和提摩太速速到他这里来，就回去了。</p>
+      </li>
+                                    <li><span>17:16</span>
+        <p>保罗在雅典等候他们的时候，看见满城都是偶像，就心里着急，</p>
+      </li>
+                        <li><span>17:17</span>
+        <p>于是在会堂里与犹太人和虔敬的人，并每日在市上所遇见的人辩论。</p>
+      </li>
+                        <li><span>17:18</span>
+        <p>还有彼古罗和斯多亚两门的学士与他争论。有的说：“这胡言乱语的，要说什么？”有的说：“他似乎是传说外邦鬼神的。”这话是因保罗传讲耶稣与复活的道。</p>
+      </li>
+                        <li><span>17:19</span>
+        <p>他们就把他带到亚略巴古，说：“你所讲的这新道，我们也可以知道吗？</p>
+      </li>
+                        <li><span>17:20</span>
+        <p>因为你有些奇怪的事传到我们耳中，我们愿意知道这些事是什么意思。”</p>
+      </li>
+                        <li><span>17:21</span>
+        <p>（雅典人和住在那里的客人都不顾别的事，只将新闻说说听听。）</p>
+      </li>
+                        <li><span>17:22</span>
+        <p>保罗站在亚略巴古当中，说：“众位雅典人哪，我看你们凡事很敬畏鬼神。</p>
+      </li>
+                        <li><span>17:23</span>
+        <p>我游行的时候，观看你们所敬拜的，遇见一座坛，上面写着‘未识之神’。你们所不认识而敬拜的，我现在告诉你们：</p>
+      </li>
+                        <li><span>17:24</span>
+        <p>创造宇宙和其中万物的  神，既是天地的主，就不住人手所造的殿，</p>
+      </li>
+                        <li><span>17:25</span>
+        <p>也不用人手服侍，好像缺少什么；自己倒将生命、气息、万物，赐给万人。</p>
+      </li>
+                        <li><span>17:26</span>
+        <p>他从一本造出万族的人（“本”有古卷作“血脉”），住在全地上，并且预先定准他们的年限和所住的疆界，</p>
+      </li>
+                        <li><span>17:27</span>
+        <p>要叫他们寻求  神，或者可以揣摩而得，其实他离我们各人不远，</p>
+      </li>
+                        <li><span>17:28</span>
+        <p>我们生活、动作、存留都在乎他。就如你们作诗的，有人说：‘我们也是他所生的。’</p>
+      </li>
+                        <li><span>17:29</span>
+        <p>我们既是  神所生的，就不当以为  神的神性像人用手艺、心思所雕刻的金、银、石。</p>
+      </li>
+                        <li><span>17:30</span>
+        <p>世人蒙昧无知的时候，  神并不监察，如今却吩咐各处的人都要悔改。</p>
+      </li>
+                        <li><span>17:31</span>
+        <p>因为他已经定了日子，要藉着他所设立的人按公义审判天下，并且叫他从死里复活，给万人作可信的凭据。”</p>
+      </li>
+                        <li><span>17:32</span>
+        <p>众人听见从死里复活的话，就有讥诮他的，又有人说：“我们再听你讲这个吧！”</p>
+      </li>
+                        <li><span>17:33</span>
+        <p>于是保罗从他们当中出去了。</p>
+      </li>
+                        <li><span>17:34</span>
+        <p>但有几个人贴近他，信了主，其中有亚略巴古的官丢尼修，并一个妇人，名叫大马哩，还有别人一同信从。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共28首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>使徒行传(徒)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>使徒行传(徒)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>使徒行传(徒)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>使徒行传(徒)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>使徒行传(徒)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>使徒行传(徒)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>使徒行传(徒)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>使徒行传(徒)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>使徒行传(徒)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>使徒行传(徒)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>使徒行传(徒)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>使徒行传(徒)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>使徒行传(徒)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>使徒行传(徒)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>使徒行传(徒)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>使徒行传(徒)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>使徒行传(徒)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>使徒行传(徒)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>使徒行传(徒)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>使徒行传(徒)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>使徒行传(徒)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>使徒行传(徒)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>使徒行传(徒)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>使徒行传(徒)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>使徒行传(徒)第25章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>使徒行传(徒)第26章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>使徒行传(徒)第27章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-44-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>使徒行传(徒)第28章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-44-cid-16.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-44-cid-18.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

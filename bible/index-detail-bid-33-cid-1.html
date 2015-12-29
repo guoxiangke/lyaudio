@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="33弥迦书/33弥迦书_01.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-33-cid-2.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">弥迦书(弥) 第1章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                  <li><span>1:1</span>
+        <p>当犹大王约坦、亚哈斯、希西家在位的时候，摩利沙人弥迦得耶和华的默示，论撒玛利亚和耶路撒冷。</p>
+      </li>
+                                    <li><span>1:2</span>
+        <p>万民哪，你们都要听！地和其上所有的，也都要侧耳而听！主耶和华从他的圣殿要见证你们的不是。</p>
+      </li>
+                        <li><span>1:3</span>
+        <p>看哪，耶和华出了他的居所，降临步行地的高处。</p>
+      </li>
+                        <li><span>1:4</span>
+        <p>众山在他以下必消化，诸谷必崩裂，如蜡化在火中，如水冲下山坡。</p>
+      </li>
+                        <li><span>1:5</span>
+        <p>这都因雅各的罪过，以色列家的罪恶。雅各的罪过在哪里呢？岂不是在撒玛利亚吗？犹大的邱坛在哪里呢？岂不是在耶路撒冷吗？</p>
+      </li>
+                        <li><span>1:6</span>
+        <p>所以我必使撒玛利亚变为田野的乱堆，又作为种葡萄之处；也必将他的石头倒在谷中，露出根基来。</p>
+      </li>
+                        <li><span>1:7</span>
+        <p>他一切雕刻的偶像必被打碎，他所得的财物必被火烧，所有的偶像我必毁灭，因为是从妓女雇价所聚来的，后必归为妓女的雇价。</p>
+      </li>
+                        <li><span>1:8</span>
+        <p>先知说：因此我必大声哀号，赤脚露体而行；又要呼号如野狗，哀鸣如鸵鸟。</p>
+      </li>
+                        <li><span>1:9</span>
+        <p>因为撒玛利亚的伤痕无法医治，延及犹大和耶路撒冷我民的城门。</p>
+      </li>
+                                    <li><span>1:10</span>
+        <p>不要在迦特报告这事，总不要哭泣。我在伯亚弗拉滚于灰尘之中。</p>
+      </li>
+                        <li><span>1:11</span>
+        <p>沙斐的居民哪，你们要赤身蒙羞过去。撒南的居民不敢出来。伯以薛人的哀哭使你们无处可站。</p>
+      </li>
+                        <li><span>1:12</span>
+        <p>玛律的居民心甚忧急，切望得好处，因为灾祸从耶和华那里临到耶路撒冷的城门。</p>
+      </li>
+                        <li><span>1:13</span>
+        <p>拉吉的居民哪，要用快马套车；锡安民（“民”原文作“女子”）的罪由你而起，以色列人的罪过在你那里显出。</p>
+      </li>
+                        <li><span>1:14</span>
+        <p>犹大啊，你要将礼物送给摩利设迦特。亚革悉的众族必用诡诈待以色列诸王。</p>
+      </li>
+                        <li><span>1:15</span>
+        <p>玛利沙的居民哪，我必使那夺取你的来到你这里，以色列的尊贵人（原文作“荣耀”）必到亚杜兰。</p>
+      </li>
+                        <li><span>1:16</span>
+        <p>犹大啊，要为你所喜爱的儿女剪除你的头发，使头光秃；要大大地光秃，如同秃鹰，因为他们都被掳去离开你。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共7首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-33-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>弥迦书(弥)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-33-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>弥迦书(弥)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-33-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>弥迦书(弥)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-33-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>弥迦书(弥)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-33-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>弥迦书(弥)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-33-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>弥迦书(弥)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-33-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>弥迦书(弥)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="javascript:alertText('已到本章第一首!');"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-33-cid-2.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

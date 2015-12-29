@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="12列王记下/12列王记下_15.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-12-cid-16.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">列王记下(王下) 第15章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>15:1</span>
+        <p>以色列王耶罗波安二十七年，犹大王亚玛谢的儿子亚撒利雅登基，</p>
+      </li>
+                        <li><span>15:2</span>
+        <p>他登基的时候年十六岁，在耶路撒冷作王五十二年。他母亲名叫耶可利雅，是耶路撒冷人。</p>
+      </li>
+                        <li><span>15:3</span>
+        <p>亚撒利雅行耶和华眼中看为正的事，效法他父亲亚玛谢一切所行的；</p>
+      </li>
+                        <li><span>15:4</span>
+        <p>只是邱坛还没有废去，百姓仍在那里献祭烧香。</p>
+      </li>
+                        <li><span>15:5</span>
+        <p>耶和华降灾与王，使他长大麻风，直到死日，他就住在别的宫里。他的儿子约坦管理家事，治理国民。</p>
+      </li>
+                        <li><span>15:6</span>
+        <p>亚撒利雅其余的事，凡他所行的，都写在犹大列王记上。</p>
+      </li>
+                        <li><span>15:7</span>
+        <p>亚撒利雅与他列祖同睡，葬在大卫城他列祖的坟地里。他儿子约坦接续他作王。</p>
+      </li>
+                                    <li><span>15:8</span>
+        <p>犹大王亚撒利雅三十八年，耶罗波安的儿子撒迦利雅在撒玛利亚作以色列王六个月。</p>
+      </li>
+                        <li><span>15:9</span>
+        <p>他行耶和华眼中看为恶的事，效法他列祖所行的，不离开尼八的儿子耶罗波安使以色列人陷在罪里的那罪。</p>
+      </li>
+                        <li><span>15:10</span>
+        <p>雅比的儿子沙龙背叛他，在百姓面前击杀他，篡了他的位。</p>
+      </li>
+                        <li><span>15:11</span>
+        <p>撒迦利雅其余的事，都写在以色列诸王记上。</p>
+      </li>
+                        <li><span>15:12</span>
+        <p>这是从前耶和华应许耶户说：“你的子孙必坐以色列的国位直到四代。”这话果然应验了。</p>
+      </li>
+                                    <li><span>15:13</span>
+        <p>犹大王乌西雅（就是“亚撒利雅”）三十九年，雅比的儿子沙龙登基，在撒玛利亚作王一个月。</p>
+      </li>
+                        <li><span>15:14</span>
+        <p>迦底的儿子米拿现从得撒上撒玛利亚，杀了雅比的儿子沙龙，篡了他的位。</p>
+      </li>
+                        <li><span>15:15</span>
+        <p>沙龙其余的事和他背叛的情形，都写在以色列诸王记上。</p>
+      </li>
+                        <li><span>15:16</span>
+        <p>那时，米拿现从得撒起，攻打提斐萨和其四境，击杀城中一切的人，剖开其中所有的孕妇，都因他们没有给他开城。</p>
+      </li>
+                                    <li><span>15:17</span>
+        <p>犹大王亚撒利雅三十九年，迦底的儿子米拿现登基，在撒玛利亚作以色列王十年。</p>
+      </li>
+                        <li><span>15:18</span>
+        <p>他行耶和华眼中看为恶的事，终身不离开尼八的儿子耶罗波安使以色列人陷在罪里的那罪。</p>
+      </li>
+                        <li><span>15:19</span>
+        <p>亚述王普勒来攻击以色列国，米拿现给他一千他连得银子，请普勒帮助他坚定国位。</p>
+      </li>
+                        <li><span>15:20</span>
+        <p>米拿现向以色列一切大富户索要银子，使他们各出五十舍客勒，就给了亚述王。于是亚述王回去，不在国中停留。</p>
+      </li>
+                        <li><span>15:21</span>
+        <p>米拿现其余的事，凡他所行的，都写在以色列诸王记上。</p>
+      </li>
+                        <li><span>15:22</span>
+        <p>米拿现与他列祖同睡。他儿子比加辖接续他作王。</p>
+      </li>
+                                    <li><span>15:23</span>
+        <p>犹大王亚撒利雅五十年，米拿现的儿子比加辖在撒玛利亚登基，作以色列王二年。</p>
+      </li>
+                        <li><span>15:24</span>
+        <p>他行耶和华眼中看为恶的事，不离开尼八的儿子耶罗波安使以色列人陷在罪里的那罪。</p>
+      </li>
+                        <li><span>15:25</span>
+        <p>比加辖的将军、利玛利的儿子比加背叛他，在撒玛利亚王宫里的卫所杀了他。亚珥歌伯和亚利耶并基列的五十人帮助比加，比加击杀他，篡了他的位。</p>
+      </li>
+                        <li><span>15:26</span>
+        <p>比加辖其余的事，凡他所行的，都写在以色列诸王记上。</p>
+      </li>
+                                    <li><span>15:27</span>
+        <p>犹大王亚撒利雅五十二年，利玛利的儿子比加在撒玛利亚登基，作以色列王二十年。</p>
+      </li>
+                        <li><span>15:28</span>
+        <p>他行耶和华眼中看为恶的事，不离开尼八的儿子耶罗波安使以色列人陷在罪里的那罪。</p>
+      </li>
+                        <li><span>15:29</span>
+        <p>以色列王比加年间，亚述王提革拉毗列色来夺了以云，亚伯伯玛迦、亚挪、基低斯、夏琐、基列、加利利和拿弗他利全地，将这些地方的居民都掳到亚述去了。</p>
+      </li>
+                        <li><span>15:30</span>
+        <p>乌西雅的儿子约坦二十年，以拉的儿子何细亚背叛利玛利的儿子比加，击杀他，篡了他的位。</p>
+      </li>
+                        <li><span>15:31</span>
+        <p>比加其余的事，凡他所行的，都写在以色列诸王记上。</p>
+      </li>
+                                    <li><span>15:32</span>
+        <p>以色列王利玛利的儿子比加第二年，犹大王乌西雅的儿子约坦登基。</p>
+      </li>
+                        <li><span>15:33</span>
+        <p>他登基的时候年二十五岁，在耶路撒冷作王十六年。他母亲名叫耶路沙，是撒督的女儿。</p>
+      </li>
+                        <li><span>15:34</span>
+        <p>约坦行耶和华眼中看为正的事，效法他父亲乌西雅一切所行的，</p>
+      </li>
+                        <li><span>15:35</span>
+        <p>只是邱坛还没有废去，百姓仍在那里献祭烧香。约坦建立耶和华殿的上门。</p>
+      </li>
+                        <li><span>15:36</span>
+        <p>约坦其余的事，凡他所行的，都写在犹大列王记上。</p>
+      </li>
+                        <li><span>15:37</span>
+        <p>在那些日子，耶和华才使亚兰王利汛和利玛利的儿子比加去攻击犹大。</p>
+      </li>
+                        <li><span>15:38</span>
+        <p>约坦与他列祖同睡，葬在他祖大卫城他列祖的坟地里。他儿子亚哈斯接续他作王。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共25首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>列王记下(王下)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>列王记下(王下)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>列王记下(王下)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>列王记下(王下)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>列王记下(王下)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>列王记下(王下)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>列王记下(王下)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>列王记下(王下)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>列王记下(王下)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>列王记下(王下)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>列王记下(王下)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>列王记下(王下)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>列王记下(王下)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>列王记下(王下)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>列王记下(王下)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>列王记下(王下)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>列王记下(王下)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>列王记下(王下)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>列王记下(王下)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>列王记下(王下)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>列王记下(王下)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>列王记下(王下)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>列王记下(王下)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>列王记下(王下)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>列王记下(王下)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-12-cid-14.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-12-cid-16.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

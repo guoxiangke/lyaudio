@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="36西番雅书/36西番雅书_03.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-36.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">西番雅书(番) 第3章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>3:1</span>
+        <p>这悖逆、污秽、欺压的城有祸了！</p>
+      </li>
+                        <li><span>3:2</span>
+        <p>她不听从命令，不领受训诲，不倚靠耶和华，不亲近她的  神。</p>
+      </li>
+                        <li><span>3:3</span>
+        <p>她中间的首领是咆哮的狮子，她的审判官是晚上的豺狼，一点食物也不留到早晨。</p>
+      </li>
+                        <li><span>3:4</span>
+        <p>她的先知是虚浮诡诈的人，她的祭司亵渎圣所，强解律法。</p>
+      </li>
+                        <li><span>3:5</span>
+        <p>耶和华在她中间是公义的，断不作非义的事，每早晨显明他的公义，无日不然；只是不义的人不知羞耻。</p>
+      </li>
+                        <li><span>3:6</span>
+        <p>“我耶和华已经除灭列国的民，他们的城楼毁坏，我使他们的街道荒凉，以致无人经过；他们的城邑毁灭，以致无人，也无居民。</p>
+      </li>
+                        <li><span>3:7</span>
+        <p>我说：你只要敬畏我，领受训诲，如此，你的住处不致照我所拟定的除灭。只是你们从早起来，就在一切事上败坏自己。”</p>
+      </li>
+                        <li><span>3:8</span>
+        <p>耶和华说：“你们要等候我，直到我兴起掳掠的日子。因为我已定意招聚列国，聚集列邦，将我的恼怒，就是我的烈怒，都倾在他们身上。我的忿怒如火，必烧灭全地。”</p>
+      </li>
+                        <li><span>3:9</span>
+        <p>“那时，我必使万民用清洁的言语，好求告我耶和华的名，同心合意地侍奉我。</p>
+      </li>
+                        <li><span>3:10</span>
+        <p>祈祷我的，就是我所分散的民（原文作“女子”。下同），必从古实河外来，给我献供物。</p>
+      </li>
+                        <li><span>3:11</span>
+        <p>当那日，你必不因你一切得罪我的事自觉羞愧；因为那时我必从你中间除掉矜夸高傲之辈，你也不再于我的圣山狂傲。</p>
+      </li>
+                        <li><span>3:12</span>
+        <p>我却要在你中间留下困苦贫寒的民，他们必投靠我耶和华的名。</p>
+      </li>
+                        <li><span>3:13</span>
+        <p>以色列所剩下的人必不作罪孽，不说谎言，口中也没有诡诈的舌头，而且吃喝躺卧，无人惊吓。”</p>
+      </li>
+                                    <li><span>3:14</span>
+        <p>锡安的民哪，应当歌唱！以色列啊，应当欢呼！耶路撒冷的民哪，应当满心欢喜快乐！</p>
+      </li>
+                        <li><span>3:15</span>
+        <p>耶和华已经除去你的刑罚，赶出你的仇敌。以色列的王耶和华在你中间，你必不再惧怕灾祸。</p>
+      </li>
+                        <li><span>3:16</span>
+        <p>当那日，必有话向耶路撒冷说：“不要惧怕！锡安哪，不要手软。</p>
+      </li>
+                        <li><span>3:17</span>
+        <p>耶和华你的  神是施行拯救、大有能力的主。他在你中间必因你欢欣喜乐，默然爱你，且因你喜乐而欢呼。</p>
+      </li>
+                        <li><span>3:18</span>
+        <p>那些属你、为无大会愁烦、因你担当羞辱的，我必聚集他们。</p>
+      </li>
+                        <li><span>3:19</span>
+        <p>那时，我必罚办一切苦待你的人，又拯救你瘸腿的，聚集你被赶出的。那些在全地受羞辱的，我必使他们得称赞，有名声。</p>
+      </li>
+                        <li><span>3:20</span>
+        <p>那时，我必领你们进来，聚集你们。我使你们被掳之人归回的时候，就必使你们在地上的万民中有名声，得称赞。”这是耶和华说的。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共3首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-36-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>西番雅书(番)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-36-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>西番雅书(番)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-36-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>西番雅书(番)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-36-cid-2.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="javascript:alertText('已到本章第后一首!');"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

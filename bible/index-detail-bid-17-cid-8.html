@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="17以斯帖记/17以斯帖记_08.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-17-cid-9.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">以斯帖记(斯) 第8章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>8:1</span>
+        <p>当日，亚哈随鲁王把犹大人仇敌哈曼的家产赐给王后以斯帖。末底改也来到王面前，因为以斯帖已经告诉王末底改是她的亲属。</p>
+      </li>
+                        <li><span>8:2</span>
+        <p>王摘下自己的戒指，就是从哈曼追回的，给了末底改。以斯帖派末底改管理哈曼的家产。</p>
+      </li>
+                        <li><span>8:3</span>
+        <p>以斯帖又俯伏在王脚前，流泪哀告，求他除掉亚甲族哈曼害犹大人的恶谋。</p>
+      </li>
+                        <li><span>8:4</span>
+        <p>王向以斯帖伸出金杖；以斯帖就起来，站在王前，</p>
+      </li>
+                        <li><span>8:5</span>
+        <p>说：“亚甲族哈米大他的儿子哈曼设谋传旨，要杀灭在王各省的犹大人。现今王若愿意，我若在王眼前蒙恩，王若以为美，若喜悦我，请王另下旨意，废除哈曼所传的那旨意。</p>
+      </li>
+                        <li><span>8:6</span>
+        <p>我何忍见我本族的人受害？何忍见我同宗的人被灭呢？”</p>
+      </li>
+                        <li><span>8:7</span>
+        <p>亚哈随鲁王对王后以斯帖和犹大人末底改说：“因哈曼要下手害犹大人，我已将他的家产赐给以斯帖，人也将哈曼挂在木架上。</p>
+      </li>
+                        <li><span>8:8</span>
+        <p>现在你们可以随意奉王的名写谕旨给犹大人，用王的戒指盖印，因为奉王名所写、用王戒指盖印的谕旨，人都不能废除。”</p>
+      </li>
+                        <li><span>8:9</span>
+        <p>三月，就是西弯月，二十三日，将王的书记召来，按着末底改所吩咐的，用各省的文字、各族的方言，并犹大人的文字方言写谕旨，传给那从印度直到古实一百二十七省的犹大人和总督、省长、首领。</p>
+      </li>
+                        <li><span>8:10</span>
+        <p>末底改奉亚哈随鲁王的名写谕旨，用王的戒指盖印，交给骑御马、圈快马的驿卒，传到各处。</p>
+      </li>
+                        <li><span>8:11</span>
+        <p>-</p>
+      </li>
+                        <li><span>8:12</span>
+        <p>谕旨中，王准各省各城的犹大人在一日之间，十二月，就是亚达月，十三日，聚集保护性命，剪除杀戮灭绝那要攻击犹大人的一切仇敌和他们的妻子儿女，夺取他们的财为掠物。</p>
+      </li>
+                        <li><span>8:13</span>
+        <p>抄录这谕旨，颁行各省，宣告各族，使犹大人预备等候那日，在仇敌身上报仇。</p>
+      </li>
+                        <li><span>8:14</span>
+        <p>于是，骑快马的驿卒被王命催促，急忙起行。谕旨也传遍书珊城。</p>
+      </li>
+                        <li><span>8:15</span>
+        <p>末底改穿着蓝色、白色的朝服，头戴大金冠冕，又穿紫色细麻布的外袍，从王面前出来。书珊城的人民都欢呼快乐。</p>
+      </li>
+                        <li><span>8:16</span>
+        <p>犹大人有光荣，欢喜快乐而得尊贵。</p>
+      </li>
+                        <li><span>8:17</span>
+        <p>王的谕旨所到的各省各城，犹大人都欢喜快乐，设摆筵宴，以那日为吉日。那国的人民，有许多因惧怕犹大人，就入了犹大籍。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共10首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>以斯帖记(斯)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>以斯帖记(斯)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>以斯帖记(斯)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>以斯帖记(斯)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>以斯帖记(斯)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>以斯帖记(斯)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>以斯帖记(斯)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>以斯帖记(斯)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>以斯帖记(斯)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>以斯帖记(斯)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-17-cid-7.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-17-cid-9.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="06约书亚记/06约书亚记_24.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-6.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">约书亚记(书) 第24章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>24:1</span>
+        <p>约书亚将以色列的众支派聚集在示剑，召了以色列的长老、族长、审判官，并官长来，他们就站在  神面前。</p>
+      </li>
+                        <li><span>24:2</span>
+        <p>约书亚对众民说：“耶和华以色列的  神如此说：古时你们的列祖，就是亚伯拉罕和拿鹤的父亲他拉，住在大河那边侍奉别神，</p>
+      </li>
+                        <li><span>24:3</span>
+        <p>我将你们的祖宗亚伯拉罕从大河那边带来，领他走遍迦南全地，又使他的子孙众多，把以撒赐给他。</p>
+      </li>
+                        <li><span>24:4</span>
+        <p>又把雅各和以扫赐给以撒，将西珥山赐给以扫为业。后来雅各和他的子孙下到埃及去了。</p>
+      </li>
+                        <li><span>24:5</span>
+        <p>我差遣摩西、亚伦，并照我在埃及中所行的降灾与埃及，然后把你们领出来。</p>
+      </li>
+                        <li><span>24:6</span>
+        <p>我领你们列祖出埃及，他们就到了红海，埃及人带领车辆马兵追赶你们列祖到红海。</p>
+      </li>
+                        <li><span>24:7</span>
+        <p>你们列祖哀求耶和华，他就使你们和埃及人中间黑暗了，又使海水淹没埃及人。我在埃及所行的事，你们亲眼见过；你们在旷野也住了许多年日。</p>
+      </li>
+                        <li><span>24:8</span>
+        <p>我领你们到约旦河东亚摩利人所住之地。他们与你们争战，我将他们交在你们手中，你们便得了他们的地为业，我也在你们面前将他们灭绝。</p>
+      </li>
+                        <li><span>24:9</span>
+        <p>那时摩押王西拨的儿子巴勒起来攻击以色列人，打发人召了比珥的儿子巴兰来咒诅你们。</p>
+      </li>
+                        <li><span>24:10</span>
+        <p>我不肯听巴兰的话，所以他倒为你们连连祝福。这样，我便救你们脱离巴勒的手。</p>
+      </li>
+                        <li><span>24:11</span>
+        <p>你们过了约旦河，到了耶利哥；耶利哥人、亚摩利人、比利洗人、迦南人、赫人、革迦撒人、希未人、耶布斯人都与你们争战，我把他们交在你们手里。</p>
+      </li>
+                        <li><span>24:12</span>
+        <p>我打发黄蜂飞在你们前面，将亚摩利人的二王从你们面前撵出，并不是用你的刀，也不是用你的弓。</p>
+      </li>
+                        <li><span>24:13</span>
+        <p>我赐给你们地土，非你们所修治的；我赐给你们城邑，非你们所建造的；你们就住在其中，又得吃非你们所栽种的葡萄园、橄榄园的果子。”</p>
+      </li>
+                        <li><span>24:14</span>
+        <p>“现在你们要敬畏耶和华，诚心实意地侍奉他，将你们列祖在大河那边和在埃及所侍奉的神除掉，去侍奉耶和华。</p>
+      </li>
+                        <li><span>24:15</span>
+        <p>若是你们以侍奉耶和华为不好，今日就可以选择所要侍奉的，是你们列祖在大河那边所侍奉的神呢？是你们所住这地的亚摩利人的神呢？至于我和我家，我们必定侍奉耶和华。”</p>
+      </li>
+                        <li><span>24:16</span>
+        <p>百姓回答说：“我们断不敢离弃耶和华去侍奉别神，</p>
+      </li>
+                        <li><span>24:17</span>
+        <p>因耶和华我们的  神曾将我们和我们列祖从埃及地的为奴之家领出来，在我们眼前行了那些大神迹，在我们所行的道上，所经过的诸国，都保护了我们。</p>
+      </li>
+                        <li><span>24:18</span>
+        <p>耶和华又把住此地的亚摩利人都从我们面前赶出去。所以，我们必侍奉耶和华，因为他是我们的  神。”</p>
+      </li>
+                        <li><span>24:19</span>
+        <p>约书亚对百姓说：“你们不能侍奉耶和华，因为他是圣洁的  神，是忌邪的  神，必不赦免你们的过犯罪恶。</p>
+      </li>
+                        <li><span>24:20</span>
+        <p>你们若离弃耶和华去侍奉外邦神，耶和华在降福之后，必转而降祸与你们，把你们灭绝。”</p>
+      </li>
+                        <li><span>24:21</span>
+        <p>百姓回答约书亚说：“不然，我们定要侍奉耶和华。”</p>
+      </li>
+                        <li><span>24:22</span>
+        <p>约书亚对百姓说：“你们选定耶和华，要侍奉他，你们自己作见证吧！”他们说：“我们愿意作见证。”</p>
+      </li>
+                        <li><span>24:23</span>
+        <p>约书亚说：“你们现在要除掉你们中间的外邦神，专心归向耶和华以色列的  神。”</p>
+      </li>
+                        <li><span>24:24</span>
+        <p>百姓回答约书亚说：“我们必侍奉耶和华我们的  神，听从他的话。”</p>
+      </li>
+                        <li><span>24:25</span>
+        <p>当日，约书亚就与百姓立约，在示剑为他们立定律例典章。</p>
+      </li>
+                        <li><span>24:26</span>
+        <p>约书亚将这些话都写在  神的律法书上，又将一块大石头立在橡树下耶和华的圣所旁边。</p>
+      </li>
+                        <li><span>24:27</span>
+        <p>约书亚对百姓说：“看哪，这石头可以向我们作见证，因为是听见了耶和华所吩咐我们的一切话，倘或你们背弃你们的  神，这石头就可以向你们作见证（“倘或云云”或作“所以要向你们作见证，免得你们背弃耶和华你们的  神”）。”</p>
+      </li>
+                        <li><span>24:28</span>
+        <p>于是约书亚打发百姓各归自己的地业去了。</p>
+      </li>
+                                    <li><span>24:29</span>
+        <p>这些事以后，耶和华的仆人嫩的儿子约书亚，正一百一十岁就死了。</p>
+      </li>
+                        <li><span>24:30</span>
+        <p>以色列人将他葬在他地业的境内，就是在以法莲山地的亭拿西拉，在迦实山的北边。</p>
+      </li>
+                        <li><span>24:31</span>
+        <p>约书亚在世和约书亚死后，那些知道耶和华为以色列人所行诸事的长老还在的时候，以色列人侍奉耶和华。</p>
+      </li>
+                        <li><span>24:32</span>
+        <p>以色列人从埃及所带来约瑟的骸骨，葬埋在示剑，就是在雅各从前用一百块银子向示剑的父亲哈抹的子孙所买的那块地里，这就作了约瑟子孙的产业。</p>
+      </li>
+                        <li><span>24:33</span>
+        <p>亚伦的儿子以利亚撒也死了，就把他葬在他儿子非尼哈、以法莲山地所得的小山上。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共24首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>约书亚记(书)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>约书亚记(书)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>约书亚记(书)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>约书亚记(书)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>约书亚记(书)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>约书亚记(书)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>约书亚记(书)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>约书亚记(书)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>约书亚记(书)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>约书亚记(书)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>约书亚记(书)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>约书亚记(书)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>约书亚记(书)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>约书亚记(书)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>约书亚记(书)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>约书亚记(书)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>约书亚记(书)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>约书亚记(书)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>约书亚记(书)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>约书亚记(书)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>约书亚记(书)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>约书亚记(书)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>约书亚记(书)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>约书亚记(书)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-6-cid-23.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="javascript:alertText('已到本章第后一首!');"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

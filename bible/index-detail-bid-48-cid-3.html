@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="48加拉太书/48加拉太书_03.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-48-cid-4.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">加拉太书(加) 第3章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>3:1</span>
+        <p>无知的加拉太人哪，耶稣基督钉十字架，已经活画在你们眼前，谁又迷惑了你们呢？</p>
+      </li>
+                        <li><span>3:2</span>
+        <p>我只要问你们这一件：你们受了圣灵，是因行律法呢？是因听信福音呢？</p>
+      </li>
+                        <li><span>3:3</span>
+        <p>你们既靠圣灵入门，如今还靠肉身成全吗？你们是这样的无知吗？</p>
+      </li>
+                        <li><span>3:4</span>
+        <p>你们受苦如此之多，都是徒然的吗？难道果真是徒然的吗？</p>
+      </li>
+                        <li><span>3:5</span>
+        <p>那赐给你们圣灵，又在你们中间行异能的，是因你们行律法呢？是因你们听信福音呢？</p>
+      </li>
+                        <li><span>3:6</span>
+        <p>正如“亚伯拉罕信  神，这就算为他的义”。</p>
+      </li>
+                        <li><span>3:7</span>
+        <p>所以你们要知道，那以信为本的人，就是亚伯拉罕的子孙。</p>
+      </li>
+                        <li><span>3:8</span>
+        <p>并且圣经既然预先看明，  神要叫外邦人因信称义，就早已传福音给亚伯拉罕，说：“万国都必因你得福。”</p>
+      </li>
+                        <li><span>3:9</span>
+        <p>可见那以信为本的人和有信心的亚伯拉罕一同得福。</p>
+      </li>
+                        <li><span>3:10</span>
+        <p>凡以行律法为本的，都是被咒诅的，因为经上记着：“凡不常照律法书上所记一切之事去行的，就被咒诅。”</p>
+      </li>
+                        <li><span>3:11</span>
+        <p>没有一个人靠着律法在  神面前称义，这是明显的，因为经上说：“义人必因信得生。”</p>
+      </li>
+                        <li><span>3:12</span>
+        <p>律法原不本乎信，只说：“行这些事的，就必因此活着。”</p>
+      </li>
+                        <li><span>3:13</span>
+        <p>基督既为我们受了咒诅（“受”原文作“成”），就赎出我们脱离律法的咒诅，因为经上记着：“凡挂在木头上都是被咒诅的。”</p>
+      </li>
+                        <li><span>3:14</span>
+        <p>这便叫亚伯拉罕的福，因基督耶稣可以临到外邦人，使我们因信得着所应许的圣灵。</p>
+      </li>
+                                    <li><span>3:15</span>
+        <p>弟兄们，我且照着人的常话说：虽然是人的文约，若已经立定了，就没有能废弃或加增的。</p>
+      </li>
+                        <li><span>3:16</span>
+        <p>所应许的原是向亚伯拉罕和他子孙说的。  神并不是说众子孙，指着许多人；乃是说你那一个子孙，指着一个人，就是基督。</p>
+      </li>
+                        <li><span>3:17</span>
+        <p>我是这么说：  神预先所立的约，不能被那四百三十年以后的律法废掉，叫应许归于虚空。</p>
+      </li>
+                        <li><span>3:18</span>
+        <p>因为承受产业，若本乎律法，就不本乎应许；但  神是凭着应许，把产业赐给亚伯拉罕。</p>
+      </li>
+                        <li><span>3:19</span>
+        <p>这样说来，律法是为什么有的呢？原是为过犯添上的，等候那蒙应许的子孙来到，并且是藉天使经中保之手设立的。</p>
+      </li>
+                        <li><span>3:20</span>
+        <p>但中保本不是为一面作的，  神却是一位。</p>
+      </li>
+                                    <li><span>3:21</span>
+        <p>这样，律法是与  神的应许反对吗？断乎不是！若曾传一个能叫人得生的律法，义就诚然本乎律法了。</p>
+      </li>
+                        <li><span>3:22</span>
+        <p>但圣经把众人都圈在罪里，使所应许的福因信耶稣基督归给那信的人。</p>
+      </li>
+                        <li><span>3:23</span>
+        <p>但这因信得救的理还未来以先，我们被看守在律法之下，直圈到那将来的真道显明出来。</p>
+      </li>
+                        <li><span>3:24</span>
+        <p>这样，律法是我们训蒙的师傅，引我们到基督那里，使我们因信称义。</p>
+      </li>
+                        <li><span>3:25</span>
+        <p>但这因信得救的理既然来到，我们从此就不在师傅的手下了。</p>
+      </li>
+                        <li><span>3:26</span>
+        <p>所以，你们因信基督耶稣，都是  神的儿子。</p>
+      </li>
+                        <li><span>3:27</span>
+        <p>你们受洗归入基督的，都是披戴基督了。</p>
+      </li>
+                        <li><span>3:28</span>
+        <p>并不分犹太人、希腊人、自主的、为奴的，或男或女，因为你们在基督耶稣里都成为一了。</p>
+      </li>
+                        <li><span>3:29</span>
+        <p>你们既属乎基督，就是亚伯拉罕的后裔，是照着应许承受产业的了。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共6首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-48-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>加拉太书(加)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-48-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>加拉太书(加)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-48-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>加拉太书(加)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-48-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>加拉太书(加)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-48-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>加拉太书(加)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-48-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>加拉太书(加)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-48-cid-2.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-48-cid-4.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

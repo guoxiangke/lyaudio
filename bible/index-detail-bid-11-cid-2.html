@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="11列王记上/11列王记上_02.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-11-cid-3.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">列王记上(王上) 第2章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>2:1</span>
+        <p>大卫的死期临近了，就嘱咐他儿子所罗门说：</p>
+      </li>
+                        <li><span>2:2</span>
+        <p>“我现在要走世人必走的路，所以你当刚强作大丈夫，</p>
+      </li>
+                        <li><span>2:3</span>
+        <p>遵守耶和华你  神所吩咐的，照着摩西律法上所写的行主的道，谨守他的律例、诫命、典章、法度。这样，你无论作什么事，不拘往何处去，尽都亨通。</p>
+      </li>
+                        <li><span>2:4</span>
+        <p>耶和华必成就向我所应许的话说：‘你的子孙若谨慎自己的行为，尽心尽意、诚诚实实地行在我面前，就不断人坐以色列的国位。’</p>
+      </li>
+                        <li><span>2:5</span>
+        <p>你知道洗鲁雅的儿子约押向我所行的，就是杀了以色列的两个元帅：尼珥的儿子押尼珥和益帖的儿子亚玛撒。他在太平之时流这二人的血，如在争战之时一样，将这血染了腰间束的带和脚上穿的鞋。</p>
+      </li>
+                        <li><span>2:6</span>
+        <p>所以你要照你的智慧行，不容他白头安然下阴间。</p>
+      </li>
+                        <li><span>2:7</span>
+        <p>你当恩待基列人巴西莱的众子，使他们常与你同席吃饭，因为我躲避你哥哥押沙龙的时候，他们拿食物来迎接我。</p>
+      </li>
+                        <li><span>2:8</span>
+        <p>在你这里有巴户琳的便雅悯人，基拉的儿子示每，我往玛哈念去的那日，他用狠毒的言语咒骂我，后来却下约旦河迎接我，我就指着耶和华向他起誓，说：‘我必不用刀杀你。’</p>
+      </li>
+                        <li><span>2:9</span>
+        <p>现在你不要以他为无罪，你是聪明人，必知道怎样待他，使他白头见杀，流血下到阴间。”</p>
+      </li>
+                                    <li><span>2:10</span>
+        <p>大卫与他列祖同睡，葬在大卫城。</p>
+      </li>
+                        <li><span>2:11</span>
+        <p>大卫作以色列王四十年：在希伯仑作王七年；在耶路撒冷作王三十三年。</p>
+      </li>
+                        <li><span>2:12</span>
+        <p>所罗门坐他父亲大卫的位，他的国甚是坚固。</p>
+      </li>
+                                    <li><span>2:13</span>
+        <p>哈及的儿子亚多尼雅去见所罗门的母亲拔示巴，拔示巴问他说：“你来是为平安吗？”回答说：“是为平安。”</p>
+      </li>
+                        <li><span>2:14</span>
+        <p>又说：“我有话对你说。”拔示巴说：“你说吧。”</p>
+      </li>
+                        <li><span>2:15</span>
+        <p>亚多尼雅说：“你知道国原是归我的，以色列众人也都仰望我作王。不料，国反归了我兄弟，因他得国是出乎耶和华。</p>
+      </li>
+                        <li><span>2:16</span>
+        <p>现在，我有一件事求你，望你不要推辞。”拔示巴说：“你说吧！”</p>
+      </li>
+                        <li><span>2:17</span>
+        <p>他说：“求你请所罗门王将书念的女子亚比煞赐我为妻，因他必不推辞你。”</p>
+      </li>
+                        <li><span>2:18</span>
+        <p>拔示巴说：“好，我必为你对王提说。”</p>
+      </li>
+                        <li><span>2:19</span>
+        <p>于是拔示巴去见所罗门王，要为亚多尼雅提说。王起来迎接，向她下拜，就坐在位上，吩咐人为王母设一座位，她便坐在王的右边。</p>
+      </li>
+                        <li><span>2:20</span>
+        <p>拔示巴说：“我有一件小事求你，望你不要推辞。”王说：“请母亲说，我必不推辞。”</p>
+      </li>
+                        <li><span>2:21</span>
+        <p>拔示巴说：“求你将书念的女子亚比煞赐给你哥哥亚多尼雅为妻。”</p>
+      </li>
+                        <li><span>2:22</span>
+        <p>所罗门王对他母亲说：“为何单替他求书念的女子亚比煞呢？也可以为他求国吧！他是我的哥哥，他有祭司亚比亚他和洗鲁雅的儿子约押为辅佐。”</p>
+      </li>
+                        <li><span>2:23</span>
+        <p>所罗门王就指着耶和华起誓说：“亚多尼雅这话是自己送命，不然，愿  神重重地降罚与我。</p>
+      </li>
+                        <li><span>2:24</span>
+        <p>耶和华坚立我，使我坐在父亲大卫的位上，照着所应许的话为我建立家室。现在我指着永生的耶和华起誓，亚多尼雅今日必被治死。”</p>
+      </li>
+                        <li><span>2:25</span>
+        <p>于是，所罗门王差遣耶何耶大的儿子比拿雅将亚多尼雅杀死。</p>
+      </li>
+                                    <li><span>2:26</span>
+        <p>王对祭司亚比亚他说：“你回亚拿突归自己的田地去吧！你本是该死的，但因你在我父亲大卫面前抬过主耶和华的约柜，又与我父亲同受一切苦难，所以我今日不将你杀死。”</p>
+      </li>
+                        <li><span>2:27</span>
+        <p>所罗门就革除亚比亚他，不许他作耶和华的祭司。这样，便应验耶和华在示罗论以利家所说的话。</p>
+      </li>
+                        <li><span>2:28</span>
+        <p>约押虽然没有归从押沙龙，却归从了亚多尼雅。他听见这风声，就逃到耶和华的帐幕，抓住祭坛的角。</p>
+      </li>
+                        <li><span>2:29</span>
+        <p>有人告诉所罗门王说：“约押逃到耶和华的帐幕，现今在祭坛的旁边。”所罗门就差遣耶何耶大的儿子比拿雅说：“你去将他杀死。”</p>
+      </li>
+                        <li><span>2:30</span>
+        <p>比拿雅来到耶和华的帐幕，对约押说：“王吩咐说，你出来吧！”他说：“我不出去，我要死在这里。”比拿雅就去回复王说：约押如此如此回答我。</p>
+      </li>
+                        <li><span>2:31</span>
+        <p>王说：“你可以照着他的话行，杀死他，将他葬埋，好叫约押流无辜人血的罪不归我和我的父家了。</p>
+      </li>
+                        <li><span>2:32</span>
+        <p>耶和华必使约押流人血的罪归到他自己的头上，因为他用刀杀了两个比他又义又好的人，就是以色列元帅尼珥的儿子押尼珥和犹大元帅益帖的儿子亚玛撒，我父亲大卫却不知道。</p>
+      </li>
+                        <li><span>2:33</span>
+        <p>故此流这二人血的罪必归到约押和他后裔的头上，直到永远。惟有大卫和他的后裔，并他的家与国，必从耶和华那里得平安，直到永远。”</p>
+      </li>
+                        <li><span>2:34</span>
+        <p>于是耶何耶大的儿子比拿雅上去，将约押杀死，葬在旷野约押自己的坟墓里（“坟墓”原文作“房屋”）。</p>
+      </li>
+                        <li><span>2:35</span>
+        <p>王就立耶何耶大的儿子比拿雅作元帅，代替约押，又使祭司撒督代替亚比亚他。</p>
+      </li>
+                                    <li><span>2:36</span>
+        <p>王差遣人将示每召来，对他说：“你要在耶路撒冷建造房屋居住，不可出来往别处去。</p>
+      </li>
+                        <li><span>2:37</span>
+        <p>你当确实地知道，你何日出来过汲沦溪，何日必死。你的罪（原文作“血”）必归到自己的头上。”</p>
+      </li>
+                        <li><span>2:38</span>
+        <p>示每对王说：“这话甚好，我主我王怎样说，仆人必怎样行。”于是示每多日住在耶路撒冷。</p>
+      </li>
+                        <li><span>2:39</span>
+        <p>过了三年，示每的两个仆人逃到迦特王玛迦的儿子亚吉那里去。有人告诉示每说：“你的仆人在迦特。”</p>
+      </li>
+                        <li><span>2:40</span>
+        <p>示每起来，备上驴，往迦特到亚吉那里去找他的仆人，就从迦特带他仆人回来。</p>
+      </li>
+                        <li><span>2:41</span>
+        <p>有人告诉所罗门说：“示每出耶路撒冷往迦特去回来了。”</p>
+      </li>
+                        <li><span>2:42</span>
+        <p>王就差遣人将示每召了来，对他说：“我岂不是叫你指着耶和华起誓，并且警戒你说：‘你当确实地知道，你哪日出来往别处去，那日必死’吗？你也对我说：‘这话甚好，我必听从。’</p>
+      </li>
+                        <li><span>2:43</span>
+        <p>现在你为何不遵守你指着耶和华起的誓和我所吩咐你的命令呢？”</p>
+      </li>
+                        <li><span>2:44</span>
+        <p>王又对示每说：“你向我父亲大卫所行的一切恶事，你自己心里也知道，所以耶和华必使你的罪恶归到自己的头上。</p>
+      </li>
+                        <li><span>2:45</span>
+        <p>惟有所罗门王必得福，并且大卫的国位必在耶和华面前坚定，直到永远。”</p>
+      </li>
+                        <li><span>2:46</span>
+        <p>于是王吩咐耶何耶大的儿子比拿雅，他就去杀死示每。这样，便坚定了所罗门的国位。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共22首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>列王记上(王上)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>列王记上(王上)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>列王记上(王上)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>列王记上(王上)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>列王记上(王上)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>列王记上(王上)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>列王记上(王上)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>列王记上(王上)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>列王记上(王上)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>列王记上(王上)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>列王记上(王上)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>列王记上(王上)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>列王记上(王上)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>列王记上(王上)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>列王记上(王上)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>列王记上(王上)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>列王记上(王上)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>列王记上(王上)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>列王记上(王上)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>列王记上(王上)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>列王记上(王上)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>列王记上(王上)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-11-cid-1.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-11-cid-3.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

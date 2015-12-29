@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="65犹大书/65犹大书_01.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-65.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">犹大书(犹) 第1章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                  <li><span>1:1</span>
+        <p>耶稣基督的仆人、雅各的弟兄犹大，写信给那被召、在父  神里蒙爱、为耶稣基督保守的人。</p>
+      </li>
+                        <li><span>1:2</span>
+        <p>愿怜恤、平安、慈爱多多地加给你们！</p>
+      </li>
+                                    <li><span>1:3</span>
+        <p>亲爱的弟兄啊，我想尽心写信给你们，论我们同得救恩的时候，就不得不写信劝你们，要为从前一次交付圣徒的真道竭力地争辩。</p>
+      </li>
+                        <li><span>1:4</span>
+        <p>因为有些人偷着进来，就是自古被定受刑罚的，是不虔诚的，将我们  神的恩变作放纵情欲的机会，并且不认独一的主宰、我们（“我们”或作“和我们”）主耶稣基督。</p>
+      </li>
+                        <li><span>1:5</span>
+        <p>从前主救了他的百姓出埃及地，后来就把那些不信的灭绝了。这一切的事你们虽然都知道，我却仍要提醒你们。</p>
+      </li>
+                        <li><span>1:6</span>
+        <p>又有不守本位、离开自己住处的天使，主用锁链把他们永远拘留在黑暗里，等候大日的审判。</p>
+      </li>
+                        <li><span>1:7</span>
+        <p>又如所多玛、蛾摩拉和周围城邑的人，也照他们一味的行淫，随从逆性的情欲，就受永火的刑罚，作为鉴戒。</p>
+      </li>
+                        <li><span>1:8</span>
+        <p>这些作梦的人也像他们污秽身体，轻慢主治的，毁谤在尊位的。</p>
+      </li>
+                        <li><span>1:9</span>
+        <p>天使长米迦勒为摩西的尸首与魔鬼争辩的时候，尚且不敢用毁谤的话罪责他，只说：“主责备你吧。”</p>
+      </li>
+                        <li><span>1:10</span>
+        <p>但这些人毁谤他们所不知道的。他们本性所知道的事与那没有灵性的畜类一样，在这事上竟败坏了自己。</p>
+      </li>
+                        <li><span>1:11</span>
+        <p>他们有祸了！因为走了该隐的道路，又为利往巴兰的错谬里直奔，并在可拉的背叛中灭亡了。</p>
+      </li>
+                        <li><span>1:12</span>
+        <p>这样的人在你们的爱席上与你们同吃的时候，正是礁石（或作“玷污”）。他们作牧人，只知喂养自己，无所惧怕，是没有雨的云彩，被风飘荡；是秋天没有果子的树，死而又死，连根被拔出来；</p>
+      </li>
+                        <li><span>1:13</span>
+        <p>是海里的狂浪，涌出自己可耻的沫子来；是流荡的星，有墨黑的幽暗为他们永远存留。</p>
+      </li>
+                        <li><span>1:14</span>
+        <p>亚当的七世孙以诺曾预言这些人说：“看哪，主带着他的千万圣者降临，</p>
+      </li>
+                        <li><span>1:15</span>
+        <p>要在众人身上行审判，证实那一切不敬虔的人所妄行一切不敬虔的事，又证实不敬虔之罪人所说顶撞他的刚愎话。</p>
+      </li>
+                        <li><span>1:16</span>
+        <p>这些人是私下议论，常发怨言的，随从自己的情欲而行，口中说夸大的话，为得便宜谄媚人。”</p>
+      </li>
+                                    <li><span>1:17</span>
+        <p>亲爱的弟兄啊，你们要记念我们主耶稣基督之使徒从前所说的话。</p>
+      </li>
+                        <li><span>1:18</span>
+        <p>他们曾对你们说过，末世必有好讥诮的人随从自己不敬虔的私欲而行。</p>
+      </li>
+                        <li><span>1:19</span>
+        <p>这就是那些引人结党，属乎血气，没有圣灵的人。</p>
+      </li>
+                        <li><span>1:20</span>
+        <p>亲爱的弟兄啊，你们却要在至圣的真道上造就自己，在圣灵里祷告，</p>
+      </li>
+                        <li><span>1:21</span>
+        <p>保守自己常在  神的爱中，仰望我们主耶稣基督的怜悯，直到永生。</p>
+      </li>
+                        <li><span>1:22</span>
+        <p>有些人存疑心，你们要怜悯他们；</p>
+      </li>
+                        <li><span>1:23</span>
+        <p>有些人你们要从火中抢出来，搭救他们；有些人你们要存惧怕的心怜悯他们，连那被情欲沾染的衣服也当厌恶。</p>
+      </li>
+                                    <li><span>1:24</span>
+        <p>那能保守你们不失脚，叫你们无瑕无疵、欢欢喜喜站在他荣耀之前的我们的救主独一的  神，</p>
+      </li>
+                        <li><span>1:25</span>
+        <p>愿荣耀、威严、能力、权柄，因我们的主耶稣基督归与他，从万古以前并现今，直到永永远远。阿们！</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共1首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-65-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>犹大书(犹)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="javascript:alertText('已到本章第一首!');"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="javascript:alertText('已到本章第后一首!');"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

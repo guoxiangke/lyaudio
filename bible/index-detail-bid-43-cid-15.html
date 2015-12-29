@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="43约翰福音/43约翰福音_15.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-43-cid-16.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">约翰福音(约) 第15章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>15:1</span>
+        <p>“我是真葡萄树，我父是栽培的人。</p>
+      </li>
+                        <li><span>15:2</span>
+        <p>凡属我不结果子的枝子，他就剪去；凡结果子的，他就修理干净，使枝子结果子更多。</p>
+      </li>
+                        <li><span>15:3</span>
+        <p>现在你们因我讲给你们的道，已经干净了。</p>
+      </li>
+                        <li><span>15:4</span>
+        <p>你们要常在我里面，我也常在你们里面。枝子若不常在葡萄树上，自己就不能结果子；你们若不常在我里面，也是这样。</p>
+      </li>
+                        <li><span>15:5</span>
+        <p>我是葡萄树，你们是枝子；常在我里面的，我也常在他里面，这人就多结果子；因为离了我，你们就不能作什么。</p>
+      </li>
+                        <li><span>15:6</span>
+        <p>人若不常在我里面，就像枝子丢在外面枯干，人拾起来，扔在火里烧了。</p>
+      </li>
+                        <li><span>15:7</span>
+        <p>你们若常在我里面，我的话也常在你们里面；凡你们所愿意的，祈求就给你们成就。</p>
+      </li>
+                        <li><span>15:8</span>
+        <p>你们多结果子，我父就因此得荣耀，你们也就是我的门徒了。</p>
+      </li>
+                        <li><span>15:9</span>
+        <p>我爱你们，正如父爱我一样，你们要常在我的爱里。</p>
+      </li>
+                        <li><span>15:10</span>
+        <p>你们若遵守我的命令，就常在我的爱里；正如我遵守了我父的命令，常在他的爱里。”</p>
+      </li>
+                        <li><span>15:11</span>
+        <p>“这些事我已经对你们说了，是要叫我的喜乐存在你们心里，并叫你们的喜乐可以满足。</p>
+      </li>
+                        <li><span>15:12</span>
+        <p>你们要彼此相爱，像我爱你们一样，这就是我的命令。</p>
+      </li>
+                        <li><span>15:13</span>
+        <p>人为朋友舍命，人的爱心没有比这个大的。</p>
+      </li>
+                        <li><span>15:14</span>
+        <p>你们若遵行我所吩咐的，就是我的朋友了。</p>
+      </li>
+                        <li><span>15:15</span>
+        <p>以后我不再称你们为仆人，因仆人不知道主人所作的事；我乃称你们为朋友，因我从我父所听见的，已经都告诉你们了。</p>
+      </li>
+                        <li><span>15:16</span>
+        <p>不是你们拣选了我，是我拣选了你们；并且分派你们去结果子，叫你们的果子常存，使你们奉我的名，无论向父求什么，他就赐给你们。</p>
+      </li>
+                        <li><span>15:17</span>
+        <p>我这样吩咐你们，是要叫你们彼此相爱。”</p>
+      </li>
+                                    <li><span>15:18</span>
+        <p>“世人若恨你们，你们知道（或作“该知道”）恨你们以先，已经恨我了。</p>
+      </li>
+                        <li><span>15:19</span>
+        <p>你们若属世界，世界必爱属自己的；只因你们不属世界，乃是我从世界中拣选了你们，所以世界就恨你们。</p>
+      </li>
+                        <li><span>15:20</span>
+        <p>你们要记念我从前对你们所说的话：‘仆人不能大于主人。’他们若逼迫了我，也要逼迫你们；若遵守了我的话，也要遵守你们的话。</p>
+      </li>
+                        <li><span>15:21</span>
+        <p>但他们因我的名要向你们行这一切的事，因为他们不认识那差我来的。</p>
+      </li>
+                        <li><span>15:22</span>
+        <p>我若没有来教训他们，他们就没有罪；但如今他们的罪无可推诿了。</p>
+      </li>
+                        <li><span>15:23</span>
+        <p>恨我的，也恨我的父。</p>
+      </li>
+                        <li><span>15:24</span>
+        <p>我若没有在他们中间行过别人未曾行的事，他们就没有罪；但如今连我与我的父，他们也看见也恨恶了。</p>
+      </li>
+                        <li><span>15:25</span>
+        <p>这要应验他们律法上所写的话，说：‘他们无故地恨我。’</p>
+      </li>
+                        <li><span>15:26</span>
+        <p>但我要从父那里差保惠师来，就是从父出来真理的圣灵，他来了，就要为我作见证。</p>
+      </li>
+                        <li><span>15:27</span>
+        <p>你们也要作见证，因为你们从起头就与我同在。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共21首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>约翰福音(约)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>约翰福音(约)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>约翰福音(约)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>约翰福音(约)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>约翰福音(约)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>约翰福音(约)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>约翰福音(约)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>约翰福音(约)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>约翰福音(约)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>约翰福音(约)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>约翰福音(约)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>约翰福音(约)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>约翰福音(约)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>约翰福音(约)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>约翰福音(约)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>约翰福音(约)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>约翰福音(约)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>约翰福音(约)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>约翰福音(约)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>约翰福音(约)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>约翰福音(约)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-43-cid-14.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-43-cid-16.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

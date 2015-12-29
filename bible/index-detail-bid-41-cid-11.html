@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="41马可福音/41马可福音_11.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-41-cid-12.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">马可福音(可) 第11章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>11:1</span>
+        <p>耶稣和门徒将近耶路撒冷，到了伯法其和伯大尼，在橄榄山那里，耶稣就打发两个门徒，</p>
+      </li>
+                        <li><span>11:2</span>
+        <p>对他们说：“你们往对面村子里去，一进去的时候，必看见一匹驴驹拴在那里，是从来没有人骑过的，可以解开牵来。</p>
+      </li>
+                        <li><span>11:3</span>
+        <p>若有人对你们说：‘为什么作这事？’你们就说：‘主要用它。’那人必立时让你们牵来。”</p>
+      </li>
+                        <li><span>11:4</span>
+        <p>他们去了，便看见一匹驴驹拴在门外街道上，就把它解开。</p>
+      </li>
+                        <li><span>11:5</span>
+        <p>在那里站着的人，有几个说：“你们解驴驹作什么？”</p>
+      </li>
+                        <li><span>11:6</span>
+        <p>门徒照着耶稣所说的回答，那些人就任凭他们牵去了。</p>
+      </li>
+                        <li><span>11:7</span>
+        <p>他们把驴驹牵到耶稣那里，把自己的衣服搭在上面，耶稣就骑上。</p>
+      </li>
+                        <li><span>11:8</span>
+        <p>有许多人把衣服铺在路上，也有人把田间的树枝砍下来，铺在路上。</p>
+      </li>
+                        <li><span>11:9</span>
+        <p>前行后随的人都喊着说：“和散那（“和散那”原有求救的意思，在此乃是称颂的话）！奉主名来的是应当称颂的！</p>
+      </li>
+                        <li><span>11:10</span>
+        <p>那将要来的我祖大卫之国是应当称颂的！高高在上和散那！”</p>
+      </li>
+                        <li><span>11:11</span>
+        <p>耶稣进了耶路撒冷，入了圣殿，周围看了各样物件。天色已晚，就和十二个门徒出城，往伯大尼去了。</p>
+      </li>
+                                    <li><span>11:12</span>
+        <p>第二天，他们从伯大尼出来，耶稣饿了。</p>
+      </li>
+                        <li><span>11:13</span>
+        <p>远远地看见一棵无花果树，树上有叶子，就往那里去，或者在树上可以找着什么。到了树下，竟找不着什么，不过有叶子，因为不是收无花果的时候。</p>
+      </li>
+                        <li><span>11:14</span>
+        <p>耶稣就对树说：“从今以后，永没有人吃你的果子。”他的门徒也听见了。</p>
+      </li>
+                                    <li><span>11:15</span>
+        <p>他们来到耶路撒冷。耶稣进入圣殿，赶出殿里作买卖的人，推倒兑换银钱之人的桌子和卖鸽子之人的凳子，</p>
+      </li>
+                        <li><span>11:16</span>
+        <p>也不许人拿着器具从殿里经过。</p>
+      </li>
+                        <li><span>11:17</span>
+        <p>便教训他们说：“经上不是记着说：‘我的殿必称为万国祷告的殿’吗？你们倒使它成为贼窝了。”</p>
+      </li>
+                        <li><span>11:18</span>
+        <p>祭司长和文士听见这话，就想法子要除灭耶稣，却又怕他，因为众人都希奇他的教训。</p>
+      </li>
+                        <li><span>11:19</span>
+        <p>每天晚上，耶稣出城去。</p>
+      </li>
+                                    <li><span>11:20</span>
+        <p>早晨，他们从那里经过，看见无花果树连根都枯干了。</p>
+      </li>
+                        <li><span>11:21</span>
+        <p>彼得想起耶稣的话来，就对他说：“拉比，请看！你所咒诅的无花果树已经枯干了。”</p>
+      </li>
+                        <li><span>11:22</span>
+        <p>耶稣回答说：“你们当信服  神。</p>
+      </li>
+                        <li><span>11:23</span>
+        <p>我实在告诉你们：无论何人对这座山说：‘你挪开此地，投在海里！’他若心里不疑惑，只信他所说的必成，就必给他成了。</p>
+      </li>
+                        <li><span>11:24</span>
+        <p>所以我告诉你们：凡你们祷告祈求的，无论是什么，只要信是得着的，就必得着。</p>
+      </li>
+                        <li><span>11:25</span>
+        <p>你们站着祷告的时候，若想起有人得罪你们，就当饶恕他，好叫你们在天上的父，也饶恕你们的过犯；</p>
+      </li>
+                        <li><span>11:26</span>
+        <p>你们若不饶恕人，你们在天上的父，也不饶恕你们的过犯（有古卷无此节）。”</p>
+      </li>
+                                    <li><span>11:27</span>
+        <p>他们又来到耶路撒冷。耶稣在殿里行走的时候，祭司长和文士并长老进前来，</p>
+      </li>
+                        <li><span>11:28</span>
+        <p>问他说：“你仗着什么权柄作这些事，给你这权柄的是谁呢？”</p>
+      </li>
+                        <li><span>11:29</span>
+        <p>耶稣对他们说：“我要问你们一句话，你们回答我，我就告诉你们，我仗着什么权柄作这些事。</p>
+      </li>
+                        <li><span>11:30</span>
+        <p>约翰的洗礼是从天上来的，是从人间来的呢？你们可以回答我。”</p>
+      </li>
+                        <li><span>11:31</span>
+        <p>他们彼此商议说：“我们若说：‘从天上来’，他必说：‘这样，你们为什么不信他呢？’</p>
+      </li>
+                        <li><span>11:32</span>
+        <p>若说：‘从人间来’，却又怕百姓，因为众人真以约翰为先知。”</p>
+      </li>
+                        <li><span>11:33</span>
+        <p>于是回答耶稣说：“我们不知道。”耶稣说：“我也不告诉你们，我仗着什么权柄作这些事。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共16首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>马可福音(可)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>马可福音(可)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>马可福音(可)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>马可福音(可)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>马可福音(可)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>马可福音(可)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>马可福音(可)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>马可福音(可)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>马可福音(可)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>马可福音(可)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>马可福音(可)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>马可福音(可)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>马可福音(可)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>马可福音(可)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>马可福音(可)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-41-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>马可福音(可)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-41-cid-10.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-41-cid-12.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="11列王记上/11列王记上_07.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-11-cid-8.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">列王记上(王上) 第7章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>7:1</span>
+        <p>所罗门为自己建造宫室，十三年方才造成。</p>
+      </li>
+                        <li><span>7:2</span>
+        <p>又建造黎巴嫩林宫，长一百肘，宽五十肘，高三十肘，有香柏木柱三（原文作“四”）行，柱上有香柏木柁梁。</p>
+      </li>
+                        <li><span>7:3</span>
+        <p>其上以香柏木为盖，每行柱子十五根，共有四十五根。</p>
+      </li>
+                        <li><span>7:4</span>
+        <p>有窗户三层，窗与窗相对。</p>
+      </li>
+                        <li><span>7:5</span>
+        <p>所有的门框都是厚木见方的，有窗户三层，窗与窗相对。</p>
+      </li>
+                        <li><span>7:6</span>
+        <p>并建造有柱子的廊子，长五十肘，宽三十肘。在这廊前又有廊子，廊外有柱子和台阶。</p>
+      </li>
+                        <li><span>7:7</span>
+        <p>又建造一廊，其中设立审判的座位，这廊从地到顶，都用香柏木遮蔽。</p>
+      </li>
+                        <li><span>7:8</span>
+        <p>廊后院内有所罗门住的宫室，工作与这工作相同。所罗门又为所娶法老的女儿建造一宫，做法与这廊子一样。</p>
+      </li>
+                        <li><span>7:9</span>
+        <p>建造这一切所用的石头都是宝贵的，是按着尺寸凿成的，是用锯里外锯齐的，从根基直到檐石，从外头直到大院，都是如此。</p>
+      </li>
+                        <li><span>7:10</span>
+        <p>根基是宝贵的大石头，有长十肘的，有长八肘的。</p>
+      </li>
+                        <li><span>7:11</span>
+        <p>上面有香柏木和按着尺寸凿成宝贵的石头。</p>
+      </li>
+                        <li><span>7:12</span>
+        <p>大院周围有凿成的石头三层，香柏木一层，都照耶和华殿的内院和殿廊的样式。</p>
+      </li>
+                                    <li><span>7:13</span>
+        <p>所罗门王差遣人往推罗去，将户兰召了来。</p>
+      </li>
+                        <li><span>7:14</span>
+        <p>他是拿弗他利支派中一个寡妇的儿子，他父亲是推罗人，作铜匠的。户兰满有智慧、聪明、技能，善于各样铜作。他来到所罗门王那里，作王一切所要作的。</p>
+      </li>
+                                    <li><span>7:15</span>
+        <p>他制造两根铜柱，每根高十八肘，围十二肘。</p>
+      </li>
+                        <li><span>7:16</span>
+        <p>又用铜铸了两个柱顶安在柱上，各高五肘。</p>
+      </li>
+                        <li><span>7:17</span>
+        <p>柱顶上有装修的网子和拧成的链索，每顶七个。</p>
+      </li>
+                        <li><span>7:18</span>
+        <p>网子周围有两行石榴遮盖柱顶，两个柱顶都是如此。</p>
+      </li>
+                        <li><span>7:19</span>
+        <p>廊子的柱顶径四肘，刻着百合花。</p>
+      </li>
+                        <li><span>7:20</span>
+        <p>两柱顶的鼓肚上，挨着网子，各有两行石榴环绕，两行共有二百。</p>
+      </li>
+                        <li><span>7:21</span>
+        <p>他将两根柱子立在殿廊前头：右边立一根，起名叫雅斤；左边立一根，起名叫波阿斯。</p>
+      </li>
+                        <li><span>7:22</span>
+        <p>在柱顶上刻着百合花。这样，造柱子的工就完毕了。</p>
+      </li>
+                                    <li><span>7:23</span>
+        <p>他又铸一个铜海，样式是圆的，高五肘，径十肘，围三十肘。</p>
+      </li>
+                        <li><span>7:24</span>
+        <p>在海边之下，周围有野瓜的样式，每肘十瓜，共有两行，是铸海的时候铸上的。</p>
+      </li>
+                        <li><span>7:25</span>
+        <p>有十二只铜牛驮海：三只向北，三只向西，三只向南，三只向东；海在牛上，牛尾都向内。</p>
+      </li>
+                        <li><span>7:26</span>
+        <p>海厚一掌，边如杯边，又如百合花，可容二千罢特。</p>
+      </li>
+                                    <li><span>7:27</span>
+        <p>他用铜制造十个盆座。每座长四肘，宽四肘，高三肘。</p>
+      </li>
+                        <li><span>7:28</span>
+        <p>座的造法是这样：四面都有心子，心子在边子当中。</p>
+      </li>
+                        <li><span>7:29</span>
+        <p>心子上有狮子和牛，并基路伯，边上有小座，狮子和牛以下有垂下的璎珞。</p>
+      </li>
+                        <li><span>7:30</span>
+        <p>每盆座有四个铜轮和铜轴。小座的四角上在盆以下，有铸成的盆架，其旁都有璎珞。</p>
+      </li>
+                        <li><span>7:31</span>
+        <p>小座高一肘，口是圆的，彷佛座的样式；径一肘半，在口上有雕工，心子是方的，不是圆的。</p>
+      </li>
+                        <li><span>7:32</span>
+        <p>四个轮子在心子以下，轮轴与座相连，每轮高一肘半。</p>
+      </li>
+                        <li><span>7:33</span>
+        <p>轮的样式如同车轮，轴、辋、辐、毂都是铸的。</p>
+      </li>
+                        <li><span>7:34</span>
+        <p>每座四角上都有盆架，是与座一同铸成的。</p>
+      </li>
+                        <li><span>7:35</span>
+        <p>座上有圆架，高半肘；座上有撑子和心子，是与座一同铸的。</p>
+      </li>
+                        <li><span>7:36</span>
+        <p>在撑子和心子上刻着基路伯、狮子和棕树，周围有璎珞。</p>
+      </li>
+                        <li><span>7:37</span>
+        <p>十个盆座都是这样，铸法、尺寸、样式相同。</p>
+      </li>
+                        <li><span>7:38</span>
+        <p>又用铜制造十个盆，每盆可容四十罢特。盆径四肘，在那十座上，每座安设一盆。</p>
+      </li>
+                        <li><span>7:39</span>
+        <p>五个安在殿门的右边；五个放在殿门的左边。又将海放在殿门的右旁，就是南边。</p>
+      </li>
+                                    <li><span>7:40</span>
+        <p>户兰又造了盆、铲子和盘子。这样，他为所罗门王作完了耶和华殿的一切工。</p>
+      </li>
+                        <li><span>7:41</span>
+        <p>所造的就是两根柱子和柱上两个如球的顶，并两个盖柱顶的网子，</p>
+      </li>
+                        <li><span>7:42</span>
+        <p>和四百石榴，安在两个网子上，每网两行，盖着两个柱上如球的顶。</p>
+      </li>
+                        <li><span>7:43</span>
+        <p>十个座和其上的十个盆，</p>
+      </li>
+                        <li><span>7:44</span>
+        <p>海和海下的十二只牛，</p>
+      </li>
+                        <li><span>7:45</span>
+        <p>盆、铲子、盘子，这一切都是户兰给所罗门王用光亮的铜，为耶和华的殿造成的。</p>
+      </li>
+                        <li><span>7:46</span>
+        <p>是遵王命在约旦平原，疏割和撒拉但中间，藉胶泥铸成的。</p>
+      </li>
+                        <li><span>7:47</span>
+        <p>这一切，所罗门都没有过秤，因为甚多。铜的轻重也无法可查。</p>
+      </li>
+                        <li><span>7:48</span>
+        <p>所罗门又造耶和华殿里的金坛和陈设饼的金桌子。</p>
+      </li>
+                        <li><span>7:49</span>
+        <p>内殿前的精金灯台，右边五个，左边五个，并其上的金花、灯盏、蜡剪，</p>
+      </li>
+                        <li><span>7:50</span>
+        <p>与精金的杯、盘、镊子、调羹、火鼎以及至圣所、内殿的门枢，和外殿的门枢。</p>
+      </li>
+                                    <li><span>7:51</span>
+        <p>所罗门王作完了耶和华殿的一切工，就把他父大卫分别为圣的金银和器皿，都带来放在耶和华殿的府库里。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共22首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>列王记上(王上)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>列王记上(王上)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>列王记上(王上)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>列王记上(王上)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>列王记上(王上)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>列王记上(王上)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>列王记上(王上)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>列王记上(王上)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>列王记上(王上)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>列王记上(王上)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>列王记上(王上)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>列王记上(王上)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>列王记上(王上)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>列王记上(王上)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>列王记上(王上)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>列王记上(王上)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>列王记上(王上)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>列王记上(王上)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>列王记上(王上)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>列王记上(王上)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>列王记上(王上)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>列王记上(王上)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-11-cid-6.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-11-cid-8.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

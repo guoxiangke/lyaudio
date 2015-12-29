@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="12列王记下/12列王记下_17.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-12-cid-18.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">列王记下(王下) 第17章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>17:1</span>
+        <p>犹大王亚哈斯十二年，以拉的儿子何细亚在撒玛利亚登基，作以色列王九年。</p>
+      </li>
+                        <li><span>17:2</span>
+        <p>他行耶和华眼中看为恶的事，只是不像在他以前的以色列诸王。</p>
+      </li>
+                        <li><span>17:3</span>
+        <p>亚述王撒缦以色上来攻击何细亚，何细亚就服侍他，给他进贡。</p>
+      </li>
+                        <li><span>17:4</span>
+        <p>何细亚背叛，差人去见埃及王梭，不照往年所行的与亚述王进贡。亚述王知道了，就把他锁禁，囚在监里。</p>
+      </li>
+                        <li><span>17:5</span>
+        <p>亚述王上来攻击以色列遍地，上到撒玛利亚，围困三年。</p>
+      </li>
+                        <li><span>17:6</span>
+        <p>何细亚第九年，亚述王攻取了撒玛利亚，将以色列人掳到亚述，把他们安置在哈腊与歌散的哈博河边，并玛代人的城邑。</p>
+      </li>
+                        <li><span>17:7</span>
+        <p>这是因以色列人得罪那领他们出埃及地、脱离埃及王法老手的耶和华他们的  神，去敬畏别神，</p>
+      </li>
+                        <li><span>17:8</span>
+        <p>随从耶和华在他们面前所赶出外邦人的风俗和以色列诸王所立的条规。</p>
+      </li>
+                        <li><span>17:9</span>
+        <p>以色列人暗中行不正的事，违背耶和华他们的  神。在他们所有的城邑，从了望楼直到坚固城，建筑邱坛；</p>
+      </li>
+                        <li><span>17:10</span>
+        <p>在各高冈上、各青翠树下、立柱像和木偶；</p>
+      </li>
+                        <li><span>17:11</span>
+        <p>在邱坛上烧香，效法耶和华在他们面前赶出的外邦人所行的；又行恶事惹动耶和华的怒气；</p>
+      </li>
+                        <li><span>17:12</span>
+        <p>且侍奉偶像，就是耶和华警戒他们不可行的。</p>
+      </li>
+                        <li><span>17:13</span>
+        <p>但耶和华藉众先知、先见劝戒以色列人和犹大人说：“当离开你们的恶行，谨守我的诫命律例，遵行我吩咐你们列祖，并藉我仆人众先知所传给你们的律法。”</p>
+      </li>
+                        <li><span>17:14</span>
+        <p>他们却不听从，竟硬着颈项，效法他们列祖，不信服耶和华他们的  神，</p>
+      </li>
+                        <li><span>17:15</span>
+        <p>厌弃他的律例和他与他们列祖所立的约，并劝戒他们的话，随从虚无的神，自己成为虚妄，效法周围的外邦人，就是耶和华嘱咐他们不可效法的。</p>
+      </li>
+                        <li><span>17:16</span>
+        <p>离弃耶和华他们  神的一切诫命，为自己铸了两个牛犊的像，立了亚舍拉，敬拜天上的万象，侍奉巴力，</p>
+      </li>
+                        <li><span>17:17</span>
+        <p>又使他们的儿女经火，用占卜、行法术卖了自己，行耶和华眼中看为恶的事，惹动他的怒气。</p>
+      </li>
+                        <li><span>17:18</span>
+        <p>所以，耶和华向以色列人大大发怒，从自己面前赶出他们，只剩下犹大一个支派。</p>
+      </li>
+                        <li><span>17:19</span>
+        <p>犹大人也不遵守耶和华他们  神的诫命，随从以色列人所立的条规。</p>
+      </li>
+                        <li><span>17:20</span>
+        <p>耶和华就厌弃以色列全族，使他们受苦，把他们交在抢夺他们的人手中，以致赶出他们离开自己面前。</p>
+      </li>
+                        <li><span>17:21</span>
+        <p>将以色列国从大卫家夺回，他们就立尼八的儿子耶罗波安作王。耶罗波安引诱以色列人不随从耶和华，陷在大罪里。</p>
+      </li>
+                        <li><span>17:22</span>
+        <p>以色列人犯耶罗波安所犯的一切罪，总不离开，</p>
+      </li>
+                        <li><span>17:23</span>
+        <p>以致耶和华从自己面前赶出他们，正如藉他仆人众先知所说的。这样，以色列人从本地被掳到亚述，直到今日。</p>
+      </li>
+                                    <li><span>17:24</span>
+        <p>亚述王从巴比伦、古他、亚瓦、哈马，和西法瓦音迁移人来，安置在撒玛利亚的城邑，代替以色列人，他们就得了撒玛利亚，住在其中。</p>
+      </li>
+                        <li><span>17:25</span>
+        <p>他们才住那里的时候，不敬畏耶和华，所以耶和华叫狮子进入他们中间，咬死了些人。</p>
+      </li>
+                        <li><span>17:26</span>
+        <p>有人告诉亚述王，说：“你所迁移安置在撒玛利亚各城的那些民，不知道那地之神的规矩，所以那神叫狮子进入他们中间，咬死他们。”</p>
+      </li>
+                        <li><span>17:27</span>
+        <p>亚述王就吩咐说：“叫所掳来的祭司回去一个，使他住在那里，将那地之神的规矩指教那些民。”</p>
+      </li>
+                        <li><span>17:28</span>
+        <p>于是有一个从撒玛利亚掳去的祭司回来，住在伯特利，指教他们怎样敬畏耶和华。</p>
+      </li>
+                        <li><span>17:29</span>
+        <p>然而，各族之人在所住的城里，各为自己制造神像，安置在撒玛利亚人所造有邱坛的殿中。</p>
+      </li>
+                        <li><span>17:30</span>
+        <p>巴比伦人造疏割比讷像；古他人造匿甲像；哈马人造亚示玛像；</p>
+      </li>
+                        <li><span>17:31</span>
+        <p>亚瓦人造匿哈和他珥他像；西法瓦音人用火焚烧儿女，献给西法瓦音的神亚得米勒和亚拿米勒。</p>
+      </li>
+                        <li><span>17:32</span>
+        <p>他们惧怕耶和华，也从他们中间立邱坛的祭司，为他们在有邱坛的殿中献祭。</p>
+      </li>
+                        <li><span>17:33</span>
+        <p>他们又惧怕耶和华，又侍奉自己的神，从何邦迁移，就随何邦的风俗。</p>
+      </li>
+                        <li><span>17:34</span>
+        <p>他们直到如今仍照先前的风俗去行，不专心敬畏耶和华，不全守自己的规矩、典章，也不遵守耶和华吩咐雅各后裔的律法、诫命。雅各，就是从前耶和华起名叫以色列的。</p>
+      </li>
+                        <li><span>17:35</span>
+        <p>耶和华曾与他们立约，嘱咐他们说：“不可敬畏别神，不可跪拜侍奉他，也不可向他献祭。</p>
+      </li>
+                        <li><span>17:36</span>
+        <p>但那用大能和伸出来的膀臂领你们出埃及地的耶和华，你们当敬畏、跪拜，向他献祭。</p>
+      </li>
+                        <li><span>17:37</span>
+        <p>他给你们写的律例、典章、律法、诫命，你们应当永远谨守遵行，不可敬畏别神。</p>
+      </li>
+                        <li><span>17:38</span>
+        <p>我耶和华与你们所立的约你们不可忘记，也不可敬畏别神。</p>
+      </li>
+                        <li><span>17:39</span>
+        <p>但要敬畏耶和华你们的  神，他必救你们脱离一切仇敌的手。”</p>
+      </li>
+                        <li><span>17:40</span>
+        <p>他们却不听从，仍照先前的风俗去行。</p>
+      </li>
+                        <li><span>17:41</span>
+        <p>如此这些民又惧怕耶和华，又侍奉他们的偶像。他们子子孙孙也都照样行，效法他们的祖宗，直到今日。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共25首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>列王记下(王下)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>列王记下(王下)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>列王记下(王下)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>列王记下(王下)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>列王记下(王下)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>列王记下(王下)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>列王记下(王下)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>列王记下(王下)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>列王记下(王下)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>列王记下(王下)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>列王记下(王下)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>列王记下(王下)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>列王记下(王下)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>列王记下(王下)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>列王记下(王下)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>列王记下(王下)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>列王记下(王下)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>列王记下(王下)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>列王记下(王下)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>列王记下(王下)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>列王记下(王下)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>列王记下(王下)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>列王记下(王下)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>列王记下(王下)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-12-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>列王记下(王下)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-12-cid-16.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-12-cid-18.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

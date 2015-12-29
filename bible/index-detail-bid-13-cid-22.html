@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="13历代志上/13历代志上_22.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-13-cid-23.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">历代志上(代上) 第22章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>22:1</span>
+        <p>大卫吩咐聚集住以色列地的外邦人，从其中派石匠凿石头，要建造  神的殿。</p>
+      </li>
+                        <li><span>22:2</span>
+        <p>大卫预备许多铁，作门上的钉子和钩子；又预备许多铜，多得无法可称；</p>
+      </li>
+                        <li><span>22:3</span>
+        <p>又预备无数的香柏木，因为西顿人和推罗人给大卫运了许多香柏木来。</p>
+      </li>
+                        <li><span>22:4</span>
+        <p>大卫说：“我儿子所罗门还年幼娇嫩，要为耶和华建造的殿宇，必须高大辉煌，使名誉荣耀传遍万国，所以我要为殿预备材料。”于是，大卫在未死之先，预备的材料甚多。</p>
+      </li>
+                        <li><span>22:5</span>
+        <p>大卫召了他儿子所罗门来，嘱咐他给耶和华以色列的  神建造殿宇。</p>
+      </li>
+                        <li><span>22:6</span>
+        <p>对所罗门说：“我儿啊，我心里本想为耶和华我  神的名建造殿宇；</p>
+      </li>
+                        <li><span>22:7</span>
+        <p>只是耶和华的话临到我说：‘你流了多人的血，打了多次大仗，你不可为我的名建造殿宇，因为你在我眼前使多人的血流在地上。</p>
+      </li>
+                        <li><span>22:8</span>
+        <p>你要生一个儿子，他必作太平的人；我必使他安静，不被四围的仇敌扰乱。他的名要叫所罗门（即“太平”之意）。他在位的日子，我必使以色列人平安康泰。</p>
+      </li>
+                        <li><span>22:9</span>
+        <p>他必为我的名建造殿宇。他要作我的子，我要作他的父。他作以色列王，我必坚定他的国位，直到永远。’</p>
+      </li>
+                        <li><span>22:10</span>
+        <p>我儿啊，现今愿耶和华与你同在，使你亨通，照他指着你说的话，建造耶和华你  神的殿。</p>
+      </li>
+                        <li><span>22:11</span>
+        <p>但愿耶和华赐你聪明智慧，好治理以色列国，遵行耶和华你  神的律法。</p>
+      </li>
+                        <li><span>22:12</span>
+        <p>你若谨守遵行耶和华藉摩西吩咐以色列的律例典章，就得亨通。你当刚强壮胆，不要惧怕，也不要惊惶。</p>
+      </li>
+                        <li><span>22:13</span>
+        <p>我在困难之中为耶和华的殿预备了金子十万他连得、银子一百万他连得，铜和铁多得无法可称。我也预备了木头、石头，你还可以增添。</p>
+      </li>
+                        <li><span>22:14</span>
+        <p>你有许多匠人，就是石匠、木匠，和一切能作各样工的巧匠，</p>
+      </li>
+                        <li><span>22:15</span>
+        <p>并有无数的金、银、铜、铁。你当起来办事，愿耶和华与你同在。”</p>
+      </li>
+                        <li><span>22:16</span>
+        <p>大卫又吩咐以色列的众首领帮助他儿子所罗门，说：</p>
+      </li>
+                        <li><span>22:17</span>
+        <p>“耶和华你们的  神不是与你们同在吗？不是叫你们四围都平安吗？因他已将这地的居民交在我手中，这地就在耶和华与他百姓面前制伏了。</p>
+      </li>
+                        <li><span>22:18</span>
+        <p>现在你们应当立定心意，寻求耶和华你们的  神，也当起来建造耶和华  神的圣所，好将耶和华的约柜和供奉  神的圣器皿，都搬进为耶和华名建造的殿里。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共29首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>历代志上(代上)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>历代志上(代上)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>历代志上(代上)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>历代志上(代上)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>历代志上(代上)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>历代志上(代上)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>历代志上(代上)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>历代志上(代上)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>历代志上(代上)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>历代志上(代上)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>历代志上(代上)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>历代志上(代上)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>历代志上(代上)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>历代志上(代上)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>历代志上(代上)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>历代志上(代上)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>历代志上(代上)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>历代志上(代上)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>历代志上(代上)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>历代志上(代上)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>历代志上(代上)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>历代志上(代上)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>历代志上(代上)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>历代志上(代上)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>历代志上(代上)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>历代志上(代上)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>历代志上(代上)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>历代志上(代上)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>历代志上(代上)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-13-cid-21.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-13-cid-23.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

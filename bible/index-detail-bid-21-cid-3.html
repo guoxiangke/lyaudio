@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="21传道书/21传道书_03.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-21-cid-4.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">传道书(传) 第3章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>3:1</span>
+        <p>凡事都有定期，天下万务都有定时。</p>
+      </li>
+                        <li><span>3:2</span>
+        <p>生有时，死有时；栽种有时，拔出所栽种的也有时；</p>
+      </li>
+                        <li><span>3:3</span>
+        <p>杀戮有时，医治有时；拆毁有时，建造有时；</p>
+      </li>
+                        <li><span>3:4</span>
+        <p>哭有时，笑有时；哀恸有时，跳舞有时；</p>
+      </li>
+                        <li><span>3:5</span>
+        <p>抛掷石头有时，堆聚石头有时；怀抱有时，不怀抱有时；</p>
+      </li>
+                        <li><span>3:6</span>
+        <p>寻找有时，失落有时；保守有时，舍弃有时；</p>
+      </li>
+                        <li><span>3:7</span>
+        <p>撕裂有时，缝补有时；静默有时，言语有时；</p>
+      </li>
+                        <li><span>3:8</span>
+        <p>喜爱有时，恨恶有时；争战有时，和好有时。</p>
+      </li>
+                        <li><span>3:9</span>
+        <p>这样看来，作事的人在他的劳碌上有什么益处呢？</p>
+      </li>
+                        <li><span>3:10</span>
+        <p>我见  神叫世人劳苦，使他们在其中受经练。</p>
+      </li>
+                        <li><span>3:11</span>
+        <p>神造万物，各按其时成为美好，又将永生安置在世人心里（“永生”原文作“永远”）。然而  神从始至终的作为，人不能参透。</p>
+      </li>
+                        <li><span>3:12</span>
+        <p>我知道世人，莫强如终身喜乐行善，</p>
+      </li>
+                        <li><span>3:13</span>
+        <p>并且人人吃喝，在他一切劳碌中享福，这也是  神的恩赐。</p>
+      </li>
+                        <li><span>3:14</span>
+        <p>我知道  神一切所作的都必永存，无所增添，无所减少。  神这样行，是要人在他面前存敬畏的心。</p>
+      </li>
+                        <li><span>3:15</span>
+        <p>现今的事早先就有了，将来的事早已也有了，并且  神使已过的事重新再来（或作“并且  神再寻回已过的事”）。</p>
+      </li>
+                                    <li><span>3:16</span>
+        <p>我又见日光之下，在审判之处有奸恶，在公义之处也有奸恶。</p>
+      </li>
+                        <li><span>3:17</span>
+        <p>我心里说：  神必审判义人和恶人，因为在那里，各样事务，一切工作，都有定时。</p>
+      </li>
+                        <li><span>3:18</span>
+        <p>我心里说：这乃为世人的缘故，是  神要试验他们，使他们觉得自己不过像兽一样。</p>
+      </li>
+                        <li><span>3:19</span>
+        <p>因为世人遭遇的，兽也遭遇，所遭遇的都是一样：这个怎样死，那个也怎样死，气息都是一样。人不能强于兽，都是虚空。</p>
+      </li>
+                        <li><span>3:20</span>
+        <p>都归一处，都是出于尘土，也都归于尘土。</p>
+      </li>
+                        <li><span>3:21</span>
+        <p>谁知道人的灵是往上升，兽的魂是下入地呢？</p>
+      </li>
+                        <li><span>3:22</span>
+        <p>故此，我见人莫强如在他经营的事上喜乐，因为这是他的份；他身后的事，谁能使他回来得见呢？</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共12首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>传道书(传)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>传道书(传)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>传道书(传)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>传道书(传)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>传道书(传)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>传道书(传)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>传道书(传)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>传道书(传)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>传道书(传)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>传道书(传)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>传道书(传)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>传道书(传)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-21-cid-2.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-21-cid-4.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

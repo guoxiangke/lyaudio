@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="03利未记/03利未记_14.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-3-cid-15.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">利未记(利) 第14章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>14:1</span>
+        <p>耶和华晓谕摩西说：</p>
+      </li>
+                        <li><span>14:2</span>
+        <p>“长大麻风得洁净的日子，其例乃是这样：要带他去见祭司，</p>
+      </li>
+                        <li><span>14:3</span>
+        <p>祭司要出到营外察看，若见他的大麻风痊愈了，</p>
+      </li>
+                        <li><span>14:4</span>
+        <p>就要吩咐人为那求洁净的，拿两只洁净的活鸟和香柏木、朱红色线并牛膝草来。</p>
+      </li>
+                        <li><span>14:5</span>
+        <p>祭司要吩咐用瓦器盛活水，把一只鸟宰在上面。</p>
+      </li>
+                        <li><span>14:6</span>
+        <p>至于那只活鸟，祭司要把它和香柏木、朱红色线并牛膝草，一同蘸于宰在活水上的鸟血中，</p>
+      </li>
+                        <li><span>14:7</span>
+        <p>用以在那长大麻风求洁净的人身上洒七次，就定他为洁净，又把活鸟放在田野里。</p>
+      </li>
+                        <li><span>14:8</span>
+        <p>求洁净的人当洗衣服，剃去毛发，用水洗澡，就洁净了。然后可以进营，只是要在自己的帐棚外居住七天。</p>
+      </li>
+                        <li><span>14:9</span>
+        <p>第七天，再把头上所有的头发与胡须、眉毛并全身的毛都剃了；又要洗衣服，用水洗身，就洁净了。”</p>
+      </li>
+                        <li><span>14:10</span>
+        <p>“第八天，他要取两只没有残疾的公羊羔，和一只没有残疾、一岁的母羊羔，又要把调油的细面伊法十分之三为素祭，并油一罗革一同取来。</p>
+      </li>
+                        <li><span>14:11</span>
+        <p>行洁净之礼的祭司，要将那求洁净的人和这些东西安置在会幕门口、耶和华面前。</p>
+      </li>
+                        <li><span>14:12</span>
+        <p>祭司要取一只公羊羔献为赎愆祭，和那一罗革油一同作摇祭，在耶和华面前摇一摇。</p>
+      </li>
+                        <li><span>14:13</span>
+        <p>把公羊羔宰于圣地，就是宰赎罪祭牲和燔祭牲之地。赎愆祭要归祭司，与赎罪祭一样，是至圣的。</p>
+      </li>
+                        <li><span>14:14</span>
+        <p>祭司要取些赎愆祭牲的血，抹在求洁净人的右耳垂上，和右手的大拇指上，并右脚的大拇指上。</p>
+      </li>
+                        <li><span>14:15</span>
+        <p>祭司要从那一罗革油中取些倒在自己的左手掌里，</p>
+      </li>
+                        <li><span>14:16</span>
+        <p>把右手的一个指头蘸在左手的油里，在耶和华面前用指头弹七次。</p>
+      </li>
+                        <li><span>14:17</span>
+        <p>将手里所剩的油，抹在那求洁净人的右耳垂上和右手的大拇指上，并右脚的大拇指上，就是抹在赎愆祭牲的血上。</p>
+      </li>
+                        <li><span>14:18</span>
+        <p>祭司手里所剩的油，要抹在那求洁净人的头上，在耶和华面前为他赎罪。</p>
+      </li>
+                        <li><span>14:19</span>
+        <p>祭司要献赎罪祭，为那本不洁净求洁净的人赎罪，然后要宰燔祭牲。</p>
+      </li>
+                        <li><span>14:20</span>
+        <p>把燔祭和素祭，献在坛上为他赎罪，他就洁净了。”</p>
+      </li>
+                        <li><span>14:21</span>
+        <p>“他若贫穷不能预备够数，就要取一只公羊羔作赎愆祭，可以摇一摇，为他赎罪；也要把调油的细面伊法十分之一为素祭，和油一罗革一同取来。</p>
+      </li>
+                        <li><span>14:22</span>
+        <p>又照他的力量取两只斑鸠或是两只雏鸽，一只作赎罪祭，一只作燔祭。</p>
+      </li>
+                        <li><span>14:23</span>
+        <p>第八天，要为洁净，把这些带到会幕门口、耶和华面前，交给祭司。</p>
+      </li>
+                        <li><span>14:24</span>
+        <p>祭司要把赎愆祭的羊羔和那一罗革油一同作摇祭，在耶和华面前摇一摇。</p>
+      </li>
+                        <li><span>14:25</span>
+        <p>要宰了赎愆祭的羊羔，取些赎愆祭牲的血，抹在那求洁净人的右耳垂上和右手的大拇指上，并右脚的大拇指上。</p>
+      </li>
+                        <li><span>14:26</span>
+        <p>祭司要把些油倒在自己的左手掌里，</p>
+      </li>
+                        <li><span>14:27</span>
+        <p>把左手里的油，在耶和华面前，用右手的一个指头弹七次。</p>
+      </li>
+                        <li><span>14:28</span>
+        <p>又把手里的油，抹些在那求洁净人的右耳垂上和右手的大拇指上，并右脚的大拇指上，就是抹赎愆祭之血的原处。</p>
+      </li>
+                        <li><span>14:29</span>
+        <p>祭司手里所剩的油，要抹在那求洁净人的头上，在耶和华面前为他赎罪。</p>
+      </li>
+                        <li><span>14:30</span>
+        <p>那人又要照他的力量献上一只斑鸠或是一只雏鸽，</p>
+      </li>
+                        <li><span>14:31</span>
+        <p>就是他所能办的，一只为赎罪祭，一只为燔祭，与素祭一同献上。祭司要在耶和华面前为他赎罪。</p>
+      </li>
+                        <li><span>14:32</span>
+        <p>这是那有大麻风灾病的人，不能将关乎得洁净之物预备够数的条例。”</p>
+      </li>
+                                    <li><span>14:33</span>
+        <p>耶和华晓谕摩西、亚伦说：</p>
+      </li>
+                        <li><span>14:34</span>
+        <p>“你们到了我赐给你们为业的迦南地，我若使你们所得为业之地的房屋中有大麻风的灾病，</p>
+      </li>
+                        <li><span>14:35</span>
+        <p>房主就要去告诉祭司说：‘据我看，房屋中似乎有灾病。’</p>
+      </li>
+                        <li><span>14:36</span>
+        <p>祭司还没有进去察看灾病以前，就要吩咐人把房子腾空，免得房子里所有的都成了不洁净。然后祭司要进去察看房子。</p>
+      </li>
+                        <li><span>14:37</span>
+        <p>他要察看那灾病，灾病若在房子的墙上有发绿或发红的凹斑纹，现象洼于墙，</p>
+      </li>
+                        <li><span>14:38</span>
+        <p>祭司就要出到房门外，把房子封锁七天。</p>
+      </li>
+                        <li><span>14:39</span>
+        <p>第七天，祭司要再去察看，灾病若在房子的墙上发散，</p>
+      </li>
+                        <li><span>14:40</span>
+        <p>就要吩咐人把那有灾病的石头挖出来，扔在城外不洁净之处；</p>
+      </li>
+                        <li><span>14:41</span>
+        <p>也要叫人刮房内的四围，所刮掉的灰泥，要倒在城外不洁净之处；</p>
+      </li>
+                        <li><span>14:42</span>
+        <p>又要用别的石头，代替那挖出来的石头，要另用灰泥墁房子。”</p>
+      </li>
+                        <li><span>14:43</span>
+        <p>“他挖出石头，刮了房子，墁了以后，灾病若在房子里又发现，</p>
+      </li>
+                        <li><span>14:44</span>
+        <p>祭司就要进去察看。灾病若在房子里发散，这就是房内蚕食的大麻风，是不洁净。</p>
+      </li>
+                        <li><span>14:45</span>
+        <p>他就要拆毁房子，把石头、木头、灰泥都搬到城外不洁净之处。</p>
+      </li>
+                        <li><span>14:46</span>
+        <p>在房子封锁的时候，进去的人必不洁净到晚上。</p>
+      </li>
+                        <li><span>14:47</span>
+        <p>在房子里躺着的必洗衣服；在房子里吃饭的也必洗衣服。”</p>
+      </li>
+                        <li><span>14:48</span>
+        <p>“房子墁了以后，祭司若进去察看，见灾病在房内没有发散，就要定房子为洁净，因为灾病已经消除。</p>
+      </li>
+                        <li><span>14:49</span>
+        <p>要为洁净房子，取两只鸟和香柏木、朱红色线并牛膝草，</p>
+      </li>
+                        <li><span>14:50</span>
+        <p>用瓦器盛活水，把一只鸟宰在上面，</p>
+      </li>
+                        <li><span>14:51</span>
+        <p>把香柏木、牛膝草、朱红色线并那活鸟，都蘸在被宰的鸟血中与活水中，用以洒房子七次。</p>
+      </li>
+                        <li><span>14:52</span>
+        <p>要用鸟血、活水、活鸟、香柏木、牛膝草并朱红色线，洁净那房子。</p>
+      </li>
+                        <li><span>14:53</span>
+        <p>但要把活鸟放在城外田野里。这样洁净房子（原文作“为房子赎罪”），房子就洁净了。”</p>
+      </li>
+                        <li><span>14:54</span>
+        <p>这是为各类大麻风的灾病和头疥，</p>
+      </li>
+                        <li><span>14:55</span>
+        <p>并衣服与房子的大麻风，</p>
+      </li>
+                        <li><span>14:56</span>
+        <p>以及疖子、癣、火斑所立的条例，</p>
+      </li>
+                        <li><span>14:57</span>
+        <p>指明何时为洁净，何时为不洁净。这是大麻风的条例。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共27首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>利未记(利)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>利未记(利)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>利未记(利)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>利未记(利)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>利未记(利)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>利未记(利)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>利未记(利)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>利未记(利)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>利未记(利)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>利未记(利)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>利未记(利)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>利未记(利)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>利未记(利)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>利未记(利)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>利未记(利)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>利未记(利)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>利未记(利)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>利未记(利)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>利未记(利)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>利未记(利)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>利未记(利)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>利未记(利)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>利未记(利)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>利未记(利)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>利未记(利)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>利未记(利)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>利未记(利)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-3-cid-13.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-3-cid-15.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

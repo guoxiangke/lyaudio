@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="21传道书/21传道书_07.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-21-cid-8.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">传道书(传) 第7章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>7:1</span>
+        <p>名誉强如美好的膏油；人死的日子胜过人生的日子。</p>
+      </li>
+                        <li><span>7:2</span>
+        <p>往遭丧的家去，强如往宴乐的家去，因为死是众人的结局，活人也必将这事放在心上。</p>
+      </li>
+                        <li><span>7:3</span>
+        <p>忧愁强如喜笑，因为面带愁容，终必使心喜乐。</p>
+      </li>
+                        <li><span>7:4</span>
+        <p>智慧人的心，在遭丧之家；愚昧人的心，在快乐之家。</p>
+      </li>
+                        <li><span>7:5</span>
+        <p>听智慧人的责备，强如听愚昧人的歌唱。</p>
+      </li>
+                        <li><span>7:6</span>
+        <p>愚昧人的笑声，好像锅下烧荆棘的爆声，这也是虚空。</p>
+      </li>
+                        <li><span>7:7</span>
+        <p>勒索使智慧人变为愚妄，贿赂能败坏人的慧心。</p>
+      </li>
+                        <li><span>7:8</span>
+        <p>事情的终局强如事情的起头；存心忍耐的，胜过居心骄傲的。</p>
+      </li>
+                        <li><span>7:9</span>
+        <p>你不要心里急躁恼怒，因为恼怒存在愚昧人的怀中。</p>
+      </li>
+                        <li><span>7:10</span>
+        <p>不要说：先前的日子强过如今的日子，是什么缘故呢？你这样问，不是出于智慧。</p>
+      </li>
+                        <li><span>7:11</span>
+        <p>智慧和产业并好，而且见天日的人得智慧更为有益。</p>
+      </li>
+                        <li><span>7:12</span>
+        <p>因为智慧护庇人，好像银钱护庇人一样。惟独智慧能保全智慧人的生命。这就是知识的益处。</p>
+      </li>
+                        <li><span>7:13</span>
+        <p>你要察看  神的作为，因  神使为曲的，谁能变为直呢？</p>
+      </li>
+                        <li><span>7:14</span>
+        <p>遇亨通的日子，你当喜乐；遭患难的日子，你当思想。因为  神使这两样并列，为的是叫人查不出身后有什么事。</p>
+      </li>
+                        <li><span>7:15</span>
+        <p>有义人行义，反致灭亡；有恶人行恶，倒享长寿。这都是我在虚度之日中所见过的。</p>
+      </li>
+                        <li><span>7:16</span>
+        <p>不要行义过分，也不要过于自逞智慧，何必自取败亡呢？</p>
+      </li>
+                        <li><span>7:17</span>
+        <p>不要行恶过分，也不要为人愚昧，何必不到期而死呢？</p>
+      </li>
+                        <li><span>7:18</span>
+        <p>你持守这个为美，那个也不要松手；因为敬畏  神的人，必从这两样出来。</p>
+      </li>
+                        <li><span>7:19</span>
+        <p>智慧使有智慧的人比城中十个官长更有能力。</p>
+      </li>
+                        <li><span>7:20</span>
+        <p>时常行善而不犯罪的义人，世上实在没有。</p>
+      </li>
+                        <li><span>7:21</span>
+        <p>人所说的一切话，你不要放在心上，恐怕听见你的仆人咒诅你。</p>
+      </li>
+                        <li><span>7:22</span>
+        <p>因为你心里知道，自己也曾屡次咒诅别人。</p>
+      </li>
+                        <li><span>7:23</span>
+        <p>我曾用智慧试验这一切事，我说：要得智慧，智慧却离我远。</p>
+      </li>
+                        <li><span>7:24</span>
+        <p>万事之理，离我甚远，而且最深，谁能测透呢？</p>
+      </li>
+                        <li><span>7:25</span>
+        <p>我转念，一心要知道，要考察，要寻求智慧和万事的理由，又要知道邪恶为愚昧，愚昧为狂妄。</p>
+      </li>
+                        <li><span>7:26</span>
+        <p>我得知有等妇人，比死还苦；她的心是网罗，手是锁链。凡蒙  神喜悦的人，必能躲避她；有罪的人，却被她缠住了。</p>
+      </li>
+                        <li><span>7:27</span>
+        <p>-</p>
+      </li>
+                        <li><span>7:28</span>
+        <p>传道者说：“看哪，一千男子中，我找到一个正直人；但众女子中，没有找到一个。”我将这事一一比较，要寻求其理，我心仍要寻找，却未曾找到。</p>
+      </li>
+                        <li><span>7:29</span>
+        <p>我所找到的只有一件，就是  神造人原是正直，但他们寻出许多巧计。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共12首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>传道书(传)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>传道书(传)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>传道书(传)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>传道书(传)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>传道书(传)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>传道书(传)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>传道书(传)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>传道书(传)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>传道书(传)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>传道书(传)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>传道书(传)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>传道书(传)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-21-cid-6.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-21-cid-8.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

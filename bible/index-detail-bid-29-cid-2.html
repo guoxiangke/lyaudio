@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="29约珥书/29约珥书_02.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-29-cid-3.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">约珥书(珥) 第2章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>2:1</span>
+        <p>你们要在锡安吹角，在我圣山吹出大声。国中的居民都要发颤；因为耶和华的日子将到，已经临近。</p>
+      </li>
+                        <li><span>2:2</span>
+        <p>那日是黑暗、幽冥、密云、乌黑的日子，好像晨光铺满山岭。有一队蝗虫（原文作“民”）又大又强；从来没有这样的，以后直到万代也必没有。</p>
+      </li>
+                        <li><span>2:3</span>
+        <p>它们前面如火烧灭，后面如火焰烧尽；未到以前，地如伊甸园，过去以后，成了荒凉的旷野，没有一样能躲避它们的。</p>
+      </li>
+                        <li><span>2:4</span>
+        <p>它们的形状如马，奔跑如马兵。</p>
+      </li>
+                        <li><span>2:5</span>
+        <p>在山顶蹦跳的响声，如车辆的响声，又如火焰烧碎秸的响声，好像强盛的民摆阵预备打仗。</p>
+      </li>
+                        <li><span>2:6</span>
+        <p>它们一来，众民伤恸，脸都变色。</p>
+      </li>
+                        <li><span>2:7</span>
+        <p>它们如勇士奔跑，像战士爬城。各都步行，不乱队伍。</p>
+      </li>
+                        <li><span>2:8</span>
+        <p>彼此并不拥挤，向前各行其路，直闯兵器，不偏左右。</p>
+      </li>
+                        <li><span>2:9</span>
+        <p>它们蹦上城，蹿上墙，爬上房屋，进入窗户如同盗贼。</p>
+      </li>
+                        <li><span>2:10</span>
+        <p>它们一来，地震天动，日月昏暗，星宿无光。</p>
+      </li>
+                        <li><span>2:11</span>
+        <p>耶和华在他军旅前发声，他的队伍甚大；成就他命的是强盛者。因为耶和华的日子大而可畏，谁能当得起呢？</p>
+      </li>
+                                    <li><span>2:12</span>
+        <p>耶和华说：“虽然如此，你们应当禁食、哭泣、悲哀，一心归向我。”</p>
+      </li>
+                        <li><span>2:13</span>
+        <p>你们要撕裂心肠，不撕裂衣服，归向耶和华你们的  神；因为他有恩典，有怜悯，不轻易发怒，有丰盛的慈爱，并且后悔不降所说的灾。</p>
+      </li>
+                        <li><span>2:14</span>
+        <p>或者他转意后悔，留下余福，就是留下献给耶和华你们  神的素祭和奠祭，也未可知。</p>
+      </li>
+                        <li><span>2:15</span>
+        <p>你们要在锡安吹角，分定禁食的日子，宣告严肃会。</p>
+      </li>
+                        <li><span>2:16</span>
+        <p>聚集众民，使会众自洁；招聚老者，聚集孩童和吃奶的，使新郎出离洞房，新妇出离内室。</p>
+      </li>
+                        <li><span>2:17</span>
+        <p>侍奉耶和华的祭司，要在廊子和祭坛中间哭泣说：“耶和华啊，求你顾惜你的百姓，不要使你的产业受羞辱，列邦管辖他们。为何容列国的人说：‘他们的  神在哪里呢？’”</p>
+      </li>
+                                    <li><span>2:18</span>
+        <p>耶和华就为自己的地发热心，怜恤他的百姓。</p>
+      </li>
+                        <li><span>2:19</span>
+        <p>耶和华应允他的百姓说：“我必赐给你们五谷、新酒和油，使你们饱足；我也不再使你们受列国的羞辱，</p>
+      </li>
+                        <li><span>2:20</span>
+        <p>却要使北方来的军队远离你们，将他们赶到干旱荒废之地。前队赶入东海，后队赶入西海；因为他们所行的大恶（原文作“事”），臭气上升，腥味腾空。”</p>
+      </li>
+                        <li><span>2:21</span>
+        <p>“地土啊，不要惧怕，要欢喜快乐，因为耶和华行了大事。</p>
+      </li>
+                        <li><span>2:22</span>
+        <p>田野的走兽啊，不要惧怕，因为旷野的草发生，树木结果，无花果树、葡萄树也都效力。”</p>
+      </li>
+                        <li><span>2:23</span>
+        <p>“锡安的民哪，你们要快乐，为耶和华你们的  神欢喜，因他赐给你们合宜的秋雨，为你们降下甘霖，就是秋雨、春雨，和先前一样。”</p>
+      </li>
+                        <li><span>2:24</span>
+        <p>“禾场必满了麦子，酒醡与油醡必有新酒和油盈溢。</p>
+      </li>
+                        <li><span>2:25</span>
+        <p>我打发到你们中间的大军队，就是蝗虫、蝻子、蚂蚱、剪虫，那些年所吃的我要补还你们。”</p>
+      </li>
+                        <li><span>2:26</span>
+        <p>“你们必多吃而得饱足，就赞美为你们行奇妙事之耶和华你们  神的名。我的百姓必永远不至羞愧。</p>
+      </li>
+                        <li><span>2:27</span>
+        <p>你们必知道我是在以色列中间，又知道我是耶和华你们的  神，在我以外并无别神。我的百姓必永远不至羞愧。”</p>
+      </li>
+                                    <li><span>2:28</span>
+        <p>“以后，我要将我的灵浇灌凡有血气的。你们的儿女要说预言，你们的老年人要作异梦，少年人要见异像。</p>
+      </li>
+                        <li><span>2:29</span>
+        <p>在那些日子，我要将我的灵浇灌我的仆人和使女。”</p>
+      </li>
+                        <li><span>2:30</span>
+        <p>“在天上地下，我要显出奇事，有血、有火、有烟柱。</p>
+      </li>
+                        <li><span>2:31</span>
+        <p>日头要变为黑暗，月亮要变为血，这都在耶和华大而可畏的日子未到以前。</p>
+      </li>
+                        <li><span>2:32</span>
+        <p>到那时候，凡求告耶和华名的就必得救；因为照耶和华所说的，在锡安山耶路撒冷必有逃脱的人，在剩下的人中必有耶和华所召的。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共3首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-29-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>约珥书(珥)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-29-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>约珥书(珥)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-29-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>约珥书(珥)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-29-cid-1.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-29-cid-3.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="40马太福音/40马太福音_13.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-40-cid-14.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">马太福音(太) 第13章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>13:1</span>
+        <p>当那一天，耶稣从房子里出来，坐在海边。</p>
+      </li>
+                        <li><span>13:2</span>
+        <p>有许多人到他那里聚集，他只得上船坐下，众人都站在岸上。</p>
+      </li>
+                        <li><span>13:3</span>
+        <p>他用比喻对他们讲许多道理，说：“有一个撒种的出去撒种。</p>
+      </li>
+                        <li><span>13:4</span>
+        <p>撒的时候，有落在路旁的，飞鸟来吃尽了；</p>
+      </li>
+                        <li><span>13:5</span>
+        <p>有落在土浅石头地上的，土既不深，发苗最快，</p>
+      </li>
+                        <li><span>13:6</span>
+        <p>日头出来一晒，因为没有根，就枯干了；</p>
+      </li>
+                        <li><span>13:7</span>
+        <p>有落在荆棘里的，荆棘长起来，把它挤住了；</p>
+      </li>
+                        <li><span>13:8</span>
+        <p>又有落在好土里的，就结实，有一百倍的，有六十倍的，有三十倍的。</p>
+      </li>
+                        <li><span>13:9</span>
+        <p>有耳可听的，就应当听。”</p>
+      </li>
+                                    <li><span>13:10</span>
+        <p>门徒进前来，问耶稣说：“对众人讲话为什么用比喻呢？”</p>
+      </li>
+                        <li><span>13:11</span>
+        <p>耶稣回答说：“因为天国的奥秘，只叫你们知道，不叫他们知道。</p>
+      </li>
+                        <li><span>13:12</span>
+        <p>凡有的，还要加给他，叫他有余；凡没有的，连他所有的也要夺去。</p>
+      </li>
+                        <li><span>13:13</span>
+        <p>所以我用比喻对他们讲，是因他们看也看不见，听也听不见，也不明白。</p>
+      </li>
+                        <li><span>13:14</span>
+        <p>在他们身上，正应了以赛亚的预言，说：‘你们听是要听见，却不明白；看是要看见，却不晓得。</p>
+      </li>
+                        <li><span>13:15</span>
+        <p>因为这百姓油蒙了心，耳朵发沉，眼睛闭着；恐怕眼睛看见，耳朵听见，心里明白，回转过来，我就医治他们。’</p>
+      </li>
+                        <li><span>13:16</span>
+        <p>但你们的眼睛是有福的，因为看见了；你们的耳朵也是有福的，因为听见了。</p>
+      </li>
+                        <li><span>13:17</span>
+        <p>我实在告诉你们：从前有许多先知和义人要看你们所看的，却没有看见；要听你们所听的，却没有听见。”</p>
+      </li>
+                                    <li><span>13:18</span>
+        <p>“所以，你们当听这撒种的比喻。</p>
+      </li>
+                        <li><span>13:19</span>
+        <p>凡听见天国道理不明白的，那恶者就来，把所撒在他心里的夺了去，这就是撒在路旁的了；</p>
+      </li>
+                        <li><span>13:20</span>
+        <p>撒在石头地上的，就是人听了道，当下欢喜领受，</p>
+      </li>
+                        <li><span>13:21</span>
+        <p>只因心里没有根，不过是暂时的，及至为道遭了患难，或是受了逼迫，立刻就跌倒了；</p>
+      </li>
+                        <li><span>13:22</span>
+        <p>撒在荆棘里的，就是人听了道，后来有世上的思虑，钱财的迷惑，把道挤住了，不能结实；</p>
+      </li>
+                        <li><span>13:23</span>
+        <p>撒在好地上的，就是人听道明白了，后来结实，有一百倍的，有六十倍的，有三十倍的。”</p>
+      </li>
+                                    <li><span>13:24</span>
+        <p>耶稣又设个比喻对他们说：“天国好像人撒好种在田里，</p>
+      </li>
+                        <li><span>13:25</span>
+        <p>及至人睡觉的时候，有仇敌来，将稗子撒在麦子里就走了。</p>
+      </li>
+                        <li><span>13:26</span>
+        <p>到长苗吐穗的时候，稗子也显出来。</p>
+      </li>
+                        <li><span>13:27</span>
+        <p>田主的仆人来告诉他说：‘主啊，你不是撒好种在田里吗？从哪里来的稗子呢？’</p>
+      </li>
+                        <li><span>13:28</span>
+        <p>主人说：‘这是仇敌作的。’仆人说：‘你要我们去薅出来吗？’</p>
+      </li>
+                        <li><span>13:29</span>
+        <p>主人说：‘不必，恐怕薅稗子，连麦子也拔出来。</p>
+      </li>
+                        <li><span>13:30</span>
+        <p>容这两样一齐长，等着收割。当收割的时候，我要对收割的人说：先将稗子薅出来，捆成捆，留着烧，惟有麦子要收在仓里。’”</p>
+      </li>
+                                    <li><span>13:31</span>
+        <p>他又设个比喻对他们说：“天国好像一粒芥菜种，有人拿去种在田里。</p>
+      </li>
+                        <li><span>13:32</span>
+        <p>这原是百种里最小的，等到长起来，却比各样的菜都大，且成了树，天上的飞鸟来宿在它的枝上。”</p>
+      </li>
+                                    <li><span>13:33</span>
+        <p>他又对他们讲个比喻说：“天国好像面酵，有妇人拿来，藏在三斗面里，直等全团都发起来。”</p>
+      </li>
+                                    <li><span>13:34</span>
+        <p>这都是耶稣用比喻对众人说的话；若不用比喻，就不对他们说什么。</p>
+      </li>
+                        <li><span>13:35</span>
+        <p>这是要应验先知的话，说：“我要开口用比喻，把创世以来所隐藏的事发明出来。”</p>
+      </li>
+                                    <li><span>13:36</span>
+        <p>当下耶稣离开众人，进了房子。他的门徒进前来，说：“请把田间稗子的比喻讲给我们听。”</p>
+      </li>
+                        <li><span>13:37</span>
+        <p>他回答说：“那撒好种的就是人子，</p>
+      </li>
+                        <li><span>13:38</span>
+        <p>田地就是世界，好种就是天国之子，稗子就是那恶者之子，</p>
+      </li>
+                        <li><span>13:39</span>
+        <p>撒稗子的仇敌就是魔鬼，收割的时候就是世界的末了，收割的人就是天使。</p>
+      </li>
+                        <li><span>13:40</span>
+        <p>将稗子薅出来用火焚烧，世界的末了也要如此。</p>
+      </li>
+                        <li><span>13:41</span>
+        <p>人子要差遣使者，把一切叫人跌倒的和作恶的，从他国里挑出来，</p>
+      </li>
+                        <li><span>13:42</span>
+        <p>丢在火炉里，在那里必要哀哭切齿了。</p>
+      </li>
+                        <li><span>13:43</span>
+        <p>那时，义人在他们父的国里，要发出光来，像太阳一样。有耳可听的，就应当听。”</p>
+      </li>
+                                    <li><span>13:44</span>
+        <p>“天国好像宝贝藏在地里，人遇见了就把它藏起来，欢欢喜喜地去变卖一切所有的，买这块地。”</p>
+      </li>
+                                    <li><span>13:45</span>
+        <p>“天国又好像买卖人寻找好珠子，</p>
+      </li>
+                        <li><span>13:46</span>
+        <p>遇见一颗重价的珠子，就去变卖他一切所有的，买了这颗珠子。”</p>
+      </li>
+                                    <li><span>13:47</span>
+        <p>“天国又好像网撒在海里，聚拢各样水族。</p>
+      </li>
+                        <li><span>13:48</span>
+        <p>网既满了，人就拉上岸来；坐下，拣好的收在器具里，将不好的丢弃了。</p>
+      </li>
+                        <li><span>13:49</span>
+        <p>世界的末了也要这样。天使要出来，从义人中把恶人分别出来，</p>
+      </li>
+                        <li><span>13:50</span>
+        <p>丢在火炉里，在那里必要哀哭切齿了。”</p>
+      </li>
+                                    <li><span>13:51</span>
+        <p>耶稣说：“这一切的话你们都明白了吗？”他们说：“我们明白了。”</p>
+      </li>
+                        <li><span>13:52</span>
+        <p>他说：“凡文士受教作天国的门徒，就像一个家主从他库里拿出新旧的东西来。”</p>
+      </li>
+                                    <li><span>13:53</span>
+        <p>耶稣说完了这些比喻，就离开那里，</p>
+      </li>
+                        <li><span>13:54</span>
+        <p>来到自己的家乡，在会堂里教训人，甚至他们都希奇，说：“这人从哪里有这等智慧和异能呢？</p>
+      </li>
+                        <li><span>13:55</span>
+        <p>这不是木匠的儿子吗？他母亲不是叫马利亚吗？他弟兄们不是叫雅各、约西（有古卷作“约瑟”）、西门、犹大吗？</p>
+      </li>
+                        <li><span>13:56</span>
+        <p>他妹妹们不是都在我们这里吗？这人从哪里有这一切的事呢？”</p>
+      </li>
+                        <li><span>13:57</span>
+        <p>他们就厌弃他（“厌弃他”原文作“因他跌倒”）。耶稣对他们说：“大凡先知，除了本地本家之外，没有不被人尊敬的。”</p>
+      </li>
+                        <li><span>13:58</span>
+        <p>耶稣因为他们不信，就在那里不多行异能了。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共28首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>马太福音(太)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>马太福音(太)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>马太福音(太)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>马太福音(太)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>马太福音(太)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>马太福音(太)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>马太福音(太)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>马太福音(太)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>马太福音(太)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>马太福音(太)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>马太福音(太)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>马太福音(太)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>马太福音(太)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>马太福音(太)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>马太福音(太)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>马太福音(太)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>马太福音(太)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>马太福音(太)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>马太福音(太)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>马太福音(太)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>马太福音(太)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>马太福音(太)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>马太福音(太)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>马太福音(太)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>马太福音(太)第25章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>马太福音(太)第26章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>马太福音(太)第27章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>马太福音(太)第28章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-40-cid-12.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-40-cid-14.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

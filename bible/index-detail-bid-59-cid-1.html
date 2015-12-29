@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="59雅各书/59雅各书_01.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-59-cid-2.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">雅各书(雅) 第1章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>1:1</span>
+        <p>作  神和主耶稣基督仆人的雅各，请散住十二个支派之人的安。</p>
+      </li>
+                                    <li><span>1:2</span>
+        <p>我的弟兄们，你们落在百般试炼中，都要以为大喜乐；</p>
+      </li>
+                        <li><span>1:3</span>
+        <p>因为知道你们的信心经过试验，就生忍耐。</p>
+      </li>
+                        <li><span>1:4</span>
+        <p>但忍耐也当成功，使你们成全完备，毫无缺欠。</p>
+      </li>
+                        <li><span>1:5</span>
+        <p>你们中间若有缺少智慧的，应当求那厚赐与众人、也不斥责人的  神，主就必赐给他。</p>
+      </li>
+                        <li><span>1:6</span>
+        <p>只要凭着信心求，一点不疑惑；因为那疑惑的人，就像海中的波浪，被风吹动翻腾。</p>
+      </li>
+                        <li><span>1:7</span>
+        <p>这样的人不要想从主那里得什么。</p>
+      </li>
+                        <li><span>1:8</span>
+        <p>心怀二意的人，在他一切所行的路上都没有定见。</p>
+      </li>
+                                    <li><span>1:9</span>
+        <p>卑微的弟兄升高，就该喜乐；</p>
+      </li>
+                        <li><span>1:10</span>
+        <p>富足的降卑，也该如此。因为他必要过去，如同草上的花一样，</p>
+      </li>
+                        <li><span>1:11</span>
+        <p>太阳出来，热风刮起，草就枯干，花也凋谢，美容就消没了；那富足的人在他所行的事上，也要这样衰残。</p>
+      </li>
+                                    <li><span>1:12</span>
+        <p>忍受试探的人是有福的，因为他经过试验以后，必得生命的冠冕，这是主应许给那些爱他之人的。</p>
+      </li>
+                        <li><span>1:13</span>
+        <p>人被试探，不可说：“我是被  神试探”；因为  神不能被恶试探，他也不试探人。</p>
+      </li>
+                        <li><span>1:14</span>
+        <p>但各人被试探，乃是被自己的私欲牵引、诱惑的。</p>
+      </li>
+                        <li><span>1:15</span>
+        <p>私欲既怀了胎，就生出罪来；罪既长成，就生出死来。</p>
+      </li>
+                        <li><span>1:16</span>
+        <p>我亲爱的弟兄们，不要看错了。</p>
+      </li>
+                        <li><span>1:17</span>
+        <p>各样美善的恩赐和各样全备的赏赐都是从上头来的，从众光之父那里降下来的，在他并没有改变，也没有转动的影儿。</p>
+      </li>
+                        <li><span>1:18</span>
+        <p>他按自己的旨意用真道生了我们，叫我们在他所造的万物中，好像初熟的果子。</p>
+      </li>
+                                    <li><span>1:19</span>
+        <p>我亲爱的弟兄们，这是你们所知道的。但你们各人要快快地听，慢慢地说，慢慢地动怒，</p>
+      </li>
+                        <li><span>1:20</span>
+        <p>因为人的怒气并不成就  神的义。</p>
+      </li>
+                        <li><span>1:21</span>
+        <p>所以，你们要脱去一切的污秽和盈余的邪恶，存温柔的心领受那所栽种的道，就是能救你们灵魂的道。</p>
+      </li>
+                        <li><span>1:22</span>
+        <p>只是你们要行道，不要单单听道，自己欺哄自己。</p>
+      </li>
+                        <li><span>1:23</span>
+        <p>因为听道而不行道的，就像人对着镜子看自己本来的面目，</p>
+      </li>
+                        <li><span>1:24</span>
+        <p>看见，走后，随即忘了他的相貌如何。</p>
+      </li>
+                        <li><span>1:25</span>
+        <p>惟有详细察看那全备、使人自由之律法的，并且时常如此，这人既不是听了就忘，乃是实在行出来，就在他所行的事上必然得福。</p>
+      </li>
+                        <li><span>1:26</span>
+        <p>若有人自以为虔诚，却不勒住他的舌头，反欺哄自己的心，这人的虔诚是虚的。</p>
+      </li>
+                        <li><span>1:27</span>
+        <p>在  神我们的父面前，那清洁没有玷污的虔诚，就是看顾在患难中的孤儿寡妇，并且保守自己不沾染世俗。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共5首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-59-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>雅各书(雅)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-59-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>雅各书(雅)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-59-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>雅各书(雅)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-59-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>雅各书(雅)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-59-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>雅各书(雅)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="javascript:alertText('已到本章第一首!');"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-59-cid-2.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

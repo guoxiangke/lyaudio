@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="26以西结书/26以西结书_14.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-26-cid-15.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">以西结书(结) 第14章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>14:1</span>
+        <p>有几个以色列长老到我这里来，坐在我面前。</p>
+      </li>
+                        <li><span>14:2</span>
+        <p>耶和华的话就临到我说：</p>
+      </li>
+                        <li><span>14:3</span>
+        <p>“人子啊，这些人已将他们的假神接到心里，把陷于罪的绊脚石放在面前，我岂能丝毫被他们求问吗？</p>
+      </li>
+                        <li><span>14:4</span>
+        <p>所以你要告诉他们，主耶和华如此说：以色列家的人中，凡将他的假神接到心里，把陷于罪的绊脚石放在面前，又就了先知来的，我耶和华在他所求的事上，必按他众多的假神回答他（或作“必按他拜许多假神的罪报应他”），</p>
+      </li>
+                        <li><span>14:5</span>
+        <p>好在以色列家的心事上捉住他们，因为他们都藉着假神与我生疏。”</p>
+      </li>
+                        <li><span>14:6</span>
+        <p>“所以你要告诉以色列家说，主耶和华如此说：回头吧！离开你们的偶像，转脸莫从你们一切可憎的事。</p>
+      </li>
+                        <li><span>14:7</span>
+        <p>因为以色列家的人，或在以色列中寄居的外人，凡与我隔绝，将他的假神接到心里，把陷于罪的绊脚石放在面前，又就了先知来要为自己的事求问我的，我耶和华必亲自回答他。</p>
+      </li>
+                        <li><span>14:8</span>
+        <p>我必向那人变脸，使他作了警戒、笑谈、令人惊骇，并且我要将他从我民中剪除。你们就知道我是耶和华。</p>
+      </li>
+                        <li><span>14:9</span>
+        <p>先知若被迷惑说一句预言，是我耶和华任那先知受迷惑，我也必向他伸手，将他从我民以色列中除灭。</p>
+      </li>
+                        <li><span>14:10</span>
+        <p>他们必担当自己的罪孽，先知的罪孽和求问之人的罪孽都是一样，</p>
+      </li>
+                        <li><span>14:11</span>
+        <p>好使以色列家不再走迷离开我，不再因各样的罪过玷污自己，只要作我的子民，我作他们的  神。这是主耶和华说的。”</p>
+      </li>
+                                    <li><span>14:12</span>
+        <p>耶和华的话临到我说：</p>
+      </li>
+                        <li><span>14:13</span>
+        <p>“人子啊，若有一国犯罪干犯我，我也向他伸手折断他们的杖，就是断绝他们的粮，使饥荒临到那地，将人与牲畜从其中剪除。</p>
+      </li>
+                        <li><span>14:14</span>
+        <p>其中虽有挪亚、但以理、约伯这三人，他们只能因他们的义救自己的性命。这是主耶和华说的。</p>
+      </li>
+                        <li><span>14:15</span>
+        <p>我若使恶兽经过，糟践那地，使地荒凉，以致因这些兽，人都不得经过，</p>
+      </li>
+                        <li><span>14:16</span>
+        <p>虽有这三人在其中，主耶和华说：我指着我的永生起誓，他们连儿带女都不能得救，只能自己得救，那地仍然荒凉。</p>
+      </li>
+                        <li><span>14:17</span>
+        <p>或者我使刀剑临到那地，说：‘刀剑哪，要经过那地’，以致我将人与牲畜从其中剪除。</p>
+      </li>
+                        <li><span>14:18</span>
+        <p>虽有这三人在其中，主耶和华说：我指着我的永生起誓，他们连儿带女都不能得救，只能自己得救。</p>
+      </li>
+                        <li><span>14:19</span>
+        <p>或者我叫瘟疫流行那地，使我灭命（原文作“带血”）的忿怒倾在其上，好将人与牲畜从其中剪除，</p>
+      </li>
+                        <li><span>14:20</span>
+        <p>虽有挪亚、但以理、约伯在其中，主耶和华说：我指着我的永生起誓，他们连儿带女都不能救，只能因他们的义救自己的性命。”</p>
+      </li>
+                        <li><span>14:21</span>
+        <p>主耶和华如此说：“我将这四样大灾，就是刀剑、饥荒、恶兽、瘟疫降在耶路撒冷，将人与牲畜从其中剪除，岂不更重吗？</p>
+      </li>
+                        <li><span>14:22</span>
+        <p>然而其中必有剩下的人，他们连儿带女必带到你们这里来，你们看见他们所行所为的，要因我降给耶路撒冷的一切灾祸，便得了安慰。</p>
+      </li>
+                        <li><span>14:23</span>
+        <p>你们看见他们所行所为的，得了安慰，就知道我在耶路撒冷中所行的并非无故。这是主耶和华说的。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共48首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>以西结书(结)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>以西结书(结)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>以西结书(结)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>以西结书(结)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>以西结书(结)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>以西结书(结)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>以西结书(结)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>以西结书(结)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>以西结书(结)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>以西结书(结)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>以西结书(结)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>以西结书(结)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>以西结书(结)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>以西结书(结)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>以西结书(结)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>以西结书(结)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>以西结书(结)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>以西结书(结)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>以西结书(结)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>以西结书(结)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>以西结书(结)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>以西结书(结)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>以西结书(结)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>以西结书(结)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>以西结书(结)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>以西结书(结)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>以西结书(结)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>以西结书(结)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>以西结书(结)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>以西结书(结)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>以西结书(结)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>以西结书(结)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>以西结书(结)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>以西结书(结)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-35.html"><span class="ppNum">35</span>
+        <p><strong>以西结书(结)第35章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-36.html"><span class="ppNum">36</span>
+        <p><strong>以西结书(结)第36章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-37.html"><span class="ppNum">37</span>
+        <p><strong>以西结书(结)第37章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-38.html"><span class="ppNum">38</span>
+        <p><strong>以西结书(结)第38章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-39.html"><span class="ppNum">39</span>
+        <p><strong>以西结书(结)第39章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-40.html"><span class="ppNum">40</span>
+        <p><strong>以西结书(结)第40章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-41.html"><span class="ppNum">41</span>
+        <p><strong>以西结书(结)第41章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-42.html"><span class="ppNum">42</span>
+        <p><strong>以西结书(结)第42章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-43.html"><span class="ppNum">43</span>
+        <p><strong>以西结书(结)第43章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-44.html"><span class="ppNum">44</span>
+        <p><strong>以西结书(结)第44章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-45.html"><span class="ppNum">45</span>
+        <p><strong>以西结书(结)第45章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-46.html"><span class="ppNum">46</span>
+        <p><strong>以西结书(结)第46章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-47.html"><span class="ppNum">47</span>
+        <p><strong>以西结书(结)第47章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-26-cid-48.html"><span class="ppNum">48</span>
+        <p><strong>以西结书(结)第48章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-26-cid-13.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-26-cid-15.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

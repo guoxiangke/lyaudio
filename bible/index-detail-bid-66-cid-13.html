@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="66启示录/66启示录_13.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-66-cid-14.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">启示录(启) 第13章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>13:1</span>
+        <p>我又看见一个兽从海中上来，有十角七头，在十角上戴着十个冠冕，七头上有亵渎的名号。</p>
+      </li>
+                        <li><span>13:2</span>
+        <p>我所看见的兽，形状像豹，脚像熊的脚，口像狮子的口。那龙将自己的能力、座位和大权柄都给了它。</p>
+      </li>
+                        <li><span>13:3</span>
+        <p>我看见兽的七头中，有一个似乎受了死伤，那死伤却医好了。全地的人都希奇跟从那兽，</p>
+      </li>
+                        <li><span>13:4</span>
+        <p>又拜那龙，因为它将自己的权柄给了兽，也拜兽说：“谁能比这兽，谁能与它交战呢？”</p>
+      </li>
+                        <li><span>13:5</span>
+        <p>又赐给它说夸大亵渎话的口，又有权柄赐给它，可以任意而行四十二个月。</p>
+      </li>
+                        <li><span>13:6</span>
+        <p>兽就开口向  神说亵渎的话，亵渎  神的名并他的帐幕，以及那些住在天上的。</p>
+      </li>
+                        <li><span>13:7</span>
+        <p>又任凭它与圣徒争战，并且得胜。也把权柄赐给它，制伏各族、各民、各方、各国。</p>
+      </li>
+                        <li><span>13:8</span>
+        <p>凡住在地上、名字从创世以来没有记在被杀之羔羊生命册上的人，都要拜它。</p>
+      </li>
+                        <li><span>13:9</span>
+        <p>凡有耳的，就应当听。</p>
+      </li>
+                        <li><span>13:10</span>
+        <p>掳掠人的，必被掳掠；用刀杀人的，必被刀杀。圣徒的忍耐和信心就是在此。</p>
+      </li>
+                        <li><span>13:11</span>
+        <p>我又看见另有一个兽从地中上来，有两角如同羊羔，说话好像龙。</p>
+      </li>
+                        <li><span>13:12</span>
+        <p>它在头一个兽面前，施行头一个兽所有的权柄，并且叫地和住在地上的人拜那死伤医好的头一个兽。</p>
+      </li>
+                        <li><span>13:13</span>
+        <p>又行大奇事，甚至在人面前，叫火从天降在地上。</p>
+      </li>
+                        <li><span>13:14</span>
+        <p>它因赐给它权柄在兽面前能行奇事，就迷惑住在地上的人，说：“要给那受刀伤还活着的兽作个像。”</p>
+      </li>
+                        <li><span>13:15</span>
+        <p>又有权柄赐给它，叫兽像有生气，并且能说话，又叫所有不拜兽像的人都被杀害。</p>
+      </li>
+                        <li><span>13:16</span>
+        <p>它又叫众人，无论大小贫富，自主的、为奴的，都在右手上或是在额上受一个印记。</p>
+      </li>
+                        <li><span>13:17</span>
+        <p>除了那受印记、有了兽名或有兽名数目的，都不得作买卖。</p>
+      </li>
+                        <li><span>13:18</span>
+        <p>在这里有智慧。凡有聪明的，可以算计兽的数目，因为这是人的数目，它的数目是六百六十六。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共22首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>启示录(启)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>启示录(启)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>启示录(启)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>启示录(启)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>启示录(启)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>启示录(启)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>启示录(启)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>启示录(启)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>启示录(启)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>启示录(启)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>启示录(启)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>启示录(启)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>启示录(启)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>启示录(启)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>启示录(启)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>启示录(启)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>启示录(启)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>启示录(启)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>启示录(启)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>启示录(启)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>启示录(启)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>启示录(启)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-66-cid-12.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-66-cid-14.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

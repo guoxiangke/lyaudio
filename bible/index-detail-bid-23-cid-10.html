@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="23以赛亚书/23以赛亚书_10.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-23-cid-11.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">以赛亚书(赛) 第10章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                  <li><span>10:1</span>
+        <p>祸哉！那些设立不义之律例的和记录奸诈之判语的，</p>
+      </li>
+                        <li><span>10:2</span>
+        <p>为要屈枉穷乏人，夺去我民中困苦人的理，以寡妇当作掳物，以孤儿当作掠物。</p>
+      </li>
+                        <li><span>10:3</span>
+        <p>到降罚的日子，有灾祸从远方临到。那时，你们怎样行呢？你们向谁逃奔求救呢？你们的荣耀（或作“财宝”）存留何处呢？</p>
+      </li>
+                        <li><span>10:4</span>
+        <p>他们只得屈身在被掳的人以下，仆倒在被杀的人以下。虽然如此，耶和华的怒气还未转消，他的手仍伸不缩。</p>
+      </li>
+                                    <li><span>10:5</span>
+        <p>“亚述是我怒气的棍，手中拿我恼恨的杖。</p>
+      </li>
+                        <li><span>10:6</span>
+        <p>我要打发他攻击亵渎的国民，吩咐他攻击我所恼怒的百姓，抢财为掳物，夺货为掠物，将他们践踏，像街上的泥土一样。</p>
+      </li>
+                        <li><span>10:7</span>
+        <p>然而他不是这样的意思，他心也不这样打算。他心里倒想毁灭、剪除不少的国。</p>
+      </li>
+                        <li><span>10:8</span>
+        <p>他说：“我的臣仆岂不都是王吗？</p>
+      </li>
+                        <li><span>10:9</span>
+        <p>迦勒挪岂不像迦基米施吗？哈玛岂不像亚珥拔吗？撒玛利亚岂不像大马士革吗？</p>
+      </li>
+                        <li><span>10:10</span>
+        <p>我手已经购到有偶像的国，这些国雕刻的偶像过于耶路撒冷和撒玛利亚的偶像。</p>
+      </li>
+                        <li><span>10:11</span>
+        <p>我怎样待撒玛利亚和其中的偶像，岂不照样待耶路撒冷和其中的偶像吗？”</p>
+      </li>
+                        <li><span>10:12</span>
+        <p>主在锡安山和耶路撒冷成就他一切工作的时候，主说：“我必罚亚述王自大的心和他高傲眼目的荣耀。”</p>
+      </li>
+                        <li><span>10:13</span>
+        <p>因为他说：“我所成就的事，是靠我手的能力和我的智慧，我本有聪明。我挪移列国的地界，抢夺他们所积蓄的财宝，并且我像勇士，使坐宝座的降为卑。</p>
+      </li>
+                        <li><span>10:14</span>
+        <p>我的手购到列国的财宝，好像人购到鸟窝；我也得了全地，好像人拾起所弃的雀蛋。没有动翅膀的，没有张嘴的，也没有鸣叫的。”</p>
+      </li>
+                        <li><span>10:15</span>
+        <p>斧岂可向用斧砍木的自夸呢？锯岂可向用锯的自大呢？好比棍抡起那举棍的，好比杖举起那非木的人。</p>
+      </li>
+                        <li><span>10:16</span>
+        <p>因此，主万军之耶和华必使亚述王的肥壮人变为瘦弱，在他的荣华之下必有火着起，如同焚烧一样。</p>
+      </li>
+                        <li><span>10:17</span>
+        <p>以色列的光必如火，他的圣者必如火焰。在一日之间将亚述王的荆棘和蒺藜焚烧净尽，</p>
+      </li>
+                        <li><span>10:18</span>
+        <p>又将他树林和肥田的荣耀全然烧尽，好像拿军旗的昏过去一样。</p>
+      </li>
+                        <li><span>10:19</span>
+        <p>他林中剩下的树必稀少，就是孩子也能写其数。</p>
+      </li>
+                                    <li><span>10:20</span>
+        <p>到那日，以色列所剩下的和雅各家所逃脱的，不再倚靠那击打他们的，却要诚实倚靠耶和华以色列的圣者。</p>
+      </li>
+                        <li><span>10:21</span>
+        <p>所剩下的，就是雅各家所剩下的，必归回全能的  神。</p>
+      </li>
+                        <li><span>10:22</span>
+        <p>以色列啊，你的百姓虽多如海沙，惟有剩下的归回。原来灭绝的事已定，必有公义施行，如水涨溢。</p>
+      </li>
+                        <li><span>10:23</span>
+        <p>因为主万军之耶和华在全地之中，必成就所定规的结局。</p>
+      </li>
+                                    <li><span>10:24</span>
+        <p>所以主万军之耶和华如此说：“住锡安我的百姓啊，亚述王虽然用棍击打你，又照埃及的样子举杖攻击你，你却不要怕他。</p>
+      </li>
+                        <li><span>10:25</span>
+        <p>因为还有一点点时候，向你们发的忿恨就要完毕，我的怒气要向他发作，使他灭亡。</p>
+      </li>
+                        <li><span>10:26</span>
+        <p>万军之耶和华要兴起鞭来攻击他，好像在俄立磐石那里杀戮米甸人一样。耶和华的杖要向海伸出，把杖举起，像在埃及一样。</p>
+      </li>
+                        <li><span>10:27</span>
+        <p>到那日，亚述王的重担必离开你的肩头，他的轭必离开你的颈项，那轭也必因肥壮的缘故撑断（或作“因膏油的缘故毁坏”）。”</p>
+      </li>
+                                    <li><span>10:28</span>
+        <p>亚述王来到亚叶，经过米矶仑，在密抹安放辎重。</p>
+      </li>
+                        <li><span>10:29</span>
+        <p>他们过了隘口，在迦巴住宿。拉玛人战兢，扫罗的基比亚人逃跑。</p>
+      </li>
+                        <li><span>10:30</span>
+        <p>迦琳的居民哪（“居民”原文作“女子”），要高声呼喊！莱煞人哪，须听。哀哉！困苦的亚拿突啊，</p>
+      </li>
+                        <li><span>10:31</span>
+        <p>玛得米那人躲避，基柄的居民逃遁。</p>
+      </li>
+                        <li><span>10:32</span>
+        <p>当那日，亚述王要在挪伯歇兵，向锡安女子的山，就是耶路撒冷的山，抡手攻他。</p>
+      </li>
+                        <li><span>10:33</span>
+        <p>看哪，主万军之耶和华以惊吓削去树枝，长高的必被砍下，高大的必被伐倒。</p>
+      </li>
+                        <li><span>10:34</span>
+        <p>稠密的树林，他要用铁器砍下；黎巴嫩的树木必被大能者伐倒。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共66首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>以赛亚书(赛)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>以赛亚书(赛)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>以赛亚书(赛)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>以赛亚书(赛)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>以赛亚书(赛)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>以赛亚书(赛)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>以赛亚书(赛)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>以赛亚书(赛)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>以赛亚书(赛)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>以赛亚书(赛)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>以赛亚书(赛)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>以赛亚书(赛)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>以赛亚书(赛)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>以赛亚书(赛)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>以赛亚书(赛)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>以赛亚书(赛)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>以赛亚书(赛)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>以赛亚书(赛)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>以赛亚书(赛)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>以赛亚书(赛)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>以赛亚书(赛)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>以赛亚书(赛)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>以赛亚书(赛)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>以赛亚书(赛)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>以赛亚书(赛)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>以赛亚书(赛)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>以赛亚书(赛)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>以赛亚书(赛)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>以赛亚书(赛)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>以赛亚书(赛)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>以赛亚书(赛)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>以赛亚书(赛)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>以赛亚书(赛)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>以赛亚书(赛)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-35.html"><span class="ppNum">35</span>
+        <p><strong>以赛亚书(赛)第35章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-36.html"><span class="ppNum">36</span>
+        <p><strong>以赛亚书(赛)第36章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-37.html"><span class="ppNum">37</span>
+        <p><strong>以赛亚书(赛)第37章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-38.html"><span class="ppNum">38</span>
+        <p><strong>以赛亚书(赛)第38章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-39.html"><span class="ppNum">39</span>
+        <p><strong>以赛亚书(赛)第39章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-40.html"><span class="ppNum">40</span>
+        <p><strong>以赛亚书(赛)第40章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-41.html"><span class="ppNum">41</span>
+        <p><strong>以赛亚书(赛)第41章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-42.html"><span class="ppNum">42</span>
+        <p><strong>以赛亚书(赛)第42章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-43.html"><span class="ppNum">43</span>
+        <p><strong>以赛亚书(赛)第43章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-44.html"><span class="ppNum">44</span>
+        <p><strong>以赛亚书(赛)第44章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-45.html"><span class="ppNum">45</span>
+        <p><strong>以赛亚书(赛)第45章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-46.html"><span class="ppNum">46</span>
+        <p><strong>以赛亚书(赛)第46章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-47.html"><span class="ppNum">47</span>
+        <p><strong>以赛亚书(赛)第47章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-48.html"><span class="ppNum">48</span>
+        <p><strong>以赛亚书(赛)第48章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-49.html"><span class="ppNum">49</span>
+        <p><strong>以赛亚书(赛)第49章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-50.html"><span class="ppNum">50</span>
+        <p><strong>以赛亚书(赛)第50章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-51.html"><span class="ppNum">51</span>
+        <p><strong>以赛亚书(赛)第51章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-52.html"><span class="ppNum">52</span>
+        <p><strong>以赛亚书(赛)第52章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-53.html"><span class="ppNum">53</span>
+        <p><strong>以赛亚书(赛)第53章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-54.html"><span class="ppNum">54</span>
+        <p><strong>以赛亚书(赛)第54章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-55.html"><span class="ppNum">55</span>
+        <p><strong>以赛亚书(赛)第55章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-56.html"><span class="ppNum">56</span>
+        <p><strong>以赛亚书(赛)第56章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-57.html"><span class="ppNum">57</span>
+        <p><strong>以赛亚书(赛)第57章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-58.html"><span class="ppNum">58</span>
+        <p><strong>以赛亚书(赛)第58章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-59.html"><span class="ppNum">59</span>
+        <p><strong>以赛亚书(赛)第59章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-60.html"><span class="ppNum">60</span>
+        <p><strong>以赛亚书(赛)第60章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-61.html"><span class="ppNum">61</span>
+        <p><strong>以赛亚书(赛)第61章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-62.html"><span class="ppNum">62</span>
+        <p><strong>以赛亚书(赛)第62章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-63.html"><span class="ppNum">63</span>
+        <p><strong>以赛亚书(赛)第63章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-64.html"><span class="ppNum">64</span>
+        <p><strong>以赛亚书(赛)第64章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-65.html"><span class="ppNum">65</span>
+        <p><strong>以赛亚书(赛)第65章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-23-cid-66.html"><span class="ppNum">66</span>
+        <p><strong>以赛亚书(赛)第66章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-23-cid-9.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-23-cid-11.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

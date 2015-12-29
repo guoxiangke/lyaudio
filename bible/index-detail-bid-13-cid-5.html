@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="13历代志上/13历代志上_05.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-13-cid-6.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">历代志上(代上) 第5章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>5:1</span>
+        <p>以色列的长子原是流便，因他污秽了父亲的床，他长子的名分就归了约瑟；只是按家谱他不算长子。</p>
+      </li>
+                        <li><span>5:2</span>
+        <p>犹大胜过一切弟兄，君王也是从他而出，长子的名分却归约瑟。</p>
+      </li>
+                        <li><span>5:3</span>
+        <p>以色列长子流便的儿子是哈诺、法路、希斯伦、迦米；</p>
+      </li>
+                        <li><span>5:4</span>
+        <p>约珥的儿子是示玛雅；示玛雅的儿子是歌革；歌革的儿子是示每；</p>
+      </li>
+                        <li><span>5:5</span>
+        <p>示每的儿子是米迦；米迦的儿子是利亚雅；利亚雅的儿子是巴力；</p>
+      </li>
+                        <li><span>5:6</span>
+        <p>巴力的儿子是备拉。这备拉作流便支派的首领，被亚述王提革拉毗尼色掳去。</p>
+      </li>
+                        <li><span>5:7</span>
+        <p>他的弟兄照着宗族、按着家谱作族长的是耶利、撒迦利雅、比拉。</p>
+      </li>
+                        <li><span>5:8</span>
+        <p>比拉是亚撒的儿子；亚撒是示玛的儿子；示玛是约珥的儿子。约珥所住的地方是从亚罗珥直到尼波和巴力免，</p>
+      </li>
+                        <li><span>5:9</span>
+        <p>又向东延到幼发拉底河这边的旷野，因为他们在基列地牲畜增多。</p>
+      </li>
+                        <li><span>5:10</span>
+        <p>扫罗年间，他们与夏甲人争战，夏甲人倒在他们手下，他们就在基列东边的全地，住在夏甲人的帐棚里。</p>
+      </li>
+                                    <li><span>5:11</span>
+        <p>迦得的子孙在流便对面，住在巴珊地，延到撒迦。</p>
+      </li>
+                        <li><span>5:12</span>
+        <p>他们中间有作族长的约珥，有作副族长的沙番，还有雅乃和住在巴珊的沙法。</p>
+      </li>
+                        <li><span>5:13</span>
+        <p>他们族弟兄是米迦勒、米书兰、示巴、约赖、雅干、细亚、希伯，共七人；</p>
+      </li>
+                        <li><span>5:14</span>
+        <p>这都是亚比孩的儿子。亚比孩是户利的儿子；户利是耶罗亚的儿子；耶罗亚是基列的儿子；基列是米迦勒的儿子；米迦勒是耶示筛的儿子；耶示筛是耶哈多的儿子；耶哈多是布斯的儿子。</p>
+      </li>
+                        <li><span>5:15</span>
+        <p>还有古尼的孙子、押比叠的儿子亚希。这都是作族长的。</p>
+      </li>
+                        <li><span>5:16</span>
+        <p>他们住在基列与巴珊和巴珊的乡村，并沙仑的郊野，直到四围的交界。</p>
+      </li>
+                        <li><span>5:17</span>
+        <p>这些人在犹大王约坦并在以色列王耶罗波安年间，都载入家谱。</p>
+      </li>
+                                    <li><span>5:18</span>
+        <p>流便人、迦得人和玛拿西半支派的人，能拿盾牌和刀剑、拉弓射箭、出征善战的勇士，共有四万四千七百六十名。</p>
+      </li>
+                        <li><span>5:19</span>
+        <p>他们与夏甲人、伊突人、拿非施人、挪答人争战。</p>
+      </li>
+                        <li><span>5:20</span>
+        <p>他们得了  神的帮助，夏甲人和跟随夏甲的人都交在他们手中，因为他们在阵上呼求  神，倚赖  神，  神就应允他们。</p>
+      </li>
+                        <li><span>5:21</span>
+        <p>他们掳掠了夏甲人的牲畜，有骆驼五万、羊二十五万、驴二千，又有人十万。</p>
+      </li>
+                        <li><span>5:22</span>
+        <p>敌人被杀仆倒的甚多，因为这争战是出乎  神。他们就住在敌人的地上，直到被掳的时候。</p>
+      </li>
+                                    <li><span>5:23</span>
+        <p>玛拿西半支派的人住在那地，从巴珊延到巴力黑们、示尼珥与黑门山。</p>
+      </li>
+                        <li><span>5:24</span>
+        <p>他们的族长是以弗、以示、以列、亚斯列、耶利米、何达威雅、雅叠，都是大能的勇士，是有名的人，也是作族长的。</p>
+      </li>
+                                    <li><span>5:25</span>
+        <p>他们得罪了他们列祖的  神，随从那地之民的神行邪淫；这民就是  神在他们面前所除灭的。</p>
+      </li>
+                        <li><span>5:26</span>
+        <p>故此，以色列的  神激动亚述王普勒和亚述王提革拉毗列色的心，他们就把流便人、迦得人、玛拿西半支派的人掳到哈腊、哈博、哈拉与哥散河边，直到今日还在那里。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共29首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>历代志上(代上)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>历代志上(代上)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>历代志上(代上)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>历代志上(代上)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>历代志上(代上)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>历代志上(代上)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>历代志上(代上)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>历代志上(代上)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>历代志上(代上)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>历代志上(代上)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>历代志上(代上)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>历代志上(代上)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>历代志上(代上)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>历代志上(代上)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>历代志上(代上)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>历代志上(代上)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>历代志上(代上)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>历代志上(代上)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>历代志上(代上)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>历代志上(代上)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>历代志上(代上)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>历代志上(代上)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>历代志上(代上)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>历代志上(代上)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>历代志上(代上)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>历代志上(代上)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>历代志上(代上)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>历代志上(代上)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>历代志上(代上)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-13-cid-4.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-13-cid-6.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

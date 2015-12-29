@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="10撒母耳记下/10撒母耳记下_19.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-10-cid-20.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">撒母耳记下(撒下) 第19章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>19:1</span>
+        <p>有人告诉约押说：“王为押沙龙哭泣悲哀。”</p>
+      </li>
+                        <li><span>19:2</span>
+        <p>众民听说王为他儿子忧愁，他们得胜的欢乐却变成悲哀。</p>
+      </li>
+                        <li><span>19:3</span>
+        <p>那日众民暗暗地进城，就如败阵逃跑惭愧的民一般。</p>
+      </li>
+                        <li><span>19:4</span>
+        <p>王蒙着脸，大声哭号说：“我儿押沙龙啊，押沙龙我儿，我儿啊！”</p>
+      </li>
+                        <li><span>19:5</span>
+        <p>约押进去见王，说：“你今日使你一切仆人脸面惭愧了。他们今日救了你的性命，和你儿女妻妾的性命。</p>
+      </li>
+                        <li><span>19:6</span>
+        <p>你却爱那恨你的人，恨那爱你的人。你今日明明地不以将帅、仆人为念。我今日看明，若押沙龙活着，我们都死亡，你就喜悦了。</p>
+      </li>
+                        <li><span>19:7</span>
+        <p>现在你当出去，安慰你仆人的心。我指着耶和华起誓：你若不出去，今夜必无一人与你同在一处。这祸患就比你从幼年到如今所遭的更甚。”</p>
+      </li>
+                        <li><span>19:8</span>
+        <p>于是王起来，坐在城门口。众民听说王坐在城门口，就都到王面前。以色列人已经逃跑，各回各家去了。</p>
+      </li>
+                                    <li><span>19:9</span>
+        <p>以色列众支派的人纷纷议论说：“王曾救我们脱离仇敌的手，又救我们脱离非利士人的手。现在他躲避押沙龙逃走了。</p>
+      </li>
+                        <li><span>19:10</span>
+        <p>我们膏押沙龙治理我们，他已经阵亡。现在为什么不出一言请王回来呢？”</p>
+      </li>
+                        <li><span>19:11</span>
+        <p>大卫王差人去见祭司撒督和亚比亚他，说：“你们当向犹大长老说：‘以色列众人已经有话请王回宫。你们为什么落在他们后头呢？</p>
+      </li>
+                        <li><span>19:12</span>
+        <p>你们是我的弟兄，是我的骨肉，为什么在人后头请王回来呢？’</p>
+      </li>
+                        <li><span>19:13</span>
+        <p>也要对亚玛撒说：‘你不是我的骨肉吗？我若不立你替约押常作元帅，愿  神重重地降罚与我。’”</p>
+      </li>
+                        <li><span>19:14</span>
+        <p>如此就挽回犹大众人的心，如同一人的心。他们便打发人去见王，说：“请王和王的一切臣仆回来。”</p>
+      </li>
+                        <li><span>19:15</span>
+        <p>王就回来，到了约旦河。犹大人来到吉甲，要去迎接王，请他过约旦河。</p>
+      </li>
+                        <li><span>19:16</span>
+        <p>巴户琳的便雅悯人基拉的儿子示每急忙与犹大人一同下去迎接大卫王。</p>
+      </li>
+                        <li><span>19:17</span>
+        <p>跟从示每的有一千便雅悯人，还有扫罗家的仆人洗巴和他十五个儿子、二十个仆人。他们都趟过约旦河迎接王。</p>
+      </li>
+                        <li><span>19:18</span>
+        <p>有摆渡船过去，渡王的家眷，任王使用。王要过约旦河的时候，基拉的儿子示每就俯伏在王面前，</p>
+      </li>
+                                    <li><span>19:19</span>
+        <p>对王说：“我主我王出耶路撒冷的时候，仆人行悖逆的事。现在求我主不要因此加罪与仆人；不要记念，也不要放在心上。</p>
+      </li>
+                        <li><span>19:20</span>
+        <p>仆人明知自己有罪，所以约瑟全家之中，今日我首先下来迎接我主我王。”</p>
+      </li>
+                        <li><span>19:21</span>
+        <p>洗鲁雅的儿子亚比筛说：“示每既咒骂耶和华的受膏者，不应当治死他吗？”</p>
+      </li>
+                        <li><span>19:22</span>
+        <p>大卫说：“洗鲁雅的儿子，我与你们有何关涉，使你们今日与我反对呢？今日在以色列中岂可治死人呢？我岂不知今日我作以色列的王吗？”</p>
+      </li>
+                        <li><span>19:23</span>
+        <p>于是王对示每说：“你必不死。”王就向他起誓。</p>
+      </li>
+                                    <li><span>19:24</span>
+        <p>扫罗的孙子米非波设也下去迎接王。他自从王去的日子，直到王平平安安地回来，没有修脚，没有剃胡须，也没有洗衣服。</p>
+      </li>
+                        <li><span>19:25</span>
+        <p>他来到耶路撒冷迎接王的时候，王问他说：“米非波设，你为什么没有与我同去呢？”</p>
+      </li>
+                        <li><span>19:26</span>
+        <p>他回答说：“我主我王，仆人是瘸腿的。那日我想要备驴骑上与王同去，无奈我的仆人欺哄了我，</p>
+      </li>
+                        <li><span>19:27</span>
+        <p>又在我主我王面前谗毁我。然而我主我王如同  神的使者一般，你看怎样好，就怎样行吧！</p>
+      </li>
+                        <li><span>19:28</span>
+        <p>因为我祖全家的人，在我主我王面前，都算为死人；王却使仆人在王的席上同人吃饭。我现在向王还能辨理诉冤吗？”</p>
+      </li>
+                        <li><span>19:29</span>
+        <p>王对他说：“你何必再提你的事呢？我说：你与洗巴均分地土。”</p>
+      </li>
+                        <li><span>19:30</span>
+        <p>米非波设对王说：“我主我王既平平安安地回宫，就任凭洗巴都取了也可以。”</p>
+      </li>
+                                    <li><span>19:31</span>
+        <p>基列人巴西莱从罗基琳下来，要送王过约旦河，就与王一同过了约旦河。</p>
+      </li>
+                        <li><span>19:32</span>
+        <p>巴西莱年纪老迈，已经八十岁了。王住在玛哈念的时候，他就拿食物来供给王，他原是大富户。</p>
+      </li>
+                        <li><span>19:33</span>
+        <p>王对巴西莱说：“你与我同去，我要在耶路撒冷那里养你的老。”</p>
+      </li>
+                        <li><span>19:34</span>
+        <p>巴西莱对王说：“我在世的年日还能有多少，使我与王同上耶路撒冷呢？</p>
+      </li>
+                        <li><span>19:35</span>
+        <p>仆人现在八十岁了，还能尝出饮食的滋味，辨别美恶吗？还能听男女歌唱的声音吗？仆人何必累赘我主我王呢？</p>
+      </li>
+                        <li><span>19:36</span>
+        <p>仆人只要送王过约旦河，王何必赐我这样的恩典呢？</p>
+      </li>
+                        <li><span>19:37</span>
+        <p>求你准我回去，好死在我本城，葬在我父母的墓旁。这里有王的仆人金罕，让他同我主我王过去，可以随意待他。”</p>
+      </li>
+                        <li><span>19:38</span>
+        <p>王说：“金罕可以与我同去，我必照你的心愿待他。你向我求什么，我都必为你成就。”</p>
+      </li>
+                        <li><span>19:39</span>
+        <p>于是众民过约旦河，王也过去。王与巴西莱亲嘴，为他祝福。巴西莱就回本地去了。</p>
+      </li>
+                                    <li><span>19:40</span>
+        <p>王过去，到了吉甲，金罕也跟他过去。犹大众民和以色列民的一半，也都送王过去。</p>
+      </li>
+                        <li><span>19:41</span>
+        <p>以色列众人来见王，对他说：“我们弟兄犹大人为什么暗暗送王和王的家眷，并跟随王的人过约旦河？”</p>
+      </li>
+                        <li><span>19:42</span>
+        <p>犹大众人回答以色列人说：“因为王与我们是亲属。你们为何因这事发怒呢？我们吃了王的什么呢？王赏赐了我们什么呢？”</p>
+      </li>
+                        <li><span>19:43</span>
+        <p>以色列人回答犹大人说：“按支派我们与王有十分的情分，在大卫身上，我们也比你们更有情分。你们为何藐视我们，请王回来，不先与我们商量呢？”但犹大人的话比以色列人的话更硬。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共24首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>撒母耳记下(撒下)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>撒母耳记下(撒下)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>撒母耳记下(撒下)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>撒母耳记下(撒下)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>撒母耳记下(撒下)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>撒母耳记下(撒下)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>撒母耳记下(撒下)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>撒母耳记下(撒下)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>撒母耳记下(撒下)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>撒母耳记下(撒下)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>撒母耳记下(撒下)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>撒母耳记下(撒下)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>撒母耳记下(撒下)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>撒母耳记下(撒下)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>撒母耳记下(撒下)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>撒母耳记下(撒下)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>撒母耳记下(撒下)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>撒母耳记下(撒下)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>撒母耳记下(撒下)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>撒母耳记下(撒下)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>撒母耳记下(撒下)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>撒母耳记下(撒下)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>撒母耳记下(撒下)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-10-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>撒母耳记下(撒下)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-10-cid-18.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-10-cid-20.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="45罗马书/45罗马书_09.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-45-cid-10.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">罗马书(罗) 第9章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>9:1</span>
+        <p>我在基督里说真话，并不谎言，有我良心被圣灵感动，给我作见证。</p>
+      </li>
+                        <li><span>9:2</span>
+        <p>我是大有忧愁，心里时常伤痛；</p>
+      </li>
+                        <li><span>9:3</span>
+        <p>为我弟兄、我骨肉之亲，就是自己被咒诅，与基督分离，我也愿意。</p>
+      </li>
+                        <li><span>9:4</span>
+        <p>他们是以色列人，那儿子的名分、荣耀、诸约、律法、礼仪、应许都是他们的。</p>
+      </li>
+                        <li><span>9:5</span>
+        <p>列祖就是他们的祖宗，按肉体说，基督也是从他们出来的，他是在万有之上，永远可称颂的  神。阿们！</p>
+      </li>
+                        <li><span>9:6</span>
+        <p>这不是说  神的话落了空，因为从以色列生的，不都是以色列人；</p>
+      </li>
+                        <li><span>9:7</span>
+        <p>也不因为是亚伯拉罕的后裔，就都作他的儿女；惟独“从以撒生的，才要称为你的后裔。”</p>
+      </li>
+                        <li><span>9:8</span>
+        <p>这就是说，肉身所生的儿女不是  神的儿女；惟独那应许的儿女才算是后裔。</p>
+      </li>
+                        <li><span>9:9</span>
+        <p>因为所应许的话是这样说：“到明年这时候我要来，撒拉必生一个儿子。”</p>
+      </li>
+                        <li><span>9:10</span>
+        <p>不但如此，还有利百加，既从一个人，就是从我们的祖宗以撒怀了孕，</p>
+      </li>
+                        <li><span>9:11</span>
+        <p>（双子还没有生下来，善恶还没有作出来，只因要显明  神拣选人的旨意，不在乎人的行为，乃在乎召人的主。）</p>
+      </li>
+                        <li><span>9:12</span>
+        <p>神就对利百加说：“将来大的要服侍小的。”</p>
+      </li>
+                        <li><span>9:13</span>
+        <p>正如经上所记：“雅各是我所爱的，以扫是我所恶的。”</p>
+      </li>
+                        <li><span>9:14</span>
+        <p>这样，我们可说什么呢？难道  神有什么不公平吗？断乎没有！</p>
+      </li>
+                        <li><span>9:15</span>
+        <p>因他对摩西说：“我要怜悯谁，就怜悯谁；要恩待谁，就恩待谁。”</p>
+      </li>
+                        <li><span>9:16</span>
+        <p>据此看来，这不在乎那定意的，也不在乎那奔跑的，只在乎发怜悯的  神。</p>
+      </li>
+                        <li><span>9:17</span>
+        <p>因为经上有话向法老说：“我将你兴起来，特要在你身上彰显我的权能，并要使我的名传遍天下。”</p>
+      </li>
+                        <li><span>9:18</span>
+        <p>如此看来，  神要怜悯谁，就怜悯谁；要叫谁刚硬，就叫谁刚硬。</p>
+      </li>
+                                    <li><span>9:19</span>
+        <p>这样，你必对我说：“他为什么还指责人呢？有谁抗拒他的旨意呢？”</p>
+      </li>
+                        <li><span>9:20</span>
+        <p>你这个人哪，你是谁，竟敢向  神强嘴呢？受造之物岂能对造他的说：“你为什么这样造我呢？”</p>
+      </li>
+                        <li><span>9:21</span>
+        <p>窑匠难道没有权柄从一团泥里拿一块作成贵重的器皿，又拿一块作成卑贱的器皿吗？</p>
+      </li>
+                        <li><span>9:22</span>
+        <p>倘若  神要显明他的忿怒，彰显他的权能，就多多忍耐宽容那可怒、预备遭毁灭的器皿；</p>
+      </li>
+                        <li><span>9:23</span>
+        <p>又要将他丰盛的荣耀彰显在那蒙怜悯、早预备得荣耀的器皿上。</p>
+      </li>
+                        <li><span>9:24</span>
+        <p>这器皿就是我们被  神所召的，不但是从犹太人中，也是从外邦人中。这有什么不可呢？</p>
+      </li>
+                        <li><span>9:25</span>
+        <p>就像  神在何西阿书上说：“那本来不是我子民的，我要称为我的子民；本来不是蒙爱的，我要称为蒙爱的。</p>
+      </li>
+                        <li><span>9:26</span>
+        <p>从前在什么地方对他们说，你们不是我的子民，将来就在那里称他们为永生  神的儿子。”</p>
+      </li>
+                        <li><span>9:27</span>
+        <p>以赛亚指着以色列人喊着说：“以色列人虽多如海沙，得救的不过是剩下的余数。</p>
+      </li>
+                        <li><span>9:28</span>
+        <p>因为主要在世上施行他的话，叫他的话都成全，速速地完结。”</p>
+      </li>
+                        <li><span>9:29</span>
+        <p>又如以赛亚先前说过：“若不是万军之主给我们存留余种，我们早已像所多玛、蛾摩拉的样子了。”</p>
+      </li>
+                                    <li><span>9:30</span>
+        <p>这样，我们可说什么呢？那本来不追求义的外邦人反得了义，就是因信而得的义；</p>
+      </li>
+                        <li><span>9:31</span>
+        <p>但以色列人追求律法的义，反得不着律法的义。</p>
+      </li>
+                        <li><span>9:32</span>
+        <p>这是什么缘故呢？是因为他们不凭着信心求，只凭着行为求，他们正跌在那绊脚石上。</p>
+      </li>
+                        <li><span>9:33</span>
+        <p>就如经上所记：“我在锡安放一块绊脚的石头，跌人的磐石，信靠他的人必不至于羞愧。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共16首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>罗马书(罗)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>罗马书(罗)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>罗马书(罗)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>罗马书(罗)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>罗马书(罗)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>罗马书(罗)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>罗马书(罗)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>罗马书(罗)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>罗马书(罗)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>罗马书(罗)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>罗马书(罗)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>罗马书(罗)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>罗马书(罗)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>罗马书(罗)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>罗马书(罗)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-45-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>罗马书(罗)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-45-cid-8.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-45-cid-10.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

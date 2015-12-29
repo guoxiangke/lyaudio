@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="42路加福音/42路加福音_23.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-42-cid-24.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">路加福音(路) 第23章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>23:1</span>
+        <p>众人都起来，把耶稣解到彼拉多面前，</p>
+      </li>
+                        <li><span>23:2</span>
+        <p>就告他说：“我们见这人诱惑国民，禁止纳税给凯撒，并说自己是基督、是王。”</p>
+      </li>
+                        <li><span>23:3</span>
+        <p>彼拉多问耶稣说：“你是犹太人的王吗？”耶稣回答说：“你说的是。”</p>
+      </li>
+                        <li><span>23:4</span>
+        <p>彼拉多对祭司长和众人说：“我查不出这人有什么罪来。”</p>
+      </li>
+                        <li><span>23:5</span>
+        <p>但他们越发极力地说：“他煽惑百姓，在犹太遍地传道，从加利利起，直到这里了。”</p>
+      </li>
+                                    <li><span>23:6</span>
+        <p>彼拉多一听见，就问：“这人是加利利人吗？”</p>
+      </li>
+                        <li><span>23:7</span>
+        <p>既晓得耶稣属希律所管，就把他送到希律那里去。那时希律正在耶路撒冷。</p>
+      </li>
+                        <li><span>23:8</span>
+        <p>希律看见耶稣，就很欢喜，因为听见过他的事，久已想要见他，并且指望看他行一件神迹。</p>
+      </li>
+                        <li><span>23:9</span>
+        <p>于是问他许多的话，耶稣却一言不答。</p>
+      </li>
+                        <li><span>23:10</span>
+        <p>祭司长和文士都站着，极力地告他。</p>
+      </li>
+                        <li><span>23:11</span>
+        <p>希律和他的兵丁就藐视耶稣，戏弄他，给他穿上华丽衣服，把他送回彼拉多那里去。</p>
+      </li>
+                        <li><span>23:12</span>
+        <p>从前希律和彼拉多彼此有仇，在那一天就成了朋友。</p>
+      </li>
+                                    <li><span>23:13</span>
+        <p>彼拉多传齐了祭司长和官府并百姓，</p>
+      </li>
+                        <li><span>23:14</span>
+        <p>就对他们说：“你们解这人到我这里，说他是诱惑百姓的。看哪，我也曾将你们告他的事在你们面前审问他，并没有查出他什么罪来，</p>
+      </li>
+                        <li><span>23:15</span>
+        <p>就是希律也是如此，所以把他送回来。可见他没有作什么该死的事，</p>
+      </li>
+                        <li><span>23:16</span>
+        <p>故此，我要责打他，把他释放了。”（有古卷在此有</p>
+      </li>
+                        <li><span>23:17</span>
+        <p>“每逢这节期，巡抚必须释放一个囚犯给他们。”）</p>
+      </li>
+                        <li><span>23:18</span>
+        <p>众人却一齐喊着说：“除掉这个人！释放巴拉巴给我们！”</p>
+      </li>
+                        <li><span>23:19</span>
+        <p>这巴拉巴是因在城里作乱杀人，下在监里的。</p>
+      </li>
+                        <li><span>23:20</span>
+        <p>彼拉多愿意释放耶稣，就又劝解他们。</p>
+      </li>
+                        <li><span>23:21</span>
+        <p>无奈他们喊着说：“钉他十字架！钉他十字架！”</p>
+      </li>
+                        <li><span>23:22</span>
+        <p>彼拉多第三次对他们说：“为什么呢？这人作了什么恶事呢？我并没有查出他什么该死的罪来。所以，我要责打他，把他释放了。”</p>
+      </li>
+                        <li><span>23:23</span>
+        <p>他们大声催逼彼拉多，求他把耶稣钉在十字架上。他们的声音就得了胜。</p>
+      </li>
+                        <li><span>23:24</span>
+        <p>彼拉多这才照他们所求的定案，</p>
+      </li>
+                        <li><span>23:25</span>
+        <p>把他们所求的，那作乱杀人下在监里的释放了，把耶稣交给他们，任凭他们的意思行。</p>
+      </li>
+                                    <li><span>23:26</span>
+        <p>带耶稣去的时候，有一个古利奈人西门从乡下来，他们就抓住他，把十字架搁在他身上，叫他背着跟随耶稣。</p>
+      </li>
+                        <li><span>23:27</span>
+        <p>有许多百姓跟随耶稣，内中有好些妇女，妇女们为他号啕痛哭。</p>
+      </li>
+                        <li><span>23:28</span>
+        <p>耶稣转身对她们说：“耶路撒冷的女子，不要为我哭，当为自己和自己的儿女哭。</p>
+      </li>
+                        <li><span>23:29</span>
+        <p>因为日子要到，人必说：‘不生育的和未曾怀胎的，未曾乳养婴孩的，有福了！’</p>
+      </li>
+                        <li><span>23:30</span>
+        <p>那时，人要向大山说：‘倒在我们身上！’向小山说：‘遮盖我们！’</p>
+      </li>
+                        <li><span>23:31</span>
+        <p>这些事既行在有汁水的树上，那枯干的树将来怎么样呢？”</p>
+      </li>
+                        <li><span>23:32</span>
+        <p>又有两个犯人，和耶稣一同带来处死。</p>
+      </li>
+                        <li><span>23:33</span>
+        <p>到了一个地方，名叫髑髅地，就在那里把耶稣钉在十字架上。又钉了两个犯人：一个在左边，一个在右边。</p>
+      </li>
+                        <li><span>23:34</span>
+        <p>当下耶稣说：“父啊，赦免他们！因为他们所作的，他们不晓得。”兵丁就拈阄分他的衣服。</p>
+      </li>
+                        <li><span>23:35</span>
+        <p>百姓站在那里观看。官府也嗤笑他，说：“他救了别人，他若是基督，  神所拣选的，可以救自己吧！”</p>
+      </li>
+                        <li><span>23:36</span>
+        <p>兵丁也戏弄他，上前拿醋送给他喝，</p>
+      </li>
+                        <li><span>23:37</span>
+        <p>说：“你若是犹太人的王，可以救自己吧！”</p>
+      </li>
+                        <li><span>23:38</span>
+        <p>在耶稣以上有一个牌子（有古卷在此有“用希腊、罗马、希伯来的文字”）写着：“这是犹太人的王。”</p>
+      </li>
+                        <li><span>23:39</span>
+        <p>那同钉的两个犯人，有一个讥诮他说：“你不是基督吗？可以救自己和我们吧！”</p>
+      </li>
+                        <li><span>23:40</span>
+        <p>那一个就应声责备他说：“你既是一样受刑的，还不怕  神吗？</p>
+      </li>
+                        <li><span>23:41</span>
+        <p>我们是应该的，因我们所受的与我们所作的相称，但这个人没有作过一件不好的事。”</p>
+      </li>
+                        <li><span>23:42</span>
+        <p>就说：“耶稣啊，你得国降临的时候，求你记念我！”</p>
+      </li>
+                        <li><span>23:43</span>
+        <p>耶稣对他说：“我实在告诉你：今日你要同我在乐园里了。”</p>
+      </li>
+                                    <li><span>23:44</span>
+        <p>那时约有午正，遍地都黑暗了，直到申初，</p>
+      </li>
+                        <li><span>23:45</span>
+        <p>日头变黑了，殿里的幔子从当中裂为两半。</p>
+      </li>
+                        <li><span>23:46</span>
+        <p>耶稣大声喊着说：“父啊，我将我的灵魂交在你手里！”说了这话，气就断了。</p>
+      </li>
+                        <li><span>23:47</span>
+        <p>百夫长看见所成的事，就归荣耀与  神，说：“这真是个义人！”</p>
+      </li>
+                        <li><span>23:48</span>
+        <p>聚集观看的众人见了这所成的事，都捶着胸回去了。</p>
+      </li>
+                        <li><span>23:49</span>
+        <p>还有一切与耶稣熟识的人和从加利利跟着他来的妇女们，都远远地站着看这些事。</p>
+      </li>
+                                    <li><span>23:50</span>
+        <p>有一个人名叫约瑟，是个议士，为人善良公义。</p>
+      </li>
+                        <li><span>23:51</span>
+        <p>众人所谋所为，他并没有附从。他本是犹太亚利马太城里素常盼望  神国的人。</p>
+      </li>
+                        <li><span>23:52</span>
+        <p>这人去见彼拉多，求耶稣的身体；</p>
+      </li>
+                        <li><span>23:53</span>
+        <p>就取下来用细麻布裹好，安放在石头凿成的坟墓里，那里头从来没有葬过人。</p>
+      </li>
+                        <li><span>23:54</span>
+        <p>那日是预备日，安息日也快到了。</p>
+      </li>
+                        <li><span>23:55</span>
+        <p>那些从加利利和耶稣同来的妇女跟在后面，看见了坟墓和他的身体怎样安放。</p>
+      </li>
+                        <li><span>23:56</span>
+        <p>她们就回去，预备了香料香膏。她们在安息日，便遵着诫命安息了。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共24首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>路加福音(路)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>路加福音(路)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>路加福音(路)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>路加福音(路)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>路加福音(路)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>路加福音(路)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>路加福音(路)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>路加福音(路)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>路加福音(路)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>路加福音(路)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>路加福音(路)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>路加福音(路)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>路加福音(路)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>路加福音(路)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>路加福音(路)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>路加福音(路)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>路加福音(路)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>路加福音(路)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>路加福音(路)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>路加福音(路)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>路加福音(路)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>路加福音(路)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>路加福音(路)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>路加福音(路)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-42-cid-22.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-42-cid-24.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="31俄巴底亚书/31俄巴底亚书_01.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-31.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">俄巴底亚书(俄) 第1章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>1:1</span>
+        <p>俄巴底亚得了耶和华的默示。论以东说：“我从耶和华那里听见信息，并有使者被差往列国去，说：起来吧，一同起来与以东争战。</p>
+      </li>
+                        <li><span>1:2</span>
+        <p>我使你以东在列国中为最小的，被人大大藐视。</p>
+      </li>
+                        <li><span>1:3</span>
+        <p>住在山穴中，居所在高处的啊，你因狂傲自欺，心里说：‘谁能将我拉下地去呢？’</p>
+      </li>
+                        <li><span>1:4</span>
+        <p>你虽如大鹰高飞，在星宿之间搭窝，我必从那里拉下你来。这是耶和华说的。”</p>
+      </li>
+                        <li><span>1:5</span>
+        <p>“盗贼若来在你那里，或强盗夜间而来（你何竟被剪除），岂不偷窃，直到够了呢？摘葡萄的若来到你那里，岂不剩下些葡萄呢？</p>
+      </li>
+                        <li><span>1:6</span>
+        <p>以扫的隐密处何竟被搜寻？他隐藏的宝物何竟被查出？</p>
+      </li>
+                        <li><span>1:7</span>
+        <p>与你结盟的都送你上路，直到交界；与你和好的欺骗你，且胜过你；与你一同吃饭的，设下网罗陷害你；在你心里毫无聪明。</p>
+      </li>
+                        <li><span>1:8</span>
+        <p>耶和华说：到那日，我岂不从以东除灭智慧人、从以扫山除灭聪明人？</p>
+      </li>
+                        <li><span>1:9</span>
+        <p>提幔哪，你的勇士必惊惶，甚至以扫山的人都被杀戮剪除。”</p>
+      </li>
+                                    <li><span>1:10</span>
+        <p>“因你向兄弟雅各行强暴，羞愧必遮盖你，你也必永远断绝。</p>
+      </li>
+                        <li><span>1:11</span>
+        <p>当外人掳掠雅各的财物，外邦人进入他的城门，为耶路撒冷拈阄的日子，你竟站在一旁，像与他们同伙。</p>
+      </li>
+                        <li><span>1:12</span>
+        <p>你兄弟遭难的日子，你不当瞪眼看着；犹大人被灭的日子，你不当因此欢乐；他们遭难的日子，你不当说狂傲的话。</p>
+      </li>
+                        <li><span>1:13</span>
+        <p>我民遭灾的日子，你不当进他们的城门；他们遭灾的日子，你不当瞪眼看着他们受苦；他们遭灾的日子，你不当伸手抢他们的财物。</p>
+      </li>
+                        <li><span>1:14</span>
+        <p>你不当站在岔路口，剪除他们中间逃脱的；他们遭难的日子，你不当将他们剩下的人交付仇敌。”</p>
+      </li>
+                                    <li><span>1:15</span>
+        <p>“耶和华降罚的日子临近万国。你怎样行，他也必照样向你行，你的报应必归到你头上。</p>
+      </li>
+                        <li><span>1:16</span>
+        <p>你们犹大人在我圣山怎样喝了苦杯，万国也必照样常常地喝；且喝且咽，他们就归于无有。”</p>
+      </li>
+                                    <li><span>1:17</span>
+        <p>“在锡安山必有逃脱的人，那山也必成圣；雅各家必得原有的产业。</p>
+      </li>
+                        <li><span>1:18</span>
+        <p>雅各家必成为大火；约瑟家必为火焰。以扫家必如碎秸，火必将他烧着吞灭；以扫家必无余剩的。”这是耶和华说的。</p>
+      </li>
+                        <li><span>1:19</span>
+        <p>“南地的人，必得以扫山；高原的人，必得非利士地，也得以法莲地和撒玛利亚地；便雅悯人必得基列。</p>
+      </li>
+                        <li><span>1:20</span>
+        <p>在迦南人中被掳的以色列众人，必得地直到撒勒法。在西法拉中被掳的耶路撒冷人，必得南地的城邑。</p>
+      </li>
+                        <li><span>1:21</span>
+        <p>必有拯救者上到锡安山，审判以扫山；国度就归耶和华了。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共1首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-31-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>俄巴底亚书(俄)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="javascript:alertText('已到本章第一首!');"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="javascript:alertText('已到本章第后一首!');"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="03利未记/03利未记_25.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-3-cid-26.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">利未记(利) 第25章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>25:1</span>
+        <p>耶和华在西奈山对摩西说：</p>
+      </li>
+                        <li><span>25:2</span>
+        <p>“你晓谕以色列人说：你们到了我所赐你们那地的时候，地就要向耶和华守安息。</p>
+      </li>
+                        <li><span>25:3</span>
+        <p>六年要耕种田地，也要修理葡萄园，收藏地的出产。</p>
+      </li>
+                        <li><span>25:4</span>
+        <p>第七年地要守圣安息，就是向耶和华守的安息，不可耕种田地，也不可修理葡萄园。</p>
+      </li>
+                        <li><span>25:5</span>
+        <p>遗落自长的庄稼，不可收割；没有修理的葡萄园，也不可摘取葡萄。这年，地要守圣安息。</p>
+      </li>
+                        <li><span>25:6</span>
+        <p>地在安息年所出的，要给你和你的仆人、婢女、雇工人，并寄居的外人当食物。</p>
+      </li>
+                        <li><span>25:7</span>
+        <p>这年的土产，也要给你的牲畜和你地上的走兽当食物。”</p>
+      </li>
+                                    <li><span>25:8</span>
+        <p>“你要算计七个安息年，就是七七年。这便为你成了七个安息年，共是四十九年。</p>
+      </li>
+                        <li><span>25:9</span>
+        <p>当年七月初十日，你要大发角声，这日就是赎罪日，要在遍地发出角声。</p>
+      </li>
+                        <li><span>25:10</span>
+        <p>第五十年，你们要当作圣年，在遍地给一切的居民宣告自由。这年必为你们的禧年，各人要归自己的产业，各归本家。</p>
+      </li>
+                        <li><span>25:11</span>
+        <p>第五十年要作为你们的禧年。这年不可耕种，地中自长的，不可收割；没有修理的葡萄树，也不可摘取葡萄。</p>
+      </li>
+                        <li><span>25:12</span>
+        <p>因为这是禧年，你们要当作圣年，吃地中自出的土产。”</p>
+      </li>
+                        <li><span>25:13</span>
+        <p>“这禧年，你们各人要归自己的地业。</p>
+      </li>
+                        <li><span>25:14</span>
+        <p>你若卖什么给邻舍，或是从邻舍的手中买什么，彼此不可亏负。</p>
+      </li>
+                        <li><span>25:15</span>
+        <p>你要按禧年以后的年数向邻舍买；他也要按年数的收成卖给你。</p>
+      </li>
+                        <li><span>25:16</span>
+        <p>年岁若多，要照数加添价值；年岁若少，要照数减去价值，因为他照收成的数目卖给你。</p>
+      </li>
+                        <li><span>25:17</span>
+        <p>你们彼此不可亏负，只要敬畏你们的  神，因为我是耶和华你们的  神。”</p>
+      </li>
+                                    <li><span>25:18</span>
+        <p>“我的律例你们要遵行，我的典章，你们要谨守，就可以在那地上安然居住。</p>
+      </li>
+                        <li><span>25:19</span>
+        <p>地必出土产，你们就要吃饱，在那地上安然居住。</p>
+      </li>
+                        <li><span>25:20</span>
+        <p>你们若说：‘这第七年我们不耕种，也不收藏土产，吃什么呢？’</p>
+      </li>
+                        <li><span>25:21</span>
+        <p>我必在第六年将我所命的福赐给你们，地便生三年的土产。</p>
+      </li>
+                        <li><span>25:22</span>
+        <p>第八年你们要耕种，也要吃陈粮；等到第九年出产收来的时候，你们还吃陈粮。”</p>
+      </li>
+                                    <li><span>25:23</span>
+        <p>“地不可永卖，因为地是我的，你们在我面前是客旅、是寄居的。</p>
+      </li>
+                        <li><span>25:24</span>
+        <p>在你们所得为业的全地，也要准人将地赎回。</p>
+      </li>
+                        <li><span>25:25</span>
+        <p>你的（“弟兄”指本国人说。下同），若渐渐穷乏，卖了几分地业，他至近的亲属，就要来把弟兄所卖的赎回。</p>
+      </li>
+                        <li><span>25:26</span>
+        <p>若没有能给他赎回的，他自己渐渐富足，能够赎回，</p>
+      </li>
+                        <li><span>25:27</span>
+        <p>就要算出卖地的年数，把余剩年数的价值，还那买主，自己便归回自己的地业。</p>
+      </li>
+                        <li><span>25:28</span>
+        <p>倘若不能为自己得回所卖的，仍要存在买主的手里，直到禧年。到了禧年，地业要出买主的手，自己便归回自己的地业。”</p>
+      </li>
+                        <li><span>25:29</span>
+        <p>“人若卖城内的住宅，卖了以后，一年之内可以赎回。在一整年，必有赎回的权柄。</p>
+      </li>
+                        <li><span>25:30</span>
+        <p>若在一整年之内不赎回，这城内的房屋，就定准永归买主世世代代为业。在禧年也不得出买主的手。</p>
+      </li>
+                        <li><span>25:31</span>
+        <p>但房屋在无城墙的村庄里，要看如乡下的田地一样，可以赎回。到了禧年，都要出买主的手。</p>
+      </li>
+                        <li><span>25:32</span>
+        <p>然而利未人所得为业的城邑，其中的房屋，利未人可以随时赎回。</p>
+      </li>
+                        <li><span>25:33</span>
+        <p>若是一个利未人不将所卖的房屋赎回，是在所得为业的城内，到了禧年，就要出买主的手，因为利未人城邑的房屋，是他们在以色列人中的产业。</p>
+      </li>
+                        <li><span>25:34</span>
+        <p>只是他们各城郊野之地不可卖，因为是他们永远的产业。”</p>
+      </li>
+                                    <li><span>25:35</span>
+        <p>“你的弟兄在你那里若渐渐贫穷，手中缺乏，你就要帮补他，使他与你同住，像外人和寄居的一样。</p>
+      </li>
+                        <li><span>25:36</span>
+        <p>不可向他取利，也不可向他多要，只要敬畏你的  神，使你的弟兄与你同住。</p>
+      </li>
+                        <li><span>25:37</span>
+        <p>你借钱给他，不可向他取利；借粮给他，也不可向他多要。</p>
+      </li>
+                        <li><span>25:38</span>
+        <p>我是耶和华你们的  神，曾领你们从埃及地出来，为要把迦南地赐给你们，要作你们的  神。”</p>
+      </li>
+                                    <li><span>25:39</span>
+        <p>“你的弟兄若在你那里渐渐穷乏，将自己卖给你，不可叫他像奴仆服侍你。</p>
+      </li>
+                        <li><span>25:40</span>
+        <p>他要在你那里像雇工人和寄居的一样，要服侍你直到禧年。</p>
+      </li>
+                        <li><span>25:41</span>
+        <p>到了禧年，他和他儿女要离开你，一同出去归回本家，到他祖宗的地业那里去。</p>
+      </li>
+                        <li><span>25:42</span>
+        <p>因为他们是我的仆人，是我从埃及地领出来的，不可卖为奴仆。</p>
+      </li>
+                        <li><span>25:43</span>
+        <p>不可严严地辖管他，只要敬畏你的  神。</p>
+      </li>
+                        <li><span>25:44</span>
+        <p>至于你的奴仆、婢女，可以从你四围的国中买。</p>
+      </li>
+                        <li><span>25:45</span>
+        <p>并且那寄居在你们中间的外人和他们的家属，在你们地上所生的，你们也可以从其中买人，他们要作你们的产业。</p>
+      </li>
+                        <li><span>25:46</span>
+        <p>你们要将他们遗留给你们的子孙为产业，要永远从他们中间拣出奴仆，只是你们的弟兄以色列人，你们不可严严地辖管。</p>
+      </li>
+                        <li><span>25:47</span>
+        <p>“住在你那里的外人，或是寄居的，若渐渐富足，你的弟兄却渐渐穷乏，将自己卖给那外人，或是寄居的，或是外人的宗族，</p>
+      </li>
+                        <li><span>25:48</span>
+        <p>卖了以后，可以将他赎回。无论是他的弟兄，</p>
+      </li>
+                        <li><span>25:49</span>
+        <p>或伯叔、伯叔的儿子、本家的近支，都可以赎他。他自己若渐渐富足，也可以自赎。</p>
+      </li>
+                        <li><span>25:50</span>
+        <p>他要和买主计算，从卖自己的那年起，算到禧年，所卖的价值照着年数多少，好像工人每年的工价。</p>
+      </li>
+                        <li><span>25:51</span>
+        <p>若缺少的年数多，就要按着年数，从买价中偿还他的赎价。</p>
+      </li>
+                        <li><span>25:52</span>
+        <p>若到禧年只缺少几年，就要按着年数和买主计算，偿还他的赎价。</p>
+      </li>
+                        <li><span>25:53</span>
+        <p>他和买主同住，要像每年雇的工人，买主不可严严地辖管他。</p>
+      </li>
+                        <li><span>25:54</span>
+        <p>他若不这样被赎，到了禧年，要和他的儿女一同出去。</p>
+      </li>
+                        <li><span>25:55</span>
+        <p>因为以色列人都是我的仆人，是我从埃及地领出来的。我是耶和华你们的  神。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共27首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>利未记(利)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>利未记(利)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>利未记(利)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>利未记(利)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>利未记(利)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>利未记(利)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>利未记(利)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>利未记(利)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>利未记(利)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>利未记(利)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>利未记(利)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>利未记(利)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>利未记(利)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>利未记(利)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>利未记(利)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>利未记(利)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>利未记(利)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>利未记(利)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>利未记(利)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>利未记(利)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>利未记(利)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>利未记(利)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>利未记(利)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>利未记(利)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>利未记(利)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>利未记(利)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>利未记(利)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-3-cid-24.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-3-cid-26.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

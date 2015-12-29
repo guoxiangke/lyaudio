@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="43约翰福音/43约翰福音_10.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-43-cid-11.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">约翰福音(约) 第10章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>10:1</span>
+        <p>“我实实在在地告诉你们：人进羊圈，不从门进去，倒从别处爬进去，那人就是贼，就是强盗。</p>
+      </li>
+                        <li><span>10:2</span>
+        <p>从门进去的，才是羊的牧人。</p>
+      </li>
+                        <li><span>10:3</span>
+        <p>看门的就给他开门，羊也听他的声音。他按着名叫自己的羊，把羊领出来。</p>
+      </li>
+                        <li><span>10:4</span>
+        <p>既放出自己的羊来，就在前头走，羊也跟着他，因为认得他的声音。</p>
+      </li>
+                        <li><span>10:5</span>
+        <p>羊不跟着生人，因为不认得他的声音，必要逃跑。”</p>
+      </li>
+                        <li><span>10:6</span>
+        <p>耶稣将这比喻告诉他们，但他们不明白所说的是什么意思。</p>
+      </li>
+                                    <li><span>10:7</span>
+        <p>所以耶稣又对他们说：“我实实在在地告诉你们：我就是羊的门。</p>
+      </li>
+                        <li><span>10:8</span>
+        <p>凡在我以先来的，都是贼，是强盗，羊却不听他们。</p>
+      </li>
+                        <li><span>10:9</span>
+        <p>我就是门，凡从我进来的，必然得救，并且出入得草吃。</p>
+      </li>
+                        <li><span>10:10</span>
+        <p>盗贼来，无非要偷窃、杀害、毁坏；我来了，是要叫羊（或作“人”）得生命，并且得的更丰盛。</p>
+      </li>
+                        <li><span>10:11</span>
+        <p>我是好牧人，好牧人为羊舍命。</p>
+      </li>
+                        <li><span>10:12</span>
+        <p>若是雇工，不是牧人，羊也不是他自己的，他看见狼来，就撇下羊逃走。狼抓住羊，赶散了羊群。</p>
+      </li>
+                        <li><span>10:13</span>
+        <p>雇工逃走，因他是雇工，并不顾念羊。</p>
+      </li>
+                        <li><span>10:14</span>
+        <p>我是好牧人，我认识我的羊，我的羊也认识我。</p>
+      </li>
+                        <li><span>10:15</span>
+        <p>正如父认识我，我也认识父一样，并且我为羊舍命。</p>
+      </li>
+                        <li><span>10:16</span>
+        <p>我另外有羊，不是这圈里的；我必须领它们来，它们也要听我的声音，并且要合成一群，归一个牧人了。</p>
+      </li>
+                        <li><span>10:17</span>
+        <p>我父爱我，因我将命舍去，好再取回来。</p>
+      </li>
+                        <li><span>10:18</span>
+        <p>没有人夺我的命去，是我自己舍的。我有权柄舍了，也有权柄取回来，这是我从我父所受的命令。”</p>
+      </li>
+                        <li><span>10:19</span>
+        <p>犹太人为这些话又起了纷争。</p>
+      </li>
+                        <li><span>10:20</span>
+        <p>内中有好些人说：“他是被鬼附着，而且疯了，为什么听他呢？”</p>
+      </li>
+                        <li><span>10:21</span>
+        <p>又有人说：“这不是鬼附之人所说的话，鬼岂能叫瞎子的眼睛开了呢？”</p>
+      </li>
+                                    <li><span>10:22</span>
+        <p>在耶路撒冷有修殿节，是冬天的时候。</p>
+      </li>
+                        <li><span>10:23</span>
+        <p>耶稣在殿里所罗门的廊下行走。</p>
+      </li>
+                        <li><span>10:24</span>
+        <p>犹太人围着他，说：“你叫我们犹疑不定到几时呢？你若是基督，就明明地告诉我们。”</p>
+      </li>
+                        <li><span>10:25</span>
+        <p>耶稣回答说：“我已经告诉你们，你们不信。我奉我父之名所行的事可以为我作见证。</p>
+      </li>
+                        <li><span>10:26</span>
+        <p>只是你们不信，因为你们不是我的羊。</p>
+      </li>
+                        <li><span>10:27</span>
+        <p>我的羊听我的声音，我也认识他们，他们也跟着我。</p>
+      </li>
+                        <li><span>10:28</span>
+        <p>我又赐给他们永生，他们永不灭亡，谁也不能从我手里把他们夺去。</p>
+      </li>
+                        <li><span>10:29</span>
+        <p>我父把羊赐给我，他比万有都大，谁也不能从我父手里把他们夺去。</p>
+      </li>
+                        <li><span>10:30</span>
+        <p>我与父原为一。”</p>
+      </li>
+                        <li><span>10:31</span>
+        <p>犹太人又拿起石头来要打他。</p>
+      </li>
+                        <li><span>10:32</span>
+        <p>耶稣对他们说：“我从父显出许多善事给你们看，你们是为哪一件拿石头打我呢？”</p>
+      </li>
+                        <li><span>10:33</span>
+        <p>犹太人回答说：“我们不是为善事拿石头打你，是为你说僭妄的话；又为你是个人，反将自己当作  神。”</p>
+      </li>
+                        <li><span>10:34</span>
+        <p>耶稣说：“你们的律法上岂不是写着‘我曾说你们是神’吗？</p>
+      </li>
+                        <li><span>10:35</span>
+        <p>经上的话是不能废的。若那些承受  神道的人，尚且称为神；</p>
+      </li>
+                        <li><span>10:36</span>
+        <p>父所分别为圣，又差到世间来的，他自称是  神的儿子，你们还向他说‘你说僭妄的话’吗？</p>
+      </li>
+                        <li><span>10:37</span>
+        <p>我若不行我父的事，你们就不必信我；</p>
+      </li>
+                        <li><span>10:38</span>
+        <p>我若行了，你们纵然不信我，也当信这些事，叫你们又知道又明白父在我里面，我也在父里面。”</p>
+      </li>
+                        <li><span>10:39</span>
+        <p>他们又要拿他，他却逃出他们的手走了。</p>
+      </li>
+                        <li><span>10:40</span>
+        <p>耶稣又往约旦河外去，到了约翰起初施洗的地方，就住在那里。</p>
+      </li>
+                        <li><span>10:41</span>
+        <p>有许多人来到他那里，他们说：“约翰一件神迹没有行过，但约翰指着这人所说的一切话都是真的。”</p>
+      </li>
+                        <li><span>10:42</span>
+        <p>在那里信耶稣的人就多了。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共21首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>约翰福音(约)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>约翰福音(约)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>约翰福音(约)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>约翰福音(约)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>约翰福音(约)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>约翰福音(约)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>约翰福音(约)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>约翰福音(约)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>约翰福音(约)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>约翰福音(约)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>约翰福音(约)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>约翰福音(约)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>约翰福音(约)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>约翰福音(约)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>约翰福音(约)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>约翰福音(约)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>约翰福音(约)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>约翰福音(约)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>约翰福音(约)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>约翰福音(约)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>约翰福音(约)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-43-cid-9.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-43-cid-11.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

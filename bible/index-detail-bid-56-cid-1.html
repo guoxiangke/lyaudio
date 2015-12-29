@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="56提多书/56提多书_01.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-56-cid-2.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">提多书(多) 第1章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>1:1</span>
+        <p>神的仆人、耶稣基督的使徒保罗，凭着  神选民的信心与敬虔真理的知识，</p>
+      </li>
+                        <li><span>1:2</span>
+        <p>盼望那无谎言的  神在万古之先所应许的永生，</p>
+      </li>
+                        <li><span>1:3</span>
+        <p>到了日期，藉着传扬的工夫，把他的道显明了。这传扬的责任是按着  神我们救主的命令交托了我。</p>
+      </li>
+                        <li><span>1:4</span>
+        <p>现在写信给提多，就是照着我们共信之道作我真儿子的。愿恩惠、平安从父  神和我们的救主基督耶稣归与你！</p>
+      </li>
+                                    <li><span>1:5</span>
+        <p>我从前留你在克里特，是要你将那没有办完的事都办整齐了，又照我所吩咐你的，在各城设立长老。</p>
+      </li>
+                        <li><span>1:6</span>
+        <p>若有无可指责的人，只作一个妇人的丈夫，儿女也是信主的，没有人告他们是放荡不服约束的，就可以设立。</p>
+      </li>
+                        <li><span>1:7</span>
+        <p>监督既是  神的管家，必须无可指责，不任性、不暴躁、不因酒滋事、不打人、不贪无义之财；</p>
+      </li>
+                        <li><span>1:8</span>
+        <p>乐意接待远人，好善、庄重、公平、圣洁、自持，</p>
+      </li>
+                        <li><span>1:9</span>
+        <p>坚守所教真实的道理，就能将纯正的教训劝化人，又能把争辩的人驳倒了。</p>
+      </li>
+                        <li><span>1:10</span>
+        <p>因为有许多人不服约束，说虚空话欺哄人，那奉割礼的更是这样。</p>
+      </li>
+                        <li><span>1:11</span>
+        <p>这些人的口总要堵住。他们因贪不义之财，将不该教导的教导人，败坏人的全家。</p>
+      </li>
+                        <li><span>1:12</span>
+        <p>有克里特人中的一个本地先知说：“克里特人常说谎话，乃是恶兽，又馋又懒。”</p>
+      </li>
+                        <li><span>1:13</span>
+        <p>这个见证是真的。所以，你要严严地责备他们，使他们在真道上纯全无疵，</p>
+      </li>
+                        <li><span>1:14</span>
+        <p>不听犹太人荒渺的言语和离弃真道之人的诫命。</p>
+      </li>
+                        <li><span>1:15</span>
+        <p>在洁净的人，凡物都洁净；在污秽不信的人，什么都不洁净，连心地和天良也都污秽了。</p>
+      </li>
+                        <li><span>1:16</span>
+        <p>他们说是认识  神，行事却和他相背；本是可憎恶的，是悖逆的，在各样善事上是可废弃的。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共3首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-56-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>提多书(多)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-56-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>提多书(多)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-56-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>提多书(多)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="javascript:alertText('已到本章第一首!');"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-56-cid-2.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

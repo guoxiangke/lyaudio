@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="22雅歌/22雅歌_01.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-22-cid-2.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">雅歌(歌) 第1章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                  <li><span>1:1</span>
+        <p>所罗门的歌，是歌中的雅歌。</p>
+      </li>
+                                                <li><span>1:2</span>
+        <p>愿他用口与我亲嘴，因你的爱情比酒更美。</p>
+      </li>
+                        <li><span>1:3</span>
+        <p>你的膏油馨香，你的名如同倒出来的香膏，所以众童女都爱你。</p>
+      </li>
+                        <li><span>1:4</span>
+        <p>愿你吸引我，我们就快跑跟随你。王带我进了内室，我们必因你欢喜快乐；我们要称赞你的爱情，胜似称赞美酒。他们爱你是理所当然的。</p>
+      </li>
+                        <li><span>1:5</span>
+        <p>耶路撒冷的众女子啊，我虽然黑，却是秀美，如同基达的帐棚，好象所罗门的幔子。</p>
+      </li>
+                        <li><span>1:6</span>
+        <p>不要因日头把我晒黑了，就轻看我。我同母的弟兄向我发怒，他们使我看守葡萄园；我自己的葡萄园却没有看守。</p>
+      </li>
+                        <li><span>1:7</span>
+        <p>我心所爱的啊，求你告诉我，你在何处牧羊？晌午在何处使羊歇卧？我何必在你同伴的羊群旁边，好象蒙着脸的人呢？</p>
+      </li>
+                                    <li><span>1:8</span>
+        <p>你这女子中极美丽的，你若不知道，只管跟随羊群的脚踪去，把你的山羊羔牧放在牧人帐棚的旁边。</p>
+      </li>
+                        <li><span>1:9</span>
+        <p>我的佳偶，我将你比法老车上套的骏马。</p>
+      </li>
+                        <li><span>1:10</span>
+        <p>你的两腮因发辫而秀美；你的颈项因珠串而华丽。</p>
+      </li>
+                        <li><span>1:11</span>
+        <p>我们要为你编上金辫，镶上银钉。</p>
+      </li>
+                                    <li><span>1:12</span>
+        <p>王正坐席的时候，我的哪哒香膏发出香味。</p>
+      </li>
+                        <li><span>1:13</span>
+        <p>我以我的良人为一袋没药，常在我怀中；</p>
+      </li>
+                        <li><span>1:14</span>
+        <p>我以我的良人为一棵凤仙花，在隐基底葡萄园中。</p>
+      </li>
+                                    <li><span>1:15</span>
+        <p>我的佳偶，你甚美丽！你甚美丽！你的眼好象鸽子眼。</p>
+      </li>
+                                    <li><span>1:16</span>
+        <p>我的良人哪！你甚美丽可爱！我们以青草为床榻，</p>
+      </li>
+                        <li><span>1:17</span>
+        <p>以香柏树为房屋的栋梁，以松树为椽子。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共8首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>雅歌(歌)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>雅歌(歌)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>雅歌(歌)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>雅歌(歌)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>雅歌(歌)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>雅歌(歌)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>雅歌(歌)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>雅歌(歌)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="javascript:alertText('已到本章第一首!');"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-22-cid-2.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

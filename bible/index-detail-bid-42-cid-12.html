@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="42路加福音/42路加福音_12.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-42-cid-13.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">路加福音(路) 第12章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>12:1</span>
+        <p>这时，有几万人聚集，甚至彼此践踏。耶稣开讲，先对门徒说：“你们要防备法利赛人的酵，就是假冒为善。</p>
+      </li>
+                        <li><span>12:2</span>
+        <p>掩盖的事，没有不露出来的；隐藏的事，没有不被人知道的。</p>
+      </li>
+                        <li><span>12:3</span>
+        <p>因此，你们在暗中所说的，将要在明处被人听见；在内室附耳所说的，将要在房上被人宣扬。</p>
+      </li>
+                                    <li><span>12:4</span>
+        <p>我的朋友，我对你们说：“那杀身体以后不能再作什么的，不要怕他们。</p>
+      </li>
+                        <li><span>12:5</span>
+        <p>我要指示你们当怕的是谁，当怕那杀了以后又有权柄丢在地狱里的。我实在告诉你们：正要怕他。</p>
+      </li>
+                        <li><span>12:6</span>
+        <p>五个麻雀不是卖二分银子吗？但在  神面前，一个也不忘记，</p>
+      </li>
+                        <li><span>12:7</span>
+        <p>就是你们的头发，也都被数过了。不要惧怕，你们比许多麻雀还贵重。”</p>
+      </li>
+                                    <li><span>12:8</span>
+        <p>我又告诉你们：“凡在人面前认我的，人子在  神的使者面前也必认他；</p>
+      </li>
+                        <li><span>12:9</span>
+        <p>在人面前不认我的，人子在  神的使者面前也必不认他。</p>
+      </li>
+                        <li><span>12:10</span>
+        <p>凡说话干犯人子的，还可得赦免；惟独亵渎圣灵的，总不得赦免。</p>
+      </li>
+                        <li><span>12:11</span>
+        <p>人带你们到会堂并官府和有权柄的人面前，不要思虑怎么分诉，说什么话；</p>
+      </li>
+                        <li><span>12:12</span>
+        <p>因为正在那时候，圣灵要指教你们当说的话。”</p>
+      </li>
+                                    <li><span>12:13</span>
+        <p>众人中有一个人对耶稣说：“夫子，请你吩咐我的兄长和我分开家业。”</p>
+      </li>
+                        <li><span>12:14</span>
+        <p>耶稣说：“你这个人，谁立我作你们断事的官，给你们分家业呢？”</p>
+      </li>
+                        <li><span>12:15</span>
+        <p>于是对众人说：“你们要谨慎自守，免去一切的贪心；因为人的生命不在乎家道丰富。”</p>
+      </li>
+                        <li><span>12:16</span>
+        <p>就用比喻对他们说：“有一个财主，田产丰盛，</p>
+      </li>
+                        <li><span>12:17</span>
+        <p>自己心里思想说：‘我的出产没有地方收藏，怎么办呢？’</p>
+      </li>
+                        <li><span>12:18</span>
+        <p>又说：‘我要这么办：要把我的仓房拆了，另盖更大的，在那里好收藏我一切的粮食和财物，</p>
+      </li>
+                        <li><span>12:19</span>
+        <p>然后要对我的灵魂说：灵魂哪，你有许多财物积存，可作多年的费用，只管安安逸逸地吃喝快乐吧！’</p>
+      </li>
+                        <li><span>12:20</span>
+        <p>神却对他说：‘无知的人哪，今夜必要你的灵魂，你所预备的要归谁呢？’</p>
+      </li>
+                        <li><span>12:21</span>
+        <p>凡为自己积财，在  神面前却不富足的，也是这样。”</p>
+      </li>
+                                    <li><span>12:22</span>
+        <p>耶稣又对门徒说：“所以我告诉你们：不要为生命忧虑吃什么，为身体忧虑穿什么；</p>
+      </li>
+                        <li><span>12:23</span>
+        <p>因为生命胜于饮食，身体胜于衣裳。</p>
+      </li>
+                        <li><span>12:24</span>
+        <p>你想，乌鸦也不种，也不收，又没有仓，又没有库，  神尚且养活它。你们比飞鸟是何等地贵重呢！</p>
+      </li>
+                        <li><span>12:25</span>
+        <p>你们哪一个能用思虑使寿数多加一刻呢（或作“使身量多加一肘呢”）？</p>
+      </li>
+                        <li><span>12:26</span>
+        <p>这最小的事你们尚且不能作，为什么还忧虑其余的事呢？</p>
+      </li>
+                        <li><span>12:27</span>
+        <p>你想，百合花怎么长起来？它也不劳苦，也不纺线。然而我告诉你们：就是所罗门极荣华的时候，他所穿戴的，还不如这花一朵呢！</p>
+      </li>
+                        <li><span>12:28</span>
+        <p>你们这小信的人哪，野地里的草今天还在，明天就丢在炉里，  神还给它这样的妆饰，何况你们呢！</p>
+      </li>
+                        <li><span>12:29</span>
+        <p>你们不要求吃什么，喝什么，也不要挂心。</p>
+      </li>
+                        <li><span>12:30</span>
+        <p>这都是外邦人所求的。你们必须用这些东西，你们的父是知道的。</p>
+      </li>
+                        <li><span>12:31</span>
+        <p>你们只要求他的国，这些东西就必加给你们了。</p>
+      </li>
+                        <li><span>12:32</span>
+        <p>你们这小群，不要惧怕，因为你们的父乐意把国赐给你们。</p>
+      </li>
+                        <li><span>12:33</span>
+        <p>你们要变卖所有的周济人，为自己预备永不坏的钱囊，用不尽的财宝在天上，就是贼不能近、虫不能蛀的地方。</p>
+      </li>
+                        <li><span>12:34</span>
+        <p>因为你们的财宝在哪里，你们的心也在那里。”</p>
+      </li>
+                                    <li><span>12:35</span>
+        <p>“你们腰里要束上带，灯也要点着。</p>
+      </li>
+                        <li><span>12:36</span>
+        <p>自己好像仆人等候主人从婚姻的筵席上回来。他来到叩门，就立刻给他开门。</p>
+      </li>
+                        <li><span>12:37</span>
+        <p>主人来了，看见仆人警醒，那仆人就有福了。我实在告诉你们：主人必叫他们坐席，自己束上带，进前伺候他们。</p>
+      </li>
+                        <li><span>12:38</span>
+        <p>或是二更天来，或是三更天来，看见仆人这样，那仆人就有福了。</p>
+      </li>
+                        <li><span>12:39</span>
+        <p>家主若知道贼什么时候来，就必警醒，不容贼挖透房屋，这是你们所知道的。</p>
+      </li>
+                        <li><span>12:40</span>
+        <p>你们也要预备，因为你们想不到的时候，人子就来了。”</p>
+      </li>
+                        <li><span>12:41</span>
+        <p>彼得说：“主啊，这比喻是为我们说的呢，还是为众人呢？”</p>
+      </li>
+                        <li><span>12:42</span>
+        <p>主说：“谁是那忠心有见识的管家，主人派他管理家里的人，按时分粮给他们呢？</p>
+      </li>
+                        <li><span>12:43</span>
+        <p>主人来到，看见仆人这样行，那仆人就有福了。</p>
+      </li>
+                        <li><span>12:44</span>
+        <p>我实在告诉你们：主人要派他管理一切所有的。</p>
+      </li>
+                        <li><span>12:45</span>
+        <p>那仆人若心里说：‘我的主人必来得迟’，就动手打仆人和使女，并且吃喝醉酒。</p>
+      </li>
+                        <li><span>12:46</span>
+        <p>在他想不到的日子，不知道的时辰，那仆人的主人要来，重重地处治他（或作“把他腰斩了”），定他和不忠心的人同罪。</p>
+      </li>
+                        <li><span>12:47</span>
+        <p>仆人知道主人的意思，却不预备，又不顺他的意思行，那仆人必多受责打；</p>
+      </li>
+                        <li><span>12:48</span>
+        <p>惟有那不知道的，作了当受责打的事，必少受责打。因为多给谁，就向谁多取；多托谁，就向谁多要。”</p>
+      </li>
+                                    <li><span>12:49</span>
+        <p>“我来，要把火丢在地上，倘若已经着起来，不也是我所愿意的吗？</p>
+      </li>
+                        <li><span>12:50</span>
+        <p>我有当受的洗还没有成就，我是何等的迫切呢？</p>
+      </li>
+                        <li><span>12:51</span>
+        <p>你们以为我来，是叫地上太平吗？我告诉你们：不是，乃是叫人纷争。</p>
+      </li>
+                        <li><span>12:52</span>
+        <p>从今以后，一家五个人将要纷争：三个人和两个人相争，两个人和三个人相争；</p>
+      </li>
+                        <li><span>12:53</span>
+        <p>父亲和儿子相争，儿子和父亲相争；母亲和女儿相争，女儿和母亲相争；婆婆和媳妇相争，媳妇和婆婆相争。”</p>
+      </li>
+                                    <li><span>12:54</span>
+        <p>耶稣又对众人说：“你们看见西边起了云彩，就说：‘要下一阵雨’，果然就有；</p>
+      </li>
+                        <li><span>12:55</span>
+        <p>起了南风，就说‘将要燥热’，也就有了。</p>
+      </li>
+                        <li><span>12:56</span>
+        <p>假冒为善的人哪，你们知道分辨天地的气色，怎么不知道分辨这时候呢？”</p>
+      </li>
+                                    <li><span>12:57</span>
+        <p>“你们又为何不自己审量什么是合理的呢？</p>
+      </li>
+                        <li><span>12:58</span>
+        <p>你同告你的对头去见官，还在路上，务要尽力地和他了结；恐怕他拉你到官面前，官交付差役，差役把你下在监里。</p>
+      </li>
+                        <li><span>12:59</span>
+        <p>我告诉你，若有半文钱没有还清，你断不能从那里出来。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共24首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>路加福音(路)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>路加福音(路)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>路加福音(路)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>路加福音(路)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>路加福音(路)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>路加福音(路)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>路加福音(路)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>路加福音(路)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>路加福音(路)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>路加福音(路)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>路加福音(路)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>路加福音(路)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>路加福音(路)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>路加福音(路)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>路加福音(路)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>路加福音(路)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>路加福音(路)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>路加福音(路)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>路加福音(路)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>路加福音(路)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>路加福音(路)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>路加福音(路)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>路加福音(路)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>路加福音(路)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-42-cid-11.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-42-cid-13.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="17以斯帖记/17以斯帖记_02.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-17-cid-3.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">以斯帖记(斯) 第2章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>2:1</span>
+        <p>这事以后，亚哈随鲁王的忿怒止息，就想念瓦实提和她所行的，并怎样降旨办她。</p>
+      </li>
+                        <li><span>2:2</span>
+        <p>于是王的侍臣对王说：“不如为王寻找美貌的处女。</p>
+      </li>
+                        <li><span>2:3</span>
+        <p>王可以派官在国中的各省，招聚美貌的处女到书珊城（或作“宫”）的女院，交给掌管女子的太监希该，给她们当用的香品。</p>
+      </li>
+                        <li><span>2:4</span>
+        <p>王所喜爱的女子可以立为王后，代替瓦实提。”王以这事为美，就如此行。</p>
+      </li>
+                        <li><span>2:5</span>
+        <p>书珊城有一个犹大人，名叫末底改，是便雅悯人基士的曾孙、示每的孙子、睚珥的儿子。</p>
+      </li>
+                        <li><span>2:6</span>
+        <p>从前巴比伦王尼布甲尼撒将犹大王耶哥尼雅（又名“约雅斤”）和百姓从耶路撒冷掳去，末底改也在其内。</p>
+      </li>
+                        <li><span>2:7</span>
+        <p>末底改抚养他叔叔的女儿哈大沙（后名以斯帖），因为她没有父母。这女子又容貌俊美，她父母死了，末底改就收她为自己的女儿。</p>
+      </li>
+                        <li><span>2:8</span>
+        <p>王的谕旨传出，就招聚许多女子到书珊城，交给掌管女子的希该；以斯帖也送入王宫，交付希该。</p>
+      </li>
+                        <li><span>2:9</span>
+        <p>希该喜悦以斯帖，就恩待她，急忙给她需用的香品和她所当得的份，又派所当得的七个宫女服侍她，使她和她的宫女搬入女院上好的房屋。</p>
+      </li>
+                        <li><span>2:10</span>
+        <p>以斯帖未曾将籍贯宗族告诉人，因为末底改嘱咐她不可叫人知道。</p>
+      </li>
+                        <li><span>2:11</span>
+        <p>末底改天天在女院前边行走，要知道以斯帖平安不平安，并后事如何。</p>
+      </li>
+                        <li><span>2:12</span>
+        <p>众女子照例先洁净身体十二个月：六个月用没药油；六个月用香料和洁身之物。满了日期，然后挨次进去见亚哈随鲁王。</p>
+      </li>
+                        <li><span>2:13</span>
+        <p>女子进去见王是这样：从女院到王宫的时候，凡她所要的都必给她。</p>
+      </li>
+                        <li><span>2:14</span>
+        <p>晚上进去，次日回到女子第二院，交给掌管妃嫔的太监沙甲，除非王喜爱她，再提名召她，就不再进去见王。</p>
+      </li>
+                        <li><span>2:15</span>
+        <p>末底改叔叔亚比孩的女儿，就是末底改收为自己女儿的以斯帖，按次序当进去见王的时候，除了掌管女子的太监希该所派定给她的，她别无所求。凡看见以斯帖的都喜悦她。</p>
+      </li>
+                        <li><span>2:16</span>
+        <p>亚哈随鲁王第七年十月，就是提别月，以斯帖被引入宫见王。</p>
+      </li>
+                        <li><span>2:17</span>
+        <p>王爱以斯帖过于爱众女，她在王眼前蒙宠爱比众处女更甚。王就把王后的冠冕戴在她头上，立她为王后，代替瓦实提。</p>
+      </li>
+                        <li><span>2:18</span>
+        <p>王因以斯帖的缘故给众首领和臣仆设摆大筵席，又豁免各省的租税，并照王的厚意大颁赏赐。</p>
+      </li>
+                                    <li><span>2:19</span>
+        <p>第二次招聚处女的时候，末底改坐在朝门。</p>
+      </li>
+                        <li><span>2:20</span>
+        <p>以斯帖照着末底改所嘱咐的，还没有将籍贯宗族告诉人，因为以斯帖遵末底改的命，如抚养她的时候一样。</p>
+      </li>
+                        <li><span>2:21</span>
+        <p>当那时候，末底改坐在朝门，王的太监中有两个守门的辟探和提列，恼恨亚哈随鲁王，想要下手害他。</p>
+      </li>
+                        <li><span>2:22</span>
+        <p>末底改知道了，就告诉王后以斯帖。以斯帖奉末底改的名，报告于王。</p>
+      </li>
+                        <li><span>2:23</span>
+        <p>究察这事，果然是实，就把二人挂在木头上，将这事在王面前写于历史上。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共10首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>以斯帖记(斯)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>以斯帖记(斯)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>以斯帖记(斯)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>以斯帖记(斯)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>以斯帖记(斯)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>以斯帖记(斯)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>以斯帖记(斯)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>以斯帖记(斯)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>以斯帖记(斯)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>以斯帖记(斯)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-17-cid-1.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-17-cid-3.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

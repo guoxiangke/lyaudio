@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="50腓立比书/50腓立比书_04.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-50.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">腓立比书(腓) 第4章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                  <li><span>4:1</span>
+        <p>我所亲爱、所想念的弟兄们，你们就是我的喜乐，我的冠冕。我亲爱的弟兄，你们应当靠主站立得稳。</p>
+      </li>
+                                    <li><span>4:2</span>
+        <p>我劝友阿爹和循都基要在主里同心。</p>
+      </li>
+                        <li><span>4:3</span>
+        <p>我也求你这真实同负一轭的，帮助这两个女人，因为她们在福音上曾与我一同劳苦；还有革利免，并其余和我一同作工的，他们的名字都在生命册上。</p>
+      </li>
+                        <li><span>4:4</span>
+        <p>你们要靠主常常喜乐；我再说，你们要喜乐。</p>
+      </li>
+                        <li><span>4:5</span>
+        <p>当叫众人知道你们谦让的心。主已经近了。</p>
+      </li>
+                        <li><span>4:6</span>
+        <p>应当一无挂虑，只要凡事藉着祷告、祈求和感谢，将你们所要的告诉  神。</p>
+      </li>
+                        <li><span>4:7</span>
+        <p>神所赐出人意外的平安，必在基督耶稣里保守你们的心怀意念。</p>
+      </li>
+                        <li><span>4:8</span>
+        <p>弟兄们，我还有未尽的话：凡是真实的、可敬的、公义的、清洁的、可爱的、有美名的，若有什么德行，若有什么称赞，这些事你们都要思念。</p>
+      </li>
+                        <li><span>4:9</span>
+        <p>你们在我身上所学习的，所领受的，所听见的，所看见的，这些事你们都要去行，赐平安的  神就必与你们同在。</p>
+      </li>
+                                    <li><span>4:10</span>
+        <p>我靠主大大地喜乐，因为你们思念我的心如今又发生；你们向来就思念我，只是没得机会。</p>
+      </li>
+                        <li><span>4:11</span>
+        <p>我并不是因缺乏说这话，我无论在什么景况都可以知足，这是我已经学会了。</p>
+      </li>
+                        <li><span>4:12</span>
+        <p>我知道怎样处卑贱，也知道怎样处丰富，或饱足、或饥饿、或有余、或缺乏，随事随在，我都得了秘诀。</p>
+      </li>
+                        <li><span>4:13</span>
+        <p>我靠着那加给我力量的，凡事都能作。</p>
+      </li>
+                        <li><span>4:14</span>
+        <p>然而你们和我同受患难，原是美事。</p>
+      </li>
+                        <li><span>4:15</span>
+        <p>腓立比人哪，你们也知道我初传福音，离了马其顿的时候，论到授受的事，除了你们以外，并没有别的教会供给我。</p>
+      </li>
+                        <li><span>4:16</span>
+        <p>就是我在帖撒罗尼迦，你们也一次两次地打发人供给我的需用。</p>
+      </li>
+                        <li><span>4:17</span>
+        <p>我并不求什么馈送，所求的就是你们的果子渐渐增多，归在你们的账上。</p>
+      </li>
+                        <li><span>4:18</span>
+        <p>但我样样都有，并且有余；我已经充足，因我从以巴弗提受了你们的馈送，当作极美的香气，为  神所收纳、所喜悦的祭物。</p>
+      </li>
+                        <li><span>4:19</span>
+        <p>我的  神必照他荣耀的丰富，在基督耶稣里使你们一切所需用的都充足。</p>
+      </li>
+                        <li><span>4:20</span>
+        <p>愿荣耀归给我们的父  神，直到永永远远。阿们！</p>
+      </li>
+                                    <li><span>4:21</span>
+        <p>请问在基督耶稣里的各位圣徒安。在我这里的众弟兄都问你们安。</p>
+      </li>
+                        <li><span>4:22</span>
+        <p>众圣徒都问你们安。在凯撒家里的人特特地问你们安。</p>
+      </li>
+                        <li><span>4:23</span>
+        <p>愿主耶稣基督的恩常在你们心里！</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共4首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-50-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>腓立比书(腓)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-50-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>腓立比书(腓)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-50-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>腓立比书(腓)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-50-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>腓立比书(腓)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-50-cid-3.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="javascript:alertText('已到本章第后一首!');"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

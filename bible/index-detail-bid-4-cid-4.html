@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="04民数记/04民数记_04.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-4-cid-5.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">民数记(民) 第4章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>4:1</span>
+        <p>耶和华晓谕摩西、亚伦说：</p>
+      </li>
+                        <li><span>4:2</span>
+        <p>“你从利未人中，将哥辖子孙的总数，照他们的家室、宗族，</p>
+      </li>
+                        <li><span>4:3</span>
+        <p>从三十岁直到五十岁，凡前来任职在会幕里办事的，全都计算。</p>
+      </li>
+                        <li><span>4:4</span>
+        <p>哥辖子孙在会幕搬运至圣之物，所办的事乃是这样：</p>
+      </li>
+                        <li><span>4:5</span>
+        <p>起营的时候，亚伦和他儿子要进去摘下遮掩柜的幔子，用以蒙盖法柜。</p>
+      </li>
+                        <li><span>4:6</span>
+        <p>又用海狗皮盖在上头，再蒙上纯蓝色的毯子，把杠穿上。</p>
+      </li>
+                        <li><span>4:7</span>
+        <p>又用蓝色毯子铺在陈设饼的桌子上，将盘子、调羹、奠酒的爵和杯摆在上头。桌子上也必有常设的饼。</p>
+      </li>
+                        <li><span>4:8</span>
+        <p>在其上又要蒙朱红色的毯子，再蒙上海狗皮，把杠穿上。</p>
+      </li>
+                        <li><span>4:9</span>
+        <p>要拿蓝色毯子，把灯台和灯台上所用的灯盏、剪子、蜡花盘，并一切盛油的器皿，全都遮盖。</p>
+      </li>
+                        <li><span>4:10</span>
+        <p>又要把灯台和灯台的一切器具包在海狗皮里，放在抬架上。</p>
+      </li>
+                        <li><span>4:11</span>
+        <p>在金坛上要铺蓝色毯子，蒙上海狗皮，把杠穿上。</p>
+      </li>
+                        <li><span>4:12</span>
+        <p>又要把圣所用的一切器具，包在蓝色毯子里，用海狗皮蒙上，放在抬架上。</p>
+      </li>
+                        <li><span>4:13</span>
+        <p>要收去坛上的灰，把紫色毯子铺在坛上。</p>
+      </li>
+                        <li><span>4:14</span>
+        <p>又要把所用的一切器具，就是火鼎、肉叉子、铲子、盘子，一切属坛的器具都摆在坛上，又蒙上海狗皮，把杠穿上。</p>
+      </li>
+                        <li><span>4:15</span>
+        <p>将要起营的时候，亚伦和他儿子把圣所和圣所的一切器具遮盖完了，哥辖的子孙就要来抬，只是不可摸圣物，免得他们死亡。会幕里这些物件是哥辖子孙所当抬的。</p>
+      </li>
+                        <li><span>4:16</span>
+        <p>祭司亚伦的儿子以利亚撒所要看守的，是点灯的油与香料，并当献的素祭和膏油，也要看守全帐幕与其中所有的，并圣所和圣所的器具。”</p>
+      </li>
+                        <li><span>4:17</span>
+        <p>耶和华晓谕摩西、亚伦说：</p>
+      </li>
+                        <li><span>4:18</span>
+        <p>“你们不可将哥辖人的支派从利未人中剪除。</p>
+      </li>
+                        <li><span>4:19</span>
+        <p>他们挨近至圣物的时候，亚伦和他儿子要进去派他们各人所当办的、所当抬的，这样待他们，好使他们活着，不致死亡。</p>
+      </li>
+                        <li><span>4:20</span>
+        <p>只是他们连片时不可进去观看圣所，免得他们死亡。”</p>
+      </li>
+                                    <li><span>4:21</span>
+        <p>耶和华晓谕摩西说：</p>
+      </li>
+                        <li><span>4:22</span>
+        <p>“你要将革顺子孙的总数，照着宗族、家室，</p>
+      </li>
+                        <li><span>4:23</span>
+        <p>从三十岁直到五十岁，凡前来任职在会幕里办事的，全都数点。</p>
+      </li>
+                        <li><span>4:24</span>
+        <p>革顺人各族所办的事、所抬的物乃是这样：</p>
+      </li>
+                        <li><span>4:25</span>
+        <p>他们要抬帐幕的幔子和会幕，并会幕的盖，与其上的海狗皮和会幕的门帘，</p>
+      </li>
+                        <li><span>4:26</span>
+        <p>院子的帷子和门帘（院子是围帐幕和坛的）、绳子，并所用的器具，不论是作什么用的，他们都要经理。</p>
+      </li>
+                        <li><span>4:27</span>
+        <p>革顺的子孙在一切抬物办事之上，都要凭亚伦和他儿子的吩咐，他们所当抬的，要派他们看守。</p>
+      </li>
+                        <li><span>4:28</span>
+        <p>这是革顺子孙的各族在会幕里所办的事，他们所看守的，必在祭司亚伦儿子以他玛的手下。”</p>
+      </li>
+                                    <li><span>4:29</span>
+        <p>“至于米拉利的子孙，你要照着家室、宗族，把他们数点。</p>
+      </li>
+                        <li><span>4:30</span>
+        <p>从三十岁直到五十岁，凡前来任职、在会幕里办事的，你都要数点。</p>
+      </li>
+                        <li><span>4:31</span>
+        <p>他们办理会幕的事，就是抬帐幕的板、闩、柱子，和带卯的座，</p>
+      </li>
+                        <li><span>4:32</span>
+        <p>院子四围的柱子和其上带卯的座、橛子、绳子，并一切使用的器具。他们所抬的器具，你们要按名指定。</p>
+      </li>
+                        <li><span>4:33</span>
+        <p>这是米拉利子孙各族在会幕里所办的事，都在祭司亚伦儿子以他玛的手下。”</p>
+      </li>
+                                    <li><span>4:34</span>
+        <p>摩西、亚伦与会众的诸首领将哥辖的子孙照着家室、宗族，</p>
+      </li>
+                        <li><span>4:35</span>
+        <p>从三十岁直到五十岁，凡前来任职、在会幕里办事的，都数点了。</p>
+      </li>
+                        <li><span>4:36</span>
+        <p>被数的共有二千七百五十名。</p>
+      </li>
+                        <li><span>4:37</span>
+        <p>这是哥辖各族中被数的，是在会幕里办事的，就是摩西、亚伦照耶和华藉摩西所吩咐数点的。</p>
+      </li>
+                        <li><span>4:38</span>
+        <p>革顺子孙中被数的，照着家室、宗族，</p>
+      </li>
+                        <li><span>4:39</span>
+        <p>-</p>
+      </li>
+                        <li><span>4:40</span>
+        <p>从三十岁直到五十岁，凡前来任职、在会幕里办事的，共有二千六百三十名。</p>
+      </li>
+                        <li><span>4:41</span>
+        <p>这是革顺子孙各族中被数的，是在会幕里办事的，就是摩西、亚伦照耶和华藉摩西所吩咐数点的。</p>
+      </li>
+                        <li><span>4:42</span>
+        <p>米拉利子孙中各族被数的，照着家室、宗族，</p>
+      </li>
+                        <li><span>4:43</span>
+        <p>-</p>
+      </li>
+                        <li><span>4:44</span>
+        <p>从三十岁直到五十岁，凡前来任职、在会幕里办事的，共有三千二百名。</p>
+      </li>
+                        <li><span>4:45</span>
+        <p>这是米拉利子孙各族中被数的，就是摩西、亚伦照耶和华藉摩西所吩咐数点的。</p>
+      </li>
+                        <li><span>4:46</span>
+        <p>凡被数的利未人，就是摩西、亚伦并以色列众首领，照着家室、宗族所数点的，</p>
+      </li>
+                        <li><span>4:47</span>
+        <p>-</p>
+      </li>
+                        <li><span>4:48</span>
+        <p>从三十岁直到五十岁，凡前来任职、在会幕里作抬物之工的，共有八千五百八十名。</p>
+      </li>
+                        <li><span>4:49</span>
+        <p>摩西按他们所办的事、所抬的物，凭耶和华的吩咐数点他们；他们这样被摩西数点，正如耶和华所吩咐他的。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共36首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>民数记(民)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>民数记(民)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>民数记(民)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>民数记(民)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>民数记(民)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>民数记(民)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>民数记(民)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>民数记(民)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>民数记(民)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>民数记(民)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>民数记(民)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>民数记(民)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>民数记(民)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>民数记(民)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>民数记(民)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>民数记(民)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>民数记(民)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>民数记(民)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>民数记(民)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>民数记(民)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>民数记(民)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>民数记(民)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>民数记(民)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>民数记(民)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>民数记(民)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>民数记(民)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>民数记(民)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>民数记(民)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>民数记(民)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>民数记(民)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>民数记(民)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>民数记(民)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>民数记(民)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>民数记(民)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-35.html"><span class="ppNum">35</span>
+        <p><strong>民数记(民)第35章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-36.html"><span class="ppNum">36</span>
+        <p><strong>民数记(民)第36章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-4-cid-3.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-4-cid-5.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

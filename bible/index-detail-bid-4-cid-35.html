@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="04民数记/04民数记_35.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-4-cid-36.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">民数记(民) 第35章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>35:1</span>
+        <p>耶和华在摩押平原、约旦河边、耶利哥对面晓谕摩西说：</p>
+      </li>
+                        <li><span>35:2</span>
+        <p>“你吩咐以色列人，要从所得为业的地中把些城给利未人居住，也要把这城四围的郊野给利未人。</p>
+      </li>
+                        <li><span>35:3</span>
+        <p>这城邑要归他们居住，城邑的郊野可以牧养他们的牛羊和各样的牲畜，又可以安置他们的财物。</p>
+      </li>
+                        <li><span>35:4</span>
+        <p>你们给利未人的郊野，要从城根起，四围往外量一千肘。</p>
+      </li>
+                        <li><span>35:5</span>
+        <p>另外，东量二千肘，南量二千肘，西量二千肘，北量二千肘为边界，城在当中，这要归他们作城邑的郊野。</p>
+      </li>
+                        <li><span>35:6</span>
+        <p>你们给利未人的城邑，其中当有六座逃城，使误杀人的可以逃到那里。此外还要给他们四十二座城。</p>
+      </li>
+                        <li><span>35:7</span>
+        <p>你们要给利未人的城共有四十八座，连城带郊野都要给他们。</p>
+      </li>
+                        <li><span>35:8</span>
+        <p>以色列人所得的地业，从中要把些城邑给利未人。人多的就多给；人少的就少给。各支派要按所承受为业之地把城邑给利未人。”</p>
+      </li>
+                                    <li><span>35:9</span>
+        <p>耶和华晓谕摩西说：</p>
+      </li>
+                        <li><span>35:10</span>
+        <p>“你吩咐以色列人说：你们过约旦河，进了迦南地，</p>
+      </li>
+                        <li><span>35:11</span>
+        <p>就要分出几座城，为你们作逃城，使误杀人的可以逃到那里。</p>
+      </li>
+                        <li><span>35:12</span>
+        <p>这些城可以作逃避报仇人的城，使误杀人的不至于死，等他站在会众面前听审判。</p>
+      </li>
+                        <li><span>35:13</span>
+        <p>你们所分出来的城，要作六座逃城。</p>
+      </li>
+                        <li><span>35:14</span>
+        <p>在约旦河东要分出三座城；在迦南地也要分出三座城，都作逃城。</p>
+      </li>
+                        <li><span>35:15</span>
+        <p>这六座城要给以色列人和他们中间的外人，并寄居的，作为逃城，使误杀人的都可以逃到那里。”</p>
+      </li>
+                        <li><span>35:16</span>
+        <p>倘若人用铁器打人，以致打死，他就是故杀人的，故杀人的必被治死；</p>
+      </li>
+                        <li><span>35:17</span>
+        <p>若用可以打死人的石头打死了人，他就是故杀人的，故杀人的必被治死；</p>
+      </li>
+                        <li><span>35:18</span>
+        <p>若用可以打死人的木器打死了人，他就是故杀人的，故杀人的必被治死；</p>
+      </li>
+                        <li><span>35:19</span>
+        <p>报血仇的必亲自杀那故杀人的，一遇见就杀他。</p>
+      </li>
+                        <li><span>35:20</span>
+        <p>人若因怨恨把人推倒，或是埋伏往人身上扔物，以致于死；</p>
+      </li>
+                        <li><span>35:21</span>
+        <p>或是因仇恨用手打人，以致于死，那打人的必被治死。他是故杀人的，报血仇的一遇见就杀他。”</p>
+      </li>
+                        <li><span>35:22</span>
+        <p>“倘若人没有仇恨，忽然将人推倒；或是没有埋伏，把物扔在人身上；</p>
+      </li>
+                        <li><span>35:23</span>
+        <p>或是没有看见的时候，用可以打死人的石头，扔在人身上，以致于死，本来与他无仇，也无意害他。</p>
+      </li>
+                        <li><span>35:24</span>
+        <p>会众就要照典章，在打死人的和报血仇的中间审判。</p>
+      </li>
+                        <li><span>35:25</span>
+        <p>会众要救这误杀人的脱离报血仇人的手，也要使他归入逃城。他要住在其中，直等到受圣膏的大祭司死了。</p>
+      </li>
+                        <li><span>35:26</span>
+        <p>但误杀人的，无论什么时候，若出了逃城的境外，</p>
+      </li>
+                        <li><span>35:27</span>
+        <p>报血仇的在逃城境外遇见他，将他杀了，报血仇的就没有流血之罪。</p>
+      </li>
+                        <li><span>35:28</span>
+        <p>因为误杀人的该住在逃城里，等到大祭司死了。大祭司死了以后，误杀人的才可以回到他所得为业之地。</p>
+      </li>
+                        <li><span>35:29</span>
+        <p>这在你们一切的住处，要作你们世世代代的律例、典章。”</p>
+      </li>
+                        <li><span>35:30</span>
+        <p>无论谁故杀人，要凭几个见证人的口，把那故杀人的杀了，只是不可凭一个见证的口叫人死。</p>
+      </li>
+                        <li><span>35:31</span>
+        <p>故杀人犯死罪的，你们不可收赎价代替他的命，他必被治死。</p>
+      </li>
+                        <li><span>35:32</span>
+        <p>那逃到逃城的人，你们不可为他收赎价，使他在大祭司未死以先，再来住在本地。</p>
+      </li>
+                        <li><span>35:33</span>
+        <p>这样，你们就不污秽所住之地，因为血是污秽地的。若有在地上流人血的，非流那杀人者的血，那地就不得洁净（“洁净”原文作“赎”）。</p>
+      </li>
+                        <li><span>35:34</span>
+        <p>你们不可玷污所住之地，就是我住在其中之地，因为我耶和华住在以色列人中间。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共36首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>民数记(民)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>民数记(民)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>民数记(民)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>民数记(民)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>民数记(民)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>民数记(民)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>民数记(民)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>民数记(民)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>民数记(民)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>民数记(民)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>民数记(民)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>民数记(民)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>民数记(民)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>民数记(民)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>民数记(民)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>民数记(民)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>民数记(民)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>民数记(民)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>民数记(民)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>民数记(民)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>民数记(民)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>民数记(民)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>民数记(民)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>民数记(民)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>民数记(民)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>民数记(民)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>民数记(民)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>民数记(民)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>民数记(民)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>民数记(民)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>民数记(民)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>民数记(民)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>民数记(民)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>民数记(民)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-35.html"><span class="ppNum">35</span>
+        <p><strong>民数记(民)第35章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-36.html"><span class="ppNum">36</span>
+        <p><strong>民数记(民)第36章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-4-cid-34.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-4-cid-36.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

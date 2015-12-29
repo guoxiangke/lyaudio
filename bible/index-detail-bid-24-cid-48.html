@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="24耶利米书/24耶利米书_48.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-24-cid-49.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">耶利米书(耶) 第48章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>48:1</span>
+        <p>论摩押。万军之耶和华以色列的  神如此说：“尼波有祸了！因变为荒场。基列亭蒙羞被攻取，米斯迦蒙羞被毁坏。</p>
+      </li>
+                        <li><span>48:2</span>
+        <p>摩押不再被称赞。有人在希实本设计谋害他，说：‘来吧！我们将他剪除，不再成国。’玛得缅哪，你也必默默无声，刀剑必追赶你。”</p>
+      </li>
+                        <li><span>48:3</span>
+        <p>“从何罗念有喊荒凉大毁灭的哀声。</p>
+      </li>
+                        <li><span>48:4</span>
+        <p>摩押毁灭了！他的孩童（或作“家僮”）发哀声，使人听见。</p>
+      </li>
+                        <li><span>48:5</span>
+        <p>人上鲁希坡随走随哭，因为在何罗念的下坡，听见毁灭的哀声。</p>
+      </li>
+                        <li><span>48:6</span>
+        <p>你们要奔逃，自救性命，独自居住，好像旷野的杜松。</p>
+      </li>
+                        <li><span>48:7</span>
+        <p>你因倚靠自己所作的和自己的财宝，必被攻取。基抹和属他的祭司、首领也要一同被掳去。</p>
+      </li>
+                        <li><span>48:8</span>
+        <p>行毁灭的必来到各城，并无一城得免。山谷必至败落，平原必被毁坏，正如耶和华所说的。”</p>
+      </li>
+                        <li><span>48:9</span>
+        <p>“要将翅膀给摩押，使他可以飞去。他的城邑必至荒凉，无人居住。</p>
+      </li>
+                        <li><span>48:10</span>
+        <p>懒惰为耶和华行事的，必受咒诅；禁止刀剑不经血的必受咒诅。”</p>
+      </li>
+                                    <li><span>48:11</span>
+        <p>“摩押自幼年以来常享安逸，如酒在渣滓上澄清，没有从这器皿倒在那器皿里，也未曾被掳去。因此，他的原味尚存，香气未变。</p>
+      </li>
+                        <li><span>48:12</span>
+        <p>耶和华说：日子将到，我必打发倒酒的往他那里去，将他倒出来，倒空他的器皿，打碎他的坛子。</p>
+      </li>
+                        <li><span>48:13</span>
+        <p>摩押必因基抹羞愧，像以色列家从前倚靠伯特利的神羞愧一样。</p>
+      </li>
+                        <li><span>48:14</span>
+        <p>你们怎么说：‘我们是勇士，是有勇力打仗的’呢？</p>
+      </li>
+                        <li><span>48:15</span>
+        <p>摩押变为荒场，敌人上去进了他的城邑。他所特选的少年人下去遭了杀戮。这是君王，名为万军之耶和华说的。</p>
+      </li>
+                        <li><span>48:16</span>
+        <p>摩押的灾殃临近，他的苦难速速来到。</p>
+      </li>
+                        <li><span>48:17</span>
+        <p>凡在他四围的和认识他名的，你们都要为他悲伤，说：‘那结实的杖和那美好的棍，何竟折断了呢？’”</p>
+      </li>
+                        <li><span>48:18</span>
+        <p>“住在底本的民哪（“民”原文作“女子”），要从你荣耀的位上下来，坐受干渴，因毁灭摩押的上来攻击你，毁坏了你的保障。</p>
+      </li>
+                        <li><span>48:19</span>
+        <p>住亚罗珥的啊，要站在道旁观望，问逃避的男人和逃脱的女人说：‘是什么事呢？’</p>
+      </li>
+                        <li><span>48:20</span>
+        <p>摩押因毁坏蒙羞，你们要哀号呼喊。要在亚嫩旁报告说：‘摩押变为荒场！’</p>
+      </li>
+                        <li><span>48:21</span>
+        <p>刑罚临到平原之地的何伦、雅杂、米法押、</p>
+      </li>
+                        <li><span>48:22</span>
+        <p>底本、尼波、伯低比拉太音、</p>
+      </li>
+                        <li><span>48:23</span>
+        <p>基列亭、伯迦末、伯米恩、</p>
+      </li>
+                        <li><span>48:24</span>
+        <p>加略、波斯拉和摩押地远近所有的城邑。</p>
+      </li>
+                        <li><span>48:25</span>
+        <p>摩押的角砍断了，摩押的膀臂折断了。这是耶和华说的。”</p>
+      </li>
+                                    <li><span>48:26</span>
+        <p>“你们要使摩押沉醉，因他向耶和华夸大。他要在自己所吐之中打滚，又要被人嗤笑。</p>
+      </li>
+                        <li><span>48:27</span>
+        <p>摩押啊，你不曾嗤笑以色列吗？他岂是在贼中查出来的呢？你每逢提到他便摇头。</p>
+      </li>
+                        <li><span>48:28</span>
+        <p>摩押的居民哪，要离开城邑，住在山崖里，像鸽子在深渊口上搭窝。</p>
+      </li>
+                        <li><span>48:29</span>
+        <p>我们听说摩押人骄傲，是极其骄傲；听说他自高自傲，并且狂妄，居心自大。</p>
+      </li>
+                        <li><span>48:30</span>
+        <p>耶和华说：我知道他的忿怒是虚空的，他夸大的话一无所成。</p>
+      </li>
+                        <li><span>48:31</span>
+        <p>因此，我要为摩押哀号，为摩押全地呼喊。人必为吉珥哈列设人叹息。</p>
+      </li>
+                        <li><span>48:32</span>
+        <p>西比玛的葡萄树啊，我为你哀哭甚于雅谢人哀哭。你的枝子蔓延过海，直长到雅谢海。那行毁灭的，已经临到你夏天的果子和你所摘的葡萄。</p>
+      </li>
+                        <li><span>48:33</span>
+        <p>肥田和摩押地的欢喜快乐都被夺去，我使酒醡的酒绝流，无人踹酒欢呼，那欢呼却变为仇敌的呐喊（原文作“那欢呼却不是欢呼”）。”</p>
+      </li>
+                        <li><span>48:34</span>
+        <p>“希实本人发的哀声达到以利亚利，直达到雅杂，从琐珥达到何罗念，直到伊基拉施利施亚，因为宁林的水必然干涸。”</p>
+      </li>
+                        <li><span>48:35</span>
+        <p>耶和华说：“我必在摩押地使那在邱坛献祭的和那向他的神烧香的都断绝了。</p>
+      </li>
+                        <li><span>48:36</span>
+        <p>我心腹为摩押哀鸣如箫，我心肠为吉珥哈列设人也是如此；因摩押人所得的财物都灭没了。”</p>
+      </li>
+                        <li><span>48:37</span>
+        <p>“各人头上光秃，胡须剪短，手有划伤，腰束麻布。</p>
+      </li>
+                        <li><span>48:38</span>
+        <p>在摩押的各房顶上和街市上，处处有人哀哭。因我打碎摩押，好像打碎无人喜悦的器皿。这是耶和华说的。</p>
+      </li>
+                        <li><span>48:39</span>
+        <p>摩押何等毁坏！何等哀号！何等羞愧转背！这样，摩押必令四围的人嗤笑惊骇。”</p>
+      </li>
+                                    <li><span>48:40</span>
+        <p>耶和华如此说：“仇敌必如大鹰飞起，展开翅膀，攻击摩押。</p>
+      </li>
+                        <li><span>48:41</span>
+        <p>加略被攻取，保障也被占据。到那日，摩押的勇士心中疼痛如临产的妇人。</p>
+      </li>
+                        <li><span>48:42</span>
+        <p>摩押必被毁灭，不再成国，因他向耶和华夸大。”</p>
+      </li>
+                        <li><span>48:43</span>
+        <p>耶和华说：“摩押的居民哪，恐惧、陷坑、网罗都临近你。</p>
+      </li>
+                        <li><span>48:44</span>
+        <p>躲避恐惧的必坠入陷坑；从陷坑上来的必被网罗缠住。因我必使追讨之年临到摩押。这是耶和华说的。”</p>
+      </li>
+                        <li><span>48:45</span>
+        <p>“躲避的人无力站在希实本的影下，因为有火从希实本发出，有火焰出于西宏的城，烧尽摩押的角和哄嚷人的头顶。</p>
+      </li>
+                        <li><span>48:46</span>
+        <p>摩押啊，你有祸了！属基抹的民灭亡了！因你的众子都被掳去，你的众女也被掳去。”</p>
+      </li>
+                        <li><span>48:47</span>
+        <p>耶和华说：“到末后，我还要使被掳的摩押人归回。”摩押受审判的话到此为止。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共52首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>耶利米书(耶)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>耶利米书(耶)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>耶利米书(耶)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>耶利米书(耶)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>耶利米书(耶)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>耶利米书(耶)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>耶利米书(耶)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>耶利米书(耶)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>耶利米书(耶)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>耶利米书(耶)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>耶利米书(耶)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>耶利米书(耶)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>耶利米书(耶)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>耶利米书(耶)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>耶利米书(耶)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>耶利米书(耶)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>耶利米书(耶)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>耶利米书(耶)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>耶利米书(耶)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>耶利米书(耶)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>耶利米书(耶)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>耶利米书(耶)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>耶利米书(耶)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>耶利米书(耶)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>耶利米书(耶)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>耶利米书(耶)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>耶利米书(耶)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>耶利米书(耶)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>耶利米书(耶)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>耶利米书(耶)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>耶利米书(耶)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>耶利米书(耶)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>耶利米书(耶)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>耶利米书(耶)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-35.html"><span class="ppNum">35</span>
+        <p><strong>耶利米书(耶)第35章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-36.html"><span class="ppNum">36</span>
+        <p><strong>耶利米书(耶)第36章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-37.html"><span class="ppNum">37</span>
+        <p><strong>耶利米书(耶)第37章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-38.html"><span class="ppNum">38</span>
+        <p><strong>耶利米书(耶)第38章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-39.html"><span class="ppNum">39</span>
+        <p><strong>耶利米书(耶)第39章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-40.html"><span class="ppNum">40</span>
+        <p><strong>耶利米书(耶)第40章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-41.html"><span class="ppNum">41</span>
+        <p><strong>耶利米书(耶)第41章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-42.html"><span class="ppNum">42</span>
+        <p><strong>耶利米书(耶)第42章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-43.html"><span class="ppNum">43</span>
+        <p><strong>耶利米书(耶)第43章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-44.html"><span class="ppNum">44</span>
+        <p><strong>耶利米书(耶)第44章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-45.html"><span class="ppNum">45</span>
+        <p><strong>耶利米书(耶)第45章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-46.html"><span class="ppNum">46</span>
+        <p><strong>耶利米书(耶)第46章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-47.html"><span class="ppNum">47</span>
+        <p><strong>耶利米书(耶)第47章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-48.html"><span class="ppNum">48</span>
+        <p><strong>耶利米书(耶)第48章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-49.html"><span class="ppNum">49</span>
+        <p><strong>耶利米书(耶)第49章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-50.html"><span class="ppNum">50</span>
+        <p><strong>耶利米书(耶)第50章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-51.html"><span class="ppNum">51</span>
+        <p><strong>耶利米书(耶)第51章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-24-cid-52.html"><span class="ppNum">52</span>
+        <p><strong>耶利米书(耶)第52章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-24-cid-47.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-24-cid-49.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="21传道书/21传道书_05.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-21-cid-6.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">传道书(传) 第5章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>5:1</span>
+        <p>你到  神的殿要谨慎脚步。因为近前听，胜过愚昧人献祭（或作“胜过献愚昧人的祭”），他们本不知道所作的是恶。</p>
+      </li>
+                        <li><span>5:2</span>
+        <p>你在  神面前不可冒失开口，也不可心急发言。因为  神在天上，你在地下，所以你的言语要寡少。</p>
+      </li>
+                        <li><span>5:3</span>
+        <p>事务多，就令人作梦；言语多，就显出愚昧。</p>
+      </li>
+                        <li><span>5:4</span>
+        <p>你向  神许愿，偿还不可迟延，因他不喜悦愚昧人，所以你许的愿应当偿还。</p>
+      </li>
+                        <li><span>5:5</span>
+        <p>你许愿不还，不如不许。</p>
+      </li>
+                        <li><span>5:6</span>
+        <p>不可任你的口使肉体犯罪，也不可在祭司（原文作“使者”）面前说是错许了。为何使  神因你的声音发怒，败坏你手所作的呢？</p>
+      </li>
+                        <li><span>5:7</span>
+        <p>多梦和多言，其中多有虚幻，你只要敬畏  神。</p>
+      </li>
+                                    <li><span>5:8</span>
+        <p>你若在一省之中见穷人受欺压，并夺去公义、公平的事，不要因此诧异。因有一位高过居高位的鉴察，在他们以上还有更高的。</p>
+      </li>
+                        <li><span>5:9</span>
+        <p>况且地的益处归众人，就是君王也受田地的供应。</p>
+      </li>
+                        <li><span>5:10</span>
+        <p>贪爱银子的，不因得银子知足；贪爱丰富的，也不因得利益知足。这也是虚空。</p>
+      </li>
+                        <li><span>5:11</span>
+        <p>货物增添，吃的人也增添，物主得什么益处呢？不过眼看而已。</p>
+      </li>
+                        <li><span>5:12</span>
+        <p>劳碌的人不拘吃多吃少，睡得香甜；富足人的丰满，却不容他睡觉。</p>
+      </li>
+                        <li><span>5:13</span>
+        <p>我见日光之下，有一宗大祸患，就是财主积存资财，反害自己。</p>
+      </li>
+                        <li><span>5:14</span>
+        <p>因遭遇祸患，这些资财就消灭；那人若生了儿子，手里也一无所有。</p>
+      </li>
+                        <li><span>5:15</span>
+        <p>他怎样从母胎赤身而来，也必照样赤身而去；他所劳碌得来的，手中分毫不能带去。</p>
+      </li>
+                        <li><span>5:16</span>
+        <p>他来的情形怎样，他去的情形也怎样。这也是一宗大祸患。他为风劳碌有什么益处呢？</p>
+      </li>
+                        <li><span>5:17</span>
+        <p>并且他终身在黑暗中吃喝，多有烦恼，又有病患呕气。</p>
+      </li>
+                        <li><span>5:18</span>
+        <p>我所见为善为美的，就是人在  神赐他一生的日子吃喝，享受日光之下劳碌得来的好处，因为这是他的份。</p>
+      </li>
+                        <li><span>5:19</span>
+        <p>神赐人资财丰富，使他能以吃用，能取自己的份，在他劳碌中喜乐，这乃是  神的恩赐。</p>
+      </li>
+                        <li><span>5:20</span>
+        <p>他不多思念自己一生的年日，因为  神应他的心使他喜乐。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共12首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>传道书(传)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>传道书(传)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>传道书(传)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>传道书(传)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>传道书(传)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>传道书(传)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>传道书(传)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>传道书(传)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>传道书(传)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>传道书(传)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>传道书(传)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-21-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>传道书(传)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-21-cid-4.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-21-cid-6.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

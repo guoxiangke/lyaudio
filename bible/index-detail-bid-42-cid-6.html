@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="42路加福音/42路加福音_06.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-42-cid-7.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">路加福音(路) 第6章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>6:1</span>
+        <p>有一个安息日，耶稣从麦地经过。他的门徒掐了麦穗，用手搓着吃。</p>
+      </li>
+                        <li><span>6:2</span>
+        <p>有几个法利赛人说：“你们为什么作安息日不可作的事呢？”</p>
+      </li>
+                        <li><span>6:3</span>
+        <p>耶稣对他们说：“经上记着大卫和跟从他的人饥饿之时所作的事，连这个你们也没有念过吗？</p>
+      </li>
+                        <li><span>6:4</span>
+        <p>他怎么进了  神的殿，拿陈设饼吃，又给跟从的人吃？这饼除了祭司以外，别人都不可吃。”</p>
+      </li>
+                        <li><span>6:5</span>
+        <p>又对他们说：“人子是安息日的主。”</p>
+      </li>
+                                    <li><span>6:6</span>
+        <p>又有一个安息日，耶稣进了会堂教训人。在那里有一个人右手枯干了。</p>
+      </li>
+                        <li><span>6:7</span>
+        <p>文士和法利赛人窥探耶稣，在安息日治病不治病，要得把柄去告他。</p>
+      </li>
+                        <li><span>6:8</span>
+        <p>耶稣却知道他们的意念，就对那枯干一只手的人说：“起来！站在当中。”那人就起来站着。</p>
+      </li>
+                        <li><span>6:9</span>
+        <p>耶稣对他们说：“我问你们，在安息日行善行恶，救命害命，哪样是可以的呢？”</p>
+      </li>
+                        <li><span>6:10</span>
+        <p>他就周围看着他们众人，对那人说：“伸出手来！”他把手一伸，手就复了原。</p>
+      </li>
+                        <li><span>6:11</span>
+        <p>他们就满心大怒，彼此商议怎样处治耶稣。</p>
+      </li>
+                                    <li><span>6:12</span>
+        <p>那时，耶稣出去上山祷告，整夜祷告  神。</p>
+      </li>
+                        <li><span>6:13</span>
+        <p>到了天亮，叫他的门徒来，就从他们中间挑选十二个人，称他们为使徒。</p>
+      </li>
+                        <li><span>6:14</span>
+        <p>这十二个人有西门，耶稣又给他起名叫彼得，还有他兄弟安得烈，又有雅各和约翰、腓力和巴多罗买，</p>
+      </li>
+                        <li><span>6:15</span>
+        <p>马太和多马，亚勒腓的儿子雅各和奋锐党的西门，</p>
+      </li>
+                        <li><span>6:16</span>
+        <p>雅各的儿子犹大（“儿子“或作“兄弟”）和卖主的加略人犹大。</p>
+      </li>
+                                    <li><span>6:17</span>
+        <p>耶稣和他们下了山，站在一块平地上。同站的有许多门徒，又有许多百姓，从犹太全地和耶路撒冷并推罗、西顿的海边来，都要听他讲道，又指望医治他们的病。</p>
+      </li>
+                        <li><span>6:18</span>
+        <p>还有被污鬼缠磨的，也得了医治。</p>
+      </li>
+                        <li><span>6:19</span>
+        <p>众人都想要摸他，因为有能力从他身上发出来，医好了他们。</p>
+      </li>
+                                    <li><span>6:20</span>
+        <p>耶稣举目看着门徒说：“你们贫穷的人有福了，因为  神的国是你们的；</p>
+      </li>
+                        <li><span>6:21</span>
+        <p>你们饥饿的人有福了，因为你们将要饱足；你们哀哭的人有福了，因为你们将要喜笑；</p>
+      </li>
+                        <li><span>6:22</span>
+        <p>人为人子恨恶你们，拒绝你们，辱骂你们，弃掉你们的名，以为是恶，你们就有福了。</p>
+      </li>
+                        <li><span>6:23</span>
+        <p>当那日，你们要欢喜跳跃，因为你们在天上的赏赐是大的，他们的祖宗待先知也是这样。</p>
+      </li>
+                        <li><span>6:24</span>
+        <p>“但你们富足的人有祸了，因为你们受过你们的安慰；</p>
+      </li>
+                        <li><span>6:25</span>
+        <p>你们饱足的人有祸了，因为你们将要饥饿；你们喜笑的人有祸了，因为你们将要哀恸哭泣；</p>
+      </li>
+                        <li><span>6:26</span>
+        <p>人都说你们好的时候，你们就有祸了，因为他们的祖宗待假先知也是这样。”</p>
+      </li>
+                                    <li><span>6:27</span>
+        <p>“只是我告诉你们这听道的人，你们的仇敌，要爱他；恨你们的，要待他好；</p>
+      </li>
+                        <li><span>6:28</span>
+        <p>咒诅你们的，要为他祝福；凌辱你们的，要为他祷告。</p>
+      </li>
+                        <li><span>6:29</span>
+        <p>有人打你这边的脸，连那边的脸也由他打。有人夺你的外衣，连里衣也由他拿去。</p>
+      </li>
+                        <li><span>6:30</span>
+        <p>凡求你的，就给他。有人夺你的东西去，不用再要回来。</p>
+      </li>
+                        <li><span>6:31</span>
+        <p>你们愿意人怎样待你们，你们也要怎样待人。</p>
+      </li>
+                        <li><span>6:32</span>
+        <p>你们若单爱那爱你们的人，有什么可酬谢的呢？就是罪人也爱那爱他们的人。</p>
+      </li>
+                        <li><span>6:33</span>
+        <p>你们若善待那善待你们的人，有什么可酬谢的呢？就是罪人也是这样行。</p>
+      </li>
+                        <li><span>6:34</span>
+        <p>你们若借给人，指望从他收回，有什么可酬谢的呢？就是罪人也借给罪人，要如数收回。</p>
+      </li>
+                        <li><span>6:35</span>
+        <p>你们倒要爱仇敌，也要善待他们，并要借给人不指望偿还，你们的赏赐就必大了，你们也必作至高者的儿子，因为他恩待那忘恩的和作恶的。</p>
+      </li>
+                        <li><span>6:36</span>
+        <p>你们要慈悲，像你们的父慈悲一样。”</p>
+      </li>
+                                    <li><span>6:37</span>
+        <p>“你们不要论断人，就不被论断；你们不要定人的罪，就不被定罪；你们要饶恕人，就必蒙饶恕（“饶恕”原文作“释放”）。</p>
+      </li>
+                        <li><span>6:38</span>
+        <p>你们要给人，就必有给你们的，并且用十足的升斗，连摇带按、上尖下流地倒在你们怀里；因为你们用什么量器量给人，也必用什么量器量给你们。”</p>
+      </li>
+                        <li><span>6:39</span>
+        <p>耶稣又用比喻对他们说：“瞎子岂能领瞎子，两个人不是都要掉在坑里吗？</p>
+      </li>
+                        <li><span>6:40</span>
+        <p>学生不能高过先生；凡学成了的不过和先生一样。</p>
+      </li>
+                        <li><span>6:41</span>
+        <p>为什么看见你弟兄眼中有刺，却不想自己眼中有梁木呢？</p>
+      </li>
+                        <li><span>6:42</span>
+        <p>你不见自己眼中有梁木，怎能对你弟兄说：‘容我去掉你眼中的刺’呢？你这假冒为善的人，先去掉自己眼中的梁木，然后才能看得清楚，去掉你弟兄眼中的刺。”</p>
+      </li>
+                                    <li><span>6:43</span>
+        <p>“因为，没有好树结坏果子，也没有坏树结好果子。</p>
+      </li>
+                        <li><span>6:44</span>
+        <p>凡树木看果子，就可以认出它来。人不是从荆棘上摘无花果，也不是从蒺藜里摘葡萄。</p>
+      </li>
+                        <li><span>6:45</span>
+        <p>善人从他心里所存的善，就发出善来；恶人从他心里所存的恶，就发出恶来。因为心里所充满的，口里就说出来。”</p>
+      </li>
+                                    <li><span>6:46</span>
+        <p>“你们为什么称呼我‘主啊，主啊’，却不遵我的话行呢？</p>
+      </li>
+                        <li><span>6:47</span>
+        <p>凡到我这里来，听见我的话就去行的，我要告诉你们他像什么人。</p>
+      </li>
+                        <li><span>6:48</span>
+        <p>他像一个人盖房子，深深地挖地，把根基安在磐石上。到发大水的时候，水冲那房子，房子总不能摇动，因为根基立在磐石上（有古卷作“因为盖造得好”）。</p>
+      </li>
+                        <li><span>6:49</span>
+        <p>惟有听见不去行的，就像一个人在土地上盖房子，没有根基；水一冲，随即倒塌了，并且那房子坏得很大。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共24首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>路加福音(路)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>路加福音(路)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>路加福音(路)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>路加福音(路)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>路加福音(路)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>路加福音(路)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>路加福音(路)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>路加福音(路)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>路加福音(路)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>路加福音(路)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>路加福音(路)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>路加福音(路)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>路加福音(路)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>路加福音(路)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>路加福音(路)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>路加福音(路)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>路加福音(路)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>路加福音(路)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>路加福音(路)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>路加福音(路)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>路加福音(路)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>路加福音(路)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>路加福音(路)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>路加福音(路)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-42-cid-5.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-42-cid-7.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

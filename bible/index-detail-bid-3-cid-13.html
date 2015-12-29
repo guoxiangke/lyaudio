@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="03利未记/03利未记_13.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-3-cid-14.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">利未记(利) 第13章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>13:1</span>
+        <p>耶和华晓谕摩西、亚伦说：</p>
+      </li>
+                        <li><span>13:2</span>
+        <p>“人的肉皮上若长了疖子，或长了癣，或长了火斑，在他肉皮上成了大麻风的灾病，就要将他带到祭司亚伦或亚伦作祭司的一个子孙面前。</p>
+      </li>
+                        <li><span>13:3</span>
+        <p>祭司要察看肉皮上的灾病。若灾病处的毛已经变白，灾病的现象深于肉上的皮，这便是大麻风的灾病。祭司要察看他，定他为不洁净。</p>
+      </li>
+                        <li><span>13:4</span>
+        <p>若火斑在他肉皮上是白的，现象不深于皮，其上的毛也没有变白，祭司就要将有灾病的人关锁七天。</p>
+      </li>
+                        <li><span>13:5</span>
+        <p>第七天，祭司要察看他，若看灾病止住了，没有在皮上发散，祭司还要将他关锁七天。</p>
+      </li>
+                        <li><span>13:6</span>
+        <p>第七天祭司要再察看他，若灾病发暗，而且没有在皮上发散，祭司要定他为洁净，原来是癣。那人就要洗衣服，得为洁净。</p>
+      </li>
+                        <li><span>13:7</span>
+        <p>但他为得洁净，将身体给祭司察看以后，癣若在皮上发散开了，他要再将身体给祭司察看。</p>
+      </li>
+                        <li><span>13:8</span>
+        <p>祭司要察看，癣若在皮上发散，就要定他为不洁净，是大麻风。”</p>
+      </li>
+                        <li><span>13:9</span>
+        <p>“人有了大麻风的灾病，就要将他带到祭司面前。</p>
+      </li>
+                        <li><span>13:10</span>
+        <p>祭司要察看，皮上若长了白疖，使毛变白，在长白疖之处有了红瘀肉，</p>
+      </li>
+                        <li><span>13:11</span>
+        <p>这是肉皮上的旧大麻风。祭司要定他为不洁净，不用将他关锁，因为他是不洁净了。</p>
+      </li>
+                        <li><span>13:12</span>
+        <p>大麻风若在皮上四外发散，长满了患灾病人的皮，据祭司察看，从头到脚无处不有，</p>
+      </li>
+                        <li><span>13:13</span>
+        <p>祭司就要察看，全身的肉若长满了大麻风，就要定那患灾病的为洁净，全身都变为白，他乃洁净了。</p>
+      </li>
+                        <li><span>13:14</span>
+        <p>但红肉几时显在他的身上，就几时不洁净。</p>
+      </li>
+                        <li><span>13:15</span>
+        <p>祭司一看那红肉，就定他为不洁净；红肉本是不洁净，是大麻风。</p>
+      </li>
+                        <li><span>13:16</span>
+        <p>红肉若复原，又变白了，他就要来见祭司。</p>
+      </li>
+                        <li><span>13:17</span>
+        <p>祭司要察看，灾病处若变白了，祭司就要定那患灾病的为洁净，他乃洁净了。”</p>
+      </li>
+                        <li><span>13:18</span>
+        <p>“人若在皮肉上长疮，却治好了，</p>
+      </li>
+                        <li><span>13:19</span>
+        <p>在长疮之处又起了白疖，或是白中带红的火斑，就要给祭司察看。</p>
+      </li>
+                        <li><span>13:20</span>
+        <p>祭司要察看，若现象洼于皮，其上的毛也变白了，就要定他为不洁净，是大麻风的灾病发在疮中。</p>
+      </li>
+                        <li><span>13:21</span>
+        <p>祭司若察看，其上没有白毛，也没有洼于皮，乃是发暗，就要将他关锁七天；</p>
+      </li>
+                        <li><span>13:22</span>
+        <p>若在皮上发散开了，祭司就要定他为不洁净，是灾病。</p>
+      </li>
+                        <li><span>13:23</span>
+        <p>火斑若在原处止住，没有发散，便是疮的痕迹，祭司就要定他为洁净。”</p>
+      </li>
+                        <li><span>13:24</span>
+        <p>“人的皮肉上若起了火毒，火毒的瘀肉成了火斑，或是白中带红的，或是全白的，</p>
+      </li>
+                        <li><span>13:25</span>
+        <p>祭司就要察看，火斑中的毛若变白了，现象又深于皮，是大麻风在火毒中发出，就要定他为不洁净，是大麻风的灾病。</p>
+      </li>
+                        <li><span>13:26</span>
+        <p>但是祭司察看，在火斑中若没有白毛，也没有洼于皮，乃是发暗，就要将他关锁七天。</p>
+      </li>
+                        <li><span>13:27</span>
+        <p>到第七天，祭司要察看他，火斑若在皮上发散开了，就要定他为不洁净，是大麻风的灾病。</p>
+      </li>
+                        <li><span>13:28</span>
+        <p>火斑若在原处止住，没有在皮上发散，乃是发暗，是起的火毒，祭司要定他为洁净，不过是火毒的痕迹。”</p>
+      </li>
+                        <li><span>13:29</span>
+        <p>“无论男女，若在头上有灾病，或是男人胡须上有灾病，</p>
+      </li>
+                        <li><span>13:30</span>
+        <p>祭司就要察看。这灾病现象若深于皮，其间有细黄毛，就要定他为不洁净。这是头疥，是头上或是胡须上的大麻风。</p>
+      </li>
+                        <li><span>13:31</span>
+        <p>祭司若察看头疥的灾病，现象不深于皮，其间也没有黑毛，就要将长头疥灾病的关锁七天。</p>
+      </li>
+                        <li><span>13:32</span>
+        <p>第七天祭司要察看灾病，若头疥没有发散，其间也没有黄毛，头疥的现象不深于皮，</p>
+      </li>
+                        <li><span>13:33</span>
+        <p>那人就要剃去须发，但他不可剃头疥之处。祭司要将那长头疥的，再关锁七天。</p>
+      </li>
+                        <li><span>13:34</span>
+        <p>第七天祭司要察看头疥，头疥若没有在皮上发散，现象也不深于皮，就要定他为洁净，他要洗衣服，便成为洁净。</p>
+      </li>
+                        <li><span>13:35</span>
+        <p>但他得洁净以后，头疥若在皮上发散开了，</p>
+      </li>
+                        <li><span>13:36</span>
+        <p>祭司就要察看他。头疥若在皮上发散，就不必找那黄毛，他是不洁净了。</p>
+      </li>
+                        <li><span>13:37</span>
+        <p>祭司若看头疥已经止住，其间也长了黑毛，头疥已然痊愈，那人是洁净了，就要定他为洁净。”</p>
+      </li>
+                        <li><span>13:38</span>
+        <p>“无论男女，皮肉上若起了火斑，就是白火斑，</p>
+      </li>
+                        <li><span>13:39</span>
+        <p>祭司就要察看。他们肉皮上的火斑若白中带黑，这是皮上发出的白癣，那人是洁净了。”</p>
+      </li>
+                        <li><span>13:40</span>
+        <p>“人头上的发若掉了，他不过是头秃，还是洁净。</p>
+      </li>
+                        <li><span>13:41</span>
+        <p>他顶前若掉了头发，他不过是顶门秃，还是洁净。</p>
+      </li>
+                        <li><span>13:42</span>
+        <p>头秃处或是顶门秃处，若有白中带红的灾病，这就是大麻风，发在他头秃处或是顶门秃处。</p>
+      </li>
+                        <li><span>13:43</span>
+        <p>祭司就要察看，他起的那灾病若在头秃处或是顶门秃处有白中带红的，像肉皮上大麻风的现象，</p>
+      </li>
+                        <li><span>13:44</span>
+        <p>那人就是长大麻风不洁净的，祭司总要定他为不洁净，他的灾病是在头上。”</p>
+      </li>
+                        <li><span>13:45</span>
+        <p>“身上有长大麻风灾病的，他的衣服要撕裂，也要蓬头散发，蒙着上唇，喊叫说：‘不洁净了！不洁净了！’</p>
+      </li>
+                        <li><span>13:46</span>
+        <p>灾病在他身上的日子，他便是不洁净。他既是不洁净，就要独居营外。”</p>
+      </li>
+                                    <li><span>13:47</span>
+        <p>“染了大麻风灾病的衣服，无论是羊毛衣服、是麻布衣服；</p>
+      </li>
+                        <li><span>13:48</span>
+        <p>无论是在经上、在纬上；是麻布的、是羊毛的；是在皮子上，或在皮子作的什么物件上；</p>
+      </li>
+                        <li><span>13:49</span>
+        <p>或在衣服上、皮子上，经上、纬上；或在皮子作的什么物件上，这灾病若是发绿，或是发红，是大麻风的灾病，要给祭司察看。</p>
+      </li>
+                        <li><span>13:50</span>
+        <p>祭司就要察看那灾病，把染了灾病的物件关锁七天。</p>
+      </li>
+                        <li><span>13:51</span>
+        <p>第七天他要察看那灾病，灾病或在衣服上、经上、纬上，皮子上，若发散，这皮子无论当作何用，这灾病是蚕食的大麻风，都是不洁净了。</p>
+      </li>
+                        <li><span>13:52</span>
+        <p>那染了灾病的衣服，或是经上、纬上，羊毛上、麻衣上，或是皮子作的什么物件上，他都要焚烧，因为这是蚕食的大麻风，必在火中焚烧。”</p>
+      </li>
+                        <li><span>13:53</span>
+        <p>“祭司要察看，若灾病在衣服上、经上、纬上，或是皮子作的什么物件上，没有发散，</p>
+      </li>
+                        <li><span>13:54</span>
+        <p>祭司就要吩咐他们，把染了灾病的物件洗了，再关锁七天。</p>
+      </li>
+                        <li><span>13:55</span>
+        <p>洗过以后，祭司要察看，那物件若没有变色，灾病也没有消散，那物件就不洁净，是透重的灾病，无论正面反面，都要在火中焚烧。</p>
+      </li>
+                        <li><span>13:56</span>
+        <p>洗过以后，祭司要察看，若见那灾病发暗，他就要把那灾病从衣服上、皮子上，经上、纬上都撕去。</p>
+      </li>
+                        <li><span>13:57</span>
+        <p>若仍现在衣服上，或是经上、纬上、皮子作的什么物件上，这就是灾病又发了，必用火焚烧那染灾病的物件。</p>
+      </li>
+                        <li><span>13:58</span>
+        <p>所洗的衣服，或是经，或是纬，或是皮子作的什么物件，若灾病离开了，要再洗，就洁净了。”</p>
+      </li>
+                        <li><span>13:59</span>
+        <p>“这就是大麻风灾病的条例。无论是在羊毛衣服上、麻布衣服上、经上、纬上和皮子作的什么物件上，可以定为洁净或是不洁净。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共27首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>利未记(利)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>利未记(利)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>利未记(利)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>利未记(利)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>利未记(利)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>利未记(利)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>利未记(利)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>利未记(利)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>利未记(利)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>利未记(利)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>利未记(利)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>利未记(利)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>利未记(利)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>利未记(利)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>利未记(利)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>利未记(利)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>利未记(利)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>利未记(利)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>利未记(利)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>利未记(利)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>利未记(利)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>利未记(利)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>利未记(利)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>利未记(利)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>利未记(利)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>利未记(利)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>利未记(利)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-3-cid-12.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-3-cid-14.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

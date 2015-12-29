@@ -1,0 +1,409 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="04民数记/04民数记_26.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-4-cid-27.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">民数记(民) 第26章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>26:1</span>
+        <p>瘟疫之后，耶和华晓谕摩西和祭司亚伦的儿子以利亚撒说：</p>
+      </li>
+                        <li><span>26:2</span>
+        <p>“你们要将以色列全会众，按他们的宗族，凡以色列中从二十岁以外能出去打仗的，计算总数。”</p>
+      </li>
+                        <li><span>26:3</span>
+        <p>摩西和祭司以利亚撒在摩押平原与耶利哥相对的约旦河边向以色列人说：</p>
+      </li>
+                        <li><span>26:4</span>
+        <p>“将你们中间从二十岁以外的计算总数。”是照耶和华吩咐出埃及地的摩西和以色列人的话。</p>
+      </li>
+                        <li><span>26:5</span>
+        <p>以色列的长子是流便。流便的众子：属哈诺的，有哈诺族；属法路的，有法路族；</p>
+      </li>
+                        <li><span>26:6</span>
+        <p>属希斯伦的，有希斯伦族；属迦米的，有迦米族。</p>
+      </li>
+                        <li><span>26:7</span>
+        <p>这就是流便的各族，其中被数的，共有四万三千七百三十名。</p>
+      </li>
+                        <li><span>26:8</span>
+        <p>法路的儿子是以利押。</p>
+      </li>
+                        <li><span>26:9</span>
+        <p>以利押的众子是尼母利、大坍、亚比兰。这大坍、亚比兰，就是从会中选召的，与可拉一党同向耶和华争闹的时候，也向摩西、亚伦争闹，</p>
+      </li>
+                        <li><span>26:10</span>
+        <p>地便开口吞了他们，和可拉、可拉的党类一同死亡。那时火烧灭了二百五十个人，他们就作了警戒。</p>
+      </li>
+                        <li><span>26:11</span>
+        <p>然而可拉的众子没有死亡。</p>
+      </li>
+                        <li><span>26:12</span>
+        <p>按着家族，西缅的众子：属尼母利的，有尼母利族；属雅悯的，有雅悯族；属雅斤的，有雅斤族；</p>
+      </li>
+                        <li><span>26:13</span>
+        <p>属谢拉的，有谢拉族；属扫罗的，有扫罗族。</p>
+      </li>
+                        <li><span>26:14</span>
+        <p>这就是西缅的各族，共有二万二千二百名。</p>
+      </li>
+                        <li><span>26:15</span>
+        <p>按着家族，迦得的众子：属洗分的，有洗分族；属哈基的，有哈基族；属书尼的，有书尼族；</p>
+      </li>
+                        <li><span>26:16</span>
+        <p>属阿斯尼的，有阿斯尼族；属以利的，有以利族；</p>
+      </li>
+                        <li><span>26:17</span>
+        <p>属亚律的，有亚律族；属亚列利的，有亚列利族。</p>
+      </li>
+                        <li><span>26:18</span>
+        <p>这就是迦得子孙的各族，照他们中间被数的，共有四万零五百名。</p>
+      </li>
+                        <li><span>26:19</span>
+        <p>犹大的儿子是珥和俄南。这珥和俄南死在迦南地。</p>
+      </li>
+                        <li><span>26:20</span>
+        <p>按着家族，犹大其余的众子：属示拉的，有示拉族；属法勒斯的，有法勒斯族；属谢拉的，有谢拉族。</p>
+      </li>
+                        <li><span>26:21</span>
+        <p>法勒斯的儿子：属希斯伦的，有希斯伦族；属哈母勒的，有哈母勒族。</p>
+      </li>
+                        <li><span>26:22</span>
+        <p>这就是犹大的各族，照他们中间被数的，共有七万六千五百名。</p>
+      </li>
+                        <li><span>26:23</span>
+        <p>按着家族，以萨迦的众子：属陀拉的，有陀拉族；属普瓦的，有普瓦族；</p>
+      </li>
+                        <li><span>26:24</span>
+        <p>属雅述的，有雅述族；属伸仑的，有伸仑族。</p>
+      </li>
+                        <li><span>26:25</span>
+        <p>这就是以萨迦的各族，照他们中间被数的，共有六万四千三百名。</p>
+      </li>
+                        <li><span>26:26</span>
+        <p>按着家族，西布伦的众子：属西烈的有西烈族；属以伦的，有以伦族；属雅利的，有雅利族。</p>
+      </li>
+                        <li><span>26:27</span>
+        <p>这就是西布伦的各族，照他们中间被数的，共有六万零五百名。</p>
+      </li>
+                        <li><span>26:28</span>
+        <p>按着家族，约瑟的儿子有玛拿西、以法莲。</p>
+      </li>
+                        <li><span>26:29</span>
+        <p>玛拿西的众子：属玛吉的，有玛吉族；玛吉生基列。属基列的，有基列族。</p>
+      </li>
+                        <li><span>26:30</span>
+        <p>基列的众子：属伊以谢的，有伊以谢族；属希勒的，有希勒族；</p>
+      </li>
+                        <li><span>26:31</span>
+        <p>属亚斯烈的，有亚斯烈族；属示剑的，有示剑族；</p>
+      </li>
+                        <li><span>26:32</span>
+        <p>属示米大的，有示米大族；属希弗的，有希弗族。</p>
+      </li>
+                        <li><span>26:33</span>
+        <p>希弗的儿子西罗非哈没儿子，只有女儿。西罗非哈女儿的名字，就是玛拉、挪阿、曷拉、密迦、得撒。</p>
+      </li>
+                        <li><span>26:34</span>
+        <p>这就是玛拿西的各族，他们中间被数的，共有五万二千七百名。</p>
+      </li>
+                        <li><span>26:35</span>
+        <p>按着家族，以法莲的众子：属书提拉的，有书提拉族；属比结的，有比结族；属他罕的，有他罕族。</p>
+      </li>
+                        <li><span>26:36</span>
+        <p>书提拉的众子：属以兰的，有以兰族。</p>
+      </li>
+                        <li><span>26:37</span>
+        <p>这就是以法莲子孙的各族，照他们中间被数的，共有三万二千五百名。按着家族，这都是约瑟的子孙。</p>
+      </li>
+                        <li><span>26:38</span>
+        <p>按着家族，便雅悯的众子：属比拉的，有比拉族；属亚实别的，有亚实别族；属亚希兰的，有亚希兰族；</p>
+      </li>
+                        <li><span>26:39</span>
+        <p>属书反的，有书反族；属户反的，有户反族。</p>
+      </li>
+                        <li><span>26:40</span>
+        <p>比拉的众子是亚勒、乃幔。属亚勒的，有亚勒族；属乃幔的，有乃幔族。</p>
+      </li>
+                        <li><span>26:41</span>
+        <p>按着家族，这就是便雅悯的子孙，其中被数的，共有四万五千六百名。</p>
+      </li>
+                        <li><span>26:42</span>
+        <p>按着家族，但的众子：属书含的，有书含族。按着家族，这就是但的各族。</p>
+      </li>
+                        <li><span>26:43</span>
+        <p>照其中被数的，书含所有的各族，共有六万四千四百名。</p>
+      </li>
+                        <li><span>26:44</span>
+        <p>按着家族，亚设的众子：属音拿的，有音拿族；属亦施韦的，有亦施韦族；属比利亚的，有比利亚族。</p>
+      </li>
+                        <li><span>26:45</span>
+        <p>比利亚的众子：属希别的，有希别族；属玛结的，有玛结族。</p>
+      </li>
+                        <li><span>26:46</span>
+        <p>亚设的女儿名叫西拉。</p>
+      </li>
+                        <li><span>26:47</span>
+        <p>这就是亚设子孙的各族，照他们中间被数的，共有五万三千四百名。</p>
+      </li>
+                        <li><span>26:48</span>
+        <p>按着家族，拿弗他利的众子：属雅薛的，有雅薛族；属沽尼的，有沽尼族；</p>
+      </li>
+                        <li><span>26:49</span>
+        <p>属耶色的，有耶色族；属示冷的，有示冷族。</p>
+      </li>
+                        <li><span>26:50</span>
+        <p>按着家族，这就是拿弗他利的各族，他们中间被数的，共有四万五千四百名。</p>
+      </li>
+                        <li><span>26:51</span>
+        <p>以色列人中被数的，共有六十万零一千七百三十名。</p>
+      </li>
+                        <li><span>26:52</span>
+        <p>耶和华晓谕摩西说：</p>
+      </li>
+                        <li><span>26:53</span>
+        <p>“你要按着人名的数目，将地分给这些人为业。</p>
+      </li>
+                        <li><span>26:54</span>
+        <p>人多的，你要把产业多分给他们；人少的，你要把产业少分给他们；要照被数的人数，把产业分给各人。</p>
+      </li>
+                        <li><span>26:55</span>
+        <p>虽是这样，还要拈阄分地。他们要按着祖宗各支派的名字承受为业。</p>
+      </li>
+                        <li><span>26:56</span>
+        <p>要按着所拈的阄，看人数多、人数少，把产业分给他们。”</p>
+      </li>
+                        <li><span>26:57</span>
+        <p>利未人，按着他们的各族被数的：属革顺的，有革顺族；属哥辖的，有哥辖族；属米拉利的，有米拉利族。</p>
+      </li>
+                        <li><span>26:58</span>
+        <p>利未的各族：有立尼族、希伯伦族、玛利族、母示族、可拉族。哥辖生暗兰。</p>
+      </li>
+                        <li><span>26:59</span>
+        <p>暗兰的妻，名叫约基别，是利未女子，生在埃及。她给暗兰生了亚伦、摩西，并他们的姐姐米利暗。</p>
+      </li>
+                        <li><span>26:60</span>
+        <p>亚伦生拿答、亚比户、以利亚撒、以他玛。</p>
+      </li>
+                        <li><span>26:61</span>
+        <p>拿答、亚比户在耶和华面前献凡火的时候，就死了。</p>
+      </li>
+                        <li><span>26:62</span>
+        <p>利未人中，凡一个月以外被数的男丁，共有二万三千。他们本来没有数在以色列人中，因为在以色列人中，没有分给他们产业。</p>
+      </li>
+                        <li><span>26:63</span>
+        <p>这些就是被摩西和祭司以利亚撒所数的，他们在摩押平原与耶利哥相对的约旦河边数点以色列人。</p>
+      </li>
+                        <li><span>26:64</span>
+        <p>但被数的人中，没有一个是摩西和祭司亚伦从前在西奈的旷野所数的以色列人，</p>
+      </li>
+                        <li><span>26:65</span>
+        <p>因为耶和华论到他们说：“他们必要死在旷野”，所以，除了耶孚尼的儿子迦勒和嫩的儿子约书亚以外，连一个人也没有存留。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共36首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>民数记(民)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>民数记(民)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>民数记(民)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>民数记(民)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>民数记(民)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>民数记(民)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>民数记(民)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>民数记(民)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>民数记(民)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>民数记(民)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>民数记(民)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>民数记(民)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>民数记(民)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>民数记(民)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>民数记(民)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>民数记(民)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>民数记(民)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>民数记(民)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>民数记(民)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>民数记(民)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>民数记(民)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>民数记(民)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>民数记(民)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>民数记(民)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>民数记(民)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>民数记(民)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>民数记(民)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>民数记(民)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>民数记(民)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>民数记(民)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>民数记(民)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>民数记(民)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>民数记(民)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>民数记(民)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-35.html"><span class="ppNum">35</span>
+        <p><strong>民数记(民)第35章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-36.html"><span class="ppNum">36</span>
+        <p><strong>民数记(民)第36章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-4-cid-25.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-4-cid-27.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

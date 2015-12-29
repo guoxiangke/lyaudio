@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="17以斯帖记/17以斯帖记_01.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-17-cid-2.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">以斯帖记(斯) 第1章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>1:1</span>
+        <p>亚哈随鲁作王，从印度直到古实，统管一百二十七省。</p>
+      </li>
+                        <li><span>1:2</span>
+        <p>亚哈随鲁王在书珊城的宫登基；</p>
+      </li>
+                        <li><span>1:3</span>
+        <p>在位第三年，为他一切首领、臣仆设摆筵席，有波斯和玛代的权贵，就是各省的贵胄与首领，在他面前。</p>
+      </li>
+                        <li><span>1:4</span>
+        <p>他把他荣耀之国的丰富和他美好威严的尊贵给他们看了许多日，就是一百八十日。</p>
+      </li>
+                        <li><span>1:5</span>
+        <p>这日子满了，又为所有住书珊城的大小人民，在御园的院子里设摆筵席七日。</p>
+      </li>
+                        <li><span>1:6</span>
+        <p>有白色、绿色、蓝色的帐子，用细麻绳、紫色绳从银环内系在白玉石柱上，有金银的床榻摆在红、白、黄、黑玉石的铺石地上。</p>
+      </li>
+                        <li><span>1:7</span>
+        <p>用金器皿赐酒，器皿各有不同。御酒甚多，足显王的厚意。</p>
+      </li>
+                        <li><span>1:8</span>
+        <p>喝酒有例，不准勉强人，因王吩咐宫里的一切臣宰，让人各随己意。</p>
+      </li>
+                        <li><span>1:9</span>
+        <p>王后瓦实提在亚哈随鲁王的宫内，也为妇女设摆筵席。</p>
+      </li>
+                        <li><span>1:10</span>
+        <p>第七日，亚哈随鲁王饮酒，心中快乐，就吩咐在他面前侍立的七个太监米户幔、比斯他、哈波拿、比革他、亚拔他、西达、甲迦，</p>
+      </li>
+                        <li><span>1:11</span>
+        <p>请王后瓦实提头戴王后的冠冕到王面前，使各等臣民看她的美貌，因为她容貌甚美。</p>
+      </li>
+                        <li><span>1:12</span>
+        <p>王后瓦实提却不肯遵太监所传的王命而来，所以王甚发怒，心如火烧。</p>
+      </li>
+                        <li><span>1:13</span>
+        <p>-</p>
+      </li>
+                        <li><span>1:14</span>
+        <p>那时，在王左右常见王面、国中坐高位的，有波斯和玛代的七个大臣，就是甲示拿、示达、押玛他、他施斯、米力、玛西拿、米母干，都是达时务的明哲人。按王的常规，办事必先询问知例明法的人。王问他们说：</p>
+      </li>
+                        <li><span>1:15</span>
+        <p>“王后瓦实提不遵太监所传的王命，照例应当怎样办理呢？”</p>
+      </li>
+                        <li><span>1:16</span>
+        <p>米母干在王和众首领面前回答说：“王后瓦实提这事不但得罪王，并且有害于王各省的臣民；</p>
+      </li>
+                        <li><span>1:17</span>
+        <p>因为王后这事必传到众妇人的耳中，说亚哈随鲁王吩咐王后瓦实提到王面前，她却不来。她们就藐视自己的丈夫。</p>
+      </li>
+                        <li><span>1:18</span>
+        <p>今日波斯和玛代的众夫人听见王后这事，必向王的大臣照样行，从此必大开藐视和忿怒之端。</p>
+      </li>
+                        <li><span>1:19</span>
+        <p>王若以为美，就降旨写在波斯和玛代人的例中，永不更改，不准瓦实提再到王面前，将她王后的位分赐给比她还好的人。</p>
+      </li>
+                        <li><span>1:20</span>
+        <p>所降的旨意传遍通国（国度本来广大），所有的妇人，无论丈夫贵贱都必尊敬他。”</p>
+      </li>
+                        <li><span>1:21</span>
+        <p>王和众首领都以米母干的话为美，王就照这话去行。</p>
+      </li>
+                        <li><span>1:22</span>
+        <p>发诏书，用各省的文字、各族的方言通知各省，使为丈夫的在家中作主，各说本地的方言。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共10首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>以斯帖记(斯)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>以斯帖记(斯)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>以斯帖记(斯)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>以斯帖记(斯)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>以斯帖记(斯)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>以斯帖记(斯)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>以斯帖记(斯)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>以斯帖记(斯)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>以斯帖记(斯)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-17-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>以斯帖记(斯)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="javascript:alertText('已到本章第一首!');"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-17-cid-2.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

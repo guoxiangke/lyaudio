@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="56提多书/56提多书_03.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-56.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">提多书(多) 第3章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>3:1</span>
+        <p>你要提醒众人，叫他们顺服作官的、掌权的，遵他的命，预备行各样的善事。</p>
+      </li>
+                        <li><span>3:2</span>
+        <p>不要毁谤，不要争竞，总要和平，向众人大显温柔。</p>
+      </li>
+                        <li><span>3:3</span>
+        <p>我们从前也是无知，悖逆，受迷惑，服侍各样私欲和宴乐，常存恶毒（或作“阴毒”）、嫉妒的心，是可恨的，又是彼此相恨。</p>
+      </li>
+                        <li><span>3:4</span>
+        <p>但到了  神我们救主的恩慈和他向人所施的慈爱显明的时候，</p>
+      </li>
+                        <li><span>3:5</span>
+        <p>他便救了我们，并不是因我们自己所行的义，乃是照他的怜悯，藉着重生的洗和圣灵的更新。</p>
+      </li>
+                        <li><span>3:6</span>
+        <p>圣灵就是  神藉着耶稣基督我们救主厚厚浇灌在我们身上的，</p>
+      </li>
+                        <li><span>3:7</span>
+        <p>好叫我们因他的恩得称为义，可以凭着永生的盼望成为后嗣（或作“可以凭着盼望承受永生”）。</p>
+      </li>
+                        <li><span>3:8</span>
+        <p>这话是可信的。我也愿你把这些事切切实实地讲明，使那些已信  神的人留心作正经事业（或作“留心行善”）。这都是美事，并且与人有益。</p>
+      </li>
+                        <li><span>3:9</span>
+        <p>要远避无知的辩论和家谱的空谈，以及纷争，并因律法而起的争竞，因为这都是虚妄无益的。</p>
+      </li>
+                        <li><span>3:10</span>
+        <p>分门结党的人，警戒过一两次，就要弃绝他。</p>
+      </li>
+                        <li><span>3:11</span>
+        <p>因为知道这等人已经背道，犯了罪，自己明知不是，还是去作。</p>
+      </li>
+                                    <li><span>3:12</span>
+        <p>我打发亚提马或是推基古到你那里去的时候，你要赶紧往尼哥波立去见我，因为我已经定意在那里过冬。</p>
+      </li>
+                        <li><span>3:13</span>
+        <p>你要赶紧给律师西纳和亚波罗送行，叫他们没有缺乏。</p>
+      </li>
+                        <li><span>3:14</span>
+        <p>并且我们的人要学习正经事业（或作“要学习行善”），预备所需用的，免得不结果子。</p>
+      </li>
+                        <li><span>3:15</span>
+        <p>同我在一处的人都问你安。请代问那些因有信心爱我们的人安。愿恩惠常与你们众人同在！</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共3首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-56-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>提多书(多)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-56-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>提多书(多)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-56-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>提多书(多)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-56-cid-2.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="javascript:alertText('已到本章第后一首!');"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

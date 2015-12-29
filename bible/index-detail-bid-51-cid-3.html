@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="51歌罗西书/51歌罗西书_03.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-51-cid-4.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">歌罗西书(西) 第3章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                  <li><span>3:1</span>
+        <p>所以你们若真与基督一同复活，就当求在上面的事，那里有基督坐在  神的右边。</p>
+      </li>
+                        <li><span>3:2</span>
+        <p>你们要思念上面的事，不要思念地上的事。</p>
+      </li>
+                        <li><span>3:3</span>
+        <p>因为你们已经死了，你们的生命与基督一同藏在  神里面。</p>
+      </li>
+                        <li><span>3:4</span>
+        <p>基督是我们的生命，他显现的时候，你们也要与他一同显现在荣耀里。</p>
+      </li>
+                        <li><span>3:5</span>
+        <p>所以要治死你们在地上的肢体，就如淫乱、污秽、邪情、恶欲和贪婪，贪婪就与拜偶像一样。</p>
+      </li>
+                        <li><span>3:6</span>
+        <p>因这些事，  神的忿怒必临到那悖逆之子。</p>
+      </li>
+                        <li><span>3:7</span>
+        <p>当你们在这些事中活着的时候，也曾这样行过。</p>
+      </li>
+                        <li><span>3:8</span>
+        <p>但现在你们要弃绝这一切的事，以及恼恨、忿怒、恶毒（或作“阴毒”）、毁谤，并口中污秽的言语。</p>
+      </li>
+                        <li><span>3:9</span>
+        <p>不要彼此说谎，因你们已经脱去旧人和旧人的行为，</p>
+      </li>
+                        <li><span>3:10</span>
+        <p>穿上了新人，这新人在知识上渐渐更新，正如造他主的形像。</p>
+      </li>
+                        <li><span>3:11</span>
+        <p>在此并不分希腊人、犹太人、受割礼的、未受割礼的、化外人、西古提人、为奴的、自主的，惟有基督是包括一切，又住在各人之内。</p>
+      </li>
+                        <li><span>3:12</span>
+        <p>所以你们既是  神的选民，圣洁蒙爱的人，就要存（原文作“穿”。下同）怜悯、恩慈、谦虚、温柔、忍耐的心。</p>
+      </li>
+                        <li><span>3:13</span>
+        <p>倘若这人与那人有嫌隙，总要彼此包容，彼此饶恕；主怎样饶恕了你们，你们也要怎样饶恕人。</p>
+      </li>
+                        <li><span>3:14</span>
+        <p>在这一切之外，要存着爱心，爱心就是联络全德的。</p>
+      </li>
+                        <li><span>3:15</span>
+        <p>又要叫基督的平安在你们心里作主，你们也为此蒙召，归为一体，且要存感谢的心。</p>
+      </li>
+                        <li><span>3:16</span>
+        <p>当用各样的智慧，把基督的道理丰丰富富地存在心里（或作“当把基督的道理丰丰富富地存在心里，以各样的智慧”），用诗章、颂词、灵歌，彼此教导，互相劝戒，心被恩感，歌颂  神。</p>
+      </li>
+                        <li><span>3:17</span>
+        <p>无论作什么，或说话、或行事，都要奉主耶稣的名，藉着他感谢父  神。</p>
+      </li>
+                                    <li><span>3:18</span>
+        <p>你们作妻子的，当顺服自己的丈夫，这在主里面是相宜的。</p>
+      </li>
+                        <li><span>3:19</span>
+        <p>你们作丈夫的，要爱你们的妻子，不可苦待她们。</p>
+      </li>
+                        <li><span>3:20</span>
+        <p>你们作儿女的，要凡事听从父母，因为这是主所喜悦的。</p>
+      </li>
+                        <li><span>3:21</span>
+        <p>你们作父亲的，不要惹儿女的气，恐怕他们失了志气。</p>
+      </li>
+                        <li><span>3:22</span>
+        <p>你们作仆人的，要凡事听从你们肉身的主人，不要只在眼前侍奉，象是讨人喜欢的，总要存心诚实敬畏主。</p>
+      </li>
+                        <li><span>3:23</span>
+        <p>无论作什么，都要从心里作，象是给主作的，不是给人作的，</p>
+      </li>
+                        <li><span>3:24</span>
+        <p>因你们知道从主那里必得着基业为赏赐。你们所侍奉的乃是主基督。</p>
+      </li>
+                        <li><span>3:25</span>
+        <p>那行不义的，必受不义的报应，主并不偏待人。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共4首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-51-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>歌罗西书(西)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-51-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>歌罗西书(西)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-51-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>歌罗西书(西)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-51-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>歌罗西书(西)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-51-cid-2.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-51-cid-4.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

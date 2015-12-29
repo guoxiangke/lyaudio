@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="42路加福音/42路加福音_22.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-42-cid-23.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">路加福音(路) 第22章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>22:1</span>
+        <p>除酵节，又名逾越节，近了。</p>
+      </li>
+                        <li><span>22:2</span>
+        <p>祭司长和文士想法子怎么才能杀害耶稣，是因他们惧怕百姓。</p>
+      </li>
+                        <li><span>22:3</span>
+        <p>这时，撒但入了那称为加略人犹大的心，他本是十二门徒里的一个。</p>
+      </li>
+                        <li><span>22:4</span>
+        <p>他去和祭司长并守殿官商量，怎么可以把耶稣交给他们。</p>
+      </li>
+                        <li><span>22:5</span>
+        <p>他们欢喜，就约定给他银子。</p>
+      </li>
+                        <li><span>22:6</span>
+        <p>他应允了，就找机会，要趁众人不在跟前的时候把耶稣交给他们。</p>
+      </li>
+                                    <li><span>22:7</span>
+        <p>除酵节，须宰逾越羊羔的那一天到了。</p>
+      </li>
+                        <li><span>22:8</span>
+        <p>耶稣打发彼得、约翰说：“你们去为我们预备逾越节的筵席，好叫我们吃。”</p>
+      </li>
+                        <li><span>22:9</span>
+        <p>他们问他说：“要我们在哪里预备？”</p>
+      </li>
+                        <li><span>22:10</span>
+        <p>耶稣说：“你们进了城，必有人拿着一瓶水迎面而来，你们就跟着他，到他所进的房子里去，</p>
+      </li>
+                        <li><span>22:11</span>
+        <p>对那家的主人说：‘夫子说：客房在哪里？我与门徒好在那里吃逾越节的筵席。’</p>
+      </li>
+                        <li><span>22:12</span>
+        <p>他必指给你们摆设整齐的一间大楼，你们就在那里预备。”</p>
+      </li>
+                        <li><span>22:13</span>
+        <p>他们去了，所遇见的正如耶稣所说的，他们就预备了逾越节的筵席。</p>
+      </li>
+                                    <li><span>22:14</span>
+        <p>时候到了，耶稣坐席，使徒也和他同坐。</p>
+      </li>
+                        <li><span>22:15</span>
+        <p>耶稣对他们说：“我很愿意在受害以先和你们吃这逾越节的筵席。</p>
+      </li>
+                        <li><span>22:16</span>
+        <p>我告诉你们：我不再吃这筵席，直到成就在  神的国里。”</p>
+      </li>
+                        <li><span>22:17</span>
+        <p>耶稣接过杯来，祝谢了，说：“你们拿这个，大家分着喝。</p>
+      </li>
+                        <li><span>22:18</span>
+        <p>我告诉你们：从今以后，我不再喝这葡萄汁，直等  神的国来到。”</p>
+      </li>
+                        <li><span>22:19</span>
+        <p>又拿起饼来，祝谢了，就擘开，递给他们，说：“这是我的身体，为你们舍的，你们也应当如此行，为的是记念我。”</p>
+      </li>
+                        <li><span>22:20</span>
+        <p>饭后也照样拿起杯来，说：“这杯是用我血所立的新约，是为你们流出来的。</p>
+      </li>
+                        <li><span>22:21</span>
+        <p>看哪，那卖我之人的手与我一同在桌子上。</p>
+      </li>
+                        <li><span>22:22</span>
+        <p>人子固然要照所预定的去世，但卖人子的人有祸了！”</p>
+      </li>
+                        <li><span>22:23</span>
+        <p>他们就彼此对问，是哪一个要作这事。</p>
+      </li>
+                                    <li><span>22:24</span>
+        <p>门徒起了争论：他们中间哪一个可算为大。</p>
+      </li>
+                        <li><span>22:25</span>
+        <p>耶稣说：“外邦人有君王为主治理他们，那掌权管他们的称为恩主。</p>
+      </li>
+                        <li><span>22:26</span>
+        <p>但你们不可这样。你们里头为大的，倒要像年幼的；为首领的，倒要像服侍人的。</p>
+      </li>
+                        <li><span>22:27</span>
+        <p>是谁为大？是坐席的呢？是服侍人的呢？不是坐席的大吗？然而，我在你们中间如同服侍人的。</p>
+      </li>
+                        <li><span>22:28</span>
+        <p>我在磨炼之中，常和我同在的就是你们。</p>
+      </li>
+                        <li><span>22:29</span>
+        <p>我将国赐给你们，正如我父赐给我一样，</p>
+      </li>
+                        <li><span>22:30</span>
+        <p>叫你们在我国里，坐在我的席上吃喝，并且坐在宝座上，审判以色列十二个支派。”</p>
+      </li>
+                                    <li><span>22:31</span>
+        <p>主又说：“西门，西门！撒但想要得着你们，好筛你们像筛麦子一样。</p>
+      </li>
+                        <li><span>22:32</span>
+        <p>但我已经为你祈求，叫你不至于失了信心，你回头以后，要坚固你的弟兄。”</p>
+      </li>
+                        <li><span>22:33</span>
+        <p>彼得说：“主啊，我就是同你下监，同你受死，也是甘心。”</p>
+      </li>
+                        <li><span>22:34</span>
+        <p>耶稣说：“彼得，我告诉你，今日鸡还没有叫，你要三次说不认得我。”</p>
+      </li>
+                                    <li><span>22:35</span>
+        <p>耶稣又对他们说：“我差你们出去的时候，没有钱囊、没有口袋、没有鞋，你们缺少什么没有？”他们说：“没有。”</p>
+      </li>
+                        <li><span>22:36</span>
+        <p>耶稣说：“但如今有钱囊的可以带着，有口袋的也可以带着，没有刀的要卖衣服买刀。</p>
+      </li>
+                        <li><span>22:37</span>
+        <p>我告诉你们，经上写着说：‘他被列在罪犯之中。’这话必应验在我身上，因为那关系我的事，必然成就。”</p>
+      </li>
+                        <li><span>22:38</span>
+        <p>他们说：“主啊，请看！这里有两把刀。”耶稣说：“够了。”</p>
+      </li>
+                                    <li><span>22:39</span>
+        <p>耶稣出来，照常往橄榄山去，门徒也跟随他。</p>
+      </li>
+                        <li><span>22:40</span>
+        <p>到了那地方，就对他们说：“你们要祷告，免得入了迷惑。”</p>
+      </li>
+                        <li><span>22:41</span>
+        <p>于是离开他们约有扔一块石头那么远，跪下祷告，</p>
+      </li>
+                        <li><span>22:42</span>
+        <p>说：“父啊，你若愿意，就把这杯撤去，然而，不要成就我的意思，只要成就你的意思。”</p>
+      </li>
+                        <li><span>22:43</span>
+        <p>有一位天使从天上显现，加添他的力量。</p>
+      </li>
+                        <li><span>22:44</span>
+        <p>耶稣极其伤痛，祷告更加恳切，汗珠如大血点，滴在地上。</p>
+      </li>
+                        <li><span>22:45</span>
+        <p>祷告完了，就起来，到门徒那里，见他们因为忧愁都睡着了，</p>
+      </li>
+                        <li><span>22:46</span>
+        <p>就对他们说：“你们为什么睡觉呢？起来祷告！免得入了迷惑。”</p>
+      </li>
+                                    <li><span>22:47</span>
+        <p>说话之间，来了许多人，那十二个门徒里名叫犹大的走在前头，就近耶稣，要与他亲嘴。</p>
+      </li>
+                        <li><span>22:48</span>
+        <p>耶稣对他说：“犹大，你用亲嘴的暗号卖人子吗？”</p>
+      </li>
+                        <li><span>22:49</span>
+        <p>左右的人见光景不好，就说：“主啊，我们拿刀砍可以不可以？”</p>
+      </li>
+                        <li><span>22:50</span>
+        <p>内中有一个人把大祭司的仆人砍了一刀，削掉了他的右耳。</p>
+      </li>
+                        <li><span>22:51</span>
+        <p>耶稣说：“到了这个地步，由他们吧！”就摸那人的耳朵，把他治好了。</p>
+      </li>
+                        <li><span>22:52</span>
+        <p>耶稣对那些来拿他的祭司长和守殿官并长老说：“你们带着刀棒出来拿我，如同拿强盗吗？</p>
+      </li>
+                        <li><span>22:53</span>
+        <p>我天天同你们在殿里，你们不下手拿我。现在却是你们的时候，黑暗掌权了。”</p>
+      </li>
+                                    <li><span>22:54</span>
+        <p>他们拿住耶稣，把他带到大祭司的宅里。彼得远远地跟着。</p>
+      </li>
+                        <li><span>22:55</span>
+        <p>他们在院子里生了火，一同坐着，彼得也坐在他们中间。</p>
+      </li>
+                        <li><span>22:56</span>
+        <p>有一个使女看见彼得坐在火光里，就定睛看他，说：“这个人素来也是同那人一伙的。”</p>
+      </li>
+                        <li><span>22:57</span>
+        <p>彼得却不承认，说：“女子，我不认得他。”</p>
+      </li>
+                        <li><span>22:58</span>
+        <p>过了不多的时候，又有一个人看见他，说：“你也是他们一党的。”彼得说：“你这个人！我不是。”</p>
+      </li>
+                        <li><span>22:59</span>
+        <p>约过了一小时，又有一个人极力地说：“他实在是同那人一伙的，因为他也是加利利人。”</p>
+      </li>
+                        <li><span>22:60</span>
+        <p>彼得说：“你这个人！我不晓得你说的是什么。”正说话之间，鸡就叫了。</p>
+      </li>
+                        <li><span>22:61</span>
+        <p>主转过身来看彼得。彼得便想起主对他所说的话：“今日鸡叫以先，你要三次不认我。’</p>
+      </li>
+                        <li><span>22:62</span>
+        <p>他就出去痛哭。</p>
+      </li>
+                                    <li><span>22:63</span>
+        <p>看守耶稣的人戏弄他，打他，</p>
+      </li>
+                        <li><span>22:64</span>
+        <p>又蒙着他的眼，问他说：“你是先知，告诉我们打你的是谁？”</p>
+      </li>
+                        <li><span>22:65</span>
+        <p>他们还用许多别的话辱骂他。</p>
+      </li>
+                                    <li><span>22:66</span>
+        <p>天一亮，民间的众长老连祭司长带文士都聚会，把耶稣带到他们的公会里，</p>
+      </li>
+                        <li><span>22:67</span>
+        <p>说：“你若是基督，就告诉我们。”耶稣说：“我若告诉你们，你们也不信；</p>
+      </li>
+                        <li><span>22:68</span>
+        <p>我若问你们，你们也不回答。</p>
+      </li>
+                        <li><span>22:69</span>
+        <p>从今以后，人子要坐在  神权能的右边。”</p>
+      </li>
+                        <li><span>22:70</span>
+        <p>他们都说：“这样，你是  神的儿子吗？”耶稣说：“你们所说的是。”</p>
+      </li>
+                        <li><span>22:71</span>
+        <p>他们说：“何必再用见证呢？他亲口所说的，我们都亲自听见了。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共24首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>路加福音(路)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>路加福音(路)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>路加福音(路)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>路加福音(路)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>路加福音(路)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>路加福音(路)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>路加福音(路)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>路加福音(路)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>路加福音(路)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>路加福音(路)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>路加福音(路)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>路加福音(路)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>路加福音(路)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>路加福音(路)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>路加福音(路)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>路加福音(路)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>路加福音(路)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>路加福音(路)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>路加福音(路)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>路加福音(路)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>路加福音(路)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>路加福音(路)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>路加福音(路)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>路加福音(路)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-42-cid-21.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-42-cid-23.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

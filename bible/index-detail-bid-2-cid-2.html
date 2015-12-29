@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="02出埃及记/02出埃及记_02.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-2-cid-3.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">出埃及记(出) 第2章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>2:1</span>
+        <p>有一个利未家的人，娶了一个利未女子为妻。</p>
+      </li>
+                        <li><span>2:2</span>
+        <p>那女人怀孕，生一个儿子，见他俊美，就藏了他三个月。</p>
+      </li>
+                        <li><span>2:3</span>
+        <p>后来不能再藏，就取了一个蒲草箱，抹上石漆和石油，将孩子放在里头，把箱子搁在河边的芦荻中。</p>
+      </li>
+                        <li><span>2:4</span>
+        <p>孩子的姐姐远远站着，要知道他究竟怎么样。</p>
+      </li>
+                        <li><span>2:5</span>
+        <p>法老的女儿来到河边洗澡，她的使女们在河边行走。她看见箱子在芦荻中，就打发一个婢女拿来。</p>
+      </li>
+                        <li><span>2:6</span>
+        <p>她打开箱子，看见那孩子。孩子哭了，她就可怜他，说：“这是希伯来人的一个孩子。”</p>
+      </li>
+                        <li><span>2:7</span>
+        <p>孩子的姐姐对法老的女儿说：“我去在希伯来妇人中叫一个奶妈来，为你奶这孩子，可以不可以？”</p>
+      </li>
+                        <li><span>2:8</span>
+        <p>法老的女儿说：“可以。”童女就去叫了孩子的母亲来。</p>
+      </li>
+                        <li><span>2:9</span>
+        <p>法老的女儿对她说：“你把这孩子抱去，为我奶他，我必给你工价。”妇人就抱了孩子去奶他。</p>
+      </li>
+                        <li><span>2:10</span>
+        <p>孩子渐长，妇人把他带到法老的女儿那里，就作了她的儿子。她给孩子起名叫摩西，意思说：“因我把他从水里拉出来。”</p>
+      </li>
+                                    <li><span>2:11</span>
+        <p>后来摩西长大，他出去到他弟兄那里，看他们的重担，见一个埃及人打希伯来人的一个弟兄。</p>
+      </li>
+                        <li><span>2:12</span>
+        <p>他左右观看，见没有人，就把埃及人打死了，藏在沙土里。</p>
+      </li>
+                        <li><span>2:13</span>
+        <p>第二天他出去，见有两个希伯来人争斗，就对那欺负人的说：“你为什么打你同族的人呢？”</p>
+      </li>
+                        <li><span>2:14</span>
+        <p>那人说：“谁立你作我们的首领和审判官呢？难道你要杀我，像杀那埃及人吗？”摩西便惧怕，说：“这事必是被人知道了。”</p>
+      </li>
+                        <li><span>2:15</span>
+        <p>法老听见这事，就想杀摩西，但摩西躲避法老，逃往米甸地居住。</p>
+      </li>
+                        <li><span>2:16</span>
+        <p>一日，他在井旁坐下，米甸的祭司有七个女儿，她们来打水，打满了槽，要饮父亲的群羊。</p>
+      </li>
+                        <li><span>2:17</span>
+        <p>有牧羊的人来把她们赶走了，摩西却起来帮助她们，又饮了她们的群羊。</p>
+      </li>
+                        <li><span>2:18</span>
+        <p>她们来到父亲流珥那里，他说：“今日你们为何来得这么快呢？”</p>
+      </li>
+                        <li><span>2:19</span>
+        <p>她们说：“有一个埃及人救我们脱离牧羊人的手，并且为我们打水饮了群羊。”</p>
+      </li>
+                        <li><span>2:20</span>
+        <p>他对女儿们说：“那个人在哪里？你们为什么撇下他呢？你们去请他来吃饭。”</p>
+      </li>
+                        <li><span>2:21</span>
+        <p>摩西甘心和那人同住；那人把他的女儿西坡拉给摩西为妻。</p>
+      </li>
+                        <li><span>2:22</span>
+        <p>西坡拉生了一个儿子，摩西给他起名叫革舜，意思说：“因我在外邦作了寄居的。”</p>
+      </li>
+                        <li><span>2:23</span>
+        <p>过了多年，埃及王死了。以色列人因作苦工，就叹息哀求，他们的哀声达于  神。</p>
+      </li>
+                        <li><span>2:24</span>
+        <p>神听见他们的哀声，就记念他与亚伯拉罕、以撒、雅各所立的约。</p>
+      </li>
+                        <li><span>2:25</span>
+        <p>神看顾以色列人，也知道他们的苦情。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共40首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>出埃及记(出)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>出埃及记(出)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>出埃及记(出)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>出埃及记(出)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>出埃及记(出)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>出埃及记(出)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>出埃及记(出)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>出埃及记(出)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>出埃及记(出)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>出埃及记(出)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>出埃及记(出)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>出埃及记(出)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>出埃及记(出)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>出埃及记(出)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>出埃及记(出)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>出埃及记(出)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>出埃及记(出)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>出埃及记(出)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>出埃及记(出)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>出埃及记(出)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>出埃及记(出)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>出埃及记(出)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>出埃及记(出)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>出埃及记(出)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>出埃及记(出)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>出埃及记(出)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>出埃及记(出)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>出埃及记(出)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>出埃及记(出)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>出埃及记(出)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>出埃及记(出)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>出埃及记(出)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>出埃及记(出)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>出埃及记(出)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-35.html"><span class="ppNum">35</span>
+        <p><strong>出埃及记(出)第35章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-36.html"><span class="ppNum">36</span>
+        <p><strong>出埃及记(出)第36章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-37.html"><span class="ppNum">37</span>
+        <p><strong>出埃及记(出)第37章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-38.html"><span class="ppNum">38</span>
+        <p><strong>出埃及记(出)第38章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-39.html"><span class="ppNum">39</span>
+        <p><strong>出埃及记(出)第39章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-2-cid-40.html"><span class="ppNum">40</span>
+        <p><strong>出埃及记(出)第40章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-2-cid-1.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-2-cid-3.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

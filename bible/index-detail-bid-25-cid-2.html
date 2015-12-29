@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="25耶利米哀歌/25耶利米哀歌_02.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-25-cid-3.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">耶利米哀歌(哀) 第2章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>2:1</span>
+        <p>主何竟发怒，使黑云遮蔽锡安城？他将以色列的华美从天扔在地上，在他发怒的日子并不记念自己的脚凳。</p>
+      </li>
+                        <li><span>2:2</span>
+        <p>主吞灭雅各一切的住处，并不顾惜。他发怒倾覆犹大民的保障，使这保障坍倒在地。他辱没这国和其中的首领。</p>
+      </li>
+                        <li><span>2:3</span>
+        <p>他发烈怒，把以色列的角全然砍断，在仇敌面前收回右手。他像火焰四围吞灭，将雅各烧毁。</p>
+      </li>
+                        <li><span>2:4</span>
+        <p>他张弓，好像仇敌。他站着举起右手，如同敌人将悦人眼目的，尽行杀戮。在锡安百姓的帐棚上，倒出他的忿怒像火一样。</p>
+      </li>
+                        <li><span>2:5</span>
+        <p>主如仇敌吞灭以色列和锡安的一切宫殿，拆毁百姓的保障，在犹大民中，加增悲伤哭号。</p>
+      </li>
+                        <li><span>2:6</span>
+        <p>他强取自己的帐幕，好像是园中的窝棚，毁坏他的聚会之处。耶和华使圣节和安息日在锡安都被忘记，又在怒气的愤恨中藐视君王和祭司。</p>
+      </li>
+                        <li><span>2:7</span>
+        <p>耶和华丢弃自己的祭坛，憎恶自己的圣所，将宫殿的墙垣交付仇敌。他们在耶和华的殿中喧嚷，像在圣会之日一样。</p>
+      </li>
+                        <li><span>2:8</span>
+        <p>耶和华定意拆毁锡安的城墙，他拉了准绳，不将手收回，定要毁灭。他使外郭和城墙都悲哀，一同衰败。</p>
+      </li>
+                        <li><span>2:9</span>
+        <p>锡安的门，都陷入地内，主将她的门闩毁坏，折断。她的君王和首领落在没有律法的列国中，她的先知不得见耶和华的异象。</p>
+      </li>
+                        <li><span>2:10</span>
+        <p>锡安城的长老坐在地上默默无声，他们扬起尘土落在头上，腰束麻布，耶路撒冷的处女，垂头至地。</p>
+      </li>
+                        <li><span>2:11</span>
+        <p>我眼中流泪，以致失明；我的心肠扰乱，肝胆涂地！都因我众民遭毁灭，又因孩童和吃奶的在城内街上发昏。</p>
+      </li>
+                        <li><span>2:12</span>
+        <p>那时，他们在城内街上发昏，好像受伤的，在母亲的怀里将要丧命，对母亲说：“谷、酒在哪里呢？”</p>
+      </li>
+                        <li><span>2:13</span>
+        <p>耶路撒冷的民哪，我可用什么向你证明呢？我可用什么与你相比呢？锡安的民哪，我可拿什么和你比较，好安慰你呢？因为你的裂口大如海，谁能医治你呢？</p>
+      </li>
+                        <li><span>2:14</span>
+        <p>你的先知为你见虚假和愚昧的异象，并没有显露你的罪孽，使你被掳的归回，却为你见虚假的默示和使你被赶出本境的缘故。</p>
+      </li>
+                        <li><span>2:15</span>
+        <p>凡过路的都向你拍掌。他们向耶路撒冷城嗤笑、摇头，说：“难道人所称为全美的，称为全地所喜悦的，就是这城吗？”</p>
+      </li>
+                        <li><span>2:16</span>
+        <p>你的仇敌都向你大大张口。他们嗤笑，又切齿说：“我们吞灭她，这真是我们所盼望的日子临到了！我们亲眼看见了！”</p>
+      </li>
+                        <li><span>2:17</span>
+        <p>耶和华成就了他所定的，应验了他古时所命定的。他倾覆了，并不顾惜，使你的仇敌向你夸耀，使你敌人的角也被高举。</p>
+      </li>
+                        <li><span>2:18</span>
+        <p>锡安民的心哀求主。锡安的城墙啊，愿你流泪如河，昼夜不息；愿你眼中的瞳人泪流不止。</p>
+      </li>
+                        <li><span>2:19</span>
+        <p>夜间，每逢交更的时候要起来呼喊，在主面前倾心如水。你的孩童在各市口上受饿发昏，你要为他们的性命向主举手祷告。</p>
+      </li>
+                        <li><span>2:20</span>
+        <p>耶和华啊，求你观看，见你向谁这样行！妇人岂可吃自己所生育手里所摇弄的婴孩吗？祭司和先知岂可在主的圣所中被杀戮吗？</p>
+      </li>
+                        <li><span>2:21</span>
+        <p>少年人和老年人都在街上躺卧，我的处女和壮丁都倒在刀下。你发怒的日子杀死他们。你杀了，并不顾惜。</p>
+      </li>
+                        <li><span>2:22</span>
+        <p>你招聚四围惊吓我的，像在大会的日子招聚人一样。耶和华发怒的日子，无人逃脱，无人存留。我所摇弄所养育的婴孩，仇敌都杀净了。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共5首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-25-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>耶利米哀歌(哀)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-25-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>耶利米哀歌(哀)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-25-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>耶利米哀歌(哀)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-25-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>耶利米哀歌(哀)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-25-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>耶利米哀歌(哀)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-25-cid-1.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-25-cid-3.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

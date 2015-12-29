@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="38撒迦利亚书/38撒迦利亚书_02.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-38-cid-3.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">撒迦利亚书(亚) 第2章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>2:1</span>
+        <p>我又举目观看，见一人手拿准绳。</p>
+      </li>
+                        <li><span>2:2</span>
+        <p>我说：“你往哪里去？”他对我说：“要去量耶路撒冷，看有多宽、多长。”</p>
+      </li>
+                        <li><span>2:3</span>
+        <p>与我说话的天使去的时候，又有一位天使迎着他来，</p>
+      </li>
+                        <li><span>2:4</span>
+        <p>对他说：“你跑去告诉那少年人说：‘耶路撒冷必有人居住，好像无城墙的乡村，因为人民和牲畜甚多。</p>
+      </li>
+                        <li><span>2:5</span>
+        <p>耶和华说：我要作耶路撒冷四围的火城，并要作其中的荣耀。’”</p>
+      </li>
+                                    <li><span>2:6</span>
+        <p>耶和华说：“我从前分散你们在天的四方（原文作“犹如天的四风”），现在你们要从北方之地逃回。”这是耶和华说的。”</p>
+      </li>
+                        <li><span>2:7</span>
+        <p>与巴比伦人同住的锡安民哪，应当逃脱。</p>
+      </li>
+                        <li><span>2:8</span>
+        <p>万军之耶和华说：“在显出荣耀之后，差遣我去惩罚那掳掠你们的列国，摸你们的，就是摸他眼中的瞳人。</p>
+      </li>
+                        <li><span>2:9</span>
+        <p>看哪，我（或作“他”）要向他们抡手，他们就必作服侍他们之人的掳物，你们便知道万军之耶和华差遣我了。</p>
+      </li>
+                        <li><span>2:10</span>
+        <p>锡安城啊，应当欢乐歌唱，因为我来要住在你中间。这是耶和华说的。”</p>
+      </li>
+                        <li><span>2:11</span>
+        <p>那时，必有许多国归附耶和华，作他（原文作“我”）的子民。他（原文作“我”）要住在你中间，你就知道万军之耶和华差遣我到你那里去了。</p>
+      </li>
+                        <li><span>2:12</span>
+        <p>耶和华必收回犹大作他圣地的份，也必再拣选耶路撒冷。</p>
+      </li>
+                        <li><span>2:13</span>
+        <p>凡有血气的都当在耶和华面前静默无声。因为他兴起，从圣所出来了。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共14首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-38-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>撒迦利亚书(亚)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-38-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>撒迦利亚书(亚)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-38-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>撒迦利亚书(亚)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-38-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>撒迦利亚书(亚)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-38-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>撒迦利亚书(亚)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-38-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>撒迦利亚书(亚)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-38-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>撒迦利亚书(亚)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-38-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>撒迦利亚书(亚)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-38-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>撒迦利亚书(亚)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-38-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>撒迦利亚书(亚)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-38-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>撒迦利亚书(亚)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-38-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>撒迦利亚书(亚)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-38-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>撒迦利亚书(亚)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-38-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>撒迦利亚书(亚)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-38-cid-1.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-38-cid-3.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

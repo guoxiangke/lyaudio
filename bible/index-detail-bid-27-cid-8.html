@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="27但以理书/27但以理书_08.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-27-cid-9.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">但以理书(但) 第8章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>8:1</span>
+        <p>伯沙撒王在位第三年，有异象现与我但以理，是在先前所见的异象之后。</p>
+      </li>
+                        <li><span>8:2</span>
+        <p>我见了异象的时候，我以为在以拦省书珊城中（“城”或作“宫”），我见异象又如在乌莱河边。</p>
+      </li>
+                        <li><span>8:3</span>
+        <p>我举目观看，见有双角的公绵羊站在河边，两角都高，这角高过那角，更高的是后长的。</p>
+      </li>
+                        <li><span>8:4</span>
+        <p>我见那公绵羊往西、往北、往南抵触，兽在它面前都站立不住，也没有能救护脱离它手的，但它任意而行，自高自大。</p>
+      </li>
+                        <li><span>8:5</span>
+        <p>我正思想的时候，见有一只公山羊从西而来，遍行全地，脚不沾尘。这山羊两眼当中有一非常的角。</p>
+      </li>
+                        <li><span>8:6</span>
+        <p>它往我所看见站在河边有双角的公绵羊那里去，大发忿怒，向它直闯。</p>
+      </li>
+                        <li><span>8:7</span>
+        <p>我见公山羊就近公绵羊，向它发烈怒、抵触它，折断它的两角。绵羊在它面前站立不住，它将绵羊触倒在地，用脚践踏，没有能救绵羊脱离它手的。</p>
+      </li>
+                        <li><span>8:8</span>
+        <p>这山羊极其自高自大，正强盛的时候，那大角折断了，又在角根上向天的四方（“方”原文作“风”）长出四个非常的角来。</p>
+      </li>
+                        <li><span>8:9</span>
+        <p>四角之中，有一角长出一个小角，向南、向东、向荣美之地，渐渐成为强大。</p>
+      </li>
+                        <li><span>8:10</span>
+        <p>它渐渐强大，高及天象，将些天象和星宿抛落在地，用脚践踏。</p>
+      </li>
+                        <li><span>8:11</span>
+        <p>并且它自高自大，以为高及天象之君，除掉常献给君的燔祭，毁坏君的圣所。</p>
+      </li>
+                        <li><span>8:12</span>
+        <p>因罪过的缘故，有军旅和常献的燔祭交付它。它将真理抛在地上，任意而行，无不顺利。</p>
+      </li>
+                        <li><span>8:13</span>
+        <p>我听见有一位圣者说话，又有一位圣者问那说话的圣者说：“这除掉常献的燔祭和施行毁坏的罪过，将圣所与军旅践踏的异象（“军旅”或作“以色列的军”），要到几时才应验呢？”</p>
+      </li>
+                        <li><span>8:14</span>
+        <p>他对我说：“到二千三百日，圣所就必洁净。”</p>
+      </li>
+                                    <li><span>8:15</span>
+        <p>我但以理见了这异象，愿意明白其中的意思，忽有一位形状像人的站在我面前。</p>
+      </li>
+                        <li><span>8:16</span>
+        <p>我又听见乌莱河两岸中有人声呼叫说：“加百列啊，要使此人明白这异象。”</p>
+      </li>
+                        <li><span>8:17</span>
+        <p>他便来到我所站的地方。他一来，我就惊慌俯伏在地，他对我说：“人子啊，你要明白，因为这是关乎末后的异象。”</p>
+      </li>
+                        <li><span>8:18</span>
+        <p>他与我说话的时候，我面伏在地沉睡，他就摸我，扶我站起来，</p>
+      </li>
+                        <li><span>8:19</span>
+        <p>说：“我要指示你恼怒临完必有的事，因为这是关乎末后的定期。</p>
+      </li>
+                        <li><span>8:20</span>
+        <p>你所看见双角的公绵羊，就是玛代和波斯王。</p>
+      </li>
+                        <li><span>8:21</span>
+        <p>那公山羊就是希腊王（“希腊”原文作“雅完”。下同），两眼当中的大角，就是头一王。</p>
+      </li>
+                        <li><span>8:22</span>
+        <p>至于那折断了的角，在其根上又长出四角，这四角就是四国，必从这国里兴起来，只是权势都不及他。</p>
+      </li>
+                        <li><span>8:23</span>
+        <p>这四国末时，犯法的人罪恶满盈，必有一王兴起，面貌凶恶，能用双关的诈语。</p>
+      </li>
+                        <li><span>8:24</span>
+        <p>他的权柄必大，却不是因自己的能力，他必行非常的毁灭。事情顺利，任意而行，又必毁灭有能力的和圣民。</p>
+      </li>
+                        <li><span>8:25</span>
+        <p>他用权术成就手中的诡计，心里自高自大，在人坦然无备的时候，毁灭多人。又要站起来攻击万君之君，至终却非因人手而灭亡。</p>
+      </li>
+                        <li><span>8:26</span>
+        <p>所说二千三百日的异象是真的，但你要将这异象封住，因为关乎后来许多的日子。”</p>
+      </li>
+                        <li><span>8:27</span>
+        <p>于是我但以理昏迷不醒，病了数日，然后起来办理王的事务。我因这异象惊奇，却无人能明白其中的意思。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共12首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>但以理书(但)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>但以理书(但)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>但以理书(但)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>但以理书(但)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>但以理书(但)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>但以理书(但)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>但以理书(但)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>但以理书(但)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>但以理书(但)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>但以理书(但)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>但以理书(但)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>但以理书(但)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-27-cid-7.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-27-cid-9.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

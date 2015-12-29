@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="48加拉太书/48加拉太书_04.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-48-cid-5.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">加拉太书(加) 第4章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                  <li><span>4:1</span>
+        <p>我说那承受产业的，虽然是全业的主人，但为孩童的时候，却与奴仆毫无分别，</p>
+      </li>
+                        <li><span>4:2</span>
+        <p>乃在师傅和管家的手下，直等他父亲预定的时候来到。</p>
+      </li>
+                        <li><span>4:3</span>
+        <p>我们为孩童的时候，受管于世俗小学之下，也是如此。</p>
+      </li>
+                        <li><span>4:4</span>
+        <p>及至时候满足，  神就差遣他的儿子为女子所生，且生在律法以下，</p>
+      </li>
+                        <li><span>4:5</span>
+        <p>要把律法以下的人赎出来，叫我们得着儿子的名分。</p>
+      </li>
+                        <li><span>4:6</span>
+        <p>你们既为儿子，  神就差他儿子的灵进入你们（原文作“我们”）的心，呼叫：“阿爸，父！”</p>
+      </li>
+                        <li><span>4:7</span>
+        <p>可见，从此以后，你不是奴仆，乃是儿子了。既是儿子，就靠着  神为后嗣。</p>
+      </li>
+                                    <li><span>4:8</span>
+        <p>但从前你们不认识  神的时候，是给那些本来不是  神的作奴仆。</p>
+      </li>
+                        <li><span>4:9</span>
+        <p>现在你们既然认识  神，更可说是被  神所认识的，怎么还要归回那懦弱无用的小学，情愿再给他作奴仆呢？</p>
+      </li>
+                        <li><span>4:10</span>
+        <p>你们谨守日子、月份、节期、年份，</p>
+      </li>
+                        <li><span>4:11</span>
+        <p>我为你们害怕，惟恐我在你们身上是枉费了工夫。</p>
+      </li>
+                        <li><span>4:12</span>
+        <p>弟兄们，我劝你们要像我一样，因为我也像你们一样，你们一点没有亏负我。</p>
+      </li>
+                        <li><span>4:13</span>
+        <p>你们知道，我头一次传福音给你们，是因为身体有疾病。</p>
+      </li>
+                        <li><span>4:14</span>
+        <p>你们为我身体的缘故受试炼，没有轻看我，也没有厌弃我，反倒接待我，如同  神的使者，如同基督耶稣。</p>
+      </li>
+                        <li><span>4:15</span>
+        <p>你们当日所夸的福气在哪里呢？那时，你们若能行，就是把自己的眼睛剜出来给我也都情愿。这是我可以给你们作见证的。</p>
+      </li>
+                        <li><span>4:16</span>
+        <p>如今，我将真理告诉你们，就成了你们的仇敌吗？</p>
+      </li>
+                        <li><span>4:17</span>
+        <p>那些人热心待你们，却不是好意，是要离间你们（原文作“把你们关在外面”），叫你们热心待他们。</p>
+      </li>
+                        <li><span>4:18</span>
+        <p>在善事上常用热心待人，原是好的，却不单我与你们同在的时候才这样。</p>
+      </li>
+                        <li><span>4:19</span>
+        <p>我小子啊，我为你们再受生产之苦，直等到基督成形在你们心里。</p>
+      </li>
+                        <li><span>4:20</span>
+        <p>我巴不得现今在你们那里，改换口气，因我为你们心里作难。</p>
+      </li>
+                                    <li><span>4:21</span>
+        <p>你们这愿意在律法以下的人，请告诉我，你们岂没有听见律法吗？</p>
+      </li>
+                        <li><span>4:22</span>
+        <p>因为律法上记着，亚伯拉罕有两个儿子，一个是使女生的，一个是自主之妇人生的。</p>
+      </li>
+                        <li><span>4:23</span>
+        <p>然而那使女所生的，是按着血气生的；那自主之妇人所生的，是凭着应许生的。</p>
+      </li>
+                        <li><span>4:24</span>
+        <p>这都是比方，那两个妇人就是两约。一约是出于西奈山，生子为奴，乃是夏甲。</p>
+      </li>
+                        <li><span>4:25</span>
+        <p>这夏甲二字是指着阿拉伯的西奈山，与现在的耶路撒冷同类，因耶路撒冷和她的儿女都是为奴的。</p>
+      </li>
+                        <li><span>4:26</span>
+        <p>但那在上的耶路撒冷是自主的，她是我们的母。</p>
+      </li>
+                        <li><span>4:27</span>
+        <p>因为经上记着：“不怀孕、不生养的，你要欢乐。未曾经过产难的，你要高声欢呼，因为没有丈夫的，比有丈夫的儿女更多。”</p>
+      </li>
+                        <li><span>4:28</span>
+        <p>弟兄们，我们是凭着应许作儿女，如同以撒一样。</p>
+      </li>
+                        <li><span>4:29</span>
+        <p>当时，那按着血气生的，逼迫了那按着圣灵生的，现在也是这样。</p>
+      </li>
+                        <li><span>4:30</span>
+        <p>然而经上是怎么说的呢？是说：“把使女和她儿子赶出去，因为使女的儿子不可与自主妇人的儿子一同承受产业。”</p>
+      </li>
+                        <li><span>4:31</span>
+        <p>弟兄们，这样看来，我们不是使女的儿女，乃是自主妇人的儿女了。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共6首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-48-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>加拉太书(加)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-48-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>加拉太书(加)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-48-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>加拉太书(加)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-48-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>加拉太书(加)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-48-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>加拉太书(加)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-48-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>加拉太书(加)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-48-cid-3.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-48-cid-5.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

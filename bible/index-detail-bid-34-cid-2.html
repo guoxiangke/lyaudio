@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="34那鸿书/34那鸿书_02.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-34-cid-3.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">那鸿书(鸿) 第2章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>2:1</span>
+        <p>尼尼微啊，那打碎邦国的上来攻击你。你要看守保障，谨防道路，使腰强壮，大大勉力。</p>
+      </li>
+                        <li><span>2:2</span>
+        <p>耶和华复兴雅各的荣华，好像以色列的荣华一样，因为使地空虚的，已经使雅各和以色列空虚，将他们的葡萄枝毁坏了。</p>
+      </li>
+                        <li><span>2:3</span>
+        <p>他勇士的盾牌是红的，精兵都穿朱红衣服。在他预备争战的日子，战车上的钢铁闪烁如火，柏木把的枪也抡起来了。</p>
+      </li>
+                        <li><span>2:4</span>
+        <p>车辆在街上（或作“城外”）急行，在宽阔处奔来奔去，形状如火把，飞跑如闪电。</p>
+      </li>
+                        <li><span>2:5</span>
+        <p>尼尼微王招聚他的贵胄；他们步行绊跌，速上城墙，预备挡牌。</p>
+      </li>
+                        <li><span>2:6</span>
+        <p>河闸开放，宫殿冲没。</p>
+      </li>
+                        <li><span>2:7</span>
+        <p>王后蒙羞，被人掳去；宫女捶胸，哀鸣如鸽。此乃命定之事。</p>
+      </li>
+                        <li><span>2:8</span>
+        <p>尼尼微自古以来充满人民，如同聚水的池子。现在居民却都逃跑，虽有人呼喊说：“站住！站住！”却无人回顾。</p>
+      </li>
+                        <li><span>2:9</span>
+        <p>你们抢掠金银吧，因为所积蓄的无穷，华美的宝器无数。</p>
+      </li>
+                        <li><span>2:10</span>
+        <p>尼尼微现在空虚荒凉，人心消化，双膝相碰，腰都疼痛，脸都变色。</p>
+      </li>
+                        <li><span>2:11</span>
+        <p>狮子的洞和少壮狮子喂养之处在哪里呢？公狮、母狮、小狮游行，无人惊吓之地在哪里呢？</p>
+      </li>
+                        <li><span>2:12</span>
+        <p>公狮为小狮撕碎许多食物，为母狮掐死活物，把撕碎的、掐死的充满它的洞穴。</p>
+      </li>
+                        <li><span>2:13</span>
+        <p>万军之耶和华说：“我与你为敌，必将你的车辆焚烧成烟，刀剑也必吞灭你的少壮狮子。我必从地上除灭你所撕碎的，你使者的声音必不再听见。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共3首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-34-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>那鸿书(鸿)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-34-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>那鸿书(鸿)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-34-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>那鸿书(鸿)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-34-cid-1.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-34-cid-3.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

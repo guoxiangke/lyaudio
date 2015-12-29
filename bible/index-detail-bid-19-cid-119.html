@@ -1,0 +1,1084 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="19诗篇/19诗篇_119.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-19-cid-120.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">诗篇(诗) 第119章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>119:1</span>
+        <p>行为完全、遵行耶和华律法的，这人便为有福；</p>
+      </li>
+                        <li><span>119:2</span>
+        <p>遵守他的法度、一心寻求他的，这人便为有福。</p>
+      </li>
+                        <li><span>119:3</span>
+        <p>这人不作非义的事，但遵行他的道。</p>
+      </li>
+                        <li><span>119:4</span>
+        <p>耶和华啊，你曾将你的训词吩咐我们，为要我们殷勤遵守。</p>
+      </li>
+                        <li><span>119:5</span>
+        <p>但愿我行事坚定，得以遵守你的律例。</p>
+      </li>
+                        <li><span>119:6</span>
+        <p>我看重你的一切命令，就不至于羞愧。</p>
+      </li>
+                        <li><span>119:7</span>
+        <p>我学了你公义的判语，就要以正直的心称谢你。</p>
+      </li>
+                        <li><span>119:8</span>
+        <p>我必守你的律例，求你总不要丢弃我。</p>
+      </li>
+                                    <li><span>119:9</span>
+        <p>少年人用什么洁净他的行为呢？是要遵行你的话。</p>
+      </li>
+                        <li><span>119:10</span>
+        <p>我一心寻求了你，求你不要叫我偏离你的命令。</p>
+      </li>
+                        <li><span>119:11</span>
+        <p>我将你的话藏在心里，免得我得罪你。</p>
+      </li>
+                        <li><span>119:12</span>
+        <p>耶和华啊，你是应当称颂的，求你将你的律例教训我。</p>
+      </li>
+                        <li><span>119:13</span>
+        <p>我用嘴唇传扬你口中的一切典章。</p>
+      </li>
+                        <li><span>119:14</span>
+        <p>我喜悦你的法度，如同喜悦一切的财物。</p>
+      </li>
+                        <li><span>119:15</span>
+        <p>我要默想你的训词，看重你的道路。</p>
+      </li>
+                        <li><span>119:16</span>
+        <p>我要在你的律例中自乐，我不忘记你的话。</p>
+      </li>
+                                    <li><span>119:17</span>
+        <p>求你用厚恩待你的仆人，使我存活，我就遵守你的话。</p>
+      </li>
+                        <li><span>119:18</span>
+        <p>求你开我的眼睛，使我看出你律法中的奇妙。</p>
+      </li>
+                        <li><span>119:19</span>
+        <p>我是在地上作寄居的，求你不要向我隐瞒你的命令。</p>
+      </li>
+                        <li><span>119:20</span>
+        <p>我时常切慕你的典章，甚至心碎。</p>
+      </li>
+                        <li><span>119:21</span>
+        <p>受咒诅偏离你命令的骄傲人，你已经责备他们。</p>
+      </li>
+                        <li><span>119:22</span>
+        <p>求你除掉我所受的羞辱和藐视，因我遵守你的法度。</p>
+      </li>
+                        <li><span>119:23</span>
+        <p>虽有首领坐着妄论我，你仆人却思想你的律例。</p>
+      </li>
+                        <li><span>119:24</span>
+        <p>你的法度是我所喜乐的，是我的谋士。</p>
+      </li>
+                                    <li><span>119:25</span>
+        <p>我的性命几乎归于尘土，求你照你的话将我救活。</p>
+      </li>
+                        <li><span>119:26</span>
+        <p>我述说我所行的，你应允了我。求你将你的律例教训我。</p>
+      </li>
+                        <li><span>119:27</span>
+        <p>求你使我明白你的训词，我就思想你的奇事。</p>
+      </li>
+                        <li><span>119:28</span>
+        <p>我的心因愁苦而消化，求你照你的话使我坚立。</p>
+      </li>
+                        <li><span>119:29</span>
+        <p>求你使我离开奸诈的道，开恩将你的律法赐给我。</p>
+      </li>
+                        <li><span>119:30</span>
+        <p>我拣选了忠信的道，将你的典章摆在我面前。</p>
+      </li>
+                        <li><span>119:31</span>
+        <p>我持守你的法度，耶和华啊，求你不要叫我羞愧。</p>
+      </li>
+                        <li><span>119:32</span>
+        <p>你开广我心的时候，我就往你命令的道上直奔。</p>
+      </li>
+                                    <li><span>119:33</span>
+        <p>耶和华啊，求你将你的律例指教我，我必遵守到底。</p>
+      </li>
+                        <li><span>119:34</span>
+        <p>求你赐我悟性，我便遵守你的律法，且要一心遵守。</p>
+      </li>
+                        <li><span>119:35</span>
+        <p>求你叫我遵行你的命令，因为这是我所喜乐的。</p>
+      </li>
+                        <li><span>119:36</span>
+        <p>求你使我的心趋向你的法度，不趋向非义之财。</p>
+      </li>
+                        <li><span>119:37</span>
+        <p>求你叫我转眼不看虚假，又叫我在你的道中生活。</p>
+      </li>
+                        <li><span>119:38</span>
+        <p>你向敬畏你的人所应许的话，求你向仆人坚定。</p>
+      </li>
+                        <li><span>119:39</span>
+        <p>求你使我所怕的羞辱远离我，因你的典章本为美。</p>
+      </li>
+                        <li><span>119:40</span>
+        <p>我羡慕你的训词，求你使我在你的公义上生活。</p>
+      </li>
+                                    <li><span>119:41</span>
+        <p>耶和华啊，愿你照你的话，使你的慈爱，就是你的救恩，临到我身上；</p>
+      </li>
+                        <li><span>119:42</span>
+        <p>我就有话回答那羞辱我的，因我倚靠你的话。</p>
+      </li>
+                        <li><span>119:43</span>
+        <p>求你叫真理的话总不离开我口，因我仰望你的典章。</p>
+      </li>
+                        <li><span>119:44</span>
+        <p>我要常守你的律法，直到永永远远。</p>
+      </li>
+                        <li><span>119:45</span>
+        <p>我要自由而行（或作“我要行在宽阔之地”），因我素来考究你的训词。</p>
+      </li>
+                        <li><span>119:46</span>
+        <p>我也要在君王面前论说你的法度，并不至于羞愧。</p>
+      </li>
+                        <li><span>119:47</span>
+        <p>我要在你的命令中自乐，这命令素来是我所爱的。</p>
+      </li>
+                        <li><span>119:48</span>
+        <p>我又要遵行（原文作“举手”）你的命令，这命令素来是我所爱的，我也要思想你的律例。</p>
+      </li>
+                                    <li><span>119:49</span>
+        <p>求你记念向你仆人所应许的话，叫我有盼望。</p>
+      </li>
+                        <li><span>119:50</span>
+        <p>这话将我救活了。我在患难中，因此得安慰。</p>
+      </li>
+                        <li><span>119:51</span>
+        <p>骄傲的人甚侮慢我，我却未曾偏离你的律法。</p>
+      </li>
+                        <li><span>119:52</span>
+        <p>耶和华啊，我记念你从古以来的典章，就得了安慰。</p>
+      </li>
+                        <li><span>119:53</span>
+        <p>我见恶人离弃你的律法，就怒气发作，犹如火烧。</p>
+      </li>
+                        <li><span>119:54</span>
+        <p>我在世寄居，素来以你的律例为诗歌。</p>
+      </li>
+                        <li><span>119:55</span>
+        <p>耶和华啊，我夜间记念你的名，遵守你的律法。</p>
+      </li>
+                        <li><span>119:56</span>
+        <p>我所以如此，是因我守你的训词。</p>
+      </li>
+                                    <li><span>119:57</span>
+        <p>耶和华是我的福分。我曾说，我要遵守你的言语。</p>
+      </li>
+                        <li><span>119:58</span>
+        <p>我一心求过你的恩，愿你照你的话怜悯我。</p>
+      </li>
+                        <li><span>119:59</span>
+        <p>我思想我所行的道，就转步归向你的法度。</p>
+      </li>
+                        <li><span>119:60</span>
+        <p>我急忙遵守你的命令，并不迟延。</p>
+      </li>
+                        <li><span>119:61</span>
+        <p>恶人的绳索缠绕我，我却没有忘记你的律法。</p>
+      </li>
+                        <li><span>119:62</span>
+        <p>我因你公义的典章，半夜必起来称谢你。</p>
+      </li>
+                        <li><span>119:63</span>
+        <p>凡敬畏你、守你训词的人，我都与他作伴。</p>
+      </li>
+                        <li><span>119:64</span>
+        <p>耶和华啊，你的慈爱遍满大地，求你将你的律例教训我。</p>
+      </li>
+                                    <li><span>119:65</span>
+        <p>耶和华啊，你向来是照你的话善待仆人。</p>
+      </li>
+                        <li><span>119:66</span>
+        <p>求你将精明和知识赐给我，因我信了你的命令。</p>
+      </li>
+                        <li><span>119:67</span>
+        <p>我未受苦以先走迷了路，现在却遵守你的话。</p>
+      </li>
+                        <li><span>119:68</span>
+        <p>你本为善，所行的也善，求你将你的律例教训我。</p>
+      </li>
+                        <li><span>119:69</span>
+        <p>骄傲人编造谎言攻击我，我却要一心守你的训词。</p>
+      </li>
+                        <li><span>119:70</span>
+        <p>他们心蒙脂油，我却喜爱你的律法。</p>
+      </li>
+                        <li><span>119:71</span>
+        <p>我受苦是与我有益，为要使我学习你的律例。</p>
+      </li>
+                        <li><span>119:72</span>
+        <p>你口中的训言（或作“律法”）与我有益，胜于千万的金银。</p>
+      </li>
+                                    <li><span>119:73</span>
+        <p>你的手制造我，建立我，求你赐我悟性，可以学习你的命令。</p>
+      </li>
+                        <li><span>119:74</span>
+        <p>敬畏你的人见我，就要欢喜，因我仰望你的话。</p>
+      </li>
+                        <li><span>119:75</span>
+        <p>耶和华啊，我知道你的判语是公义的，你使我受苦是以诚实待我。</p>
+      </li>
+                        <li><span>119:76</span>
+        <p>求你照着应许仆人的话，以慈爱安慰我。</p>
+      </li>
+                        <li><span>119:77</span>
+        <p>愿你的慈悲临到我，使我存活，因你的律法是我所喜爱的。</p>
+      </li>
+                        <li><span>119:78</span>
+        <p>愿骄傲人蒙羞，因为他们无理地倾覆我，但我要思想你的训词。</p>
+      </li>
+                        <li><span>119:79</span>
+        <p>愿敬畏你的人归向我，他们就知道你的法度。</p>
+      </li>
+                        <li><span>119:80</span>
+        <p>愿我的心在你的律例上完全，使我不至蒙羞。</p>
+      </li>
+                                    <li><span>119:81</span>
+        <p>我心渴想你的救恩，仰望你的应许。</p>
+      </li>
+                        <li><span>119:82</span>
+        <p>我因盼望你的应许，眼睛失明，说：“你何时安慰我？”</p>
+      </li>
+                        <li><span>119:83</span>
+        <p>我好象烟薰的皮袋，却不忘记你的律例。</p>
+      </li>
+                        <li><span>119:84</span>
+        <p>你仆人的年日有多少呢？你几时向逼迫我的人施行审判呢？</p>
+      </li>
+                        <li><span>119:85</span>
+        <p>不从你律法的骄傲人为我掘了坑。</p>
+      </li>
+                        <li><span>119:86</span>
+        <p>你的命令尽都诚实，他们无理地逼迫我，求你帮助我。</p>
+      </li>
+                        <li><span>119:87</span>
+        <p>他们几乎把我从世上灭绝，但我没有离弃你的训词。</p>
+      </li>
+                        <li><span>119:88</span>
+        <p>求你照你的慈爱将我救活，我就遵守你口中的法度。</p>
+      </li>
+                                    <li><span>119:89</span>
+        <p>耶和华啊，你的话安定在天，直到永远。</p>
+      </li>
+                        <li><span>119:90</span>
+        <p>你的诚实存到万代。你坚定了地，地就长存。</p>
+      </li>
+                        <li><span>119:91</span>
+        <p>天地照你的安排存到今日，万物都是你的仆役。</p>
+      </li>
+                        <li><span>119:92</span>
+        <p>我若不是喜爱你的律法，早就在苦难中灭绝了。</p>
+      </li>
+                        <li><span>119:93</span>
+        <p>我永不忘记你的训词，因你用这训词将我救活了。</p>
+      </li>
+                        <li><span>119:94</span>
+        <p>我是属你的，求你救我，因我寻求了你的训词。</p>
+      </li>
+                        <li><span>119:95</span>
+        <p>恶人等待我，要灭绝我，我却要揣摩你的法度。</p>
+      </li>
+                        <li><span>119:96</span>
+        <p>我看万事尽都有限，惟有你的命令极其宽广。</p>
+      </li>
+                                    <li><span>119:97</span>
+        <p>我何等爱慕你的律法，终日不住地思想。</p>
+      </li>
+                        <li><span>119:98</span>
+        <p>你的命令常存在我心里，使我比仇敌有智慧。</p>
+      </li>
+                        <li><span>119:99</span>
+        <p>我比我的师傅更通达，因我思想你的法度；</p>
+      </li>
+                        <li><span>119:100</span>
+        <p>我比年老的更明白，因我守了你的训词。</p>
+      </li>
+                        <li><span>119:101</span>
+        <p>我禁止我脚走一切的邪路，为要遵守你的话。</p>
+      </li>
+                        <li><span>119:102</span>
+        <p>我没有偏离你的典章，因为你教训了我。</p>
+      </li>
+                        <li><span>119:103</span>
+        <p>你的言语在我上膛何等甘美，在我口中比蜜更甜！</p>
+      </li>
+                        <li><span>119:104</span>
+        <p>我借着你的训词得以明白，所以我恨一切的假道。</p>
+      </li>
+                                    <li><span>119:105</span>
+        <p>你的话是我脚前的灯，是我路上的光。</p>
+      </li>
+                        <li><span>119:106</span>
+        <p>你公义的典章，我曾起誓遵守，我必按誓而行。</p>
+      </li>
+                        <li><span>119:107</span>
+        <p>我甚是受苦，耶和华啊，求你照你的话将我救活。</p>
+      </li>
+                        <li><span>119:108</span>
+        <p>耶和华啊，求你悦纳我口中的赞美为供物，又将你的典章教训我。</p>
+      </li>
+                        <li><span>119:109</span>
+        <p>我的性命常在危险之中，我却不忘记你的律法。</p>
+      </li>
+                        <li><span>119:110</span>
+        <p>恶人为我设下网罗，我却没有偏离你的训词。</p>
+      </li>
+                        <li><span>119:111</span>
+        <p>我以你的法度为永远的产业，因这是我心中所喜爱的。</p>
+      </li>
+                        <li><span>119:112</span>
+        <p>我的心专向你的律例，永远遵行，一直到底。</p>
+      </li>
+                                    <li><span>119:113</span>
+        <p>心怀二意的人为我所恨，但你的律法为我所爱。</p>
+      </li>
+                        <li><span>119:114</span>
+        <p>你是我藏身之处，又是我的盾牌，我甚仰望你的话语。</p>
+      </li>
+                        <li><span>119:115</span>
+        <p>作恶的人哪，你们离开我吧！我好遵守我  神的命令。</p>
+      </li>
+                        <li><span>119:116</span>
+        <p>求你照你的话扶持我，使我存活，也不叫我因失望而害羞。</p>
+      </li>
+                        <li><span>119:117</span>
+        <p>求你扶持我，我便得救，时常看重你的律例。</p>
+      </li>
+                        <li><span>119:118</span>
+        <p>凡偏离你律例的人，你都轻弃他们，因为他们的诡诈必归虚空。</p>
+      </li>
+                        <li><span>119:119</span>
+        <p>凡地上的恶人，你除掉他，好象除掉渣滓，因此我爱你的法度。</p>
+      </li>
+                        <li><span>119:120</span>
+        <p>我因惧怕你，肉就发抖，我也怕你的判语。</p>
+      </li>
+                                    <li><span>119:121</span>
+        <p>我行过公平和公义，求你不要撇下我给欺压我的人。</p>
+      </li>
+                        <li><span>119:122</span>
+        <p>求你为仆人作保，使我得好处，不容骄傲人欺压我。</p>
+      </li>
+                        <li><span>119:123</span>
+        <p>我因盼望你的救恩和你公义的话，眼睛失明。</p>
+      </li>
+                        <li><span>119:124</span>
+        <p>求你照你的慈爱待仆人，将你的律例教训我。</p>
+      </li>
+                        <li><span>119:125</span>
+        <p>我是你的仆人，求你赐我悟性，使我得知你的法度。</p>
+      </li>
+                        <li><span>119:126</span>
+        <p>这是耶和华降罚的时候，因人废了你的律法。</p>
+      </li>
+                        <li><span>119:127</span>
+        <p>所以我爱你的命令胜于金子，更胜于精金。</p>
+      </li>
+                        <li><span>119:128</span>
+        <p>你一切的训词，在万事上我都以为正直，我却恨恶一切假道。</p>
+      </li>
+                                    <li><span>119:129</span>
+        <p>你的法度奇妙，所以我一心谨守。</p>
+      </li>
+                        <li><span>119:130</span>
+        <p>你的言语一解开，就发出亮光，使愚人通达。</p>
+      </li>
+                        <li><span>119:131</span>
+        <p>我张口而气喘，因我切慕你的命令。</p>
+      </li>
+                        <li><span>119:132</span>
+        <p>求你转向我，怜悯我，好象你素常待那些爱你名的人。</p>
+      </li>
+                        <li><span>119:133</span>
+        <p>求你用你的话使我脚步稳当，不许什么罪孽辖制我。</p>
+      </li>
+                        <li><span>119:134</span>
+        <p>求你救我脱离人的欺压，我要遵守你的训词。</p>
+      </li>
+                        <li><span>119:135</span>
+        <p>求你用脸光照仆人，又将你的律例教训我。</p>
+      </li>
+                        <li><span>119:136</span>
+        <p>我的眼泪下流成河，因为他们不守你的律法。</p>
+      </li>
+                                    <li><span>119:137</span>
+        <p>耶和华啊，你是公义的，你的判语也是正直的。</p>
+      </li>
+                        <li><span>119:138</span>
+        <p>你所命定的法度是凭公义和至诚。</p>
+      </li>
+                        <li><span>119:139</span>
+        <p>我心焦急，如同火烧，因我敌人忘记你的言语。</p>
+      </li>
+                        <li><span>119:140</span>
+        <p>你的话极其精炼，所以你的仆人喜爱。</p>
+      </li>
+                        <li><span>119:141</span>
+        <p>我微小，被人藐视，却不忘记你的训词。</p>
+      </li>
+                        <li><span>119:142</span>
+        <p>你的公义永远长存，你的律法尽都真实。</p>
+      </li>
+                        <li><span>119:143</span>
+        <p>我遭遇患难愁苦，你的命令却是我所喜爱的。</p>
+      </li>
+                        <li><span>119:144</span>
+        <p>你的法度永远是公义的，求你赐我悟性，我就活了。</p>
+      </li>
+                                    <li><span>119:145</span>
+        <p>耶和华啊，我一心呼吁你，求你应允我，我必谨守你的律例。</p>
+      </li>
+                        <li><span>119:146</span>
+        <p>我向你呼吁，求你救我，我要遵守你的法度。</p>
+      </li>
+                        <li><span>119:147</span>
+        <p>我趁天未亮呼求，我仰望了你的言语；</p>
+      </li>
+                        <li><span>119:148</span>
+        <p>我趁夜更未换将眼睁开，为要思想你的话语。</p>
+      </li>
+                        <li><span>119:149</span>
+        <p>求你照你的慈爱听我的声音。耶和华啊，求你照你的典章将我救活。</p>
+      </li>
+                        <li><span>119:150</span>
+        <p>追求奸恶的人临近了，他们远离你的律法。</p>
+      </li>
+                        <li><span>119:151</span>
+        <p>耶和华啊，你与我相近，你一切的命令尽都真实。</p>
+      </li>
+                        <li><span>119:152</span>
+        <p>我因学你的法度，久已知道是你永远立定的。</p>
+      </li>
+                                    <li><span>119:153</span>
+        <p>求你看顾我的苦难，搭救我，因我不忘记你的律法。</p>
+      </li>
+                        <li><span>119:154</span>
+        <p>求你为我辨屈，救赎我，照你的话将我救活。</p>
+      </li>
+                        <li><span>119:155</span>
+        <p>救恩远离恶人，因为他们不寻求你的律例。</p>
+      </li>
+                        <li><span>119:156</span>
+        <p>耶和华啊，你的慈悲本为大，求你照你的典章将我救活。</p>
+      </li>
+                        <li><span>119:157</span>
+        <p>逼迫我的，抵挡我的很多，我却没有偏离你的法度。</p>
+      </li>
+                        <li><span>119:158</span>
+        <p>我看见奸恶的人就甚憎恶，因为他们不遵守你的话。</p>
+      </li>
+                        <li><span>119:159</span>
+        <p>你看我怎样爱你的训词。耶和华啊，求你照你的慈爱将我救活。</p>
+      </li>
+                        <li><span>119:160</span>
+        <p>你话的总纲是真实，你一切公义的典章是永远长存。</p>
+      </li>
+                                    <li><span>119:161</span>
+        <p>首领无故地逼迫我，但我的心畏惧你的言语。</p>
+      </li>
+                        <li><span>119:162</span>
+        <p>我喜爱你的话，好象人得了许多掳物。</p>
+      </li>
+                        <li><span>119:163</span>
+        <p>谎话是我所恨恶所憎嫌的，惟你的律法是我所爱的。</p>
+      </li>
+                        <li><span>119:164</span>
+        <p>我因你公义的典章，一天七次赞美你。</p>
+      </li>
+                        <li><span>119:165</span>
+        <p>爱你律法的人有大平安，什么都不能使他们绊脚。</p>
+      </li>
+                        <li><span>119:166</span>
+        <p>耶和华啊，我仰望了你的救恩，遵行了你的命令。</p>
+      </li>
+                        <li><span>119:167</span>
+        <p>我心里守了你的法度，这法度我甚喜爱。</p>
+      </li>
+                        <li><span>119:168</span>
+        <p>我遵守了你的训词和法度，因我一切所行的都在你面前。</p>
+      </li>
+                                    <li><span>119:169</span>
+        <p>耶和华啊，愿我的呼吁达到你面前，照你的话赐我悟性。</p>
+      </li>
+                        <li><span>119:170</span>
+        <p>愿我的恳求达到你面前，照你的话搭救我。</p>
+      </li>
+                        <li><span>119:171</span>
+        <p>愿我的嘴发出赞美的话，因为你将律例教训我。</p>
+      </li>
+                        <li><span>119:172</span>
+        <p>愿我的舌头歌唱你的话，因你一切的命令尽都公义。</p>
+      </li>
+                        <li><span>119:173</span>
+        <p>愿你用手帮助我，因我拣选了你的训词。</p>
+      </li>
+                        <li><span>119:174</span>
+        <p>耶和华啊，我切慕你的救恩，你的律法也是我所喜爱的。</p>
+      </li>
+                        <li><span>119:175</span>
+        <p>愿我的性命存活，得以赞美你；愿你的典章帮助我。</p>
+      </li>
+                        <li><span>119:176</span>
+        <p>我如亡羊走迷了路，求你寻找仆人，因我不忘记你的命令。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共150首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>诗篇(诗)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>诗篇(诗)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>诗篇(诗)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>诗篇(诗)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>诗篇(诗)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>诗篇(诗)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>诗篇(诗)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>诗篇(诗)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>诗篇(诗)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>诗篇(诗)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>诗篇(诗)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>诗篇(诗)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>诗篇(诗)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>诗篇(诗)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>诗篇(诗)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>诗篇(诗)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>诗篇(诗)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>诗篇(诗)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>诗篇(诗)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>诗篇(诗)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>诗篇(诗)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>诗篇(诗)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>诗篇(诗)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>诗篇(诗)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>诗篇(诗)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>诗篇(诗)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>诗篇(诗)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>诗篇(诗)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>诗篇(诗)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>诗篇(诗)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>诗篇(诗)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>诗篇(诗)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>诗篇(诗)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>诗篇(诗)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-35.html"><span class="ppNum">35</span>
+        <p><strong>诗篇(诗)第35章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-36.html"><span class="ppNum">36</span>
+        <p><strong>诗篇(诗)第36章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-37.html"><span class="ppNum">37</span>
+        <p><strong>诗篇(诗)第37章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-38.html"><span class="ppNum">38</span>
+        <p><strong>诗篇(诗)第38章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-39.html"><span class="ppNum">39</span>
+        <p><strong>诗篇(诗)第39章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-40.html"><span class="ppNum">40</span>
+        <p><strong>诗篇(诗)第40章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-41.html"><span class="ppNum">41</span>
+        <p><strong>诗篇(诗)第41章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-42.html"><span class="ppNum">42</span>
+        <p><strong>诗篇(诗)第42章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-43.html"><span class="ppNum">43</span>
+        <p><strong>诗篇(诗)第43章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-44.html"><span class="ppNum">44</span>
+        <p><strong>诗篇(诗)第44章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-45.html"><span class="ppNum">45</span>
+        <p><strong>诗篇(诗)第45章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-46.html"><span class="ppNum">46</span>
+        <p><strong>诗篇(诗)第46章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-47.html"><span class="ppNum">47</span>
+        <p><strong>诗篇(诗)第47章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-48.html"><span class="ppNum">48</span>
+        <p><strong>诗篇(诗)第48章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-49.html"><span class="ppNum">49</span>
+        <p><strong>诗篇(诗)第49章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-50.html"><span class="ppNum">50</span>
+        <p><strong>诗篇(诗)第50章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-51.html"><span class="ppNum">51</span>
+        <p><strong>诗篇(诗)第51章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-52.html"><span class="ppNum">52</span>
+        <p><strong>诗篇(诗)第52章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-53.html"><span class="ppNum">53</span>
+        <p><strong>诗篇(诗)第53章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-54.html"><span class="ppNum">54</span>
+        <p><strong>诗篇(诗)第54章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-55.html"><span class="ppNum">55</span>
+        <p><strong>诗篇(诗)第55章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-56.html"><span class="ppNum">56</span>
+        <p><strong>诗篇(诗)第56章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-57.html"><span class="ppNum">57</span>
+        <p><strong>诗篇(诗)第57章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-58.html"><span class="ppNum">58</span>
+        <p><strong>诗篇(诗)第58章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-59.html"><span class="ppNum">59</span>
+        <p><strong>诗篇(诗)第59章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-60.html"><span class="ppNum">60</span>
+        <p><strong>诗篇(诗)第60章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-61.html"><span class="ppNum">61</span>
+        <p><strong>诗篇(诗)第61章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-62.html"><span class="ppNum">62</span>
+        <p><strong>诗篇(诗)第62章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-63.html"><span class="ppNum">63</span>
+        <p><strong>诗篇(诗)第63章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-64.html"><span class="ppNum">64</span>
+        <p><strong>诗篇(诗)第64章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-65.html"><span class="ppNum">65</span>
+        <p><strong>诗篇(诗)第65章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-66.html"><span class="ppNum">66</span>
+        <p><strong>诗篇(诗)第66章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-67.html"><span class="ppNum">67</span>
+        <p><strong>诗篇(诗)第67章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-68.html"><span class="ppNum">68</span>
+        <p><strong>诗篇(诗)第68章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-69.html"><span class="ppNum">69</span>
+        <p><strong>诗篇(诗)第69章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-70.html"><span class="ppNum">70</span>
+        <p><strong>诗篇(诗)第70章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-71.html"><span class="ppNum">71</span>
+        <p><strong>诗篇(诗)第71章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-72.html"><span class="ppNum">72</span>
+        <p><strong>诗篇(诗)第72章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-73.html"><span class="ppNum">73</span>
+        <p><strong>诗篇(诗)第73章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-74.html"><span class="ppNum">74</span>
+        <p><strong>诗篇(诗)第74章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-75.html"><span class="ppNum">75</span>
+        <p><strong>诗篇(诗)第75章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-76.html"><span class="ppNum">76</span>
+        <p><strong>诗篇(诗)第76章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-77.html"><span class="ppNum">77</span>
+        <p><strong>诗篇(诗)第77章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-78.html"><span class="ppNum">78</span>
+        <p><strong>诗篇(诗)第78章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-79.html"><span class="ppNum">79</span>
+        <p><strong>诗篇(诗)第79章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-80.html"><span class="ppNum">80</span>
+        <p><strong>诗篇(诗)第80章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-81.html"><span class="ppNum">81</span>
+        <p><strong>诗篇(诗)第81章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-82.html"><span class="ppNum">82</span>
+        <p><strong>诗篇(诗)第82章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-83.html"><span class="ppNum">83</span>
+        <p><strong>诗篇(诗)第83章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-84.html"><span class="ppNum">84</span>
+        <p><strong>诗篇(诗)第84章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-85.html"><span class="ppNum">85</span>
+        <p><strong>诗篇(诗)第85章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-86.html"><span class="ppNum">86</span>
+        <p><strong>诗篇(诗)第86章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-87.html"><span class="ppNum">87</span>
+        <p><strong>诗篇(诗)第87章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-88.html"><span class="ppNum">88</span>
+        <p><strong>诗篇(诗)第88章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-89.html"><span class="ppNum">89</span>
+        <p><strong>诗篇(诗)第89章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-90.html"><span class="ppNum">90</span>
+        <p><strong>诗篇(诗)第90章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-91.html"><span class="ppNum">91</span>
+        <p><strong>诗篇(诗)第91章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-92.html"><span class="ppNum">92</span>
+        <p><strong>诗篇(诗)第92章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-93.html"><span class="ppNum">93</span>
+        <p><strong>诗篇(诗)第93章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-94.html"><span class="ppNum">94</span>
+        <p><strong>诗篇(诗)第94章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-95.html"><span class="ppNum">95</span>
+        <p><strong>诗篇(诗)第95章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-96.html"><span class="ppNum">96</span>
+        <p><strong>诗篇(诗)第96章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-97.html"><span class="ppNum">97</span>
+        <p><strong>诗篇(诗)第97章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-98.html"><span class="ppNum">98</span>
+        <p><strong>诗篇(诗)第98章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-99.html"><span class="ppNum">99</span>
+        <p><strong>诗篇(诗)第99章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-100.html"><span class="ppNum">100</span>
+        <p><strong>诗篇(诗)第100章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-101.html"><span class="ppNum">101</span>
+        <p><strong>诗篇(诗)第101章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-102.html"><span class="ppNum">102</span>
+        <p><strong>诗篇(诗)第102章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-103.html"><span class="ppNum">103</span>
+        <p><strong>诗篇(诗)第103章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-104.html"><span class="ppNum">104</span>
+        <p><strong>诗篇(诗)第104章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-105.html"><span class="ppNum">105</span>
+        <p><strong>诗篇(诗)第105章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-106.html"><span class="ppNum">106</span>
+        <p><strong>诗篇(诗)第106章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-107.html"><span class="ppNum">107</span>
+        <p><strong>诗篇(诗)第107章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-108.html"><span class="ppNum">108</span>
+        <p><strong>诗篇(诗)第108章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-109.html"><span class="ppNum">109</span>
+        <p><strong>诗篇(诗)第109章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-110.html"><span class="ppNum">110</span>
+        <p><strong>诗篇(诗)第110章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-111.html"><span class="ppNum">111</span>
+        <p><strong>诗篇(诗)第111章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-112.html"><span class="ppNum">112</span>
+        <p><strong>诗篇(诗)第112章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-113.html"><span class="ppNum">113</span>
+        <p><strong>诗篇(诗)第113章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-114.html"><span class="ppNum">114</span>
+        <p><strong>诗篇(诗)第114章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-115.html"><span class="ppNum">115</span>
+        <p><strong>诗篇(诗)第115章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-116.html"><span class="ppNum">116</span>
+        <p><strong>诗篇(诗)第116章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-117.html"><span class="ppNum">117</span>
+        <p><strong>诗篇(诗)第117章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-118.html"><span class="ppNum">118</span>
+        <p><strong>诗篇(诗)第118章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-119.html"><span class="ppNum">119</span>
+        <p><strong>诗篇(诗)第119章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-120.html"><span class="ppNum">120</span>
+        <p><strong>诗篇(诗)第120章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-121.html"><span class="ppNum">121</span>
+        <p><strong>诗篇(诗)第121章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-122.html"><span class="ppNum">122</span>
+        <p><strong>诗篇(诗)第122章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-123.html"><span class="ppNum">123</span>
+        <p><strong>诗篇(诗)第123章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-124.html"><span class="ppNum">124</span>
+        <p><strong>诗篇(诗)第124章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-125.html"><span class="ppNum">125</span>
+        <p><strong>诗篇(诗)第125章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-126.html"><span class="ppNum">126</span>
+        <p><strong>诗篇(诗)第126章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-127.html"><span class="ppNum">127</span>
+        <p><strong>诗篇(诗)第127章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-128.html"><span class="ppNum">128</span>
+        <p><strong>诗篇(诗)第128章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-129.html"><span class="ppNum">129</span>
+        <p><strong>诗篇(诗)第129章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-130.html"><span class="ppNum">130</span>
+        <p><strong>诗篇(诗)第130章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-131.html"><span class="ppNum">131</span>
+        <p><strong>诗篇(诗)第131章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-132.html"><span class="ppNum">132</span>
+        <p><strong>诗篇(诗)第132章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-133.html"><span class="ppNum">133</span>
+        <p><strong>诗篇(诗)第133章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-134.html"><span class="ppNum">134</span>
+        <p><strong>诗篇(诗)第134章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-135.html"><span class="ppNum">135</span>
+        <p><strong>诗篇(诗)第135章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-136.html"><span class="ppNum">136</span>
+        <p><strong>诗篇(诗)第136章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-137.html"><span class="ppNum">137</span>
+        <p><strong>诗篇(诗)第137章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-138.html"><span class="ppNum">138</span>
+        <p><strong>诗篇(诗)第138章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-139.html"><span class="ppNum">139</span>
+        <p><strong>诗篇(诗)第139章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-140.html"><span class="ppNum">140</span>
+        <p><strong>诗篇(诗)第140章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-141.html"><span class="ppNum">141</span>
+        <p><strong>诗篇(诗)第141章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-142.html"><span class="ppNum">142</span>
+        <p><strong>诗篇(诗)第142章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-143.html"><span class="ppNum">143</span>
+        <p><strong>诗篇(诗)第143章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-144.html"><span class="ppNum">144</span>
+        <p><strong>诗篇(诗)第144章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-145.html"><span class="ppNum">145</span>
+        <p><strong>诗篇(诗)第145章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-146.html"><span class="ppNum">146</span>
+        <p><strong>诗篇(诗)第146章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-147.html"><span class="ppNum">147</span>
+        <p><strong>诗篇(诗)第147章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-148.html"><span class="ppNum">148</span>
+        <p><strong>诗篇(诗)第148章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-149.html"><span class="ppNum">149</span>
+        <p><strong>诗篇(诗)第149章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-19-cid-150.html"><span class="ppNum">150</span>
+        <p><strong>诗篇(诗)第150章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-19-cid-118.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-19-cid-120.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="07士师记/07士师记_21.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-7.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">士师记(士) 第21章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>21:1</span>
+        <p>以色列人在米斯巴曾起誓说：“我们都不将女儿给便雅悯人为妻。”</p>
+      </li>
+                        <li><span>21:2</span>
+        <p>以色列人来到伯特利，坐在  神面前直到晚上，放声痛哭，</p>
+      </li>
+                        <li><span>21:3</span>
+        <p>说：“耶和华以色列的  神啊，为何以色列中有这样缺了一支派的事呢？”</p>
+      </li>
+                        <li><span>21:4</span>
+        <p>次日清早百姓起来，在那里筑了一座坛，献燔祭和平安祭。</p>
+      </li>
+                        <li><span>21:5</span>
+        <p>以色列人彼此问说：“以色列各支派中，谁没有同会众上到耶和华面前来呢？”先是以色列人起过大誓说，凡不上米斯巴到耶和华面前来的，必将他治死。</p>
+      </li>
+                        <li><span>21:6</span>
+        <p>以色列人为他们的弟兄便雅悯后悔，说：“如今以色列中绝了一个支派了。</p>
+      </li>
+                        <li><span>21:7</span>
+        <p>我们既在耶和华面前起誓说：必不将我们的女儿给便雅悯人为妻，现在我们当怎样办理，使他们剩下的人有妻呢？”</p>
+      </li>
+                        <li><span>21:8</span>
+        <p>又彼此问说：“以色列支派中谁没有上米斯巴到耶和华面前来呢？”他们就查出基列雅比没有一人进营到会众那里，</p>
+      </li>
+                        <li><span>21:9</span>
+        <p>因为百姓被数的时候，没有一个基列雅比人在那里。</p>
+      </li>
+                        <li><span>21:10</span>
+        <p>会众就打发一万二千大勇士，吩咐他们说：“你们去用刀将基列雅比人连妇女带孩子都击杀了。</p>
+      </li>
+                        <li><span>21:11</span>
+        <p>所当行的就是这样：要将一切男子和已嫁的女子尽行杀戮。”</p>
+      </li>
+                        <li><span>21:12</span>
+        <p>他们在基列雅比人中，遇见了四百个未嫁的处女，就带到迦南地的示罗营里。</p>
+      </li>
+                        <li><span>21:13</span>
+        <p>全会众打发人到临门磐的便雅悯人那里，向他们说和睦的话。</p>
+      </li>
+                        <li><span>21:14</span>
+        <p>当时便雅悯人回来了，以色列人就把所存活基列雅比的女子给他们为妻，还是不够。</p>
+      </li>
+                        <li><span>21:15</span>
+        <p>百姓为便雅悯人后悔，因为耶和华使以色列人缺了一个支派（原文作“使以色列中有了破口”）。</p>
+      </li>
+                        <li><span>21:16</span>
+        <p>会中的长老说：“便雅悯中的女子既然除灭了，我们当怎样办理，使那余剩的人有妻呢？”</p>
+      </li>
+                        <li><span>21:17</span>
+        <p>又说：“便雅悯逃脱的人当有地业，免得以色列中涂抹了一个支派。</p>
+      </li>
+                        <li><span>21:18</span>
+        <p>只是我们不能将自己的女儿给他们为妻，因为以色列人曾起誓说，有将女儿给便雅悯人为妻的，必受咒诅。”</p>
+      </li>
+                        <li><span>21:19</span>
+        <p>他们又说：“在利波拿以南，伯特利以北，在示剑大路以东的示罗，年年有耶和华的节期。”</p>
+      </li>
+                        <li><span>21:20</span>
+        <p>就吩咐便雅悯人说：“你们去，在葡萄园中埋伏。</p>
+      </li>
+                        <li><span>21:21</span>
+        <p>若看见示罗的女子出来跳舞，就从葡萄园出来，在示罗的女子中各抢一个为妻，回便雅悯地去。</p>
+      </li>
+                        <li><span>21:22</span>
+        <p>他们的父亲或是弟兄若来与我们争竞，我们就说，求你们看我们的情面，施恩给这些人，因我们在争战的时候没有给他们留下女子为妻。这也不是你们将女子给他们的，若是你们给的，就算有罪。”</p>
+      </li>
+                        <li><span>21:23</span>
+        <p>于是便雅悯人照样而行，按着他们的数目从跳舞的女子中抢去为妻，就回自己的地业去，又重修城邑居住。</p>
+      </li>
+                        <li><span>21:24</span>
+        <p>当时以色列人离开那里，各归本支派、本宗族、本地业去了。</p>
+      </li>
+                        <li><span>21:25</span>
+        <p>那时以色列中没有王，各人任意而行。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共21首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>士师记(士)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>士师记(士)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>士师记(士)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>士师记(士)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>士师记(士)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>士师记(士)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>士师记(士)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>士师记(士)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>士师记(士)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>士师记(士)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>士师记(士)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>士师记(士)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>士师记(士)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>士师记(士)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>士师记(士)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>士师记(士)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>士师记(士)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>士师记(士)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>士师记(士)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>士师记(士)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>士师记(士)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-7-cid-20.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="javascript:alertText('已到本章第后一首!');"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

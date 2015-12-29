@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="06约书亚记/06约书亚记_08.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-6-cid-9.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">约书亚记(书) 第8章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>8:1</span>
+        <p>耶和华对约书亚说：“不要惧怕，也不要惊惶。你起来，率领一切兵丁上艾城去，我已经把艾城的王和他的民、他的城并他的地，都交在你手里。</p>
+      </li>
+                        <li><span>8:2</span>
+        <p>你怎样待耶利哥和耶利哥的王，也当照样待艾城和艾城的王。只是城内所夺的财物和牲畜，你们可以取为自己的掠物。你要在城后设下伏兵。”</p>
+      </li>
+                        <li><span>8:3</span>
+        <p>于是，约书亚和一切兵丁都起来，要上艾城去。约书亚选了三万大能的勇士，夜间打发他们前往，</p>
+      </li>
+                        <li><span>8:4</span>
+        <p>吩咐他们说：“你们要在城后埋伏，不可离城太远，都要各自准备。</p>
+      </li>
+                        <li><span>8:5</span>
+        <p>我与我所带领的众民要向城前往。城里的人像初次出来攻击我们的时候，我们就在他们面前逃跑。</p>
+      </li>
+                        <li><span>8:6</span>
+        <p>他们必出来追赶我们，直到我们引诱他们离开城，因为他们必说：‘这些人像初次在我们面前逃跑。’所以我们要在他们面前逃跑，</p>
+      </li>
+                        <li><span>8:7</span>
+        <p>你们就从埋伏的地方起来，夺取那城，因为耶和华你们的  神必把城交在你们手里。</p>
+      </li>
+                        <li><span>8:8</span>
+        <p>你们夺了城以后，就放火烧城，要照耶和华的话行。这是我吩咐你们的。”</p>
+      </li>
+                        <li><span>8:9</span>
+        <p>约书亚打发他们前往，他们就上埋伏的地方去，住在伯特利和艾城的中间，就是在艾城的西边。这夜约书亚却在民中住宿。</p>
+      </li>
+                        <li><span>8:10</span>
+        <p>约书亚清早起来，点齐百姓，他和以色列的长老在百姓前面上艾城去。</p>
+      </li>
+                        <li><span>8:11</span>
+        <p>众民，就是他所带领的兵丁都上去，向前直往，来到城前，在艾城北边安营。在约书亚和艾城中间有一山谷。</p>
+      </li>
+                        <li><span>8:12</span>
+        <p>他挑了约有五千人，使他们埋伏在伯特利和艾城的中间，就是在艾城的西边。</p>
+      </li>
+                        <li><span>8:13</span>
+        <p>于是安置了百姓，就是城北的全军和城西的伏兵。这夜约书亚进入山谷之中。</p>
+      </li>
+                        <li><span>8:14</span>
+        <p>艾城的王看见这景况，就和全城的人，清早急忙起来，按所定的时候，出到亚拉巴前，要与以色列人交战，王却不知道在城后有伏兵。</p>
+      </li>
+                        <li><span>8:15</span>
+        <p>约书亚和以色列众人在他们面前装败，往那通旷野的路逃跑。</p>
+      </li>
+                        <li><span>8:16</span>
+        <p>城内的众民都被招聚，追赶他们。艾城人追赶的时候，就被引诱离开城。</p>
+      </li>
+                        <li><span>8:17</span>
+        <p>艾城和伯特利城没有一人不出来追赶以色列人的，撇了敞开的城门，去追赶以色列人。</p>
+      </li>
+                        <li><span>8:18</span>
+        <p>耶和华吩咐约书亚说：“你向艾城伸出手里的短枪，因为我要将城交在你手里。”约书亚就向城伸出手里的短轮。</p>
+      </li>
+                        <li><span>8:19</span>
+        <p>他一伸手，伏兵就从埋伏的地方急忙起来，夺了城，跑进城去，放火焚烧。</p>
+      </li>
+                        <li><span>8:20</span>
+        <p>艾城的人回头一看，不料，城中烟气冲天，他们就无力向左向右逃跑。那往旷野逃跑的百姓，便转身攻击追赶他们的人。</p>
+      </li>
+                        <li><span>8:21</span>
+        <p>约书亚和以色列众人见伏兵已经夺了城，城中烟气飞腾，就转身回去，击杀艾城的人。</p>
+      </li>
+                        <li><span>8:22</span>
+        <p>伏兵也出城迎击艾城人，艾城人就困在以色列人中间，前后都是以色列人。于是以色列人击杀他们，没有留下一个，也没有一个逃脱的。</p>
+      </li>
+                        <li><span>8:23</span>
+        <p>生擒了艾城的王，将他解到约书亚那里。</p>
+      </li>
+                        <li><span>8:24</span>
+        <p>以色列人在田间和旷野，杀尽所追赶一切艾城的居民。艾城人倒在刀下，直到灭尽，以色列众人就回到艾城，用刀杀了城中的人。</p>
+      </li>
+                        <li><span>8:25</span>
+        <p>当日杀毙的人，连男带女共有一万二千，就是艾城所有的人。</p>
+      </li>
+                        <li><span>8:26</span>
+        <p>约书亚没有收回手里所伸出来的短枪，直到把艾城的一切居民尽行杀灭。</p>
+      </li>
+                        <li><span>8:27</span>
+        <p>惟独城中的牲畜和财物，以色列人都取为自己的掠物，是照耶和华所吩咐约书亚的话。</p>
+      </li>
+                        <li><span>8:28</span>
+        <p>约书亚将艾城焚烧，使城永为高堆、荒场，直到今日。</p>
+      </li>
+                        <li><span>8:29</span>
+        <p>又将艾城王挂在树上，直到晚上。日落的时候，约书亚吩咐人把尸首从树上取下来，丢在城门口。在尸首上堆成一大堆石头，直存到今日。</p>
+      </li>
+                                    <li><span>8:30</span>
+        <p>那时，约书亚在以巴路山上为耶和华以色列的  神筑一座坛，</p>
+      </li>
+                        <li><span>8:31</span>
+        <p>是用没有动过铁器的整石头筑的，照着耶和华仆人摩西所吩咐以色列人的话，正如摩西律法书上所写的。众人在这坛上给耶和华奉献燔祭和平安祭。</p>
+      </li>
+                        <li><span>8:32</span>
+        <p>约书亚在那里，当着以色列人面前，将摩西所写的律法抄写在石头上。</p>
+      </li>
+                        <li><span>8:33</span>
+        <p>以色列众人，无论是本地人，是寄居的和长老、官长，并审判官，都站在约柜两旁，在抬耶和华约柜的祭司利未人面前，一半对着基利心山、一半对着以巴路山，为以色列民祝福，正如耶和华仆人摩西先前所吩咐的。</p>
+      </li>
+                        <li><span>8:34</span>
+        <p>随后约书亚将律法上祝福咒诅的话，照着律法书上一切所写的，都宣读了一遍。</p>
+      </li>
+                        <li><span>8:35</span>
+        <p>摩西所吩咐的一切话，约书亚在以色列全会众和妇女、孩子，并他们中间寄居的外人面前，没有一句不宣读的。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共24首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>约书亚记(书)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>约书亚记(书)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>约书亚记(书)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>约书亚记(书)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>约书亚记(书)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>约书亚记(书)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>约书亚记(书)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>约书亚记(书)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>约书亚记(书)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>约书亚记(书)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>约书亚记(书)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>约书亚记(书)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>约书亚记(书)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>约书亚记(书)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>约书亚记(书)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>约书亚记(书)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>约书亚记(书)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>约书亚记(书)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>约书亚记(书)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>约书亚记(书)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>约书亚记(书)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>约书亚记(书)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>约书亚记(书)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-6-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>约书亚记(书)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-6-cid-7.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-6-cid-9.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

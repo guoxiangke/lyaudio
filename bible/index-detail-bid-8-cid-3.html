@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="08路得记/08路得记_03.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-8-cid-4.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">路得记(得) 第3章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>3:1</span>
+        <p>路得的婆婆拿俄米对她说：“女儿啊，我不当为你找个安身之处，使你享福吗？</p>
+      </li>
+                        <li><span>3:2</span>
+        <p>你与波阿斯的使女常在一处，波阿斯不是我们的亲族吗？他今夜在场上簸大麦，</p>
+      </li>
+                        <li><span>3:3</span>
+        <p>你要沐浴抹膏，换上衣服，下到场上，却不要使那人认出你来。你等他吃喝完了，</p>
+      </li>
+                        <li><span>3:4</span>
+        <p>到他睡的时候，你看准他睡的地方，就进去掀开他脚上的被，躺卧在那里，他必告诉你所当作的事。”</p>
+      </li>
+                        <li><span>3:5</span>
+        <p>路得说：“凡你所吩咐的，我必遵行。”</p>
+      </li>
+                        <li><span>3:6</span>
+        <p>路得就下到场上，照她婆婆所吩咐她的而行。</p>
+      </li>
+                        <li><span>3:7</span>
+        <p>波阿斯吃喝完了，心里欢畅，就去睡在麦堆旁边。路得便悄悄地来掀开他脚上的被，躺卧在那里。</p>
+      </li>
+                        <li><span>3:8</span>
+        <p>到了夜半，那人忽然惊醒，翻过身来，不料，有女子躺在他的脚下。</p>
+      </li>
+                        <li><span>3:9</span>
+        <p>他就说：“你是谁？”回答说：“我是你的婢女路得。求你用你的衣襟遮盖我，因为你是我一个至近的亲属。”</p>
+      </li>
+                        <li><span>3:10</span>
+        <p>波阿斯说：“女儿啊，愿你蒙耶和华赐福！你末后的恩，比先前更大，因为少年人无论贫富，你都没有跟从。</p>
+      </li>
+                        <li><span>3:11</span>
+        <p>女儿啊，现在不要惧怕。凡你所说的，我必照着行，我本城的人都知道你是个贤德的女子。</p>
+      </li>
+                        <li><span>3:12</span>
+        <p>我实在是你一个至近的亲属，只是还有一个人比我更近。</p>
+      </li>
+                        <li><span>3:13</span>
+        <p>你今夜在这里住宿，明早他若肯为你尽亲属的本分，就由他吧，倘若不肯，我指着永生的耶和华起誓，我必为你尽了本分，你只管躺到天亮。”</p>
+      </li>
+                        <li><span>3:14</span>
+        <p>路得便在他脚下躺到天快亮，人彼此不能辨认的时候就起来了。波阿斯说：“不可使人知道有女子到场上来。”</p>
+      </li>
+                        <li><span>3:15</span>
+        <p>又对路得说：“打开你所披的外衣。”她打开了，波阿斯就撮了六簸箕大麦，帮她扛在肩上，她便进城去了。</p>
+      </li>
+                        <li><span>3:16</span>
+        <p>路得回到婆婆那里，婆婆说：“女儿啊，怎么样了？”路得就将那人向她所行的述说了一遍。</p>
+      </li>
+                        <li><span>3:17</span>
+        <p>又说：“那人给了我六簸箕大麦，对我说：‘你不可空手回去见你的婆婆。’”</p>
+      </li>
+                        <li><span>3:18</span>
+        <p>婆婆说：“女儿啊，你只管安坐等候，看这事怎样成就，因为那人今日不办成这事必不休息。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共4首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-8-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>路得记(得)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-8-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>路得记(得)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-8-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>路得记(得)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-8-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>路得记(得)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-8-cid-2.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-8-cid-4.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

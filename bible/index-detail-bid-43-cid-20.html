@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="43约翰福音/43约翰福音_20.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-43-cid-21.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">约翰福音(约) 第20章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>20:1</span>
+        <p>七日的第一日清早，天还黑的时候，抹大拉的马利亚来到坟墓那里，看见石头从坟墓挪开了，</p>
+      </li>
+                        <li><span>20:2</span>
+        <p>就跑来见西门彼得和耶稣所爱的那个门徒，对他们说：“有人把主从坟墓里挪了去，我们不知道放在哪里。”</p>
+      </li>
+                        <li><span>20:3</span>
+        <p>彼得和那门徒就出来，往坟墓那里去。</p>
+      </li>
+                        <li><span>20:4</span>
+        <p>两个人同跑，那门徒比彼得跑得更快，先到了坟墓，</p>
+      </li>
+                        <li><span>20:5</span>
+        <p>低头往里看，就见细麻布还放在那里，只是没有进去。</p>
+      </li>
+                        <li><span>20:6</span>
+        <p>西门彼得随后也到了，进坟墓里去，就看见细麻布还放在那里；</p>
+      </li>
+                        <li><span>20:7</span>
+        <p>又看见耶稣的裹头巾没有和细麻布放在一处，是另在一处卷着。</p>
+      </li>
+                        <li><span>20:8</span>
+        <p>先到坟墓的那门徒也进去，看见就信了。</p>
+      </li>
+                        <li><span>20:9</span>
+        <p>因为他们还不明白圣经的意思，就是耶稣必要从死里复活。</p>
+      </li>
+                        <li><span>20:10</span>
+        <p>于是两个门徒回自己的住处去了。</p>
+      </li>
+                                    <li><span>20:11</span>
+        <p>马利亚却站在坟墓外面哭，哭的时候，低头往坟墓里看，</p>
+      </li>
+                        <li><span>20:12</span>
+        <p>就见两个天使，穿着白衣，在安放耶稣身体的地方坐着，一个在头，一个在脚。</p>
+      </li>
+                        <li><span>20:13</span>
+        <p>天使对她说：“妇人，你为什么哭？”她说：“因为有人把我主挪了去，我不知道放在哪里。”</p>
+      </li>
+                        <li><span>20:14</span>
+        <p>说了这话，就转过身来，看见耶稣站在那里，却不知道是耶稣。</p>
+      </li>
+                        <li><span>20:15</span>
+        <p>耶稣问她说：“妇人，为什么哭？你找谁呢？”马利亚以为是看园的，就对他说：“先生，若是你把他移了去，请告诉我你把他放在哪里，我便去取他。”</p>
+      </li>
+                        <li><span>20:16</span>
+        <p>耶稣说：“马利亚！”马利亚就转过来，用希伯来话对他说：“拉波尼（拉波尼就是夫子的意思）！”</p>
+      </li>
+                        <li><span>20:17</span>
+        <p>耶稣说：“不要摸我，因我还没有升上去见我的父。你往我弟兄那里去，告诉他们说：我要升上去见我的父，也是你们的父；见我的  神，也是你们的  神。”</p>
+      </li>
+                        <li><span>20:18</span>
+        <p>抹大拉的马利亚就去告诉门徒说：“我已经看见了主。”她又将主对她说的这话告诉他们。</p>
+      </li>
+                                    <li><span>20:19</span>
+        <p>那日（就是七日的第一日）晚上，门徒所在的地方，因怕犹太人，门都关了。耶稣来站在当中，对他们说：“愿你们平安！”</p>
+      </li>
+                        <li><span>20:20</span>
+        <p>说了这话，就把手和肋旁指给他们看。门徒看见主，就喜乐了。</p>
+      </li>
+                        <li><span>20:21</span>
+        <p>耶稣又对他们说：“愿你们平安！父怎样差遣了我，我也照样差遣你们。”</p>
+      </li>
+                        <li><span>20:22</span>
+        <p>说了这话，就向他们吹一口气，说：“你们受圣灵。</p>
+      </li>
+                        <li><span>20:23</span>
+        <p>你们赦免谁的罪，谁的罪就赦免了；你们留下谁的罪，谁的罪就留下了。”</p>
+      </li>
+                                    <li><span>20:24</span>
+        <p>那十二个门徒中，有称为低土马的多马，耶稣来的时候，他没有和他们同在。</p>
+      </li>
+                        <li><span>20:25</span>
+        <p>那些门徒就对他说：“我们已经看见主了。”多马却说：“我非看见他手上的钉痕，用指头探入那钉痕，又用手探入他的肋旁，我总不信。”</p>
+      </li>
+                        <li><span>20:26</span>
+        <p>过了八日，门徒又在屋里，多马也和他们同在。门都关了。耶稣来站在当中说：“愿你们平安！”</p>
+      </li>
+                        <li><span>20:27</span>
+        <p>就对多马说：“伸过你的指头来，摸（“摸”原文作“看”）我的手；伸出你的手来，探入我的肋旁。不要疑惑，总要信。”</p>
+      </li>
+                        <li><span>20:28</span>
+        <p>多马说：“我的主，我的  神！”</p>
+      </li>
+                        <li><span>20:29</span>
+        <p>耶稣对他说：“你因看见了我才信；那没有看见就信的有福了。”</p>
+      </li>
+                                    <li><span>20:30</span>
+        <p>耶稣在门徒面前另外行了许多神迹，没有记在这书上。</p>
+      </li>
+                        <li><span>20:31</span>
+        <p>但记这些事，要叫你们信耶稣是基督，是  神的儿子，并且叫你们信了他，就可以因他的名得生命。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共21首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>约翰福音(约)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>约翰福音(约)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>约翰福音(约)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>约翰福音(约)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>约翰福音(约)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>约翰福音(约)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>约翰福音(约)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>约翰福音(约)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>约翰福音(约)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>约翰福音(约)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>约翰福音(约)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>约翰福音(约)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>约翰福音(约)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>约翰福音(约)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>约翰福音(约)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>约翰福音(约)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>约翰福音(约)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>约翰福音(约)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>约翰福音(约)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>约翰福音(约)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-43-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>约翰福音(约)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-43-cid-19.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-43-cid-21.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

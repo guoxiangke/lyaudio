@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="64约翰三书/64约翰三书_01.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-64.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">约翰三书(约三) 第1章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>1:1</span>
+        <p>作长老的写信给亲爱的该犹，就是我诚心所爱的。</p>
+      </li>
+                        <li><span>1:2</span>
+        <p>亲爱的兄弟啊，我愿你凡事兴盛，身体健壮，正如你的灵魂兴盛一样。</p>
+      </li>
+                        <li><span>1:3</span>
+        <p>有弟兄来证明你心里存的真理，正如你按真理而行，我就甚喜乐。</p>
+      </li>
+                        <li><span>1:4</span>
+        <p>我听见我的儿女们按真理而行，我的喜乐就没有比这个大的。</p>
+      </li>
+                                    <li><span>1:5</span>
+        <p>亲爱的兄弟啊，凡你向作客旅之弟兄所行的，都是忠心的。</p>
+      </li>
+                        <li><span>1:6</span>
+        <p>他们在教会面前证明了你的爱。你若配得过  神，帮助他们往前行，这就好了；</p>
+      </li>
+                        <li><span>1:7</span>
+        <p>因他们是为主的名（原文作“那名”）出外，对于外邦人一无所取。</p>
+      </li>
+                        <li><span>1:8</span>
+        <p>所以我们应该接待这样的人，叫我们与他们一同为真理作工。</p>
+      </li>
+                                    <li><span>1:9</span>
+        <p>我曾略略地写信给教会；但那在教会中好为首的丢特腓不接待我们。</p>
+      </li>
+                        <li><span>1:10</span>
+        <p>所以我若去，必要提说他所行的事，就是他用恶言妄论我们，还不以此为足。他自己不接待弟兄，有人愿意接待，他也禁止，并且将接待弟兄的人赶出教会。</p>
+      </li>
+                        <li><span>1:11</span>
+        <p>亲爱的兄弟啊，不要效法恶，只要效法善。行善的属乎  神，行恶的未曾见过  神。</p>
+      </li>
+                        <li><span>1:12</span>
+        <p>低米丢行善，有众人给他作见证，又有真理给他作见证，就是我们也给他作见证。你也知道我们的见证是真的。</p>
+      </li>
+                                    <li><span>1:13</span>
+        <p>我原有许多事要写给你，却不愿意用笔墨写给你，</p>
+      </li>
+                        <li><span>1:14</span>
+        <p>但盼望快快地见你，我们就当面谈论。</p>
+      </li>
+                        <li><span>1:15</span>
+        <p>愿你平安！众位朋友都问你安。请你替我按着姓名问众位朋友安。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共1首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-64-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>约翰三书(约三)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="javascript:alertText('已到本章第一首!');"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="javascript:alertText('已到本章第后一首!');"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

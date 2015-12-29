@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="05申命记/05申命记_32.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-5-cid-33.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">申命记(申) 第32章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                  <li><span>32:1</span>
+        <p>“诸天哪，侧耳！我要说话，愿地也听我口中的言语。</p>
+      </li>
+                        <li><span>32:2</span>
+        <p>我的教训要淋漓如雨，我的言语要滴落如露，如细雨降在嫩草上，如甘霖降在菜蔬中。</p>
+      </li>
+                        <li><span>32:3</span>
+        <p>我要宣告耶和华的名。你们要将大德归与我们的  神。</p>
+      </li>
+                        <li><span>32:4</span>
+        <p>他是磐石，他的作为完全，他所行的无不公平，是诚实无伪的  神，又公义，又正直。</p>
+      </li>
+                        <li><span>32:5</span>
+        <p>这乖僻弯曲的世代，向他行事邪僻，有这弊病，就不是他的儿女。</p>
+      </li>
+                        <li><span>32:6</span>
+        <p>愚昧无知的民哪，你们这样报答耶和华吗？他岂不是你的父，将你买来的吗？他是制造你、建立你的。</p>
+      </li>
+                        <li><span>32:7</span>
+        <p>你当追想上古之日，思念历代之年。问你的父亲，他必指示你；问你的长者，他必告诉你。</p>
+      </li>
+                        <li><span>32:8</span>
+        <p>至高者将地业赐给列邦，将世人分开，就照以色列人的数目，立定万民的疆界。</p>
+      </li>
+                        <li><span>32:9</span>
+        <p>耶和华的份，本是他的百姓；他的产业，本是雅各。</p>
+      </li>
+                        <li><span>32:10</span>
+        <p>耶和华遇见他在旷野荒凉野兽吼叫之地，就环绕他、看顾他、保护他，如同保护眼中的瞳人，</p>
+      </li>
+                        <li><span>32:11</span>
+        <p>又如鹰搅动巢窝，在雏鹰以上两翅搧展，接取雏鹰，背在两翼之上。</p>
+      </li>
+                        <li><span>32:12</span>
+        <p>这样，耶和华独自引导他，并无外邦神与他同在。</p>
+      </li>
+                        <li><span>32:13</span>
+        <p>耶和华使他乘驾地的高处，得吃田间的土产；又使他从磐石中咂蜜，从坚石中吸油；</p>
+      </li>
+                        <li><span>32:14</span>
+        <p>也吃牛的奶油，羊的奶，羊羔的脂油，巴珊所出的公绵羊和山羊，与上好的麦子，也喝葡萄汁酿的酒。</p>
+      </li>
+                        <li><span>32:15</span>
+        <p>但耶书仑渐渐肥胖、粗壮、光润，踢跳，奔跑，便离弃造他的  神，轻看救他的磐石，</p>
+      </li>
+                        <li><span>32:16</span>
+        <p>敬拜别神，触动  神的愤恨，行可憎恶的事，惹了他的怒气。</p>
+      </li>
+                        <li><span>32:17</span>
+        <p>所祭祀的鬼魔并非真神，乃是素不认识的神，是近来新兴的，是你列祖所不畏惧的。</p>
+      </li>
+                        <li><span>32:18</span>
+        <p>你轻忽生你的磐石，忘记产你的  神。</p>
+      </li>
+                        <li><span>32:19</span>
+        <p>耶和华看见他的儿女惹动他，就厌恶他们，说：</p>
+      </li>
+                        <li><span>32:20</span>
+        <p>‘我要向他们掩面，看他们的结局如何。他们本是极乖僻的族类，心中无诚实的儿女。</p>
+      </li>
+                        <li><span>32:21</span>
+        <p>他们以那不算为神的触动我的愤恨；以虚无的神惹了我的怒气。我也要以那不成子民的触动他们的愤恨；以愚昧的国民惹了他们的怒气。</p>
+      </li>
+                        <li><span>32:22</span>
+        <p>因为在我怒中有火烧起，直烧到极深的阴间，把地和地的出产，尽都焚烧，山的根基也烧着了。</p>
+      </li>
+                        <li><span>32:23</span>
+        <p>我要将祸患堆在他们身上，把我的箭向他们射尽。</p>
+      </li>
+                        <li><span>32:24</span>
+        <p>他们必因饥饿消瘦，被炎热苦毒吞灭。我要打发野兽用牙齿咬他们，并土中腹行的，用毒气害他们。</p>
+      </li>
+                        <li><span>32:25</span>
+        <p>外头有刀剑，内室有惊恐，使人丧亡，使少男、童女、吃奶的、白发的，尽都灭绝。’</p>
+      </li>
+                        <li><span>32:26</span>
+        <p>我说：‘我必将他们分散远方，使他们的名号从人间除灭。’</p>
+      </li>
+                        <li><span>32:27</span>
+        <p>惟恐仇敌惹动我，只怕敌人错看说：‘是我们手的能力，并非耶和华所行的。’</p>
+      </li>
+                        <li><span>32:28</span>
+        <p>因为以色列民毫无计谋，心中没有聪明。</p>
+      </li>
+                        <li><span>32:29</span>
+        <p>惟愿他们有智慧，能明白这事，肯思念他们的结局。</p>
+      </li>
+                        <li><span>32:30</span>
+        <p>若不是他们的磐石卖了他们，若不是耶和华交出他们，一人焉能追赶他们千人，二人焉能使万人逃跑呢？</p>
+      </li>
+                        <li><span>32:31</span>
+        <p>据我们的仇敌自己断定，他们的磐石不如我们的磐石。</p>
+      </li>
+                        <li><span>32:32</span>
+        <p>他们的葡萄树是所多玛的葡萄树，蛾摩拉田园所生的。他们的葡萄是毒葡萄，全挂都是苦的。</p>
+      </li>
+                        <li><span>32:33</span>
+        <p>他们的酒是大蛇的毒气，是虺蛇残害的恶毒。</p>
+      </li>
+                        <li><span>32:34</span>
+        <p>这不都是积蓄在我这里，封锁在我府库中吗？</p>
+      </li>
+                        <li><span>32:35</span>
+        <p>他们失脚的时候，伸冤报应在我，因他们遭灾的日子近了，那要临在他们身上的，必速速来到。</p>
+      </li>
+                        <li><span>32:36</span>
+        <p>耶和华见他百姓毫无能力，无论困住的、自由的都没有剩下，就必为他们伸冤，为他的仆人后悔。</p>
+      </li>
+                        <li><span>32:37</span>
+        <p>他必说：‘他们的神，他们所投靠的磐石，</p>
+      </li>
+                        <li><span>32:38</span>
+        <p>就是向来吃他们祭牲的脂油，喝他们奠祭之酒的，在哪里呢？他可以兴起帮助你们，护卫你们！</p>
+      </li>
+                        <li><span>32:39</span>
+        <p>你们如今要知道：我，惟有我是  神，在我以外并无别神。我使人死，我使人活；我损伤，我也医治，并无人能从我手中救出来。</p>
+      </li>
+                        <li><span>32:40</span>
+        <p>我向天举手说，我凭我的永生起誓：</p>
+      </li>
+                        <li><span>32:41</span>
+        <p>我若磨我闪亮的刀，手掌审判之权，就必报复我的敌人，报应恨我的人。</p>
+      </li>
+                        <li><span>32:42</span>
+        <p>我要使我的箭饮血饮醉，就是被杀被掳之人的血。我的刀要吃肉，乃是仇敌中首领之头的肉。’</p>
+      </li>
+                        <li><span>32:43</span>
+        <p>你们外邦人，当与主的百姓一同欢呼，因他要伸他仆人流血的冤，报应他的敌人，洁净他的地，救赎他的百姓。”</p>
+      </li>
+                        <li><span>32:44</span>
+        <p>摩西和嫩的儿子约书亚，去将这歌的一切话说给百姓听。</p>
+      </li>
+                                    <li><span>32:45</span>
+        <p>摩西向以色列众人说完了这一切的话，</p>
+      </li>
+                        <li><span>32:46</span>
+        <p>又说：“我今日所警教你们的，你们都要放在心上，要吩咐你们的子孙谨守遵行这律法上的话。</p>
+      </li>
+                        <li><span>32:47</span>
+        <p>因为这不是虚空与你们无关的事，乃是你们的生命，在你们过约旦河要得为业的地上，必因这事日子得以长久。”</p>
+      </li>
+                        <li><span>32:48</span>
+        <p>当日，耶和华吩咐摩西说：</p>
+      </li>
+                        <li><span>32:49</span>
+        <p>“你上这亚巴琳山中的尼波山去，在摩押地与耶利哥相对，观看我所要赐给以色列人为业的迦南地。</p>
+      </li>
+                        <li><span>32:50</span>
+        <p>你必死在你所登的山上，归你列祖（原文作“本民”）去，像你哥哥亚伦死在何珥山上，归他的列祖一样。</p>
+      </li>
+                        <li><span>32:51</span>
+        <p>因为你们在寻的旷野，加低斯的米利巴水，在以色列人中没有尊我为圣，得罪了我。</p>
+      </li>
+                        <li><span>32:52</span>
+        <p>我所赐给以色列人的地，你可以远远地观看，却不得进去。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共34首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>申命记(申)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>申命记(申)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>申命记(申)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>申命记(申)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>申命记(申)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>申命记(申)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>申命记(申)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>申命记(申)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>申命记(申)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>申命记(申)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>申命记(申)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>申命记(申)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>申命记(申)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>申命记(申)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>申命记(申)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>申命记(申)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>申命记(申)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>申命记(申)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>申命记(申)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>申命记(申)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>申命记(申)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>申命记(申)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>申命记(申)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>申命记(申)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>申命记(申)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>申命记(申)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>申命记(申)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>申命记(申)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>申命记(申)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>申命记(申)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>申命记(申)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>申命记(申)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>申命记(申)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-5-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>申命记(申)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-5-cid-31.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-5-cid-33.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

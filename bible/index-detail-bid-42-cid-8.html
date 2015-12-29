@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="42路加福音/42路加福音_08.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-42-cid-9.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">路加福音(路) 第8章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>8:1</span>
+        <p>过了不多日，耶稣周游各城、各乡传道，宣讲  神国的福音。和他同去的有十二个门徒，</p>
+      </li>
+                        <li><span>8:2</span>
+        <p>还有被恶鬼所附、被疾病所累、已经治好的几个妇女，内中有称为抹大拉的马利亚，曾有七个鬼从她身上赶出来；</p>
+      </li>
+                        <li><span>8:3</span>
+        <p>又有希律的家宰苦撒的妻子约亚拿，并苏撒拿，和好些别的妇女，都是用自己的财物供给耶稣和门徒。</p>
+      </li>
+                                    <li><span>8:4</span>
+        <p>当许多人聚集，又有人从各城里出来见耶稣的时候，耶稣就用比喻说：</p>
+      </li>
+                        <li><span>8:5</span>
+        <p>“有一个撒种的出去撒种。撒的时候，有落在路旁的，被人践踏，天上的飞鸟又来吃尽了；</p>
+      </li>
+                        <li><span>8:6</span>
+        <p>有落在磐石上的，一出来就枯干了，因为得不着滋润；</p>
+      </li>
+                        <li><span>8:7</span>
+        <p>有落在荆棘里的，荆棘一同生长，把它挤住了；</p>
+      </li>
+                        <li><span>8:8</span>
+        <p>又有落在好土里的，生长起来，结实百倍。”耶稣说了这些话，就大声说：“有耳可听的，就应当听！”</p>
+      </li>
+                                    <li><span>8:9</span>
+        <p>门徒问耶稣说：“这比喻是什么意思呢？”</p>
+      </li>
+                        <li><span>8:10</span>
+        <p>他说：“  神国的奥秘只叫你们知道；至于别人，就用比喻，叫他们看也看不见，听也听不明。”</p>
+      </li>
+                                    <li><span>8:11</span>
+        <p>“这比喻乃是这样：种子就是  神的道。</p>
+      </li>
+                        <li><span>8:12</span>
+        <p>那些在路旁的，就是人听了道，随后魔鬼来，从他们心里把道夺去，恐怕他们信了得救；</p>
+      </li>
+                        <li><span>8:13</span>
+        <p>那些在磐石上的，就是人听道，欢喜领受，但心中没有根，不过暂时相信，及至遇见试炼就退后了，</p>
+      </li>
+                        <li><span>8:14</span>
+        <p>那落在荆棘里的，就是人听了道，走开以后，被今生的思虑、钱财、宴乐挤住了，便结不出成熟的子粒来；</p>
+      </li>
+                        <li><span>8:15</span>
+        <p>那落在好土里的，就是人听了道，持守在诚实、善良的心里，并且忍耐着结实。”</p>
+      </li>
+                                    <li><span>8:16</span>
+        <p>“没有人点灯用器皿盖上，或放在床底下，乃是放在灯台上，叫进来的人看见亮光。</p>
+      </li>
+                        <li><span>8:17</span>
+        <p>因为掩藏的事没有不显出来的；隐瞒的事，没有不露出来被人知道的。</p>
+      </li>
+                        <li><span>8:18</span>
+        <p>所以你们应当小心怎样听。因为凡有的，还要加给他；凡没有的，连他自以为有的，也要夺去。”</p>
+      </li>
+                                    <li><span>8:19</span>
+        <p>耶稣的母亲和他弟兄来了，因为人多，不得到他跟前。</p>
+      </li>
+                        <li><span>8:20</span>
+        <p>有人告诉他说：“你母亲和你弟兄站在外边，要见你。”</p>
+      </li>
+                        <li><span>8:21</span>
+        <p>耶稣回答说：“听了  神之道而遵行的人，就是我的母亲、我的弟兄了。”</p>
+      </li>
+                                    <li><span>8:22</span>
+        <p>有一天，耶稣和门徒上了船，对门徒说：“我们可以渡到湖那边去。”他们就开了船。</p>
+      </li>
+                        <li><span>8:23</span>
+        <p>正行的时候，耶稣睡着了。湖上忽然起了暴风，船将满了水，甚是危险。</p>
+      </li>
+                        <li><span>8:24</span>
+        <p>门徒来叫醒了他，说：“夫子，夫子，我们丧命啦！”耶稣醒了，斥责那狂风大浪，风浪就止住，平静了。</p>
+      </li>
+                        <li><span>8:25</span>
+        <p>耶稣对他们说：“你们的信心在哪里呢？”他们又惧怕又希奇，彼此说：“这到底是谁？他吩咐风和水，连风和水也听从他了。”</p>
+      </li>
+                                    <li><span>8:26</span>
+        <p>他们到了格拉森（有古卷作“加大拉”）人的地方，就是加利利的对面。</p>
+      </li>
+                        <li><span>8:27</span>
+        <p>耶稣上了岸，就有城里一个被鬼附着的人迎面而来。这个人许久不穿衣服，不住房子，只住在坟茔里。</p>
+      </li>
+                        <li><span>8:28</span>
+        <p>他见了耶稣，就俯伏在他面前，大声喊叫说：“至高  神的儿子耶稣，我与你有什么相干？求你不要叫我受苦。”</p>
+      </li>
+                        <li><span>8:29</span>
+        <p>是因耶稣曾吩咐污鬼从那人身上出来。原来这鬼屡次抓住他，他常被人看守，又被铁链和脚镣捆锁。他竟把锁链挣断，被鬼赶到旷野去。</p>
+      </li>
+                        <li><span>8:30</span>
+        <p>耶稣问他说：“你名叫什么？”他说：“我名叫群。”这是因为附着他的鬼多。</p>
+      </li>
+                        <li><span>8:31</span>
+        <p>鬼就央求耶稣，不要吩咐他们到无底坑里去。</p>
+      </li>
+                        <li><span>8:32</span>
+        <p>那里有一大群猪在山上吃食。鬼央求耶稣，准他们进入猪里去。耶稣准了他们。</p>
+      </li>
+                        <li><span>8:33</span>
+        <p>鬼就从那人出来，进入猪里去。于是那群猪闯下山崖，投在湖里淹死了。</p>
+      </li>
+                        <li><span>8:34</span>
+        <p>放猪的看见这事就逃跑了，去告诉城里和乡下的人。</p>
+      </li>
+                        <li><span>8:35</span>
+        <p>众人出来要看是什么事。到了耶稣那里，看见鬼所离开的那人坐在耶稣脚前，穿着衣服，心里明白过来，他们就害怕。</p>
+      </li>
+                        <li><span>8:36</span>
+        <p>看见这事的，便将被鬼附着的人怎么得救告诉他们。</p>
+      </li>
+                        <li><span>8:37</span>
+        <p>格拉森四围的人因为害怕得很，都求耶稣离开他们，耶稣就上船回去了。</p>
+      </li>
+                        <li><span>8:38</span>
+        <p>鬼所离开的那人恳求和耶稣同在，耶稣却打发他回去，说：</p>
+      </li>
+                        <li><span>8:39</span>
+        <p>“你回家去，传说  神为你作了何等大的事。”他就去满城里传扬耶稣为他作了何等大的事。</p>
+      </li>
+                                    <li><span>8:40</span>
+        <p>耶稣回来的时候，众人迎接他，因为他们都等候他。</p>
+      </li>
+                        <li><span>8:41</span>
+        <p>有一个管会堂的，名叫睚鲁，来俯伏在耶稣脚前，求耶稣到他家里去。</p>
+      </li>
+                        <li><span>8:42</span>
+        <p>因他有一个独生女儿，约有十二岁，快要死了。耶稣去的时候，众人拥挤他。</p>
+      </li>
+                        <li><span>8:43</span>
+        <p>有一个女人，患了十二年的血漏，在医生手里花尽了她一切养生的，并没有一人能医好她。</p>
+      </li>
+                        <li><span>8:44</span>
+        <p>她来到耶稣背后，摸他的衣裳繸子，血漏立刻就止住了。</p>
+      </li>
+                        <li><span>8:45</span>
+        <p>耶稣说：“摸我的是谁？”众人都不承认。彼得和同行的人都说：“夫子，众人拥拥挤挤紧靠着你。（有古卷在此有“你还问摸我的是谁吗？”）”</p>
+      </li>
+                        <li><span>8:46</span>
+        <p>耶稣说：“总有人摸我，因我觉得有能力从我身上出去。”</p>
+      </li>
+                        <li><span>8:47</span>
+        <p>那女人知道不能隐藏，就战战兢兢地来俯伏在耶稣脚前，把摸他的缘故和怎样立刻得好了，当着众人都说出来。</p>
+      </li>
+                        <li><span>8:48</span>
+        <p>耶稣对她说：“女儿，你的信救了你，平平安安地去吧！”</p>
+      </li>
+                        <li><span>8:49</span>
+        <p>还说话的时候，有人从管会堂的家里来，说：“你的女儿死了，不要劳动夫子。”</p>
+      </li>
+                        <li><span>8:50</span>
+        <p>耶稣听见就对他说：“不要怕，只要信，你的女儿就必得救！”</p>
+      </li>
+                        <li><span>8:51</span>
+        <p>耶稣到了他的家，除了彼得、约翰、雅各和女儿的父母，不许别人同他进去。</p>
+      </li>
+                        <li><span>8:52</span>
+        <p>众人都为这女儿哀哭捶胸。耶稣说：“不要哭，她不是死了，是睡着了。”</p>
+      </li>
+                        <li><span>8:53</span>
+        <p>他们晓得女儿已经死了，就嗤笑耶稣。</p>
+      </li>
+                        <li><span>8:54</span>
+        <p>耶稣拉着她的手，呼叫说：“女儿，起来吧！”</p>
+      </li>
+                        <li><span>8:55</span>
+        <p>她的灵魂便回来，她就立刻起来了。耶稣吩咐给她东西吃。</p>
+      </li>
+                        <li><span>8:56</span>
+        <p>她的父母惊奇得很。耶稣嘱咐他们，不要把所作的事告诉人。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共24首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>路加福音(路)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>路加福音(路)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>路加福音(路)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>路加福音(路)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>路加福音(路)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>路加福音(路)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>路加福音(路)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>路加福音(路)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>路加福音(路)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>路加福音(路)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>路加福音(路)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>路加福音(路)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>路加福音(路)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>路加福音(路)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>路加福音(路)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>路加福音(路)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>路加福音(路)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>路加福音(路)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>路加福音(路)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>路加福音(路)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>路加福音(路)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>路加福音(路)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>路加福音(路)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>路加福音(路)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-42-cid-7.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-42-cid-9.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

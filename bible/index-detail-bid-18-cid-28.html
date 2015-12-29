@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="18约伯记/18约伯记_28.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-18-cid-29.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">约伯记(伯) 第28章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>28:1</span>
+        <p>银子有矿，炼金有方。</p>
+      </li>
+                        <li><span>28:2</span>
+        <p>铁从地里挖出，铜从石中熔化。</p>
+      </li>
+                        <li><span>28:3</span>
+        <p>人为黑暗定界限，查究幽暗阴翳的石头，直到极处。</p>
+      </li>
+                        <li><span>28:4</span>
+        <p>在无人居住之处刨开矿穴，过路的人也想不到他们；又与人远离，悬在空中摇来摇去。</p>
+      </li>
+                        <li><span>28:5</span>
+        <p>至于地，能出粮食，地内好像被火翻起来。</p>
+      </li>
+                        <li><span>28:6</span>
+        <p>地中的石头有蓝宝石，并有金沙。</p>
+      </li>
+                        <li><span>28:7</span>
+        <p>矿中的路鸷鸟不得知道，鹰眼也未见过。</p>
+      </li>
+                        <li><span>28:8</span>
+        <p>狂傲的野兽未曾行过，猛烈的狮子也未曾经过。”</p>
+      </li>
+                        <li><span>28:9</span>
+        <p>“人伸手凿开坚石，倾倒山根。</p>
+      </li>
+                        <li><span>28:10</span>
+        <p>在磐石中凿出水道，亲眼看见各样宝物。</p>
+      </li>
+                        <li><span>28:11</span>
+        <p>他封闭水不得滴流，使隐藏的物显露出来。”</p>
+      </li>
+                        <li><span>28:12</span>
+        <p>“然而，智慧有何处可寻？聪明之处在哪里呢？</p>
+      </li>
+                        <li><span>28:13</span>
+        <p>智慧的价值无人能知，在活人之地也无处可寻。</p>
+      </li>
+                        <li><span>28:14</span>
+        <p>深渊说：‘不在我内。’沧海说：‘不在我中。’</p>
+      </li>
+                        <li><span>28:15</span>
+        <p>智慧非用黄金可得，也不能平白银为它的价值。</p>
+      </li>
+                        <li><span>28:16</span>
+        <p>俄斐金和贵重的红玛瑙，并蓝宝石，不足与较量；</p>
+      </li>
+                        <li><span>28:17</span>
+        <p>黄金和玻璃不足与比较；精金的器皿不足与兑换；</p>
+      </li>
+                        <li><span>28:18</span>
+        <p>珊瑚、水晶都不足论。智慧的价值胜过珍珠（或作“红宝石”）。</p>
+      </li>
+                        <li><span>28:19</span>
+        <p>古实的红璧玺不足与比较；精金也不足与较量。”</p>
+      </li>
+                        <li><span>28:20</span>
+        <p>“智慧从何处来呢？聪明之处在哪里呢？</p>
+      </li>
+                        <li><span>28:21</span>
+        <p>是向一切有生命的眼目隐藏，向空中的飞鸟掩蔽。</p>
+      </li>
+                        <li><span>28:22</span>
+        <p>灭没和死亡说：‘我们风闻其名。’”</p>
+      </li>
+                        <li><span>28:23</span>
+        <p>“  神明白智慧的道路，晓得智慧的所在。</p>
+      </li>
+                        <li><span>28:24</span>
+        <p>因他鉴察直到地极，遍观普天之下。</p>
+      </li>
+                        <li><span>28:25</span>
+        <p>要为风定轻重，又度量诸水。</p>
+      </li>
+                        <li><span>28:26</span>
+        <p>他为雨露定命令，为雷电定道路。</p>
+      </li>
+                        <li><span>28:27</span>
+        <p>那时他看见智慧，而且述说；他坚定，并且查究。</p>
+      </li>
+                        <li><span>28:28</span>
+        <p>他对人说：‘敬畏主就是智慧，远离恶便是聪明。’”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共42首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>约伯记(伯)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>约伯记(伯)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>约伯记(伯)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>约伯记(伯)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>约伯记(伯)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>约伯记(伯)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>约伯记(伯)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>约伯记(伯)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>约伯记(伯)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>约伯记(伯)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>约伯记(伯)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>约伯记(伯)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>约伯记(伯)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>约伯记(伯)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>约伯记(伯)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>约伯记(伯)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>约伯记(伯)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>约伯记(伯)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>约伯记(伯)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>约伯记(伯)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>约伯记(伯)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>约伯记(伯)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>约伯记(伯)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>约伯记(伯)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>约伯记(伯)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>约伯记(伯)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>约伯记(伯)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>约伯记(伯)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>约伯记(伯)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>约伯记(伯)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>约伯记(伯)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>约伯记(伯)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>约伯记(伯)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>约伯记(伯)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-35.html"><span class="ppNum">35</span>
+        <p><strong>约伯记(伯)第35章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-36.html"><span class="ppNum">36</span>
+        <p><strong>约伯记(伯)第36章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-37.html"><span class="ppNum">37</span>
+        <p><strong>约伯记(伯)第37章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-38.html"><span class="ppNum">38</span>
+        <p><strong>约伯记(伯)第38章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-39.html"><span class="ppNum">39</span>
+        <p><strong>约伯记(伯)第39章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-40.html"><span class="ppNum">40</span>
+        <p><strong>约伯记(伯)第40章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-41.html"><span class="ppNum">41</span>
+        <p><strong>约伯记(伯)第41章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-18-cid-42.html"><span class="ppNum">42</span>
+        <p><strong>约伯记(伯)第42章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-18-cid-27.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-18-cid-29.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

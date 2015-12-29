@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="42路加福音/42路加福音_14.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-42-cid-15.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">路加福音(路) 第14章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>14:1</span>
+        <p>安息日，耶稣到一个法利赛人的首领家里去吃饭，他们就窥探他。</p>
+      </li>
+                        <li><span>14:2</span>
+        <p>在他面前有一个患水臌的人。</p>
+      </li>
+                        <li><span>14:3</span>
+        <p>耶稣对律法师和法利赛人说：“安息日治病可以不可以？”</p>
+      </li>
+                        <li><span>14:4</span>
+        <p>他们却不言语。耶稣就治好那人，叫他走了。</p>
+      </li>
+                        <li><span>14:5</span>
+        <p>便对他们说：“你们中间谁有驴或有牛在安息日掉在井里，不立时拉它上来呢？”</p>
+      </li>
+                        <li><span>14:6</span>
+        <p>他们不能对答这话。</p>
+      </li>
+                                    <li><span>14:7</span>
+        <p>耶稣见所请的客拣择首位，就用比喻对他们说：</p>
+      </li>
+                        <li><span>14:8</span>
+        <p>“你被人请去赴婚姻的筵席，不要坐在首位上，恐怕有比你尊贵的客被他请来。</p>
+      </li>
+                        <li><span>14:9</span>
+        <p>那请你们的人前来对你说：‘让座给这一位吧！’你就羞羞惭惭地退到末位上去了。</p>
+      </li>
+                        <li><span>14:10</span>
+        <p>你被请的时候，就去坐在末位上，好叫那请你的人来对你说：‘朋友，请上座。’那时，你在同席的人面前就有光彩了。</p>
+      </li>
+                        <li><span>14:11</span>
+        <p>因为凡自高的，必降为卑；自卑的，必升为高。”</p>
+      </li>
+                        <li><span>14:12</span>
+        <p>耶稣又对请他的人说：“你摆设午饭或晚饭，不要请你的朋友、弟兄、亲属和富足的邻舍，恐怕他们也请你，你就得了报答。</p>
+      </li>
+                        <li><span>14:13</span>
+        <p>你摆设筵席，倒要请那贫穷的、残废的、瘸腿的、瞎眼的，你就有福了！</p>
+      </li>
+                        <li><span>14:14</span>
+        <p>因为他们没有什么可报答你。到义人复活的时候，你要得着报答。”</p>
+      </li>
+                                    <li><span>14:15</span>
+        <p>同席的有一人听见这话，就对耶稣说：“在  神国里吃饭的有福了！”</p>
+      </li>
+                        <li><span>14:16</span>
+        <p>耶稣对他说：“有一人摆设大筵席，请了许多客。</p>
+      </li>
+                        <li><span>14:17</span>
+        <p>到了坐席的时候，打发仆人去对所请的人说：‘请来吧！样样都齐备了。’</p>
+      </li>
+                        <li><span>14:18</span>
+        <p>众人一口同音地推辞。头一个说：‘我买了一块地，必须去看看。请你准我辞了。’</p>
+      </li>
+                        <li><span>14:19</span>
+        <p>又有一个说：‘我买了五对牛，要去试一试。请你准我辞了。’</p>
+      </li>
+                        <li><span>14:20</span>
+        <p>又有一个说：‘我才娶了妻，所以不能去。’</p>
+      </li>
+                        <li><span>14:21</span>
+        <p>那仆人回来，把这事都告诉了主人。家主就动怒，对仆人说：‘快出去，到城里大街小巷，领那贫穷的、残废的、瞎眼的、瘸腿的来。’</p>
+      </li>
+                        <li><span>14:22</span>
+        <p>仆人说：‘主啊，你所吩咐的已经办了，还有空座。’</p>
+      </li>
+                        <li><span>14:23</span>
+        <p>主人对仆人说：‘你出去到路上和篱笆那里，勉强人进来，坐满我的屋子。</p>
+      </li>
+                        <li><span>14:24</span>
+        <p>我告诉你们：先前所请的人，没有一个得尝我的筵席。’”</p>
+      </li>
+                                    <li><span>14:25</span>
+        <p>有极多的人和耶稣同行。他转过来对他们说：</p>
+      </li>
+                        <li><span>14:26</span>
+        <p>“人到我这里来，若不爱我胜过爱自己的父母、妻子、儿女、弟兄、姐妹和自己的性命，就不能作我的门徒（“爱我胜过爱”原文作“恨”）；</p>
+      </li>
+                        <li><span>14:27</span>
+        <p>凡不背着自己十字架跟从我的，也不能作我的门徒。</p>
+      </li>
+                        <li><span>14:28</span>
+        <p>你们哪一个要盖一座楼，不先坐下算计花费，能盖成不能呢？</p>
+      </li>
+                        <li><span>14:29</span>
+        <p>恐怕安了地基，不能成功，看见的人都笑话他，</p>
+      </li>
+                        <li><span>14:30</span>
+        <p>说：‘这个人开了工，却不能完工。’</p>
+      </li>
+                        <li><span>14:31</span>
+        <p>或是一个王出去和别的王打仗，岂不先坐下酌量，能用一万兵去敌那领二万兵来攻打他的吗？</p>
+      </li>
+                        <li><span>14:32</span>
+        <p>若是不能，就趁敌人还远的时候，派使者去求和息的条款。</p>
+      </li>
+                        <li><span>14:33</span>
+        <p>这样，你们无论什么人，若不撇下一切所有的，就不能作我的门徒。”</p>
+      </li>
+                                    <li><span>14:34</span>
+        <p>“盐本是好的，盐若失了味，可用什么叫它再咸呢？</p>
+      </li>
+                        <li><span>14:35</span>
+        <p>或用在田里，或堆在粪里，都不合式，只好丢在外面。有耳可听的，就应当听！”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共24首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>路加福音(路)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>路加福音(路)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>路加福音(路)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>路加福音(路)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>路加福音(路)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>路加福音(路)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>路加福音(路)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>路加福音(路)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>路加福音(路)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>路加福音(路)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>路加福音(路)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>路加福音(路)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>路加福音(路)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>路加福音(路)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>路加福音(路)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>路加福音(路)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>路加福音(路)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>路加福音(路)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>路加福音(路)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>路加福音(路)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>路加福音(路)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>路加福音(路)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>路加福音(路)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>路加福音(路)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-42-cid-13.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-42-cid-15.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="42路加福音/42路加福音_03.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-42-cid-4.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">路加福音(路) 第3章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>3:1</span>
+        <p>凯撒提庇留在位第十五年，本丢彼拉多作犹太巡抚，希律作加利利分封的王，他兄弟腓力作以土利亚和特拉可尼地方分封的王，吕撒聂作亚比利尼分封的王，</p>
+      </li>
+                        <li><span>3:2</span>
+        <p>亚那和该亚法作大祭司。那时，撒迦利亚的儿子约翰在旷野里，  神的话临到他。</p>
+      </li>
+                        <li><span>3:3</span>
+        <p>他就来到约旦河一带地方，宣讲悔改的洗礼，使罪得赦。</p>
+      </li>
+                        <li><span>3:4</span>
+        <p>正如先知以赛亚书上所记的话，说：“在旷野有人声喊着说：‘预备主的道，修直他的路。</p>
+      </li>
+                        <li><span>3:5</span>
+        <p>一切山洼都要填满，大小山冈都要削平。弯弯曲曲的地方要改为正直，高高低低的道路要改为平坦。</p>
+      </li>
+                        <li><span>3:6</span>
+        <p>凡有血气的，都要见  神的救恩。’”</p>
+      </li>
+                        <li><span>3:7</span>
+        <p>约翰对那出来要受他洗的众人说：“毒蛇的种类！谁指示你们逃避将来的忿怒呢？</p>
+      </li>
+                        <li><span>3:8</span>
+        <p>你们要结出果子来，与悔改的心相称。不要自己心里说：‘有亚伯拉罕为我们的祖宗。’我告诉你们：  神能从这些石头中，给亚伯拉罕兴起子孙来。</p>
+      </li>
+                        <li><span>3:9</span>
+        <p>现在斧子已经放在树根上，凡不结好果子的树就砍下来，丢在火里。”</p>
+      </li>
+                        <li><span>3:10</span>
+        <p>众人问他说：“这样，我们当作什么呢？”</p>
+      </li>
+                        <li><span>3:11</span>
+        <p>约翰回答说：“有两件衣裳的，就分给那没有的；有食物的，也当这样行。”</p>
+      </li>
+                        <li><span>3:12</span>
+        <p>又有税吏来要受洗，问他说：“夫子，我们当作什么呢？”</p>
+      </li>
+                        <li><span>3:13</span>
+        <p>约翰说：“除了例定的数目，不要多取。”</p>
+      </li>
+                        <li><span>3:14</span>
+        <p>又有兵丁问他说：“我们当作什么呢？”约翰说：“不要以强暴待人，也不要讹诈人，自己有钱粮就当知足。”</p>
+      </li>
+                        <li><span>3:15</span>
+        <p>百姓指望基督来的时候，人都心里猜疑，或者约翰是基督。</p>
+      </li>
+                        <li><span>3:16</span>
+        <p>约翰说：“我是用水给你们施洗，但有一位能力比我更大的要来，我就是给他解鞋带也不配。他要用圣灵与火给你们施洗。</p>
+      </li>
+                        <li><span>3:17</span>
+        <p>他手里拿着簸箕，要扬净他的场，把麦子收在仓里，把糠用不灭的火烧尽了。”</p>
+      </li>
+                        <li><span>3:18</span>
+        <p>约翰又用许多别的话劝百姓，向他们传福音。</p>
+      </li>
+                        <li><span>3:19</span>
+        <p>只是分封的王希律因他兄弟之妻希罗底的缘故，并因他所行的一切恶事，受了约翰的责备；</p>
+      </li>
+                        <li><span>3:20</span>
+        <p>又另外添了一件，就是把约翰收在监里。</p>
+      </li>
+                                    <li><span>3:21</span>
+        <p>众百姓都受了洗，耶稣也受了洗。正祷告的时候，天就开了，</p>
+      </li>
+                        <li><span>3:22</span>
+        <p>圣灵降临在他身上，形状彷佛鸽子，又有声音从天上来，说：“你是我的爱子，我喜悦你！”</p>
+      </li>
+                                    <li><span>3:23</span>
+        <p>耶稣开头传道，年纪约有三十岁。依人看来，他是约瑟的儿子，约瑟是希里的儿子，</p>
+      </li>
+                        <li><span>3:24</span>
+        <p>希里是玛塔的儿子，玛塔是利未的儿子，利未是麦基的儿子，麦基是雅拿的儿子，雅拿是约瑟的儿子，</p>
+      </li>
+                        <li><span>3:25</span>
+        <p>约瑟是玛他提亚的儿子，玛他提亚是亚摩斯的儿子，亚摩斯是拿鸿的儿子，拿鸿是以斯利的儿子，以斯利是拿该的儿子，</p>
+      </li>
+                        <li><span>3:26</span>
+        <p>拿该是玛押的儿子，玛押是玛他提亚的儿子，玛他提亚是西美的儿子，西美是约瑟的儿子，约瑟是犹大的儿子，犹大是约亚拿的儿子，</p>
+      </li>
+                        <li><span>3:27</span>
+        <p>约亚拿是利撒的儿子，利撒是所罗巴伯的儿子，所罗巴伯是撒拉铁的儿子，撒拉铁是尼利的儿子，尼利是麦基的儿子，</p>
+      </li>
+                        <li><span>3:28</span>
+        <p>麦基是亚底的儿子，亚底是哥桑的儿子，哥桑是以摩当的儿子，以摩当是珥的儿子，珥是约细的儿子，</p>
+      </li>
+                        <li><span>3:29</span>
+        <p>约细是以利以谢的儿子，以利以谢是约令的儿子，约令是玛塔的儿子，玛塔是利未的儿子，</p>
+      </li>
+                        <li><span>3:30</span>
+        <p>利未是西缅的儿子，西缅是犹大的儿子，犹大是约瑟的儿子，约瑟是约南的儿子，约南是以利亚敬的儿子，</p>
+      </li>
+                        <li><span>3:31</span>
+        <p>以利亚敬是米利亚的儿子，米利亚是买南的儿子，买南是玛达他的儿子，玛达他是拿单的儿子，拿单是大卫的儿子，</p>
+      </li>
+                        <li><span>3:32</span>
+        <p>大卫是耶西的儿子，耶西是俄备得的儿子，俄备得是波阿斯的儿子，波阿斯是撒门的儿子，撒门是拿顺的儿子，</p>
+      </li>
+                        <li><span>3:33</span>
+        <p>拿顺是亚米拿达的儿子，亚米拿达是亚兰的儿子，亚兰是希斯仑的儿子，希斯仑是法勒斯的儿子，法勒斯是犹大的儿子，</p>
+      </li>
+                        <li><span>3:34</span>
+        <p>犹大是雅各的儿子，雅各是以撒的儿子，以撒是亚伯拉罕的儿子，亚伯拉罕是他拉的儿子，他拉是拿鹤的儿子，</p>
+      </li>
+                        <li><span>3:35</span>
+        <p>拿鹤是西鹿的儿子，西鹿是拉吴的儿子，拉吴是法勒的儿子，法勒是希伯的儿子，希伯是色拉的儿子，</p>
+      </li>
+                        <li><span>3:36</span>
+        <p>色拉是该南的儿子，该南是亚法撒的儿子，亚法撒是闪的儿子，闪是挪亚的儿子，挪亚是拉麦的儿子，</p>
+      </li>
+                        <li><span>3:37</span>
+        <p>拉麦是玛土撒拉的儿子，玛土撒拉是以诺的儿子，以诺是雅列的儿子，雅列是玛勒列的儿子，玛勒列是该南的儿子，该南是以挪士的儿子，</p>
+      </li>
+                        <li><span>3:38</span>
+        <p>以挪士是塞特的儿子，塞特是亚当的儿子，亚当是  神的儿子。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共24首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>路加福音(路)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>路加福音(路)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>路加福音(路)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>路加福音(路)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>路加福音(路)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>路加福音(路)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>路加福音(路)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>路加福音(路)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>路加福音(路)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>路加福音(路)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>路加福音(路)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>路加福音(路)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>路加福音(路)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>路加福音(路)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>路加福音(路)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>路加福音(路)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>路加福音(路)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>路加福音(路)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>路加福音(路)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>路加福音(路)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>路加福音(路)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>路加福音(路)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>路加福音(路)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>路加福音(路)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-42-cid-2.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-42-cid-4.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

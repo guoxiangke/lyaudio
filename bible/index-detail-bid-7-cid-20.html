@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="07士师记/07士师记_20.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-7-cid-21.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">士师记(士) 第20章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>20:1</span>
+        <p>于是以色列从但到别是巴，以及住基列地的众人都出来，如同一人，聚集在米斯巴耶和华面前。</p>
+      </li>
+                        <li><span>20:2</span>
+        <p>以色列民的首领，就是各支派的军长，都站在  神百姓的会中；拿刀的步兵共有四十万。</p>
+      </li>
+                        <li><span>20:3</span>
+        <p>以色列人上到米斯巴，便雅悯人都听见了。以色列人说：“请你将这件恶事的情由对我们说明。”</p>
+      </li>
+                        <li><span>20:4</span>
+        <p>那利未人，就是被害之妇人的丈夫回答说：“我和我的妾到了便雅悯的基比亚住宿。</p>
+      </li>
+                        <li><span>20:5</span>
+        <p>基比亚人夜间起来，围了我住的房子，想要杀我，又将我的妾强奸致死。</p>
+      </li>
+                        <li><span>20:6</span>
+        <p>我就把我妾的尸身切成块子，使人拿着传送以色列得为业的全地，因为基比亚人在以色列中行了凶淫丑恶的事。</p>
+      </li>
+                        <li><span>20:7</span>
+        <p>你们以色列人都当筹划商议。”</p>
+      </li>
+                        <li><span>20:8</span>
+        <p>众民都起来如同一人，说：“我们连一人都不回自己帐棚、自己房屋去。</p>
+      </li>
+                        <li><span>20:9</span>
+        <p>我们向基比亚人必这样行，照所掣的签去攻击他们。</p>
+      </li>
+                        <li><span>20:10</span>
+        <p>我们要在以色列各支派中，一百人挑取十人，一千人挑取百人，一万人挑取千人为民运粮。等大众到了便雅悯的基比亚，就照基比亚人在以色列中所行的丑事征伐他们。”</p>
+      </li>
+                        <li><span>20:11</span>
+        <p>于是以色列众人彼此连合如同一人，聚集攻击那城。</p>
+      </li>
+                        <li><span>20:12</span>
+        <p>以色列众支派打发人去，问便雅悯支派的各家说：“你们中间怎么作了这样的恶事呢？</p>
+      </li>
+                        <li><span>20:13</span>
+        <p>现在你们要将基比亚的那些匪徒交出来，我们好治死他们，从以色列中除掉这恶。”便雅悯人却不肯听从他们弟兄以色列人的话。</p>
+      </li>
+                        <li><span>20:14</span>
+        <p>便雅悯人从他们的各城里出来，聚集到了基比亚，要与以色列人打仗。</p>
+      </li>
+                        <li><span>20:15</span>
+        <p>那时便雅悯人，从各城里点出拿刀的，共有二万六千。另外还有基比亚人点出七百精兵。</p>
+      </li>
+                        <li><span>20:16</span>
+        <p>在众军之中有拣选的七百精兵，都是左手便利的，能用机弦甩石打人，毫发不差。</p>
+      </li>
+                        <li><span>20:17</span>
+        <p>便雅悯人之外，点出以色列人拿刀的，共有四十万，都是战士。</p>
+      </li>
+                                    <li><span>20:18</span>
+        <p>以色列人就起来，到伯特利去求问  神说：“我们中间谁当首先上去与便雅悯人争战呢？”耶和华说：“犹大当先上去。”</p>
+      </li>
+                        <li><span>20:19</span>
+        <p>以色列人早晨起来，对着基比亚安营。</p>
+      </li>
+                        <li><span>20:20</span>
+        <p>以色列人出来，要与便雅悯人打仗，就在基比亚前摆阵。</p>
+      </li>
+                        <li><span>20:21</span>
+        <p>便雅悯人就从基比亚出来，当日杀死以色列人二万二千。</p>
+      </li>
+                        <li><span>20:22</span>
+        <p>以色列人彼此奋勇，仍在头一日摆阵的地方又摆阵。</p>
+      </li>
+                        <li><span>20:23</span>
+        <p>未摆阵之先，以色列人上去，在耶和华面前哭号，直到晚上，求问耶和华说：“我们再去与我们弟兄便雅悯人打仗，可以不可以？”耶和华说：“可以上去攻击他们。”</p>
+      </li>
+                        <li><span>20:24</span>
+        <p>第二日，以色列人就上前攻击便雅悯人。</p>
+      </li>
+                        <li><span>20:25</span>
+        <p>便雅悯人也在这日从基比亚出来，与以色列人接战，又杀死他们一万八千，都是拿刀的。</p>
+      </li>
+                        <li><span>20:26</span>
+        <p>以色列众人就上到伯特利，坐在耶和华面前哭号，当日禁食直到晚上，又在耶和华面前献燔祭和平安祭。</p>
+      </li>
+                        <li><span>20:27</span>
+        <p>-</p>
+      </li>
+                        <li><span>20:28</span>
+        <p>那时  神的约柜在那里。亚伦的孙子、以利亚撒的儿子非尼哈侍立在约柜前。以色列人问耶和华说：“我们当再出去与我们弟兄便雅悯人打仗呢？还是罢兵呢？”耶和华说：“你们当上去，因为明日我必将他们交在你们手中。”</p>
+      </li>
+                        <li><span>20:29</span>
+        <p>以色列人在基比亚的四围设下伏兵。</p>
+      </li>
+                        <li><span>20:30</span>
+        <p>第三日，以色列人又上去攻击便雅悯人，在基比亚前摆阵，与前两次一样。</p>
+      </li>
+                        <li><span>20:31</span>
+        <p>便雅悯人也出来迎敌，就被引诱离城。在田间两条路上，一通伯特利，一通基比亚，像前两次，动手杀死以色列人约有三十个。</p>
+      </li>
+                        <li><span>20:32</span>
+        <p>便雅悯人说：“他们仍旧败在我们面前。”但以色列人说：“我们不如逃跑引诱他们离开城到路上来。”</p>
+      </li>
+                        <li><span>20:33</span>
+        <p>以色列众人都起来，在巴力他玛摆阵，以色列的伏兵从马利迦巴埋伏的地方冲上前去。</p>
+      </li>
+                        <li><span>20:34</span>
+        <p>有以色列人中的一万精兵，来到基比亚前接战，势派甚是凶猛，便雅悯人却不知道灾祸临近了。</p>
+      </li>
+                        <li><span>20:35</span>
+        <p>耶和华使以色列人杀败便雅悯人。那日以色列人杀死便雅悯人二万五千一百，都是拿刀的。</p>
+      </li>
+                                    <li><span>20:36</span>
+        <p>于是便雅悯人知道自己败了。先是以色列人，因为靠着在基比亚前所设的伏兵，就在便雅悯人面前诈败。</p>
+      </li>
+                        <li><span>20:37</span>
+        <p>伏兵急忙闯进基比亚，用刀杀死全城的人。</p>
+      </li>
+                        <li><span>20:38</span>
+        <p>以色列人预先同伏兵约定在城内放火，以烟气上腾为号。</p>
+      </li>
+                        <li><span>20:39</span>
+        <p>以色列人临退阵的时候，便雅悯人动手杀死以色列人，约有三十个，就说：“他们仍像前次被我们杀败了。”</p>
+      </li>
+                        <li><span>20:40</span>
+        <p>当烟气如柱从城中上腾的时候，便雅悯人回头观看，见全城的烟气冲天。</p>
+      </li>
+                        <li><span>20:41</span>
+        <p>以色列人又转身回来，便雅悯人就甚惊惶，因为看见灾祸临到自己了。</p>
+      </li>
+                        <li><span>20:42</span>
+        <p>他们在以色列人面前转身往旷野逃跑；以色列人在后面追杀。那从各城里出来的，也都夹攻杀灭他们。</p>
+      </li>
+                        <li><span>20:43</span>
+        <p>以色列人围绕便雅悯人，追赶他们，在他们歇脚之处，对着日出之地的基比亚践踏他们。</p>
+      </li>
+                        <li><span>20:44</span>
+        <p>便雅悯人死了的有一万八千，都是勇士。</p>
+      </li>
+                        <li><span>20:45</span>
+        <p>其余的人转身向旷野逃跑，往临门磐去。以色列人在道路上杀了他们五千人，如拾取遗穗一样，追到基顿又杀了他们二千人。</p>
+      </li>
+                        <li><span>20:46</span>
+        <p>那日便雅悯死了的，共有二万五千人，都是拿刀的勇士。</p>
+      </li>
+                        <li><span>20:47</span>
+        <p>只剩下六百人，转身向旷野逃跑，到了临门磐，就在那里住了四个月。</p>
+      </li>
+                        <li><span>20:48</span>
+        <p>以色列人又转到便雅悯地，将各城的人和牲畜，并一切所遇见的，都用刀杀尽，又放火烧了一切城邑。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共21首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>士师记(士)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>士师记(士)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>士师记(士)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>士师记(士)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>士师记(士)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>士师记(士)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>士师记(士)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>士师记(士)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>士师记(士)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>士师记(士)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>士师记(士)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>士师记(士)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>士师记(士)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>士师记(士)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>士师记(士)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>士师记(士)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>士师记(士)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>士师记(士)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>士师记(士)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>士师记(士)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-7-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>士师记(士)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-7-cid-19.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-7-cid-21.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="15以斯拉记/15以斯拉记_10.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-15.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">以斯拉记(拉) 第10章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>10:1</span>
+        <p>以斯拉祷告、认罪、哭泣，俯伏在  神殿前的时候，有以色列中的男女孩童聚集到以斯拉那里，成了大会，众民无不痛哭。</p>
+      </li>
+                        <li><span>10:2</span>
+        <p>属以拦的子孙、耶歇的儿子示迦尼对以斯拉说：“我们在此地娶了外邦女子为妻，干犯了我们的  神，然而以色列人还有指望。</p>
+      </li>
+                        <li><span>10:3</span>
+        <p>现在当与我们的  神立约，休这一切的妻，离绝她们所生的，照着我主和那因  神命令战兢之人所议定的，按律法而行。</p>
+      </li>
+                        <li><span>10:4</span>
+        <p>你起来，这是你当办的事，我们必帮助你，你当奋勉而行。”</p>
+      </li>
+                        <li><span>10:5</span>
+        <p>以斯拉便起来，使祭司长和利未人，并以色列众人起誓说：必照这话去行；他们就起了誓。</p>
+      </li>
+                        <li><span>10:6</span>
+        <p>以斯拉从  神殿前起来，进入以利亚实的儿子约哈难的屋里，到了那里不吃饭，也不喝水，因为被掳归回之人所犯的罪，心里悲伤。</p>
+      </li>
+                        <li><span>10:7</span>
+        <p>他们通告犹大和耶路撒冷被掳归回的人，叫他们在耶路撒冷聚集。</p>
+      </li>
+                        <li><span>10:8</span>
+        <p>凡不遵首领和长老所议定三日之内不来的，就必抄他的家，使他离开被掳归回之人的会。</p>
+      </li>
+                        <li><span>10:9</span>
+        <p>于是，犹大和便雅悯众人，三日之内都聚集在耶路撒冷。那日正是九月二十日，众人都坐在  神殿前的宽阔处；因这事，又因下大雨，就都战兢。</p>
+      </li>
+                        <li><span>10:10</span>
+        <p>祭司以斯拉站起来，对他们说：“你们有罪了，因你们娶了外邦的女子为妻，增添以色列人的罪恶。</p>
+      </li>
+                        <li><span>10:11</span>
+        <p>现在当向耶和华你们列祖的  神认罪，遵行他的旨意，离绝这些国的民和外邦的女子。”</p>
+      </li>
+                        <li><span>10:12</span>
+        <p>会众都大声回答说：“我们必照着你的话行，</p>
+      </li>
+                        <li><span>10:13</span>
+        <p>只是百姓众多，又逢大雨的时令，我们不能站在外头，这也不是一两天办完的事。因我们在这事上犯了大罪，</p>
+      </li>
+                        <li><span>10:14</span>
+        <p>不如为全会众派首领办理。凡我们城邑中娶外邦女子为妻的，当按所定的日期，同着本城的长老和士师而来，直到办完这事，  神的烈怒就转离我们了。”</p>
+      </li>
+                        <li><span>10:15</span>
+        <p>惟有亚撒黑的儿子约拿单、特瓦的儿子雅哈谢，阻挡（或作“总办”）这事，并有米书兰和利未人沙比太帮助他们。</p>
+      </li>
+                        <li><span>10:16</span>
+        <p>被掳归回的人如此而行。祭司以斯拉和些族长按着宗族，都指名见派，在十月初一日，一同在座查办这事。</p>
+      </li>
+                        <li><span>10:17</span>
+        <p>到正月初一日，才查清娶外邦女子的人数。</p>
+      </li>
+                                    <li><span>10:18</span>
+        <p>在祭司中查出娶外邦女子为妻的，就是耶书亚的子孙约萨达的儿子，和他弟兄玛西雅、以利以谢、雅立、基大利，</p>
+      </li>
+                        <li><span>10:19</span>
+        <p>他们便应许必休他们的妻。他们因有罪，就献群中的一只公绵羊赎罪。</p>
+      </li>
+                        <li><span>10:20</span>
+        <p>音麦的子孙中有哈拿尼、西巴第雅；</p>
+      </li>
+                        <li><span>10:21</span>
+        <p>哈琳的子孙中有玛西雅、以利雅、示玛雅、耶歇、乌西雅；</p>
+      </li>
+                        <li><span>10:22</span>
+        <p>巴施户珥的子孙中有以利约乃、玛西雅、以实玛利、拿坦业、约撒拔、以利亚撒。</p>
+      </li>
+                        <li><span>10:23</span>
+        <p>利未人中有约撒拔、示每、基拉雅，基拉雅就是基利他，还有毗他希雅、犹大、以利以谢。</p>
+      </li>
+                        <li><span>10:24</span>
+        <p>歌唱的人中有以利亚实。守门的人中有沙龙、提联、乌利。</p>
+      </li>
+                        <li><span>10:25</span>
+        <p>以色列人巴录的子孙中有拉米、耶西雅、玛基雅、米雅民、以利亚撒、玛基雅、比拿雅；</p>
+      </li>
+                        <li><span>10:26</span>
+        <p>以拦的子孙中有玛他尼、撒迦利亚、耶歇、押底、耶利末、以利雅；</p>
+      </li>
+                        <li><span>10:27</span>
+        <p>萨土的子孙中有以利约乃、以利亚实、玛他尼、耶利末、撒拔、亚西撒；</p>
+      </li>
+                        <li><span>10:28</span>
+        <p>比拜的子孙中有约哈难、哈拿尼雅、萨拜、亚勒；</p>
+      </li>
+                        <li><span>10:29</span>
+        <p>巴尼的子孙中有米书兰、玛鹿、亚大雅、雅述、示押、耶利末；</p>
+      </li>
+                        <li><span>10:30</span>
+        <p>巴哈摩押的子孙中有阿底拿、基拉、比拿雅、玛西雅、玛他尼、比撒列、宾内、玛拿西；</p>
+      </li>
+                        <li><span>10:31</span>
+        <p>哈琳的子孙中有以利以谢、伊示雅、玛基雅、示玛雅、西缅、</p>
+      </li>
+                        <li><span>10:32</span>
+        <p>便雅悯、玛鹿、示玛利雅；</p>
+      </li>
+                        <li><span>10:33</span>
+        <p>哈顺的子孙中有玛特乃、玛达他、撒拔、以利法列、耶利买、玛拿西、示每；</p>
+      </li>
+                        <li><span>10:34</span>
+        <p>巴尼的子孙中有玛玳、暗兰、乌益、</p>
+      </li>
+                        <li><span>10:35</span>
+        <p>比拿雅、比底雅、基禄、</p>
+      </li>
+                        <li><span>10:36</span>
+        <p>瓦尼雅、米利末、以利亚实、</p>
+      </li>
+                        <li><span>10:37</span>
+        <p>玛他尼、玛特乃、雅扫、</p>
+      </li>
+                        <li><span>10:38</span>
+        <p>巴尼、宾内、示每、</p>
+      </li>
+                        <li><span>10:39</span>
+        <p>示利米雅、拿单、亚大雅、</p>
+      </li>
+                        <li><span>10:40</span>
+        <p>玛拿底拜、沙赛、沙赖、</p>
+      </li>
+                        <li><span>10:41</span>
+        <p>亚萨利、示利米雅、示玛利雅、</p>
+      </li>
+                        <li><span>10:42</span>
+        <p>沙龙、亚玛利雅、约瑟；</p>
+      </li>
+                        <li><span>10:43</span>
+        <p>尼波的子孙中有耶利、玛他提雅、撒拔、西比拿、雅玳、约珥、比拿雅。</p>
+      </li>
+                        <li><span>10:44</span>
+        <p>这些人都娶了外邦女子为妻，其中也有生了儿女的。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共10首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>以斯拉记(拉)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>以斯拉记(拉)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>以斯拉记(拉)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>以斯拉记(拉)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>以斯拉记(拉)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>以斯拉记(拉)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>以斯拉记(拉)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>以斯拉记(拉)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>以斯拉记(拉)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-15-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>以斯拉记(拉)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-15-cid-9.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="javascript:alertText('已到本章第后一首!');"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

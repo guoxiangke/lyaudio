@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="60彼得前书/60彼得前书_05.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-60.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">彼得前书(彼前) 第5章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>5:1</span>
+        <p>我这作长老、作基督受苦的见证、同享后来所要显现之荣耀的，劝你们中间与我同作长老的人，</p>
+      </li>
+                        <li><span>5:2</span>
+        <p>务要牧养在你们中间  神的群羊，按着  神旨意照管他们。不是出于勉强，乃是出于甘心；也不是因为贪财，乃是出于乐意；</p>
+      </li>
+                        <li><span>5:3</span>
+        <p>也不是辖制所托付你们的，乃是作群羊的榜样。</p>
+      </li>
+                        <li><span>5:4</span>
+        <p>到了牧长显现的时候，你们必得那永不衰残的荣耀冠冕。</p>
+      </li>
+                        <li><span>5:5</span>
+        <p>你们年幼的，也要顺服年长的。就是你们众人也都要以谦卑束腰，彼此顺服，因为  神阻挡骄傲的人，赐恩给谦卑的人。</p>
+      </li>
+                        <li><span>5:6</span>
+        <p>所以你们要自卑，服在  神大能的手下，到了时候，他必叫你们升高。</p>
+      </li>
+                        <li><span>5:7</span>
+        <p>你们要将一切的忧虑卸给  神，因为他顾念你们。</p>
+      </li>
+                        <li><span>5:8</span>
+        <p>务要谨守、警醒，因为你们的仇敌魔鬼，如同吼叫的狮子，遍地游行，寻找可吞吃的人。</p>
+      </li>
+                        <li><span>5:9</span>
+        <p>你们要用坚固的信心抵挡他，因为知道你们在世上的众弟兄也是经历这样的苦难。</p>
+      </li>
+                        <li><span>5:10</span>
+        <p>那赐诸般恩典的  神曾在基督里召你们，得享他永远的荣耀，等你们暂受苦难之后，必要亲自成全你们，坚固你们，赐力量给你们。</p>
+      </li>
+                        <li><span>5:11</span>
+        <p>愿权能归给他，直到永永远远。阿们！</p>
+      </li>
+                                    <li><span>5:12</span>
+        <p>我略略地写了这信，托我所看为忠心的兄弟西拉转交你们，劝勉你们，又证明这恩是  神的真恩，你们务要在这恩上站立得住。</p>
+      </li>
+                        <li><span>5:13</span>
+        <p>在巴比伦与你们同蒙拣选的教会问你们安。我儿子马可也问你们安。</p>
+      </li>
+                        <li><span>5:14</span>
+        <p>你们要用爱心彼此亲嘴问安。愿平安归与你们凡在基督里的人！</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共5首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-60-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>彼得前书(彼前)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-60-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>彼得前书(彼前)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-60-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>彼得前书(彼前)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-60-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>彼得前书(彼前)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-60-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>彼得前书(彼前)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-60-cid-4.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="javascript:alertText('已到本章第后一首!');"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

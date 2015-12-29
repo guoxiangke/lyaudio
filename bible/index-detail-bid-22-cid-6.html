@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="22雅歌/22雅歌_06.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-22-cid-7.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">雅歌(歌) 第6章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>6:1</span>
+        <p>你这女子中极美丽的，你的良人往何处去了？你的良人转向何处去了？我们好与你同去寻找他。</p>
+      </li>
+                                    <li><span>6:2</span>
+        <p>我的良人下入自己园中，到香花畦，在园内牧放群羊，采百合花。</p>
+      </li>
+                        <li><span>6:3</span>
+        <p>我属我的良人，我的良人也属我，他在百合花中牧放群羊。</p>
+      </li>
+                                                <li><span>6:4</span>
+        <p>我的佳偶啊，你美丽如得撒，秀美如耶路撒冷，威武如展开旌旗的军队。</p>
+      </li>
+                        <li><span>6:5</span>
+        <p>求你掉转眼目不看我，因你的眼目使我惊乱。你的头发如同山羊群，卧在基列山旁。</p>
+      </li>
+                        <li><span>6:6</span>
+        <p>你的牙齿如一群母羊，洗净上来，个个都有双生，没有一只丧掉子的。</p>
+      </li>
+                        <li><span>6:7</span>
+        <p>你的两太阳在帕子内如同一块石榴。</p>
+      </li>
+                        <li><span>6:8</span>
+        <p>有六十王后、八十妃嫔，并有无数的童女。</p>
+      </li>
+                        <li><span>6:9</span>
+        <p>我的鸽子，我的完全人，只有这一个，是她母亲独生的，是生养她者所宝爱的。众女子见了就称她有福；王后妃嫔见了也赞美她。</p>
+      </li>
+                        <li><span>6:10</span>
+        <p>那向外观看如晨光发现，美丽如月亮，皎洁如日头，威武如展开旌旗军队的是谁呢？</p>
+      </li>
+                        <li><span>6:11</span>
+        <p>我下入核桃园，要看谷中青绿的植物，要看葡萄发芽没有，石榴开花没有。</p>
+      </li>
+                        <li><span>6:12</span>
+        <p>不知不觉，我的心将我安置在我尊长的车中。</p>
+      </li>
+                                                <li><span>6:13</span>
+        <p>回来，回来，书拉密女！你回来，你回来，使我们得观看你！你们为何要观看书拉密女，象观看玛哈念跳舞的呢？</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共8首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>雅歌(歌)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>雅歌(歌)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>雅歌(歌)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>雅歌(歌)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>雅歌(歌)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>雅歌(歌)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>雅歌(歌)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-22-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>雅歌(歌)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-22-cid-5.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-22-cid-7.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

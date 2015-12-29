@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="40马太福音/40马太福音_26.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-40-cid-27.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">马太福音(太) 第26章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>26:1</span>
+        <p>耶稣说完了这一切的话，就对门徒说：</p>
+      </li>
+                        <li><span>26:2</span>
+        <p>“你们知道，过两天是逾越节，人子将要被交给人，钉在十字架上。”</p>
+      </li>
+                        <li><span>26:3</span>
+        <p>那时，祭司长和民间的长老聚集在大祭司称为该亚法的院里。</p>
+      </li>
+                        <li><span>26:4</span>
+        <p>大家商议要用诡计拿住耶稣杀他；</p>
+      </li>
+                        <li><span>26:5</span>
+        <p>只是说：“当节的日子不可，恐怕民间生乱。”</p>
+      </li>
+                                    <li><span>26:6</span>
+        <p>耶稣在伯大尼长大麻风的西门家里，</p>
+      </li>
+                        <li><span>26:7</span>
+        <p>有一个女人拿着一玉瓶极贵的香膏来，趁耶稣坐席的时候，浇在他的头上。</p>
+      </li>
+                        <li><span>26:8</span>
+        <p>门徒看见就很不喜悦，说：“何用这样的枉费呢！</p>
+      </li>
+                        <li><span>26:9</span>
+        <p>这香膏可以卖许多钱周济穷人。”</p>
+      </li>
+                        <li><span>26:10</span>
+        <p>耶稣看出他们的意思，就说：“为什么难为这女人呢？她在我身上作的是一件美事。</p>
+      </li>
+                        <li><span>26:11</span>
+        <p>因为常有穷人和你们同在，只是你们不常有我。</p>
+      </li>
+                        <li><span>26:12</span>
+        <p>她将这香膏浇在我身上，是为我安葬作的。</p>
+      </li>
+                        <li><span>26:13</span>
+        <p>我实在告诉你们：普天之下，无论在什么地方传这福音，也要述说这女人所行的，作个记念。”</p>
+      </li>
+                                    <li><span>26:14</span>
+        <p>“当下，十二门徒里有一个称为加略人犹大的，去见祭司长，说：</p>
+      </li>
+                        <li><span>26:15</span>
+        <p>“我把他交给你们，你们愿意给我多少钱？”他们就给了他三十块钱。</p>
+      </li>
+                        <li><span>26:16</span>
+        <p>从那时候，他就找机会要把耶稣交给他们。</p>
+      </li>
+                                    <li><span>26:17</span>
+        <p>除酵节的第一天，门徒来问耶稣说：“你吃逾越节的筵席，要我们在哪里给你预备？”</p>
+      </li>
+                        <li><span>26:18</span>
+        <p>耶稣说：“你们进城去，到某人那里，对他说，‘夫子说：我的时候快到了，我与门徒要在你家里守逾越节。’”</p>
+      </li>
+                        <li><span>26:19</span>
+        <p>门徒遵着耶稣所吩咐的，就去预备了逾越节的筵席。</p>
+      </li>
+                        <li><span>26:20</span>
+        <p>到了晚上，耶稣和十二个门徒坐席。</p>
+      </li>
+                        <li><span>26:21</span>
+        <p>正吃的时候，耶稣说：“我实在告诉你们：你们中间有一个人要卖我了。”</p>
+      </li>
+                        <li><span>26:22</span>
+        <p>他们就甚忧愁，一个一个地问他说：“主，是我吗？”</p>
+      </li>
+                        <li><span>26:23</span>
+        <p>耶稣回答说：“同我蘸手在盘子里的，就是他要卖我。</p>
+      </li>
+                        <li><span>26:24</span>
+        <p>人子必要去世，正如经上指着他所写的，但卖人子的人有祸了，那人不生在世上倒好。”</p>
+      </li>
+                        <li><span>26:25</span>
+        <p>卖耶稣的犹大问他说：“拉比，是我吗？”耶稣说：“你说的是。”</p>
+      </li>
+                                    <li><span>26:26</span>
+        <p>他们吃的时候，耶稣拿起饼来，祝福，就擘开，递给门徒，说：“你们拿着吃，这是我的身体。”</p>
+      </li>
+                        <li><span>26:27</span>
+        <p>又拿起杯来，祝谢了，递给他们，说：“你们都喝这个，</p>
+      </li>
+                        <li><span>26:28</span>
+        <p>因为这是我立约的血，为多人流出来，使罪得赦。</p>
+      </li>
+                        <li><span>26:29</span>
+        <p>但我告诉你们：从今以后我不再喝这葡萄汁，直到我在我父的国里同你们喝新的那日子。”</p>
+      </li>
+                        <li><span>26:30</span>
+        <p>他们唱了诗，就出来往橄榄山去。</p>
+      </li>
+                                    <li><span>26:31</span>
+        <p>那时，耶稣对他们说：“今夜，你们为我的缘故都要跌倒。因为经上记着说：‘我要击打牧人，羊就分散了。’</p>
+      </li>
+                        <li><span>26:32</span>
+        <p>但我复活以后，要在你们以先往加利利去。”</p>
+      </li>
+                        <li><span>26:33</span>
+        <p>彼得说：“众人虽然为你的缘故跌倒，我却永不跌倒。”</p>
+      </li>
+                        <li><span>26:34</span>
+        <p>耶稣说：“我实在告诉你：今夜鸡叫以先，你要三次不认我。”</p>
+      </li>
+                        <li><span>26:35</span>
+        <p>彼得说：“我就是必须和你同死，也总不能不认你。”众门徒都是这样说。</p>
+      </li>
+                                    <li><span>26:36</span>
+        <p>耶稣同门徒来到一个地方，名叫客西马尼，就对他们说：“你们坐在这里，等我到那边去祷告。”</p>
+      </li>
+                        <li><span>26:37</span>
+        <p>于是带着彼得和西庇太的两个儿子同去，就忧愁起来，极其难过，</p>
+      </li>
+                        <li><span>26:38</span>
+        <p>便对他们说：“我心里甚是忧伤，几乎要死，你们在这里等候，和我一同警醒。”</p>
+      </li>
+                        <li><span>26:39</span>
+        <p>他就稍往前走，俯伏在地祷告说：“我父啊，倘若可行，求你叫这杯离开我；然而，不要照我的意思，只要照你的意思。”</p>
+      </li>
+                        <li><span>26:40</span>
+        <p>来到门徒那里，见他们睡着了，就对彼得说：“怎么样？你们不能同我警醒片时吗？</p>
+      </li>
+                        <li><span>26:41</span>
+        <p>总要警醒祷告，免得入了迷惑。你们心灵固然愿意，肉体却软弱了。”</p>
+      </li>
+                        <li><span>26:42</span>
+        <p>第二次又去祷告说：“我父啊，这杯若不能离开我，必要我喝，就愿你的意旨成全。”</p>
+      </li>
+                        <li><span>26:43</span>
+        <p>又来见他们睡着了，因为他们的眼睛困倦。</p>
+      </li>
+                        <li><span>26:44</span>
+        <p>耶稣又离开他们去了。第三次祷告，说的话还是与先前一样。</p>
+      </li>
+                        <li><span>26:45</span>
+        <p>于是来到门徒那里，对他们说：“现在你们仍然睡觉安歇吧（“吧”或作“吗”）？时候到了，人子被卖在罪人手里了。</p>
+      </li>
+                        <li><span>26:46</span>
+        <p>起来，我们走吧！看哪，卖我的人近了。”</p>
+      </li>
+                                    <li><span>26:47</span>
+        <p>说话之间，那十二个门徒里的犹大来了，并有许多人带着刀棒，从祭司长和民间的长老那里与他同来。</p>
+      </li>
+                        <li><span>26:48</span>
+        <p>那卖耶稣的给了他们一个暗号，说：“我与谁亲嘴，谁就是他。你们可以拿住他。”</p>
+      </li>
+                        <li><span>26:49</span>
+        <p>犹大随即到耶稣跟前说：“请拉比安”，就与他亲嘴。</p>
+      </li>
+                        <li><span>26:50</span>
+        <p>耶稣对他说：“朋友，你来要作的事，就作吧！”于是那些人上前，下手拿住耶稣。</p>
+      </li>
+                        <li><span>26:51</span>
+        <p>有跟随耶稣的一个人伸手拔出刀来，将大祭司的仆人砍了一刀，削掉了他一个耳朵。</p>
+      </li>
+                        <li><span>26:52</span>
+        <p>耶稣对他说：“收刀入鞘吧！凡动刀的，必死在刀下。</p>
+      </li>
+                        <li><span>26:53</span>
+        <p>你想我不能求我父现在为我差遣十二营多天使来吗？</p>
+      </li>
+                        <li><span>26:54</span>
+        <p>若是这样，经上所说事情必须如此的话怎么应验呢？”</p>
+      </li>
+                        <li><span>26:55</span>
+        <p>当时，耶稣对众人说：“你们带着刀棒出来拿我，如同拿强盗吗？我天天坐在殿里教训人，你们并没有拿我。</p>
+      </li>
+                        <li><span>26:56</span>
+        <p>但这一切的事成就了，为要应验先知书上的话。”当下，门徒都离开他逃走了。</p>
+      </li>
+                                    <li><span>26:57</span>
+        <p>拿耶稣的人把他带到大祭司该亚法那里去，文士和长老已经在那里聚会。</p>
+      </li>
+                        <li><span>26:58</span>
+        <p>彼得远远地跟着耶稣，直到大祭司的院子，进到里面，就和差役同坐，要看这事到底怎样。</p>
+      </li>
+                        <li><span>26:59</span>
+        <p>祭司长和全公会寻找假见证控告耶稣，要治死他。</p>
+      </li>
+                        <li><span>26:60</span>
+        <p>虽有好些人来作假见证，总得不着实据。末后有两个人前来，说：</p>
+      </li>
+                        <li><span>26:61</span>
+        <p>“这个人曾说：‘我能拆毁  神的殿，三日内又建造起来。’”</p>
+      </li>
+                        <li><span>26:62</span>
+        <p>大祭司就站起来，对耶稣说：“你什么都不回答吗？这些人作见证告你的是什么呢？”</p>
+      </li>
+                        <li><span>26:63</span>
+        <p>耶稣却不言语。大祭司对他说，“我指着永生  神叫你起誓告诉我们，你是  神的儿子基督不是？”</p>
+      </li>
+                        <li><span>26:64</span>
+        <p>耶稣对他说：“你说的是。然而，我告诉你们，后来你们要看见人子坐在那权能者的右边，驾着天上的云降临。”</p>
+      </li>
+                        <li><span>26:65</span>
+        <p>大祭司就撕开衣服，说：“他说了僭妄的话，我们何必再用见证人呢？这僭妄的话，现在你们都听见了。</p>
+      </li>
+                        <li><span>26:66</span>
+        <p>你们的意见如何？”他们回答说：“他是该死的。”</p>
+      </li>
+                        <li><span>26:67</span>
+        <p>他们就吐唾沫在他脸上，用拳头打他；也有用手掌打他的，说：</p>
+      </li>
+                        <li><span>26:68</span>
+        <p>“基督啊，你是先知，告诉我们打你的是谁？”</p>
+      </li>
+                                    <li><span>26:69</span>
+        <p>彼得在外面院子里坐着，有一个使女前来说：“你素来也是同那加利利人耶稣一伙的。”</p>
+      </li>
+                        <li><span>26:70</span>
+        <p>彼得在众人面前却不承认，说：“我不知道你说的是什么。”</p>
+      </li>
+                        <li><span>26:71</span>
+        <p>既出去，到了门口，又有一个使女看见他，就对那里的人说：“这个人也是同拿撒勒人耶稣一伙的。”</p>
+      </li>
+                        <li><span>26:72</span>
+        <p>彼得又不承认，并且起誓说：“我不认得那个人。”</p>
+      </li>
+                        <li><span>26:73</span>
+        <p>过了不多的时候，旁边站着的人前来对彼得说：“你真是他们一党的，你的口音把你露出来了。”</p>
+      </li>
+                        <li><span>26:74</span>
+        <p>彼得就发咒起誓地说：“我不认得那个人。”立时，鸡就叫了。</p>
+      </li>
+                        <li><span>26:75</span>
+        <p>彼得想起耶稣所说的话：“鸡叫以先，你要三次不认我。”他就出去痛哭。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共28首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>马太福音(太)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>马太福音(太)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>马太福音(太)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>马太福音(太)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>马太福音(太)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>马太福音(太)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>马太福音(太)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>马太福音(太)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>马太福音(太)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>马太福音(太)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>马太福音(太)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>马太福音(太)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>马太福音(太)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>马太福音(太)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>马太福音(太)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>马太福音(太)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>马太福音(太)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>马太福音(太)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>马太福音(太)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>马太福音(太)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>马太福音(太)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>马太福音(太)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>马太福音(太)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>马太福音(太)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>马太福音(太)第25章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>马太福音(太)第26章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>马太福音(太)第27章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>马太福音(太)第28章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-40-cid-25.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-40-cid-27.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

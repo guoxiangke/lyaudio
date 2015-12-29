@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="49以弗所书/49以弗所书_05.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-49-cid-6.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">以弗所书(弗) 第5章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                  <li><span>5:1</span>
+        <p>所以你们该效法  神，好像蒙慈爱的儿女一样。</p>
+      </li>
+                        <li><span>5:2</span>
+        <p>也要凭爱心行事，正如基督爱我们，为我们舍了自己，当作馨香的供物和祭物献与  神。</p>
+      </li>
+                        <li><span>5:3</span>
+        <p>至于淫乱并一切污秽，或是贪婪，在你们中间连提都不可，方合圣徒的体统。</p>
+      </li>
+                        <li><span>5:4</span>
+        <p>淫词、妄语和戏笑的话都不相宜，总要说感谢的话。</p>
+      </li>
+                        <li><span>5:5</span>
+        <p>因为你们确实地知道，无论是淫乱的，是污秽的，是有贪心的，在基督和  神的国里都是无份的。有贪心的，就与拜偶像的一样。</p>
+      </li>
+                                    <li><span>5:6</span>
+        <p>不要被人虚浮的话欺哄，因这些事，  神的忿怒必临到那悖逆之子。</p>
+      </li>
+                        <li><span>5:7</span>
+        <p>所以你们不要与他们同伙。</p>
+      </li>
+                        <li><span>5:8</span>
+        <p>从前你们是暗昧的，但如今在主里面是光明的，行事为人就当像光明的子女。</p>
+      </li>
+                        <li><span>5:9</span>
+        <p>光明所结的果子就是一切良善、公义、诚实。</p>
+      </li>
+                        <li><span>5:10</span>
+        <p>总要察验何为主所喜悦的事。</p>
+      </li>
+                        <li><span>5:11</span>
+        <p>那暗昧无益的事，不要与人同行，倒要责备行这事的人。</p>
+      </li>
+                        <li><span>5:12</span>
+        <p>因为他们暗中所行的，就是提起来也是可耻的。</p>
+      </li>
+                        <li><span>5:13</span>
+        <p>凡事受了责备，就被光显明出来，因为一切能显明的就是光。</p>
+      </li>
+                        <li><span>5:14</span>
+        <p>所以主说：“你这睡着的人当醒过来，从死里复活，基督就要光照你了。”</p>
+      </li>
+                        <li><span>5:15</span>
+        <p>你们要谨慎行事，不要像愚昧人，当像智慧人。</p>
+      </li>
+                        <li><span>5:16</span>
+        <p>要爱惜光阴，因为现今的世代邪恶。</p>
+      </li>
+                        <li><span>5:17</span>
+        <p>不要作糊涂人，要明白主的旨意如何。</p>
+      </li>
+                        <li><span>5:18</span>
+        <p>不要醉酒，酒能使人放荡，乃要被圣灵充满。</p>
+      </li>
+                        <li><span>5:19</span>
+        <p>当用诗章、颂词、灵歌彼此对说，口唱心和地赞美主。</p>
+      </li>
+                        <li><span>5:20</span>
+        <p>凡事要奉我们主耶稣基督的名常常感谢父  神。</p>
+      </li>
+                        <li><span>5:21</span>
+        <p>又当存敬畏基督的心，彼此顺服。</p>
+      </li>
+                                    <li><span>5:22</span>
+        <p>你们作妻子的，当顺服自己的丈夫，如同顺服主。</p>
+      </li>
+                        <li><span>5:23</span>
+        <p>因为丈夫是妻子的头，如同基督是教会的头，他又是教会全体的救主。</p>
+      </li>
+                        <li><span>5:24</span>
+        <p>教会怎样顺服基督，妻子也要怎样凡事顺服丈夫。</p>
+      </li>
+                        <li><span>5:25</span>
+        <p>你们作丈夫的，要爱你们的妻子，正如基督爱教会，为教会舍己。</p>
+      </li>
+                        <li><span>5:26</span>
+        <p>要用水藉着道把教会洗净，成为圣洁，</p>
+      </li>
+                        <li><span>5:27</span>
+        <p>可以献给自己，作个荣耀的教会，毫无玷污、皱纹等类的病，乃是圣洁没有瑕疵的。</p>
+      </li>
+                        <li><span>5:28</span>
+        <p>丈夫也当照样爱妻子，如同爱自己的身子，爱妻子便是爱自己了。</p>
+      </li>
+                        <li><span>5:29</span>
+        <p>从来没有人恨恶自己的身子，总是保养顾惜，正像基督待教会一样，</p>
+      </li>
+                        <li><span>5:30</span>
+        <p>因我们是他身上的肢体（有古卷在此有“就是他的骨、他的肉”）。</p>
+      </li>
+                        <li><span>5:31</span>
+        <p>为这个缘故，人要离开父母，与妻子连合，二人成为一体。</p>
+      </li>
+                        <li><span>5:32</span>
+        <p>这是极大的奥秘，但我是指着基督和教会说的。</p>
+      </li>
+                        <li><span>5:33</span>
+        <p>然而你们各人都当爱妻子，如同爱自己一样。妻子也当敬重她的丈夫。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共6首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>以弗所书(弗)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>以弗所书(弗)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>以弗所书(弗)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>以弗所书(弗)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>以弗所书(弗)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>以弗所书(弗)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-49-cid-4.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-49-cid-6.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

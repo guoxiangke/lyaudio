@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="04民数记/04民数记_16.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-4-cid-17.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">民数记(民) 第16章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>16:1</span>
+        <p>利未的曾孙、哥辖的孙子、以斯哈的儿子可拉，和流便子孙中以利押的儿子大坍、亚比兰，与比勒的儿子安，</p>
+      </li>
+                        <li><span>16:2</span>
+        <p>并以色列会中的二百五十个首领，就是有名望选入会中的人，在摩西面前一同起来，</p>
+      </li>
+                        <li><span>16:3</span>
+        <p>聚集攻击摩西、亚伦，说：“你们擅自专权！全会众个个既是圣洁，耶和华也在他们中间，你们为什么自高，超过耶和华的会众呢？”</p>
+      </li>
+                        <li><span>16:4</span>
+        <p>摩西听见这话就俯伏在地，</p>
+      </li>
+                        <li><span>16:5</span>
+        <p>对可拉和他一党的人说：“到了早晨，耶和华必指示谁是属他的，谁是圣洁的，就叫谁亲近他；他所拣选的是谁，必叫谁亲近他。</p>
+      </li>
+                        <li><span>16:6</span>
+        <p>可拉啊，你们要这样行：你和你的一党要拿香炉来。</p>
+      </li>
+                        <li><span>16:7</span>
+        <p>明日在耶和华面前，把火盛在炉中，把香放在其上。耶和华拣选谁，谁就为圣洁。你们这利未的子孙擅自专权了。”</p>
+      </li>
+                        <li><span>16:8</span>
+        <p>摩西又对可拉说：“利未的子孙哪，你们听我说：</p>
+      </li>
+                        <li><span>16:9</span>
+        <p>以色列的  神从以色列会中将你们分别出来，使你们亲近他，办耶和华帐幕的事，并站在会众面前替他们当差。</p>
+      </li>
+                        <li><span>16:10</span>
+        <p>耶和华又使你和你一切弟兄利未的子孙一同亲近他，这岂为小事？你们还要求祭司的职任吗？</p>
+      </li>
+                        <li><span>16:11</span>
+        <p>你和你一党的人聚集，是要攻击耶和华。亚伦算什么，你们竟向他发怨言呢？”</p>
+      </li>
+                        <li><span>16:12</span>
+        <p>摩西打发人去召以利押的儿子大坍、亚比兰。他们说：“我们不上去！</p>
+      </li>
+                        <li><span>16:13</span>
+        <p>你将我们从流奶与蜜之地领上来，要在旷野杀我们，这岂为小事？你还要自立为王辖管我们吗？</p>
+      </li>
+                        <li><span>16:14</span>
+        <p>并且你没有将我们领到流奶与蜜之地，也没有把田地和葡萄园给我们为业。难道你要剜这些人的眼睛吗？我们不上去！”</p>
+      </li>
+                        <li><span>16:15</span>
+        <p>摩西就甚发怒，对耶和华说：“求你不要享受他们的供物，我并没有夺过他们一匹驴，也没有害过他们一个人。”</p>
+      </li>
+                        <li><span>16:16</span>
+        <p>摩西对可拉说：“明天你和你一党的人并亚伦，都要站在耶和华面前。</p>
+      </li>
+                        <li><span>16:17</span>
+        <p>各人要拿一个香炉，共二百五十个，把香放在上面，到耶和华面前。你和亚伦，也各拿自己的香炉。”</p>
+      </li>
+                        <li><span>16:18</span>
+        <p>于是他们各人拿一个香炉，盛上火，加上香，同摩西、亚伦站在会幕门前。</p>
+      </li>
+                        <li><span>16:19</span>
+        <p>可拉招聚全会众到会幕门前，要攻击摩西、亚伦，耶和华的荣光就向全会众显现。</p>
+      </li>
+                        <li><span>16:20</span>
+        <p>耶和华晓谕摩西、亚伦说：</p>
+      </li>
+                        <li><span>16:21</span>
+        <p>“你们离开这会众，我好在转眼之间把他们灭绝。”</p>
+      </li>
+                        <li><span>16:22</span>
+        <p>摩西、亚伦就俯伏在地，说：“  神，万人之灵的  神啊！一人犯罪，你就要向全会众发怒吗？”</p>
+      </li>
+                        <li><span>16:23</span>
+        <p>耶和华晓谕摩西说：</p>
+      </li>
+                        <li><span>16:24</span>
+        <p>“你吩咐会众说：‘你们离开可拉、大坍、亚比兰帐棚的四围。’”</p>
+      </li>
+                        <li><span>16:25</span>
+        <p>摩西起来，往大坍、亚比兰那里去，以色列的长老，也随着他去。</p>
+      </li>
+                        <li><span>16:26</span>
+        <p>他吩咐会众说：“你们离开这恶人的帐棚吧！他们的物件，什么都不可摸，恐怕你们陷在他们的罪中，与他们一同消灭。”</p>
+      </li>
+                        <li><span>16:27</span>
+        <p>于是众人离开可拉、大坍、亚比兰帐棚的四围。大坍、亚比兰带着妻子、儿女、小孩子，都出来站在自己的帐棚门口。</p>
+      </li>
+                        <li><span>16:28</span>
+        <p>摩西说：“我行的这一切事，本不是凭我自己心意行的，乃是耶和华打发我行的，必有证据使你们知道。</p>
+      </li>
+                        <li><span>16:29</span>
+        <p>这些人死若与世人无异，或是他们所遭的与世人相同，就不是耶和华打发我来的。</p>
+      </li>
+                        <li><span>16:30</span>
+        <p>倘若耶和华创作一件新事，使地开口，把他们和一切属他们的都吞下去，叫他们活活地坠落阴间，你们就明白这些人是藐视耶和华了。”</p>
+      </li>
+                        <li><span>16:31</span>
+        <p>摩西刚说完了这一切话，他们脚下的地就开了口，</p>
+      </li>
+                        <li><span>16:32</span>
+        <p>把他们和他们的家眷，并一切属可拉的人丁、财物都吞下去。</p>
+      </li>
+                        <li><span>16:33</span>
+        <p>这样，他们和一切属他们的，都活活地坠落阴间，地口在他们上头照旧合闭，他们就从会中灭亡。</p>
+      </li>
+                        <li><span>16:34</span>
+        <p>在他们四围的以色列众人听他们呼号，就都逃跑，说：“恐怕地也把我们吞下去。”</p>
+      </li>
+                        <li><span>16:35</span>
+        <p>又有火从耶和华那里出来，烧灭了那献香的二百五十个人。</p>
+      </li>
+                                    <li><span>16:36</span>
+        <p>耶和华晓谕摩西说：</p>
+      </li>
+                        <li><span>16:37</span>
+        <p>“你吩咐祭司亚伦的儿子以利亚撒，从火中捡起那些香炉来，把火撒在别处，因为那些香炉是圣的。</p>
+      </li>
+                        <li><span>16:38</span>
+        <p>把那些犯罪自害己命之人的香炉，叫人锤成片子，用以包坛，那些香炉本是他们在耶和华面前献过的，所以是圣的，并且可以给以色列人作记号。”</p>
+      </li>
+                        <li><span>16:39</span>
+        <p>于是祭司以利亚撒将被烧之人所献的铜香炉拿来，人就锤出来用以包坛，</p>
+      </li>
+                        <li><span>16:40</span>
+        <p>给以色列人作记念，使亚伦后裔之外的人，不得近前来，在耶和华面前烧香，免得他遭可拉和他一党所遭的。这乃是照耶和华藉着摩西所吩咐的。</p>
+      </li>
+                                    <li><span>16:41</span>
+        <p>第二天，以色列全会众都向摩西、亚伦发怨言，说：“你们杀了耶和华的百姓了。”</p>
+      </li>
+                        <li><span>16:42</span>
+        <p>会众聚集攻击摩西、亚伦的时候，向会幕观看，不料，有云彩遮盖了，耶和华的荣光显现。</p>
+      </li>
+                        <li><span>16:43</span>
+        <p>摩西、亚伦就来到会幕前。</p>
+      </li>
+                        <li><span>16:44</span>
+        <p>耶和华吩咐摩西说：</p>
+      </li>
+                        <li><span>16:45</span>
+        <p>“你们离开这会众，我好在转眼之间把他们灭绝。”他们二人就俯伏于地。</p>
+      </li>
+                        <li><span>16:46</span>
+        <p>摩西对亚伦说：“拿你的香炉，把坛上的火盛在其中，又加上香，快快带到会众那里，为他们赎罪，因为有忿怒从耶和华那里出来，瘟疫已经发作了。”</p>
+      </li>
+                        <li><span>16:47</span>
+        <p>亚伦照着摩西所说的拿来，跑到会中，不料，瘟疫在百姓中已经发作了。他就加上香，为百姓赎罪。</p>
+      </li>
+                        <li><span>16:48</span>
+        <p>他站在活人死人中间，瘟疫就止住了。</p>
+      </li>
+                        <li><span>16:49</span>
+        <p>除了因可拉事情死的以外，遭瘟疫死的共有一万四千七百人。</p>
+      </li>
+                        <li><span>16:50</span>
+        <p>亚伦回到会幕门口，到摩西那里，瘟疫已经止住了。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共36首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>民数记(民)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>民数记(民)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>民数记(民)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>民数记(民)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>民数记(民)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>民数记(民)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>民数记(民)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>民数记(民)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>民数记(民)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>民数记(民)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>民数记(民)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>民数记(民)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>民数记(民)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>民数记(民)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>民数记(民)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>民数记(民)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>民数记(民)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>民数记(民)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>民数记(民)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>民数记(民)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>民数记(民)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>民数记(民)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>民数记(民)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>民数记(民)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>民数记(民)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>民数记(民)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>民数记(民)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>民数记(民)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>民数记(民)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-30.html"><span class="ppNum">30</span>
+        <p><strong>民数记(民)第30章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-31.html"><span class="ppNum">31</span>
+        <p><strong>民数记(民)第31章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-32.html"><span class="ppNum">32</span>
+        <p><strong>民数记(民)第32章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-33.html"><span class="ppNum">33</span>
+        <p><strong>民数记(民)第33章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-34.html"><span class="ppNum">34</span>
+        <p><strong>民数记(民)第34章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-35.html"><span class="ppNum">35</span>
+        <p><strong>民数记(民)第35章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-4-cid-36.html"><span class="ppNum">36</span>
+        <p><strong>民数记(民)第36章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-4-cid-15.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-4-cid-17.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

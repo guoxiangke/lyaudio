@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="27但以理书/27但以理书_03.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-27-cid-4.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">但以理书(但) 第3章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>3:1</span>
+        <p>尼布甲尼撒王造了一个金像，高六十肘，宽六肘，立在巴比伦省杜拉平原。</p>
+      </li>
+                        <li><span>3:2</span>
+        <p>尼布甲尼撒王差人将总督、钦差、巡抚、臬司、藩司、谋士、法官和各省的官员都召了来，为尼布甲尼撒王所立的像行开光之礼。</p>
+      </li>
+                        <li><span>3:3</span>
+        <p>于是总督、钦差、巡抚、臬司、藩司、谋士、法官和各省的官员都聚集了来，要为尼布甲尼撒王所立的像行开光之礼，就站在尼布甲尼撒所立的像前。</p>
+      </li>
+                        <li><span>3:4</span>
+        <p>那时传令的大声呼叫说：“各方、各国、各族的人哪（“族”原文作“舌”。下同），有令传与你们：</p>
+      </li>
+                        <li><span>3:5</span>
+        <p>你们一听见角、笛、琵琶、琴、瑟、笙和各样乐器的声音，就当俯伏敬拜尼布甲尼撒王所立的金像。</p>
+      </li>
+                        <li><span>3:6</span>
+        <p>凡不俯伏敬拜的，必立时扔在烈火的窑中。”</p>
+      </li>
+                        <li><span>3:7</span>
+        <p>因此各方、各国、各族的人民一听见角、笛、琵琶、琴、瑟和各样乐器的声音，就都俯伏敬拜尼布甲尼撒王所立的金像。</p>
+      </li>
+                                    <li><span>3:8</span>
+        <p>那时，有几个迦勒底人进前来控告犹大人。</p>
+      </li>
+                        <li><span>3:9</span>
+        <p>他们对尼布甲尼撒王说：“愿王万岁！</p>
+      </li>
+                        <li><span>3:10</span>
+        <p>王啊，你曾降旨说，凡听见角、笛、琵琶、琴、瑟、笙和各样乐器声音的都当俯伏敬拜金像；</p>
+      </li>
+                        <li><span>3:11</span>
+        <p>凡不俯伏敬拜的，必扔在烈火的窑中。</p>
+      </li>
+                        <li><span>3:12</span>
+        <p>现在有几个犹大人，就是王所派管理巴比伦省事务的沙得拉、米煞、亚伯尼歌，王啊，这些人不理你，不侍奉你的神，也不敬拜你所立的金像。”</p>
+      </li>
+                        <li><span>3:13</span>
+        <p>当时，尼布甲尼撒冲冲大怒，吩咐人把沙得拉、米煞、亚伯尼歌带过来，他们就把那些人带到王面前。</p>
+      </li>
+                        <li><span>3:14</span>
+        <p>尼布甲尼撒问他们说：“沙得拉、米煞、亚伯尼歌，你们不侍奉我的神，也不敬拜我所立的金像，是故意的吗？</p>
+      </li>
+                        <li><span>3:15</span>
+        <p>你们再听见角、笛、琵琶、琴、瑟、笙和各样乐器的声音，若俯伏敬拜我所造的像，却还可以；若不敬拜，必立时扔在烈火的窑中，有何神能救你们脱离我手呢？”</p>
+      </li>
+                        <li><span>3:16</span>
+        <p>沙得拉、米煞、亚伯尼歌对王说：“尼布甲尼撒啊，这件事我们不必回答你。</p>
+      </li>
+                        <li><span>3:17</span>
+        <p>即便如此，我们所侍奉的  神，能将我们从烈火的窑中救出来。王啊，他也必救我们脱离你的手；</p>
+      </li>
+                        <li><span>3:18</span>
+        <p>即或不然，王啊，你当知道我们决不侍奉你的  神，也不敬拜你所立的金像！”</p>
+      </li>
+                                    <li><span>3:19</span>
+        <p>当时尼布甲尼撒怒气填胸，向沙得拉、米煞、亚伯尼歌变了脸色，吩咐人把窑烧热，比寻常更加七倍。</p>
+      </li>
+                        <li><span>3:20</span>
+        <p>又吩咐他军中的几个壮士，将沙得拉、米煞、亚伯尼歌捆起来，扔在烈火的窑中。</p>
+      </li>
+                        <li><span>3:21</span>
+        <p>这三人穿着裤子、内袍、外衣和别的衣服，被捆起来扔在烈火的窑中。</p>
+      </li>
+                        <li><span>3:22</span>
+        <p>因为王命紧急，窑又甚热，那抬沙得拉、米煞、亚伯尼歌的人都被火焰烧死。</p>
+      </li>
+                        <li><span>3:23</span>
+        <p>沙得拉、米煞、亚伯尼歌这三个人都被捆着落在烈火的窑中。</p>
+      </li>
+                        <li><span>3:24</span>
+        <p>那时，尼布甲尼撒王惊奇，急忙起来，对谋士说：“我捆起来扔在火里的不是三个人吗？”他们回答王说：“王啊，是。”</p>
+      </li>
+                        <li><span>3:25</span>
+        <p>王说：“看哪，我见有四个人，并没有捆绑，在火中游行，也没有受伤，那第四个的相貌好像神子。”</p>
+      </li>
+                                    <li><span>3:26</span>
+        <p>于是尼布甲尼撒就近烈火窑门，说：“至高  神的仆人沙得拉、米煞、亚伯尼歌出来，上这里来吧！”沙得拉、米煞、亚伯尼歌就从火中出来了。</p>
+      </li>
+                        <li><span>3:27</span>
+        <p>那些总督、钦差、巡抚和王的谋士，一同聚集看这三个人，见火无力伤他们的身体，头发也没有烧焦，衣裳也没有变色，并没有火燎的气味。</p>
+      </li>
+                        <li><span>3:28</span>
+        <p>尼布甲尼撒说：“沙得拉、米煞、亚伯尼歌的  神是应当称颂的。他差遣使者救护倚靠他的仆人，他们不遵王命，舍去己身，在他们  神以外不肯侍奉敬拜别神。</p>
+      </li>
+                        <li><span>3:29</span>
+        <p>现在我降旨，无论何方、何国、何族的人，谤讟沙得拉、米煞、亚伯尼歌之  神的，必被凌迟，他的房屋必成粪堆，因为没有别神能这样施行拯救。”</p>
+      </li>
+                        <li><span>3:30</span>
+        <p>那时王在巴比伦省，高升了沙得拉、米煞、亚伯尼歌。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共12首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>但以理书(但)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>但以理书(但)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>但以理书(但)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>但以理书(但)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>但以理书(但)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>但以理书(但)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>但以理书(但)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>但以理书(但)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>但以理书(但)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>但以理书(但)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>但以理书(但)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-27-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>但以理书(但)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-27-cid-2.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-27-cid-4.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="42路加福音/42路加福音_05.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-42-cid-6.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">路加福音(路) 第5章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>5:1</span>
+        <p>耶稣站在革尼撒勒湖边，众人拥挤他，要听  神的道。</p>
+      </li>
+                        <li><span>5:2</span>
+        <p>他见有两只船湾在湖边，打鱼的人却离开船洗网去了。</p>
+      </li>
+                        <li><span>5:3</span>
+        <p>有一只船是西门的。耶稣就上去，请他把船撑开，稍微离岸，就坐下，从船上教训众人。</p>
+      </li>
+                        <li><span>5:4</span>
+        <p>讲完了，对西门说：“把船开到水深之处，下网打鱼。”</p>
+      </li>
+                        <li><span>5:5</span>
+        <p>西门说：“夫子，我们整夜劳力，并没有打着什么。但依从你的话，我就下网。”</p>
+      </li>
+                        <li><span>5:6</span>
+        <p>他们下了网，就圈住许多鱼，网险些裂开，</p>
+      </li>
+                        <li><span>5:7</span>
+        <p>便招呼那只船上的同伴来帮助。他们就来，把鱼装满了两只船，甚至船要沉下去。</p>
+      </li>
+                        <li><span>5:8</span>
+        <p>西门彼得看见，就俯伏在耶稣膝前，说：“主啊，离开我，我是个罪人！”</p>
+      </li>
+                        <li><span>5:9</span>
+        <p>他和一切同在的人都惊讶这一网所打的鱼。</p>
+      </li>
+                        <li><span>5:10</span>
+        <p>他的伙伴西庇太的儿子雅各、约翰，也是这样。耶稣对西门说：“不要怕！从今以后你要得人了。”</p>
+      </li>
+                        <li><span>5:11</span>
+        <p>他们把两只船拢了岸，就撇下所有的，跟从了耶稣。</p>
+      </li>
+                                    <li><span>5:12</span>
+        <p>有一回，耶稣在一个城里，有人满身长了大麻风，看见他，就俯伏在地，求他说：“主若肯，必能叫我洁净了。”</p>
+      </li>
+                        <li><span>5:13</span>
+        <p>耶稣伸手摸他，说：“我肯，你洁净了吧！”大麻风立刻就离了他的身。</p>
+      </li>
+                        <li><span>5:14</span>
+        <p>耶稣嘱咐他：“你切不可告诉人，只要去把身体给祭司察看，又要为你得了洁净，照摩西所吩咐的献上礼物，对众人作证据。”</p>
+      </li>
+                        <li><span>5:15</span>
+        <p>但耶稣的名声越发传扬出去。有极多的人聚集来听道，也指望医治他们的病。</p>
+      </li>
+                        <li><span>5:16</span>
+        <p>耶稣却退到旷野去祷告。</p>
+      </li>
+                                    <li><span>5:17</span>
+        <p>有一天耶稣教训人，有法利赛人和教法师在旁边坐着，他们是从加利利各乡村和犹太并耶路撒冷来的。主的能力与耶稣同在，使他能医治病人。</p>
+      </li>
+                        <li><span>5:18</span>
+        <p>有人用褥子抬着一个瘫子，要抬进去放在耶稣面前，</p>
+      </li>
+                        <li><span>5:19</span>
+        <p>却因人多，寻不出法子抬进去，就上了房顶，从瓦间把他连褥子缒到当中，正在耶稣面前。</p>
+      </li>
+                        <li><span>5:20</span>
+        <p>耶稣见他们的信心，就对瘫子说：“你的罪赦了。”</p>
+      </li>
+                        <li><span>5:21</span>
+        <p>文士和法利赛人就议论说：“这说僭妄话的是谁？除了  神以外，谁能赦罪呢？”</p>
+      </li>
+                        <li><span>5:22</span>
+        <p>耶稣知道他们所议论的，就说：“你们心里议论的是什么呢？</p>
+      </li>
+                        <li><span>5:23</span>
+        <p>或说：‘你的罪赦了’，或说：‘你起来行走’，哪一样容易呢？</p>
+      </li>
+                        <li><span>5:24</span>
+        <p>但要叫你们知道人子在地上有赦罪的权柄。”就对瘫子说：“我吩咐你起来，拿你的褥子回家去吧！”</p>
+      </li>
+                        <li><span>5:25</span>
+        <p>那人当众人面前立刻起来，拿着他所躺卧的褥子回家去，归荣耀与  神。</p>
+      </li>
+                        <li><span>5:26</span>
+        <p>众人都惊奇，也归荣耀与  神，并且满心惧怕说：“我们今日看见非常的事了。”</p>
+      </li>
+                                    <li><span>5:27</span>
+        <p>这事以后，耶稣出去，看见一个税吏，名叫利未，坐在税关上，就对他说：“你跟从我来！”</p>
+      </li>
+                        <li><span>5:28</span>
+        <p>他就撇下所有的，起来跟从了耶稣。</p>
+      </li>
+                        <li><span>5:29</span>
+        <p>利未在自己家里为耶稣大摆筵席，有许多税吏和别人与他们一同坐席。</p>
+      </li>
+                        <li><span>5:30</span>
+        <p>法利赛人和文士就向耶稣的门徒发怨言说：“你们为什么和税吏并罪人一同吃喝呢？”</p>
+      </li>
+                        <li><span>5:31</span>
+        <p>耶稣对他们说：“无病的人用不着医生，有病的人才用得着。</p>
+      </li>
+                        <li><span>5:32</span>
+        <p>我来本不是召义人悔改，乃是召罪人悔改。”</p>
+      </li>
+                                    <li><span>5:33</span>
+        <p>他们说：“约翰的门徒屡次禁食祈祷，法利赛人的门徒也是这样；惟独你的门徒又吃又喝。”</p>
+      </li>
+                        <li><span>5:34</span>
+        <p>耶稣对他们说：“新郎和陪伴之人同在的时候，岂能叫陪伴之人禁食呢？</p>
+      </li>
+                        <li><span>5:35</span>
+        <p>但日子将到，新郎要离开他们，那日他们就要禁食了。”</p>
+      </li>
+                        <li><span>5:36</span>
+        <p>耶稣又设一个比喻，对他们说：“没有人把新衣服撕下一块来，补在旧衣服上。若是这样，就把新的撕破了，并且所撕下来的那块新的和旧的也不相称。</p>
+      </li>
+                        <li><span>5:37</span>
+        <p>也没有人把新酒装在旧皮袋里。若是这样，新酒必将皮袋裂开，酒便漏出来，皮袋也就坏了。</p>
+      </li>
+                        <li><span>5:38</span>
+        <p>但新酒必须装在新皮袋里。</p>
+      </li>
+                        <li><span>5:39</span>
+        <p>没有人喝了陈酒又想喝新的，他总说陈的好。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共24首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>路加福音(路)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>路加福音(路)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>路加福音(路)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>路加福音(路)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>路加福音(路)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>路加福音(路)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>路加福音(路)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>路加福音(路)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>路加福音(路)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>路加福音(路)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>路加福音(路)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>路加福音(路)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>路加福音(路)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>路加福音(路)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>路加福音(路)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>路加福音(路)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>路加福音(路)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>路加福音(路)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>路加福音(路)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>路加福音(路)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>路加福音(路)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>路加福音(路)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>路加福音(路)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-42-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>路加福音(路)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-42-cid-4.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-42-cid-6.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

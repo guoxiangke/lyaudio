@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="49以弗所书/49以弗所书_04.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-49-cid-5.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">以弗所书(弗) 第4章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>4:1</span>
+        <p>我为主被囚的劝你们：既然蒙召，行事为人就当与蒙召的恩相称。</p>
+      </li>
+                        <li><span>4:2</span>
+        <p>凡事谦虚、温柔、忍耐，用爱心互相宽容，</p>
+      </li>
+                        <li><span>4:3</span>
+        <p>用和平彼此联络，竭力保守圣灵所赐合而为一的心。</p>
+      </li>
+                        <li><span>4:4</span>
+        <p>身体只有一个，圣灵只有一个，正如你们蒙召，同有一个指望。</p>
+      </li>
+                        <li><span>4:5</span>
+        <p>一主，一信，一洗，</p>
+      </li>
+                        <li><span>4:6</span>
+        <p>一  神，就是众人的父，超乎众人之上，贯乎众人之中，也住在众人之内。</p>
+      </li>
+                        <li><span>4:7</span>
+        <p>我们各人蒙恩，都是照基督所量给各人的恩赐。</p>
+      </li>
+                        <li><span>4:8</span>
+        <p>所以经上说：“他升上高天的时候，掳掠了仇敌，将各样的恩赐赏给人。”</p>
+      </li>
+                        <li><span>4:9</span>
+        <p>（既说升上，岂不是先降在地下吗？</p>
+      </li>
+                        <li><span>4:10</span>
+        <p>那降下的，就是远升诸天之上要充满万有的。）</p>
+      </li>
+                        <li><span>4:11</span>
+        <p>他所赐的有使徒，有先知，有传福音的，有牧师和教师。</p>
+      </li>
+                        <li><span>4:12</span>
+        <p>为要成全圣徒，各尽其职，建立基督的身体，</p>
+      </li>
+                        <li><span>4:13</span>
+        <p>直等到我们众人在真道上同归于一，认识  神的儿子，得以长大成人，满有基督长成的身量，</p>
+      </li>
+                        <li><span>4:14</span>
+        <p>使我们不再作小孩子，中了人的诡计和欺骗的法术，被一切异教之风摇动，飘来飘去，就随从各样的异端。</p>
+      </li>
+                        <li><span>4:15</span>
+        <p>惟用爱心说诚实话，凡事长进，连于元首基督。</p>
+      </li>
+                        <li><span>4:16</span>
+        <p>全身都靠他联络得合式，百节各按各职，照着各体的功用彼此相助，便叫身体渐渐增长，在爱中建立自己。</p>
+      </li>
+                                    <li><span>4:17</span>
+        <p>所以我说，且在主里确实地说，你们行事，不要再像外邦人存虚妄的心行事。</p>
+      </li>
+                        <li><span>4:18</span>
+        <p>他们心地昏昧，与  神所赐的生命隔绝了，都因自己无知，心里刚硬。</p>
+      </li>
+                        <li><span>4:19</span>
+        <p>良心既然丧尽，就放纵私欲，贪行种种的污秽。</p>
+      </li>
+                        <li><span>4:20</span>
+        <p>你们学了基督，却不是这样。</p>
+      </li>
+                        <li><span>4:21</span>
+        <p>如果你们听过他的道，领了他的教，学了他的真理，</p>
+      </li>
+                        <li><span>4:22</span>
+        <p>就要脱去你们从前行为上的旧人，这旧人是因私欲的迷惑渐渐变坏的。</p>
+      </li>
+                        <li><span>4:23</span>
+        <p>又要将你们的心志改换一新，</p>
+      </li>
+                        <li><span>4:24</span>
+        <p>并且穿上新人，这新人是照着  神的形像造的，有真理的仁义和圣洁。</p>
+      </li>
+                                    <li><span>4:25</span>
+        <p>所以你们要弃绝谎言，各人与邻舍说实话，因为我们是互相为肢体。</p>
+      </li>
+                        <li><span>4:26</span>
+        <p>生气却不要犯罪，不可含怒到日落，</p>
+      </li>
+                        <li><span>4:27</span>
+        <p>也不可给魔鬼留地步。</p>
+      </li>
+                        <li><span>4:28</span>
+        <p>从前偷窃的，不要再偷。总要劳力，亲手作正经事，就可有余，分给那缺少的人。</p>
+      </li>
+                        <li><span>4:29</span>
+        <p>污秽的言语，一句不可出口，只要随事说造就人的好话，叫听见的人得益处。</p>
+      </li>
+                        <li><span>4:30</span>
+        <p>不要叫  神的圣灵担忧，你们原是受了他的印记，等候得赎的日子来到。</p>
+      </li>
+                        <li><span>4:31</span>
+        <p>一切苦毒、恼恨、忿怒、嚷闹、毁谤，并一切的恶毒（或作“阴毒”），都当从你们中间除掉。</p>
+      </li>
+                        <li><span>4:32</span>
+        <p>并要以恩慈相待，存怜悯的心，彼此饶恕，正如  神在基督里饶恕了你们一样。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共6首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>以弗所书(弗)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>以弗所书(弗)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>以弗所书(弗)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>以弗所书(弗)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>以弗所书(弗)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-49-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>以弗所书(弗)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-49-cid-3.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-49-cid-5.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

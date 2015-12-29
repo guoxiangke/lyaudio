@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="40马太福音/40马太福音_19.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-40-cid-20.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">马太福音(太) 第19章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>19:1</span>
+        <p>耶稣说完了这些话，就离开加利利，来到犹太的境界约旦河外。</p>
+      </li>
+                        <li><span>19:2</span>
+        <p>有许多人跟着他，他就在那里把他们的病人治好了。</p>
+      </li>
+                        <li><span>19:3</span>
+        <p>有法利赛人来试探耶稣说：“人无论什么缘故都可以休妻吗？”</p>
+      </li>
+                        <li><span>19:4</span>
+        <p>耶稣回答说：“那起初造人的，是造男造女，</p>
+      </li>
+                        <li><span>19:5</span>
+        <p>并且说：‘因此，人要离开父母，与妻子连合，二人成为一体。’这经你们没有念过吗？</p>
+      </li>
+                        <li><span>19:6</span>
+        <p>既然如此，夫妻不再是两个人，乃是一体的了。所以，  神配合的，人不可分开。”</p>
+      </li>
+                        <li><span>19:7</span>
+        <p>法利赛人说：“这样，摩西为什么吩咐给妻子休书，就可以休她呢？”</p>
+      </li>
+                        <li><span>19:8</span>
+        <p>耶稣说：“摩西因为你们的心硬，所以许你们休妻，但起初并不是这样。</p>
+      </li>
+                        <li><span>19:9</span>
+        <p>我告诉你们：凡休妻另娶的，若不是为淫乱的缘故，就是犯奸淫了；有人娶那被休的妇人，也是犯奸淫了。”</p>
+      </li>
+                        <li><span>19:10</span>
+        <p>门徒对耶稣说：“人和妻子既是这样，倒不如不娶。”</p>
+      </li>
+                        <li><span>19:11</span>
+        <p>耶稣说：“这话不是人都能领受的，惟独赐给谁，谁才能领受。</p>
+      </li>
+                        <li><span>19:12</span>
+        <p>因为有生来是阉人，也有被人阉的，并有为天国的缘故自阉的。这话谁能领受，就可以领受。”</p>
+      </li>
+                                    <li><span>19:13</span>
+        <p>那时，有人带着小孩子来见耶稣，要耶稣给他们按手祷告，门徒就责备那些人。</p>
+      </li>
+                        <li><span>19:14</span>
+        <p>耶稣说：“让小孩子到我这里来，不要禁止他们，因为在天国的，正是这样的人。”</p>
+      </li>
+                        <li><span>19:15</span>
+        <p>耶稣给他们按手，就离开那地方去了。</p>
+      </li>
+                                    <li><span>19:16</span>
+        <p>有一个人来见耶稣说：“夫子（有古卷作“良善的夫子”），我该作什么善事，才能得永生？”</p>
+      </li>
+                        <li><span>19:17</span>
+        <p>耶稣对他说：“你为什么以善事问我呢？只有一位是善的（有古卷作“你为什么称我是良善的？除了  神以外，没有一个良善的”）。你若要进入永生，就当遵守诫命。”</p>
+      </li>
+                        <li><span>19:18</span>
+        <p>他说：“什么诫命？”耶稣说：“就是不可杀人，不可奸淫，不可偷盗，不可作假见证，</p>
+      </li>
+                        <li><span>19:19</span>
+        <p>当孝敬父母，又当爱人如己。”</p>
+      </li>
+                        <li><span>19:20</span>
+        <p>那少年人说：“这一切我都遵守了，还缺少什么呢？”</p>
+      </li>
+                        <li><span>19:21</span>
+        <p>耶稣说：“你若愿意作完全人，可去变卖你所有的，分给穷人，就必有财宝在天上，你还要来跟从我。”</p>
+      </li>
+                        <li><span>19:22</span>
+        <p>那少年人听见这话，就忧忧愁愁地走了，因为他的产业很多。</p>
+      </li>
+                        <li><span>19:23</span>
+        <p>耶稣对门徒说：“我实在告诉你们：财主进天国是难的。</p>
+      </li>
+                        <li><span>19:24</span>
+        <p>我又告诉你们：骆驼穿过针的眼，比财主进  神的国还容易呢！”</p>
+      </li>
+                        <li><span>19:25</span>
+        <p>门徒听见这话，就希奇得很，说：“这样谁能得救呢？”</p>
+      </li>
+                        <li><span>19:26</span>
+        <p>耶稣看着他们说：“在人这是不能的，在  神凡事都能。”</p>
+      </li>
+                        <li><span>19:27</span>
+        <p>彼得就对他说：“看哪，我们已经撇下所有的跟从你，将来我们要得什么呢？”</p>
+      </li>
+                        <li><span>19:28</span>
+        <p>耶稣说：“我实在告诉你们：你们这跟从我的人，到复兴的时候，人子坐在他荣耀的宝座上，你们也要坐在十二个宝座上，审判以色列十二个支派。</p>
+      </li>
+                        <li><span>19:29</span>
+        <p>凡为我的名撇下房屋或是弟兄、姐妹、父亲、母亲（有古卷添“妻子”）、儿女、田地的，必要得着百倍，并且承受永生。</p>
+      </li>
+                        <li><span>19:30</span>
+        <p>然而，有许多在前的，将要在后；在后的，将要在前。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共28首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>马太福音(太)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>马太福音(太)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>马太福音(太)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>马太福音(太)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>马太福音(太)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>马太福音(太)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>马太福音(太)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>马太福音(太)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>马太福音(太)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>马太福音(太)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>马太福音(太)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>马太福音(太)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>马太福音(太)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>马太福音(太)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>马太福音(太)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>马太福音(太)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>马太福音(太)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>马太福音(太)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>马太福音(太)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>马太福音(太)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>马太福音(太)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>马太福音(太)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>马太福音(太)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>马太福音(太)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>马太福音(太)第25章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>马太福音(太)第26章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>马太福音(太)第27章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>马太福音(太)第28章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-40-cid-18.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-40-cid-20.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

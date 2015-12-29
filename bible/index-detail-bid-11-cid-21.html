@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="11列王记上/11列王记上_21.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-11-cid-22.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">列王记上(王上) 第21章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>21:1</span>
+        <p>这事以后，又有一事。耶斯列人拿伯在耶斯列有一个葡萄园，靠近撒玛利亚王亚哈的宫。</p>
+      </li>
+                        <li><span>21:2</span>
+        <p>亚哈对拿伯说：“你将你的葡萄园给我作菜园，因为是靠近我的宫；我就把更好的葡萄园换给你，或是你要银子，我就按着价值给你。”</p>
+      </li>
+                        <li><span>21:3</span>
+        <p>拿伯对亚哈说：“我敬畏耶和华，万不敢将我先人留下的产业给你。”</p>
+      </li>
+                        <li><span>21:4</span>
+        <p>亚哈因耶斯列人拿伯说“我不敢将我先人留下的产业给你”，就闷闷不乐地回宫，躺在床上，转脸向内，也不吃饭。</p>
+      </li>
+                        <li><span>21:5</span>
+        <p>王后耶洗别来问他说：“你为什么心里这样忧闷，不吃饭呢?”</p>
+      </li>
+                        <li><span>21:6</span>
+        <p>他回答说：“因我向耶斯列人拿伯说：‘你将你的葡萄园给我，我给你价银，或是你愿意，我就把别的葡萄园换给你。’他却说：‘我不将我的葡萄园给你。’”</p>
+      </li>
+                        <li><span>21:7</span>
+        <p>王后耶洗别对亚哈说：“你现在是治理以色列国不是?只管起来，心里畅畅快快地吃饭，我必将耶斯列人拿伯的葡萄园给你。”</p>
+      </li>
+                        <li><span>21:8</span>
+        <p>于是，托亚哈的名写信，用王的印印上，送给那些与拿伯同城居住的长老贵胄。</p>
+      </li>
+                        <li><span>21:9</span>
+        <p>信上写着说：“你们当宣告禁食，叫拿伯坐在民间的高位上。</p>
+      </li>
+                        <li><span>21:10</span>
+        <p>又叫两个匪徒坐在拿伯对面，作见证告他说：‘你谤渎  神和王了’；随后就把他拉出去用石头打死。”</p>
+      </li>
+                        <li><span>21:11</span>
+        <p>那些与拿伯同城居住的长老贵胄，得了耶洗别的信，就照信而行；</p>
+      </li>
+                        <li><span>21:12</span>
+        <p>宣告禁食，叫拿伯坐在民间的高位上。</p>
+      </li>
+                        <li><span>21:13</span>
+        <p>有两个匪徒来，坐在拿伯的对面，当着众民作见证告他说：“拿伯谤渎  神和王了。”众人就把他拉到城外，用石头打死。</p>
+      </li>
+                        <li><span>21:14</span>
+        <p>于是打发人去见耶洗别说：“拿伯被石头打死了。”</p>
+      </li>
+                        <li><span>21:15</span>
+        <p>耶洗别听见拿伯被石头打死，就对亚哈说：“你起来得耶斯列人拿伯不肯为价银给你的葡萄园吧！现在他已经死了。”</p>
+      </li>
+                        <li><span>21:16</span>
+        <p>亚哈听见拿伯死了，就起来下去，要得耶斯列人拿伯的葡萄园。</p>
+      </li>
+                        <li><span>21:17</span>
+        <p>耶和华的话临到提斯比人以利亚说：</p>
+      </li>
+                        <li><span>21:18</span>
+        <p>“你起来，去见住撒玛利亚的以色列王亚哈。他下去要得拿伯的葡萄园，现今正在那园里。</p>
+      </li>
+                        <li><span>21:19</span>
+        <p>你要对他说：‘耶和华如此说：你杀了人，又得他的产业吗?’又要对他说：‘耶和华如此说：狗在何处舔拿伯的血，也必在何处舔你的血。’”</p>
+      </li>
+                        <li><span>21:20</span>
+        <p>亚哈对以利亚说：“我仇敌啊，你找到我吗?”他回答说：“我找到你了，因为你卖了自己，行耶和华眼中看为恶的事。</p>
+      </li>
+                        <li><span>21:21</span>
+        <p>耶和华说：‘我必使灾祸临到你，将你除尽，凡属你的男丁，无论困住的、自由的，都从以色列中剪除；</p>
+      </li>
+                        <li><span>21:22</span>
+        <p>我必使你的家像尼八的儿子耶罗波安的家，又像亚希雅的儿子巴沙的家，因为你惹我发怒，又使以色列人陷在罪里。’</p>
+      </li>
+                        <li><span>21:23</span>
+        <p>论到耶洗别，耶和华也说：‘狗在耶斯列的外郭，必吃耶洗别的肉。</p>
+      </li>
+                        <li><span>21:24</span>
+        <p>凡属亚哈的人，死在城中的，必被狗吃；死在田野的，必被空中的鸟吃。’”</p>
+      </li>
+                        <li><span>21:25</span>
+        <p>（从来没有像亚哈的，因他自卖，行耶和华眼中看为恶的事，受了王后耶洗别的耸动，</p>
+      </li>
+                        <li><span>21:26</span>
+        <p>就照耶和华在以色列人面前所赶出的亚摩利人，行了最可憎恶的事，信从偶像。）</p>
+      </li>
+                        <li><span>21:27</span>
+        <p>亚哈听见这话，就撕裂衣服，禁食，身穿麻布，睡卧也穿着麻布，并且缓缓而行。</p>
+      </li>
+                        <li><span>21:28</span>
+        <p>耶和华的话临到提斯比人以利亚说：</p>
+      </li>
+                        <li><span>21:29</span>
+        <p>“亚哈在我面前这样自卑，你看见了吗?因他在我面前自卑，他还在世的时候，我不降这祸，到他儿子的时候，我必降这祸与他的家。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共22首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>列王记上(王上)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>列王记上(王上)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>列王记上(王上)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>列王记上(王上)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>列王记上(王上)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>列王记上(王上)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>列王记上(王上)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>列王记上(王上)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>列王记上(王上)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>列王记上(王上)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>列王记上(王上)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>列王记上(王上)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>列王记上(王上)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>列王记上(王上)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>列王记上(王上)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>列王记上(王上)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>列王记上(王上)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>列王记上(王上)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>列王记上(王上)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>列王记上(王上)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>列王记上(王上)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>列王记上(王上)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-11-cid-20.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-11-cid-22.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

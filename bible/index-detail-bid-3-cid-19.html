@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="03利未记/03利未记_19.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-3-cid-20.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">利未记(利) 第19章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>19:1</span>
+        <p>耶和华对摩西说：</p>
+      </li>
+                        <li><span>19:2</span>
+        <p>“你晓谕以色列全会众说：你们要圣洁，因为我耶和华你们的  神是圣洁的。</p>
+      </li>
+                        <li><span>19:3</span>
+        <p>你们各人都当孝敬父母，也要守我的安息日。我是耶和华你们的  神。</p>
+      </li>
+                        <li><span>19:4</span>
+        <p>你们不可偏向虚无的神，也不可为自己铸造神像。我是耶和华你们的  神。</p>
+      </li>
+                        <li><span>19:5</span>
+        <p>你们献平安祭给耶和华的时候，要献得可蒙悦纳。</p>
+      </li>
+                        <li><span>19:6</span>
+        <p>这祭物要在献的那一天和第二天吃，若有剩到第三天的，就必用火焚烧。</p>
+      </li>
+                        <li><span>19:7</span>
+        <p>第三天若再吃，这就为可憎恶的，必不蒙悦纳。</p>
+      </li>
+                        <li><span>19:8</span>
+        <p>凡吃的人，必担当他的罪孽，因为他亵渎了耶和华的圣物，那人必从民中剪除。”</p>
+      </li>
+                        <li><span>19:9</span>
+        <p>“在你们的地收割庄稼，不可割尽田角，也不可拾取所遗落的。</p>
+      </li>
+                        <li><span>19:10</span>
+        <p>不可摘尽葡萄园的果子，也不可拾取葡萄园所掉的果子，要留给穷人和寄居的。我是耶和华你们的  神。”</p>
+      </li>
+                        <li><span>19:11</span>
+        <p>“你们不可偷盗，不可欺骗，也不可彼此说谎。</p>
+      </li>
+                        <li><span>19:12</span>
+        <p>不可指着我的名起假誓，亵渎你  神的名。我是耶和华。”</p>
+      </li>
+                        <li><span>19:13</span>
+        <p>“不可欺压你的邻舍，也不可抢夺他的物。雇工人的工价，不可在你那里过夜留到早晨。</p>
+      </li>
+                        <li><span>19:14</span>
+        <p>不可咒骂聋子，也不可将绊脚石放在瞎子面前，只要敬畏你的  神。我是和耶和华。”</p>
+      </li>
+                        <li><span>19:15</span>
+        <p>“你们施行审判，不可行不义，不可偏护穷人，也不可重看有势力的人，只要按着公义审判你的邻舍。</p>
+      </li>
+                        <li><span>19:16</span>
+        <p>不可在民中往来搬弄是非，也不可与邻舍为敌，置之于死（原文作“流他的血”）。我是耶和华。”</p>
+      </li>
+                        <li><span>19:17</span>
+        <p>“不可心里恨你的弟兄；总要指摘你的邻舍，免得因他担罪。</p>
+      </li>
+                        <li><span>19:18</span>
+        <p>不可报仇，也不可埋怨你本国的子民，却要爱人如己。我是耶和华。”</p>
+      </li>
+                        <li><span>19:19</span>
+        <p>“你们要守我的律例。不可叫你的牲畜与异类配合；不可用两样搀杂的种种你的地，也不可用两样搀杂的料作衣服穿在身上。”</p>
+      </li>
+                        <li><span>19:20</span>
+        <p>“婢女许配了丈夫，还没有被赎得释放，人若与她行淫，二人要受刑罚，却不把他们治死，因为婢女还没有得自由。</p>
+      </li>
+                        <li><span>19:21</span>
+        <p>那人要把赎愆祭，就是一只公绵羊牵到会幕门口、耶和华面前。</p>
+      </li>
+                        <li><span>19:22</span>
+        <p>祭司要用赎愆祭的羊在耶和华面前赎他所犯的罪，他的罪就必蒙赦免。”</p>
+      </li>
+                        <li><span>19:23</span>
+        <p>“你们到了迦南地，栽种各样结果子的树木，就要以所结的果子如未受割礼的一样。三年之久，你们要以这些果子，如未受割礼的，是不可吃的。</p>
+      </li>
+                        <li><span>19:24</span>
+        <p>但第四年所结的果子全要成为圣，用以赞美耶和华。</p>
+      </li>
+                        <li><span>19:25</span>
+        <p>第五年，你们要吃那树上的果子，好叫树给你们结果子更多。我是耶和华你们的  神。”</p>
+      </li>
+                        <li><span>19:26</span>
+        <p>“你们不可吃带血的物，不可用法术，也不可观兆。</p>
+      </li>
+                        <li><span>19:27</span>
+        <p>头的周围不可剃（“周围”或作“两鬓”），胡须的周围也不可损坏。</p>
+      </li>
+                        <li><span>19:28</span>
+        <p>不可为死人用刀划身，也不可在身上刺花纹。我是耶和华。”</p>
+      </li>
+                        <li><span>19:29</span>
+        <p>“不可辱没你的女儿，使她为娼妓。恐怕地上的人专向淫乱，地就满了大恶。</p>
+      </li>
+                        <li><span>19:30</span>
+        <p>你们要守我的安息日，敬我的圣所。我是耶和华。”</p>
+      </li>
+                        <li><span>19:31</span>
+        <p>“不可偏向那些交鬼的和行巫术的；不可求问他们，以致被他们玷污了。我是耶和华你们的  神。”</p>
+      </li>
+                        <li><span>19:32</span>
+        <p>“在白发的人面前，你要站起来，也要尊敬老人，又要敬畏你的  神。我是耶和华。”</p>
+      </li>
+                        <li><span>19:33</span>
+        <p>“若有外人在你们国中和你同居，就不可欺负他。</p>
+      </li>
+                        <li><span>19:34</span>
+        <p>和你们同居的外人，你们要看他如本地人一样，并要爱他如己，因为你们在埃及地也作过寄居的。我是耶和华你们的  神。”</p>
+      </li>
+                        <li><span>19:35</span>
+        <p>“你们施行审判，不可行不义。在尺、秤、升、斗上也是如此。</p>
+      </li>
+                        <li><span>19:36</span>
+        <p>要用公道天平、公道法码、公道升斗、公道秤。我是耶和华你们的  神，曾把你们从埃及地领出来的。</p>
+      </li>
+                        <li><span>19:37</span>
+        <p>你们要谨守遵行我一切的律例、典章。我是耶和华。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共27首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>利未记(利)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>利未记(利)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>利未记(利)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>利未记(利)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>利未记(利)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>利未记(利)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>利未记(利)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>利未记(利)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>利未记(利)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>利未记(利)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>利未记(利)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>利未记(利)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>利未记(利)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>利未记(利)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>利未记(利)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>利未记(利)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>利未记(利)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>利未记(利)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>利未记(利)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>利未记(利)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>利未记(利)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>利未记(利)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>利未记(利)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>利未记(利)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>利未记(利)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>利未记(利)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-3-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>利未记(利)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-3-cid-18.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-3-cid-20.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

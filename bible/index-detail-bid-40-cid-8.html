@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="40马太福音/40马太福音_08.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-40-cid-9.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">马太福音(太) 第8章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>8:1</span>
+        <p>耶稣下了山，有许多人跟着他。</p>
+      </li>
+                        <li><span>8:2</span>
+        <p>有一个长大麻风的来拜他，说：“主若肯，必能叫我洁净了。”</p>
+      </li>
+                        <li><span>8:3</span>
+        <p>耶稣伸手摸他说：“我肯，你洁净了吧！”他的大麻风立刻就洁净了。</p>
+      </li>
+                        <li><span>8:4</span>
+        <p>耶稣对他说：“你切不可告诉人，只要去把身体给祭司察看，献上摩西所吩咐的礼物，对众人作证据。”</p>
+      </li>
+                                    <li><span>8:5</span>
+        <p>耶稣进了迦百农，有一个百夫长进前来，求他说：</p>
+      </li>
+                        <li><span>8:6</span>
+        <p>“主啊，我的仆人害瘫痪病，躺在家里甚是痛苦。”</p>
+      </li>
+                        <li><span>8:7</span>
+        <p>耶稣说：“我去医治他。”</p>
+      </li>
+                        <li><span>8:8</span>
+        <p>百夫长回答说：“主啊，你到我舍下，我不敢当；只要你说一句话，我的仆人就必好了。</p>
+      </li>
+                        <li><span>8:9</span>
+        <p>因为我在人的权下，也有兵在我以下，对这个说，‘去’，他就去；对那个说，‘来’，他就来；对我的仆人说，‘你作这事’，他就去作。”</p>
+      </li>
+                        <li><span>8:10</span>
+        <p>耶稣听见就希奇，对跟从的人说：“我实在告诉你们：这么大的信心，就是在以色列中，我也没有遇见过。</p>
+      </li>
+                        <li><span>8:11</span>
+        <p>我又告诉你们：从东从西，将有许多人来，在天国里与亚伯拉罕、以撒、雅各一同坐席；</p>
+      </li>
+                        <li><span>8:12</span>
+        <p>惟有本国的子民，竟被赶到外边黑暗里去，在那里必要哀哭切齿了。”</p>
+      </li>
+                        <li><span>8:13</span>
+        <p>耶稣对百夫长说：“你回去吧！照你的信心，给你成全了。”那时，他的仆人就好了。</p>
+      </li>
+                                    <li><span>8:14</span>
+        <p>耶稣到了彼得家里，见彼得的岳母害热病躺着。</p>
+      </li>
+                        <li><span>8:15</span>
+        <p>耶稣把她的手一摸，热就退了。她就起来服侍耶稣。</p>
+      </li>
+                        <li><span>8:16</span>
+        <p>到了晚上，有人带着许多被鬼附的来到耶稣跟前，他只用一句话，就把鬼都赶出去，并且治好了一切有病的人。</p>
+      </li>
+                        <li><span>8:17</span>
+        <p>这是要应验先知以赛亚的话，说：“他代替我们的软弱，担当我们的疾病。”</p>
+      </li>
+                                    <li><span>8:18</span>
+        <p>耶稣见许多人围着他，就吩咐渡到那边去。</p>
+      </li>
+                        <li><span>8:19</span>
+        <p>有一个文士来对他说：“夫子，你无论往哪里去，我要跟从你。”</p>
+      </li>
+                        <li><span>8:20</span>
+        <p>耶稣说：“狐狸有洞，天空的飞鸟有窝，人子却没有枕头的地方。”</p>
+      </li>
+                        <li><span>8:21</span>
+        <p>又有一个门徒对耶稣说：“主啊，容我先回去埋葬我的父亲。”</p>
+      </li>
+                        <li><span>8:22</span>
+        <p>耶稣说：“任凭死人埋葬他们的死人，你跟从我吧！”</p>
+      </li>
+                                    <li><span>8:23</span>
+        <p>耶稣上了船，门徒跟着他。</p>
+      </li>
+                        <li><span>8:24</span>
+        <p>海里忽然起了暴风，甚至船被波浪掩盖。耶稣却睡着了。</p>
+      </li>
+                        <li><span>8:25</span>
+        <p>门徒来叫醒了他，说：“主啊，救我们，我们丧命啦！”</p>
+      </li>
+                        <li><span>8:26</span>
+        <p>耶稣说：“你们这小信的人哪，为什么胆怯呢？”于是起来，斥责风和海，风和海就大大地平静了。</p>
+      </li>
+                        <li><span>8:27</span>
+        <p>众人希奇说：“这是怎样的人？连风和海也听从他了？”</p>
+      </li>
+                                    <li><span>8:28</span>
+        <p>耶稣既渡到那边去，来到加大拉人的地方，就有两个被鬼附的人从坟茔里出来迎着他，极其凶猛，甚至没有人能从那条路上经过。</p>
+      </li>
+                        <li><span>8:29</span>
+        <p>他们喊着说：“  神的儿子，我们与你有什么相干？时候还没有到，你就上这里来叫我们受苦吗？”</p>
+      </li>
+                        <li><span>8:30</span>
+        <p>离他们很远，有一大群猪吃食。</p>
+      </li>
+                        <li><span>8:31</span>
+        <p>鬼就央求耶稣说：“若把我们赶出去，就打发我们进入猪群吧！”</p>
+      </li>
+                        <li><span>8:32</span>
+        <p>耶稣说：“去吧！”鬼就出来，进入猪群。全群忽然闯下山崖，投在海里淹死了。</p>
+      </li>
+                        <li><span>8:33</span>
+        <p>放猪的就逃跑进城，将这一切事和被鬼附的人所遭遇的都告诉人。</p>
+      </li>
+                        <li><span>8:34</span>
+        <p>合城的人都出来迎见耶稣，既见了，就央求他离开他们的境界。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共28首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>马太福音(太)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>马太福音(太)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>马太福音(太)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>马太福音(太)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>马太福音(太)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>马太福音(太)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>马太福音(太)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>马太福音(太)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>马太福音(太)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>马太福音(太)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>马太福音(太)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>马太福音(太)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>马太福音(太)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>马太福音(太)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>马太福音(太)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>马太福音(太)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>马太福音(太)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>马太福音(太)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>马太福音(太)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>马太福音(太)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>马太福音(太)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>马太福音(太)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>马太福音(太)第23章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>马太福音(太)第24章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>马太福音(太)第25章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>马太福音(太)第26章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>马太福音(太)第27章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-40-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>马太福音(太)第28章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-40-cid-7.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-40-cid-9.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

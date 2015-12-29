@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="13历代志上/13历代志上_21.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-13-cid-22.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">历代志上(代上) 第21章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>21:1</span>
+        <p>撒但起来攻击以色列人，激动大卫数点他们。</p>
+      </li>
+                        <li><span>21:2</span>
+        <p>大卫就吩咐约押和民中的首领说：“你们去数点以色列人，从别是巴直到但，回来告诉我，我好知道他们的数目。”</p>
+      </li>
+                        <li><span>21:3</span>
+        <p>约押说：“愿耶和华使他的百姓比现在加增百倍。我主我王啊，他们不都是你的仆人吗？我主为何吩咐行这事，为何使以色列人陷在罪里呢？”</p>
+      </li>
+                        <li><span>21:4</span>
+        <p>但王的命令胜过约押。约押就出去，走遍以色列地，回到耶路撒冷，</p>
+      </li>
+                        <li><span>21:5</span>
+        <p>将百姓的总数奏告大卫：以色列人拿刀的有一百一十万；犹大人拿刀的有四十七万。</p>
+      </li>
+                        <li><span>21:6</span>
+        <p>惟有利未人和便雅悯人没有数在其中，因为约押厌恶王的这命令。</p>
+      </li>
+                        <li><span>21:7</span>
+        <p>神不喜悦这数点百姓的事，便降灾给以色列人。</p>
+      </li>
+                        <li><span>21:8</span>
+        <p>大卫祷告  神说：“我行这事大有罪了！现在求你除掉仆人的罪孽，因我所行的甚是愚味。”</p>
+      </li>
+                        <li><span>21:9</span>
+        <p>耶和华吩咐大卫的先见迦得说：</p>
+      </li>
+                        <li><span>21:10</span>
+        <p>“你去告诉大卫说，耶和华如此说：‘我有三样灾，随你选择一样，我好降与你。’”</p>
+      </li>
+                        <li><span>21:11</span>
+        <p>于是迦得来见大卫，对他说：“耶和华如此说：‘你可以随意选择：</p>
+      </li>
+                        <li><span>21:12</span>
+        <p>或三年的饥荒；或败在你敌人面前，被敌人的刀追杀三个月；或在你国中有耶和华的刀，就是三日的瘟疫，耶和华的使者在以色列的四境施行毁灭。’现在你要想一想，我好回复那差我来的。”</p>
+      </li>
+                        <li><span>21:13</span>
+        <p>大卫对迦得说：“我甚为难，我愿落在耶和华的手里，因为他有丰盛的怜悯；我不愿落在人的手里。”</p>
+      </li>
+                        <li><span>21:14</span>
+        <p>于是耶和华降瘟疫与以色列人，以色列人就死了七万。</p>
+      </li>
+                        <li><span>21:15</span>
+        <p>神差遣使者去灭耶路撒冷，刚要灭的时候，耶和华看见后悔，就不降这灾了，吩咐灭城的天使说：“够了，住手吧！”那时，耶和华的使者站在耶布斯人阿珥楠的禾场那里。</p>
+      </li>
+                        <li><span>21:16</span>
+        <p>大卫举目，看见耶和华的使者站在天地间，手里有拔出来的刀，伸在耶路撒冷以上。大卫和长老都身穿麻衣，面伏于地。</p>
+      </li>
+                        <li><span>21:17</span>
+        <p>大卫祷告  神说：“吩咐数点百姓的不是我吗？我犯了罪、行了恶，但这群羊作了什么呢？愿耶和华我  神的手攻击我和我的父家，不要攻击你的民，降瘟疫与他们。”</p>
+      </li>
+                        <li><span>21:18</span>
+        <p>耶和华的使者吩咐迦得去告诉大卫，叫他上去，在耶布斯人阿珥楠的禾场上，为耶和华筑一座坛。</p>
+      </li>
+                        <li><span>21:19</span>
+        <p>大卫就照着迦得奉耶和华名所说的话上去了。</p>
+      </li>
+                        <li><span>21:20</span>
+        <p>那时，阿珥楠正打麦子，回头看见天使，就和他四个儿子都藏起来了。</p>
+      </li>
+                        <li><span>21:21</span>
+        <p>大卫到了阿珥楠那里，阿珥楠看见大卫，就从禾场上出去，脸伏于地，向他下拜。</p>
+      </li>
+                        <li><span>21:22</span>
+        <p>大卫对阿珥楠说：“你将这禾场与相连之地卖给我，我必给你足价，我好在其上为耶和华筑一座坛，使民间的瘟疫止住。”</p>
+      </li>
+                        <li><span>21:23</span>
+        <p>阿珥楠对大卫说：“你可以用这禾场，愿我主我王照你所喜悦的去行。我也将牛给你作燔祭，把打粮的器具当柴烧，拿麦子作素祭；这些我都送给你。”</p>
+      </li>
+                        <li><span>21:24</span>
+        <p>大卫王对阿珥楠说：“不然，我必要用足价向你买，我不用你的物献给耶和华，也不用白得之物献为燔祭。”</p>
+      </li>
+                        <li><span>21:25</span>
+        <p>于是，大卫为那块地平了六百舍客勒金子给阿珥楠。</p>
+      </li>
+                        <li><span>21:26</span>
+        <p>大卫在那里为耶和华筑了一座坛，献燔祭和平安祭，求告耶和华，耶和华就应允他，使火从天降在燔祭坛上。</p>
+      </li>
+                        <li><span>21:27</span>
+        <p>耶和华吩咐使者，他就收刀入鞘。</p>
+      </li>
+                        <li><span>21:28</span>
+        <p>那时，大卫见耶和华在耶布斯人阿珥楠的禾场上应允了他，就在那里献祭。</p>
+      </li>
+                        <li><span>21:29</span>
+        <p>摩西在旷野所造之耶和华的帐幕和燔祭坛，都在基遍的高处。</p>
+      </li>
+                        <li><span>21:30</span>
+        <p>只是大卫不敢前去求问  神，因为惧怕耶和华使者的刀。</p>
+      </li>
+                        <li><span>21:31</span>
+        <p>大卫说：“这就是耶和华  神的殿，为以色列人献燔祭的坛。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共29首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>历代志上(代上)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>历代志上(代上)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>历代志上(代上)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>历代志上(代上)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>历代志上(代上)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>历代志上(代上)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>历代志上(代上)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>历代志上(代上)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>历代志上(代上)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>历代志上(代上)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>历代志上(代上)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>历代志上(代上)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>历代志上(代上)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>历代志上(代上)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>历代志上(代上)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>历代志上(代上)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>历代志上(代上)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>历代志上(代上)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>历代志上(代上)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>历代志上(代上)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>历代志上(代上)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>历代志上(代上)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-23.html"><span class="ppNum">23</span>
+        <p><strong>历代志上(代上)第23章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-24.html"><span class="ppNum">24</span>
+        <p><strong>历代志上(代上)第24章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-25.html"><span class="ppNum">25</span>
+        <p><strong>历代志上(代上)第25章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-26.html"><span class="ppNum">26</span>
+        <p><strong>历代志上(代上)第26章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-27.html"><span class="ppNum">27</span>
+        <p><strong>历代志上(代上)第27章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-28.html"><span class="ppNum">28</span>
+        <p><strong>历代志上(代上)第28章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-13-cid-29.html"><span class="ppNum">29</span>
+        <p><strong>历代志上(代上)第29章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-13-cid-20.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-13-cid-22.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

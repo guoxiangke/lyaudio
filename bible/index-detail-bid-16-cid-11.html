@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="16尼希米记/16尼希米记_11.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-16-cid-12.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">尼希米记(尼) 第11章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>11:1</span>
+        <p>百姓的首领住在耶路撒冷；其余的百姓掣签，每十人中使一人来住在圣城耶路撒冷，那九人住在别的城邑。</p>
+      </li>
+                        <li><span>11:2</span>
+        <p>凡甘心乐意住在耶路撒冷的，百姓都为他们祝福。</p>
+      </li>
+                        <li><span>11:3</span>
+        <p>以色列人、祭司、利未人、尼提宁和所罗门仆人的后裔，都住在犹大城邑，各在自己的地业中。本省的首领住在耶路撒冷的记在下面：</p>
+      </li>
+                        <li><span>11:4</span>
+        <p>其中有些犹大人和便雅悯人。犹大人中有法勒斯的子孙、乌西雅的儿子亚他雅。乌西雅是撒迦利雅的儿子；撒迦利雅是亚玛利雅的儿子；亚玛利雅是示法提雅的儿子；示法提雅是玛勒列的儿子。</p>
+      </li>
+                        <li><span>11:5</span>
+        <p>又有巴录的儿子玛西雅。巴录是谷何西的儿子；谷何西是哈赛雅的儿子；哈赛雅是亚大雅的儿子；亚大雅是约雅立的儿子；约雅立是撒迦利雅的儿子；撒迦利雅是示罗尼的儿子。</p>
+      </li>
+                        <li><span>11:6</span>
+        <p>住在耶路撒冷法勒斯的子孙共四百六十八名，都是勇士。</p>
+      </li>
+                        <li><span>11:7</span>
+        <p>便雅悯人中有米书兰的儿子撒路。米书兰是约叶的儿子；约叶是毗大雅的儿子；毗大雅是哥赖雅的儿子；哥赖雅是玛西雅的儿子；玛西雅是以铁的儿子；以铁是耶筛亚的儿子。</p>
+      </li>
+                        <li><span>11:8</span>
+        <p>其次有迦拜、撒来的子孙共九百二十八名。</p>
+      </li>
+                        <li><span>11:9</span>
+        <p>细基利的儿子约珥是他们的长官，哈西努亚的儿子犹大是耶路撒冷的副官。</p>
+      </li>
+                        <li><span>11:10</span>
+        <p>祭司中有雅斤，又有约雅立的儿子耶大雅，</p>
+      </li>
+                        <li><span>11:11</span>
+        <p>还有管理  神殿的西莱雅。西莱雅是希勒家的儿子；希勒家是米书兰的儿子；米书兰是撒督的儿子；撒督是米拉约的儿子；米拉约是亚希突的儿子。</p>
+      </li>
+                        <li><span>11:12</span>
+        <p>还有他们的弟兄在殿里供职的，共八百二十二名。又有耶罗罕的儿子亚大雅。耶罗罕是毗拉利的儿子；毗拉利是暗洗的儿子；暗洗是撒迦利亚的儿子；撒迦利亚是巴施户珥的儿子；巴施户珥是玛基雅的儿子。</p>
+      </li>
+                        <li><span>11:13</span>
+        <p>还有他的弟兄作族长的，二百四十二名。又有亚萨列的儿子亚玛帅。亚萨列是亚哈赛的儿子；亚哈赛是米实利末的儿子；米实利末是音麦的儿子。</p>
+      </li>
+                        <li><span>11:14</span>
+        <p>还有他们弟兄大能的勇士共一百二十八名。哈基多琳的儿子撒巴第业是他们的长官。</p>
+      </li>
+                        <li><span>11:15</span>
+        <p>利未人中，有哈述的儿子示玛雅。哈述是押利甘的儿子；押利甘是哈沙比雅的儿子；哈沙比雅是布尼的儿子。</p>
+      </li>
+                        <li><span>11:16</span>
+        <p>又有利未人的族长沙比太和约撒拔，管理  神殿的外事。</p>
+      </li>
+                        <li><span>11:17</span>
+        <p>祈祷的时候，为称谢领首的是米迦的儿子玛他尼。米迦是撒底的儿子；撒底是亚萨的儿子；又有玛他尼弟兄中的八布迦为副。还有沙母亚的儿子押大。沙母亚是加拉的儿子；加拉是耶杜顿的儿子。</p>
+      </li>
+                        <li><span>11:18</span>
+        <p>在圣城的利未人共二百八十四名。</p>
+      </li>
+                        <li><span>11:19</span>
+        <p>守门的是亚谷和达们，并守门的弟兄，共一百七十二名。</p>
+      </li>
+                        <li><span>11:20</span>
+        <p>其余的以色列人、祭司、利未人，都住在犹大的一切城邑，各在自己的地业中。</p>
+      </li>
+                        <li><span>11:21</span>
+        <p>尼提宁却住在俄斐勒，西哈和基斯帕管理他们。</p>
+      </li>
+                        <li><span>11:22</span>
+        <p>在耶路撒冷，利未人的长官，管理  神殿事务的，是歌唱者亚萨的子孙、巴尼的儿子乌西。巴尼是哈沙比雅的儿子；哈沙比雅是玛他尼的儿子；玛他尼是米迦的儿子。</p>
+      </li>
+                        <li><span>11:23</span>
+        <p>王为歌唱的出命令，每日供给他们必有一定之粮。</p>
+      </li>
+                        <li><span>11:24</span>
+        <p>犹大儿子谢拉的子孙、米示萨别的儿子毗他希雅，辅助王办理犹大民的事。</p>
+      </li>
+                                    <li><span>11:25</span>
+        <p>至于村庄和属村庄的田地，有犹大人住在基列亚巴和属基列亚巴的乡村；底本和属底本的乡村；叶甲薛和属叶甲薛的村庄；</p>
+      </li>
+                        <li><span>11:26</span>
+        <p>耶书亚、摩拉大、伯帕列、</p>
+      </li>
+                        <li><span>11:27</span>
+        <p>哈萨书亚、别是巴和属别是巴的乡村；</p>
+      </li>
+                        <li><span>11:28</span>
+        <p>洗革拉、米哥拿和属米哥拿的乡村；</p>
+      </li>
+                        <li><span>11:29</span>
+        <p>音临门、琐拉、耶末、</p>
+      </li>
+                        <li><span>11:30</span>
+        <p>撒挪亚、亚杜兰和属这两处的村庄；拉吉和属拉吉的田地；亚西加和属亚西加的乡村。他们所住的地方，是从别是巴直到欣嫩谷。</p>
+      </li>
+                        <li><span>11:31</span>
+        <p>便雅悯人从迦巴起，住在密抹、亚雅、伯特利和属伯特利的乡村，</p>
+      </li>
+                        <li><span>11:32</span>
+        <p>亚拿突、挪伯、亚难雅、</p>
+      </li>
+                        <li><span>11:33</span>
+        <p>夏琐、拉玛、基他音、</p>
+      </li>
+                        <li><span>11:34</span>
+        <p>哈叠、洗编、尼八拉、</p>
+      </li>
+                        <li><span>11:35</span>
+        <p>罗德、阿挪、匠人之谷。</p>
+      </li>
+                        <li><span>11:36</span>
+        <p>利未人中有几班曾住在犹大地归于便雅悯的。</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共13首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>尼希米记(尼)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>尼希米记(尼)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>尼希米记(尼)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>尼希米记(尼)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>尼希米记(尼)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>尼希米记(尼)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>尼希米记(尼)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>尼希米记(尼)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>尼希米记(尼)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>尼希米记(尼)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>尼希米记(尼)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>尼希米记(尼)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-16-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>尼希米记(尼)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-16-cid-10.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-16-cid-12.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

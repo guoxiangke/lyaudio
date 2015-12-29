@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="66启示录/66启示录_02.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-66-cid-3.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">启示录(启) 第2章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>2:1</span>
+        <p>“你要写信给以弗所教会的使者说，那右手拿着七星，在七个金灯台中间行走的说：</p>
+      </li>
+                        <li><span>2:2</span>
+        <p>我知道你的行为、劳碌、忍耐，也知道你不能容忍恶人。你也曾试验那自称为使徒却不是使徒的，看出他们是假的来。</p>
+      </li>
+                        <li><span>2:3</span>
+        <p>你也能忍耐，曾为我的名劳苦，并不乏倦。</p>
+      </li>
+                        <li><span>2:4</span>
+        <p>然而，有一件事我要责备你，就是你把起初的爱心离弃了。</p>
+      </li>
+                        <li><span>2:5</span>
+        <p>所以应当回想你是从哪里坠落的，并要悔改，行起初所行的事。你若不悔改，我就临到你那里，把你的灯台从原处挪去。</p>
+      </li>
+                        <li><span>2:6</span>
+        <p>然而，你还有一件可取的事，就是你恨恶尼哥拉一党人的行为，这也是我所恨恶的。</p>
+      </li>
+                        <li><span>2:7</span>
+        <p>圣灵向众教会所说的话，凡有耳的，就应当听。得胜的，我必将  神乐园中生命树的果子赐给他吃。”</p>
+      </li>
+                                    <li><span>2:8</span>
+        <p>“你要写信给士每拿教会的使者说，那首先的、末后的、死过又活的说：</p>
+      </li>
+                        <li><span>2:9</span>
+        <p>我知道你的患难，你的贫穷（你却是富足的），也知道那自称是犹太人所说的毁谤话，其实他们不是犹太人，乃是撒但一会的人。</p>
+      </li>
+                        <li><span>2:10</span>
+        <p>你将要受的苦你不用怕。魔鬼要把你们中间几个人下在监里，叫你们被试炼，你们必受患难十日。你务要至死忠心，我就赐给你那生命的冠冕。</p>
+      </li>
+                        <li><span>2:11</span>
+        <p>圣灵向众教会所说的话，凡有耳的，就应当听。得胜的，必不受第二次死的害。”</p>
+      </li>
+                                    <li><span>2:12</span>
+        <p>“你要写信给别迦摩教会的使者说，那有两刃利剑的说：</p>
+      </li>
+                        <li><span>2:13</span>
+        <p>我知道你的居所，就是有撒但座位之处。当我忠心的见证人安提帕在你们中间、撒但所住的地方被杀之时，你还坚守我的名，没有弃绝我的道。</p>
+      </li>
+                        <li><span>2:14</span>
+        <p>然而，有几件事我要责备你，因为在你那里，有人服从了巴兰的教训；这巴兰曾教导巴勒将绊脚石放在以色列人面前，叫他们吃祭偶像之物，行奸淫的事。</p>
+      </li>
+                        <li><span>2:15</span>
+        <p>你那里也有人照样服从了尼哥拉一党人的教训。</p>
+      </li>
+                        <li><span>2:16</span>
+        <p>所以你当悔改，若不悔改，我就快临到你那里，用我口中的剑攻击他们。</p>
+      </li>
+                        <li><span>2:17</span>
+        <p>圣灵向众教会所说的话，凡有耳的，就应当听。得胜的，我必将那隐藏的吗哪赐给他，并赐他一块白石，石上写着新名，除了那领受的以外，没有人能认识。”</p>
+      </li>
+                                    <li><span>2:18</span>
+        <p>“你要写信给推雅推喇教会的使者说，那眼目如火焰、脚像光明铜的  神之子说：</p>
+      </li>
+                        <li><span>2:19</span>
+        <p>我知道你的行为、爱心、信心、勤劳、忍耐，又知道你末后所行的善事，比起初所行的更多。</p>
+      </li>
+                        <li><span>2:20</span>
+        <p>然而，有一件事我要责备你，就是你容让那自称是先知的妇人耶洗别教导我的仆人，引诱他们行奸淫，吃祭偶像之物。</p>
+      </li>
+                        <li><span>2:21</span>
+        <p>我曾给她悔改的机会，她却不肯悔改她的淫行。</p>
+      </li>
+                        <li><span>2:22</span>
+        <p>看哪，我要叫她病卧在床。那些与她行淫的人，若不悔改所行的，我也要叫他们同受大患难。</p>
+      </li>
+                        <li><span>2:23</span>
+        <p>我又要杀死她的党类（“党类”原文作“儿女”），叫众教会知道，我是那察看人肺腑心肠的，并要照你们的行为报应你们各人。</p>
+      </li>
+                        <li><span>2:24</span>
+        <p>至于你们推雅推喇其余的人，就是一切不从那教训，不晓得他们素常所说撒但深奥之理的人，我告诉你们：我不将别的担子放在你们身上。</p>
+      </li>
+                        <li><span>2:25</span>
+        <p>但你们已经有的，总要持守，直等到我来。</p>
+      </li>
+                        <li><span>2:26</span>
+        <p>那得胜又遵守我命令到底的，我要赐给他权柄制伏列国。</p>
+      </li>
+                        <li><span>2:27</span>
+        <p>他必用铁杖辖管他们（“辖管”原文作“牧”），将他们如同窑户的瓦器打得粉碎，像我从我父领受的权柄一样。</p>
+      </li>
+                        <li><span>2:28</span>
+        <p>我又要把晨星赐给他。</p>
+      </li>
+                        <li><span>2:29</span>
+        <p>圣灵向众教会所说的话，凡有耳的，就应当听。”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共22首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>启示录(启)第1章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>启示录(启)第2章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>启示录(启)第3章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>启示录(启)第4章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>启示录(启)第5章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>启示录(启)第6章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>启示录(启)第7章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>启示录(启)第8章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>启示录(启)第9章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>启示录(启)第10章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>启示录(启)第11章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>启示录(启)第12章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>启示录(启)第13章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>启示录(启)第14章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>启示录(启)第15章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>启示录(启)第16章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>启示录(启)第17章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>启示录(启)第18章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>启示录(启)第19章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>启示录(启)第20章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>启示录(启)第21章</strong><em>圣经新约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-66-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>启示录(启)第22章</strong><em>圣经新约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="index-detail-bid-66-cid-1.html"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-66-cid-3.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>

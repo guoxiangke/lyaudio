@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>在线圣经,有声圣经,英文圣经-手机版</title>
+<meta name="Keywords" content="圣经，圣经在线阅读，圣经下载，旧约圣经，新约圣经"/>
+<meta name="Description" content="提供多种在线版本圣经:有和合本圣经、思高本圣经、吕振中圣经、拼音圣经、新译圣经、灵修圣经、文理圣经等,是基督徒阅读圣经、经文搜索、收听圣经朗读的最佳网站!！"/>
+<link href="assets/css/fuyin.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="assets/js/fuyinplay.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	playerAlert("请点击播放按钮");
+	var wmaurl="11列王记上/11列王记上_01.mp3";
+	if(wmaurl.indexOf("http://")==-1){
+		wmaurl="http://ymp3.fuyin.tv/07其他/汉语中文圣经朗读/"+wmaurl;
+	}
+
+	$("#kuPlayer").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:wmaurl
+			}).jPlayer("play");
+		},
+		swfPath: "",
+		solution: "html",
+		supplied: "mp3",
+		wmode: "window",
+		ended: function() {
+			location.href="/index-detail-bid-11-cid-2.html";
+		}
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadstart,function(event) {
+		playerAlert("请点击播放按钮！");
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.loadedmetadata, function(event) {
+		playerAlert("开始播放");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+	
+	$("#kuPlayer").bind($.jPlayer.event.pause, function(event) { 
+		playerAlert("播放暂停");
+	});
+	$("#kuPlayer").bind($.jPlayer.event.play, function(event) {
+		playerAlert("加载歌曲");
+		$("#playerNotice").fadeOut(3000,function(){$(this).remove();}); 
+	});
+});
+</script>
+
+<div class="page"> <div id="topWrap">
+    <div id="top">
+      <div class="topMain"> <a href="javascript:history.go(-1);" class="topBack"><img src="assets/images/back.png" /></a> <span class="topTit">列王记上(王上) 第1章</span> <a href="javascript:void(0)" class="topNav" id="topNav_Fuyin"></a> <a href="javascript:void(0)" class="topNavCur"></a> </div>
+    </div>
+    <div id="topZan"></div>
+  </div>
+  <div class="body" id="playerLrc">
+    <ul class="jingRead" id="song_list">
+                              <li><span>1:1</span>
+        <p>大卫王年纪老迈，虽用被遮盖，仍不觉暖。</p>
+      </li>
+                        <li><span>1:2</span>
+        <p>所以臣仆对他说：“不如为我主我王寻找一个处女，使她伺候王，奉养王，睡在王的怀中，好叫我主我王得暖。”</p>
+      </li>
+                        <li><span>1:3</span>
+        <p>于是，在以色列全境寻找美貌的童女，寻得书念的一个童女亚比煞，就带到王那里。</p>
+      </li>
+                        <li><span>1:4</span>
+        <p>这童女极其美貌，她奉养王，伺候王，王却没有与她亲近。</p>
+      </li>
+                                    <li><span>1:5</span>
+        <p>那时，哈及的儿子亚多尼雅自尊，说：“我必作王。”就为自己预备车辆、马兵，又派五十人在他前头奔走。</p>
+      </li>
+                        <li><span>1:6</span>
+        <p>他父亲素来没有使他忧闷，说：“你是作什么呢？”他甚俊美，生在押沙龙之后。</p>
+      </li>
+                        <li><span>1:7</span>
+        <p>亚多尼雅与洗鲁雅的儿子约押，和祭司亚比亚他商议，二人就顺从他，帮助他。</p>
+      </li>
+                        <li><span>1:8</span>
+        <p>但祭司撒督，耶何耶大的儿子比拿雅，先知拿单、示每、利以，并大卫的勇士，都不顺从亚多尼雅。</p>
+      </li>
+                        <li><span>1:9</span>
+        <p>一日，亚多尼雅在隐罗结旁、琐希列磐石那里，宰了牛羊、肥犊，请他的诸弟兄，就是王的众子，并所有作王臣仆的犹大人；</p>
+      </li>
+                        <li><span>1:10</span>
+        <p>惟独先知拿单和比拿雅，并勇士，与他的兄弟所罗门，他都没有请。</p>
+      </li>
+                                    <li><span>1:11</span>
+        <p>拿单对所罗门的母亲拔示巴说：“哈及的儿子亚多尼雅作王了，你没有听见吗？我们的主大卫却不知道。</p>
+      </li>
+                        <li><span>1:12</span>
+        <p>现在我可以给你出个主意，好保全你和你儿子所罗门的性命。</p>
+      </li>
+                        <li><span>1:13</span>
+        <p>你进去见大卫王，对他说：‘我主我王啊，你不曾向婢女起誓说，你儿子所罗门必接续我作王，坐在我的位上吗？现在亚多尼雅怎么作了王呢？’</p>
+      </li>
+                        <li><span>1:14</span>
+        <p>你还与王说话的时候，我也随后进去，证实你的话。”</p>
+      </li>
+                        <li><span>1:15</span>
+        <p>拔示巴进入内室见王，王甚老迈，书念的童女亚比煞正伺候王。</p>
+      </li>
+                        <li><span>1:16</span>
+        <p>拔示巴向王屈身下拜。王说：“你要什么？”</p>
+      </li>
+                        <li><span>1:17</span>
+        <p>她说：“我主啊，你曾向婢女指着耶和华你的  神起誓说：‘你儿子所罗门必接续我作王，坐在我的位上。’</p>
+      </li>
+                        <li><span>1:18</span>
+        <p>现在亚多尼雅作王了，我主我王却不知道。</p>
+      </li>
+                        <li><span>1:19</span>
+        <p>他宰了许多牛羊、肥犊，请了王的众子和祭司亚比亚他，并元帅约押；惟独王的仆人所罗门，他没有请。</p>
+      </li>
+                        <li><span>1:20</span>
+        <p>我主我王啊，以色列众人的眼目都仰望你，等你晓谕他们，在我主我王之后，谁坐你的位。</p>
+      </li>
+                        <li><span>1:21</span>
+        <p>若不然，到我主我王与列祖同睡以后，我和我儿子所罗门必算为罪人了。”</p>
+      </li>
+                        <li><span>1:22</span>
+        <p>拔示巴还与王说话的时候，先知拿单也进来了。</p>
+      </li>
+                        <li><span>1:23</span>
+        <p>有人奏告王说：“先知拿单来了。”拿单进到王前，脸伏于地。</p>
+      </li>
+                        <li><span>1:24</span>
+        <p>拿单说：“我主我王果然应许亚多尼雅说：‘你必接续我作王，坐在我的位上’吗？</p>
+      </li>
+                        <li><span>1:25</span>
+        <p>他今日下去，宰了许多牛羊、肥犊，请了王的众子和军长，并祭司亚比亚他，他们正在亚多尼雅面前吃喝，说：‘愿亚多尼雅王万岁！’</p>
+      </li>
+                        <li><span>1:26</span>
+        <p>惟独我，就是你的仆人和祭司撒督，耶何耶大的儿子比拿雅，并王的仆人所罗门，他都没有请。</p>
+      </li>
+                        <li><span>1:27</span>
+        <p>这事果然出乎我主我王吗？王却没有告诉仆人们，在我主我王之后，谁坐你的位。”</p>
+      </li>
+                        <li><span>1:28</span>
+        <p>大卫王吩咐说：“叫拔示巴来。”拔示巴就进来站在王面前。</p>
+      </li>
+                        <li><span>1:29</span>
+        <p>王起誓说：“我指着救我性命脱离一切苦难、永生的耶和华起誓。</p>
+      </li>
+                        <li><span>1:30</span>
+        <p>我既然指着耶和华以色列的  神向你起誓说：‘你儿子所罗门必接续我作王，坐在我的位上。’我今日就必照这话而行。”</p>
+      </li>
+                        <li><span>1:31</span>
+        <p>于是拔示巴脸伏于地，向王下拜，说：“愿我主大卫王万岁！”</p>
+      </li>
+                        <li><span>1:32</span>
+        <p>大卫王又吩咐说：“将祭司撒督、先知拿单、耶何耶大的儿子比拿雅召来。”他们就都来到王面前。</p>
+      </li>
+                        <li><span>1:33</span>
+        <p>王对他们说：“要带领你们主的仆人，使我儿子所罗门骑我的骡子，送他下到基训。</p>
+      </li>
+                        <li><span>1:34</span>
+        <p>在那里，祭司撒督和先知拿单要膏他作以色列的王。你们也要吹角，说：‘愿所罗门王万岁！’</p>
+      </li>
+                        <li><span>1:35</span>
+        <p>然后要跟随他上来，使他坐在我的位上，接续我作王。我已立他作以色列和犹大的君。”</p>
+      </li>
+                        <li><span>1:36</span>
+        <p>耶何耶大的儿子比拿雅对王说：“阿们！愿耶和华我主我王的  神，也这样命定。</p>
+      </li>
+                        <li><span>1:37</span>
+        <p>耶和华怎样与我主我王同在，愿他照样与所罗门同在，使他的国位比我主大卫王的国位更大。”</p>
+      </li>
+                        <li><span>1:38</span>
+        <p>于是祭司撒督、先知拿单、耶何耶大的儿子比拿雅和基利提人、比利提人，都下去使所罗门骑大卫王的骡子，将他送到基训。</p>
+      </li>
+                        <li><span>1:39</span>
+        <p>祭司撒督就从帐幕中取了盛膏油的角来，用膏膏所罗门。人就吹角，众民都说：“愿所罗门王万岁！”</p>
+      </li>
+                        <li><span>1:40</span>
+        <p>众民跟随他上来，且吹笛，大大欢呼，声音震地。</p>
+      </li>
+                        <li><span>1:41</span>
+        <p>亚多尼雅和所请的众客筵宴方毕，听见这声音。约押听见角声，就说：“城中为何有这响声呢？”</p>
+      </li>
+                        <li><span>1:42</span>
+        <p>他正说话的时候，祭司亚比亚他的儿子约拿单来了。亚多尼雅对他说：“进来吧！你是个忠义的人，必是报好信息。”</p>
+      </li>
+                        <li><span>1:43</span>
+        <p>约拿单对亚多尼雅说：“我们的主大卫王，诚然立所罗门为王了。</p>
+      </li>
+                        <li><span>1:44</span>
+        <p>王差遣祭司撒督、先知拿单、耶何耶大的儿子比拿雅和基利提人、比利提人都去使所罗门骑王的骡子。</p>
+      </li>
+                        <li><span>1:45</span>
+        <p>祭司撒督和先知拿单在基训已经膏他作王。众人都从那里欢呼着上来，声音使城震动，这就是你们所听见的声音；</p>
+      </li>
+                        <li><span>1:46</span>
+        <p>并且所罗门登了国位。</p>
+      </li>
+                        <li><span>1:47</span>
+        <p>王的臣仆也来为我们的主大卫王祝福，说：‘愿王的  神使所罗门的名比王的名更尊荣，使他的国位比王的国位更大。’王就在床上屈身下拜。</p>
+      </li>
+                        <li><span>1:48</span>
+        <p>王又说：‘耶和华以色列的  神是应当称颂的，因他赐我一人今日坐在我的位上，我也亲眼看见了。’”</p>
+      </li>
+                        <li><span>1:49</span>
+        <p>亚多尼雅的众客听见这话就都惊惧，起来四散。</p>
+      </li>
+                        <li><span>1:50</span>
+        <p>亚多尼雅惧怕所罗门，就起来，去抓住祭坛的角。</p>
+      </li>
+                        <li><span>1:51</span>
+        <p>有人告诉所罗门说：“亚多尼雅惧怕所罗门王，现在抓住祭坛的角，说：‘愿所罗门王今日向我起誓，必不用刀杀仆人。’”</p>
+      </li>
+                        <li><span>1:52</span>
+        <p>所罗门说：“他若作忠义的人，连一根头皮也不至落在地上；他若行恶，必要死亡。”</p>
+      </li>
+                        <li><span>1:53</span>
+        <p>于是，所罗门王差遣人，使亚多尼雅从坛上下来，他就来向所罗门王下拜。所罗门对他说：“你回家去吧！”</p>
+      </li>
+                </ul>
+  </div>
+  <div id="playerList">
+    <div style="height:40px;"></div>
+    <div id="closePlayerList">关闭列表</div>
+    <div id="totalMusic"><strong>正在播放：试听列表</strong><span>共22首</span></div>
+    <ul>
+          <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-1.html"><span class="ppNum">1</span>
+        <p><strong>列王记上(王上)第1章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-2.html"><span class="ppNum">2</span>
+        <p><strong>列王记上(王上)第2章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-3.html"><span class="ppNum">3</span>
+        <p><strong>列王记上(王上)第3章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-4.html"><span class="ppNum">4</span>
+        <p><strong>列王记上(王上)第4章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-5.html"><span class="ppNum">5</span>
+        <p><strong>列王记上(王上)第5章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-6.html"><span class="ppNum">6</span>
+        <p><strong>列王记上(王上)第6章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-7.html"><span class="ppNum">7</span>
+        <p><strong>列王记上(王上)第7章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-8.html"><span class="ppNum">8</span>
+        <p><strong>列王记上(王上)第8章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-9.html"><span class="ppNum">9</span>
+        <p><strong>列王记上(王上)第9章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-10.html"><span class="ppNum">10</span>
+        <p><strong>列王记上(王上)第10章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-11.html"><span class="ppNum">11</span>
+        <p><strong>列王记上(王上)第11章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-12.html"><span class="ppNum">12</span>
+        <p><strong>列王记上(王上)第12章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-13.html"><span class="ppNum">13</span>
+        <p><strong>列王记上(王上)第13章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-14.html"><span class="ppNum">14</span>
+        <p><strong>列王记上(王上)第14章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-15.html"><span class="ppNum">15</span>
+        <p><strong>列王记上(王上)第15章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-16.html"><span class="ppNum">16</span>
+        <p><strong>列王记上(王上)第16章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-17.html"><span class="ppNum">17</span>
+        <p><strong>列王记上(王上)第17章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-18.html"><span class="ppNum">18</span>
+        <p><strong>列王记上(王上)第18章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-19.html"><span class="ppNum">19</span>
+        <p><strong>列王记上(王上)第19章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-20.html"><span class="ppNum">20</span>
+        <p><strong>列王记上(王上)第20章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-21.html"><span class="ppNum">21</span>
+        <p><strong>列王记上(王上)第21章</strong><em>圣经旧约</em></p>
+        </a></li>
+           <li id="song_543970_p"  class="current"><a href="index-detail-bid-11-cid-22.html"><span class="ppNum">22</span>
+        <p><strong>列王记上(王上)第22章</strong><em>圣经旧约</em></p>
+        </a></li>
+         </ul>
+  </div>
+  
+  <!--底部播放器部分-->
+  <div class="botWrap">
+    <div class="player">
+      <div class="playerMain">
+        <div class="jp-audio" id="jp_container_1">
+          <div class="jp-jplayer" id="kuPlayer"></div>
+          <span class="jp-current-time">00:00</span> <span class="jp-duration">00:00</span>
+          <div id="xunhuan"><span id="xunShunxu" style="display:block;"></span><span id="xunDanqu"></span><span id="xunSuiji"></span></div>
+          <input type="hidden" id="Playleixin" value="0" />
+          <div class="jp-progress">
+            <div class="jp-play-bar"><a class="playingbtn" href="javascript:;"></a></div>
+          </div>
+          <div class="playerBtn"> <a class="jp-previous" href="javascript:alertText('已到本章第一首!');"></a> <a class="jp-play" href="javascript:;"></a> <a class="jp-pause" href="javascript:;"></a> <a class="jp-next" href="index-detail-bid-11-cid-2.html"></a> <a class="openList" herf="javascript:void(0);"></a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="botZan"></div>
+  </div>
+  <!--底部播放器部分结束--> 
+  
+</div>
+<div class="fotter">
+
+</div>
+
+</body>
+</html>
