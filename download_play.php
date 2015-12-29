@@ -42,7 +42,7 @@
 			'title'	=>	'施恩座前',
 			'desc'	=>	'周彩云、周广亮主持。 通过介绍有关祷告的圣经真理、分享信徒祷告的见证、实际祷告操练与代祷。'),
 
-		'bv'=>array(
+		'mw'=>array(
 			'title'	=>	'灵命日粮',
 			'desc'	=>	'孙大中主持。 每天一篇喻道故事，每天一段经文，餵养你的属灵生命。带领你与主更亲近'),
 
@@ -150,6 +150,7 @@
           
           date_default_timezone_set('Asia/Chongqing');
           $mp3_link =  'http://media.febcchinese.org/Streaming/'.$key.'/'.$key.date('ymd').'.mp3'; 
+          if(@get_headers($mp3_link)[0] == 'HTTP/1.1 404 Not Found') continue;
           $desc = $value['desc'];
           // $desc = '公众号：永不止息 '.date('md');
           ?>
