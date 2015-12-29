@@ -107,7 +107,7 @@ $radio = $radios[$index];
 				}
 
 				$js_radio['title'] = $radio['title'].'-'.$date;
-				$js_radio['artist'] = 'FM'.$index;
+				$js_radio['artist'] = '【'.$index.'】';
 				$js_radio['album'] = '良友电台FM'.$index;
 				$js_radio['cover'] = 'img/ybzx320.png';
 				$js_radio['mp3'] = $radio_url;
@@ -121,6 +121,7 @@ $radio = $radios[$index];
 	<script src="js/script.js"></script>
 	<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
 	</div>
+	<?php include('../focus.php');?>
 </div>
 </body>
 </html>
