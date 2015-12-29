@@ -130,15 +130,8 @@
       </div>  
       <div class="bg-no">
         <h5><a href="/index.php" style="color:#FFF">线路一</a></h5>
-        <h5><a href="/nizz_play.php" style="color:#FFF">线路二</a></h5>
-        <h5><a href="/download_play.php" style="color:#FFF">线路三</a></h5>
         <h5><a href="/player/marrage_training.php" style="color:#FFF">婚姻辅导</a></h5>
-        <h5><a href="/player/fdjc.php" style="color:#FFF">辅导基础-空中辅导</a></h5>
-        <h5><a href="/player/yong.php" style="color:#FFF">青少年事工</a></h5>
-        <h5><a href="/xwz.php" style="color:#FFF">小王子</a></h5>
-        <h5><a href="/xz.php" style="color:#FFF">下载收听</a></h5>
       </div>  
-      <?php include('focus.php');?>
       <ul id="playlist">
         <?php
         $urls = $radios;
@@ -184,5 +177,6 @@
       	e.preventDefault();
       });
     </script>
+    <?php include('focus.php');?>
   </body>
 </html>
