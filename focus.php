@@ -11,12 +11,12 @@
 	<h5><a href="/player/yong.php" style="color:#FFF">青少年事工</a></h5>
 	<h5><a href="/xwz.php" style="color:#FFF">小王子</a></h5>
 	<h5><a href="/fm/index.php?fm=607" style="color:#FFF">欢乐卡恰碰</a></h5>
+	<h5><a href="/fm/index.php?fm=617" style="color:#FFF">現代人的希望</a></h5>
 	<h5><a href="/fm/index.php?fm=620" style="color:#FFF">灵命日粮</a></h5>
 	<h5><a href="/fm/index.php?fm=608" style="color:#FFF">绝妙当家</a></h5>
 	<h5><a href="/fm/index.php?fm=612" style="color:#FFF">书香园地</a></h5>
 	<h5><a href="/fm/index.php?fm=622" style="color:#FFF">圣言盛宴</a></h5>
 	<h5><a href="/fm/index.php?fm=623" style="color:#FFF">齐来颂扬</a></h5>
-	<h5><a href="/fm/index.php?fm=628" style="color:#FFF">空中崇拜</a></h5>
 	<h5><a href="/fm/index.php?fm=628" style="color:#FFF">空中崇拜</a></h5>
 </div>
 <style type="text/css">
