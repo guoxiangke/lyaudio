@@ -10,8 +10,8 @@ require_once('config.php');
 if(DEBUG)  echo '<pre>';
 $archive = 1;
 date_default_timezone_set('Asia/Shanghai');
-$file_path = dirname(__FILE__).'/cron/nissigz/';
-$json_file_key = $file_path . date('Ymd') . '.json';
+$file_path = dirname(__FILE__).'/cron/nissigz/json/'.date('Ym') ;
+$json_file_key = '/'.$file_path . date('Ymd') . '.json';
 if(!file_exists($json_file_key)){
     echo '<br>file not exists!';
     header('location:get_mp3_index_wx.php');
