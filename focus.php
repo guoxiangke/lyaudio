@@ -18,6 +18,7 @@
 	<h5><a href="/fm/index.php?fm=622" style="color:#FFF">圣言盛宴</a></h5>
 	<h5><a href="/fm/index.php?fm=623" style="color:#FFF">齐来颂扬</a></h5>
 	<h5><a href="/fm/index.php?fm=628" style="color:#FFF">空中崇拜</a></h5>
+	<h5><a href="/fm/mrqjs01.html" style="color:#FFF">每日亲近神</a></h5>
 </div>
 <style type="text/css">
 	.bg-no h5{
