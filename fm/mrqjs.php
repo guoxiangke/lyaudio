@@ -1,9 +1,13 @@
 <html lang="en">
   <head>
+  <?php 
+		date_default_timezone_set('Asia/Shanghai');
+		//from http://www.tpehoc.org.tw/daily_message/daily_message_1601/catalog_1601.htm 
+	?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>每日亲近神-1月份|公众号：永不止息</title>
+    <title>每日亲近神-<?php echo date('m');?>月份|公众号：永不止息</title>
 
     <!-- Bootstrap -->
     <link href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -69,13 +73,13 @@
 				autoplay = true,
 
 				playlist = [];
-				for (var i = 1; i < 32; i++) {
+				for (var i = 1; i < <?php echo date('t')+1;?>; i++) {
 					element = {}
-					element.title = '1月'+i+'日';
+					element.title = "<?php echo date('n');?>"+'月'+i+'日';
 					element.artist = '每日亲近神';
 					element.album = '每日亲近神';
 					element.cover = '/fm/img/ybzx320.jpg';
-					element.mp3 = 'http://www.tpehoc.org.tw/daily_message/daily_message_1601/mp3/'+(160100+i)+'mat'+(61+i)+'.mp3';
+					element.mp3 = 'http://www.tpehoc.org.tw/daily_message/daily_message_<?php echo date("ym");//1601 ?>/mp3/'+(160100+i)+'mat'+(61+i)+'.mp3';
 					element.ogg = '';
 					playlist.push(element);
 				};
