@@ -74,11 +74,10 @@ $file_key = 'http://lycloud.yongbuzhixi.com'.$file_key;
           if(!isset($value['objectKey'])) continue;
           $mp3_link =  $value['objectKey'];
           $mp3_link =  upyun_get_link($mp3_link);
-        	$title = $value['title'];
           // if(!isset($value['mp3_link'])) continue;
         	// $mp3_link = $value['mp3_link'];
         	// if(isset($value['bce'])){
-        	// 	$title = '【'.$value['title'].'】';
+        		$title = '【'.$value['index'].'】'. $value['title'];
         	// 	// $mp3_link = 'http://bos.yongbuzhixi.com/'.$value['bce'];
         	// }
           $new_urls[] = array(
