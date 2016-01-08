@@ -1,6 +1,7 @@
 <?php 
-	$day = (date('z') - 88)%30 + 1;
-	$mp3_link = 'http://liangyou.u.qiniudn.com/new/hyfd/mavmc0'.str_pad($day, 2, "0", STR_PAD_LEFT).'.mp3';
+	date_default_timezone_set('Asia/Shanghai');
+	$day = date('z')%30 + 1;
+	$mp3_link = 'https://dn-cfyin.qbox.me/mavmc0'.str_pad($day, 2, "0", STR_PAD_LEFT).'.mp3';
 ?>
 <!DOCTYPE html>
 <html>
@@ -56,7 +57,7 @@
         for ($i=$day; $i >= 1; $i--) { 
         	$desc= '第'.$i.'课';
         	$title = '婚姻与家庭';
-        	$mp3_link = 'http://liangyou.u.qiniudn.com/new/hyfd/mavmc0'.str_pad($i, 2, "0", STR_PAD_LEFT).'.mp3';
+        	$mp3_link = 'https://dn-cfyin.qbox.me/mavmc0'.str_pad($i, 2, "0", STR_PAD_LEFT).'.mp3';
       ?>
 			<dl>
 				<a href="javascript:void(0)" current='0'  desc="婚姻辅导-圣洁的渴望(<?php echo $day;?>/30)" src="<?php echo $mp3_link;?>">
