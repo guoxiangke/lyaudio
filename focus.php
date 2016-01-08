@@ -7,8 +7,8 @@
 	<h5><a href="/nizz_play.php" style="color:#FFF">线路二</a></h5>
 	<h5><a href="/download_play.php" style="color:#FFF">线路三</a></h5>
 	<h5><a href="/player/marrage_training.php" style="color:#FFF">婚姻辅导</a></h5>
-	<h5><a href="/player/fdjc.php" style="color:#FFF">辅导基础-空中辅导</a></h5>
-	<h5><a href="/player/yong.php" style="color:#FFF">青少年事工</a></h5>
+	<!-- <h5><a href="/player/fdjc.php" style="color:#FFF">辅导基础-空中辅导</a></h5> -->
+	<!-- <h5><a href="/player/yong.php" style="color:#FFF">青少年事工</a></h5> -->
 	<h5><a href="/xwz.php" style="color:#FFF">小王子</a></h5>
 	<h5><a href="/fm/index.php?fm=607" style="color:#FFF">欢乐卡恰碰</a></h5>
 	<h5><a href="/fm/index.php?fm=617" style="color:#FFF">現代人的希望</a></h5>
