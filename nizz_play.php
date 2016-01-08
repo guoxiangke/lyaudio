@@ -1,4 +1,6 @@
 <meta charset="UTF-8"><?php
+require_once('config.php');
+require_once('tools.php');
 //check if get already? cron once a day!
 $file_path = dirname(__FILE__).'/cron/nzzlist/';
 // http://ly.yongbuzhixi.com/cron/nzzlist/20151110.json
@@ -6,9 +8,11 @@ if (!is_dir($file_path)) {
     mkdir($file_path, 0777, true);
 }
 date_default_timezone_set('Asia/Shanghai');
-
-$file_path = dirname(__FILE__).'/cron/nissigz/json/'.date('Ym') ;
-$file_key = $file_path .'/'. date('Ymd') . '.json';
+// dirname(__FILE__)
+$file_path = '/cron/nissigz/json/'.date('Ym') ;
+$file_key = $file_path .'/'. date('Ymd') . '_2.json';
+$file_key = 'http://lycloud.yongbuzhixi.com'.$file_key;
+// $file_key = upyun_get_link($file_key);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -65,14 +69,18 @@ $file_key = $file_path .'/'. date('Ymd') . '.json';
         $urls = json_decode($file,TRUE);
 
         $count = 1;
-        foreach ($urls as $url => $value) {
+        foreach ($urls as $code => $value) {
+          
+          if(!isset($value['objectKey'])) continue;
+          $mp3_link =  $value['objectKey'];
+          $mp3_link =  upyun_get_link($mp3_link);
         	$title = $value['title'];
-          if(!isset($value['mp3_link'])) continue;
-        	$mp3_link = $value['mp3_link'];
-        	if(isset($value['bce'])){
-        		$title = '【'.$value['title'].'】';
-        		// $mp3_link = 'http://bos.yongbuzhixi.com/'.$value['bce'];
-        	}
+          // if(!isset($value['mp3_link'])) continue;
+        	// $mp3_link = $value['mp3_link'];
+        	// if(isset($value['bce'])){
+        	// 	$title = '【'.$value['title'].'】';
+        	// 	// $mp3_link = 'http://bos.yongbuzhixi.com/'.$value['bce'];
+        	// }
           $new_urls[] = array(
             'title' =>  $title,
             'date'  =>  '',
