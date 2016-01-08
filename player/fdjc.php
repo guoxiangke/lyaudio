@@ -1,6 +1,6 @@
 <?php 
 	date_default_timezone_set('Asia/Shanghai');
-	$day = (date('z') - 91)%5+1;
+	$day = (date('z'))%5+1;
 	// $mp3_link = 'http://bos.yongbuzhixi.com/lyaudio/nizz/cc/1511/cc151102.mp3';
 	$mp3str = 151101 + $day;
 	$mp3_link = 'http://bos.yongbuzhixi.com/lyaudio/nizz/cc/1511/cc'.$mp3str.'.mp3';

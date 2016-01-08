@@ -1,5 +1,5 @@
 <?php 
-	$day = (date('z') - 88-12)%30 + 1;
+	$day = date('z')%30 + 1;
 	$mp3_link = 'http://liangyou.u.qiniudn.com/old/e本科课程/001青少年事工/mavym'.str_pad($day, 3, "0", STR_PAD_LEFT).'.mp3';
 ?>
 <!DOCTYPE html>
