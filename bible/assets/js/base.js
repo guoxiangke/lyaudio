@@ -47,9 +47,6 @@ $(function(){
        });
   } 
 })
-$( document ).ready(function() {
-  $(".fotter").html('<p>永不止息，需要有你！</p><p><a target="_blank" href="http://mp.weixin.qq.com/s?__biz=MjM5ODQ4NjU4MA==&mid=400424482&idx=1&sn=a0bc76a3fc8b4cf525a26dab47486d9f#rd">点解关注我们</a></p>');
-});
 //返回顶部按钮
 $(function() {
 	$("body").append('<div id="backTop"></div>')
@@ -115,3 +112,14 @@ function addCookie(objName,objValue,objHours){//添加cookie
 	}
 	document.cookie = str;
 }
+
+$( document ).ready(function() {
+  $(".fotter").html('<p>永不止息，需要有你！</p><p><a target="_blank" href="http://mp.weixin.qq.com/s?__biz=MjM5ODQ4NjU4MA==&mid=400424482&idx=1&sn=a0bc76a3fc8b4cf525a26dab47486d9f#rd">点解关注我们</a></p>');
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-36975988-2', 'auto');
+  ga('send', 'pageview');
+});
