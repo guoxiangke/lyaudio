@@ -50,6 +50,7 @@ $(function(){
 
 //返回顶部按钮
 $(function() {
+	$(".fotter").html('<p>永不止息，需要有你！</p><p><a target="_blank" href="http://mp.weixin.qq.com/s?__biz=MjM5ODQ4NjU4MA==&mid=400424482&idx=1&sn=a0bc76a3fc8b4cf525a26dab47486d9f#rd">点解关注我们</a></p>');
 	$("body").append('<div id="backTop"></div>')
 		$(window).scroll(function(){
 			if ($(window).scrollTop()>100){
@@ -89,7 +90,7 @@ $(function(){
 		$(this).hide();
 		$(".topNavCur").show();
 		m9ku ='1';
-		$("body").append('<div class="disNav"><ul class="navList"><li><a href="index.php">首页</a></li></ul></div>');
+		$("body").append('<div class="disNav"><ul class="navList"><li><a href="http://ly.yongbuzhixi.com">良友知音</a></li><li><a href="http://mp.weixin.qq.com/s?__biz=MjM5ODQ4NjU4MA==&mid=400424482&idx=1&sn=a0bc76a3fc8b4cf525a26dab47486d9f#rd">关注微信</a></li><li><a href="http://www.yongbuzhixi.com/photos">永不止息</a></li></ul></div>');
 	});
 });
 

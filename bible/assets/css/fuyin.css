@@ -210,3 +210,26 @@ ol,ul,li{list-style:none;}
 .searchSinger .t-z{ padding-left:100px; padding-top:10px;}
 .searchSinger .t-t{ line-height:32px; height:32px; font-size:20px; overflow:hidden;}
 .searchSinger .i-t{ line-height:22px; height:22px; font-size:14px; overflow:hidden;}
+
+
+#top .topMain{
+	background: #04BE02;
+	color: rgba(255, 255, 255, 0.6);
+}
+.jingList li,.tabNav .current,.navList li a,
+.zhangList li,
+.player{
+	background: #04BE02;
+}
+.jingRead li span{
+	color: #04BE02;
+}
+.jp-progress{
+	background: #0e90d2;	
+}
+.tabNav ul{
+	border: 1px solid #04BE02;
+}
+#notice{
+	background: rgba(40, 40, 40, 0.75);
+}
