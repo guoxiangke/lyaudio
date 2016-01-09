@@ -23,6 +23,7 @@ if(!file_exists($file_key))  {
     $title_get = $html->find('#div_playlist li .mp3_title', 0)->plaintext;
     $mp3_description = $html->find('#div_playlist li .mp3_description', 0)->plaintext;
     $dates = explode('-', $title_get);
+    $title = str_replace('良友圣经学院', '', $title);
     $data[] = array(
       'title' => $title,
       'date' => $dates[1],

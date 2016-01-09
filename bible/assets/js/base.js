@@ -47,10 +47,11 @@ $(function(){
        });
   } 
 })
-
+$( document ).ready(function() {
+  $(".fotter").html('<p>永不止息，需要有你！</p><p><a target="_blank" href="http://mp.weixin.qq.com/s?__biz=MjM5ODQ4NjU4MA==&mid=400424482&idx=1&sn=a0bc76a3fc8b4cf525a26dab47486d9f#rd">点解关注我们</a></p>');
+});
 //返回顶部按钮
 $(function() {
-	$(".fotter").html('<p>永不止息，需要有你！</p><p><a target="_blank" href="http://mp.weixin.qq.com/s?__biz=MjM5ODQ4NjU4MA==&mid=400424482&idx=1&sn=a0bc76a3fc8b4cf525a26dab47486d9f#rd">点解关注我们</a></p>');
 	$("body").append('<div id="backTop"></div>')
 		$(window).scroll(function(){
 			if ($(window).scrollTop()>100){
