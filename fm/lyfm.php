@@ -98,7 +98,7 @@ $radio = $radios[$index];
         }
     }
   </style>
-  <div class="hidden-md visible-xs">
+  <div class="">
     选择节目：
     <select name="" id="select">
     <?php
@@ -110,17 +110,6 @@ $radio = $radios[$index];
     ?>
     </select>
   </div>
-  <ul class="visible-lg hidden-sm">
-  <?php
-    foreach ($radios as $key => $value) {
-      ?>
-        <li class="alert alert-danger" role="alert">
-        <a href="http://ly.yongbuzhixi.com/fm/lyfm.php?fm=<?php echo $value['index'];?>">【<?php echo $value['index'].'】'.$value['title'];?></a></li>
-      <?php
-    }
-
-  ?>
-  </ul>
   <script src="js/jquery-ui-1.8.17.custom.min.js"></script>
   <script type="text/javascript">
     <?php
