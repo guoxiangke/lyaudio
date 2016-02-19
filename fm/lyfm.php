@@ -104,7 +104,7 @@ $radio = $radios[$index];
     <?php
       foreach ($radios as $key => $value) {
         ?>
-          <option value="<?php echo $value['index'];?>">【<?php echo $value['index'].'】'.$value['title'];?></option>
+          <option <?php if($key==$index) echo 'selected="selected"'; ?> value="<?php echo $value['index'];?>">【<?php echo $value['index'].'】'.$value['title'];?></option>
         <?php
       }
     ?>

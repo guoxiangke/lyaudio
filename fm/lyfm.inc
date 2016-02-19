@@ -635,7 +635,7 @@ function liangyou_audio_list2(){
       'txly'=>'http://www.txly1.net/program/1njcik-3b2p14?',
       'prefix'=>$prefix['33'],
       'day'=>'5',//????
-      'index'=>692,
+      'index'=>600,
       'lywx'=>707,
       'category'=>'学习真道',
       'desc'=>'透过经卷研读，陪伴你建立真理基础，栽培你灵命成长，帮助你活出信仰',
