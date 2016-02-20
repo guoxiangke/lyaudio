@@ -1,4 +1,6 @@
-<meta charset="UTF-8"><?php
+<?php
+header('Location: /fm/lyfm.php?fm=623',true,301);
+exit;
 //check if get already? cron once a day!
 $file_path = dirname(__FILE__).'/cron/cloud/';
 if (!is_dir($file_path)) {
@@ -39,6 +41,7 @@ if(!file_exists($file_key))  {
   // echo 'Sucess! Write File :'. $file_key;
 }
 ?>
+<meta charset="UTF-8">
 <!DOCTYPE html>
 <html lang="en">
   <head>
