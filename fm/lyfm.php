@@ -70,6 +70,18 @@ $radio = $radios[$index];
     </div>
   </div>
   <ul id="playlist"></ul>
+
+  <ul class="hide">
+  <?php
+    foreach ($radios as $key => $value) {
+      ?>
+        <li><h2><a href="http://ly.yongbuzhixi.com/fm/lyfm.php?fm="<?php echo $value['index'];?>>【<?php echo $value['index'].'】'.$value['title'];?></a></h2></li>
+      <?php
+    }
+
+  ?>
+  </ul>
+
   <style>
     #select{
       width: 50%;
