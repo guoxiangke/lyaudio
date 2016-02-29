@@ -1,6 +1,6 @@
 <h4>后台收听</h4>
 <h5>►关注：微信回复对于编号即可↓↓↓</h5>
-<a href="http://mp.weixin.qq.com/s?__biz=MjM5ODQ4NjU4MA==&mid=402309376&idx=1&sn=8e7f77cb6014948fc572f12085521edd#rd"><img class="img-responsive" src="/qrcode.jpg"></a>
+<a href="http://mp.weixin.qq.com/s?__biz=MjM5ODQ4NjU4MA==&mid=402309376&idx=1&sn=8e7f77cb6014948fc572f12085521edd#rd"><img class="img-responsive" src="qrcode.jpg"></a>
 <p>Powered by： <a href="http://www.yongbuzhixi.com">永不止息</a></p>
 <div class="bg-no">
   <h5><a href="http://www.yongbuzhixi.com" style="color:#FFF">非诚勿点</a></h5>

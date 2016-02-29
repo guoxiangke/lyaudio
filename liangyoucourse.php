@@ -14,7 +14,7 @@
     <title>婚姻与家庭|公众号：永不止息|良友圣经学院|本科课程</title>
 
     <!-- Bootstrap -->
-    <link href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,7 +34,7 @@
       </div>
 
       <h3>婚姻与家庭</h3>
-      <p id="bg-info"></p>      
+      <p id="bg-info"></p>
       <audio id="audio" preload="auto" tabindex="0" controls type="audio/mpeg">
           <source type="audio/mp3" src="http://yongbuzhixi.qiniudn.com/LePetitPrince/01.mp3">
           小永提示：不好意思！您的浏览器不支持，建议下载猎豹浏览器浏览本页面.
@@ -46,12 +46,12 @@
             <span>0</span>%
           </div>
         </div>
-        <p>已播放: <span></span>%</p>        
+        <p>已播放: <span></span>%</p>
       </div>
       <ul id="playlist">
         <?php
         $day = ($date('z') - 87)/24 + 1;
-        for ($i=1; $i <= $day; $i++) { 
+        for ($i=1; $i <= $day; $i++) {
         	$desc= '第'.$i.'课';
         	$title = '婚姻与家庭';
         	$mp3_link = 'http://liangyou.u.qiniudn.com/old/d基础课程/004婚姻与家庭/mavmf0'.str_pad($i, 2, "0", STR_PAD_LEFT).'.mp3';
@@ -60,7 +60,7 @@
             <a href="<?php echo $mp3_link;?>"><?php echo $title;?></a>
             <p class="bg-info hidden"><?php echo $desc;?></p>
           </li>
-          
+
         <?php }  ?>
       </ul>
       <?php include('focus.php');?>
@@ -68,9 +68,9 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
       var audio;
@@ -92,8 +92,8 @@
               link = $(this);
               current = link.parent().index();
               $('#bg-info').html(link.parent().find('.bg-info').html());
-              $('h1').html(link.html());    
-              $('html, body').animate({ scrollTop: 0 }, 'fast');          
+              $('h1').html(link.html());
+              $('html, body').animate({ scrollTop: 0 }, 'fast');
               run(link, audio[0]);
           });
           audio[0].addEventListener('ended',function(e){
@@ -102,7 +102,7 @@
                   current = 0;
                   link = playlist.find('a')[0];
               }else{
-                  link = playlist.find('a')[current];    
+                  link = playlist.find('a')[current];
               }
               run($(link),audio[0]);
           });
@@ -127,7 +127,7 @@
           loaded = 100 * buffered.end(0) / audio2.duration;
           played = 100 * audio2.currentTime / audio2.duration;
           percentages[0].innerHTML = loaded.toFixed(2);
-          $('#valuenow').attr('valuenow',loaded.toFixed(2));          
+          $('#valuenow').attr('valuenow',loaded.toFixed(2));
           $('#valuenow').attr('style','width: ' + loaded.toFixed(0) + '%');
           percentages[1].innerHTML = played.toFixed(2);
         }

@@ -48,7 +48,7 @@ $urls = array(
     <title><?php echo $title;?>|公众号：永不止息</title>
 
     <!-- Bootstrap -->
-    <link href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -68,7 +68,7 @@ $urls = array(
       </div>
 
       <h3><?php echo $title;?></h3>
-      <p id="bg-info"></p>      
+      <p id="bg-info"></p>
       <audio id="audio" preload="auto" tabindex="0" controls type="audio/mpeg">
           <source type="audio/mp3" src="http://yongbuzhixi.qiniudn.com/LePetitPrince/01.mp3">
           小永提示：不好意思！您的浏览器不支持，建议下载猎豹浏览器浏览本页面.
@@ -80,7 +80,7 @@ $urls = array(
             <span>0</span>%
           </div>
         </div>
-        <p>已播放: <span></span>%</p>        
+        <p>已播放: <span></span>%</p>
       </div>
       <ul id="playlist">
         <?php
@@ -97,7 +97,7 @@ $urls = array(
             <a href="<?php echo $mp3_link;?>"><?php echo $title;?></a>
             <p class="bg-info hidden"><?php echo $desc;?></p>
           </li>
-          
+
           <?php
           $count++;
           // $menu .= '【'.$id.'】'.$title."<br/>";
@@ -111,9 +111,9 @@ $urls = array(
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
       var audio;
@@ -135,8 +135,8 @@ $urls = array(
               link = $(this);
               current = link.parent().index();
               $('#bg-info').html(link.parent().find('.bg-info').html());
-              $('h1').html(link.html());    
-              $('html, body').animate({ scrollTop: 0 }, 'fast');          
+              $('h1').html(link.html());
+              $('html, body').animate({ scrollTop: 0 }, 'fast');
               run(link, audio[0]);
           });
           audio[0].addEventListener('ended',function(e){
@@ -145,7 +145,7 @@ $urls = array(
                   current = 0;
                   link = playlist.find('a')[0];
               }else{
-                  link = playlist.find('a')[current];    
+                  link = playlist.find('a')[current];
               }
               run($(link),audio[0]);
           });
@@ -170,7 +170,7 @@ $urls = array(
           loaded = 100 * buffered.end(0) / audio2.duration;
           played = 100 * audio2.currentTime / audio2.duration;
           percentages[0].innerHTML = loaded.toFixed(2);
-          $('#valuenow').attr('valuenow',loaded.toFixed(2));          
+          $('#valuenow').attr('valuenow',loaded.toFixed(2));
           $('#valuenow').attr('style','width: ' + loaded.toFixed(0) + '%');
           percentages[1].innerHTML = played.toFixed(2);
         }
