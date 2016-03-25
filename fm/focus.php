@@ -5,12 +5,15 @@
 <div class="bg-no">
   <h5><a href="http://www.yongbuzhixi.com" style="color:#FFF">非诚勿点</a></h5>
   <h5><a href="http://wx.yongbuzhixi.com" style="color:#FFF">主内公众云</a></h5>
-  <h5><a href="http://wx.yongbuzhixi.com/fm/lyfm.php?fm=603" style="color:#FFF">空中辅导</a></h5>
-  <h5><a href="http://wx.yongbuzhixi.com/fm/lyfm.php?fm=602" style="color:#FFF">良友直播</a></h5>
-  <h5><a href="http://wx.yongbuzhixi.com/player/marrage_training.php" style="color:#FFF">婚姻辅导</a></h5>
+  <h5><a href="http://ly.yongbuzhixi.com/fm/lyfm.php?fm=603" style="color:#FFF">空中辅导</a></h5>
+  <h5><a href="http://ly.yongbuzhixi.com/player/fdjc.php" style="color:#FFF">辅导基础</a></h5>
+  <h5><a href="http://ly.yongbuzhixi.com/fm/cc_1.html" style="color:#FFF">交友恋爱</a></h5>
+  <h5><a href="http://ly.yongbuzhixi.com/fm/cc_2.html" style="color:#FFF">千头万绪家中来</a></h5>
+  <h5><a href="http://ly.yongbuzhixi.com/fm/pjcy.php" style="color:#FFF">破镜重圆</a></h5>
+  <h5><a href="http://ly.yongbuzhixi.com/player/marrage_training.php" style="color:#FFF">婚姻辅导</a></h5>
   <!-- <h5><a href="/player/fdjc.php" style="color:#FFF">辅导基础-空中辅导</a></h5> -->
   <!-- <h5><a href="/player/yong.php" style="color:#FFF">青少年事工</a></h5> -->
-  <h5><a href="http://wx.yongbuzhixi.com/xwz.php" style="color:#FFF">小王子</a></h5>
+  <h5><a href="http://ly.yongbuzhixi.com/xwz.php" style="color:#FFF">小王子</a></h5>
 </div>
 <style type="text/css">
   .bg-no h5{
