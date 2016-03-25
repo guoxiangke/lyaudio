@@ -1,9 +1,16 @@
-<?php 
+<?php
 	date_default_timezone_set('Asia/Shanghai');
+  require_once('../fm/lyfm.inc');
 	$day = (date('z'))%5+1;
 	// $mp3_link = 'http://bos.yongbuzhixi.com/lyaudio/nizz/cc/1511/cc151102.mp3';
 	$mp3str = 151101 + $day;
-	$mp3_link = 'http://bos.yongbuzhixi.com/lyaudio/nizz/cc/1511/cc'.$mp3str.'.mp3';
+	// $mp3_link = 'http://lywxaudio.b0.upaiyun.com/2015/cc/cc'.$mp3str.'.mp3';
+
+  $upyun_bucket_name = 'lywxaudio';
+  $cdnlink = $upyun_bucket_name.'.b0.upaiyun.com';
+
+  $path = '/2015/cc/cc'.$mp3str.'.mp3';
+  $mp3_link = 'http://'.$cdnlink.$path.upyun_get_token($path);
 
 ?>
 <!DOCTYPE html>
@@ -63,7 +70,14 @@
         	$title = '辅导基础原则';
         	$count ++;
         	$mp3str = 151101 + $count;
-        	$mp3_link = 'http://bos.yongbuzhixi.com/lyaudio/nizz/cc/1511/cc'.$mp3str.'.mp3';
+
+        $upyun_bucket_name = 'lywxaudio';
+        $cdnlink = $upyun_bucket_name.'.b0.upaiyun.com';
+
+        $path = '/2015/cc/cc'.$mp3str.'.mp3';
+        $mp3_link = 'http://'.$cdnlink.$path.upyun_get_token($path);
+
+        	// $mp3_link = 'http://bos.yongbuzhixi.com/lyaudio/nizz/cc/1511/cc'.$mp3str.'.mp3';
       ?>
 			<dl>
 				<a href="javascript:void(0)" current='0'  desc="辅导基础原则(<?php echo $day;?>/5)" src="<?php echo $mp3_link;?>">
