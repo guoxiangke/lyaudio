@@ -10,70 +10,70 @@ title: '01.在你光中必得见光',
 artist: '亚萨《拯救》',
 album: '彩虹爱家',
 cover:'http://file.zanmeishi.com/album/2014/09/22/541fa9e200769e981f000000.jpg',
-mp3: 'http://bce.yongbuzhixi.com/ybzx/yashasavecd/1.mp3',
+mp3: 'http://bce.yongbuzhixi.com/audios/ybzx/yashasavecd/1.mp3',
 ogg: ''
 },{
 title: '02.约翰3：16',
 artist: '亚萨《拯救》',
 album: '彩虹爱家',
 cover:'http://file.zanmeishi.com/album/2014/09/22/541fa9e200769e981f000000.jpg',
-mp3: 'http://bce.yongbuzhixi.com/ybzx/yashasavecd/2.mp3',
+mp3: 'http://bce.yongbuzhixi.com/audios/ybzx/yashasavecd/2.mp3',
 ogg: ''
 },{
 title: '03.拯救',
 artist: '亚萨《拯救》',
 album: '彩虹爱家',
 cover:'http://file.zanmeishi.com/album/2014/09/22/541fa9e200769e981f000000.jpg',
-mp3: 'http://bce.yongbuzhixi.com/ybzx/yashasavecd/3.mp3',
+mp3: 'http://bce.yongbuzhixi.com/audios/ybzx/yashasavecd/3.mp3',
 ogg: ''
 },{
 title: '04.圣洁羔羊',
 artist: '亚萨《拯救》',
 album: '彩虹爱家',
 cover:'http://file.zanmeishi.com/album/2014/09/22/541fa9e200769e981f000000.jpg',
-mp3: 'http://bce.yongbuzhixi.com/ybzx/yashasavecd/4.mp3',
+mp3: 'http://bce.yongbuzhixi.com/audios/ybzx/yashasavecd/4.mp3',
 ogg: ''
 },{
 title: '05.等候',
 artist: '亚萨《拯救》',
 album: '彩虹爱家',
 cover:'http://file.zanmeishi.com/album/2014/09/22/541fa9e200769e981f000000.jpg',
-mp3: 'http://bce.yongbuzhixi.com/ybzx/yashasavecd/5.mp3',
+mp3: 'http://bce.yongbuzhixi.com/audios/ybzx/yashasavecd/5.mp3',
 ogg: ''
 },{
 title: '06.主你爱着我们',
 artist: '亚萨《拯救》',
 album: '彩虹爱家',
 cover:'http://file.zanmeishi.com/album/2014/09/22/541fa9e200769e981f000000.jpg',
-mp3: 'http://bce.yongbuzhixi.com/ybzx/yashasavecd/6.mp3',
+mp3: 'http://bce.yongbuzhixi.com/audios/ybzx/yashasavecd/6.mp3',
 ogg: ''
 },{
 title: '07.救赎',
 artist: '亚萨《拯救》',
 album: '彩虹爱家',
 cover:'http://file.zanmeishi.com/album/2014/09/22/541fa9e200769e981f000000.jpg',
-mp3: 'http://bce.yongbuzhixi.com/ybzx/yashasavecd/7.mp3',
+mp3: 'http://bce.yongbuzhixi.com/audios/ybzx/yashasavecd/7.mp3',
 ogg: ''
 },{
 title: '08.祷告歌',
 artist: '亚萨《拯救》',
 album: '彩虹爱家',
 cover:'http://file.zanmeishi.com/album/2014/09/22/541fa9e200769e981f000000.jpg',
-mp3: 'http://bce.yongbuzhixi.com/ybzx/yashasavecd/8.mp3',
+mp3: 'http://bce.yongbuzhixi.com/audios/ybzx/yashasavecd/8.mp3',
 ogg: ''
 },{
 title: '09.这条路上我们一起走',
 artist: '亚萨《拯救》',
 album: '彩虹爱家',
 cover:'http://file.zanmeishi.com/album/2014/09/22/541fa9e200769e981f000000.jpg',
-mp3: 'http://bce.yongbuzhixi.com/ybzx/yashasavecd/9.mp3',
+mp3: 'http://bce.yongbuzhixi.com/audios/ybzx/yashasavecd/9.mp3',
 ogg: ''
 },{
 title: '10.启示录',
 artist: '亚萨《拯救》',
 album: '彩虹爱家',
 cover:'http://file.zanmeishi.com/album/2014/09/22/541fa9e200769e981f000000.jpg',
-mp3: 'http://bce.yongbuzhixi.com/ybzx/yashasavecd/10.mp3',
+mp3: 'http://bce.yongbuzhixi.com/audios/ybzx/yashasavecd/10.mp3',
 ogg: ''
 }];
 
