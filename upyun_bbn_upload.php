@@ -31,10 +31,22 @@ $json_file_key = $file_path .'/'. date('Ymd') . '.json';
 if(!file_exists($json_file_key)){
   $json = bbn_audio_list();
   foreach ($json as $keyword => $value) {
-    $json[$keyword] = mp_get_bbn($keyword)[$keyword];
-    $json[$keyword]['download'] = 0;
+    //不是每天都有的节目处理
+    $weekday = date('N')-1;//1-7天？
+    if($keyword==401) echo "今天是滴 $weekday 日 \n";
+    $code =str_replace('0', $weekday, $json[$keyword]['code']);
+    $new = mp_get_bbn($keyword)[$keyword];
+    if($keyword==401) echo $new['mp3_link'];
+    $pos = strpos($new['mp3_link'],"$weekday");
+    if($keyword==401) var_dump($pos);
+    if ($pos === false) {
+      var_dump($code.' no! in today!');
+      continue;
+    }
+    $newjson[$keyword] = $new;
+    $newjson[$keyword]['download'] = 0;
   }
-  file_put_contents($json_file_key , json_encode($json));
+  file_put_contents($json_file_key , json_encode($newjson));
   return;
   // header('location:get_mp3_index_wx.php');
 }
@@ -54,15 +66,16 @@ if(isset($_GET['key'])){
 // check if all done download link
 $count = 0;
 foreach ($urls as $url => $value) {
-  if(isset($value['bce'])){
+  if(isset($value['md5'])){
       $count++;
   }
 }
 
 // var_dump($urls);
 foreach ($urls as $key => $value) {
+  if($urls[$key]['download'] == 1) continue;
   $mp3_link = $value['mp3_link'];
-  $dir_stru = 'resources/400/'.date('Ym');
+  $dir_stru = 'resources/400/'.$key;
   $local_dir = dirname(__FILE__).'/cron/'.$dir_stru;
   if (!is_dir($local_dir)) {
       $oldmask = umask(0);
@@ -70,15 +83,17 @@ foreach ($urls as $key => $value) {
       // chmod($local_dir, 0777);
       umask($oldmask);
   }
-  $realfile = $local_dir .'/'.$key.date('ymd').'.mp3';
-  $objectKey = '/'.$dir_stru .'/'.$key. date('ymd').'.mp3';
+  $realfile = $local_dir .'/'.$key.'_'.date('ymd').'.mp3';
+  $objectKey = '/'.$dir_stru .'/'.$key.'_'.date('ymd').'.mp3';
 
   $bce_url = upyun_get_link($objectKey);
   if(DEBUG)  var_dump($bce_url);
   if(DEBUG)  var_dump(get_headers($bce_url)[0]);
   if(@get_headers($bce_url)[0] == 'HTTP/1.1 200 OK'){//远程有!!!
     //update json!!
-    $urls[$url]['md5'] = 'nomd5';
+    $urls[$key]['md5'] = 'nomd5';
+    $urls[$key]['download'] = 1;
+    $urls[$key]['upyun'] = $objectKey;
     $write = json_encode($urls);
     if(!ARCHIVE && file_exists($realfile)) unlink($realfile);
     file_put_contents( $json_file_key , $write);
@@ -95,6 +110,8 @@ foreach ($urls as $key => $value) {
       continue;
     }
     $urls[$key]['md5'] = md5_file($realfile);
+    $urls[$key]['download'] = 1;
+    $urls[$key]['upyun'] = $objectKey;
     $write = json_encode($urls);
     if(@get_headers($bce_url)[0] == 'HTTP/1.1 404 Not Found'){//远程没有
       $fields = array(
@@ -137,9 +154,18 @@ foreach ($urls as $key => $value) {
   if(DEBUG)  echo  $realfile.' Download done!<br>';
   // copy($tempfile, $realfile);
   $urls[$key]['md5'] = md5_file($realfile);
-  // $urls[$url]['bce'] = $bce_url;
+  $urls[$key]['download'] = 1;
+  $urls[$key]['upyun'] = $objectKey;
   $write = json_encode($urls);
   file_put_contents( $json_file_key , $write);
+  $fields = array(
+    'key'=>$objectKey,
+    'fileName'=>$realfile,
+    'user_meta'=>json_encode($value)
+  );
+  // $return = curl_post($fields,$json_file_key,$write,$debug);
+  $return = upyunupload($fields,$json_file_key,$write,$upyun);
+  if(!ARCHIVE) unlink($realfile);
   break;
 }
 

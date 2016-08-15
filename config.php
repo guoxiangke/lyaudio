@@ -2,9 +2,9 @@
 define('S3KEY', 'AKIAICBSUROM4QGVKMDQ');
 define('S3SECRET', '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');
 
-define('UPBUCKETNAME', 'lts33');
-define('UPOPNAME', 'lts33');
-define('UPOPPASS', 'lts33lts33');
+define('UPBUCKETNAME', 'bbn2016');
+define('UPOPNAME', 'bbn2016');
+define('UPOPPASS', 'bbn2016bbn2016');
 define('CDNLINK', UPBUCKETNAME.'.b0.upaiyun.com');
 
 define('DEBUG', TRUE);

@@ -249,7 +249,7 @@ function mp_get_bbn($keyword){
       $code =str_replace('0', $weekday, $bbn['code']);
       break;
   }
-  return array($keyword=>array('mp3_link'=>$url_pre.$code.'.m4a?q='.date('ymd'),'title'=>$bbns[$keyword]['title']));
+  return array($keyword=>array('mp3_link'=>$url_pre.$code.'.m4a','title'=>$bbns[$keyword]['title']));
 }
 
 function bbn_audio_menu(){
