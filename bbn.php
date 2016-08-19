@@ -117,7 +117,7 @@ function bbn_audio_list(){
   );
   $bbn['420'] = array(
     'code'        =>  'C0WS',
-    'day'         =>  7,
+    'day'         =>  1,
     'title'       =>  '每周一歌',
     'description' =>  '圣经广播网 摩西',
   );
