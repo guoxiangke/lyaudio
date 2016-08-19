@@ -37,7 +37,8 @@ if(!file_exists($json_file_key)){
     $code =str_replace('0', $weekday, $json[$keyword]['code']);
     $new = mp_get_bbn($keyword)[$keyword];
     if($keyword==401) echo $new['mp3_link'];
-    $pos = strpos($new['mp3_link'],"$weekday");
+    $tmp_link = substr($new['mp3_link'], 0, 56);
+    $pos = strpos($tmp_link,"$weekday");
     if($keyword==401) var_dump($pos);
     if ($pos === false) {
       var_dump($code.' no! in today!');
