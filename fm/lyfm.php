@@ -158,7 +158,7 @@ $radio = $radios[$index];
         // $dir_stru = 'liangyou/nissigz/'.$title.'/'.date('Ym');
 
         $upyun_bucket_name = 'lywxaudio';
-        $cdnlink = $upyun_bucket_name.'.b0.upaiyun.com';
+        $cdnlink = $upyun_bucket_name.'.yongbuzhixi.com';
         $offset=0;
         while ($offset <= 7) {
           $date = date('ymd',time()-$offset*86400);
