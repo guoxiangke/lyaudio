@@ -136,10 +136,13 @@ foreach ($urls as $key => $value) {
   set_time_limit(0);
   if(@get_headers($mp3_link)[0] == 'HTTP/1.1 404 Not Found'){//nissigz没有
     // try_times
+    unset($urls[$key]);
+    $write = json_encode($urls);
+    file_put_contents( $json_file_key , $write);
     // $urls = json_encode($urls);
     // //fails
     // file_put_contents( $json_file_key , $urls);
-    // continue;
+    continue;
   }else{
     $file = file_get_contents($mp3_link);
   }
@@ -147,6 +150,10 @@ foreach ($urls as $key => $value) {
   // $file = @readfile($mp3_link);
   if(!$file){
     if(DEBUG)  echo  '<br>'.$realfile.' empty!!<br>';
+
+    unset($urls[$key]);
+    $write = json_encode($urls);
+    file_put_contents( $json_file_key , $write);
     break;
     // continue;
   }
