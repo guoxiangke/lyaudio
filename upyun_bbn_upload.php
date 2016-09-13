@@ -173,7 +173,8 @@ foreach ($urls as $key => $value) {
   );
   // $return = curl_post($fields,$json_file_key,$write,$debug);
   $return = upyunupload($fields,$json_file_key,$write,$upyun);
-  if(!ARCHIVE) unlink($realfile);
+  // if(!ARCHIVE)
+    unlink($realfile);
   break;
 }
 

@@ -121,12 +121,12 @@ function bbn_audio_list(){
     'title'       =>  '每周一歌',
     'description' =>  '圣经广播网 摩西',
   );
-  $bbn['421'] = array(
-    'code'        =>  'C0DW',
-    'day'         =>  7,
-    'title'       =>  '每日箴言',
-    'description' =>  '普世佳音机构',
-  );
+  // $bbn['421'] = array(
+  //   'code'        =>  'C0DW',
+  //   'day'         =>  7,
+  //   'title'       =>  '每日箴言',
+  //   'description' =>  '普世佳音机构',
+  // );
   $bbn['422'] = array(
     'code'        =>  'C0DBR',
     'day'         =>  7,
