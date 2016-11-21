@@ -102,7 +102,6 @@ $audio_url = $_GET['url'];
   <script src="js/script.js"></script>
   <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
   </div>
-  <?php include('../focus.php');?>
 </div>
 </body>
 </html>
