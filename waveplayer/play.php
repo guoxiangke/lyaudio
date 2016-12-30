@@ -47,7 +47,7 @@
                     ogg: ''
                 }
             ];
-        var autoplay = true;
+        var autoplay = <?php echo isset($_GET['autoplay'])?'true':'false';?>;
         var continous = true;//loop
         //wave begin know issues:
         //mp3 loaded twice....
