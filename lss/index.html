@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8"></head>
+	<body>
+		<div id="playercontainer"></div>
+		<script type="text/javascript" src="./player/cyberplayer.js"></script>
+		<script type="text/javascript">
+		    var player = cyberplayer("playercontainer").setup({
+		        width: 680,
+		        height: 448,
+		        // file: "rtmp://rtmp.yongbuzhixi.com/ybzx/classroom-L1", // <—rtmp直播地址
+		        // fallbackfile: "http://rtmp.yongbuzhixi.com/ybzx/classroom-L1.m3u8", // <— 备用播放地址，为了电脑上用rtmp流播放，手机上播放设置hls流
+				playlist: [
+				{
+				    sources: [
+				        {
+				            file: "rtmp://rtmp.yongbuzhixi.com/ybzx/classroom-L1", // <—rtmp直播地址
+				            fallbackfile: "http://rtmp.yongbuzhixi.com/ybzx/classroom-L1.m3u8",
+				            label: "高清" // 标签
+				        },
+				        {
+				            file: "rtmp://rtmp.yongbuzhixi.com/ybzx/classroom-L2", // <—rtmp直播地址
+				            fallbackfile: "http://rtmp.yongbuzhixi.com/ybzx/classroom-L2.m3u8",
+				            label: "标清"
+				        },
+				        {
+				            file: "rtmp://rtmp.yongbuzhixi.com/ybzx/classroom-L3", // <—rtmp直播地址
+				            fallbackfile: "http://rtmp.yongbuzhixi.com/ybzx/classroom-L3.m3u8",
+				            label: "低清"
+				        }
+				    ]
+				}
+				],
+		        autostart: true,
+		        stretching: "uniform",
+		        volume: 100,
+		        controls: true,
+		        skin: "seven",
+		        controlbar: {
+		            barLogo: false // 进度条上的logo可隐藏
+		        },
+		        ak: "b07ea6b7de014a80972cc2b190b10501" // 公有云平台注册即可获得accessKey
+		    });
+		</script>
+	</body>
+</html>
